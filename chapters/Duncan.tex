@@ -1,12 +1,35 @@
-\documentclass[output=paper]{../langsci/langscibook} 
+\documentclass[output=paper,modfonts,nonflat,
+colorlinks, citecolor=brown,
+% draftmode
+]{langsci/langscibook} 
+
+\setcounter{chapter}{20}
+\IfFileExists{../localpackages.tex}{%
+  \input{../localpackages}
+  \input{../localcommands}
+  \bibliography{localbibliography}
+}{}
+ 
+
+ 
+
+\papernote{\scriptsize\normalfont
+Philip T. Duncan, Travis Major  \&  Mfon Udoinyang.
+Verb and predicate coordination in Ibibio. 
+To appear in: 
+Emily Clem,   Peter Jenks \& Hannah Sande.
+Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
+Berlin: Language Science Press. [preliminary page numbering]
+}
+\pagenumbering{roman}
 
 \author{Philip T. Duncan\affiliation{University of Kansas}\and Travis Major\affiliation{University of California, Los Angeles}\lastand Mfon Udoinyang\affiliation{University of Kansas}}
 \title{Verb and predicate coordination in Ibibio} 
 %\epigram{Change epigram in chapters/01.tex or remove it there }
 \abstract{This paper reports on the `and'-word \textit{ny\'ʌ\ng} in Ibibio verbal coordination. Like English \textit{and}, Ibibio possesses morphologically invariant coordinators linking NPs, PPs, and  CPs. However, these cannot coordinate verbs and predicates, unlike \textit{and} in English. Many African languages distinguish between nominal and verbal coordinators \citep[305]{welmers1973african}, but Ibibio showcases this distinction in a unique way. Subject agreement and inflection for tense and negation suggest that \textit{ny\'{\textturnv}\ng} is a verb, resembling ```and'-verbs'' in Walman \citep{brown2008verbs}. Closer inspection reveals that \textit{ny\'{\textturnv}\ng} patterns more like an adverb or functional head, expanding our understanding of what constitutes `and' cross-linguistically.}
-\maketitle
 
 \begin{document}
+\maketitle
 
 \section{Introduction}\label{sec:duncan-et-al:1} 
 Across African and Niger-Congo languages, juxtaposition serves as a general strategy for coordinating clausal units \citep{zeller2015syntax,creissels2000typology,watters2000syntax}. African languages also commonly feature a distinction in coordinators triggered by categorial features of the conjuncts. Such distinction can be seen, for example, in \ili{Dagbani}, where \textit{mini} exclusively conjoins nominal expressions, and \textit{ka} is obligatory for coordinating verbal predicates and clauses. 
@@ -16,7 +39,7 @@ Across African and Niger-Congo languages, juxtaposition serves as a general stra
 \langinfo{Dagbani}{Gur}{Niger-Congo}\\
 \ea[]{
 \gll doo \ng \textopeno~ \textbf{mini} m ba ch\textepsilon ni daa \\
-     man this and my father go.{\ipfv} market \\
+     man this and my father go.{\IPFV} market \\
 \glt `This man and my father go to the market.' \citep[44]{olawsky1999aspects}
 }
 \ex[]{
@@ -26,7 +49,7 @@ he be.bad and be.thin and be.dirty \\
 }
 \ex[]{
 \gll m ba wumdi da\textg banli \textbf{ka} tuz\textopeno hi wumdi silimiinsili \\
-my father hear.{\ipfv} \ili{Dagbani} and brothers hear.{\ipfv} \ili{English} \\
+my father hear.{\IPFV} \ili{Dagbani} and brothers hear.{\IPFV} \ili{English} \\
 \glt `My father knows \ili{Dagbani} and my brothers know \ili{English}.' \citep[51]{olawsky1999aspects}
 }
 \z
@@ -38,8 +61,8 @@ my father hear.{\ipfv} \ili{Dagbani} and brothers hear.{\ipfv} \ili{English} \\
 \ili{Ibibio} uses an array of equivalent coordinators for NP/DP \isi{coordination}.\footnote{\citet[147]{essien1990grammar} treats these three coordinators as ``dialectal variants.''}$^,$\footnote{Unless otherwise noted, our Ibiibio data are from Mfon Udoinyang and reflect his judgments.}
 
 \ea\label{ex:duncan-et-al:2}
-\gll \'{E}kp\^{e} \textbf{y\`{e}/\`{n}d\`{o}/\`{m}m\`{e}} \`{A}kp\'{a}n \`{e}-m\`{a} \'{e}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng. \\
-Ekpe and Akpan 3{\pl}-{\pst} 3{\pl}-drink palmwine \\
+\gll \'{E}kpê \textbf{y\`{e}/ǹd\`{o}/\`{m}m\`{e}} \`{A}kpán \`{e}-mà é-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng. \\
+Ekpe and Akpan 3{\PL}-{\PST} 3{\PL}-drink palmwine \\
 \glt ‘Ekpe and Akpan drank palmwine.’
 \z
 
@@ -47,13 +70,13 @@ Ekpe and Akpan 3{\pl}-{\pst} 3{\pl}-drink palmwine \\
 
 \ea\label{ex:duncan-et-al:3}
 \ea[]{
-\gll \`{A}-m\`{a} \`{a}-d\'{i}\'{a} \`{a}d\'{e}s\`{i} \textbf{\`{a}-ny\`{\textturnv}\ng}/*y\`{e}/*\`{n}d\`{o}/*\`{m}m\`{e} \`{a}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng. \\
-2{\sg}-{\pst} 2{\sg}-eat rice 2{\sg}-and 2{\sg}-drink palmwine \\
+\gll \`{A}-mà à-díá àdésì \textbf{à-ny\`{\textturnv}\ng}/*y\`{e}/*ǹd\`{o}/*\`{m}m\`{e} à-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng. \\
+2{\SG}-{\PST} 2{\SG}-eat rice 2{\SG}-and 2{\SG}-drink palmwine \\
 \glt `You ate rice and drank palmwine.'
 }
 \ex[]{
-\gll \`{I}m\'{a} \'{a}-kp\'{o}n \textbf{\'{a}-ny\'{\textturnv}\ng}/*y\`{e}/*\`{n}d\`{o}/*\`{m}m\`{e} \'{a}-y\'{a}\'{i}y\'{a}. \\
-Ima 3{\sg}-become.big 3{\sg}-and 3{\sg}-be.beautiful \\
+\gll \`{I}má á-kpón \textbf{á-ny\'{\textturnv}\ng}/*y\`{e}/*ǹd\`{o}/*\`{m}m\`{e} á-yáíyá. \\
+Ima 3{\SG}-become.big 3{\SG}-and 3{\SG}-be.beautiful \\
 \glt `Ima grew up and became beautiful.'
 }
 \z
@@ -69,8 +92,8 @@ The verbal coordinator \textit{ny\'{\textturnv}\ng} bears person and number feat
 
 \ea\label{ex:duncan-et-al:4}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \'{I}n\^{e}m \'{a}-m\v{a}-k\`{o}p \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-d\'{i}. \\
-Inem 3{\sg-\pst}-hear 3{\sg}-and 3{\sg}-come \\
+\gll \'{I}nêm á-m\v{a}-k\`{o}p \textbf{á-ny\'{\textturnv}\ng} á-dí. \\
+Inem 3{\SG-\PST}-hear 3{\SG}-and 3{\SG}-come \\
 \glt ‘Inem heard it and came.’ \citep[86]{essien1985negation}
 \z
 
@@ -85,31 +108,31 @@ However, \ili{Ibibio} \textit{ny\'{\textturnv}\ng} clauses do not exhibit featur
 
 \ea\label{ex:duncan-et-al:5}
 \ea[]{
-\gll \'{E}kp\^{e} \textbf{\'{a}-m\`{a}} \'{a}-d\'{i} (*\textbf{\'{a}-m\`{a}}) \'{i}-s\'{e} \'{u}f\^ɔk \`{m}m\`{i}.\\
-Ekpe 3{\sg-\pst} 3{\sg}-come 3{\sg-\pst} \textsc{i}-see house 1{\sg-\poss} \\
+\gll \'{E}kpê \textbf{á-mà} á-dí (*\textbf{á-mà}) í-sé úf\^ɔk \`{m}mì.\\
+Ekpe 3{\SG-\PST} 3{\SG}-come 3{\SG-\PST} \textsc{i}-see house 1{\SG-\POSS} \\
 \glt `Ekpe came and saw my house.'
 }
 \ex[]{
-\gll \'{I}n\^{e}m \textbf{\'{a}-m\`{a}} \'{a}-k\`{o}p \textbf{\'{a}-m\`{a}} \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-d\'{i}.\\
-Inem 3{\sg-\pst} 3{\sg}-hear 3{\sg-\pst} 3{\sg}-and 3{\sg}-come \\
+\gll \'{I}nêm \textbf{á-mà} á-k\`{o}p \textbf{á-mà} \textbf{á-ny\'{\textturnv}\ng} á-dí.\\
+Inem 3{\SG-\PST} 3{\SG}-hear 3{\SG-\PST} 3{\SG}-and 3{\SG}-come \\
 \glt `Inem heard it and came.'
 }
 \z
 \z
 
-\noindent The SVC in (\ref{ex:duncan-et-al:5}a) is thus ungrammatical if the second \isi{tense marker} is added. \textit{Ny\'{\textturnv}\ng} clauses, though, may contain more than one \isi{tense marker}, depending on the number of conjuncts involved. In (\ref{ex:duncan-et-al:5}b), the past \isi{tense marker} \textit{m\`{a}} appears twice, once in the first conjunct and once in the second.
+\noindent The SVC in (\ref{ex:duncan-et-al:5}a) is thus ungrammatical if the second \isi{tense marker} is added. \textit{Ny\'{\textturnv}\ng} clauses, though, may contain more than one \isi{tense marker}, depending on the number of conjuncts involved. In (\ref{ex:duncan-et-al:5}b), the past \isi{tense marker} \textit{mà} appears twice, once in the first conjunct and once in the second.
 
 Related to this, verbs in \ili{Ibibio} SVCs obligatorily share a single \isi{subject}. Again, though, we find that this is not the case for \textit{ny\'{\textturnv}\ng} clauses.
 
 \ea\label{ex:duncan-et-al:6}
 \ea[*]{
-\gll \`{O}k\^{o}n \'{a}-m\`{a} \'{a}-d\`{u}w\'ɔ \`{A}kp\'{a}n \'{a}-d\'{\textturnv}k \`{a}d\`{u}b\`{e}. \\ 
-Okon 3{\sg-\pst} 3{\sg}-fall Akpan 3{\sg}-enter pit \\
+\gll \`{O}k\^{o}n á-mà á-dùw\'ɔ \`{A}kpán á-d\'{\textturnv}k àdùb\`{e}. \\ 
+Okon 3{\SG-\PST} 3{\SG}-fall Akpan 3{\SG}-enter pit \\
 \glt (Intended: `Okon fell (and) Akpan entered a pit.')
 }
 \ex[]{
-\gll \`{E}n\`ɔ \'{a}-m\`{a} \'{a}-k\'{a} store \textbf{\'{a}-ny\'{\textturnv}\ng} \'{I}m\'{a} \'{a}-m\`{a} \'{a}-d\'{e}p \`{n}w\`{e}t.\\
-Eno 3{\sg-\pst} 3{\sg}-go store 3{\sg}-and Ima 3{\sg-\pst} 3{\sg}-buy book \\
+\gll \`{E}n\`ɔ á-mà á-ká store \textbf{á-ny\'{\textturnv}\ng} \'{I}má á-mà á-dép ǹw\`{e}t.\\
+Eno 3{\SG-\PST} 3{\SG}-go store 3{\SG}-and Ima 3{\SG-\PST} 3{\SG}-buy book \\
 \glt `Eno went to the store and Ima bought a book.'
 }
 \z
@@ -123,23 +146,23 @@ A second difference between SVCs and \textit{ny\'{\textturnv}\ng} clauses in \il
 
 \ea\label{ex:duncan-et-al:7}
 \ea[]{
-\gll \`{O}k\^{o}n \'{a}-m\`{a} \'{a}-t\`{e}m \'{n}d\'{i}d\'{i}y\'{a} \'{a}-ny\`{a}m.\\
-Okon 3{\sg-\pst} 3{\sg}-cook food 3{\sg}-sell \\
+\gll \`{O}k\^{o}n á-mà á-t\`{e}m ńdídíyá á-nyàm.\\
+Okon 3{\SG-\PST} 3{\SG}-cook food 3{\SG}-sell \\
 \glt `Okon cooked food and sold it.'
 }
 \ex[]{
-\gll \`{O}k\^{o}n \'{a}-m\`{a} \'{a}-\textbf{t\`{e}\'{e}-t\`{e}m} \'{n}d\'{i}d\'{i}y\'{a} \'{a}-ny\`{a}m\ldots\\
-Okon 3{\sg-\pst} 3{\sg}-cook-cook food 3{\sg}-sell \\
+\gll \`{O}k\^{o}n á-mà á-\textbf{t\`{e}é-t\`{e}m} ńdídíyá á-nyàm\ldots\\
+Okon 3{\SG-\PST} 3{\SG}-cook-cook food 3{\SG}-sell \\
 \glt `Okon COOKED food and sold it\ldots'
 }
 \ex[]{
-\gll \`{O}k\^{o}n \'{a}-m\`{a} \'{a}-t\`{e}m \'{n}d\'{i}d\'{i}y\'{a} \'{a}-\textbf{ny\`{a}\'{a}-ny\^{a}m}\ldots\\
-Okon 3{\sg-\pst} 3{\sg}-cook food 3{\sg}-sell-sell \\
+\gll \`{O}k\^{o}n á-mà á-t\`{e}m ńdídíyá á-\textbf{nyàá-ny\^{a}m}\ldots\\
+Okon 3{\SG-\PST} 3{\SG}-cook food 3{\SG}-sell-sell \\
 \glt `Okon cooked food and SOLD it\ldots'
 }
 \ex[]{
-\gll \`{O}k\^{o}n \'{a}-m\`{a} \'{a}-\textbf{t\`{e}\'{e}-t\`{e}m} \'{n}d\'{i}d\'{i}y\'{a} \'{a}-\textbf{ny\`{a}\'{a}-ny\^{a}m}\ldots\\
-Okon 3{\sg-\pst} 3{\sg}-cook-cook food 3{\sg}-sell-sell \\
+\gll \`{O}k\^{o}n á-mà á-\textbf{t\`{e}é-t\`{e}m} ńdídíyá á-\textbf{nyàá-ny\^{a}m}\ldots\\
+Okon 3{\SG-\PST} 3{\SG}-cook-cook food 3{\SG}-sell-sell \\
 \glt `Okon COOKED food and SOLD it\ldots'
 }
 \z
@@ -152,8 +175,8 @@ Interestingly, the verbal coordinator \textit{ny\'{\textturnv}\ng} cannot partic
 
 \ea[*]{
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \'{I}m\'{a} \'{a}-kp\'{o}n \textbf{\'{a}-ny\`ɔ\'ɔ-ny\^{\textturnv}\ng} \'{a}-y\`{a}\`{i}y\'{a}. \\
-Ima 3{\sg}-become.big 3{\sg}-and-and 3{\sg}-be.beautiful \\
+\gll \'{I}má á-kpón \textbf{á-ny\`ɔ\'ɔ-ny\^{\textturnv}\ng} á-yàìyá. \\
+Ima 3{\SG}-become.big 3{\SG}-and-and 3{\SG}-be.beautiful \\
 \glt (Intended: `Ima became big AND beautiful.')
 } \label{ex:duncan-et-al:8}
 \z
@@ -166,18 +189,18 @@ Cross-linguistically, SVCs commonly allow for only one instance of \isi{negation
 
 \ea\label{ex:duncan-et-al:9}
 \ea[]{
-\gll \`{E}n\`ɔ \'{i}-k\'{e} \'{i}-d\`{a}k\'{a}\textbf{-k\'{e}} \'{i}-d\'{a}. \\
-Eno \textsc{i}-{\pst.\foc} \textsc{i}-rise-\textsc{neg} \textsc{i}-stand \\
+\gll \`{E}n\`ɔ í-ké í-dàká\textbf{-ké} í-dá. \\
+Eno \textsc{i}-{\PST.\FOC} \textsc{i}-rise-\textsc{neg} \textsc{i}-stand \\
 \glt `Eno didn't arise.'
 }
 \ex[*]{
-\gll \`{E}n\`ɔ \'{a}-m\`{a}/\'{i}-k\'{e} \'{a}-/\'{i}-d\`{a}k\'{a} \'{i}-d\'{a}\textbf{-h\'{a}}.\\
-Eno 3{\sg-\pst}/\textsc{i}-{\pst.\foc} 3{\sg}/\textsc{i}-rise \textsc{i}-stand-\textsc{neg} \\
+\gll \`{E}n\`ɔ á-mà/í-ké á-/í-dàká í-dá\textbf{-há}.\\
+Eno 3{\SG-\PST}/\textsc{i}-{\PST.\FOC} 3{\SG}/\textsc{i}-rise \textsc{i}-stand-\textsc{neg} \\
 \glt (Intended: `Eno didn't arise.')
 }
 \ex[*]{
-\gll \`{E}n\`ɔ \'{i}-k\'{e} \'{i}-d\`{a}k\'{a}\textbf{-k\'{e}} \'{i}-d\'{a}\textbf{-h\'{a}}. \\
-Eno \textsc{i}-{\pst.\foc} \textsc{i}-rise-\textsc{neg} \textsc{i}-stand-\textsc{neg} \\
+\gll \`{E}n\`ɔ í-ké í-dàká\textbf{-ké} í-dá\textbf{-há}. \\
+Eno \textsc{i}-{\PST.\FOC} \textsc{i}-rise-\textsc{neg} \textsc{i}-stand-\textsc{neg} \\
 \glt (Intended: `Eno didn't arise.')
 }
 \z
@@ -189,8 +212,8 @@ From this, one straightforward prediction is that, if \textit{ny\'{\textturnv}\n
 
 \ea\label{ex:duncan-et-al:10}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \'{I}n\^{e}m \'{i}-k\'{i}-k\`{o}p-p\'{o} \textbf{\'{i}-ny\'{\textturnv}\ng-\ng \'ɔ} \'{i}-d\'{i}. \\
-Inem \textsc{i}-{\pst.\foc}.\textsc{i}-hear-\textsc{neg} \textsc{i}-and-\textsc{neg} \textsc{i}-come \\
+\gll \'{I}nêm í-kí-k\`{o}p-pó \textbf{í-ny\'{\textturnv}\ng-\ng \'ɔ} í-dí. \\
+Inem \textsc{i}-{\PST.\FOC}.\textsc{i}-hear-\textsc{neg} \textsc{i}-and-\textsc{neg} \textsc{i}-come \\
 \glt ‘Inem did not hear it and did not come.’ \citep[86]{essien1985negation}
 \z
 
@@ -202,28 +225,28 @@ The final property that we consider when comparing \textit{ny\'{\textturnv}\ng} 
 
 \ea\label{ex:duncan-et-al:11}
 \ea[]{
-\gll \'{E}kp\^{e} \'{a}-m\`{a} \'{a}-t\'{o}p \'{i}t\'{i}y\'{a}t \'{a}-\'{n}-t\'ɔ.\\
-Ekpe 3{\sg-\pst} 3{\sg}-throw stone 3{\sg-1\sg}-hit \\
+\gll \'{E}kpê á-mà á-tóp ítíyát á-ń-t\'ɔ.\\
+Ekpe 3{\SG-\PST} 3{\SG}-throw stone 3{\SG-1\SG}-hit \\
 \glt `Ekpe threw a stone and it hit me.'
 }
 \ex[]{
-\gll \'{E}kp\^{e} \'{a}-m\`{a} \'{a}-t\'{o}p \'{i}t\'{i}y\'{a}t \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-\'{n}-t\'ɔ.\\
-Ekpe 3{\sg-\pst} 3{\sg}-throw stone 3{\sg}-and 3{\sg-1\sg}-hit \\
+\gll \'{E}kpê á-mà á-tóp ítíyát \textbf{á-ny\'{\textturnv}\ng} á-ń-t\'ɔ.\\
+Ekpe 3{\SG-\PST} 3{\SG}-throw stone 3{\SG}-and 3{\SG-1\SG}-hit \\
 \glt `Ekpe threw a stone (somewhere) and (something else) hit me.'
 }
 \z
 \z
 
-\noindent In (\ref{ex:duncan-et-al:11}a), the overt object of V$_1$, \textit{\'{i}t\'{i}y\'{a}t} `stone', is ``shared'' by V$_2$. This sentence thus has the interpretation that Ekpe threw a stone, and that same stone is what Ekpe hit me with. \textit{Ny\'{\textturnv}\ng} disrupts this pattern; as seen in (\ref{ex:duncan-et-al:11}b), object sharing is blocked when the verbal coordinator is present.
+\noindent In (\ref{ex:duncan-et-al:11}a), the overt object of V$_1$, \textit{ítíyát} `stone', is ``shared'' by V$_2$. This sentence thus has the interpretation that Ekpe threw a stone, and that same stone is what Ekpe hit me with. \textit{Ny\'{\textturnv}\ng} disrupts this pattern; as seen in (\ref{ex:duncan-et-al:11}b), object sharing is blocked when the verbal coordinator is present.
 
 \subsection{Interim summary}\label{sec:duncan-et-al:2.5}
 
 Although \textit{ny\'{\textturnv}\ng} clauses bear surface affinity to SVCs, the preceding discussion shows that these construction types fail to show key morphosyntactic attributes that are characteristic of SVCs. \tabref{tab:duncan-et-al:1} summarizes these properties and how they do (or do not) map onto each \isi{clause type}.
 
-\begin{table}
+\begin{table}[b]
 \caption{Properties of Ibibio SVCs and \textit{ny\'{\textturnv}\ng} clauses.}
 \label{tab:1:properties}
- \begin{tabular}{lccccc} % add l for every additional column or remove as necessary
+ \begin{tabularx}{\textwidth}{Xccccc} % add l for every additional column or remove as necessary
   \lsptoprule
             & Single & Obligatory & Contrastive & Single & O sharing\\ %table header
             & tense & S sharing & \isi{focus} & \isi{negation} & \\
@@ -231,7 +254,7 @@ Although \textit{ny\'{\textturnv}\ng} clauses bear surface affinity to SVCs, the
   SVCs  &   Y &    Y  &    Y &    Y  & Y\\
   \textit{Ny\'{\textturnv}\ng} clauses  &   N &   N &    N    & N & N\\
   \lspbottomrule
- \end{tabular} \label{tab:duncan-et-al:1}
+ \end{tabularx} \label{tab:duncan-et-al:1}
 \end{table}
 
 \noindent While this does not amount to a positive account for what \textit{ny\'{\textturnv}\ng} is, we take the above data as evidence for what \textit{ny\'{\textturnv}\ng} is not: \ili{Ibibio} \textit{ny\'{\textturnv}\ng} clauses are not SVCs. Instead, \textit{ny\'{\textturnv}\ng} clauses exhibit parataxis. Moreover, \textit{ny\'{\textturnv}\ng} is verb-like in that it bears agreement and can be negated, but it also bears non-verb-like properties, such as the inability to undergo contrastive \isi{verb focus}. 
@@ -297,18 +320,18 @@ Evidence for this comes from \textit{wh}-\isi{movement}. Neither the object in t
 
 \ea\label{ex:duncan-et-al:13}
 \ea[]{
-\gll \'{A}-m\`{a} \'{a}-d\'{i}\'{a} \`{a}d\'{e}s\`{i} \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng.\\
-3{\sg-\pst} 3{\sg}-eat rice 3{\sg}-and 3{\sg}-drink palmwine \\
+\gll \'{A}-mà á-díá àdésì \textbf{á-ny\'{\textturnv}\ng} á-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng.\\
+3{\SG-\PST} 3{\SG}-eat rice 3{\SG}-and 3{\SG}-drink palmwine \\
 \glt `She ate rice and drank palmwine.'
 }
 \ex[*]{
-\gll \`{N}s\v{o} k\'{e} \'{a}-k\'{e}-d\'{i}\'{a} \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng? \\
-what {\foc} 3{\sg-\pst.\foc}-eat 3{\sg}-and 3{\sg}-drink palmwine \\
+\gll \`{N}s\v{o} ké á-ké-díá \textbf{á-ny\'{\textturnv}\ng} á-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng? \\
+what {\FOC} 3{\SG-\PST.\FOC}-eat 3{\SG}-and 3{\SG}-drink palmwine \\
 \glt (Intended: `What$_i$ did she eat \textit{t}$_i$ and drink palmwine?')
 }
 \ex[*]{
-\gll \`{N}s\v{o} k\'{e} \'{a}-k\'{e}-d\'{i}\'{a} \`{a}d\'{e}s\`{i} \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-\ng w\'ɔ\ng? \\
-what {\foc} 3{\sg-\pst.\foc}-eat rice 3{\sg}-and 3{\sg}-drink \\
+\gll \`{N}s\v{o} ké á-ké-díá àdésì \textbf{á-ny\'{\textturnv}\ng} á-\ng w\'ɔ\ng? \\
+what {\FOC} 3{\SG-\PST.\FOC}-eat rice 3{\SG}-and 3{\SG}-drink \\
 \glt (Intended: `What$_i$ did she eat rice and drink \textit{t}$_i$?')
 }
 \z
@@ -318,8 +341,8 @@ what {\foc} 3{\sg-\pst.\foc}-eat rice 3{\sg}-and 3{\sg}-drink \\
 
 \ea\label{ex:duncan-et-al:14}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \`{N}s\v{o} k\'{e} \'{a}-k\'{e}-d\'{i}\'{a} \textbf{\'{a}-ny\'{\textturnv}\ng} \'{a}-\ng w\'ɔ\ng? \\
-what {\foc} 3{\sg-\pst.\foc}-eat 3{\sg}-and 3{\sg}-drink \\
+\gll \`{N}s\v{o} ké á-ké-díá \textbf{á-ny\'{\textturnv}\ng} á-\ng w\'ɔ\ng? \\
+what {\FOC} 3{\SG-\PST.\FOC}-eat 3{\SG}-and 3{\SG}-drink \\
 \glt `What$_i$ did she eat \textit{t}$_i$ and drink \textit{t}$_i$?'
 \z
 
@@ -329,44 +352,44 @@ what {\foc} 3{\sg-\pst.\foc}-eat 3{\sg}-and 3{\sg}-drink \\
 
 \ea\label{ex:duncan-et-al:15}
 \ea[]{
-\gll \`{N}s\v{o} k\'{e} \'{a}-k\'{e}/*m\`{a} \'{a}-n\'{a}m?\\
-what {\foc} 3{\sg-\pst.\foc}/*{\pst} 3{\sg}-do \\
+\gll \`{N}s\v{o} ké á-ké/*mà á-nám?\\
+what {\FOC} 3{\SG-\PST.\FOC}/*{\PST} 3{\SG}-do \\
 \glt `What did she do?'
 }
 \ex[]{
-\gll \'{A}-k\'{e} \'{a}-n\'{a}m \`{n}s\v{o}? \\
-3{\sg-\pst.\foc} 3{\sg}-do what \\
+\gll \'{A}-ké á-nám ǹs\v{o}? \\
+3{\SG-\PST.\FOC} 3{\SG}-do what \\
 \glt `What did she do?'
 }
 \ex[]{
-\gll \'{A}-m\`{a} \'{a}-n\'{a}m \`{n}s\v{o}? \\
-3{\sg-\pst} 3{\sg}-do what \\
+\gll \'{A}-mà á-nám ǹs\v{o}? \\
+3{\SG-\PST} 3{\SG}-do what \\
 \glt `She did what?'
 }
 \z
 \z
 
-\noindent Whether overt or covert, \={A}-extraction is signaled by the use of special \isi{focus} tense morphology. In (\ref{ex:duncan-et-al:15}a-b), for example, the \isi{tense marker} \textit{k\'{e}}- is obligatory for \isi{past tense}; use of the unmarked past \isi{tense marker} \textit{m\`{a}} produces ungrammaticality when extraction is overt, or else it signals an echo question, as in (\ref{ex:duncan-et-al:15}c).
+\noindent Whether overt or covert, \={A}-extraction is signaled by the use of special \isi{focus} tense morphology. In (\ref{ex:duncan-et-al:15}a-b), for example, the \isi{tense marker} \textit{ké}- is obligatory for \isi{past tense}; use of the unmarked past \isi{tense marker} \textit{mà} produces ungrammaticality when extraction is overt, or else it signals an echo question, as in (\ref{ex:duncan-et-al:15}c).
 
 These facts help us further diagnose the presence of \isi{coordination} in \textit{ny\'{\textturnv}\ng} clauses. Interestingly, with verbal \isi{coordination} the object \textit{wh}-question can remain {in situ} in the second conjunct with no overt object in the first conjunct (\ref{ex:duncan-et-al:16}a), but the reverse does not hold (\ref{ex:duncan-et-al:16}b).\footnote{It is also possible to leave an ordinary NP object in the first conjunct and have an object \textit{wh}-element in the second.
 
 \ea\label{ex:duncan-et-al:i}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \`{A}-k\'{e} \`{a}-d\'{i}\'{a} \'{a}d\'{e}s\'{i} \`{a}-ny\'{\textturnv}\ng~ \`{a}-\ng w\'ɔ\ng~ \`{n}s\v{o}? \\
-2{\sg-\pst.\foc} 2{\sg}-eat rice 2{\sg}-and 2{\sg}-drink what \\
+\gll \`{A}-ké à-díá ádésí à-ny\'{\textturnv}\ng~ à-\ng w\'ɔ\ng~ ǹs\v{o}? \\
+2{\SG-\PST.\FOC} 2{\SG}-eat rice 2{\SG}-and 2{\SG}-drink what \\
 \glt `You ate rice and drank what?'
 \z
 However, this blocks the wide \isi{scope} interpretation and forces an echo reading. It appears that the presence of the object `rice' in (i) blocks covert ATB \isi{movement}.}
 
 \ea\label{ex:duncan-et-al:16}
 \ea[]{
-\gll \`{A}-k\'{e} \`{a}-d\'{i}\'{a} \`{a}-ny\'{\textturnv}\ng~ \`{a}-\ng w\'ɔ\ng~ \`{n}s\v{o}? \\
-2{\sg-\pst.\foc} 2{\sg}-eat 2{\sg}-and 2{\sg}-drink what \\
+\gll \`{A}-ké à-díá à-ny\'{\textturnv}\ng~ à-\ng w\'ɔ\ng~ ǹs\v{o}? \\
+2{\SG-\PST.\FOC} 2{\SG}-eat 2{\SG}-and 2{\SG}-drink what \\
 \glt `What$_i$ did you eat \textit{t}$_i$ and drink \textit{t}$_i$?'
 }
 \ex[*]{
-\gll \`{A}-k\'{e} \`{a}-d\'{i}\'{a} \`{n}s\v{o} \`{a}-ny\'{\textturnv}\ng~ \`{a}-\ng w\'ɔ\ng? \\
-2{\sg-\pst.\foc} 2{\sg}-eat what 2{\sg}-and 2{\sg}-drink \\
+\gll \`{A}-ké à-díá ǹs\v{o} à-ny\'{\textturnv}\ng~ à-\ng w\'ɔ\ng? \\
+2{\SG-\PST.\FOC} 2{\SG}-eat what 2{\SG}-and 2{\SG}-drink \\
 \glt (Intended: `What did you eat and drink?')
 }
 \z
@@ -376,8 +399,8 @@ However, this blocks the wide \isi{scope} interpretation and forces an echo read
 
 \ea\label{ex:19:covert-ATB-two-obj}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \`{A}-k\'{e} \`{a}-d\'{i}\'{a} \`{n}s\v{o} \`{a}-ny\'{\textturnv}\ng~ \`{a}-\ng w\'ɔ\ng~ \`{n}s\v{o}? \\
-2{\sg-\pst.\foc} 2{\sg}-eat what 2{\sg}-and 2{\sg}-drink what \\
+\gll \`{A}-ké à-díá ǹs\v{o} à-ny\'{\textturnv}\ng~ à-\ng w\'ɔ\ng~ ǹs\v{o}? \\
+2{\SG-\PST.\FOC} 2{\SG}-eat what 2{\SG}-and 2{\SG}-drink what \\
 \glt `What did you eat and drink?'
 \z
 
@@ -393,13 +416,13 @@ In \sectref{sec:duncan-et-al:2} we argued against analyzing \textit{ny\'{\texttu
 
 \ea\label{ex:duncan-et-al:18}
 \ea[]{
-\gll \'{I}m\'{a} \'{a}-m\`{a} \'{a}-f\`{e}h\'{e} \'{i}t\`ɔk \textbf{\`{u}-s\'ɔp} \textbf{\`{u}-s\'ɔp}. \\
-Ima 3{\sg-\pst} 3{\sg}-run race {\nmlz}-do.quickly {\nmlz}-do.quickly \\
+\gll \'{I}má á-mà á-f\`{e}hé ít\`ɔk \textbf{ù-s\'ɔp} \textbf{ù-s\'ɔp}. \\
+Ima 3{\SG-\PST} 3{\SG}-run race {\NMLZ}-do.quickly {\NMLZ}-do.quickly \\
 \glt `Ima ran the race quickly.'
 }
 \ex[]{
-\gll \'{I}m\'{a} \'{a}-m\`{a} \textbf{\'{a}-s\'ɔp} \'{a}-f\`{e}h\'{e} \'{i}t\`ɔk. \\
-Ima 3{\sg-\pst} 3{\sg}-do.quickly 3{\sg}-run race \\
+\gll \'{I}má á-mà \textbf{á-s\'ɔp} á-f\`{e}hé ít\`ɔk. \\
+Ima 3{\SG-\PST} 3{\SG}-do.quickly 3{\SG}-run race \\
 \glt `Ima ran the race quickly.'
 }
 \z
@@ -411,8 +434,8 @@ Also like \textit{ny\'{\textturnv}\ng}, main verbs, and V$_1$s in SVCs, low prev
 
 \ea\label{ex:duncan-et-al:19}
 %\langinfo{Ibibio}{Niger-Congo}{personal knowledge}\\
-\gll \'{I}m\'{a} \'{i}-k\'{i}-\textbf{s\'ɔp-p\'ɔ} \'{i}-f\`{e}h\'{e} \'{i}t\`ɔk. \\
-Ima \textsc{i}-{\pst.\foc}.\textsc{i}-do.quickly-\textsc{neg} \textsc{i}-run race \\
+\gll \'{I}má í-kí-\textbf{s\'ɔp-p\'ɔ} í-f\`{e}hé ít\`ɔk. \\
+Ima \textsc{i}-{\PST.\FOC}.\textsc{i}-do.quickly-\textsc{neg} \textsc{i}-run race \\
 \glt `Ima didn't run the race quickly.'
 \z
 
@@ -422,8 +445,8 @@ Unlike main verbs and V$_1$s in SVCs---but like \textit{ny\'{\textturnv}\ng}---l
 
 \label{ex:duncan-et-al:20}
 \ea[*]{
-\gll \'{I}m\'{a} \'{a}-k\'{e} \textbf{\'{a}-s\`ɔ\'ɔ-s\'ɔp} \'{a}-f\`{e}h\'{e} \'{i}t\`ɔk. \\
-Ima 3{\sg-\pst.\foc} 3{\sg}-do.quickly-do.quickly 3{\sg}-run race \\
+\gll \'{I}má á-ké \textbf{á-s\`ɔ\'ɔ-s\'ɔp} á-f\`{e}hé ít\`ɔk. \\
+Ima 3{\SG-\PST.\FOC} 3{\SG}-do.quickly-do.quickly 3{\SG}-run race \\
 \glt (Intended: `Ima QUICKLY ran the race.')
 }
 \z
@@ -432,8 +455,8 @@ Ima 3{\sg-\pst.\foc} 3{\sg}-do.quickly-do.quickly 3{\sg}-run race \\
 
 \label{ex:duncan-et-al:21}
 \ea[*]{
-\gll \ldots \'{m}-f\'ɔp \`{u}n\`{a}m \textbf{\`{n}-ny\'{\textturnv}\ng} \textbf{\`{n}-ny\'{\textturnv}\ng}. \\
-1{\sg}-roast meat {\nmlz}-and {\nmlz}-and \\
+\gll \ldots \'{m}-f\'ɔp ùnàm \textbf{ǹ-ny\'{\textturnv}\ng} \textbf{ǹ-ny\'{\textturnv}\ng}. \\
+1{\SG}-roast meat {\NMLZ}-and {\NMLZ}-and \\
 \glt (Intended: `\ldots and I roasted meat.')
 }
 \z
@@ -444,13 +467,13 @@ Ima 3{\sg-\pst.\foc} 3{\sg}-do.quickly-do.quickly 3{\sg}-run race \\
 
 \ea\label{ex:duncan-et-al:22}
 \ea[]{
-\gll \'{M}-m\`{a} \'{a}-k\'{o}t \'{u}y\`{o} \`{m}f\`{o} \textbf{\'{n}-ny\'{\textturnv}\ng} \textbf{\'{n}-s\'ɔp} \'{n}-d\'{i}. \\
-1{\sg-\pst} 3{\sg}-hear voice your 1{\sg}-and 1{\sg}-do.quickly 1{\sg}-come \\
+\gll \'{M}-mà á-kót úy\`{o} \`{m}f\`{o} \textbf{ń-ny\'{\textturnv}\ng} \textbf{ń-s\'ɔp} ń-dí. \\
+1{\SG-\PST} 3{\SG}-hear voice your 1{\SG}-and 1{\SG}-do.quickly 1{\SG}-come \\
 \glt `I heard your voice and came quickly.'
 }
 \ex[*]{
-\gll \'{M}-m\`{a} \'{a}-k\'{o}t \'{u}y\`{o} \`{m}f\`{o} \textbf{\'{n}-s\'ɔp} \textbf{\'{n}-ny\'{\textturnv}\ng} \'{n}-d\'{i}. \\
-1{\sg-\pst} 3{\sg}-hear voice your 1{\sg}-do.quickly 1{\sg}-and 1{\sg}-come \\
+\gll \'{M}-mà á-kót úy\`{o} \`{m}f\`{o} \textbf{ń-s\'ɔp} \textbf{ń-ny\'{\textturnv}\ng} ń-dí. \\
+1{\SG-\PST} 3{\SG}-hear voice your 1{\SG}-do.quickly 1{\SG}-and 1{\SG}-come \\
 \glt (Intended: `I heard your voice and came quickly.')
 }
 \z
@@ -470,13 +493,13 @@ Though the ordering of \textit{ny\'{\textturnv}\ng} is fairly predictable on acc
 
 \ea\label{ex:duncan-et-al:24}
 \ea[]{
-\gll \ldots \'{m}-m\`{a} \textbf{\'{n}-s\'{e}} \textbf{\'{n}-ny\'{\textturnv}\ng} \'{n}-t\'{i}mm\'{e} \'{n}-k\`{e}n\'{e} \'{m}-f\'ɔp \`{u}n\`{a}m.\\
-1{\sg-\pst} 1{\sg}-\textsc{hab} 1{\sg}-and 1{\sg}-repeat 1{\sg}-emulate 1{\sg}-roast meat \\
+\gll \ldots \'{m}-mà \textbf{ń-sé} \textbf{ń-ny\'{\textturnv}\ng} ń-tímmé ń-k\`{e}né \'{m}-f\'ɔp ùnàm.\\
+1{\SG-\PST} 1{\SG}-\textsc{hab} 1{\SG}-and 1{\SG}-repeat 1{\SG}-emulate 1{\SG}-roast meat \\
 \glt `\ldots and I also again with other folks had been roasting meat.'
 }
 \ex[]{
-\gll \'{N}-kp\'{a} \'{n}-k\'{e} \'{n}-s\'{e} \'{n}-k\'{o}\'{o}t \`{n}w\`{e}t (\'{n}-kp\'{a} \'{n}-k\'{e}) \textbf{\'{n}-ny\'{\textturnv}\ng} \textbf{\'{n}-s\'{e}} \'{m}-br\v{e} \`{m}-br\v{e}\ldots \\
-1{\sg-\cond} 1{\sg-\pst.\foc} 1{\sg}-\textsc{hab} 1{\sg}-read.{\pl} book 1{\sg-\cond} 1{\sg-\pst.\foc} 1{\sg}-and 1{\sg}-\textsc{hab} 1{\sg}-play {\nmlz}-play \\
+\gll \'{N}-kpá ń-ké ń-sé ń-kóót ǹw\`{e}t (ń-kpá ń-ké) \textbf{ń-ny\'{\textturnv}\ng} \textbf{ń-sé} \'{m}-br\v{e} \`{m}-br\v{e}\ldots \\
+1{\SG-\COND} 1{\SG-\PST.\FOC} 1{\SG}-\textsc{hab} 1{\SG}-read.{\PL} book 1{\SG-\COND} 1{\SG-\PST.\FOC} 1{\SG}-and 1{\SG}-\textsc{hab} 1{\SG}-play {\NMLZ}-play \\
 \glt `I would have read books and I would have played \ldots'
 }
 \z
@@ -485,8 +508,8 @@ Though the ordering of \textit{ny\'{\textturnv}\ng} is fairly predictable on acc
 \noindent Thus, \textit{ny\'{\textturnv}\ng} can potentially attach above or below AspP, but it must always be below MoodP, TP, and NegP, and above \textit{v}P.
 
 \ea\label{ex:duncan-et-al:25}
-\gll \ldots \'{n}-kp\'{e} \'{n}-k\'{e} \textbf{\'{i}-ny\'{\textturnv}\ng-\ng \'ɔ} \textbf{\'{n}-s\'{e}} \'{m}-br\v{e} \`{m}-br\v{e}. \\
-1{\sg-\cond} 1{\sg-\pst.\foc} \'{i}-and-\textsc{neg} 1{\sg}-\textsc{hab} 1{\sg}-play {\nmlz}-play \\
+\gll \ldots ń-kpé ń-ké \textbf{í-ny\'{\textturnv}\ng-\ng \'ɔ} \textbf{ń-sé} \'{m}-br\v{e} \`{m}-br\v{e}. \\
+1{\SG-\COND} 1{\SG-\PST.\FOC} í-and-\textsc{neg} 1{\SG}-\textsc{hab} 1{\SG}-play {\NMLZ}-play \\
 \glt `\ldots and I wouldn't have played.'
 \z
 
@@ -496,7 +519,7 @@ Taken together, the data from this section shows that \textit{ny\'{\textturnv}\n
 \caption{Properties of verbs, low adverbs, and \textit{ny\'{\textturnv}\ng}.}
 \label{tab:2:properties}
 \fittable{
- \begin{tabular}{lcccc} % add l for every additional column or remove as necessary
+ \begin{tabularx}{\textwidth}{Xcccc} % add l for every additional column or remove as necessary
   \lsptoprule
             & S-agreeing & Negatable & Focusable & Postverbal \\ %table header
             &  &  & contrastively & \\
@@ -505,7 +528,7 @@ Taken together, the data from this section shows that \textit{ny\'{\textturnv}\n
   Low preverbal adverbs  &   Y &    Y  &    N &    Y  \\
   \textit{Ny\'{\textturnv}\ng}  &   Y &   Y &    N    & N \\
   \lspbottomrule 
- \end{tabular}
+ \end{tabularx}
  \label{tab:duncan-et-al:2}
  }
 \end{table}
@@ -514,100 +537,100 @@ Taken together, the data from this section shows that \textit{ny\'{\textturnv}\n
 
 %\section{Other (ad)verby things that co-occur with or replace \textit{ny\'{\textturnv}\ng}}
 
-%In addition to \textit{ny\'{\textturnv}\ng}, \ili{Ibibio} has two other (ad)verb-like elements---\textit{t\'{i}mm\'{e}} `do again' and \textit{k\`{e}n\'{e}} `emulate'---which bear distributional and semantic affinity to \textit{ny\'{\textturnv}\ng}. In this section, we discuss some of the properties of these elements to offer a more rounded discussion of what \textit{ny\'{\textturnv}\ng} may be.
+%In addition to \textit{ny\'{\textturnv}\ng}, \ili{Ibibio} has two other (ad)verb-like elements---\textit{tímmé} `do again' and \textit{k\`{e}né} `emulate'---which bear distributional and semantic affinity to \textit{ny\'{\textturnv}\ng}. In this section, we discuss some of the properties of these elements to offer a more rounded discussion of what \textit{ny\'{\textturnv}\ng} may be.
 
-%First, both \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} participate in \ili{Ibibio}'s robust system of \isi{subject agreement}.
+%First, both \textit{tímmé} and \textit{k\`{e}né} participate in \ili{Ibibio}'s robust system of \isi{subject agreement}.
 
 %\ea
 %\ea[]{
-%\gll \'{M}-m\`{a} \'{u}-k\'{o}t \textbf{\'{n}-t\'{i}mm\'{e}} \'{u}-w\`{e}t.\\
-%1{\sg-\pst} 2{\sg}-call 1{\sg}-do.again 2{\sg}-write \\
+%\gll \'{M}-mà ú-kót \textbf{ń-tímmé} ú-w\`{e}t.\\
+%1{\SG-\PST} 2{\SG}-call 1{\SG}-do.again 2{\SG}-write \\
 %\glt `I called you and wrote you again.'
 %}
 %\ex[]{
-%\gll \'{E}kp\^{e} \'{a}-m\`{a} \'{a}-b\'{a}r\'{a} \`{i}k\'{a}\ng~ \textbf{\'{a}-k\`{e}n\'{e}} \'{a}-f\'ɔp \`{u}n\`{a}m.\\
-%Ekpe 3{\sg-\pst} 3{\sg}-ignite fire 3{\sg}-emulate 3{\sg}-roast meat \\
+%\gll \'{E}kpê á-mà á-bárá ìká\ng~ \textbf{á-k\`{e}né} á-f\'ɔp ùnàm.\\
+%Ekpe 3{\SG-\PST} 3{\SG}-ignite fire 3{\SG}-emulate 3{\SG}-roast meat \\
 %\glt `Ekpe started a fire and (in addition to others) roasted meat.'
 %}
 %\z
 %\z
 
-%\noindent Structurally, these two elements appear in the same general vicinity as does \textit{ny\'{\textturnv}\ng}. That is, they all surface preverbally in what is or appears to be the second of two conjuncts. Together with \textit{ny\'{\textturnv}\ng}, then, these elements both seem to ``link'' clauses in some way. Semantically, they encode some rough approximation of ``doing again'' or doing ``in addition to.'' For \textit{t\'{i}mm\'{e}}, the \isi{focus} seems to be on a subsequent iteration of the same type of action, whereas \textit{k\`{e}n\'{e}} orients more toward modifying the \isi{subject} rather than the event itself.
+%\noindent Structurally, these two elements appear in the same general vicinity as does \textit{ny\'{\textturnv}\ng}. That is, they all surface preverbally in what is or appears to be the second of two conjuncts. Together with \textit{ny\'{\textturnv}\ng}, then, these elements both seem to ``link'' clauses in some way. Semantically, they encode some rough approximation of ``doing again'' or doing ``in addition to.'' For \textit{tímmé}, the \isi{focus} seems to be on a subsequent iteration of the same type of action, whereas \textit{k\`{e}né} orients more toward modifying the \isi{subject} rather than the event itself.
 
 %All three elements can co-occur, as seen in (29):
 
 %\protectedex{
 %\ea\label{ex:29:nyung-timme-kene}
-%\gll \'{M}-m\`{a} \'{m}-b\'{a}r\'{a} \`{i}k\'{a}\ng~ \'{m}-m\`{a} \textbf{\'{n}-ny\'{\textturnv}\ng} \textbf{\'{n}-t\'{i}mm\'{e}} \textbf{\'{n}-k\`{e}n\'{e}} \'{n}-s\'ɔp \'{m}-f\'ɔp \`{u}n\`{a}m. \\
-%1{\sg-\pst} 1{\sg}-ignite fire 1{\sg-\pst} 1{\sg}-and 1{\sg}-do.again 1{\sg}-emulate 1{\sg}-do.quickly 1{\sg}-roast meat \\
+%\gll \'{M}-mà \'{m}-bárá ìká\ng~ \'{m}-mà \textbf{ń-ny\'{\textturnv}\ng} \textbf{ń-tímmé} \textbf{ń-k\`{e}né} ń-s\'ɔp \'{m}-f\'ɔp ùnàm. \\
+%1{\SG-\PST} 1{\SG}-ignite fire 1{\SG-\PST} 1{\SG}-and 1{\SG}-do.again 1{\SG}-emulate 1{\SG}-do.quickly 1{\SG}-roast meat \\
 %\glt `I started a fire and also again (along with other folks) roasted meat.'
 %\z
 %}
 
-%\noindent Here, all three surface before the low preverbal adverb `quickly', which begins to hint at structural properties of each. Like \textit{ny\'{\textturnv}\ng} (/main verbs/V$_1$s in V$_1$ V$_n$ sequences/low adverbs), both \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} can be negated:
+%\noindent Here, all three surface before the low preverbal adverb `quickly', which begins to hint at structural properties of each. Like \textit{ny\'{\textturnv}\ng} (/main verbs/V$_1$s in V$_1$ V$_n$ sequences/low adverbs), both \textit{tímmé} and \textit{k\`{e}né} can be negated:
 
 %\ea\label{ex:30:timme-kene-negated}
-%\gll \ldots \'{n}-k\'{e} \textbf{\'{i}-t\'{i}mm\'{e}/k\`{e}n\'{e}-k\'{e}} \'{m}-f\'ɔp \`{u}n\`{a}m. \\
-%1{\sg-\pst.\foc} \textsc{i}-do.again/emulate-\textsc{neg} 1{\sg}-roast meat \\
+%\gll \ldots ń-ké \textbf{í-tímmé/k\`{e}né-ké} \'{m}-f\'ɔp ùnàm. \\
+%1{\SG-\PST.\FOC} \textsc{i}-do.again/emulate-\textsc{neg} 1{\SG}-roast meat \\
 %\glt ‘\ldots I didn't roast meat again/with others.’
 %\z
 
 %\noindent Once again, \textit{ny\'{\textturnv}\ng} is observed to be like a chameleon, in that it resembles other things in its morphosyntactic environment. 
 
-%Nevertheless, several key morphosyntactic features distinguish \textit{ny\'{\textturnv}\ng} from \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}}. The order in (29), for example, is fixed. Whenever more than one of the three elements is present, they appear in accordance with the following hiearchy:
+%Nevertheless, several key morphosyntactic features distinguish \textit{ny\'{\textturnv}\ng} from \textit{tímmé} and \textit{k\`{e}né}. The order in (29), for example, is fixed. Whenever more than one of the three elements is present, they appear in accordance with the following hiearchy:
 
 %\ea
-%\textit{ny\'{\textturnv}\ng} >> \textit{t\'{i}mm\'{e}} >> \textit{k\`{e}n\'{e}}
+%\textit{ny\'{\textturnv}\ng} >> \textit{tímmé} >> \textit{k\`{e}né}
 %\z
 
-%\noindent The fact that \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} follow---and thus presumably appear lower than---\textit{ny\'{\textturnv}\ng} is significant because it suggests that they do not occupy or compete for the same clausal position. 
+%\noindent The fact that \textit{tímmé} and \textit{k\`{e}né} follow---and thus presumably appear lower than---\textit{ny\'{\textturnv}\ng} is significant because it suggests that they do not occupy or compete for the same clausal position. 
 
 %This point is further reinforced by the behavior of each (a) with respect to the low \isi{focus} projection and (b) in relation to T$^0$. 
 
 %\ea
 %\ea[]{
-%\gll \'{A}-\textbf{t\`{e}\'{e}-t\'{i}mm\'{e}} \`{a}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng?\\
-%2{\sg}-do.again-do.again 2{\sg}-drink palmwine \\
+%\gll \'{A}-\textbf{t\`{e}é-tímmé} à-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng?\\
+%2{\SG}-do.again-do.again 2{\SG}-drink palmwine \\
 %\glt `You are drinking palmwine AGAIN?'
 %}
 %\ex[]{
-%\gll \'{A}-\textbf{k\`{e}\'{e}-k\`{e}n\'{e}} \`{a}-\ng w\'ɔ\ng~ \'{u}k\'ɔt\'{n}s\`{\textturnv}\ng?\\
-%2{\sg}-emulate-emulate 2{\sg}-drink palmwine \\
+%\gll \'{A}-\textbf{k\`{e}é-k\`{e}né} à-\ng w\'ɔ\ng~ úk\'ɔtńs\`{\textturnv}\ng?\\
+%2{\SG}-emulate-emulate 2{\SG}-drink palmwine \\
 %\glt `You are FOLLOWING OTHERS in drinking palmwine?'
 %}
 %\ex[]{
-%\gll \'{M}-m\`{a} \'{u}-k\'{o}t \textbf{\'{m}-m\`{a}} *(\textbf{\'{n}-ny\'{\textturnv}\ng}) \textbf{\'{n}-t\'{i}mm\'{e}} \'{u}-w\`{e}t.\\
-%1{\sg-\pst} 2{\sg}-call 1{\sg-\pst} 1{\sg}-and 1{\sg}-do.again 2{\sg}-write \\
+%\gll \'{M}-mà ú-kót \textbf{\'{m}-mà} *(\textbf{ń-ny\'{\textturnv}\ng}) \textbf{ń-tímmé} ú-w\`{e}t.\\
+%1{\SG-\PST} 2{\SG}-call 1{\SG-\PST} 1{\SG}-and 1{\SG}-do.again 2{\SG}-write \\
 %\glt `I called you and I also wrote you again.'
 %}
 %\ex[]{
-%\gll \'{M}-m\`{a} \'{u}-k\'{o}t (*\textbf{\'{m}-m\`{a}}) \textbf{\'{n}-t\'{i}mm\'{e}} \'{u}-w\`{e}t.\\
-%1{\sg-\pst} 2{\sg}-call 1{\sg-\pst} 1{\sg}-and 1{\sg}-do.again 2{\sg}-write \\
+%\gll \'{M}-mà ú-kót (*\textbf{\'{m}-mà}) \textbf{ń-tímmé} ú-w\`{e}t.\\
+%1{\SG-\PST} 2{\SG}-call 1{\SG-\PST} 1{\SG}-and 1{\SG}-do.again 2{\SG}-write \\
 %\glt `I called you and wrote you again.'
 %}
 %\z
 %\z
 
-%\noindent In (32a-b), although the interrogative reading is unexpected, it is apparent that \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} can be contrastively focused. As noted above, this is a property of verbs, but not of \textit{ny\'{\textturnv}\ng}. The pair of sentences in (32c-d) showcase another important difference: only the presence of \textit{ny\'{\textturnv}\ng} can correlate with the presence of a second T$^0$. If \textit{ny\'{\textturnv}\ng} is removed, the second T$^0$ in (32b) makes the sentence ungrammatical. This suggests, in accordance with observations above, that \textit{ny\'{\textturnv}\ng} clauses are biclausal. 
+%\noindent In (32a-b), although the interrogative reading is unexpected, it is apparent that \textit{tímmé} and \textit{k\`{e}né} can be contrastively focused. As noted above, this is a property of verbs, but not of \textit{ny\'{\textturnv}\ng}. The pair of sentences in (32c-d) showcase another important difference: only the presence of \textit{ny\'{\textturnv}\ng} can correlate with the presence of a second T$^0$. If \textit{ny\'{\textturnv}\ng} is removed, the second T$^0$ in (32b) makes the sentence ungrammatical. This suggests, in accordance with observations above, that \textit{ny\'{\textturnv}\ng} clauses are biclausal. 
 
-%Consequently, although \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} share some properties with \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}}, they also showcase critical syntactic differences. Table 3 summarizes the properties of these three elements.
+%Consequently, although \textit{tímmé} and \textit{k\`{e}né} share some properties with \textit{tímmé} and \textit{k\`{e}né}, they also showcase critical syntactic differences. Table 3 summarizes the properties of these three elements.
 
 %\begin{table}
-%\caption{Properties of \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} compared to \textit{ny\'{\textturnv}\ng}.}
+%\caption{Properties of \textit{tímmé} and \textit{k\`{e}né} compared to \textit{ny\'{\textturnv}\ng}.}
 %\label{tab:3:properties2}
 % \begin{tabular}{lllllll} % add l for every additional column or remove as necessary
 %  \lsptoprule
 %            & S-agreeing & Negatable & Precede & Focusable & Introduce & Coordinate \\ %table header
 %            &  &  & low adverbs & contrastively & T$^0$ & clauses \\
 %  \midrule
-%  \textit{T\'{i}mm\'{e}}        &   Y &    Y  &    Y & Y & N & N \\
-%  \textit{K\`{e}n\'{e}}         &   Y &    Y  &    Y & Y & N & N \\
+%  \textit{Tímmé}        &   Y &    Y  &    Y & Y & N & N \\
+%  \textit{K\`{e}né}         &   Y &    Y  &    Y & Y & N & N \\
 %  \textit{Ny\'{\textturnv}\ng}  &   Y &    Y  &    Y & N & Y & Y \\
 %  \lspbottomrule
 % \end{tabular}
 %\end{table}
 
-%\noindent The most important distinctions are apparent when comparing the values of the properties in the right half of the table. Together with the hiearchical ordering in (31), (in)ability to undergo contrastive \isi{verb focus} suggests that \textit{ny\'{\textturnv}\ng} is located outside of the c-command domain of low Foc$^0$, whereas the other elements are inside this domain. Given that only \textit{ny\'{\textturnv}\ng} can introduce T$^0$, we conclude that \textit{t\'{i}mm\'{e}} and \textit{k\`{e}n\'{e}} merely give the illusion of clausal \isi{coordination}, though they may, in fact, be a type of \isi{serial verb} construction that can occur within the second conjunct of a coordinate structure.
+%\noindent The most important distinctions are apparent when comparing the values of the properties in the right half of the table. Together with the hiearchical ordering in (31), (in)ability to undergo contrastive \isi{verb focus} suggests that \textit{ny\'{\textturnv}\ng} is located outside of the c-command domain of low Foc$^0$, whereas the other elements are inside this domain. Given that only \textit{ny\'{\textturnv}\ng} can introduce T$^0$, we conclude that \textit{tímmé} and \textit{k\`{e}né} merely give the illusion of clausal \isi{coordination}, though they may, in fact, be a type of \isi{serial verb} construction that can occur within the second conjunct of a coordinate structure.
 
 \section{Conclusion}\label{sec:duncan-et-al:6}
 
@@ -622,7 +645,7 @@ In our approach to \textit{ny\'{\textturnv}\ng} we largely focused on delineatin
  
 \section*{Abbreviations}\label{sec:duncan-et-al:abbreviations}
 
-Abbreviations follow the 2015 Leipzig Glossing Rules, with one addendum: \textsc{i} = \isi{default agreement} marker /\'{i}/, following \citet{baker2010agreement}.
+Abbreviations follow the 2015 Leipzig Glossing Rules, with one addendum: \textsc{i} = \isi{default agreement} marker /í/, following \citet{baker2010agreement}.
 
 \section*{Acknowledgements}\label{sec:duncan-et-al:acknowledgments}
 
