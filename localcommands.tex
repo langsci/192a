@@ -3,10 +3,7 @@
 \newcommand{\downingtriple}[3]{\parbox{4.5cm}{#1}\parbox{3cm}{#2}\parbox{3cm}{#3}}
 \newcommand{\downingdouble}[2]{\parbox{4.5cm}{#1}\parbox{5cm}{#2}}
 \newcommand{\downingquint}[5]{\parbox{1.75cm}{#1}\parbox{2.25cm}{#2}\parbox{2cm}{#3}\parbox{3cm}{#4}\parbox{2cm}{#5}}
-
-\makeatletter
-\def\blx@maxline{77}
-\makeatother
+ 
 
 %commands for Kusmer paper below
 \newcommand{\ip}{$\upiota$}
@@ -79,10 +76,10 @@
 \newfontfamily\amharicfont[Script = Ethiopic, Scale = 1.0]{AbyssinicaSIL}
 \newcommand{\amh}[1]{{\amharicfont #1}}
 
-
-%Gjersoe
+% 
+% %Gjersoe
 \usepackage{textgreek}
-
+% 
 \newcommand{\viol}{\fontfamily{MinionPro-OsF}\selectfont\rotatebox{60}{$\star$}}
 \newcommand{\myscalex}{0.45}
 \newcommand{\myscaley}{0.65}
@@ -90,9 +87,7 @@
 %\newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\epen}[1]{\colorbox{jgray}{#1}}
 \newcommand{\hand}{{\normalsize \ding{43}}}
-\definecolor{jgray}{gray}{0.8}
-\setlength\columnsep{8pt}
-\setlength{\intextsep}{3pt plus 2pt}
+\definecolor{jgray}{gray}{0.8} 
 \usetikzlibrary{positioning}
 \usetikzlibrary{matrix}
 \newcommand{\mora}{\textmu\xspace}
@@ -876,3 +871,4 @@
 \end{minipage}
 }  
   
+\newcommand{\ilit}[1]{#1\il{#1}}  
