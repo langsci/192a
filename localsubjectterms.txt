@@ -1,0 +1,200 @@
+agreement marker
+airstream mechanism
+alignment constraint
+amplitude increase
+animacy
+animate feature
+aorist
+aspect
+assertive phrase
+attention-getting gesture
+auxiliary
+basic vocabulary
+bilabial click
+boundary tone
+case assignment
+case feature
+case feature
+cheek expansion
+choice function
+clause structure
+clause type
+click
+click
+click loss
+closure duration
+common ground
+complementary distribution
+complement clause
+complementizer agreement
+completive aspect
+conditional
+conjoint
+consecutive
+contrastive click
+contrastive focus
+contrastive interpretation
+coordination
+coordination
+copula
+copula clause
+coronal place
+default agreement
+default place
+definite determiner
+depressor consonant
+direct object
+direct speech
+disjoint
+disjoint analysis
+dorsal place
+double object
+downstepped h
+embedded clause
+emphatic pronoun
+english code-mixing
+exhaustive focus
+existential quantifier
+f0
+f0 contour
+falling tone
+false accusation
+feminine
+final vowel
+first person
+floating h tone
+floating l tone
+focus
+focus particle
+free variation
+functional load
+gap position
+gender
+glottal constriction
+gradual place assimilation
+grammatical accent
+grammatical subject
+grammatical tone
+harmonic improvement
+headedness
+head raising
+identificational focus
+ideophone
+imperfective suffix
+impersonal
+implicit argument
+indirect object
+infinitive clause
+information focus
+information structure
+ingressive airstream
+in-situ focus
+intonational phrase
+inverse scope
+language contact
+left-dislocation
+lenition
+lexical borrowing
+lexical frequency
+lexical tone
+linguistic area
+liquid
+locality
+long-distance dependency
+main clause
+markedness constraint
+masculine
+maximal phonological phrase
+melodic tone
+movement
+negation
+negative particle
+negative verb
+nominalized verb
+nominative
+non-standard negation
+noun class
+noun complement
+noun complement clause
+noun phrase
+object dislocation
+object marker
+object market
+object pronoun
+object right-dislocation
+object shift
+overt movement
+past tense
+perfect
+phonemic inventory
+phonological form
+phonological phrase
+phrasal stress
+phrasal tone
+pitch pattern
+plural form
+positional faithfulness
+predicate coordination
+primary phonemic system
+progressive place assimilation
+pronoun
+prosodic phrasing
+prosodic structure
+quality modification
+quantification
+register
+register feature
+regressive assimilation
+relative clause
+right edge
+rising tone
+scope
+scope economy
+secondary predicate
+second person
+selection
+semantic composition
+semantic extension
+semantic type
+serial verb
+spectral slope
+speech community
+splitting verb
+stem modification
+stress language
+stress system
+subject
+subject agreement
+subject marker
+subject pronoun
+subordinate clause
+suffix vowel shortening
+supralaryngeal cavity
+switch-reference
+syllable structure
+syntactic movement
+temporal adverb
+tense marker
+third person
+tonal root node
+tone
+tone span
+transition vowel
+universal quantifier
+velar nasal
+verbal gesture
+verbal inflection
+verbal morphology
+verb focus
+verb movement
+verum focus
+voiced obstruent
+voice quality
+voicing amplitude
+vowel deletion
+vowel harmony
+vowel inventory
+vowel length
+vowel quality
+vowel shortening
+yesterday past

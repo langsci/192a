@@ -1,0 +1,236 @@
+% -*- coding: utf-8 -*-
+%\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper
+,newtxmath
+,modfonts
+,nonflat]{langsci/langscibook} 
+% \bibliography{localbibliography}  
+
+\author{Wendell Kimper\affiliation{University of Manchester}\and Wm. G. Bennett\affiliation{University of Calgary and Rhodes University}\and Christopher R. Green\affiliation{Syracuse University}\lastand Kristine Yu\affiliation{University of Massachusetts at Amherst}}
+\title{Acoustic correlates of harmony classes in Somali} 
+\abstract{In this paper, we present pilot data from a small number of native speakers of Somali, investigating the acoustic correlates of the tongue root and/or voice quality feature relevant to vowel harmony in that language.  We find statistically detectable differences along the predicted acoustic dimensions (on the basis of previous articulatory descriptions), and use linear discriminant analysis (LDA) to extend classifications to previously-uncategorized items. However, we find no clear evidence that these differences are categorical or phonological.}
+\maketitle
+
+\begin{document}
+
+\section{Introduction}
+
+The \isi{vowel inventory} of \ili{Somali} (East Cushtic) is commonly described as containing five major vowel categories $\lbrace$i,e,a,o,u$\rbrace$, each of which is contrastive for length and (purportedly) for an additional feature that has been variously described as \textsc{front/back} \citep{Andrzejewski1955}, \textsc{$\pm$atr} \citep{Saeed1993}, \textsc{tense/lax} \citep{Greenetal2015}, and (aryepiglotallically) \textsc{sphinctered/expanded} \citep{Edmondsonetal2004}. This last feature is of particular interest, since it is implicated in a phonological process of \isi{vowel harmony} that \cite{Andrzejewski1955} describes as extending iteratively beyond word boundaries.  If this description is accurate, \ili{Somali} may constitute the sole putative case of truly iterative harmony beyond word boundaries.
+
+However, investigating this harmony process in \ili{Somali} presents a number of interesting analytical challenges.  The relevant feature contrast is neither represented orthographically nor noted in dictionaries of the language, a relatively small number of lexical items have been described as belonging to one class or the other, and there are few minimal pairs.  Furthermore, \cite{Andrzejewski1955} describes inter-speaker and dialect variation with respect to lexical classification.  Finally, the articulatory dimensions ascribed to the relevant feature contrasts is acoustically diffuse, making clear identification of feature values difficult without articulatory data.
+
+In this paper, we present acoustic data from four native speakers of \ili{Somali}, with the aim of describing the acoustic correlates of harmony classes and developing a method for classifying tokens of vowels whose feature values have not been described.  While we do find statistically significant differences between harmony classes along several acoustic dimensions relevant to tongue root and/or \isi{voice quality} features, we find no clear evidence to support a categorical phonological feature contrast, and instead suggest the possibility of a near merger between previously-distinct vowel categories.
+
+\section{Background}
+\label{background}
+
+The first necessary step towards categorising vowels along the relevant feature dimension is to identify its likely articulatory and acoustic correlates. \citeauthor{Andrzejewski1955} describes the difference between harmony classes as fronting or tongue advancement:
+
+\begin{quote}
+The difference between vowels of Series A and B is that the vowels of Series B are more `front', i.e. articulated with the mid part of the tongue more advanced towards the hard palate and teeth-ridge than the corresponding vowels of Series A. \citep{Andrzejewski1955}
+\end{quote}
+
+\noindent Throughout this paper, we follow \citeauthor{Andrzejewski1955} in adopting Series A and Series B as labels for the two harmony classes; minimal pairs can be seen in \tabref{tab:kbgy:1}.
+
+\begin{table}
+\begin{tabular}{lll}
+\lsptoprule
+	& {Series A}	& {Series B}\\\midrule
+\emph{dhis}	&`build' (Imper. Sg.)	&`he built'\\
+\emph{hel}	&`find' (Imper. Sg.)	&`he found'\\
+\emph{kab}	&`a sandal'				&`he set' (e.g. a fractured bone)\\
+\emph{qod}	&`dig' (Imper. Sg.)		&`he dug'\\
+\emph{tus}	&`show' (Imper. Sg.)	&`he showed'\\
+\emph{diiday}&`I fainted'			&`I refused'\\
+\emph{hees}	&`song'					&`he sang'\\
+\emph{laab}	&`chest (thorax)'		&`he folded'\\
+\emph{duushay}&`she flew'			&`she attacked'\\
+\lspbottomrule
+\end{tabular}
+\caption{Minimal pairs \citep{Andrzejewski1955}.}
+\label{tab:kbgy:1}
+\end{table}
+
+There is overlap between the retracted or backed tongue position characteristic of the Series A vowels and the coarticulatory effects of uvular and pharyngeal consonants in the language (i.e. [q] and [\textipa{X}]).  Indeed, of the items for which \citeauthor{Andrzejewski1955} provides a classification, only Series A items contain uvulars or pharyngeals.  For further discussion, see \sectref{up}.
+
+\cite{Edmondsonetal2004} provide a careful articulatory description of the difference between Series A and Series B vowels, using laryngoscopic data from a single native speaker of \ili{Somali}.  They argue that the main difference between Series A and Series B vowels is constriction or expansion of aryepiglottalic folds, describing the differences as in \REF{ex:kbgy:1}.  They also provide some acoustic data suggesting differences in F$_1$ and F$_2$ consistent with advancement or retraction of the tongue root, and oral airflow data showing that articulation of Series A vowels exhibit substantially lower airflow than Series B vowels.
+
+%does this have to be in ea format?
+\ea\label{ex:kbgy:1} \emph{Properties of Harmony Sets \citep{Edmondsonetal2004}}\\
+{Set 1 (Series A)}
+\begin{enumerate}
+\item Sphincteric compacting of the arytenoid-epiglottal aperture in the posterior-anterior dimension.
+\item Vowel quality that is more retracted.
+\item Voice quality that is tense.
+\end{enumerate}
+{Set 2 (Series B)}
+\begin{enumerate}
+\item Expansion of the arytenoid-epiglottal aperture in the anterior-posterior dimension.
+\item Vowel quality that is more fronted and/or raised.
+\item Voice quality that is lax.
+\end{enumerate}
+\z
+
+\cite{Edmondsonetal2004} note that these findings and previous descriptions are consistent with \textit{register} features, based primarily in \isi{voice quality} rather than supra-laryngeal articulation.  See e.g. \citet{Trigo1991} for further discussion of the relationship between tongue root and \isi{register} features. 
+
+Based on these previous descriptions, the acoustic dimensions under consideration in our study reflect the likely correlates of both \isi{register} and tongue root features.  
+
+Duration and F$_0$ have been found to be relevant for contrasts involving \isi{voice quality} \citep{EdmondsonLi1994,HalleStevens1969}, as has \isi{spectral slope} \citep{Kingstonetal1997}, since lax \isi{voice quality} results in a relative increase in the energy of the first harmonic.  In addition, \cite{Edmondsonetal2007} note that constriction in the aryepiglottic sphincter (as was found for Series A vowels) should result in a higher center of gravity.
+
+F$_1$ and F$_2$ are the most likely correlates of a process involving advancement or retraction of the tongue root \citep{Starwalt2008}.  F1 Bandwidth has also been shown to be relevant to timbre differences in tongue root contrasts in \ili{Akan} \citep{Hess1992} and other languages \citep{Starwalt2008}.  We have also included F$_3$ in the set of measurements, as it is involved in tongue root retraction in \ili{Arabic} pharyngealization \cite{Ghazeli1977}.
+
+\section{Methods}
+\label{methods}
+
+\subsection{Subjects and elicitation}
+
+The present data come from four native speakers of \ili{Somali}.  Speaker 1 (male) and Speaker 2 (female) are originally from regions in Northern Somalia; Speaker 3 (female) is originally from Central/Southern Somalia, and Speaker 4 (female) is originally from Central Somalia.  Speakers 1, 2, and 4 currently reside in US diaspora communities, while Speaker 4 resides in South Africa; all speak some \ili{English}.
+
+Elicitation sessions for Speakers 1--3 consisted primarily of establishing familiarity with lexical items (and grammaticality of sentences) from \cite{Andrzejewski1955}.  Clear repetitions were elicited for familiar lexical items, and additional items that the speakers volunteered were included for analysis.  Elicitation for Speaker 4 consisted of a list of monosyllabic words, with CVC structure and flat tones; all items were previously unclassified.
+
+\subsection{Data preparation}
+
+
+Measurements for F$_1$ bandwidth, \isi{spectral slope} (band energy difference) and center of gravity were taken at vowel midpoints using Praat \citep{praat}.  Duration was measured from vowel onset to vowel offset, and mean measurements for F$_{0-3}$ were taken across the middle 80\% of the vowel's duration.
+
+Only monophthongs were included in the  analysis.  The number of tokens of Series A, Series B, and unclasified vowels for each vowel category for each speaker is given in \tabref{tab:kbgy:2}.  To reduce collinearity and improve comparability, data were centered within each vowel category for each speaker.
+
+\begin{table}
+\begin{tabular}{c*{12}{r}}
+\lsptoprule
+   & \multicolumn{3}{c}{Speaker 1} & \multicolumn{3}{c}{Speaker 2} & \multicolumn{3}{c}{Speaker 3} & \multicolumn{3}{c}{Speaker 4} \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
+   & {A}        & {B}       & {U}        & {A}        & {B}        & {U}       & {A}        & {B}       &{ U}        & {A}        & {B}	 & {U }        \\\midrule\relax
+[u] & 24       & 12      & 89       & 23       & 9        & 43      & 0       & 0      & 0       &0&0& 70        \\
+{[i]} & 50       & 72      & 116      & 32       & 37       & 61      & 30       & 88      & 172      &0&0& 30        \\
+ {[a]} & 80       & 86      & 239      & 89       & 52       & 90      & 86       & 78      & 246      &0&0& 104       \\
+ {[o]} & 41       & 44      & 88       & 38       & 18       & 23      & 62       & 36      & 82       &0&0& 22        \\
+ {[e]} & 30       & 55      & 36       & 18       & 33       & 13      & 46       & 30      & 54       &0&0& 0       \\\midrule
+ & 225	& 269		& 568		& 200		& 149		& 230	& 224		& 232		& 554		&0&0& 226\\
+\lspbottomrule
+\end{tabular}
+\caption{Token counts for Series A, Series B, and unclassified vowels.}
+\label{tab:kbgy:2}
+\end{table}
+
+\section{Results}
+\label{results}
+
+\subsection{Acoustic correlates}
+\label{correlates}
+
+The first question to address is whether Series A and Series B vowels show significant differences along the predicted dimensions (and in the predicted directions).  Speakers have been analysed separately, since there is reason to expect inter-speaker variation \citep{Andrzejewski1955}.
+
+Because the relevant acoustic dimensions are collinear, linear models\footnote{Linear mixed effects models with random intercepts for either `word' or `sentence' were attempted, but rarely converged.} (with series and vowel category as predictors) were fitted separately for each acoustic dimension, excluding extreme outliers ($|z|>3$).  Bonferroni correction was applied ($\alpha/8$) to adjust for familywise error (corrected p-values are reported).  For those dimensions which showed a statistically significant difference between Series A and Series B, Hartigan's Dip Test for Unimodality was applied.  Data from Speaker 4 was excluded from this stage of the analysis, as it contained only unclassified tokens.
+
+\begin{figure}[p]
+\includegraphics[scale=1]{figures/s1-correlates.pdf}
+\caption{Density plots of Series A and Series B vowels for Speaker 1 (centered measurements, extreme outliers removed).  Dashed lines represent combined distributions; vertical lines represent series means; asterisks indicate statistically significant differences (after Bonferroni correction).}
+\label{fig:kbgy:1}
+\end{figure}
+
+
+
+\begin{figure}[p]
+\includegraphics[scale=1]{figures/s2-correlates.pdf}
+\caption{Density plots of Series A and Series B vowels for Speaker 2 (centered measurements, extreme outliers removed).  Dashed lines represent combined distributions; vertical lines represent series means; asterisks indicate statistically significant differences (after Bonferroni correction).}
+\label{fig:kbgy:2}
+\end{figure}
+
+
+\begin{figure}[p]
+\includegraphics[scale=1]{figures/s3-correlates.pdf}
+\caption{Density plots of Series A and Series B vowels for Speaker 3 (centered measurements, extreme outliers removed).  Dashed lines represent combined distributions; vertical lines represent series means; asterisks indicate statistically significant differences (after Bonferroni correction).}
+\label{fig:kbgy:3}
+\end{figure}
+
+Distributions and means for Speakers 1--3 can be seen in Figures~\ref{fig:kbgy:1}--\ref{fig:kbgy:3}.  Series A and Series B vowels differed in F$_1$ and F$_1$ bandwidth for all speakers (p $<$ 0.001), as well as \isi{spectral slope} (p $<$ 0.05 for Speaker 1; p $<$ 0.001 for Speakers 2--3). F$_2$ showed significant differences for Speakers 1--2 (p $<$ 0.001) but not for Speaker 3, F$_3$ was significant only for Speaker 2 (p $<$ 0.01), and center of gravity was significant only for Speaker 3 (p $<$ 0.05).  Neither duration nor F$_0$ showed significant differences for any speaker, however it is worth noting that \ili{Somali} has tonal and prosodic processes \citep{Greenetal2015} that were not controlled for in elicitations, potentially resulting in noise that could obscure relevant differences.
+
+Of the acoustic dimensions that showed significant differences, the only one to show any statistically detectable departure from unimodality was F$_1$ bandwidth, and only for Speaker 3.  Furthermore, the source of this multimodality may not be directly related to vowel series --- as can be seen in \figref{fig:kbgy:3}, while the lower mode appears to consist primarily of Series A observations, the higher mode shows substantial overlap between Series A and Series B.
+
+\subsection{Classification}
+\label{classification}
+
+Acoustic analysis of the previously-classified items shows that Series A and Series B items differ detectably along a number of the expected acoustic dimensions (F$_1$, F$_1$ bandwidth, F$_2$, F$_3$, center of gravity, and \isi{spectral slope}).  But do these differences pattern in a way that might allow listeners (or learners) to map acoustic realizations onto discrete phonological categories?  The small effect sizes and lack of detectable departure from unimodality found above provides cause for doubt.  In this section, we submit both classified and unclassified forms to cluster analysis, to determine the extent to which observations pattern into discoverable categories.
+
+For Speakers 1--3, data for both classified and unclassified tokens were subjected to k-means cluster analysis, using data from only those acoustic dimensions that had shown significant differences for any speaker in the previous stage of analysis.  Series A and Series B means were used as initial centers for the clusters, and the analysis was done separately for each speaker.\footnote{For Speaker 2, it was necessary to remove outliers prior to cluster analysis.} The results of cluster analysis matched prior classifications somewhat poorly --- 66\% of tokens for Speaker 1, 62\% for Speaker 2, and only 54\% for Speaker 3.\footnote{95\% Confidence Intervals: 62-70\% for Speaker 1, 54-64\% for Speaker 2, 49-58\% for Speaker 3.}  The sets of matched tokens for each speaker (all acoustic dimensions) served as training data for a linear discriminant analysis (LDA), which was then used to predict classification values for the full set of tokens for that speaker.
+
+For Speaker 4, Series A and Series B grand means from Speakers 1--3 served as the initial centers for k-means cluster analysis.  Additionally, an initial LDA was trained on pooled classification-matched data from Speakers 1--3 and used to predict classification values for data from Speaker 4.  Classifications from the cluster analysis and the initial LDA matched on 84\% of tokens; the set of matched tokens served as training data for a second LDA, which was then used to predict classification values for the full set of tokens from Speaker 4.
+
+The acoustic correlates of classes differed considerably between speakers --- the only acoustic dimension whose correlation with the discriminant was consistently medium-sized or larger was \isi{spectral slope} (medium for Speaker 1, large for Speakers 2--4).  All other acoustic dimensions showed medium-sized or larger correlations for at least one speaker, and all except F$_1$ bandwidth showed medium or larger correlations for three out of the four speakers.  As with the individual acoustic dimensions, the linear discriminant itself does not appear to show a bimodal distribution --- for all three speakers, Hartigan's Dip Test on failed to detect any departure from unimodality.
+
+\subsection{Lexical status}
+\label{lex}
+
+The match between the cluster analysis and previous classifications, while fairly poor, was nonetheless above chance for Speakers 1 and 2 (and marginal for Speaker 3, from whom there were fewer observations).  This suggests, as with the acoustic analysis, that there is some difference between Series A and Series B vowels that the cluster analysis is sensitive to.  However, as before, the unimodality of the linear discriminant casts doubt on the presence of clear categories.
+
+If the distinction between Series A and Series B vowels has \textit{contrastive} status as a phonological feature, it should be lexically specified --- we would therefore expect the realization of this feature to be consistent across tokens of an individual lexical item, and those tokens should be assigned to the same category in the classification procedure more often than expected by chance.
+
+Classifications for individual segments were compared across multiple tokens of each lexical item, and all items which appeared more than once were categorized as either \emph{invariant} or \emph{variant} --- for example, all 6 instances of the [i] in \emph{biyo} from Speaker 3 were classified as B, so this was categorized as invariant.  On the other hand, the initial-syllable [a] in \emph{dabqaad} from Speaker 2 was classified as A for 2 out of 4 tokens and B for the remainder, so it was categorized as variant.  Baseline frequencies of A and B classes (combined with the number of tokens for each item) were used to calculate the chance probability of invariance.  As can be seen in \figref{fig:kbgy:4}a, segements were invariant considerably more frequently than would  be expected by chance (p $<$ 0.001 for all speakers).
+
+
+\begin{figure}
+% TODO There seems to be an updated version on the Box?
+\includegraphics[scale=1]{figures/lexclass.pdf}
+\caption{Invariance of classification (a) among vowel tokens for each position of each word, (b) within individual word tokens, and (c) consistency of invariance across tokens of the same word.  Error bars represent 95\% Confidence Intervals; predicted values represent means of the chance probabilities for each item.}
+\label{fig:kbgy:4}
+\end{figure}
+
+For each word with more than one monopthong, consistency was examined between the vowels in each token.  For example, in one token of \emph{aha} from Speaker 1, both vowels were assigned to class A, so it was categorized as invariant.  On the other hand, in one token of \emph{culus} from Speaker 2, the first [u] was classified as B while the second was classified as A, so it was categorized as variant.  \figref{fig:kbgy:4}b shows that vowels within the same word token were classified consistently more frequently than would be expected by chance (p $<$ 0.001 for Speakers 1 and 3, p $<$ 0.01 for Speaker 2).\footnote{Calculations of chance probability were done under the assumption of independence, which does not entirely hold in this case --- vowel-to-vowel coarticulation influences the acoustic dimensions on which classification was based, and would be expected to slightly increase the likelihood of vowels in the same word token sharing the same classification.  As such, this result should be viewed with appropriate caution.}
+
+Turning to the purported minimal pairs, \figref{fig:kbgy:5} shows the high degree of  acoustic variability of tokens belonging to each member (compared with the differences between members).  There was also considerable variation in classification between tokens --- none were consistent across all speakers, and no speaker produced any minimal pairs where both members were consistently classified distinctly. 
+
+\begin{figure}
+\includegraphics[scale=1]{figures/notminimalpairs.pdf}
+\caption{Formant plots for minimal pairs, pooled data for all speakers.  Ellipses represent 90\% confidence; overlaid numbers represent the proportion tokens for each member of the pair that were classified as A.}
+\label{fig:kbgy:5}
+\end{figure}
+
+\subsection{Uvular and pharyngeal consonants}
+\label{up}
+
+Recall from Section \ref{background} that, for lexical items given classifications in \citet{Andrzejewski1955}, only Series A words contain uvular or pharyngeal consonants.  Could this be a possible source of the effects presented above?  If vowels in these words undergo (gradient) coarticulation, we would expect their presence in Series A (but not series B) to result in the kind of small but detectable differences in the acoustic correlates examined.  Additionally, because flanking consonants would be held constant among tokens of a single lexical item, we would expect this to result in increased consistency of classification.
+
+The acoustic analysis from Section \ref{correlates} was repeated for all subjects with items containing either uvular or pharyngeal segments removed.  The results were largely the same --- the effects for \isi{spectral slope} for Speaker 1 and center of gravity for Speaker 2 fell below the threshold for statistical significance, but the outcomes for all other measures for all three speakers were unchanged.  Likewise, the lexical consistency analysis was also repeated with items containing uvular or pharyngeal consonants removed.  For Speakers 1 and 2, the effect was retained --- classification was invariant across tokens of a single lexical item more  often than would be expected by chance.  However, for Speaker 2, the lexical consistency effect was not found in the absence of uvulars and pharyngeals.  
+
+These results suggest that coarticulatory effects are unable to fully explain either the acoustic difference between Series A and Series B vowels or the consistency of classification across tokens of individual lexical items.
+
+
+\section{Discussion}
+
+The aim of this study was to provide a detailed acoustic description of the feature distinguishing harmony sets in \ili{Somali}, to develop a method of classification that can be applied to vowels whose feature specification have not been described, and to begin to ascertain its phonological status in the language.  The data presented in the previous section show that there is considerable gradience and variability, but some clear patterns do emerge; a summary of results is presented in \tabref{tab:kbgy:3}.
+
+\begin{table}
+% \small
+\begin{tabular}{l*{12}{c}}
+\lsptoprule
+& \multicolumn{2}{c}{F$_1$}&\multicolumn{2}{c}{F$_1$ Band.} &\multicolumn{2}{c}{F$_2$}&\multicolumn{2}{c}{F$_3$}&\multicolumn{2}{c}{Sp. Slope}&\multicolumn{2}{c}{C. Grav.}	\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}
+Sp. 1	&\ding{52}		& \textbf{M}	&\ding{52}		& S	&\ding{52}		& \textbf{L}		&\ding{55}		& XS	&\ding{52}		& \textbf{M}	&\ding{55}		& S	\\
+Sp. 2	&\ding{52}		& \textbf{M	}&\ding{52}		& S	&\ding{52}		& XS	&\ding{52}		& \textbf{M}		&\ding{52}		& \textbf{L}	&\ding{55}		&\textbf{L}	\\
+Sp. 3	&\ding{52}		& S	&\ding{52}		& \textbf{M}	&\ding{55}		& \textbf{L}		&\ding{55}		& \textbf{L}		&\ding{52}		& \textbf{L}	&\ding{52}		& \textbf{L}	\\
+Sp. 4	&\textsc{n/a}	& \textbf{M}	&\textsc{n/a}	& S	&\textsc{n/a}	& \textbf{L}	&\textsc{n/a}	& \textbf{M}		&\textsc{n/a}	& \textbf{L}	&\textsc{n/a}	& \textbf{L}	\\
+\lspbottomrule
+\end{tabular}
+\caption{Summary of results of acoustic analysis and classification.  Checkmarks represent statistically significant effects, and effect sizes of correlation coefficients from classification are listed alongside.}
+\label{tab:kbgy:3}
+\end{table} 
+
+The most consistent acoustic correlates of harmony Series were F$_1$, F$_1$ bandwidth, and \isi{spectral slope}, which were statistically detectable for all subjects from whom previously classified items were avialable.  This is consistent with \cite{Edmondsonetal2004}'s articulatory findings --- constriction of the aryepiglottic fold should result in a lowered position of the tongue root, resulting in higher F$_1$, while the resulting effects on \isi{voice quality} predict a steeper \isi{spectral slope}.  It is not clear at present whether differences in F$_1$ bandwith are an independent measure of \isi{voice quality} or simply a reflection of the effects on F$_1$, since the two are highly correlated.  
+
+However, we find no clear evidence in this data for a categorical phonological distinction.  First, there is no detectable departure from unimodality along the relevant acoustic dimensions\footnote{The one exception here is F$_1$ bandwith for Speaker 3, but as mentioned above this might not be related to vowel series.}.  Additionally, the mean differences between previously-classified Series A and Series B vowels, while statistically detectable, are fairly small; for F$_1$ they range from 27.93 Hz for Speaker 1 ---  which is just barely above the just noticeable difference threshold for F$_1$ \citep{KewleyPort1995} --- to 57.89 Hz for Speaker 2.  
+
+The purported minimal pairs fared even worse, with a mean difference of 6.32 Hz for Speaker 1 and 14.98 Hz for Speaker 2, both of which fall below the threshold of perceptibility.\footnote{Speaker 3 did not produce a sufficient number of minimal pair tokens.}  There is therefore no evidence from this data that these actually are minimal pairs, at least for these speakers.  We have found fewer than a dozen minimal pairs described in the literature; of these, many minimally-distinct roots take obligatory suffixing morphology, and others are uncommon words that were not known to all of our speakers.  The remaining pairs show no differences that rise above the threshold of perceptibility.
+
+One finding that does provide a suggestion that vowel series distinctions might possibly be phonologically relevant is the lexical consistency of classification --- a given vowel exhibits similarities across different tokens of the lexical item it belongs to, resulting in consistent classification far higher than would be expected by chance.  This suggests that there is some lexically-specified property which affects vowels along the relevant acoustic dimensions. 
+
+The distinction between Series A and Series B vowels in \ili{Somali} seems, then, to have an intermediate status --- neither fully contrastive nor entirely absent.  This is consistent with a near merger \citep{Labovetal1972}, and suggests several avenues for further research.  First, data from a larger number of speakers and representing a more carefully balanced sample of lexical items is needed to be certain that the lack of categoricity is not a symptom of noisy data.  Additionally, perceptual data is needed to determine whether listeners are able to accurately distinguish minimal pairs.  
+
+\section{Conclusion}
+
+In this paper, we have presented pilot data from a small number of native speakers of \ili{Somali}, investigating the acoustic correlates of the tongue root and/or \isi{voice quality} feature relevant to \isi{vowel harmony} in that language.  We have found statistically detectable differences along the predicted acoustic dimensions (on the basis of previous articulatory descriptions) but no clear evidence that these differences are categorical or phonological, suggesting the possibility of a near merger.
+
+It is difficult to draw any broad conclusions with a small number of speakers, particular with respect to a phenomenon that has been described as \isi{subject} to dialect and individual variation.  However, it does seem likely from our data that the categorical distinction between Series A and Series B vowels is in the process of being lost in at least some varieties of \ili{Somali}.  Further research is warranted, with higher numbers of speakers from a broader variety of dialect regions, more controlled and balanced word lists, and a variety of elicitation tasks.
+
+{\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]}
+
+\end{document}

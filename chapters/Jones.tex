@@ -1,0 +1,605 @@
+% -*- coding: utf-8 -*-
+%\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper
+,newtxmath
+,modfonts
+,nonflat]{langsci/langscibook} 
+% \bibliography{localbibliography} 
+% \input{localpackages.tex}
+% \input{localhyphenation.tex}
+% \input{localcommands.tex}
+
+\title{Reconsidering tone and melodies in Kikamba}
+
+\author{Patrick Jones\affiliation{Georgetown University}\lastand Jake Freyer\affiliation{Brandeis University}}
+
+ 
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{JonesFreyerKambaformatted-img1.png}
+
+\abstract{
+The melodic tone system of Kikamba, as described by \citet{Roberts-Kohno2000,Roberts-Kohno2014}, stands out as particularly complex within the context of recent crosslinguistic work on melodic tone in Bantu (\citealt{Bickmore2014,Bickmore2015}). It is unique, for example, in possessing a melody that assigns four distinct tones to three stem-internal positions simultaneously. The apparent existence of such complex melodies raises doubts as to whether there are any substantive restrictions on the form of a tonal melody. We argue, however, that these doubts are premature. We propose a new analysis of Kikamba in which (a) melodies refer to no more than two target positions at a time and (b) melodies target only two possible stem-internal positions, each of which commonly occurs within Bantu melodic tone systems. This simplificaiton is achieved by (a) rejecting the existence of a melodic L tone assigned to the penult and re-attributing its putative effects to interactions among other, more basic tones, and (b) distinguishing between melodic tones assigned early in the phonological derivation and other suffixal tones added later. In general, we argue that since core properties of melodic tone are often obscured in surface forms due to interactions with language-particular rules, the cross-linguistic comparison of melodic tone should proceed on the basis a (more) underlying level in which these rules are controlled for. Once this is done, the exceptional properties of Kikamba melodic tone largely disappear.
+}
+
+\begin{document}
+\maketitle
+
+\section{Melodic tone in Bantu and Kikamba}\label{sec:jones:1}
+
+In all \ili{Bantu} languages that make distinctive use of \isi{tone}, tonal alternations within the verb stem help to signify various aspects of \isi{verbal inflection}, including tense, \isi{aspect}, mood, polarity, \isi{clause type}, and \isi{focus} \citep{Bickmore2014}. In \REF{ex:jones:1} below, we see a clear example of this from \ili{Kihunde} \citep{Mateene1992}.
+
+
+
+\ea\label{ex:jones:1}
+\label{bkm:Ref359185255}Melodic \isi{tone} in \ili{Kihunde} \citep{Mateene1992}\footnote{The forms here differ from those cited by Mateene in that they contain the reciprocal suffix \textit{–aɲ}; its presence obviates a process of local \isi{tone} plateauing that would otherwise obscure the basic facts of melodic \isi{tone} assignment in \REF{ex:jones:1c}.}\\
+\ea\label{ex:jones:1a}
+\label{bkm:Ref359185416}Infinitive (p. 17)\\
+\gll   i-[king-ul-aɲ-a]\\
+       \textsc{nc}.5-[close-\textsc{rev}-\textsc{recp}-\textsc{fv}]\footnotemark\\
+\glt   ‘to open each other’  
+
+\footnotetext{Square brackets in examples and glosses mark verb stem boundaries.}
+
+\ex\label{ex:jones:1b}
+\langinfo{}{}{\label{bkm:Ref359185476}Recent Past (p. 22)}\\
+\gll   tw-a-[king-úl-aɲ-a-a]    \\
+       \textsc{1pl.sbj}-\textsc{pst}-[close-\textsc{rev}-\textsc{recp}-\textsc{asp}-\textsc{fv}]\\
+\glt ‘we opened each other (recently)’
+
+\ex\label{ex:jones:1c}
+\langinfo{}{}{\label{bkm:Ref359185497}Negative Hypothetical (p. 38)}\\
+\gll   tú-ta-[king-úl-aɲ-ir-é]\\
+      \textsc{1pl.sbj-neg-[}close\textsc{-rev-recp-asp-fv]}\\
+\glt ‘if we do not open each other’\\
+\z
+\z
+In the infinitive form in \REF{ex:jones:1a}, the verbal stem is the straightforward sum of its parts: neither the root nor any suffix bears an underlying H \isi{tone}, so the fact that the stem as a whole surfaces as toneless is unsurprising. However, when the same stem (modulo the inflectional suffixes \textsc{asp} and \textsc{fv}) appears in the Recent Past form in \REF{ex:jones:1b} or the Negative Hypothetical form in \REF{ex:jones:1c}, H tones appear on the stem’s second and final vowels (V2 and FV). Logically, since the non-inflectional content of the stem is constant between these forms, the tonal differences between them must somehow arise from differences in inflection. Thus, the tones that appear within the stem in \REF{ex:jones:1b} and \REF{ex:jones:1c} are \textit{grammatical} tones.
+
+Two key questions that arise in the analysis of grammatical tones concern (a) where they come from and (b) how they come to be assigned to their surface positions. Here, for the sake of explicitness, we wish to lay out our own assumptions on these matters clearly at the outset. First, we assume that the stem \isi{tone} alternations in \REF{ex:jones:1} arise primarily from differences in underlying representation: the URs of \REF{ex:jones:1b} and \REF{ex:jones:1c}, but not \REF{ex:jones:1a}, contain tonal \textit{melodies} that are exponents of inflection. These melodies consist of one or more \textit{melodic tones}, each of which is labeled with a desired \textit{target}, i.e. a stem-internal position to which it wishes to be assigned. Thus, the Recent Past form in \REF{ex:jones:1b} contains the melody \{H\textsubscript{V2}\}, consisting of a single melodic H \isi{tone} whose target is V2. The Negative Hypothetical form in \REF{ex:jones:1c} contains the melody \{H\textsubscript{V2}+H\textsubscript{FV}\}, containing one H that targets V2 and another that targets FV. Finally, we assume that melodic tones are matched with their targets in an early process of \textit{Initial Mapping}, before other \isi{tone} rules apply. This process may require a negotiation between tones targeting the same vowel (e.g. H\textsubscript{V2} and L\textsubscript{FV} in a disyllabic stem), so that \isi{perfect} mapping of tones to targets is not guaranteed.\footnote{These assumptions are broadly similar to those adopted, for example, by \citet{Bickmore2007,Ebarb2016}, \citeauthor{Marlo2008} (\citeyear{Marlo2008,Marlo2009}), \citet{Marlo2015}, and \citet{Odden2009}. One important conceptual difference between our approach and that of the works just cited, however, is our avoidance of construction-specific \isi{tone} assignment rules. In our view, the task of associating particular tones to particular stem-positions in a tense-dependent way belongs solely to morphology, which associates different tenses with different melodies. The task of the phonology is only to associate the component tones of these morphologically-assigned melodies with their desired targets. One consequence of this is that under our approach, the melody is a single coherent entity at the level of underlying representation, and not simply the sum of all tones assigned by melodic assignment rules.}
+
+In \ili{Kihunde}, a language with no \isi{tone} shift and only limited spreading, the target of a melodic \isi{tone} is generally identical to its surface location. In other languages, operations like shift and spread, applying after initial mapping, can obscure a target’s identity. Consider, for example, the \ili{Kinande} form in \REF{ex:jones:2}. This corresponds exactly both in meaning and in segmental makeup with the \ili{Kihunde} form in \REF{ex:jones:1b}, and, like it, its melody \{H\textsubscript{V2}+L\textsubscript{FV}\} contains a melodic H that targets V2 \citep{Hyman1985,Jones2014}. However, due to general rules of leftward shift and leftward spread that apply after initial mapping (and which affect underlying tones as well as grammatically-assigned tones) this H surfaces not on V2 but on the first vowel of the stem (V1) and on the first vowel before it (V0).
+
+
+\ea\label{ex:jones:2}
+\label{bkm:Ref359185869}Recent Past (\ili{Kinande})\\
+\gll \textit{tw-á}-[\textit{kíng-ul-an-a-à}] \\
+\textsc{1pl.sbj-pst-[}close\textsc{-rev-recp-asp-fv]}\\
+\glt ‘we opened each other (recently)’
+\z
+
+There is thus a critical distinction between a melodic \isi{tone}’s \textit{surface location} and its \textit{target}: while the former may be directly observed, the latter reveals itself only in the context of analysis.\footnote{This point is clearly articulated by \citet{Bickmore2014}: “Ultimately, stem tones will be shaped by the general rules of the language. An in-depth synchronic analysis is thus necessary to strip away these rules, revealing what the specific content of each pattern is, where these tones are associated, and what happens to tones once they are initially associated, not to mention saying when a particular pattern is found” (p. 5).}
+
+This issue bears directly on questions of typology. Recent work collected in  \citet{Bickmore2014}, as well as antecedent work by \citet{Kisseberth&Odden2003} and \citet{Marlo2013}, has considerably extended our knowledge of melodic \isi{tone} patterns throughout \ili{Bantu}, to the point that we can now begin to make informed generalizations about (a) what tones may appear in tonal melodies, (b) how many tones a single melody may contain, and (c) what stem-internal positions may serve as targets for melodic assignment. These generalizations, drawn from \citet{Bickmore2014} and \citet{Bickmore2015}, are presented in \tabref{tab:jones:1}.
+
+\begin{table}
+\begin{tabularx}{\textwidth}{p{.35\textwidth}p{.15\textwidth}p{.5\textwidth}}
+\lsptoprule
+	&  Common  &  Exceptional\\
+\midrule
+{Melodic tones} 	& H and L &  {H, L, SH, SL (\ili{Kikamba})}  \\
+					& 		  &   H, L, HL, LH  (\ili{Bakweri})\\
+                    & & \\
+ Max \# of tones per melody & 1 or 2 & {3 (Simakonde: \citealt{Manus2014})}\\
+ &  & 4 (H-L-H-SL in \ili{Kikamba})\\
+ & & \\
+{Targets for melodic tones} & {V1,  V2}  & {V0 (i.e. pre-stem)}\\
+  & Pen, FV   & V3,  V4\\
+& & \\
+{ \# of targets per melody} & 1 or 2 & 4 (\ili{Kikamba})\\
+\lspbottomrule 
+\end{tabularx}
+\caption{Typological generalizations for melodic tone in Bantu (\citealt{Bickmore2014,Bickmore2015}) }
+\label{tab:jones:1}
+\end{table}
+
+In the context of the generalizations summarized in \tabref{tab:jones:1}, the melodic \isi{tone} system reported for \ili{Kikamba} stands out as uniquely complex. Of all languages surveyed in \citet{Bickmore2014}, it ties with \ili{Bakweri} \citep{Marlo2014} in having the largest melodic \isi{tone} inventory (H, L, SH, and SL), it has the largest number of tones per melody (four), and its melodies target the greatest number of stem positions at a time (three). In addition, it is one of just two languages that are reported to assign a melodic L \isi{tone} to the penult.
+
+What are we to make of this? One possibility is that melodic \isi{tone} in \ili{Kikamba} is simply an extreme instantiation of a phonological subsystem that has no principled bounds. It is possible, in other words, that any arbitrary combination of melodic tones associated with any arbitrary set of stem positions may constitute a legitimate tonal melody, so we should not be particularly surprised to find complex melodies that assign four distinct tones at once, and to three distinct positions. Indeed, the very existence of such apparently complex melodic patterns seems to suggest that there are few substantive constraints on what a tonal melody can look like. 
+
+On the other hand, it is also possible that the considerable (and typologically unusual) degree of complexity reported for \ili{Kikamba} might give way to a simpler system upon reanalysis. This possibility is especially worth exploring due to the highly indirect relationship between surface \isi{tone} patterns and underlying melodies discussed above, since this indirect relationship allows the same set of surface facts to submit to a wide range of analytical interpretations.
+
+Here, we pursue this latter possibility and develop a reanalysis of the \ili{Kikamba} melodic \isi{tone} system. In this effort, we are relying entirely upon data previously reported by \citet{Roberts-Kohno2000} and \citet{Roberts-Kohno2014}. As we will see, upon reanalysis, the melodic system of \ili{Kikamba} actually deviates very little from the “standard” \ili{Bantu} melodic \isi{tone} systems described in \tabref{tab:jones:1}. This finding offers hope that, contrary to what the surface facts of \ili{Kikamba} might suggest at first, melodic \isi{tone} is not a purely arbitrary system that can vary without limit. Instead, it is one whose variation is constrained by general principles that careful language-internal and crosslinguistic analysis can reveal.
+
+\section{The standard analysis of Kikamba melodies \citep{Roberts-Kohno2014}}
+
+The exceptional properties of the \ili{Kikamba} \isi{tone} system reported in \sectref{sec:jones:1} emerge from the analysis of \ili{Kikamba} melodic \isi{tone} developed by \citeauthor{Roberts-Kohno2000} (\citeyear{Roberts-Kohno2000,Roberts-Kohno2014}), briefly summarized in \tabref{tab:jones:2}.\footnote{In all examples from \ili{Kikamba}, \isi{tone} is transcribed as follows: high \isi{tone} is indicated with a single acute accent (e.g. [á]), low \isi{tone} is indicated with a single grave accent (e.g. [à]), super-high \isi{tone} is indicated with a doubled acute accent (e.g. [\H{a}]), and super-low \isi{tone} is indicated with a doubled grave accent (e.g. [ȁ]). Vowels that are not marked with any diacritic are phonologically toneless, and are generally pronounced with L \isi{tone}.} This analysis posits ten distinct patterns of melodic \isi{tone} assignment, with melodies containing anywhere from zero to four melodic tones.\footnote{To facilitate comparison between stems, the iterative morpheme \textit{–aang} (not consistently present in forms provided by \citealt{Roberts-Kohno2014}) is included in all forms in \tabref{tab:jones:2}. Here and elsewhere, its meaning of ‘here and there/a little bit/randomly’ is omitted from glosses to save space.}
+
+\begin{table}
+\begin{tabularx}{\textwidth}{lQ}
+\lsptoprule
+ Melody &  Example Form\\\midrule
+\{${\emptyset}$\} & {o-kaa-[kon-aang-a]}
+
+‘(person) who will hit’\\
+
+\tablevspace
+\{H\textsubscript{V2}\} & {tw-aa-[kon-ááng-í-ɛ]}
+
+‘we hit (long ago)’\\
+
+\tablevspace
+\{H\textsubscript{FV}\} & {to-\H{i}-kaa-[kon-aang-á]}
+
+‘we will not hit’\\
+
+\tablevspace
+\{H\textsubscript{V2}+L\textsubscript{FV}\} & {to-[kon-ááng-í-ɛ]}
+
+‘we hit (earlier today)’\\
+
+\tablevspace
+\{H\textsubscript{V2}+L\textsubscript{Pen}\} & {o-[kon-ááng-éèt-ɛ]}
+
+‘(person) who’s been hitting (today)’\\
+
+\tablevspace
+\{H\textsubscript{V2}+L\textsubscript{Pen}+H\textsubscript{FV}\} & {tó-[kon-ááng-ì-ɛ]}
+
+‘(person) whom we hit (today)’\\
+
+\tablevspace
+\{SL\textsubscript{FV}\} & {ko-[kon-aȁng-ȁ]}
+
+‘to hit’\\
+
+\tablevspace
+\{H\textsubscript{V2}+H\textsubscript{FV}+SL\textsubscript{FV}\} & {to-í-[kon-ááng-á-â]}
+
+‘we do not usually hit’\\
+
+\tablevspace
+\{H\textsubscript{V2}+L\textsubscript{Pen}+H\textsubscript{FV}+SL\textsubscript{FV}\} & {to-í-[kon-ááng-éèt-ɛ]}
+
+‘we had not hit (long ago)’\\
+
+\tablevspace
+\{H\textsubscript{V2}+SH\textsubscript{FV}\} & {tw-áa-[kon-ááng-\H{a}]}
+
+‘if/when we hit’\\
+\lspbottomrule 
+\end{tabularx}
+\caption{Kikamba tone melodies posited by \citeauthor{Roberts-Kohno2000} (\citeyear{Roberts-Kohno2000,Roberts-Kohno2014})}
+\label{tab:jones:2}
+\end{table}
+
+In this analysis, the relationship between underlying \isi{tone} melodies and surface \isi{tone} patterns is entirely straightforward: melodic tones surface on their specified targets, with the minimal complication that H\textsubscript{V2} spreads rightwards onto all following toneless vowels. This straightforward relationship arises for a simple reason: the analysis posits a distinct underlying melodic \isi{tone} for every tonal turning point within the stem.
+
+In this paper, we develop a new analysis in which some turning points derive not from the presence of an underlying melodic \isi{tone}, but rather from \textit{interactions} between a more limited set of tones. Most importantly, we will reject L\textsubscript{Pen} as a melodic \isi{tone}, and re-analyze the melodic SL\textsubscript{FV} \isi{tone} proposed by Roberts-Kohno as a \textit{non-melodic} floating \isi{tone}. The end result is an analysis which is somewhat more abstract, but which (a) finds both cross-linguistic and language-internal support and (b) results in a underlying melodic system that is both more internally coherent and more in line with what we should expect in light of the crosslinguistic generalizations about \ili{Bantu} melodies established in \sectref{sec:jones:1}.
+
+\section{Primary melodies of Kikamba} 
+\subsection{Overview}
+
+In this section, we consider the melodies described by \citet{Roberts-Kohno2014} that do not involve SL or SH tones. (We discuss those that do involve SL and SH tones in §4.) We show that what \citet{Roberts-Kohno2014} analyzes as 6 arbitrary melodies can be reduced to 5 melodies that form a logically coherent set: three single-\isi{tone} melodies \{H\textsubscript{V2}\}, \{H\textsubscript{FV}\} and \{L\textsubscript{FV}\} and two two-\isi{tone} melodies representing all the logically possible ways of combining them \{H\textsubscript{V2}+H\textsubscript{FV}\} and \{H\textsubscript{V2}+L\textsubscript{FV}\}. This simplification is made possible primarily by the elimination of L\textsubscript{Pen} as a possible melodic \isi{tone}, with its effects attributed instead to general rules and constraints of the language.
+
+
+\subsection{\{H\textsubscript{FV}\} melody}
+
+The most straightforward melody of \ili{Kikamba} causes a single H \isi{tone} to surface on the stem’s \isi{final vowel}. This melody is present, for example, in Habitual forms in “Assertive” clauses (i.e. declarative main clauses without object \isi{focus}). In \REF{ex:jones:3} below, we see such a form in nonfinal position, where it is not affected by the presence of phrasal L tones to be discussed in §4.2. Following \citet{Roberts-Kohno2014}, we analyze this melody as \{H\textsubscript{FV}\}.
+
+\ea\label{ex:jones:3}
+\langinfo{}{}{\label{bkm:Ref359187280}\{H\textsubscript{FV}\} melody in Habitual (Assertive, nonfinal)}\\
+\gll   né-tó-[kon-aang-a-á] …      \\
+     \textsc{assert-1pl.subj-[}hit-\textsc{iter-asp-fv]}\\
+\glt ‘we always hit’
+\z
+
+\subsection{\{H\textsubscript{V2}\} melody}
+
+Another straightforward melody causes a H \isi{tone span} from V2 to FV. This melody is present, for example, in Remote Perfective forms in Assertive clauses, as in \REF{ex:jones:4} below. Again following \citet{Roberts-Kohno2014}, we analyze this melody as \{H\textsubscript{V2}\}, consisting of a single melodic H \isi{tone} attracted to V2. This H is subsequently targeted by a rule of Rightward Spreading, which extends it until the end of the word. (This rule of unbounded spreading targets only grammatical tones; see \citeauthor{Bickmore1997} (\citeyear{Bickmore1997,Bickmore1999}) for discussion of a similar situation in \ili{Ekegusii}, with accompanying theoretical analysis.)
+
+\ea\label{ex:jones:4}
+\langinfo{}{}{\label{bkm:Ref359187465}\{H\textsubscript{V2}\} melody in Remote Perfective (Assertive, nonfinal)}\\
+\gll   né-tw-áa-[kon-ááng-í-ɛ] …      \\
+       \textsc{assert-1pl.subj-pst-[}hit-\textsc{iter-asp-fv]}\\
+\glt   ‘we hit long ago’
+\z
+
+\subsection{\{H\textsubscript{V2}+H\textsubscript{FV}\}}
+\label{bkm:Ref359188838}
+In some forms, such as the Assertive Hodiernal Perfective form in \REF{ex:jones:5}, H tones are assigned to both V2 and FV. In this case, H\textsubscript{V2} still spreads to the right, but it stops at the antepenultimate vowel, leaving one L-toned vowel in between it and H\textsubscript{FV}. \citet{Roberts-Kohno2014} analyzes this L-toned vowel as the result of L\textsubscript{Pen}, a melodic L \isi{tone} assigned to the penult. By contrast, we propose that it results from the OCP: the rightward spread of H\textsubscript{V2} is blocked just in case it would cause two distinct H tones to be associated to adjacent syllables.
+
+\ea\label{ex:jones:5}
+\langinfo{}{}{\label{bkm:Ref359187548}\{H\textsubscript{V2}+H\textsubscript{FV}\} melody in Hod. Perfective (Assertive, nonfinal)}\\
+\gll né-tó-[kon-ááng-i-ɛ] …\\
+     \textsc{assert-1pl.subj-[}hit-\textsc{iter-asp-fv]}\\
+\glt ‘we hit (earlier today)’
+\z
+
+Considerations which favor the OCP-based analysis are (a) the well-doc\-u\-ment\-ed role of the OCP in stopping \isi{tone} spread in other \ili{Bantu} languages \citep[e.g.][]{Myers1997,Odden2014} and (b) language-internal symmetry. Since \ili{Kikamba} melodies independently allow for H\textsubscript{V2} and H\textsubscript{FV}, and since \ili{Kikamba} melodies allow for multiple tones, it is natural to expect a melody that combines them. \{H\textsubscript{V2}+H\textsubscript{FV}\} is just this melody. On the other hand, a \{H\textsubscript{V2}+L\textsubscript{Pen}+H\textsubscript{FV}\} is unexpected from the perspective of inventory symmetry and compositionality, since there is no melody in which putative \{L\textsubscript{Pen}\} is assigned by itself.
+
+
+\subsection{[H\textsubscript{V2}+L\textsubscript{FV}]}
+
+\label{bkm:Ref359196042}
+As shown in \REF{ex:jones:6}, \ili{Kikamba} imperatives surface with a H \isi{tone} on V2 that spreads rightwards only up to the penult, leaving the ultima L-toned. Following \citet{Roberts-Kohno2014}, we assume that H cannot spread further onto the ultima because it is blocked by a final melodic L \isi{tone}. The imperative’s melody, therefore, is \{H\textsubscript{V2}+L\textsubscript{FV}\}.
+
+\ea\label{ex:jones:6}
+\langinfo{}{}{\label{bkm:Ref359188190}\{H\textsubscript{V2} + L\textsubscript{FV}\} in Imperative forms}\\
+\gll [kon-ááng-éð-í-à] …    \\
+     [hit-\textsc{iter-caus-caus-fv]}\\
+\glt ‘make (someone) hit!’
+\z
+
+However, departing from Roberts-Kohno, we propose that not \textit{all} surface\linebreak forms that show a H span from V2 to the penult result from a \{H\textsubscript{V2}+L\textsubscript{FV}\} melody. In fact, most instances of this pattern have another origin: a \{H\textsubscript{V2}+H\textsubscript{FV}\} pattern that is subjected to a rule of \textit{Final Lowering}. We see this, for example, in Hodiernal Perfective forms. When they appear in Assertive or Relative clauses and lack 3\textsuperscript{rd} singular personal agreement morphology, their stems clearly show a \{H\textsubscript{V2}+H\textsubscript{FV}\} pattern, as we have already seen in \REF{ex:jones:5} above. However, when the same stems appear in a clause with \textit{object focus}, or with a 3\textsuperscript{rd} singular personal \isi{subject marker}, the final H \isi{tone} is lowered to L. These facts are shown in \tabref{tab:jones:3}, where melodies derived from Final Lowering are given in bold.
+
+\begin{table}
+\begin{tabularx}{\textwidth}{p{.2\textwidth}lll} 
+\lsptoprule
+&  Assertive (nonfinal) &  Relative &  Object-Focus\\
+\midrule
+Hodiernal Pfv & [H\textsubscript{V2}+H\textsubscript{FV}] & [H\textsubscript{V2}+H\textsubscript{FV}] & \textbf{[H\textsubscript{V2}}\textbf{+L\textsubscript{FV}}]\\
+‘we hit (today)’ &
+né-tó-[kon-ááng-i-ɛ] &
+tó-[kon-ááng-i-ɛ] &
+to-[kon-ááng-í-ɛ]\\\midrule
+… w/ \textsc{3sg} subj. & \textbf{[H\textsubscript{V2}}\textbf{+L\textsubscript{FV}}] & \textbf{[H\textsubscript{V2}}\textbf{+L\textsubscript{FV}}]& \textbf{[H\textsubscript{V2}}\textbf{+L\textsubscript{FV}}]\\
+‘he hit (today)’ &
+n-óo-[kon-ááng-í-ɛ] & 
+o-[kon-ááng-í-ɛ] & 
+á-[kon-ááng-í-ɛ]\\
+\lspbottomrule
+\end{tabularx}
+\caption{Final H Lowering in the Hodiernal Perfective}
+\label{tab:jones:3}
+\end{table} 
+
+As an alternative to final lowering, we might instead propose that forms with 3\textsuperscript{rd} singular personal agreement and forms with object \isi{focus} are simply assigned a variant \isi{tone} pattern by the morphology.\footnote{This is the solution adopted by \citet{Roberts-Kohno2014}, who posits a \{H\textsubscript{V2}+L\textsubscript{Pen}+H\textsubscript{FV}\} pattern for most Hodiernal Perfective forms (as seen in §3.4), but posits a \{H\textsubscript{V2}+L\textsubscript{FV}\} pattern for Hodiernal Perfective forms with 3\textsuperscript{rd} singular personal agreement.} In our view, however, this solution is unsatisfactory because it fails to provide the semantically uniform class of “Hodiernal Perfective” forms with a uniform \isi{tone} pattern, and also because it fails to explain why the two \isi{tone} patterns shown by Hodiernal Perfective forms are so similar. Moreover, as we will shortly see, final lowering has effects that extend beyond the Hodiernal Perfective forms. We therefore posit the rule of final lowering in \REF{ex:jones:7}.
+
+\ea\label{ex:jones:7}
+\label{bkm:Ref359194361}Final Lowering: H\textsubscript{FV} → L\textsubscript{FV} \\
+\ea\label{ex:jones:7a}
+in object-\isi{focus} clauses\\
+\ex\label{ex:jones:7b}
+in forms with 3rd singular personal \isi{subject agreement} \\
+\z
+\z
+
+
+This rule is admittedly stipulative at the moment. It is not presently clear whether lowering should be induced directly by reference to morphosyntactic features, or indirectly by interactions with tones that these features introduce. (It is tempting, for example, to relate the lowering of H\textsubscript{FV} in forms with 3\textsuperscript{rd} singular personal \isi{subject agreement} markers to the fact that these markers systematically differ from others in \isi{tone}). More study of this question is needed.
+
+Closely related to the Hodiernal Perfective forms just analyzed are Hodiernal Stative forms that show a H \isi{tone span} from V2 to the \textit{antepenult}. \citet{Roberts-Kohno2014} analyzes these forms as possessing a distinct \{H\textsubscript{V2}+L\textsubscript{Pen}\} melody, where the presence of a melodic L on the \textit{penult} limits the rightward spread of H to the \textit{antepenult}. However, there are two crucial observations to make of such forms. First, this \isi{tone} pattern appears to result from Final Lowering, since it occurs in exactly the same contexts where the \{H\textsubscript{V2}+L\textsubscript{FV}\} pattern emerges in the Hodiernal Perfective forms in \tabref{tab:jones:3}. Second, this pattern occurs only in forms with penultimate long vowels introduced by the final suffix sequence \textit{–eet-ɛ}. Both of these points are illustrated in \tabref{tab:jones:4}. (As in \tabref{tab:jones:3}, melodies affected by Final Lowering are given in bold.)
+
+
+\begin{table}
+\begin{tabularx}{\textwidth}{p{.18\textwidth}lll} 
+\lsptoprule
+&  Assertive (nonfinal) &  Relative &  Object-Focus\\
+\midrule
+Hod. Stative & [H\textsubscript{V2} + H\textsubscript{FV}] & [H\textsubscript{V2} + H\textsubscript{FV}] & \textbf{[H\textsubscript{V2}} \textbf{+ L\textsubscript{FV}}]\\
+‘we have hit’ &
+\small né-tó-[kon-ááng-éet-ɛ] &
+\small tó-[kon-ááng-éet-ɛ] &
+\small to-[kon-ááng-éèt-ɛ]\\
+...w/\textsc{3sg} subj. & \textbf{[H\textsubscript{V2}} \textbf{+ L\textsubscript{FV}}] & \textbf{[H\textsubscript{V2}} \textbf{+ L\textsubscript{FV}}] & \textbf{[H\textsubscript{V2}} \textbf{+ L\textsubscript{FV}}]\\
+‘he has hit’ &
+\small n-óo-[kon-ááng-éèt-ɛ] &
+\small o-[kon-ááng-éèt-ɛ] &
+\small á-[kon-ááng-éèt-ɛ]\\
+\lspbottomrule
+\end{tabularx}
+\caption{Tonal variation in Hodiernal Stative Forms}
+\label{tab:jones:4}
+\end{table}
+\label{bkm:Ref359194506}
+
+We account for both of these facts by proposing that forms with H spans from V2 to the antepenult underlyingly possess a \{H\textsubscript{V2}+H\textsubscript{FV}\} melody, where (a) H\textsubscript{FV} is lowered to L\textsubscript{FV} via Final Lowering \REF{ex:jones:7} and (b) derived L\textsubscript{FV} spreads to the second mora of a long penult due to a rule of \textit{Long Retraction}, which applies before Rightward Spreading extends H\textsubscript{V2} to the right. Long Retraction is formulated in \figref{fig:jones:1}.
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{JonesFreyerKambaformatted-img2.png}
+ 
+\begin{figure}
+% % \includegraphics{figures/fig-jones-1}
+\begin{tikzpicture}[baseline]
+ \node at (0,0) (L) {L};
+ \node [below left=2\baselineskip and 1ex of L,anchor=center, inner sep=2pt] (VVC) {VVC\textsubscript{0}V\#};
+ \draw[dashed] (L) -- (VVC.135);
+ \draw (L) -- ++(0,-2\baselineskip);
+\end{tikzpicture}
+\caption{Long Retraction}
+\label{fig:jones:1}	
+\end{figure}
+
+
+Note that Long Retraction is independently motivated within \ili{Kikamba}. \citet{Roberts-Kohno2014} observes that final \textit{super-low} (SL) tones spread onto the second mora of a long penult, exactly as predicted by Long Retraction. Thus, for example, in forms that have a final SL \isi{tone}, such as infinitives, we see surface contrasts such as \textit{ko}-[\textit{kon-ȁ}] ‘to hit’ vs. \textit{ko}-[\textit{kon}-\textit{aȁng-ȁ}] ‘to hit repeatedly.’ As discussed in §4, we view SL tones as L tones that are downstepped by a following floating L \citep[c.f.][]{Clements1981}. This allows for a straightforward analysis of final “SL spreading”: a final L spreads to the penult via Long Retraction, and this spread L is then downstepped by a following floating L.\footnote{As a reviewer notes, a similar lowering happens in \ili{Kuria}: phrase-final L becomes SL (i.e. downgliding L) after another L (\citealt[10]{Mwita2008}, \citealt{Marlo2014}).}
+
+Under this analysis, all Hodiernal Stative and Hodiernal Perfective stems share the same underlying melody – \{H\textsubscript{V2}+H\textsubscript{FV}\} – but surface with different \isi{tone} patterns due the varying applicability of Final Lowering and Long Retraction. This analysis is illustrated in the derivations in \tabref{tab:jones:5}. Note that in these derivations, only the stems of verbal forms are shown, so that all forms may be seen side by side.
+
+\begin{table}
+\fittable{
+\begin{tabular}{lllll} 
+\lsptoprule
+ & \textit{Hod. Perf} & \textit{Hod. Perf. 3}\textsc{sg} & \textit{Hod. Stat.} & \textit{Hod. Stat. 3}\textsc{sg}\\
+\midrule
+UR & \{H\textsubscript{V2} + H\textsubscript{FV}\}\par
+
+ [kon-aang-i-ɛ] & \{H\textsubscript{V2} + H\textsubscript{FV}\}\par
+
+ [kon-aang-i-ɛ] & \{H\textsubscript{V2} + H\textsubscript{FV}\}\par
+
+ [kon-aang-eet-ɛ] & \{H\textsubscript{V2} + H\textsubscript{FV}\}\par
+ [kon-aang-eet-ɛ] \\
+{Initial} Map. & [kon-áang-i-ɛ] & [kon-áang-i-ɛ] & [kon-áang-eet-ɛ] & [kon-áang-eet-ɛ]\\
+{Final} L & --- & [kon-áang-i-ɛ] & -- & [kon-áang-eet-ɛ]\\
+{Long V Retract} & --- & --- & -- & [kon-áang-eèt-ɛ]\\
+{R. Spread} & [kon-ááng-i-ɛ] & [kon-ááng-í-ɛ] & [kon-ááng-éet-ɛ] & [kon-ááng-éèt-ɛ]\\
+\lspbottomrule
+\end{tabular}
+}
+\caption{Derivations of forms with underlying \{H\textsubscript{V2} + H\textsubscript{FV}\} melodies}
+\label{tab:jones:5}
+\end{table}
+ 
+
+\subsection{\{L\textsubscript{FV}\}}
+
+The final set of forms to consider in this section are those that realize no H tones at all within the stem. The central question here is whether the final vowels of these verbs should be analyzed as underlyingly toneless, as proposed by \citet{Roberts-Kohno2014}, or as bearing a final L \isi{tone}. We opt for the latter analysis, by a chain of reasoning that is somewhat indirect.
+
+First, some forms that surface without any H tones in the stem are clearly derived, via Final Lowering, from forms with an underlying \{H\textsubscript{FV}\} melody. In \tabref{tab:jones:6}, we see that these forms occupy the exact same positions within morphological paradigms as previous forms affected by Final Lowering: object-\isi{focus} forms, and forms with 3\textsuperscript{rd} singular personal \isi{subject agreement}.
+
+\begin{table}
+\fittable{
+\begin{tabular}{llll} 
+\lsptoprule
+&  Assertive (nonfinal) &  Relative &  Object-Focus\\
+Habitual & [H\textsubscript{FV}] & [H\textsubscript{FV}] & \textbf{[L\textsubscript{FV}}]\\
+\midrule
+‘we always hit’ &
+né-tó-[kon-aang-a-á] &
+to-[kon-aang-a-á] &
+tó-[kon-aang-a-à]\\
+… w/ 3\textsc{sg} \isi{subject} & \textbf{[L\textsubscript{FV}}] & \textbf{[L\textsubscript{FV}}] & \textbf{[L\textsubscript{FV}}]\\
+‘he always hits’ &
+n-óo-[kon-aang-a-à] &
+o-[kon-aang-a-à] &
+á-[kon-aang-a-à]\\
+\lspbottomrule
+\end{tabular}
+}
+\caption{Final Lowering in Habitual forms}
+\label{tab:jones:6}
+\end{table} 
+
+
+When Final Lowering occurs in forms with a preceding H\textsubscript{V2} \isi{tone}, it is clear that the rule must produce a final L \isi{tone}, rather than a final toneless vowel. This is crucial, for example, in explaining the extent of spreading in Hodiernal Perfective forms with \isi{third person} personal \isi{subject agreement} (cf. \tabref{tab:jones:3}): the fact that lowering of H\textsubscript{FV} produces L\textsubscript{FV} is what ensures that H\textsubscript{V2} is able to spread to the penult, but no further. We can reasonably assume that Final Lowering produces the same results in \tabref{tab:jones:6}, where no confirming evidence from \isi{tone} spread is available. Thus, at least some forms in the language without any Hs must be analyzed as having a final L. We assume that learners simply generalize this result, positing final L in forms with no H tones even when Final Lowering is not involved. One such form is the Hesternal Perfective, which shows a final L even in the absence of object \isi{focus} or a 3\textsuperscript{rd} singular personal \isi{subject marker} \REF{ex:jones:8}.
+
+\ea\label{ex:jones:8}
+\label{bkm:Ref359195867}Hesternal Perfective (Object Relative clause)\\
+ to-náa-[kon-aang-i-ɛ]  \\
+\glt ‘(thing that) we cut (yesterday)’
+\z
+
+One final reason for positing final L rather than ${\emptyset}$ has to do with the realization of forms like the Hesternal Perfective when they occur before pause in an Assertive Phrase. In these contexts, as we will see in §4.2, these forms surface with a final SL \isi{tone}. This is just what we expect if, as we will propose, the ends of Assertive phrases are marked by a final floating L \isi{tone}. (Note that has been independently proposed for closely-related \ili{Kikuyu} by \citet{Gjersoe2016}). In this case, we can regard the final SL \isi{tone} as simply a downstepped final L, derived from the general lowering of L to SL before floating L tones discussed in §3.5. On the other hand, this simple explanation is not available if we regard the \isi{final vowel} of \REF{ex:jones:8} as toneless. In that case, the final floating L \isi{tone} at the end of the \isi{assertive phrase} will have no preceding L \isi{tone} to downstep.
+
+\subsection{Summary}
+
+In this section, we have achieved a modest reduction (from six to five) in the number of tonal melodies needed to account for the forms which Roberts-Kohno analyzes without any final SL or SH tones. A more impressive result has been a considerable increase in the internal coherence of the proposed melody set: while the melodies posited by \citet{Roberts-Kohno2014} constitute arbitrary combinations of H\textsubscript{V2}, L\textsubscript{Pen}, L\textsubscript{FV} and H\textsubscript{FV}, our proposed melodies are simply all combinations of \{H\textsubscript{V2}\}, \{H\textsubscript{FV}\} and \{L\textsubscript{FV}\} that assign no more than one \isi{tone} to one vowel. Finally, we have identified two important synchronic processes, Final Lowering and Long Retraction, that are needed to account for intraparadigmatic alternations in stem tones, and well as the crucial role played by the OCP in blocking \isi{tone} spread. In §4, we complete our analysis of verbal \isi{tone} in \ili{Kikamba} by analyzing forms in which additional tones are added beyond this basic melody set.
+
+\section{Floating L tones}
+\label{bkm:Ref359187129}\subsection{Overview}
+
+So far, we have not yet considered any forms that \citet{Roberts-Kohno2014} analyzes as possessing a final melodic super-low (SL) or super-high (SH) \isi{tone}. In this section, we argue that these forms are best accounted for not by positing a new melodic \isi{tone}, but by recognizing a distinct class of floating tones that are introduced into the derivation only after all melodic tones have been assigned. In §4.2, we begin with a discussion of phrasal \isi{tone}, in which the facts concerning floating L tones are somewhat more clear. In §4.3, we then proceed to a discussion of verb-bound floating L tones which Roberts-Kohno analyzes as melodic. Finally, in §4.4, we briefly discuss a form that appears to warrant a final floating H.
+
+\subsection{Phrasal tones}
+\label{bkm:Ref359196228}
+So far, all verbs in Assertive clauses have been presented as they would appear in non-final position. The reason for this is that at the end of an Assertive clause, verbs systematically show the effects of a phrase-final boundary \isi{tone}. These effects vary depending on whether the phrase-final verb ends in a H \isi{tone} or a L \isi{tone}. If the verb ends in a H \isi{tone} in non-final position, then it appears with a final \textit{falling} \isi{tone} phrase-finally (cf. \ref{ex:jones:9a},b,c). If the verb ends end a L \isi{tone} in non-final position, then it ends with a SL \isi{tone} phrase-finally (cf. \ref{ex:jones:9d}).
+
+
+\ea\label{ex:jones:9}
+Position-based alternations in stem-final \isi{tone}\\
+\ea\label{ex:jones:9a}
+\label{bkm:Ref359196398}\{H\textsubscript{FV}\}: Habitual ‘we always hit’\\
+\downingdouble{\textup{Non-final}}{né-tó-[kon-aang-a-á] …}\\
+\downingdouble{\textup{Final}}{né-tó-[kon-aang-a-â]}\\
+\ex\label{ex:jones:9b}
+\label{bkm:Ref359196416}\{H\textsubscript{V2}+H\textsubscript{FV}\}: Hodiernal Perfective ‘we hit (today)’\\
+\downingdouble{\textup{Non-final}}{né-tó-[kon-ááng-i-ɛ] …} \\
+\downingdouble{\textup{Final}}{né-tó-[kon-ááng-i-ɛ]}\\
+\ex\label{ex:jones:9c}
+\label{bkm:Ref359196421}\{H\textsubscript{V2}\}: Remote Perfective ‘we hit (long ago)’\\
+\downingdouble{\textup{Non-final}}{né-tw-áa-[kon-ááng-í-ɛ] …} \\
+\downingdouble{\textup{Final}}{né-tw-áa-[kon-ááng-í-ɛ]}\\
+\ex\label{ex:jones:9d}
+\label{bkm:Ref359196462}\{L\textsubscript{FV}\}: Hesternal Perfective ‘we hit (yesterday)’\\
+\downingdouble{\textup{Non-final}}{né-tó-náa-[kon-aang-i-ɛ] …}\\
+\downingdouble{\textup{Final}}{né-tó-náa-[kon-aang-i-ɛ̏]}\\
+\z
+\z
+\citeauthor{Roberts-Kohno2000} (\citeyear{Roberts-Kohno2000,Roberts-Kohno2014}) proposes that these alternations are the result of a phrasal SL \isi{tone}. In a similar spirit, we propose that these alternations are caused by a floating L\textsubscript{$\varphi $} \isi{tone} which marks the \isi{right edge} of an Assertive phrase. When L\textsubscript{$\varphi $} follows a word-final L \isi{tone}, it causes it to \textit{downstep} and surface as SL. However, when L\textsubscript{$\varphi $} follows a word-final H \isi{tone}, it docks onto the word-\isi{final vowel} to form a final fall. Crucially, this docking of L\textsubscript{$\varphi $} must take place rather late in the derivation. The reason for this concerns the interaction of L\textsubscript{$\varphi $} with H\textsubscript{V2}. As shown in \REF{ex:jones:9c}, when a verb with a \{H\textsubscript{V2}\} melody is assigned L\textsubscript{$\varphi $} at the end of the \isi{assertive phrase}, the result is simply a falling \isi{tone} at the end of the H \isi{tone span} from V2 to FV. L\textsubscript{$\varphi $} thus interacts with H\textsubscript{V2} very differently than L\textsubscript{FV}, which occupies the FV by itself and limits the spread of H\textsubscript{V2} to the penult (cf. \ref{ex:jones:6}). The reason for this, we propose, is ordering: L\textsubscript{FV} is a \textit{melodic} \isi{tone} that is assigned at the same time as H\textsubscript{FV}, and is thus present early in the derivation when H\textsubscript{V2} spreads to the right. By contrast, L\textsubscript{$\varphi $} is a \textit{phrasal} \isi{tone} introduced only after all word-level phonology is complete. It is therefore not able to block the rightward spreading of H\textsubscript{V2} simply because it is not present when that spreading takes place.
+
+Two additional notes on phrasal \isi{tone} are in order. First, though we have focused above on the effects of phrasal \isi{tone} on a phrase-final \textit{verb}, L\textsubscript{$\varphi $} is always assigned to the last word of an Assertive verb phrase. Thus, if an Assertive verb is followed by a L-final noun, that noun will surface with a final SL \isi{tone} due to L\textsubscript{$\varphi $}-induced downstep (cf. \ref{ex:jones:10b}). Similarly, if an Assertive verb is followed by a H-final noun, that noun will generally surface with a final fall (cf. \ref{ex:jones:10d}). (Note that in the examples to follow, parentheses are used to mark the edges of the \textit{Assertive} phrase, i.e. the minimal \isi{phonological phrase} in which an Assertive verb appears).
+
+\ea\label{ex:jones:10}
+{\label{bkm:Ref359198006}L\textsubscript{$\varphi $} manifests on the \isi{final vowel} of the Assertive phrase}\\
+\ea\label{ex:jones:10a}
+{e-i.ò} \\
+\glt{  ‘a banana’}\\
+\ex\label{ex:jones:10b}
+{\label{bkm:Ref359196744}( né-tó-[kon-aang-a-á] e-i.ȍ )\textsubscript{$\varphi $}} \\
+\glt{  ‘we usually hit a banana’}\\
+\ex\label{ex:jones:10c}
+{n-da.á} \\
+\glt{  ‘a louse’}\\
+\ex\label{ex:jones:10d}
+{\label{bkm:Ref359196803}( né-tó-[kon-aang-a-á] n-da.â )\textsubscript{$\varphi $}} \\
+\glt{  ‘we usually hit a louse’}\\
+\z
+\z
+
+The second point concerns the final fall observed in \REF{ex:jones:10d}. A pervasive generalization in \ili{Kikamba} is that falling tones are only permitted before pause. Thus, if a H-toned noun like \textit{n-da.á} ‘louse’ or \textit{cháí} ‘tea’ stands at the end of an Assertive phrase but is not utterance-final, we do not see a phrase-final falling \isi{tone}. Nonetheless, L\textsubscript{$\varphi $} does not simply disappear without a trace: instead, the vowel that \textit{would} have realized a falling \isi{tone} (had it been prepausal) surfaces as \textit{super-high} (cf. \ref{ex:jones:11c}). In this way, the presence of L\textsubscript{$\varphi $} can be detected even in the absence of any L-toned surface vowel. This will prove crucial to the discussion of putatively melodic super-low tones in §4.3.
+
+% TODO hl looks kinda ugly
+\ea\label{ex:jones:11}
+{\label{bkm:Ref359198007}H͡L permitted only pre-pausally \citep[252]{Roberts-Kohno2000}}\\
+\ea\label{ex:jones:11a}
+\langinfo{}{}{kemiiná} \\
+\glt   ‘Kemiina (a name)’
+
+\ex\label{ex:jones:11b}
+{( né-né-ké-[nɛɛngiɛ] kemiinâ )\textsubscript{$\varphi $}}\\
+\glt ‘I gave it to Kemiina’    
+
+\ex\label{ex:jones:11c}
+{\label{bkm:Ref359197637}( né-né-[nɛɛngiɛ] kemiin\H{a} )\textsubscript{$\varphi $} cháí}\\
+\glt ‘I gave tea to Kemiina’  
+\z
+\z
+
+\subsection{“Melodic” SL tones}
+\label{bkm:Ref359196276}
+A number of non-assertive verb forms show alternations very similar to those observed at the ends of assertive phrases. For instance, verbs that show final SL in phrase-final position surface with final L phrase-medially (cf. \ref{ex:jones:12a},b), while verbs that surface with phrase-final falls surface with phrase-medial SH (cf. \ref{ex:jones:12c},d).
+
+\ea\label{ex:jones:12}
+{\label{bkm:Ref359198070}Contextual stem alternations of non-assertive verbs} \\
+\ea\label{ex:jones:12a}
+{\label{bkm:Ref359197862}ko-[konȁ]} \\
+\glt ‘to hit’
+
+\ex\label{ex:jones:12b}
+{\label{bkm:Ref359197870}ko-[kona] ma-i.o}\\
+\glt ‘to hit bananas’
+
+\ex\label{ex:jones:12c}
+{\label{bkm:Ref359197948}to-í-[kon-ááng-éet-ɛ]}\\
+\glt ‘we had not hit (long ago)’
+
+\ex\label{ex:jones:12d}
+{\label{bkm:Ref359197953}to-í-[kon-ááng-éet-ɛ] ma-i.o} \\
+\glt ‘we had not hit bananas (long ago)’
+\z
+\z
+
+\citeauthor{Roberts-Kohno2000} (\citeyear{Roberts-Kohno2000,Roberts-Kohno2014}), recognizing the clear similarities between these alternations and the phrasal alternations in \REF{ex:jones:10} and \REF{ex:jones:11} above, argues that both should be analyzed as the result of an assigned SL \isi{tone}. Similarly, we propose that all the alternations in (\ref{ex:jones:10}--\ref{ex:jones:12}) derive from the variable presence of a floating L \isi{tone}.
+
+However, as Roberts-Kohno discusses at length, there is a crucial difference between the alternations observed in \REF{ex:jones:12} and those involving Assertive clauses in \REF{ex:jones:10} and \REF{ex:jones:11}. While the floating L\textsubscript{$\varphi $} \isi{tone} assigned in Assertive phrases surfaces on whatever element stands last within the Assertive phrase, the floating L responsible for downstep in \REF{ex:jones:12a} and for the final falling \isi{tone} in \REF{ex:jones:12c} is closely bound to the verb. Thus, when it fails to downstep the final L of nonfinal \textit{ko-konà} ‘to hit’ in \REF{ex:jones:12b}, it does not cause a final downstep in final \textit{ma-i.o} ‘bananas’. Similarly, when the floating L \isi{tone} is unable to form a final falling \isi{tone} on the verb in \REF{ex:jones:12d}, it does not trigger downstep of following \textit{ma-i.o}, but is instead realized indirectly through in the verb’s SH \isi{tone}. Unlike the phrasal L\textsubscript{$\varphi $} \isi{tone}, then, the floating L \isi{tone} in \REF{ex:jones:12} must be realized on the verb itself, or not at all. We propose that this is because the floating L \isi{tone} in these forms is a tonal \textit{suffix} to the verb, rather than a boundary \isi{tone} to the entire phrase.
+
+The ultimate fate of suffixal L depends both upon the final \isi{tone} of its verb and on its phrasal context. If suffixal L is assigned to a verb with a final L \isi{tone}, then it will manifest by downstepping that L so long as the verb appears in phrase-final position, as in \REF{ex:jones:12a}. In phrase-medial position, as in \REF{ex:jones:12b}, the floating L simply deletes, with no effect on the preceding \isi{tone}. If the suffixal L belongs to a verb with a final H \isi{tone}, then it will manifest as part of a final falling \isi{tone} in utterance-final position, as in \REF{ex:jones:12c}, but as part of a final super-high \isi{tone} utterance-medially, as in \REF{ex:jones:12d}. These options are summarized in \tabref{tab:jones:7}.
+
+\begin{table}
+\begin{tabularx}{\textwidth}{lQl}
+\lsptoprule
+ phrase-medial &  phrase-final, utterance-medial &  utterance-final\\
+\midrule
+\textbf{\textcircled{\textsc{l}}} deletes & {L\textbf{\textcircled{\textsc{l}} →} \textbf{{\↓}L}}
+
+\textbf{H\textcircled{\textsc{l}}} \textbf{→ {\upstep}}\textbf{H} & {L\textbf{\textcircled{\textsc{l}} →} \textbf{{\↓}L}}
+
+\textbf{H\textcircled{\textsc{l}}} \textbf{→ H͡L}\\
+\lspbottomrule
+\end{tabularx}
+
+\caption{The fate of floating L tones in Kikamba (\textcircled{\textsc{l}} = floating L)}
+\label{tab:jones:7}
+\end{table}
+
+
+
+
+The fact that suffixal L is found only in verb forms, and the fact that it is closely bound to individual verbs rather than phrases that contain them, makes it appear much like a melodic \isi{tone} like H\textsubscript{FV} or L\textsubscript{FV}. However, just as with L\textsubscript{$\varphi $}, the fact that suffixal L is \textit{not} a melodic \isi{tone} is shown through its interaction with H\textsubscript{V2}: while melodic L\textsubscript{FV} limits the spread of H\textsubscript{V2} to the penult (cf. \ref{ex:jones:6}), suffixal L simply adds on to a long H \isi{tone span} from V2 to FV. This may be seen clearly in the Negative Habitual forms in \REF{ex:jones:13}, where suffixal L added to a form with a \{H\textsubscript{V2}\} melody creates either a falling \isi{tone} in utterance-final position (cf. \ref{ex:jones:13a}) or a final super-high \isi{tone} in phrase-medial position (cf. \ref{ex:jones:13b}). In both forms, rightward spreading of H\textsubscript{V2} is totally unimpeded by the presence of the suffixal L on FV. This suggests that suffixal L, like L\textsubscript{$\varphi $}, is added only after all other tones have associated and (in the case of H\textsubscript{V2}) spread.
+
+\ea\label{ex:jones:13}
+{\label{bkm:Ref359198882}Combination of suffixal L with a \{H\textsubscript{V2}\} melody}\\
+\ea\label{ex:jones:13a}
+{\label{bkm:Ref359198952}to-í-[kon-ááng-á-â]} \\
+\glt ‘we do not usually hit’
+
+\ex\label{ex:jones:13b}
+{\label{bkm:Ref359198995}to-í-[kon-ááng-á-\H{a}] ma-i.o}\\
+\glt ‘we do not usually hit bananas’
+\z
+\z
+
+The general conclusion, then, is that while suffixal Ls are more closely linked to the verb than L\textsubscript{$\varphi $},  they must nevertheless be distinguished from melodic tones originating from a single melody because they are assigned at different points in the phonological derivation. This limits the true melodies of \ili{Kikamba} to those established in §3.
+
+\subsection{Melodic SH} 
+  A final \isi{tone} pattern described by Roberts-Kohno involves a H \isi{tone span} from V2 to FV which is raised to SH on the \isi{final vowel} (e.g. \textit{tw-áá-}[\textit{kon-ááng-\H{a}}] ‘if/when we hit’). We tentatively propose that this form results from a suffixal floating H \isi{tone} which \textit{upsteps} the preceding word-final H. More investigation into these forms is required, however.
+
+
+\section{Conclusion}
+
+Under the reanalysis of \ili{Kikamba} melodic \isi{tone} proposed here, the melodic inventory of \ili{Kikamba} can be reduced from the ten melodies in \REF{ex:jones:14} to the five melodies in (\ref{ex:jones:15a}--b), the latter of which may combine with the suffixal floating L \isi{tone} (and, much more rarely, the suffixal floating H \isi{tone}) in \REF{ex:jones:15c}.
+
+\ea\label{ex:jones:14}
+{\label{bkm:Ref359199123}Melodic inventory of \citet{Roberts-Kohno2014}}\\
+\ea\label{ex:jones:14a}
+{0 melodic tones} \\
+\glt  \{$\varnothing$\}\\
+\ex\label{ex:jones:14b}
+{1 melodic tone} \\
+\glt  \downingtriple{\{H\textsubscript{FV}\}}{      \{H\textsubscript{V2}\}}{\{SL\textsubscript{FV}\}}\\
+\ex\label{ex:jones:14c}
+{2 melodic tones} \\
+\glt  \downingtriple{\{H\textsubscript{V2}\textup{+L}\textsubscript{FV}\}}{\{H\textsubscript{V2}\textup{+SL}\textsubscript{FV}\}}{\{H\textsubscript{V2}\textup{+SH}\textsubscript{FV}\}}\\
+\ex\label{ex:jones:14d}
+{3 melodic tones} \\
+\glt  \downingdouble{\{H\textsubscript{V2}\textup{+L}\textsubscript{Pen}\textup{+H}\textsubscript{FV}\}}{\{H\textsubscript{V2}\textup{+H}\textsubscript{FV}\textup{+SL}\textsubscript{FV}\}}\\
+\ex\label{ex:jones:14e}
+{4 melodic tones} \\
+\glt  \textup{\{H\textsubscript{V2}\textup{+L}\textsubscript{Pen}\textup{+H}\textsubscript{FV}\textup{+SL}\textsubscript{FV}\}}\\
+\z
+\z
+\ea\label{ex:jones:15}
+{\label{bkm:Ref359199316}Our proposed melodic inventory} \\
+\ea\label{ex:jones:15a}
+{\label{bkm:Ref359199143}1 melodic tone}\\
+\glt  \downingtriple{\{H\textsubscript{V2}\}}{\{H\textsubscript{FV}\}}{\{L\textsubscript{FV}\}}\\
+\ex\label{ex:jones:15b}
+{\label{bkm:Ref359199155}2 melodic tones}\\
+\glt  \downingdouble{\{H\textsubscript{V2}\textup{+H}\textsubscript{FV}\}}{\{H\textsubscript{V2}\textup{+L}\textsubscript{FV}\}} \\
+\ex\label{ex:jones:15c}
+{\label{bkm:Ref359243821}Suffixal floating tones}\\
+\glt  \downingdouble{\{L\textsubscript{Suf}\}}{\{H\textsubscript{Suf}\}}\\
+\z
+\z
+This reanalysis produces a tonal inventory that is internally coherent, consisting of a few basic melodic tones whose logical combination yields the full range of attested melodies. More importantly, under this reanalysis, the melodic system of \ili{Kikamba} is no longer a typological outlier whose relation to other \ili{Bantu} systems is mysterious. On the contrary, the melodic system instantiates a near-canonical \ili{Bantu} melody system (cf. \tabref{tab:jones:1}): H and L melodic tones assigned to V2 and FV combine in melodies that target no more than 2 positions at a time. It is important to note, however, that the advantages of \REF{ex:jones:15} are not only aesthetic or even only typological. Arriving at this inventory, and in the process eliminating aspects of \REF{ex:jones:14} such as L\textsubscript{Pen}, we have been able to provide unified tonal analyses of semantically coherent sub-paradigms (e.g. those of the Hodiernal Perfective and Stative) that were not possible using the less constrained melodic inventory. Thus, the current proposal is supported by both typological and language-internal considerations. 
+
+If this analysis is on the right track, it strongly confirms the crucial importance of synchronic analysis in the typological study of melodic \isi{tone}. Because the relationship between surface \isi{tone} patterns and underlying melodies is often highly indirect, we can only meaningfully compare the melodies of \ili{Bantu} languages after detailed and, we would argue, theoretically consistent, analyses of them have been developed.
+
+Finally, we end on what is to us, at least, an optimistic note. Looking at the incredible \textit{surface} diversity of melodic \isi{tone} patterns in \ili{Bantu}, it can be tempting to conclude that melodic assignment is an inherently unconstrained system, where essentially anything is possible, and where the melodic inventory of a given language is limited only by what its idiosyncratic history makes possible. In the course of our analysis of \ili{Kikamba}, however, we hope to have shown that the considerable surface diversity observed in \ili{Bantu} melodic \isi{tone} patterns is often misleading. With synchronic analysis that carefully distinguishes surface stem \isi{tone} patterns from underlying melodies, it is possible to find deep similarities between superficially distinct melodic systems. This opens up the possibility that perhaps melodic \isi{tone} in \ili{Bantu} is more constrained than it initially appears, so that it may ultimately be possible to state strong restrictions on what constitutes a possible melodic system.
+
+\section*{Abbreviations}
+ 
+Glosses are abbreviated as follows:
+\begin{multicols}{2}
+ \begin{tabbing}
+  \textsc{assert}\hspace{1em}\=\isi{first person} singular\kill
+\textsc{1pl}   \>   \isi{first person} singular\\
+\textsc{asp}   \>   \isi{aspect}\\
+\textsc{assert} \>   assertive\\
+\textsc{caus} \>   causative\\
+\textsc{fv}   \>   \isi{final vowel}\\
+\textsc{iter}   \> iterative\\
+\textsc{nc}.5  \>  class 5 nominal concord prefix\\
+\textsc{neg}   \>  \isi{negation}\\
+\textsc{pst}   \>  \isi{past tense}\\
+\textsc{recp} \>  reciprocal\\
+\textsc{rev} \>  reversive\\
+\textsc{sbj} \>  \isi{subject marker} 
+\end{tabbing}
+\end{multicols}
+ 
+\noindent Tonal abbreviations are:
+\begin{multicols}{2}
+ \begin{tabbing}
+  \textsc{assert}\hspace{1em}\=\isi{first person} singular\kill
+ H    \> high\\
+L    \> low\\
+SH \> super-high\\
+SL  \> super-low
+\end{tabbing}
+\end{multicols}
+
+\noindent Stem position abbreviations are:
+\begin{multicols}{2}
+ \begin{tabbing}
+  \textsc{assert}\hspace{1em}\=\isi{first person} singular\kill
+V1\>stem-initial vowel\\
+V0\>pre-stem vowel\\
+V2\>second stem vowel\\
+FV\>stem-\isi{final vowel}
+\end{tabbing}
+\end{multicols}
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+
+\end{document}

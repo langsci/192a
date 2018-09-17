@@ -1,0 +1,775 @@
+% -*- coding: utf-8 -*-
+%\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper
+,newtxmath
+,modfonts
+,nonflat]{langsci/langscibook} 
+% \bibliography{localbibliography} 
+% \input{localpackages.tex}
+% \input{localhyphenation.tex}
+% \input{localcommands.tex}
+
+\title{Upward-oriented complementizer agreement with subjects and objects in Kipsigis} 
+\shorttitlerunninghead{Upward-oriented complementizer agreement in Kipsigis}
+\author{Michael Diercks\affiliation{Pomona College}\lastand 
+ Meghana Rao\affiliation{Pomona College}
+}
+
+% \chapterDOI{} %will be filled in at production
+% \epigram{}
+
+\abstract{
+In Kipsigis (Nilotic, Kenya), declarative-embedding complementizers can agree with both main-clause subjects (Subj-CA) and main-clause objects (Obj-CA). Subj-CA agrees with the closest super-ordinate subject (even in the context of intervening objects), cannot agree with non-subjects or embedded subjects, and yields an interpretation where the embedded clause is the main point of the utterance. Obj-CA can only target main-clause objects and can only occur on a complementizer already bearing Subj-CA; Obj-CA contributes a verum focus reading to the clause. The paper briefly considers the analytical implications of these patterns.
+}
+
+\begin{document} 
+
+\maketitle
+
+\section{Introduction} \label{sec:Diercks,Rao:1}
+% MR: took out subsections in intro
+\noindent While \isi{complementizer agreement} (CA) is relatively rare \citep{Baker:2008b}, the construction provides interesting testing grounds for the properties of the Agree relation crosslinguistically \parencite{Chomsky:2000,Chomsky:2001}. Perhaps the most familiar form of \isi{complementizer agreement} comes from West \ili{Germanic}, where the declarative-embedding complementizer agrees with the embedded \isi{subject}.\footnote{See \citet{Carstens:2003} and \citet{vanKoppen:2005} for West \ili{Germanic}, and see  \citet{Deal:2015} for a similar downward-oriented agreement pattern on complementizers in \ili{Nez Perce} (though with very different valuation patterns, resulting in Deal's proposals about \textit{Interaction} and \textit{Satisfaction}).}  
+
+\protectedex{
+\ea \label{ex:Diercks,Rao:1}
+\langinfo{West Flemish}{}{\citealt{Carstens:2003}}\\
+\begin{xlist}
+\ex
+\gll Kpeinzen \circled{dan-k} (ik) morgen goan. \\
+I-think that-I (I) tomorrow go \\ 
+\glt `I think that I'll go tomorrow.'
+
+\ex 
+\gll Kpeinzen \circled{da-j} (gie) morgen goat.\\
+I-think that-you (you) tomorrow go\\
+\glt `I think that you'll go tomorrow.'
+
+\end{xlist}
+\z
+}
+
+\noindent Following the standard mechanisms, \citet{Carstens:2003} shows that these  examples can  be readily accounted for in a Probe-Goal Agree operation where the structurally higher probe (on C) searches for matching features on a c-commanded goal, after which an Agree relation values the features on the Probe \citep{Chomsky:2001}. 
+
+\ili{Kipsigis} is a \ili{Nilotic} language of the \ili{Kalenjin} subgroup, spoken in western Kenya by roughly 2 million people \autocite{Lewis:2016}.\footnote{The data presented in this paper were provided by Sammy Bor and Robert Langat, collected at Pomona College by the authors from April 2015-June 2016, and in the Fall 2015 Field Methods class.} \ili{Kipsigis} is verb initial, with quite flexible word order after the verb.\footnote{\citet{Diercks:2016b} analyze \ili{Kipsigis} word order as consisting of head \isi{movement} of the verb to the highest inflectional position;  scrambling of discourse-prominent constituents  to Spec,TP explains most of the flexibility in word order. We refer the reader to that work for data and analysis of \ili{Kipsigis} core word order patterns.} In contrast to West \ili{Germanic}, \ili{Kipsigis} shows an upward-oriented pattern of agreement where complementizers agree with the \isi{subject} of the \isi{main clause}.\footnote{All \ili{Kipsigis} data in this paper come from original fieldwork. Due to a lack of existing analyses of the clause-level \isi{tone} patterns in \ili{Kipsigis}, we do not transcribe \isi{tone} here. To our knowledge the main grammatical role of \isi{tone} is to case-mark \isi{nominative} subjects (grouping \ili{Kipsigis} among the marked-\isi{nominative} \ili{Nilotic} languages). Transcriptions are provided in IPA.} 
+
+%\ili{Kipsigis} Subj-CA pattern example
+\ea \label{ex:Diercks,Rao:2}
+\langinfo{Kipsigis}{}{fieldnotes} \\
+\gll	ko-\textbf{ɑ}-mwaa \textbf{ɑ}-lɛ ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-\textbf{1sg}-say \textbf{1sg}-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `I said that the cows slept yesterday.'
+\z
+
+\noindent This pattern of CA has been described for relatively few languages, and a major contribution of this paper is to document its presence in a new language and language family. This upward-oriented CA has been most systematically investigated in \ili{Lubukusu} (\ili{Bantu}, Kenya), though it has also been documented in \ili{Kinande}, Chokwe, Luchazi, Lunda, and \ili{Luvale} (central \ili{Bantu} languages), \ili{Ikalanga} (southern \ili{Bantu}), \ili{Ibibio}, and some \ili{Mande} languages \citep{Baker:2008b,Diercks:2013,Kawasha:2007,Idiatov:2010,Torrence:2016,LetsholoSafir:2017}. While these upward-oriented complementizer patterns pose significant theoretical questions, this paper focuses on the  description and empirical analysis of the syntactic and interpretive properties of \ili{Kipsigis} CA. 
+
+\ili{Kipsigis} also demonstrates a distinct upward-oriented \isi{complementizer agreement} relation triggered by the matrix object, rather than the matrix \isi{subject}.
+
+\ea
+%\langinfo{Kipsigis}{}{fieldnotes} \\
+\gll ko-\textbf{\textipa{A}}-mwaa-\textbf{un} \textbf{\textipa{A}-l\textepsilon{}-nd\textyogh{}in} ko-\O-\textsci{}t tu\textipa{G}a amut \\
+\textsc{pst}-\textbf{1sg}-tell-\textbf{2sg.\textsc{obj}} \textbf{1sg-C-2sg.\textsc{obj}} \textsc{pst}-3-arrive cows yesterday \\
+\glt `I DID tell you (sg) that the cows arrived yesterday.'
+\z
+
+In contrast to the subject-oriented CA pattern (Subj-CA), this object-oriented agreement form (Obj-CA) is realized as a suffix on the complementizer rather than a prefix. This pattern is a novel contribution to the literature; to our knowledge there is no previous discussion of an upward-oriented, object-oriented agreement relation (on a complementizer or otherwise). 
+
+As stated above, our \isi{focus} in this paper is the  description and empirical analysis of \ili{Kipsigis} \isi{complementizer agreement} patterns. We describe the morphosyntactic properties of the upward-oriented \isi{subject} \isi{complementizer agreement} relation (Subj-CA) in \S \ref{sec:Diercks,Rao:2}, demonstrating broad similarity between the \ili{Kipsigis} pattern and previously-documented patterns (\S \ref{Interpretation} explores some of the interpretive differences between the subject-agreeing complementizer and the non-agreeing complementizer). In \S \ref{ObjCASect}, we describe the novel agreement pattern of upward-oriented object agreement on complementizers (Obj-CA) and examine the interpretive contribution that it makes (distinct from Subj-CA). \S \ref{Conclusions} briefly discusses some broader implications for these patterns for the analysis of \isi{complementizer agreement}, and concludes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% SUBJ-CA %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Prefixed complementizer agreement (Subj-CA)} \label{sec:Diercks,Rao:2}
+
+% Complementizer Inventory 
+\subsection{Partial complementizer inventory}
+
+
+Table \ref{tab:Diercks,Rao:1} gives a partial inventory of complementizers in \ili{Kipsigis}. 
+
+\pagebreak
+
+\begin{table}
+\caption{Partial Kipsigis complementizer inventory}
+\label{tab:Diercks,Rao:1}
+ \begin{tabular}{ll} 
+  \lsptoprule
+   \textsc{Comp} & \textsc{Gloss} \\ 
+  \midrule
+   \textsc{agr}-lɛ & that (agreeing)  \\
+  kɔlɛ & that (non-agreeing) \\
+  kɛlɛ & that (\isi{default agreement}) \\
+  amuŋ & because \\
+  koti & if \\ 
+  ne & \isi{focus} head/relativizer \\
+  ko & topic head \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\noindent To our knowledge overt complementizers are obligatory for embedded declarative clauses. 
+
+\ea 
+\gll ɑ-ŋgɛn *(ɑ-lɛ/kɔlɛ) ko-\O-ɾuuja tuɣa amut \\
+1sg-know 1sg-C/that \textsc{pst}-3-sleep cows yesterday \\
+\glt `I know (that) the cows slept yesterday.'
+\z
+
+\noindent Only the \textit{\textsc{agr}-lɛ} declarative-embedding complementizer shows agreement (either for subjects or for objects, as will become clear in \S \ref{ObjCASect}). Evidence that \textit{kɛlɛ} is a default agreeing form is found in \isi{impersonal} constructions and \isi{noun complement} clauses (\S \ref{impersonals} and \S \ref{NCCSection}). 
+
+% Agreeing, Non-Agreeing, and Default Agreeing Forms 
+\subsection{Prefixed complementizer agreement forms}
+
+% Agreeing Forms
+The agreeing forms of the upward-oriented prefixed \isi{complementizer agreement} pattern are listed in Table \ref{tab:Diercks,Rao:2} with illustrative examples in (\ref{Agreeing C Paradigm}).
+
+\begin{table}
+\caption{Prefixed complementizer agreement forms (Subj-CA)}
+\label{tab:Diercks,Rao:2}
+ \begin{tabular}{lll} 
+  \lsptoprule
+   {} & \textsc{Sg} & \textsc{Pl} \\ 
+  \midrule
+   \textbf{1st} & ɑ-lɛ & kɛ-lɛ \\
+   \textbf{2nd} & i-lɛ & o-lɛ \\
+   \textbf{3rd} & kɔ-lɛ & kɔ-lɛ \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\ea \label{Agreeing C Paradigm}
+\begin{xlist} 
+
+\ex
+\gll	ko-ɑ-mwaa \circled{ɑ-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-say 1sg-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `I said that the cows slept yesterday.'
+
+\ex  \label{Agreeing 3rd}
+\gll ko-\O-mwaa \circled{kɔ-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-3-say 3-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `He/She/They said that the cows slept yesterday.'
+    	
+\ex
+\gll ko-o-mwaa \circled{o-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-2pl-say 2pl-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `You (pl) said that the cows slept yesterday.'
+
+\end{xlist}
+\z
+
+\noindent There is no number distinction between \isi{third person} forms, as is common in the language \citep[see][]{Jake:1979, Toweett:1979}. The \isi{third person} form of the complementizer (\textit{kɔlɛ}) can also be used as a non-agreeing complementizer, appearing with any \isi{subject}, illustrated with a \isi{first person} \isi{subject} in (\ref{Full CA Ex}). 
+
+\ea \label{Full CA Ex}
+\gll	ko-ɑ-mwaa \circled{kɔlɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-say that \textsc{pst}-3-sleep cows yesterday \\
+\glt `I said that the cows slept yesterday.'
+
+\z
+
+\noindent Though the translation in (\ref{Full CA Ex}) is the same as those for the agreeing complementizer examples, there is an interpretive difference between the two with respect to which contexts they appropriately occur in; see \S \ref{Interpretation}.
+
+%Most local matrix \isi{subject}
+\subsection{Prefixed CA agrees with the most local matrix subject} 
+
+\ili{Kipsigis} prefixed CA has a strict superordinate \isi{subject} orientation. The \ili{Germanic} CA pattern\textemdash in which the complementizer displays agreement with the embedded \isi{subject}\textemdash is ungrammatical in \ili{Kipsigis}. 
+
+\ea \label{No Embedded Sbj}
+\gll ɑ-ŋgɛn kɔlɛ/ɑ-lɛ/\circled{*i-lɛ} ko-\circled{i}-amiʃje amut \\
+1sg-know that/1sg-C/*2sg-C \textsc{pst}-2sg-eat yesterday \\
+\glt `I know that you ate yesterday.'
+\z
+
+\noindent The prefixed agreement pattern is also strictly subject-oriented, unable to target objects in the \isi{main clause}.
+
+\ea
+\gll ko-ɑ-mwaa-\circled{wuun} kɔlɛ/ɑ-lɛ/\circled{*i-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} that/1sg-C/*2sg-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `I told you (sg) (that) the cows slept yesterday.'
+\z
+
+\noindent Prefixed CA is also local\textemdash only the most local superordinate \isi{subject} may trigger agreement; in (\ref{embedded clause ex}) the matrix \isi{subject} cannot trigger Subj-CA in the lowest clause.
+
+\ea \label{embedded clause ex}
+\gll ko-\circled{ɑ}-mwaa ɑ-lɛ ko-\textbf{i}-bwɔt i-lɛ/\circled{*ɑ-lɛ} ko-\O-ɾuuja tuɣa amut\\
+\textsc{pst}-1sg-say 1sg-C \textsc{pst}-2sg-think 2sg-C/1sg-C \textsc{pst}-3-sleep cows yesterday\\
+\glt `I said that you thought that the cows slept yesterday.'
+\z
+
+\noindent The pattern in (\ref{No Embedded Sbj})-(\ref{embedded clause ex}) is the same as what is reported for \ili{Lubukusu} \citep{Diercks:2013}, \ili{Ikalanga} \citep{LetsholoSafir:2017} \ili{Ibibio} \citep{Torrence:2016}, Chokwe, Luchazi, Lunda, and \ili{Luvale} \citep{Kawasha:2007}. Given the subject-oriented nature of the phenomenon, we refer to it throughout as Subj-CA.
+
+% Impersonals
+\subsection{Subj-CA in impersonal constructions} \label{impersonals} \label{NoImpersonalSubj-CA}
+
+A feature of the \ili{Lubukusu} CA construction is that many speakers readily accept the agreement pattern with a derived \isi{subject} in a passive construction \citep{Diercks:2010, Diercks:2013}. To our knowledge, there is no passive construction in \ili{Kipsigis}; a similar discourse function is achieved either via a VOS construction or by the \isi{impersonal} construction \citep[cf.][]{Payne:2011}. The \isi{impersonal} construction is formed by adding a \textit{ɣe-} prefix to the verb, replacing the \isi{subject agreement} marker.\footnote{Impersonal constructions appear segmentally identical to an active sentence with a \isi{first person} plural \isi{subject}, but the constructions are distinguishable by different \isi{tone} patterns on the verb.} 
+
+Despite its passive-like interpretation, the \isi{impersonal} construction does not allow for prefixed agreement with the remaining main-clause argument.
+
+\ea
+\gll ko-ɣe-mwaa-ɑn kɔlɛ/\circled{*ɑ-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst-imp}-tell-\textbf{1sg.\textsc{obj}} that/1sg-C \textsc{pst}-3-sleep cows yesterday \\ 
+\glt `I was told that the cows slept yesterday.' (or, `it was told to me ...')
+\z
+
+\noindent This is not altogether surprising, as the object in these instances has not been promoted to \isi{subject} (instead being marked as an object clitic on the matrix verb). Rather than a commentary on the possibility of agreeing with derived subjects, then, this serves as another illustration of non-subjects being unable to trigger prefixed \isi{complementizer agreement}. 
+
+Instead, a \isi{default agreement} morpheme (\textit{kɛ-}) is available on complementizers in \isi{impersonal} constructions, occurring with  matrix objects of any $\varphi$-feature set. 
+
+\ea \label{keleExamples}
+\begin{xlist}
+
+\ex 
+\gll ko-ɣe-mwaa-ɑn \circled{kɛ-lɛ} ɣo-\O-ɾuuja tuɣa amut \\
+\textsc{pst-imp}-tell-1sg.\textsc{obj} \textsc{def}-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `I was told that the cows slept yesterday.'
+	
+\ex 
+\gll ko-ɣe-mwaa-wɔɔɣ \circled{kɛ-lɛ} ɣo-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-\textsc{imp}-tell-2pl.\textsc{obj} \textsc{def}-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `You (pl) were told that the cows slept yesterday.'
+
+\end{xlist}
+\z
+
+\noindent We conclude that \textit{kɛlɛ} is an agreeing form with \isi{default agreement} (rather than a non-agreeing form); the reasoning and evidence for this is explored in  \S \ref{Interpretation}.
+
+\subsection{(Non-)locality effects for Subj-CA} \label{Non Locality}
+
+A standard feature of the Agree operation (and agreement phenomena crosslinguistically) is that it is \isi{subject} to \isi{locality} effects: a head must agree with the structurally closest accessible DP \parencite{Chomsky:2000,Chomsky:2001}. In this section we describe the ways in which \ili{Kipsigis} Subj-CA does not accord with a straightforward Agree operation, as well as showing other patterns relating to the (non-) \isi{locality} of Subj-CA. 
+
+%Objects don't intervene
+\subsubsection{Subj-CA possible over an intervening object}
+
+In \ili{Lubukusu} CA, non-subjects in the matrix clause do not intervene in CA \citep{Diercks:2013}. Similarly in \ili{Kipsigis}, the Subj-CA pattern is not disrupted by overt objects in the matrix clause. 
+
+\ea
+\gll ko-\circled{i}-mwɔɔ-tʃi laakwɛt \circled{i-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-2sg-tell-3.\textsc{obj} child 2sg-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `You (sg) told the child that the cows slept yesterday.'
+\z
+
+\noindent This object non-intervention pattern, shared by \ili{Kipsigis} and \ili{Lubukusu} CA, has also been documented in \ili{Ibibio} \citep{Torrence:2016} and \ili{Ikalanga} \citep{LetsholoSafir:2017}.
+
+% CA out of NCCs 
+\subsubsection{Subj-CA out of noun complement clauses} \label{NCCSection}
+
+\noindent In \ili{Lubukusu}, a complementizer inside a \isi{noun complement clause} (NCC) can agree with the main-clause \isi{subject}. This is constrained by the presence of an intervening possessor of that \isi{noun phrase}, which cannot itself trigger CA but prevents CA with the \isi{main clause} \isi{subject} \citep[378]{Diercks:2013}. 
+
+The same pattern occurs in \ili{Kipsigis}, though our consultants differed in their judgments on the acceptability of agreeing forms of the complementizer in NCCs. One did not find these constructions acceptable, while the other provided them readily and robustly.\footnote{We annotate this interspeaker variation on the examples with a \% symbol.} For our consultant who accepts it, a complementizer in a NCC may agree with the \isi{main clause} \isi{subject} in appropriate contexts. 
+
+\ea 
+\begin{xlist}
+
+\ex 
+\gll ko-\textbf{ɑ}-ɪbut loɣujuwɛk \circled{\%ɑ-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-bring news \%1sg-C \textsc{pst}-3-sleep cows yesterday\\
+\glt `I brought news that cows slept yesterday.' 
+
+\ex
+\gll \textbf{ɑ}-tɪɲɛ kajɛnɛt \circled{\%ɑ-lɛ}/kɔlɛ/*kɛ-lɛ ko-\O-ɪt laɣok \\
+1sg-have belief/faith 1sg-C/that/*\textsc{def}-C \textsc{pst}-3-arrive children \\
+\glt `I have belief/faith that the children arrived.'
+
+\ex \label{TellStoryAgrC}
+\gll ko-\textbf{ɑ}-mwaa ɑtindoniot \circled{\%ɑ-lɛ}/kɔlɛ/*kɛ-lɛ ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell story \%1sg-C/that/*\textsc{def}-C \textsc{pst}-3-arrive children \\
+\glt `I told the story that the children arrived.'
+
+\end{xlist}
+\z
+
+\noindent As in \ili{Lubukusu}, the presence of a possessor inside the \isi{noun phrase} degrades Subj-CA in \ili{Kipsigis}. Example (\ref{TellStoryPoss}) is the equivalent of (\ref{TellStoryAgrC}), with the difference that a possessor is added to the \isi{noun phrase} in (\ref{TellStoryPoss}), resulting in unacceptability of the agreeing complementizer (for both consultants).
+
+\ea \label{TellStoryPoss}
+
+\gll ko-ɑ-mwaa ɑtindoniot ap Kiproono kɔlɛ/\circled{*ɑ-lɛ} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell story of Kiproono that/*1sg-C \textsc{pst}-3-arrive children \\
+\glt `I told Kiproono's story that the children arrived.'
+
+\z
+
+\noindent In the words of one of our consultants regarding (\ref{TellStoryPoss}), ``there is something very confusing about the sentence with \textit{ɑlɛ} ... it feels like saying I am the one who's saying that children arrived, but it's Kiproono's story, so there's a disconnection. So \textit{ɑlɛ} is not the best word to put there.'' This replicates the \ili{Lubukusu} NCC pattern, for one, but it also seems to suggest an interpretive link between the source of the information in the \isi{embedded clause} and the agreement trigger on CA. These interpretation considerations of the Subj-CA pattern will be explored in \S \ref{Interpretation}.
+
+%Summary of Properties (Subj-CA)
+\subsection{Intermediate conclusions: Prefixed (Subj-) CA}
+
+The list in (\ref{SubjCASummary}) summarizes the properties of \ili{Kipsigis} Subj-CA, which largely replicate the \ili{Lubukusu} patterns of \isi{complementizer agreement} \citep{Diercks:2013} and are consistent with the other languages with similar constructions (to the extent that parallel facts have been reported).
+
+\ea Properties of \ili{Kipsigis} Prefixed (Subj-) CA \label{SubjCASummary}
+\begin{xlist}
+\ex Prefixed (Subj-) CA targets the most local superordinate \isi{subject}.
+\ex Objects in the matrix clause cannot trigger Subj-CA, nor do they intervene in Subj-CA.
+\ex Impersonal constructions only allow a default agreeing form.
+\ex Subj-CA can occur within a \isi{noun complement clause} (NCC) for some speakers.
+\end{xlist}
+\end{exe}
+
+\noindent The next section looks more closely at the distinction between the agreeing and non-agreeing forms and describes the contexts in which these interpretive differences arise.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%     INTERPRETATION      %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Interpretation of Subj-CA} \label{Interpretation}
+
+There are clear interpretive differences between \ili{Kipsigis} sentences containing an agreeing complementizer and those with a non-agreeing complementizer. Subtle interpretive effects are in fact well-established for upward-oriented agreeing complementizers; \ili{Lubukusu} agreeing complementizers serve as an indicator of confidence in the source of the speaker's asserted information \citep{Diercks:2013}. However, the interpretation of the \ili{Kipsigis} agreeing pattern is non-identical to the reported \ili{Lubukusu} pattern. 
+
+\ea Interpretive Properties of \ili{Kipsigis} Subj-CA \label{InterpretationSummary}
+\begin{xlist}
+\ex Subj-CA is most appropriate when the agreement trigger is the source of the information communicated in the \isi{embedded clause}.
+\ex Subj-CA is most appropriate when it heads a CP whose propositional content is being added to the Common Ground. 
+\end{xlist}
+\end{exe}
+
+% Source Interpretation
+\subsubsection{Information source effect on Subj-CA}
+
+The source of the information reported in the \isi{embedded clause} plays an important role in the acceptability of Subj-CA. As demonstrated in the previous section, sentences such as the one in (\ref{CA Repeat}) are perfectly acceptable to speakers with both non-agreeing and agreeing complementizer forms.
+
+\ea \label{CA Repeat}
+\gll	ko-ɑ-mwaa ɑ-lɛ/kɔlɛ ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-say 1sg-C/that \textsc{pst}-3-sleep cows yesterday \\
+\glt `I said that the cows slept yesterday.'
+\z
+
+\noindent Our consultants' judgments vary with respect to the acceptability of Subj-CA in the complement of a verb of hearing.  
+
+\ea
+\gll ko-ɑ-ɣas \circled{\%ɑ-lɛ}/kɔlɛ ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-hear \%1sg-C/that \textsc{pst}-3-arrive children \\
+\glt `I heard that the children arrived.'
+\z
+
+\noindent One consultant suggests that using Subj-CA in this context sounds more quotative, and the other that it sounds better if you are intending to inform your listeners of the information in the \isi{embedded clause}. One speaker claimed that using the agreeing complementizer seemed to imply in some way that ``the information is coming from you". Throughout our interviews our two main consultants regularly accepted Subj-CA in constructions like this, but both somewhat frequently hesitated over them as well. 
+
+The judgments for verbs of hearing become more clear if an explicit source of the reported information is added to the sentence. In these cases, Subj-CA is consistently ruled unacceptable.  
+
+\ea 
+\gll ko-ɑ-ɣas kobun Kiproono kɔlɛ/\circled{*ɑ-lɛ} ko-\O-ɾuuja tuɣa amut \\
+\textsc{pst}-1sg-hear through Kiproono that/*1sg-C \textsc{pst}-3-sleep cows yesterday \\
+\trans `I heard through Kiproono that the cows slept yesterday.' 
+\z
+
+Additional evidence comes from \isi{noun complement} clauses (NCCs). As we saw above in \S \ref{NCCSection}, a complementizer heading a CP inside a NCC can agree with the \isi{main clause} \isi{subject} (the \% again marking inter-speaker variation). 
+
+\ea
+\gll ko-ɑ-ɪbu loɣojɔt kɔlɛ/\circled{\%ɑ-lɛ} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-bring news(sg) that/\%1sg-C \textsc{pst}-3-arrive children \\
+\glt `I brought the piece of news that the children arrived.'
+\z
+
+\noindent Note, however, that changing the verb to one in which the \isi{subject} is definitively not the source of the information in the NCC makes Subj-CA comparatively unnatural for both speakers. 
+
+\ea
+\gll ko-ɑ-ɣas loɣojɔt kɔlɛ/\circled{??ɑ-lɛ} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-hear news(sg) that/??1.sg-C \textsc{pst}-3-arrive children \\
+\glt `I heard the news (sg) that the children arrived.'
+\z
+
+\noindent We conclude that a condition for Subj-CA is that the referent of the agreement trigger be contextually interpretable as a source of the information communicated in the \isi{embedded clause}. 
+
+% Common Ground 
+\subsubsection{Common ground distinguishes Subj-CA}
+
+An additional interpretive effect of Subj-CA is that the agreeing complementizer is most naturally used when information reported in the embedded CP is being added to the Common Ground. In contrast, when information is already in the Common Ground (or is being treated as already in the Common Ground), the non-agreeing complementizer is most natural. Consider (\ref{AgrCExample}) and (\ref{Non-AgrCExample}), distinguished only by the agreeing vs. non-agreeing complementizer. 
+
+\ea
+\settowidth\jamwidth{\textbf{Non-AGR}}
+\begin{xlist}
+
+\ex \label{AgrCExample}
+\gll ko-ɑ-mwɔɔ-tʃi Kibeet \circled{ɑ-lɛ} ko-\O-ɪt tuɣa amut \\ 
+\textsc{pst}-1sg-tell-3.\textsc{obj} Kibeet 1sg-C \textsc{pst}-3-arrive cows yesterday \\ %\jambox{\textbf{Subj-CA}}
+\glt `I told Kibeet that the cows arrived yesterday.'
+
+\ex \label{Non-AgrCExample}
+\gll ko-ɑ-mwɔɔ-tʃi Kibeet \circled{kɔlɛ} ko-\O-ɪt tuɣa amut \\ 
+\textsc{pst}-1sg-tell-3.\textsc{obj} Kibeet that \textsc{pst}-3-arrive cows yesterday \\ %\jambox{\textbf{Non-AGR}}
+\glt `I told Kibeet that the cows arrived yesterday.'
+
+\end{xlist}
+\z
+
+\noindent Though the  truth conditions of both sentences are identical, specific discourse contexts determine when each is felicitous. 
+
+\ea \textit{Context 1: You (the addressee) and I (the speaker) were together yesterday, and when we were together we saw the cows arrive. Then today I see you, and I want to tell you that I told Kibeet this fact.}  
+\z
+
+\noindent In Context 1 where the \isi{embedded clause}'s proposition is in the \isi{common ground}, the non-agreeing complementizer in (\ref{Non-AgrCExample}) is very natural, but the agreeing complementizer in (\ref{AgrCExample}) is infelicitous. Now consider a different context.
+
+\ea \textit{Context 2: You were not aware that the cows arrived yesterday and I am using this opportunity to inform you not only that I told Kibeet about the cows, but also that the cows arrived.} 
+\z
+
+\noindent In contrast, in Context 2 where the arrival of the cows is not in the \isi{common ground}, the agreeing complementizer (\ref{AgrCExample}) becomes much more natural, and the non-agreeing complementizer (\ref{Non-AgrCExample}) is now relatively infelicitous. This distinction is also evident with a verb of understanding, as in (\ref{UnderstandInterpret}). 
+
+\ea \label{UnderstandInterpret}
+\gll ki-ɣuitosi kɔlɛ/kɛ-lɛ ko-\O-ɾuuja tuɣa amut \\
+1pl-understand that/1pl-C \textsc{pst}-3-sleep cows yesterday \\
+\glt `We understand that the cows slept yesterday.'
+\z
+
+\noindent For this type of sentence, the non-agreeing complementizer (\textit{kɔlɛ}) is natural in a context where the information in the \isi{embedded clause} is inconsequential, i.e. when everyone is aware that the cows slept. On the other hand, the agreeing complementizer (\textit{kɛlɛ}) would be used in (\ref{UnderstandInterpret}) given a different context in which the the information in the \isi{embedded clause} is introduced into the \isi{common ground}, such as this one: \textit{You and your friend's cows slept on another person's plants and you are both now in a lawsuit with them. In that situation someone might assert for the record, ``We understand that the cows slept yesterday.''} We conclude that the agreeing complementizer is most natural in contexts where information is being (intentionally) added to the \isi{common ground}, whereas the non-agreeing complementizer treats information as previously established in the \isi{common ground}.
+
+One possible avenue of analysis given this conclusion is that the agreeing complementizer is somehow associated with assertion, and the embedded clauses using such a complementizer are embedded assertions (by `assertion' we mean something that overtly adds a proposition to the \isi{common ground}). However, agreeing complementizers can readily occur in a variety of non-asserted contexts, suggesting that assertion alone is not the proper explanatory category of what contexts allow the agreeing complementizer. For space concerns we cannot include this evidence here, but the data are available in \citealt{Rao:2016a}.
+
+% MPU
+\subsubsection{CP as the main point of the utterance (MPU)}
+
+We posit that the most appropriate description of the interpretive effect of \ili{Kipsigis} CA is that the agreeing complementizer is possible when the \isi{embedded clause} is the main point of the utterance (MPU) of the clause. According to \citet{Simons:2007}  ``the main point of an utterance U of a declarative sentence S is the proposition p, communicated by U, which renders U relevant,'' where relevance is assumed to be essentially Gricean relevance \citep{Grice:1975a}. 
+
+\ea \label{MPU Hypothesis}
+\textbf{Proposed Analysis for Interpretive Effect of \ili{Kipsigis} CA} \\
+The agreeing complementizer is possible when the embedded CP is the main point of the utterance (MPU).
+\z
+
+A diagnostic for MPU is offered by \citep[1036]{Simons:2007}, in which a yes/no question is answered by   information that is presented in an \isi{embedded clause}, thus ensuring that the content of the \isi{embedded clause} is the MPU. The hypothesis in (\ref{MPU Hypothesis}) makes clear predictions in relation to this diagnostic: the agreeing complementizer should be felicitous\textemdash and \textit{kɔlɛ} infelicitous\textemdash in those cases where the \isi{embedded clause} contains the MPU; this is confirmed in (\ref{MPU Examples}):\footnote{In each of these cases consultants could find contexts in which the non-agreeing complementizer was allowed, usually requiring that the information in the \isi{embedded clause} was being recalled from an earlier interaction. These, of course, are the exceptions that prove the rule.}  
+
+\ea \label{MPU Examples} 
+\begin{xlist}
+
+\ex
+\gll Q: ko-\O-ɛ ŋoo βiiɣ? \\
+{} \textsc{pst}-3-drink who water \\
+\glt \hspace{0.16in} `Who drank the water?'
+
+\gll A: ki-bwɔɔti kɛ-lɛ/\#kɔlɛ ko-\O-ɛ βiiɣ tuɣa \\
+{} 1pl-think 1pl-C/that \textsc{pst}-3-drink water cows \\
+\glt \hspace{0.16in} `We think that the cows drank the water.'
+
+\ex 
+\gll Q: ko-\O-jaj nɛ laakwɛt? \\
+{} \textsc{pst}-3-do what child \\
+\glt \hspace{0.16in} `What did the child do?'
+
+\gll A: ko-ɑ-mwaa ɑ-lɛ/\#kɔlɛ ko-\O-ɔɔn laakwet n̩daaɾɛt \\
+{} \textsc{pst}-1sg-say 1sg-C/that \textsc{pst}-3-chase child snake \\
+ \glt \hspace{0.16in} `I said that the child chased a snake.'
+
+\end{xlist}
+\z
+
+\noindent MPU may well also capture the `source' intuitions that we reported previously. If something is the main point of an utterance by the definition above, it emanates from the speaker of an utterance, as it is their contribution to the discourse. Overtly designating an alternative source of the information in the embedded CP may simply be incompatible with a speaker treating that CP as the MPU. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% OBJ-CA %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Object Oriented CA
+\section{Suffixed Complementizer Agreement (Obj-CA)} \label{ObjCASect}
+
+%\subsection{Suffixed Complementizer Agreement Forms (Obj-CA)} 
+
+In addition to the prefixed Subj-CA pattern discussed above, \ili{Kipsigis} declarative-embedding complementizers can also agree with the matrix object, with a suffixed agreement morpheme (Obj-CA): we give agreement paradigm in Table \ref{Obj CA Forms Table}. 
+
+\pagebreak
+
+\begin{table}
+\caption{Suffixed Complementizer Agreement Forms (Obj-CA)}
+\label{Obj CA Forms Table}
+ \begin{tabular}{lll} 
+  \lsptoprule
+   {} & \textsc{Sg} & \textsc{Pl} \\ 
+  \midrule
+   \textbf{1st} & -lɛ-ndʒ-\textbf{ɑn} & -lɛ-ndʒ-\textbf{ɛtʃ} \\
+   \textbf{2nd} & -lɛ-ndʒ-\textbf{in} & -lɛ-ndʒ-\textbf{ɔɔɣ} \\
+   \textbf{3rd} & -lɛ-ndʒ-\textbf{i} & -lɛ-ndʒ-\textbf{i} \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\noindent To our knowledge, this is an agreement pattern that is novel to the linguistic literature.\footnote{\citet{Deal:2015} describes a \isi{complementizer agreement} relation in \ili{Nez Perce} that agrees with both subjects and objects, but that pattern targets embedded arguments, not main-clause arguments, and the agreement triggers are unambiguously determined structurally, rather than by grammatical function, as seems to be the case (on the surface) for \ili{Kipsigis}.}  Given its novelty, we present a full paradigm of Obj-CA forms in (\ref{Obj CA Examples}). These are translated with \isi{verum focus}, a translation which is explained in \S \ref{Obj-CA Interpretation}. 
+
+\ea \label{Obj CA Examples} 
+\begin{xlist}
+
+\ex \gll ko-i-mwaa-\circled{ɑn} i-lɛ-\circled{ndʒɑn} ko-\O-ɪt laɣok \\
+\textsc{pst}-2sg-tell-1sg.\textsc{obj} 2sg-C-1sg \textsc{pst}-3-arrive children \\ 
+\glt `You (sg) DID tell me that the children arrived.'
+
+\ex \gll ko-i-mwaa-\circled{un} ɑ-lɛ-\circled{ndʒin} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C-2sg \textsc{pst}-3-arrive children \\
+\glt `I DID tell you (sg) that the children arrived.'
+
+\ex \gll ko-i-mwaa-\circled{tʃi} ɑ-lɛ-\circled{ndʒi} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell-3.\textsc{obj} 1sg-C-3 \textsc{pst}-3-arrive children \\
+\glt `I DID tell him/her/them that the children arrived.'
+
+\ex \gll ko-i-mwaa-\circled{weetʃ} i-lɛ-\circled{ndʒeetʃ} ko-\O-ɪt laɣok \\
+\textsc{pst}-2sg-tell-1pl.\textsc{obj} 2sg-C-1pl \textsc{pst}-3-arrive children \\
+\glt `You (sg) DID tell us that the children arrived.'
+
+\ex \gll ko-i-mwaa-\circled{wɔɔɣ} ɑ-lɛ-\circled{ndʒɔɔɣ} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell-2pl.\textsc{obj} 1sg-C-2pl \textsc{pst}-3-arrive children \\
+\glt `I DID tell you (pl) that the children arrived.'
+
+\end{xlist}
+\z
+
+\noindent To our knowledge, suffixed Obj-CA is possible with any verb that embeds a CP and takes an additional object (mainly verbs of speech).\footnote{Sentences with multiple complementizers (and therefore multiple interpretations) are translated without \isi{verum focus}.} 
+
+\ea 
+\gll ko-ɑ-tʃɔɔm-dʒi Kiproono ɑ-lɛ/\circled{ɑ-lɛ-ndʒi} ko-\O-ɪt tuɣa amut \\
+\textsc{pst}-1sg-whisper-3.\textsc{obj} Kiproono 1sg-C/1sg-C-3 \textsc{pst}-3-arrive cows yest. \\
+\glt `I whispered to Kiproono that the cows arrived yesterday.' 
+\z
+
+\noindent In general, the Obj-CA appears to be syntactically optional, though we note below that it is licit only in very specific discourse contexts.  
+
+\subsection{Suffixed CA targets the most local matrix object}
+
+In contrast to the prefixed agreement pattern (Subj-CA), Obj-CA targets the matrix clause object. It cannot agree with the matrix \isi{subject}.
+
+\ea 
+\gll ko-\circled{ɑ}-mwaa-un ɑ-lɛ-ndʒin/\circled{*ɑ-lɛ-ndʒɑn} ko-\O-ɾuuja tuɣa \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C-2sg.\textsc{obj}/*1sg-C-1sg.\textsc{obj} \textsc{pst}-3-sleep cows \\
+\glt `I told you (sg) that the cows slept.'
+\z
+
+\noindent Obj-CA can also only agree with the most local object, similar to Subj-CA: 
+
+\ea
+\gll ko-\O-mwɔɔ-\circled{tʃi} tʃɛpkoɛtʃ Kiproono kɔlɛ ko-ɑ-mwaa-un ɑ-lɛ-ndʒin/\circled{*ɑ-lɛ-ndʒi} ko-\O-ɾuuja tuɣa \\
+\textsc{pst}-3-tell-3.\textsc{obj} Chepkoech Kiproono that \textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C-2sg.\textsc{obj}/*1sg-C-3.\textsc{obj} \textsc{pst}-3-sleep cows \\
+\glt `Chepkoech told Kiproono that I told you that the cows slept (recently).'
+\z
+
+\noindent In multiple embeddings, it is possible to have multiple complementizers that display the suffixed CA pattern.
+
+\ea
+\gll ko-\O-mwɔɔ-tʃi tʃɛpkoɛtʃ Kiproono \circled{kɔ-lɛ-ndʒi} ko-ɑ-mwaa-un \circled{ɑ-lɛ-ndʒin} ko-\O-ruuja tuɣa \\
+\textsc{pst}-3-tell-3.\textsc{obj} Chepkoech Kiproono 3-C-3.\textsc{obj} \textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C-2sg.\textsc{obj} \textsc{pst}-3-sleep cows \\
+\glt `Chepkoech told Kiproono that I told you that the cows slept.'
+\z
+
+\noindent In these ways, Obj-CA is very similar to the Subj-CA\textemdash showing similar \isi{locality} constraints\textemdash with the significant differences of targeting of objects and appearing as a suffix on the complementizer.
+
+% No Obj-CA on kole
+\subsection{Obj-CA only occurs on the agreeing complementizer} \label{Obj-CA Parasitic}
+
+\noindent Notably, \ili{Kipsigis} Obj-CA can only occur on the complementizer if it already demonstrates Subj-CA. The non-agreeing complementizer (i.e. \textit{kɔlɛ} with a 1st or 2nd person \isi{subject}) cannot bear object agreement. 
+
+\ea
+\gll ko-ɑ-mwaa-un ɑ-lɛ/\circled{ɑ-lɛ-ndʒin}/kɔlɛ/\circled{*kɔlɛ-ndʒin} ko-\O-ɪt tuɣa amut \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C/1sg-C-2sg.\textsc{obj}/that/*C-2sg.\textsc{obj} \textsc{pst}-3-arrive cows yesterday \\
+\glt `I told you that the cows arrived yesterday.'
+\z
+
+\noindent The \textit{kɔlɛndʒin} form of the complementizer is acceptable only when it is in fact the agreeing complementizer, i.e. agreeing with a \isi{third person} \isi{subject}.
+
+\ea
+\gll ko-\O-mwaa-un Kiproono \circled{kɔ-lɛ-ndʒin} ko-\O-ɪt tuɣa amut \\
+\textsc{pst}-3-tell-2sg.\textsc{obj} Kiproono 3-C-2sg.\textsc{obj} \textsc{pst}-3-arrive cows yesterday \\
+\glt `Kiproono told you (sg) that the cows arrived yesterday.'
+\z
+
+\noindent It appears then, that Obj-CA is parasitic on Subj-CA (we briefly discuss the significance of this fact in \S \ref{Conclusions}). 
+
+% Obj-CA in NCCs
+\subsection{Obj-CA in NCCs}
+
+Obj-CA can occur in a \isi{noun complement clause} (NCC) for our consultant who also accepts Subj-CA in NCCs.\footnote{Inter-speaker variation is again marked with a \%.}
+
+\ea
+\begin{xlist}
+
+\ex
+\gll ko-ɑ-mwaa-un ɑtindoniot kɔlɛ/\%ɑ-lɛ/\circled{\%ɑ-lɛ-ndʒin} ko-\O-ɪt laɣok \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} story that/\%1sg-C/\%1sg-C-2sg.\textsc{obj} \textsc{pst}-3-arrive children \\
+\glt `I told you (sg) the story that the children arrived.'
+
+\ex
+\gll ko-i-mwaa-ɑn ɑtindoniot kɔlɛ/\%i-lɛ/\circled{\%i-lɛ-ndʒɑn} ko-\O-ɪt laɣok \\
+\textsc{pst}-2sg-tell-1sg.\textsc{obj} story that/\%2sg-C/\%2sg-C-1sg.\textsc{obj} \textsc{pst}-3-arrive children \\
+\glt `You (sg) told me the story that the children arrived.'
+
+\end{xlist}
+\z
+
+% Impersonals
+\subsection{Suffixed (Obj-) CA in impersonal constructions}
+We demonstrated in \S \ref{NoImpersonalSubj-CA} above that Subj-CA cannot agree with the remaining DP argument in an \isi{impersonal} construction, which is appropriate given that this argument is not promoted to \isi{subject} in a \ili{Kipsigis} \isi{impersonal}. Accordingly, the Obj-CA forms may appear on the complementizer in an \isi{impersonal} construction. 
+
+\ea
+\begin{xlist}
+
+\ex
+\gll ko-ɣe-mwaa-ɑn kɛ-lɛ/kɔlɛ/*ɑ-lɛ/\circled{*kɔlɛ-ndʒɑn}/\circled{kɛ-lɛ-ndʒɑn} ko-\O-ɪt laɣok  \\
+\textsc{pst}-\textsc{imp}-tell-1sg.\textsc{obj} \textsc{def}-C/that/*1sg-C/*C-1sg.\textsc{obj}/\textsc{def}-C-1sg.\textsc{obj} \textsc{pst}-3-arrive children \\
+\glt `I was told that the children arrived.' 
+
+\ex
+\gll ko-ɣe-mwaa-un kɛ-lɛ/kɔlɛ/*i-lɛ/\circled{*kɔlɛ-ndʒɑn}/\circled{kɛ-lɛ-ndʒin} ko-\O-ɪt laɣok \\
+\textsc{pst}-\textsc{imp}-tell-2sg.\textsc{obj} \textsc{def}-C/that/*2sg-C/*C-2sg.\textsc{obj}/\textsc{def}-C-2sg.\textsc{obj} \textsc{pst}-3-arrive children\\
+\glt `You were told that the children arrived.' 
+
+\end{xlist}
+\z
+
+\noindent Crucially here the \textit{kɛlɛ} form of the agreeing complementizer must be used. Recall from above that Obj-CA is not possible on the non-agreeing \textit{kɔlɛ} complementizer. Taken together with these facts, this evidence  supports the conclusion that \textit{kɛlɛ} is in fact a default form of the agreeing complementizer (rather than a non-agreeing complementizer), as it may bear object agreement in \isi{impersonal} constructions where there is no discernible \isi{subject} to trigger Subj-CA. These facts have some analytical significance, as discussed in \S \ref{Conclusions}.
+
+%Interpretation of Subj-CA
+\subsection{Interpretation of Obj-CA} \label{Obj-CA Interpretation}
+
+The main function of Obj-CA seems to be to add emphasis to an utterance, particularly in the manner of \textit{verum focus}. Verum \isi{focus} is defined by \citet{Hohle:1992} as placing ``emphasis on the truth of the proposition it takes scopes over.'' It therefore has no effect on the truth conditions of the statement. Verum \isi{focus} is achieved in \ili{English} by inserting \textit{do} into a declarative sentence. 
+
+\ea \label{No-VF English}
+Q: What did Mike eat? \\
+A1: He ate a cookie. \\
+A2: \#He DID eat a cookie. \hfill [\textit{Verum Focus}]
+\z
+
+\noindent Here, the proposition that Mike ate the cookie is not yet in the \isi{common ground} and so the \isi{verum focus} construction in (A2) is infelicitous. If the question was ``Did Mike eat a cookie", (A2) would be felicitous. Now instead, consider a context in which the addressee does not believe that Mike ate a cookie.
+
+\ea \label{VF English}
+Challenge: Mike didn't eat a cookie! \\
+Response 1: \#He ate a cookie. \\
+Response 2: He DID eat a cookie. \hfill [\textit{Verum Focus}]
+\z
+
+\noindent The proposition that Mike ate a cookie is already in the \isi{common ground}, so Response \#2 is acceptable. It does not necessarily assert that Mike ate the cookie, but rather reinforces the speaker's confidence that Mike ate the cookie.  
+
+Now consider the following sentences in \ili{Kipsigis}, differing only in the presence/absence of Obj-CA marking.
+
+\ea \label{Obj-CA Contexts} 
+\begin{xlist}
+
+\ex \label{Obj-CA 1}
+\gll ko-ɑ-mwaa-un \circled{ɑ-lɛ} ko-\O-ɾuuja tuɣa \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C \textsc{pst}-3-sleep cows \\
+\hfill \textbf{No Obj-CA}
+%\jambox{ \textbf{No Obj-CA} }
+\glt `I told you that the cows slept.'
+	
+\ex \label{Obj-CA 2}
+\gll ko-ɑ-mwaa-un \circled{ɑ-lɛ-ndʒin} ko-\O-ɾuuja tuɣa \\
+\textsc{pst}-1sg-tell-2sg.\textsc{obj} 1sg-C-2sg.\textsc{obj} \textsc{pst}-3-sleep cows \\
+\hfill \textbf{Obj-CA}
+%\jambox{ \textbf{Obj-CA} }
+\glt `I told you that the cows slept.'
+
+\end{xlist}
+\z
+
+\noindent Note that the truth conditions for both sentences are the same (i.e. I gave you the information that the cows slept). However, the acceptability of the object-agreeing complementizer varies in different discourse contexts.
+
+\ea %Context 1
+\textit{Context 1: You and I were talking about the cows yesterday and I told you that the cows slept. Today, I talk with you again and you say ``I didn't know that the cows slept yesterday. You never told me!" I counter this with one of the responses in (\ref{Obj-CA Contexts})}.
+\z
+
+\noindent Given this context, the object-agreeing complementizer (\textit{ɑlɛndʒin}) in (\ref{Obj-CA 2}) is perfectly acceptable. One consultant had an intuition that the object-agreeing complementizer was best when the speaker was ``being challenged somehow''; in this case the listener doubts that the speaker told them about the cows. This is similar to the earlier provided example of \isi{verum focus} in (\ref{VF English}), but here the content in question is in the \isi{embedded clause}. Let us consider another context.
+
+\ea %Context 2
+\textit{Context 2: You and I talked about the cows and I told you that the cows slept. The next day, I talk with you and you say ``Someone told me that the cows slept, but I don't remember who it was."}
+\z
+
+\noindent In Context 2, in contrast, the Obj-CA construction in (\ref{Obj-CA 2}) is dispreferred. Like above, our consultant's reaction to this context was to point out that Obj-CA ``is better for when someone is challenging you". Like the example in (\ref{No-VF English}), the addressee is asking for information rather than asserting a proposition that requires the speaker to confirm the truth of a statement. Obj-CA therefore appears to be licit in contexts where \isi{verum focus} is licit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Conclusions %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Intermediate conclusions: Suffixed (Obj-) CA}
+
+Object agreement on complementizers is possible in \ili{Kipsigis} and has a number of properties similar to that of Subj-CA.
+
+\begin{exe}
+\ex Properties of Suffixed (Obj-) CA in \ili{Kipsigis} Similar to Subj-CA
+\begin{xlist}
+
+\ex The target of Obj-CA is constrained to the most local \isi{main clause}. 
+
+%\ex Other DPs in the matrix clause do not create intervention effects.
+
+\ex The pattern is acceptable within a \isi{noun complement clause} (NCC) for some speakers.
+
+\ex The agreement pattern has the appearance of targeting a constituent of a particular grammatical function (Obj-CA targets objects, Subj-CA targets subjects)
+
+\end{xlist}
+\end{exe}
+
+\noindent On the other hand, there are also some properties that make this agreement pattern distinct from Subj-CA.
+
+\begin{exe}
+\ex Properties of Suffixed (Obj-) CA in \ili{Kipsigis} Distinct from Subj-CA
+\begin{xlist}
+
+\ex Obj-CA agrees with the main-clause object, not the \isi{subject}. 
+
+\ex Obj-CA can only occur on a Subj-CA complementizer, but Subj-CA can appear without Obj-CA. 
+
+\ex There is no default Obj-CA (cf. Subj-CA in impersonals)
+
+\ex Obj-CA triggers a verum-\isi{focus} reading of the sentence. 
+
+\end{xlist}
+\end{exe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Conclusions} \label{Conclusions}
+
+\subsection{Brief analytical comments}
+
+Given space constraints we cannot fully discuss the theoretical consequences of these empirical patterns, but we offer a few thoughts here on the direction of analysis where we believe this work ought to lead. The most salient theoretical question that arises centers on the question of the directionality of Agree, which has been the \isi{subject} of some discussion in the last decade \citep[e.g.][]{Chomsky:2001,Preminger:2013,Zeijlstra:2012,Wurmbrand:2011,Bjorkman:2014,Bejar:2009,Baker:2008b,Putnam:2011,Carstens:2016,Diercks:2016anaphoric}. While the Subj-CA facts here (for the most part) simply re-affirm the urgency of establishing a theory of agreement that can accommodate this sort of upward-oriented agreement pattern, the Obj-CA facts enter a new pattern into the theoretical discussion.  
+
+Reflecting on Obj-CA for a moment, we are faced with a critical question: if agreement patterns are determined structurally, rather than linked directly with notions like grammatical functions (as a long history of generative theorizing has claimed), it is not clear how to explain how two agreement relations on the same head systematically target DPs with distinct grammatical functions (subjects vs. objects). On verbal forms this is usually accomplished by positing different structural positions for the object-related morphology and the subject-related morphology. But in this instance the head (C) is structurally lower than \textit{both} the matrix \isi{subject} and object, and even if decomposed into more abstract components, both of those components would be \isi{subject} to the same structural obstacles to an Agree relation. And while \citet{Diercks:2013} proposed that \ili{Lubukusu} Subj-CA could be analyzed essentially as a self-anaphor, to our knowledge there are no strictly \textit{object}-oriented anaphors, leaving the \ili{Kipsigis} Obj-CA relation unexplained.
+
+A first step toward an analysis is based on the fact that the \isi{subject agreement} morpheme seems to be obligatory when the agreeing complementizer is used (hence, \isi{default agreement} in \isi{impersonal} constructions). Obj-CA has no default form, therefore appearing ``optionally'' on the Subj-CA complementizer. Facts like these have long been taken as indicative of a morphosyntactic difference: perhaps Subj-CA is an agreement morpheme, but Obj-CA is a clitic (in a clitic-doubling configuration with the matrix object). This doesn't answer every question about how Subj-CA and Obj-CA successfully target their respect agreement triggers, but at least reframes the question in largely familiar terms (\isi{subject agreement} and object clitic doubling). 
+
+That raises an even more critical question, however: how can a matrix object be clitic-doubled on a functional head that (by widely accepted assumptions) is \textit{always} structurally lower than the base position of the object (heading a \isi{complement clause})? Most analyses of clitic doubling (see \citealt{Roberts:2010,Kramer:2014,Harizanov:2014} for recent versions) rely rather critically on a c-command configuration between the clitic site and the DP object. To maintain these (otherwise quite successful) approaches to clitic doubling, we would be forced to claim that the agreeing complementizer with Subj-CA and Obj-CA in fact c-commands the DP object. On the face of it, such a proposal seems implausible: why/how would a complementizer be in the middlefield of the matrix clause? 
+   
+However, this kind of analysis is precisely what has been proposed by \citet{Carstens:2016} and \citet{Diercks:2016b} to explain \ili{Lubukusu} CA. \citeauthor{Carstens:2016} claims this is a consequence of the Agree relation proper, whereas \citeauthor{Diercks:2016anaphoric} propose a derivative feature valuation operation called anaphoric agreement composed of \isi{movement} + Agree (based on \citealt{Rooryck:2011}). Setting those differences aside, both accounts propose that a Subj-CA construction consists of the complementizer moving covertly into the matrix clause (to the edge of \textit{v}P, from which position agreement is possible via a standard downward-probing Agree relation). The \ili{Kipsigis} Obj-CA facts yield an interesting new perspective on these otherwise quite abstract proposals; for Obj-CA to be the clitic-doubling operation it appears to be, the complementizer would in fact need to be represented in the \isi{main clause} at some point in the derivation. 
+    
+Initial evidence from \ili{Kipsigis} suggests that this is in fact a promising approach: it is possible for a complementizer to \textit{overtly} raise into the \isi{main clause}, preceding overt arguments in the \isi{main clause} (and essentially substituting for an otherwise null main verb of speech):\footnote{Similar constructions where a complementizer substitutes for a verb of speech have been reported by \citet{Kawasha:2007} for a variety of central \ili{Bantu} languages, and have also been encountered by Diercks for some \ili{Lubukusu} speakers (fieldnotes). This is therefore not peculiar to the \ili{Kipsigis} pattern (though, notably, the SVO word order of the other languages does not clarify the position of the complementizer in the same way that \ili{Kipsigis}' verb-initial word order allows for). Note that for examples like (\ref{Comp-InitialSentence}), an inflectional difference between complementizers and main verbs makes clear that the clause-initial element is in fact a complementizer.} 
+
+\ea \label{Comp-InitialSentence}
+\gll kɔ-lɛ-ndʒin Kiproono ko-\O-ɾuuja tuɣa amut \\
+3-C-2sg.\textsc{obj} Kiproono \textsc{pst}-3-sleep cows yesterday \\
+\glt `Kiproono told you that the cows slept yesterday.'
+\z
+
+This line of analysis has promise to inform us not only about nature of agreement itself, but also about the structural nature of complementation. Therefore, while these analyses require a large amount of detailed work and additional evidence, we can begin to see the sorts of theoretical significance than can emerge in relation to the kinds of facts reported here. 
+
+\subsection{Summary}
+This paper describes an upward-oriented \isi{complementizer agreement} relation in \ili{Kipsigis}. Many of these properties are also shared by the CA patterns in a variety of languages, demonstrating a growing empirical consensus about the nature of upward-oriented \isi{complementizer agreement}.\footnote{Though, of course, individual languages continue to add new wrinkles, for example \ili{Ikalanga}'s influence of tense/voice on CA \citep{LetsholoSafir:2017}.} While subject-oriented CA constructions (Subj-CA) are becoming more well-known, we have also documented an object-oriented CA construction (Obj-CA), which is a novel contribution to the linguistic literature (to our knowledge). In addition to describing the morphosyntactic properties of both Subj-CA and Obj-CA, we discussed the interpretive consequences of each (both related to their felicitous use in different discourse contexts, rather than truth-\isi{conditional} semantic differences). While this final section includes some commentary on broader analytical questions, due to space concerns we cannot tackle the deeper theoretical questions that are raised by upward-oriented \isi{complementizer agreement} (both Subj-CA and Obj-CA); these include the nature of feature valuation/Agree, phases, and counter-cyclic operations in syntax (among others). We refer the reader to the work cited throughout the paper for more depth with these issues, and specifically to \citet{Diercks:2016anaphoric} for an account that can accommodate the facts presented here. 
+
+\section*{Acknowledgements}
+First and foremost we would like to thank Robert Langat and Sammy Kiprono Bor for their hard work on this project, and for sharing their language with us. We hope we have done it justice. The authors would like to thank Masha Polinsky, Jessica Coon, and especially Lauren Eby Clemens for their guidance in learning about V1 languages over the years. Rodrigo Ranero and Claire Halpert were very helpful sounding boards at various points, and the audience at the ACAL poster session was exceedingly generous in offering their questions and critiques, which resulted in a much more thorough description of the constructions we have examined here. All remaining errors are our own. Both authors collected data for the project and worked on the empirical and theoretical questions together. The first complete written version of this work was the second author's undergraduate thesis at Pomona College, which was revised for publication by the first author. 
+
+\newpage
+
+\section*{Abbreviations}
+ 
+ 
+ 
+ \begin{tabularx}{.45\textwidth}{lQ}
+%    cardinal numbers & person features (1,2,3) \\
+   1,2,3 & person features  \\
+   \textsc{agr} & Agreeing \\
+   C & Complementizer \\
+   \textsc{ca} & Complementizer Agreement \\
+   \textsc{def} & Default \\
+   \textsc{imp} & Impersonal \\ 
+   \textsc{mpu} & Main Point of the Utterance \\  
+   \\
+ \end{tabularx}
+ \begin{tabularx}{.54\textwidth}{lQ}
+   \textsc{ncc} & Noun Complement Clause \\   
+   \textsc{obj} & Object \\
+   Obj-CA & Object-Oriented (Suffixed) Complementizer Agreement \\
+   \textsc{pl} & plural \\
+   \textsc{pst} & \isi{past tense} \\
+   \textsc{sg} & singular \\
+   \textsc{subj} & Subject \\
+   Subj-CA & Subject-Oriented (Prefixed) Complementizer Agreement \\
+ \end{tabularx} 
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

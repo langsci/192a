@@ -1,0 +1,877 @@
+%add all your local new commands to this file
+\newcommand{\downingquad}[4]{\parbox{2.5cm}{#1}\parbox{3.5cm}{#2}\parbox{2.5cm}{#3}\parbox{3.5cm}{#4}}
+\newcommand{\downingtriple}[3]{\parbox{4.5cm}{#1}\parbox{3cm}{#2}\parbox{3cm}{#3}}
+\newcommand{\downingdouble}[2]{\parbox{4.5cm}{#1}\parbox{5cm}{#2}}
+\newcommand{\downingquint}[5]{\parbox{1.75cm}{#1}\parbox{2.25cm}{#2}\parbox{2cm}{#3}\parbox{3cm}{#4}\parbox{2cm}{#5}}
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+%commands for Kusmer paper below
+\newcommand{\ip}{$\upiota$}
+\newcommand{\lipm}{(\_{\ip-Max}}
+\newcommand{\ripm}{)\_{\ip-Max}}
+\newcommand{\lipn}{(\_{\ip}}
+\newcommand{\ripn}{)\_{\ip}}
+\renewcommand{\_}[1]{\textsubscript{#1}}
+
+
+%commands for Pillion paper below
+\newcommand{\suph}{\textipa{\super h}}
+\newcommand{\supj}{\textipa{\super j}}
+\newcommand{\supw}{\textipa{\super w}}
+\newcommand{\ts}{\textipa{\t{ts}}}
+\newcommand{\tS}{\textipa{\t{tS}}}
+\newcommand{\devi}{\textipa{\r*i}}
+\newcommand{\devu}{\textipa{\r*u}}
+\newcommand{\devy}{\textipa{\r*y}}
+\newcommand{\deva}{\textipa{\r*a}}
+\newcommand{\N}{\textipa{N}}
+\newcommand{\Z}{\textipa{Z}}
+
+
+%commands for Diercks paper below
+\newcommand{\circled}[1]{\begin{tikzpicture}[baseline=(word.base)]
+\node[draw, rounded corners, text height=8pt, text depth=2pt, inner sep=2pt, outer sep=0pt, use as bounding box] (word) {#1};
+\end{tikzpicture}
+}
+
+%commands for Pesetsky paper below
+\newcommand{\sem}[2][]{\mbox{$[\![ $\textbf{#2}$ ]\!]^{#1}$}}
+
+% \newcommand{\ripn}{{\color{red}ripn}}%this is used but never defined. Please update the definition
+
+
+
+%commands for Lamont paper below
+\newcommand{\row}[4]{
+	#1. & 
+    /\textipa{#2}/ & 
+    [\textipa{#3}] & 
+    `#4' \\ 
+}
+%\newcommand{\tipa}[1]{\textipa{#1}}
+%\newcounter{tableauxcounter}
+\newcommand{\tabhead}[2]{
+    \captionsetup{labelformat=empty}
+    \stepcounter{tableauxcounter}
+    \addtocounter{table}{-1}
+	\centering
+	\caption{Tableau \thetableauxcounter: #1}
+	\label{#2}
+}
+% tableaux
+\newcommand{\inp}[1]{\multicolumn{2}{|l||}{\tipa{#1}}}
+\newcommand{\inpno}[1]{\multicolumn{2}{|l||}{#1}}
+\newcommand{\g}{\cellcolor{lightgray}}
+\newcommand{\hanl}{\HandLeft}
+\newcommand{\hanr}{\HandRight}
+\newcommand{\kuku}{Kuk\'{u}}
+
+% \newcommand{\nocaption}[1]{{\color{red} Please provide a caption}}
+
+\providecommand{\biberror}[1]{{\color{red}#1}}
+
+\definecolor{RED}{cmyk}{0.05,1,0.8,0}
+
+
+\newfontfamily\amharicfont[Script = Ethiopic, Scale = 1.0]{AbyssinicaSIL}
+\newcommand{\amh}[1]{{\amharicfont #1}}
+
+
+%Gjersoe
+\usepackage{textgreek}
+
+\newcommand{\viol}{\fontfamily{MinionPro-OsF}\selectfont\rotatebox{60}{$\star$}}
+\newcommand{\myscalex}{0.45}
+\newcommand{\myscaley}{0.65}
+%\newcommand{\red}[1]{\textcolor{red}{#1}}
+%\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\epen}[1]{\colorbox{jgray}{#1}}
+\newcommand{\hand}{{\normalsize \ding{43}}}
+\definecolor{jgray}{gray}{0.8}
+\setlength\columnsep{8pt}
+\setlength{\intextsep}{3pt plus 2pt}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\newcommand{\mora}{\textmu\xspace}
+\newcommand{\si}{\textsigma\xspace}
+\newcommand{\ft}{\textPhi\xspace}
+\newcommand{\tone}{\texttau\xspace}
+\newcommand{\word}{\textomega\xspace}
+% \newcommand{\ts}{\texttslig}
+\newcommand{\fns}{\footnotesize}
+\newcommand{\ns}{\normalsize}
+\newcommand{\vs}{\vspace{1em}}
+\newcommand{\bs}{\textbackslash}   % backslash
+\newcommand{\cmd}[1]{{\bf \color{red}#1}}   % highlights command
+\newcommand{\scell}[2][l]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+% --- Snider Representations --- %
+
+\newcommand{\RepLevelHh}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+%\node (syl) at (0,0) {Hi};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+%\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RepLevelLh}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+%\node (syl) at (0,0) {Mid2};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {h};
+%\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RepLevelHl}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+%\node (syl) at (0,0) {Mid1};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {l};
+%\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RepLevelLl}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+%\node (syl) at (0,0) {Lo};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+%\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% --- Representations --- %
+
+\newcommand{\RepLevel}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {\texttau};
+\node (R) at (0.5,3) {\textrho};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RepContour}{
+\begin{minipage}{0.10\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {\texttau};
+\node (R) at (0.5,3) {\textrho};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {$\tau$};
+%\node (R2) at (2.0,2.5) {R};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+%\draw [thick] (Rt2.north) -- (H2.south) ;
+%\draw [thick] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+
+% --- OT constraints --- %
+
+\newcommand{\IllustrationDown}{
+\begin{minipage}{0.09\textwidth}
+\begin{tikzpicture}[xscale=0.7,yscale=0.45]
+\node (reg) at (0,0.75) {{\small \textalpha}};
+\node (arrow) at (0,0) {{\fns $\downarrow$}};
+\node (Rt) at (0,-0.75) {{\small \textbeta}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\IllustrationUp}{
+\begin{minipage}{0.09\textwidth}
+\begin{tikzpicture}[xscale=0.7,yscale=0.45]
+\node (reg) at (0,0.75) {{\small \textalpha}};
+\node (arrow) at (0,0) {{\fns $\uparrow$}};
+\node (Rt) at (0,-0.75) {{\small \textbeta}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\MaxAB}{
+\begin{minipage}{0.09\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (max) at (0,0) {{\small \textsc{Max}}};
+\node (reg) at (0.75,0.5) {{\fns \textalpha}};
+\node (arrow) at (0.75,0) {{\tiny $\downarrow$}};
+\node (Rt) at (0.75,-0.5) {{\fns \textbeta}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepAB}{
+\begin{minipage}{0.09\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (max) at (0,0) {{\small \textsc{Dep}}};
+\node (reg) at (0.75,0.5) {{\fns \textalpha}};
+\node (arrow) at (0.75,0) {{\tiny $\downarrow$}};
+\node (Rt) at (0.75,-0.5) {{\fns \textbeta}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepHReg}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (reg) at (0,-1.0) {{\small h}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepLReg}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (reg) at (0,-1.0) {{\small l}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepReg}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (reg) at (0,-1.0) {{\small \textrho}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepTRt}{
+\begin{minipage}{0.1\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (t) at (0.75,0.5) {{\fns \texttau}};
+\node (arrow) at (0.75,0) {{\tiny $\downarrow$}};
+\node (Rt) at (0.75,-0.5) {{\fns o}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\MaxRegRt}{
+\begin{minipage}{0.1\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (max) at (0,0) {{\small \textsc{Max}}};
+\node (arrow) at (0.75,0) {{\tiny $\downarrow$}};
+\node (Rt) at (0.75,-0.5) {{\fns o}};
+\node (reg) at (0.75,0.5) {{\fns \textrho}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RegToneByRt}{
+\begin{minipage}{0.06\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node[rotate=20] (arrow1) at (-0.15,0) {{\fns $\uparrow$}};
+\node[rotate=340] (arrow2) at (0.15,0) {{\fns $\uparrow$}};
+\node (Rt) at (0,-0.55) {{\small o}};
+\node (reg) at (0.4,0.55) {{\small \textrho}};
+\node (tone) at (-0.4,0.55) {{\small \texttau}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RegToneBySyl}{
+\begin{minipage}{0.06\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node[rotate=20] (arrow1) at (-0.15,0) {{\fns $\uparrow$}};
+\node[rotate=340] (arrow2) at (0.15,0) {{\fns $\uparrow$}};
+\node (Rt) at (0,-0.55) {{\small \textsigma}};
+\node (reg) at (0.4,0.55) {{\small \textrho}};
+\node (tone) at (-0.4,0.55) {{\small \texttau}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepTone}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (tone) at (0,-1.0) {{\small \texttau}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepTonalRt}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (tone) at (0,-1.0) {{\small o}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepL}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (tone) at (0,-1.0) {{\small L}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepH}{
+\begin{minipage}{0.055\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (tone) at (0,-1.0) {{\small H}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\NoMultDiff}{{\small *loh}}
+\newcommand{\Alt}{{\small \textsc{Alt}}}
+\newcommand{\NoSkip}{{\small \scell{\textsc{No}\\\textsc{Skip}}}}
+
+
+\newcommand{\RegDomRt}{
+\begin{minipage}{0.030\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node (arrow) at (0,0) {{\fns $\downarrow$}};
+\node (Rt) at (0,-0.55) {{\small o}};
+\node (reg) at (0,0.55) {{\small \textrho}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\DepRegRt}{
+\begin{minipage}{0.1\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.4]
+\node (dep) at (0,0) {{\small \textsc{Dep}}};
+\node (arrow) at (0.75,0) {{\tiny $\downarrow$}};
+\node (Rt) at (0.75,-0.5) {{\fns o}};
+\node (reg) at (0.75,0.5) {{\fns \textrho}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+% unused
+
+\newcommand{\ToneByRt}{
+\begin{minipage}{0.05\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node (arrow) at (0,0) {{\fns $\uparrow$}};
+\node (Rt) at (0,-0.55) {{\small o}};
+\node (tone) at (0,0.55) {{\small \texttau}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\RegByRt}{
+\begin{minipage}{0.05\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node (arrow) at (0,0) {{\fns $\uparrow$}};
+\node (Rt) at (0,-0.55) {{\small o}};
+\node (reg) at (0,0.55) {{\small \textrho}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\ToneDomRt}{
+\begin{minipage}{0.05\textwidth}
+\begin{tikzpicture}[xscale=0.6,yscale=0.5]
+\node (arrow) at (0,0) {{\fns $\downarrow$}};
+\node (Rt) at (0,-0.55) {{\small o}};
+\node (tone) at (0,0.55) {{\small \texttau}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+% --- OT tableaus --- %
+
+% Sec. 3.2, first tabl.
+
+\newcommand{\OTHLInput}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= H)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+%\draw [dashed] (Rt2.north) -- (H2.south) ;
+%\draw [dashed] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHLWinner}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= HL)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [dashed] (Rt2.north) -- (H2.south) ;
+\draw [dashed] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHLSpreadingHOnly}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= HM)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [dashed] (Rt2.north) -- (R2.south) ;
+\draw [dashed] (Rt2.north) -- (H.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHLInsertH}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= HM)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {\epen{H}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [dashed] (Rt2.north) -- (H2.south) ;
+\draw [dashed] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHLOverwriting}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+%\draw [dashed] (Rt2.north) -- (H2.south) ;
+\draw [dashed] (Rt.north) -- (R2.south) ;
+\node (del) at (0.3,1.9) {\textbf{=}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHLSpreading}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+%\draw [dashed] (Rt2.north) -- (H2.south) ;
+\draw [dashed] (Rt2.north) -- (H.south) ;
+\draw [dashed] (Rt2.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% Sec. 4.2, second tabl.: phrase-medial position
+
+\newcommand{\OTHnoLInput}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= H)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+%\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHnoLEpenth}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= HM)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {\epen{L}};
+\node (R2) at (2.0,3) {\epen{h}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [dashed] (Rt2.north) -- (H2.south) ;
+\draw [dashed] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTHnoLSpreading}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= HH)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {H};
+\node (R) at (0.5,3) {h};
+\node (Rt2) at (1.5,1.0) {o};
+%\node (H2) at (1.0,2) {\epen{L}};
+%\node (R2) at (2.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [dashed] (Rt2.north) -- (H.south) ;
+\draw [dashed] (Rt2.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% Sec. 4.2, third tabl., LM is unaffected by L\%
+
+\newcommand{\OTLMInput}{
+\begin{minipage}{0.2\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= LM)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {L};
+\node (R2) at (2.0,3) {h};
+\node (R3) at (3.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick] (Rt2.north) -- (H2.south) ;
+\draw [thick] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLMReplace}{
+\begin{minipage}{0.2\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= LL)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {L};
+\node (R2) at (2.0,3) {h};
+\node (R3) at (3.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick] (Rt2.north) -- (H2.south) ;
+\draw [thick] (Rt2.north) -- (R2.south) ;
+\draw [dashed] (Rt2.north) -- (R3.south) ;
+\node (del) at (1.8,2.1) {\textbf{=}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLMTwoReg}{
+\begin{minipage}{0.2\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= LML)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (Rt2) at (1.5,1.0) {o};
+\node (H2) at (1.0,2) {L};
+\node (R2) at (2.0,3) {h};
+\node (R3) at (3.0,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick] (Rt2.north) -- (H2.south) ;
+\draw [thick] (Rt2.north) -- (R2.south) ;
+\draw [dashed] (Rt2.north) -- (R3.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% Sec. 4.2, fourth tabl., L is affected by L\% but M is not
+
+\newcommand{\OTLInput}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= L)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (R2) at (2,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLLowered}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= LL)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (R2) at (2,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [dashed] (Rt.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTMInput}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= M)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {h};
+\node (R2) at (2,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTMLowered}{
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}[xscale=\myscalex,yscale=\myscaley]
+\node (tone) at (2,0) {(= ML)};
+\node (syl) at (0,0) {\textsigma};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {h};
+\node (R2) at (2,3) {\blue{l}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [dashed] (Rt.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% Sec. 4.2, fifth tableau, polar questions with level tones
+
+\newcommand{\OTLPolIn}{
+\begin{minipage}{0.20\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (3.5,0) {(= L)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl2) at (2,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (Rt2) at (2,1) {\red{o}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick,red] (syl2.north) -- (Rt2.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLPolDef}{
+\begin{minipage}{0.20\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (3.5,0) {(= L.M)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl2) at (2,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (H2) at (1.5,2) {\epen{L}};
+\node (R2) at (2.5,3) {\epen{h}};
+\node (Rt2) at (2,1) {\red{o}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick,red] (syl2.north) -- (Rt2.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [semithick,dashed] (Rt2.north) -- (H2.south) ;
+\draw [semithick,dashed] (Rt2.north) -- (R2.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLPolAlt}{
+\begin{minipage}{0.20\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (3.5,0) {(= L.L)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl2) at (2,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (Rt2) at (2,1) {\red{o}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick,red] (syl2.north) -- (Rt2.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [semithick,dashed] (Rt2.north) -- (H.south) ;
+\draw [semithick,dashed] (Rt2.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+% Sec. 4.2, sixth tableau, polar questions with contour tones
+
+\newcommand{\OTLLPolIn}{
+\begin{minipage}{0.23\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (5.2,0) {(= L)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl3) at (3.4,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (Rt2) at (1.7,1) {o};
+\node (Rt3) at (3.4,1) {\red{o}};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick,red] (syl3.north) -- (Rt3.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLLPolDef}{
+\begin{minipage}{0.23\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (5.2,0) {(= L.M)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl3) at (3.4,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (Rt2) at (1.7,1) {o};
+\node (Rt3) at (3.4,1) {\red{o}};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\node (H3) at (2.9,2) {\epen{L}};
+\node (R3) at (3.9,3) {\epen{h}};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick,red] (syl3.north) -- (Rt3.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [dashed] (Rt3.north) -- (H3.south) ;
+\draw [dashed] (Rt3.north) -- (R3.south) ;
+\end{tikzpicture}
+\end{minipage}
+}
+
+\newcommand{\OTLLPolSkip}{
+\begin{minipage}{0.23\textwidth}
+\begin{tikzpicture}[xscale=\myscalex-0.05,yscale=\myscaley-0.05]
+\node (tone) at (5.2,0) {(= L.L)};
+\node (syl) at (0,0) {\textsigma};
+\node (syl3) at (3.4,0) {\red{\textsigma}};
+\node (Rt) at (0,1) {o};
+\node (Rt2) at (1.7,1) {o};
+\node (Rt3) at (3.4,1) {\red{o}};
+\node (H) at (-0.5,2) {L};
+\node (R) at (0.5,3) {l};
+\draw [thick] (syl.north) -- (Rt.south) ;
+\draw [thick] (syl.north) -- (Rt2.south) ;
+\draw [thick,red] (syl3.north) -- (Rt3.south) ;
+\draw [thick] (Rt.north) -- (H.south) ;
+\draw [thick] (Rt.north) -- (R.south) ;
+\draw [dashed] (Rt3.north) -- (H.south) ;
+\draw [dashed] (Rt3.north) -- (R.south) ;
+\end{tikzpicture}
+\end{minipage}
+}  

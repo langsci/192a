@@ -1,0 +1,519 @@
+\documentclass[output=paper]{LSP/langsci} 
+\author{Alicia Parrish\affiliation{Michigan State University} 
+\lastand Cara Feldscher\affiliation{Michigan State University} 
+}
+\title{On the structure of splitting verbs in {Y}oruba} 
+%\epigram{Change epigram in chapters/01.tex or remove it there }
+\abstract{Yoruba has a set of bisyllabic verbs that obligatorily split around a direct object, as in \textit{Ad\'{e} \textbf{ba} il\'{e} n\`{a}\'{a} \textbf{j\'{e}}}, meaning \textit{Ad\'{e} \textbf{destroyed} the house}, where both \textit{ba} and \textit{j\'{e}} make up the verb for \textit{destroy}.  These are called ``splitting verbs'' and have previously been analyzed as requiring that the first verbal element be merged directly on \textit{v}. We introduce new data using an aspectual marker, \textit{t\'{u}n}, meaning \textit{again}, which changes the typical word order such that both verbal elements appear string adjacent following the object, as in \textit{Ad\'{e} t\'{u}n il\'{e} n\`{a}\'{a} \textbf{baj\'{e}}}, meaning \textit{Ad\'{e} \textbf{destroyed} the house again}. This data supports a movement-based analysis of splitting verbs where both verbal elements are initially merged low in the structure, but the first verbal element is moved through Asp to \textit{v}.}
+
+\maketitle
+
+\tikzset{every tree node/.style={align=center, anchor=north}}
+\tikzset{every roof node/.append style={inner sep=0.1pt,text height=2ex,text depth=0.3ex}}
+
+
+\begin{document}
+
+\section{Introduction}
+\ili{Yoruba} is widely agreed to be an SVO language, as seen in \REF{ex:parrish:SVO}, and reported by many grammars of \ili{Yoruba}, such as \citet{Bamgbose1966}, among others. 
+
+\ea
+    \gll Ad\'{e} je adiye n\`{a}\'{a}. \\
+    Ad\'{e} eat chicken the \\
+    \glt 'Ad\'{e} ate the chicken.'
+    \label{ex:parrish:SVO}
+\z
+
+However, a class of verbs exists that does not follow the usual SVO order. Splitting verbs, as shown in \REF{ex:parrish:must-embed} and \REF{ex:parrish:bad-no-embed}, are a class of disyllabic verbs that obligatorily split around the \isi{direct object}.\footnote{Note that it is only around a \isi{direct object}. In cases where there is an \isi{indirect object}, it must appear outside of the split.}
+
+
+\ea
+    \ea[]{
+	\gll Ad\'{e} ba il\'{e} n\`{a}\'{a} j\'{e}. \\
+	Ad\'{e} {destroy$_{1}$} house the {destroy$_{2}$} \\
+	\glt `Ad\'{e} destroyed the house'
+	}\label{ex:parrish:must-embed}
+	\ex[*]{
+	\gll Ad\'{e} ba-j\'{e} il\'{e} n\`{a}\'{a}. \\
+	Ad\'{e} {destroy$_{1-2}$} house the \\
+	\glt Intended: `Ad\'{e} destroyed the house'
+	}\label{ex:parrish:bad-no-embed}
+	\z
+\z
+
+In one established case, these verbs are found with both halves string adjacent. This lack of a split occurs when the verb has an inchoative alternation (as a few, but not all, of them do), where there is no object to split around, as shown in \REF{ex:parrish:inchoative}. Speakers report that, in this case, they consider the verb to be one lexical item.
+
+
+\ea 
+ \ea 
+	\gll Ad\'{e} \textbf{pa} il\`{e}k\`{u}n n\`{a}\'{a} \textbf{d\'{e}}. \\
+	Ad\'{e} {close$_{1}$} door the {close$_{2}$} \\
+	\glt `Ad\'{e} closed the door.'
+ \ex 
+	\gll il\`{e}k\`{u}n n\`{a}\'{a} \textbf{pa-d\'{e}}. \\
+	door the {close$_{1-2}$} \\
+	\glt `the door closed.'
+\label{ex:parrish:inchoative}
+ \z 
+\z 
+
+
+There is some debate over the structure of these verbs, but native speakers are firm in their intuitions that splitting verbs have a semantically noncompositional meaning, as are many scholars in the field \citep{Bode2007,Awobuluyi1967,Awobuluyi1971,Bamgbose1966}. While some splitting verbs are decomposable into two somewhat compositional pieces, others are not, and are idiomatically composed of two verbs \citep{Awobuluyi1971}. In some cases, the two halves may not even be verbs on their own anymore. In (\ref{ex:parrish:verb-separate}-\ref{ex:parrish:verb-no-separate}), we show examples from \citet{Awobuluyi1971} of one \isi{splitting verb} that is somewhat decomposable and another that is not, as shown by the ungrammaticality of each piece when used in isolation, either transitively or intransitively. Splitting verbs are semantically varied in addition to having varying degrees of compositionality; for further examples demonstrating this, see \citet{Awobuluyi1971}.
+
+\ea b\`{u}\d{s}e `to almost complete' = b\`{u}  + \d{s}e, `take some of' +`do'
+\label{ex:parrish:verb-separate}
+\z 
+
+\ea  b\`{a}j\d{\'{e}} `to spoil' = b\`{a} + j\d{\'{e}}, `?' + `?'
+	
+
+		\ea[*] {\gll \'{o} b\`{a} (\`{O}j\'{o})\\
+		3sg-Subj b\`{a} (Ojo)\\
+		\glt `It b\`{a} (Ojo).'}
+		
+		\ex[*] {\gll \'{o} j\d{\'{e}} (\`{O}j\'{o})\\
+		3sg-Subj j\d{\'{e}} (Ojo)\\
+		\glt `It j\d{\'{e}} (Ojo).'}
+		\z
+
+	
+\label{ex:parrish:verb-no-separate}
+\z 
+
+%\begin{tabular}{l l l}
+%	\hline
+%	\ili{Yoruba} & Decomposable elements & Idiomatic translation \\
+%	\hline
+%	b\`{a}j\d{\'{e}} & & damage; spoil \\
+%	b\'{a}w\'{i} & & scold; rebuke \\
+%	b\d{\`{e}}w\`{o} & & visit \\
+%	d\`{i}m\'{u} & & hold; grip  \\
+%	fonk\'{a} & & scatter (pieces of things) \\
+%	gbagbo & & believe  \\
+%	gbamu & & catch  \\
+%	pam{\d{\'{o}}} & & keep; take care of  \\
+%	pad\'{e} & & close; keep shut \\
+%	r\d{\'{e}}j\d{e} & & cheat; swindle  \\
+%	t\`{a}nj\d{e} & & deceive \\
+%	t\'{u}k\'{a} & & scatter; disperse (solid things) \\
+%	yanj\d{e} & & cheat \\
+%	\hline
+%\end{tabular}
+
+\citet{Awoyale1974} argues that they are in fact decomposable, but he is forced to add semantic meaning that is greater than what is contributed by the individual elements\footnote{This also confirms their status as idiomatic constructions. His argument is based on a degree of abstract similarity achieved between some groups of splitting verbs that share one element, but the exact contribution each gives to the meaning of the whole in his analysis is never explicitly stated.}, and he is in the minority in arguing for full decompositionality. 
+
+
+
+\section{Background}
+\label{sect:background}
+\subsection{Previous analyses}
+\label{sect:yoruba}
+
+There are two main directions that accounts of splitting verbs have gone in. One possibility is to claim that splitting verbs are two separate verbs in a normal \isi{serial verb} construction, in which case the challenge is to explain the lexical specificity restrictions of which verbs they can pair with and the semantically non-compositional reading that results. The other is to claim that the two verbs actually make up just one lexical item, in which case the challenge is to explain why the two halves show up separately when a \isi{direct object} is present. 
+
+\citet{Bamgbose1966} takes the first route and claims that splitting verbs are reducible to \isi{serial verb} constructions. Serial verb constructions allow two verbs to share one object, which appears in between the two verbs, like the object in \isi{splitting verb} constructions. For serial verbs in \ili{Yoruba}, it is possible for one DP to be the object of both verbs, as in (\ref{ex:parrish:serial-verb-examples}a), or the object of the first verb can appear as the \isi{subject} of the second, as in (\ref{ex:parrish:serial-verb-examples}b). 
+
+
+\ea
+ \ea Example from \citet{Bode2007} \\
+    \gll Bode ra \`{i}w\'{e} t\`{a}.\\
+    Bode buy books sell\\
+    \glt `Bode bought books and sold them.'
+
+    \ex Example from \citet{Sebba1987} \\
+    \gll Ad\'{e} le Akin wa il\'{e}.\\
+    Ad\'{e} drive Akin come home\\
+    \glt `Ad\'{e} drove Akin home.'
+ \z
+ \label{ex:parrish:serial-verb-examples} 
+\z
+
+
+The fact that some splitting verbs cannot be broken down into two independent lexical verbs creating a compositional meaning is explained as these being idiomatic constructions. All analyses of this phenomenon face the same difficulty of accounting for the restriction on which verbal elements can combine.
+
+In contrast, \citet{Awobuluyi1967,Awobuluyi1971} takes the other route and argues that splitting verbs are one lexical item, requiring a different analysis. He considers them their own verb class. In support of his stance considering them as one lexical item, he points out that often neither half of the \isi{splitting verb} currently functions as an independent verb, and in these constructions a similar verb usually can not be switched in to retain the correct meaning even when the verb phrase is somewhat decomposable. In addition, he points out that their sharing of an object is insufficient to classify them as serial verbs. If they were serial verbs sharing an object, one should be able to paraphrase a sentence with a \isi{splitting verb} using \isi{coordination} to create two sentences where the object appears with each verb separately, which he attempts in \REF{ex:parrish:coordination}. However, he reports that the two sentences are not semantically identical, and that the coordinated version is ungrammatical, due to a selectional restriction that \textit{gb\'{o}} `hear' is unable to take humans as objects.
+ 
+\ea Examples from \citet{Awobuluyi1967} 
+	\ea[] {\gll B\d{\'{o}}l\'{a} \textbf{gb\`{a}} \d{s}\'{i}k\'{a}g\`{o} \textbf{gb\'{o}}\\
+	Bola believed$_1$ Chicago believed$_2$.\\
+	\glt `Bola believed Chicago.'}
+
+	\ex[*] {\gll B\d{\'{o}}l\'{a} \textbf{gb\`{a}} \d{s}\'{i}k\'{a}g\`{o} \'{o} s\`{i} \textbf{gb\'{o}} o\\
+	Bola received Chicago 3sg-Subj and heard 3sg-Obj.\\
+	\glt Intended lit. `Bola received Chicago and heard him.'}
+	\z
+\label{ex:parrish:coordination}
+\z 
+
+Additionally, \textit{gb\`{a}gb\'{o}} `believe' can be used with animate objects, but the second verbal half \textit{gb\'{o}} can not when functioning independently, so they have different \isi{animacy} restrictions \citep{Awobuluyi1967}. This is also indicative that splitting verbs should not be analyzed as sharing an object in exactly the same way that serial verbs are. The inability to coordinate two clauses with each half of the \isi{splitting verb} in separate clauses would also follow directly in an analysis that considers them noncompositional (or idioms).
+
+More recently, \citet{Bode2007} merged the two halves of a \isi{splitting verb} separately in his analysis, yet emphasized that they are regarded as a single unit semantically. So in his analysis there is only one VP for splitting verbs, but two verbal elements are inserted into it at different locations. His is the most comprehensive work documenting \ili{Yoruba} verb structure, and he is able to capture many generalizations with his approach. He proposes for all verbs in \ili{Yoruba} that they move twice. First from V, they move to Asp to check aspectual requirements, and from there they move to \textit{v}. In turn, the argument moves to Spec Asp. In the case of splitting verbs, however, he places the second verbal element in V, which then moves to Asp as per usual. The first verbal element he merges in \textit{v} directly, thus achieving the SV$_{1}$ OV$_{2}$\ order. This creates a structure as in \figref{fig:parrish:BodeTree}.
+
+\begin{figure}
+	
+	\begin{tikzpicture}[scale=0.8]
+	\Tree
+	[.$v$P [.DP\\Ad\'{e} ][.$v$' [.$v$\\ba ][.AspP [.DP \edge[roof]; {il\'{e} n\`{a}\'{a}$_{2}$} ][.Asp' [.Asp\\{j\'{e}$_{1}$} ][.VP [.DP\\$t_{2}$ ][.V\\$t_{1}$ ]]]]]]
+	\end{tikzpicture}
+	\caption{Bode's structure for splitting verbs sentences like \REF{ex:parrish:must-embed}}
+	
+	\label{fig:parrish:BodeTree} 
+\end{figure}
+
+In cases without a \isi{splitting verb}, the V head in Asp moves to \textit{v}, which yields the correct SVO order. Thus his account for splitting verbs is that merging V$_{1}$\ in \textit{v} has blocked \isi{movement} of Asp to \textit{v}, with the result of the argument being between the two verbal elements, as it still moves to Spec Asp. In the case of intransitives like \REF{ex:parrish:inchoative}, the argument will again move to be pulled up to \isi{subject} position by an EPP feature on T, thus also yielding the correct word orders for the splitting verbs that have a causative/inchoative alternation.
+
+\subsection{Possible parallels outside Yoruba}
+\label{sect:parallels}
+
+One fairly well-known possible parallel for splitting verbs is particle verbs, as in \ili{English} or \ili{German}. While native speakers of \ili{English} report a less strong intuition that \textit{look up} in a sentence like \textit{I looked it up in the dictionary} comprises one lexical item, it is clear that this is similarly two lexical items combining in a semi-idiomatic way. Particle verbs in \ili{English} and \ili{German} are semi-formulaic in their composition of a verb plus a preposition, where there is evidence that the verb and particle start together \citep{Johnson1991}. However, \ili{English} particle verbs have variable order (both \textit{look the word up} and \textit{look up the word} are acceptable), meaning that it is not the best correlate to splitting verbs in \ili{Yoruba}, which do not have multiple possible orders. In \ili{German} particle verbs, the split, or lack thereof, is dictated by the syntactic structure of the sentence, with examples below from \citet{Zeller2001}. As \ili{German} is a V2 language, in finite clauses the verb moves, stranding the particle, and in nonfinite clauses it does not, so the verb and particle appear together.
+
+\ea
+ \ea[]{
+    \gll Peter steigt in den Bus ein\\
+    Peter climbs in the bus \textsc{part}\\
+    \glt `Peter gets on the bus'\\
+        (cf. *Peter einsteigt in den Bus)
+    }
+    \ex[]{
+    \gll weil Peter in den Bus einsteigt\\
+    because Peter in the bus \textsc{part}-climbs\\
+    \glt `because Peter gets on the bus'
+    }
+ \z \label{german}
+\z
+
+
+In \ili{Yoruba} splitting verbs as well, the split is wholly syntactic and obligatory with the presence of a \isi{direct object}. 
+
+Given the semi-idiomatic meaning, it should be the case that the two pieces are interpreted together, even though the variable word order makes it less apparent. Focusing on particle verbs in \ili{German}, \citet{Zeller2001} reviews two main approaches to analyzing their structure: a morphological approach that considers the two pieces a verbal compound and a syntactic approach that considers a PartP of sorts as complement to the V. 
+
+In both of these approaches, the particle is moved to where it can enter into a relationship with the V at some point in the derivation in order to get this particle verb reading, distinct from a plain verb + preposition structure. Zeller argues for a version of the syntactic approach where the particle is base-generated in such a position. Given the separability of the verb from its particle, they must be two distinct heads, else \isi{verb movement} would necessarily entail \isi{movement} of both halves. For \ili{English} particle verbs, \citet{Zeller2001} cites \citet{Emonds1972} in showing that particle verb constructions license the use of \textit{right}, like prepositions and unlike verbs, such as in \textit{He looked the answer right up}. This is in support of the claim that the particle is a separate phrase, and not a part of the word/verb. He gives the following structures for particle verbs, where the head direction can be reversed to reflect the differing order between languages, such as \ili{English} and \ili{German}. An example is given in \REF{ex:parrish:zeller}, with the corresponding structure in \figref{fig:parrish:zeller-tree}, where there is an argument, and it is merged in specVP.
+
+
+	
+\ea\label{ex:parrish:zeller}
+    \gll die T{\"u}r ab -schlie{\ss}t \\
+    the door \textsc{part} -lock \\
+\z 
+
+\begin{figure}
+	\begin{tikzpicture}[scale=0.8]
+	\Tree 
+	[.VP [.DP \edge[roof]; die~T{\"u}r ] [.V$'$ [.PrtP [.Prt$^{0}$\\ab ]] [.V$^{0}$\\schlie{\ss}t ]]]
+	\end{tikzpicture}
+	\caption{Structure for \REF{ex:parrish:zeller}}
+	
+	\label{fig:parrish:zeller-tree}
+\end{figure}
+
+   
+
+
+Many authors \citep[among others]{Bode2007,Adewole2007,Awobuluyi1971,Awoyale1974,Bamgbose1966} have reported that both elements of a \isi{splitting verb} were at one point in their history able to contribute meaning to the sentence. That is, each one was, at one point, a full verb, even though in Modern \ili{Yoruba} it is sometimes the case that reconstructing what that verb was or what it meant is impossible. Thus both halves of splitting verbs in \ili{Yoruba} seem to come from verbs historically, but have undergone a process of semantic bleaching, similar to how many verbs in Niger-Congo languages have become complementizers or become more preposition-like over time \citep{Lord1993}.
+
+Although this phenomenon shows up in \ili{Germanic} languages as particle verbs, other languages also have structures with two verbal elements that act similar to \ili{Yoruba} splitting verbs. \cite{Sande2016} has documented a similar phenomenon in Gu\'{e}bie, a \ili{Kru} language spoken in C\^{o}te d'Ivoire. Gu\'{e}bie has V to T \isi{movement}, resulting in an SAuxOV word order when there is an \isi{auxiliary} in T, or otherwise SVO when there is not. As seen in \REF{ex:parrish:guebie}, a class of verbs exists where only part of it moves to T, creating a split within the verb.
+
+
+\ea 
+ \ea[]{ 
+ 	\gll e$^{4}$ ji$^{3}$ {\textbardotlessj aci$^{23.1}$} jokuni$^{2.3.4}$.\\
+    I will Djatchi visit\\
+    \glt `I will visit Djatchi.'
+    }
+        
+ \ex[]{ 
+ 	\gll e$^{4}$ ni$^{4}$ {\textbardotlessj aci$^{23.1}$} joku$^{2.3}$.\\
+    I visit.\textsc{pfv} Djatchi \textsc{part}\\
+    \glt `I visited Djatchi.'
+    }
+    
+        
+ \ex[*]{ 
+ 	\gll e$^{4}$  jokuni$^{2.3.4}$ {\textbardotlessj aci$^{23.1}$}.\\
+    I visit.\textsc{pfv} Djatchi\\
+    \glt Intended: `I visited Djatchi.' 
+    }
+    \label{ex:parrish:guebie}
+ \z 
+\z
+
+
+These verbs in Gu\'{e}bie share some parallels with \ili{Yoruba} splitting verbs and other particle verbs: the meaning is not fully decompositional, nor are any of these particles fully productive in their combining with other verbs to make a particle verb, and their split is syntactically motivated. However, Gu\'{e}bie is not closely related to \ili{Yoruba}, and the other half of its splitting verbs share much more similarity with prepositions than other verbs. \citet{Ogie2009} also reports in passing that splitting verbs appear in \ili{Edo}, which is closely related to \ili{Yoruba}, although an analysis is not made in that paper.
+
+
+\section{Aspectual marker \textit{t\'{u}n}}
+\label{sect:parrish:TunSection}
+
+There exists one case beyond just those verbs with the causitive/inchoative alternation that produces the halves of the splitting verbs string adjacent. This other environment is created by what has been referred to in the literature as a preverb, or adverb \citep{Bamgbose1966,Bode2007}. The word \textit{t\'{u}n} has two distinct meanings, corresponding with two different word orders. When it means \textit{also}, as in \REF{ex:parrish:also}, it maintains the regular SVO order seen in \REF{ex:parrish:reg}. When it means \textit{again}, however, it appears before the object, and the sentence surprisingly appears to be SOV. This word order is seen in \REF{ex:parrish:again}.
+
+
+\ea 
+ \ea 
+   \gll O se adiye n\`{a}\'{a}. \\
+   3sg-Subj cook chicken the \\
+   \glt `He cooked the chicken.'
+   \label{ex:parrish:reg}
+   
+   \ex 
+   \gll O t\'{u}n adiye n\`{a}\'{a} se. \\
+   3sg-Subj {\textsc{tun}} chicken the cook \\
+   \glt `He cooked the chicken again.
+   \label{ex:parrish:again}
+   
+
+   
+   \ex 
+   \gll O t\'{u}n se adiye n\`{a}\'{a}. \\
+   3sg-Subj {\textsc{tun}} cook chicken the \\
+   \glt `He also cooked the chicken.'
+   \label{ex:parrish:also}
+ \z 
+\z
+
+
+Verbs that are always intransitive are ambiguous between the `again' and `also' readings.
+
+\ea 
+   \gll Ad\'{e} t\'{u}n subu. \\
+   Ad\'{e} {\textsc{tun}} fall \\
+   \glt `Ad\'{e} fell again.' \textit{or} `Ad\'{e} also fell.'
+   \label{ex:parrish:intransitive}
+\z
+
+With \ili{German} particle verbs, there are two possible words orders but a syntactic element, the \isi{clause type}, determines which one appears. For splitting verbs too, the differing word order tells us this ambiguity is a structural one, which might shed light on \isi{verb movement} in \ili{Yoruba}. This pattern is robust, and if we look at the data with \textit{t\'{u}n} and splitting verbs, we see the pattern repeated; the \textit{again} meaning disrupts the word order. When \textit{t\'{u}n} means \textit{also}, it appears before the verb, which splits like normal. The SV$_{1}$ OV$_{2}$\ order is preserved, as in \REF{ex:parrish:tun-Bill-je}. When \textit{t\'{u}n} means \textit{again}, the word order is disrupted. Thus in \REF{ex:parrish:Bill-tanje}, the order is SOV$_{1}$ V$_{2}$ , and both halves of the \isi{splitting verb} appear after the object.
+
+
+\ea 
+ \ea 
+   \gll Ad\'{e} t\'{u}n \textbf{t\`{a}n} Akin \textbf{j\d{e}}. \\
+   Ad\'{e} {\textsc{tun}} {deceive$_{1}$} Akin {deceive$_{2}$} \\
+   \glt `Ad\'{e} also deceived Akin.'
+   \label{ex:parrish:tun-Bill-je}
+   
+  \ex 
+   \gll Ad\'{e} t\'{u}n Akin \textbf{t\`{a}nj\d{e}}. \\
+   Ad\'{e} {\textsc{tun}} Akin deceive \\
+   \glt `Ad\'{e} deceived Akin again'
+   \label{ex:parrish:Bill-tanje}
+ \z 
+\z
+
+   
+Given Bode's analysis of \isi{verb movement} as passing through Asp, the ordering of the verb after the object in \REF{ex:parrish:again} indicates that this \isi{movement} is being blocked. Assuming Bode's analysis of \isi{verb movement} to be correct, if \textit{t\'{u}n} is blocking the verb from moving to \textit{v}, linearly preceding the object in Spec Asp, it must be in either \textit{v} or in Asp when low and interpreted as \textit{again}. Given that \textit{again} could be considered to convey an iterative sort of \isi{aspect}, we posit that in these cases, \textit{t\'{u}n} is functioning as an aspectual marker, as opposed to its use when it means \textit{also}. By blocking the \isi{verb movement}, the correct SOV order results. In the \textit{also} reading, \textit{t\'{u}n} is acting as an adverb, rather than Asp head, and thus is attaching in a higher adverb position and does not affect the word order in the verb phrase. With a higher attachment, the \isi{verb movement} to Asp and then to \textit{v} is not blocked, and thus the correct SVO order is achieved. Using a non-\isi{splitting verb} to illustrate, we posit the structures in \figref{fig:parrish:1} and \figref{fig:parrish:2} to achieve \REF{ex:parrish:also} and \REF{ex:parrish:again}, respectively.
+
+\begin{figure}
+	\begin{tikzpicture}[scale=0.8]
+	\Tree
+	[.\textit{v}P [.AdvP\\{}t\'{u}n ][.\textit{v}P [.DP\\O ][.\textit{v}' [.\textit{v} [.V\\{se$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {adiye n\`{a}\'{a}$_{2}$} ][.Asp' [.Asp\\$t_{1}$ ][.VP [.V\\$t_{1}$ ][.DP\\$t_{2}$ ]]]]]]]
+	\end{tikzpicture}
+	\caption{Structure meaning \textit{also} (ex. \REF{ex:parrish:also})}
+	
+	\label{fig:parrish:1}
+\end{figure}
+
+
+\begin{figure}
+	\begin{tikzpicture}[scale=0.8]
+	\Tree
+	[.\textit{v}P [.DP\\O ][.\textit{v}' [.\textit{v} [.Asp\\{t\'{u}n$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {adiye n\`{a}\'{a}$_{2}$} ][.Asp' [.Asp\\$t_{1}$ ][.VP [.V\\se ][.DP\\$t_{2}$ ]]]]]]
+	\end{tikzpicture}
+	\caption{Structure meaning \textit{again} (ex \REF{ex:parrish:again}) }
+	
+	\label{fig:parrish:2}
+\end{figure}
+
+ 
+In accord with \textit{t\'{u}n} acting as an Aspect head, there are ordering interactions between this and other Aspect particles. When \textit{t\'{u}n} is acting as Aspect head and blocking the split, it must be lower in the structure than \textit{ma}, which marks future tense. This is the order in (\ref{ex:parrish:ma-again}a), in contrast to the reverse, ungrammatical ordering in (\ref{ex:parrish:ma-again}b). When functioning as a regular adverb, allowing the split and meaning \textit{also}, \textit{t\'{u}n} can attach either higher or lower than Tense, as shown in \REF{ex:parrish:ma-also}. 
+   
+
+\ea  \label{ex:parrish:ma-again}  \textit{T\'{u}n} as Aspect head, meaning \textit{again}
+ \ea[]{
+ 	\gll Ad\'{e} \textit{ma} t\'{u}n ilekun n\`{a}\'{a} \textbf{pa-de}. \\
+    Ad\'{e} will {\textsc{tun}} door the {close$_{1-2}$} \\
+    \glt `Ad\'{e} will close the door again.'
+    }
+    
+ \ex[*]{
+ 	\gll Ad\'{e} t\'{u}n \textit{ma} ilekun n\`{a}\'{a} \textbf{pa-de}. \\
+    Ad\'{e} {\textsc{tun}} will door the {close$_{1-2}$} \\
+    \glt Intended: `Ad\'{e} will close the door again.'
+    }
+ \z
+
+\z
+
+
+
+\ea \textit{T\'{u}n} as adverb, meaning \textit{also}
+ \ea[]{
+ 	\gll Ad\'{e} t\'{u}n \textit{ma} \textbf{pa} ilekun n\`{a}\'{a} de. \\
+    Ad\'{e} {\textsc{tun}} will {close$_{1}$} door the {close$_{2}$} \\
+    \glt `Ad\'{e} will also close the door.'
+    }
+    
+ \ex[]{
+ 	\gll Ad\'{e} \textit{ma} t\'{u}n \textbf{pa} ilekun n\`{a}\'{a} de. \\
+    Ad\'{e} will {\textsc{tun}} {close$_{1}$} door the {close$_{2}$} \\
+    \glt `Ad\'{e} will also close the door.'
+    }    
+ \z
+ \label{ex:parrish:ma-also} 
+\z
+
+
+We can conclude that there is an aspectual ordering, in that \textit{t\'{u}n} can not order before a tense morpheme and still mean \textit{again}. When ordered before a tense morpheme, the only possible reading is the \textit{also} reading. There is a clear difference between the structures allowing each possible reading. When acting as a regular adverb, \textit{t\'{u}n} attaches higher than \isi{aspect}. In particular, the use of \textit{t\'{u}n} as an aspectual marker will allow us to shed light on the structure of splitting verbs, as they crucially rely on \isi{aspect} in the course of their derivation.
+
+One thing that would allow us to confirm our analysis of \textit{t\'{u}n} as an aspectual marker would be if we could find another aspectual particle that has the same effect on word order. There is extensive discussion by \citet{Awoyale1974} on the status of preverbs in \ili{Yoruba} in general, where he notes that \textit{t\'{u}n} appears to be the only element among the modifiers listed that has the syntactic effects that it does, thus our analysis is specific to the interaction of \textit{t\'{u}n} and splitting verbs.
+
+\section{Analysis of splitting verbs}
+\label{sect:parrish:analysis}
+
+\subsection{Predictions of the previous analysis}
+
+Returning to the structure that was proposed by \citet{Bode2007} that was shown in \figref{fig:parrish:BodeTree}, we will show in this section that the previous analysis is unable to account for the surface structure of sentences that contain both splitting verbs and \textit{t\'{u}n} when it is used as an aspectual marker.
+
+Given that Bode's structure has the first verbal element appearing on \textit{v}, and given that the evidence for the structural position of \textit{t\'{u}n} discussed in \sectref{sect:parrish:TunSection} showed that \textit{t\'{u}n} is merged in Asp, we would predict that \textit{t\'{u}n} should remain lower than the first verbal element, as shown in \REF{ex:parrish:BodeTunStructure}:
+
+\ea\label{ex:parrish:BodeTunStructure} Structure for Bode's prediction of \REF{ex:parrish:Bill-tanje}\\ 
+
+$[_{vP}\text{ Ad\'{e} } [_{v'}\text{ t\`{a}n }[_{AspP}\text{ Akin }[_{Asp'}\text{ t\'{u}n }[_{VP}\text{ j\d{e} }]]]]]$
+
+\z
+
+However, such a structure incorrectly predicts that the word order of the resulting sentence should be what is shown in \REF{ex:parrish:BodeTunSentence}, rather than the correct word order (\textit{Ad\'{e} t\'{u}n Akin \textbf{t\`{a}nj\d{e}}}):
+
+\ea[*]{Ad\'{e} \textbf{t\`{a}n} t\'{u}n Akin \textbf{j\d{e}}} 
+\label{ex:parrish:BodeTunSentence}
+\z
+
+The lack of a split in examples like \REF{ex:parrish:Bill-tanje} can be taken as evidence that verbs splitting is, in fact, the result of \isi{movement}, much as the regular SVO order is. Considering that an intermediate adjunction point in the derivation of \isi{splitting verb} structures needs [Asp], as Bode showed, we show that placing \textit{t\'{u}n} on [Asp] changes the surface structure. The simplest explanation for this difference is that the presence of the aspectual marker has blocked \isi{movement} of V$_{1}$. 
+
+The simplest way to explain the blocking of \isi{movement}, however, is to assume that both verbal elements used to create a \isi{splitting verb} originate lower in the structure. Crucially, we cannot say that V$_{1}$\ has been merged in \textit{v} directly, as was claimed by \citet{Bode2007}, because this derivation gives the incorrect word order shown in \REF{ex:parrish:BodeTunSentence}. Given the need for this slight change in the analysis that was proposed by Bode, we propose the following structure in \figref{fig:parrish:split-structure} for a sentence with a normal split like \REF{ex:parrish:must-embed}, which is repeated below as \REF{ex:parrish:split}. The structure in \figref{fig:parrish:tun-tree-split} then gives the sentence in \REF{ex:parrish:no-split} where V$_{1}$\ and V$_{2}$\ appear string adjacent due to the presence of \textit{t\'{u}n}. We propose that there are two verbal heads, the second of which has the argument as its complement. The reasoning for the argument being the complement of the second verb is discussed in the following section.
+
+
+\ea  
+ \ea {
+    \gll Ad\'{e} ba il\'{e} n\`{a}\'{a} j\'{e}. \\
+     Ade {destroy$_{1}$} house the {destroy$_{2}$} \\
+     \glt `Ade destroyed the house.'
+     }
+     \label{ex:parrish:split}   
+ \ex {
+ 	 \gll Ad\'{e} t\'{u}n il\'{e} n\`{a}\'{a} baj\'{e}, \\
+     Ade \textsc{tun} house the destroy \\
+     \glt `Ade destroyed the house again.'
+     }
+     \label{ex:parrish:no-split}
+ \z 
+\z
+
+
+\begin{figure}
+	\begin{tikzpicture}[scale=0.8]
+	\Tree
+	[.\textit{v}P [.DP\\{Ad\'{e}} ][.\textit{v}' [.\textit{v} [.V\\{ba$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {il\'{e} n\`{a}\'{a}$_{2}$} ][.Asp' [.Asp\\{$t_{1}$} ][.VP [.V\\$t_{1}$ ][.VP [.V\\j\'{e} ][.DP\\$t_{2}$ ]]]]]]]
+	\end{tikzpicture}
+	\caption{Proposed structure for  \REF{ex:parrish:split}}
+	
+	\label{fig:parrish:split-structure} 
+\end{figure}
+
+\begin{figure}	
+	\begin{tikzpicture}[scale=0.8]
+		\Tree
+		[.\textit{v}P [.DP\\{Ad\'{e}} ][.\textit{v}' [.\textit{v} [.Asp\\{t\'{u}n$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {il\'{e} n\`{a}\'{a}$_{2}$} ][.Asp' [.Asp\\{$t_{1}$} ][.VP [.V\\ba ][.VP [.V\\j\'{e} ][.DP\\$t_{2}$ ]]]]]]]
+	\end{tikzpicture}
+	\caption{Proposed structure for \REF{ex:parrish:no-split}}
+	
+	\label{fig:parrish:tun-tree-split} 
+\end{figure}
+
+The derivation expressed in \figref{fig:parrish:split-structure} deviates little from Bode's analysis of regular \isi{verb movement}. The object moves to Spec Asp, and the verb moves through Asp to \textit{v}. The difference is that in this case, the \isi{verb movement} is being undertaken by the first verbal element, which is still the appropriate head of the next phrase down the tree. The second half of the \isi{splitting verb} remains in place, also generated low, and thus the SV$_{1}$ OV$_{2}$\ order results. Importantly, considering the likely development of splitting verbs from \isi{serial verb} constructions, this structure also parallels some proposed structures for \isi{serial verb} constructions in that the first verbal element merges as the head in a head-complement relation with the second verbal element and the argument, similar to a proposal by \citet{Baker2002}. This analysis thus aligns splitting verbs more closely with serial verbs, as has been proposed by \citet{Bamgbose1966}. The resulting structure also parallels analyses of particle verbs in \ili{Germanic} languages, while following Bode's insights on \isi{verb movement} in \ili{Yoruba}. Unlike \ili{English}, we see that there is obligatory \isi{movement} of one part of the \isi{splitting verb}. This is a similar analysis to the one given for \ili{German}, but unlike in \ili{German}, where V moves to C, the word order change in \ili{Yoruba} results from V moving to $v$, as was shown by \citet{Bode2007}. Another difference worth mentioning is that particle verbs are verb + preposition, and splitting verbs are two verbal elements.\footnote{A good test for whether the structure might look like the one \citet{Sande2016} proposed for Gu\'{e}bie, with the two verbal elements forming a constituent, would be to test it with gapping. However, for independent reasons, \ili{Yoruba} does not allow gapping. See \citet{Lawal1985} for discussion of gapping in \ili{Yoruba}.}
+
+In a tree like \figref{fig:parrish:tun-tree-split}, the correct word order is achieved with the addition of \textit{t\'{u}n} as well. As concluded in the previous section, \textit{t\'{u}n} is merged in Asp, which blocks the normal \isi{verb movement} to \textit{v} via Asp. Here, when merged in Asp, \textit{t\'{u}n} blocks the same \isi{movement} for the first verbal element, as that is the head of the main VP. Thus the two verbal elements are realized string adjacent while head \isi{movement} to \textit{v} occurs with \textit{t\'{u}n} rather than V$_{1}$.
+
+By positing that V$_{1}$\ and V$_{2}$\ are merged in in a head-complement relationship, this analysis more directly captures the semantic relationship of the two elements. By generating the verbal elements both within the VP, our analysis is more in accord with the native speaker intuitions that both parts of the verb are interpreted as a unit. But given that the pieces move independently and are separable, they must also be independent phrases (in accord with Zeller's analysis of particle verbs).
+
+
+\subsection{Complement vs Relative Clauses}
+One remaining question this analysis brings up is that if there are two verb heads, which takes the DP object? Noun complement clauses (NCCs) and relative clauses (RCs) are a useful tool to bring to bear on this question. While not the case for all speakers, there are some who make a clear distinction between the way RCs and NCCs pattern when they occur as part of the object of a \isi{splitting verb}, as shown in \REF{ex:parrish:believe-story} and \REF{ex:parrish:believe-tell}:
+
+\ea NCC examples
+\ea[]{  
+	\gll Ife \textbf{gba} alo {n\`{a}\'{a}} \textbf{gbo} pe Lola ri eni {n\`{a}\'{a}}. \\
+	Ife {believe$_{1}$} story the {believe$_{2}$} that Lola see person the \\
+	\glt `Ife believed the story that Lola saw the person.'
+}
+
+\ex[*]{
+	\gll Ife \textbf{gba} alo {n\`{a}\'{a}} pe Lola ri eni {n\`{a}\'{a}} \textbf{gbo}. \\
+	Ife {believe$_{1}$} story the that Lola see person the {believe$_{2}$} \\
+	\glt `Ife believed the story that Lola saw the person.'
+}
+\z 
+\label{ex:parrish:believe-story}
+\z
+
+\ea RC examples
+\ea[?]{ 
+	\gll Ife \textbf{gba} alo {n\`{a}\'{a}} \textbf{gbo} ti Akin pa. \\
+	Ife {believe$_{1}$} story the {believe$_{2}$} that Akin tell \\
+	\glt `Ife believed the story that Akin told.'
+}
+
+\ex[]{ 
+	\gll Ife \textbf{gba} alo {n\`{a}\'{a}} ti Akin pa \textbf{gbo}. \\
+	Ife {believe$_{1}$} story the that Akin tell {believe$_{2}$} \\
+	\glt `Ife believed the story that Akin told.'
+}
+\z 
+\label{ex:parrish:believe-tell}
+\z
+
+For speakers with this distinction, the NCC in (\ref{ex:parrish:believe-story}a) \textit{must} follow V$_{2}$, though a RC, as in (\ref{ex:parrish:believe-tell}a), is strongly dispreferred in that position.\footnote{When the RC contains a larger, or ``heavier'', constituent, speakers report that the extraposition is more acceptable. However, the distinction between \REF{ex:parrish:believe-story} and \REF{ex:parrish:believe-tell} remains.}
+
+Analyses of these structures suggest a syntactic difference between NCCs and RCs, such that the NCCs are created through a predicative relationship between the DP and CP, whereas in RCs, the NP raises out of the CP. \citet{DenDikken2004} describes this in \ili{Thai} and \ili{Mandarin}, and \citet{Joshi2016} notes a similar pattern in \ili{Marathi}. The effect is that NCCs have a phrase that is further separated from the noun when compared to RCs. 
+
+\ea NCC structure adapted from \citet{DenDikken2004}
+
+$[_{FP} [_{DP} \text{ alo {n\`{a}\'{a}} }] [_{F'} \text{ F } [_{CP} \text{ pe Lola ri eni {n\`{a}\'{a}} }]]]$
+
+\label{ex:parrish:complement}
+\z 
+
+This structure for NCCs is able to account for what we see with splitting verbs: the DP and CP appear separately, split by the second verbal element. To account for the word order, however, it must be the case that the entire functional phrase is the object of the lower, rather than the higher verbal element.
+
+\begin{figure}
+	\begin{tikzpicture}[scale=0.8]
+		\Tree 
+		[.$v$P [.DP\\Ife ] [.$v'$ [.$v$ [.V\\{gba$_{1}$}\\{[+\textsc{asp}]} ] [.$v$ ] ] [.Asp [.DP$_{i}$ \edge[roof]; {alo {n\`{a}\'{a}}$_{2}$} ] [.Asp$'$ [.Asp\\$t_{1}$ ] [.VP [.V\\$t_{1}$ ] [.VP [.V\\gbo ] [.FP [.DP$_{i}$\\$t_{2}$ ] [.F$'$ [.F ] [.CP$_{i}$ \edge[roof]; {pe Lola ri eni {n\`{a}\'{a}}} ] ] ] ] ] ] ] ] ]
+	\end{tikzpicture}
+	\caption{Structure for (\ref{ex:parrish:believe-story}a)}
+\end{figure}
+
+Were it the case that V$_{1}$\ is merged with the argument, then we would expect the entire NCC to occur between V$_{1}$\ and V$_{2}$. 
+Structures with relative clauses do show up between the two verbal elements, as the CP of a \isi{relative clause} is within the DP (we assume a raising analysis of relative clauses), and thus can not move separately.
+
+\section{Conclusion}
+\label{sect:parrish:conclusion}
+
+Here we have attempted to provide an analysis of the structure of splitting verbs in \ili{Yoruba}, which has been the topic of some debate in the literature. Considering the data on \isi{verb movement}, we conclude that the split results from the standard \ili{Yoruba} \isi{verb movement}, and thus the two halves of the verb must both be generated low. We consider the arguments made for particle verbs here as well, and conclude that regardless of whether both verbal elements are viable verbs in \ili{Yoruba} now, both halves should be independent phrases, rather than a compound. And finally, we incorporate evidence from \ili{Marathi} \isi{noun complement} clauses to support the argument that the object of a \isi{splitting verb} is syntactically complement to the lower verbal element.
+
+Our final analysis is minimally different from the one presented by \citet{Bode2007}, however the changes we made allowed us to account for the additional data presented here using aspectual \textit{t\'{u}n}. These changes also put the analysis more in line with proposals for \isi{serial verb} constructions, in keeping with their likely evolution from serial verbs.
+
+\section*{Abbreviations} 
+	
+	\begin{tabular}{ll}   
+		Asp & Aspect \\
+		NCC & Noun \isi{complement clause} \\
+		RC & Relative clause \\ 
+	\end{tabular}
+	 
+
+\section*{Acknowledgements}
+The authors would like to sincerely thank their three consultants: Tolulope Odebunmi, Adebayo Adenle, and Olayemi Awotayo. Without their hours of help and patience, this project would not have been possible. We also thank Alan Munn for his comments and suggestions on earlier drafts, and the anonymous reviewers for many helpful comments.
+
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

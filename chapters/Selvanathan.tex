@@ -1,0 +1,683 @@
+% -*- coding: utf-8 -*-
+%\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper
+,newtxmath
+,modfonts
+,nonflat]{langsci/langscibook} 
+% \bibliography{localbibliography} 
+% \input{localpackages.tex}
+% \input{localhyphenation.tex}
+% \input{localcommands.tex} 
+\usepackage{pifont.sty}
+
+\title{A case based account of Bantu IAV-focus}
+\author{
+Naga Selvanathan\affiliation{Rutgers University}
+}
+% \chapterDOI{} %will be filled in at production
+
+% \epigram{}
+
+\abstract{Right dislocation \citep{chengdowning2012} and movement to a low FocP \citep{vanderwal2006} are competing analyses of Immediately-After-Verb (IAV) focus. In this paper, I discuss novel Lubukusu IAV focus data which shows that 1) IAV focus requires movement to a low FP and that 2) IAV focus is not a purely focus related phenomenon. Adopting \citet{Baker2006}
+analysis of Linkers, I propose that movement to a low FP for focus interpretation is a strategy of case assignment to DPs within the VP. This analysis is shown to be superior to a purely right dislocation analysis as it can also better account for IAV focus asymmetries between Zulu and Lubukusu.}
+
+\begin{document}
+
+\maketitle
+\section{Introduction}
+
+\ili{Bantu} Immediately-After-Verb (IAV) \isi{focus} refers to the phenomenon in several \ili{Bantu} languages in which a focused phrase has to be immediately post-verbal \citep{hyman1979nounstructure,watters1979}. As the name suggests, the standard view on this positional requirement is that it is a focus-driven phenomenon. 
+
+\begin{figure}
+\centering
+% 	\includegraphics[width=\textwidth]{figures/sel1.png}
+\begin{forest}
+ [\ldots
+ [v] [ZP
+  [XP,name=xp] [Z'
+    [Z] [YP
+      [WP] [Y'
+	[Y] [{<}XP{>},name=xp2]
+      ]
+    ]
+  ]
+ ]
+ ]
+\draw[-{Triangle[]}] (xp2.south) to [bend left, out=90] (xp.south);
+\end{forest}
+\begin{forest}
+[vP
+  [vP
+    [v] [YP
+      [{<}WP{>},name=wp2] [Y'
+	[Y] [XP,name=XPplus]
+      ]
+    ]
+  ] [WP,name=wp]
+]
+\coordinate [below right=1cm of XPplus] (XPPlus);
+\draw[-{Triangle[]}] (wp2.south) to [bend left, out=180 ,in=270, looseness=5] (wp.south);
+\end{forest}
+\caption{\\(a) Movement of focused XP  \hspace{1cm}                (b) Dislocation of non-focused WP}
+\label{fig:selvanathan:1}
+\end{figure}
+% \todo{Will be optimised}
+
+
+ In this paper, I have two objectives. The first is to show that \ili{Lubukusu} IAV-\isi{focus} does not require dislocation of the non-focused phrases in the VP. This is pertinent because \citet{chengdowning2012} argue that IAV-\isi{focus} in \ili{Zulu} involves dislocation of non-focused phrases and not \isi{movement} of a focused element to a low FocP position, contra \citet{vanderwal2006} for \ili{Makhuwa}. These approaches are illustrated below.
+
+
+
+
+
+
+In the non-dislocation strategy (eg. \citealt{vanderwal2006}) in Figure (1a), a focused XP itself moves to a position that is the closest phrasal position c-commanded by v. Figure (1b) shows the dislocation strategy \citep{ChengDowning2009}, wherein an intervening non-focused WP is moved out of the VP such that the focused XP becomes the closest phrase c-commanded by v. I assume V to v \isi{movement} in all of these cases. I argue that \ili{Lubukusu} provides strong evidence that it utilizes a version of the strategy in Figure (1a) and not Figure (1b). In so far as \ili{Zulu} does employ the dislocation strategy shown in Figure (1b), this means that \ili{Bantu}-IAV \isi{focus} can be realized differently. 
+
+My second objective is to argue that IAV-\isi{focus} in \ili{Lubukusu} is not a purely \isi{focus} related phenomenon but something that is partly motivated by case. I propose that \ili{Lubukusu} has an F head (similar to a Foc head) which is not just sensitive to \isi{focus} features but also to the case features of the phrase in its specifier. I argue that this F head is a \isi{focus} sensitive version of the Linker head \citep{Baker2006}. The main evidence for this claim comes from focused adjuncts in \ili{Lubukusu}. I then review some evidence that indicates that focused nominals in \ili{Zulu} also move to this Spec, FP. I then argue that the difference between \ili{Zulu} and \ili{Lubukusu} can be boiled down to whether dislocation of non-focused elements in the VP is optional or obligatory.
+
+The outline of this paper is as follows. In section 2, I will look at the two different strategies that have been proposed to account for IAV-\isi{focus} in different \ili{Bantu} languages, namely the dislocation and non-dislocation strategies. In sections 3-5, I discuss and analyze IAV \isi{focus} in \ili{Lubukusu} where I show that \ili{Lubukusu} does not utilize a dislocation strategy and that IAV \isi{focus} in \ili{Lubukusu} is unlikely to be a purely \isi{focus} phenomenon. I also provide a formal account for \ili{Lubukusu} IAV \isi{focus}. In section 6, I revisit \ili{Zulu} and show that there is data from focused locatives that indicate that \ili{Zulu} too has this Spec, FP. I then conclude.
+
+\section{ A (brief) history of IAV-focus}
+
+\citet{hyman1979nounstructure} and \citet{watters1979} noticed that focused phrases must occur immediately after the verb in \ili{Aghem}. Since then, many \ili{Bantu} languages have been noticed to exhibit this phenomenon. This has been documented quite prominently in \ili{Zulu} (\citealt{Buell2009}; \citealt{chengdowning2012}) and \ili{Makhuwa} \citep{vanderwal2006}. There have been two types of analyses that have been proposed for IAV-\isi{focus}; non-dislocation and dislocation strategies. 
+
+In the dislocation strategy, the IAV-focused element is argued to remain in situ with other elements in the VP being moved out of the VO. \citet{chengdowning2012} provide strong evidence for such an analysis (at least for \ili{Zulu}). They argue that in \ili{Zulu} IAV-\isi{focus}, it is not the focused element that moves, but rather it is the non-focused elements within the VP that move. First note that in neutral contexts, the word order between the \isi{direct object} (DO) and the \isi{indirect object} (IO) is IO-DO in \ili{Zulu}.\footnote{I use the term ‘neutral context’ to refer to a context which is not associated with any obligatory discourse information, such as topic or \isi{focus}. This is in line with what appears to be standard practice \citep{Diercks2013,diercks2015}.}  However, when the DO is focused, for example, as an answer to a question, the DO has to be immediately post-verbal.
+
+\ea\label{ex:selvanathan:1}
+\ili{Zulu} \citep[2]{chengdowning2012})\\
+
+\ea\label{ex:selvanathan:1a}
+\gll bá-níké   ú-Síphó  í-mà:li.       IO-DO \\
+\textsc{2subj}{}-give  1-Sipho     9-money {} \\
+\glt "They gave Sipho money." 
+
+\ex\label{ex:selvanathan:1b}
+	Q: \gll bá-m-níké:-ni      ú-Sî:phó? \\
+	\textsc{2subj}{}-\textsc{1obj}{}-give-what    1-Sipho \\
+	\glt "What did they give to Sipho?"
+
+	A1: \gll bá-m-níké:      í-ma:li   ú-Si:pho.    DO-IO \\
+	\textsc{2subj}{}-\textsc{1obj}{}-give   9-money   1-Sipho \\
+	\glt "They gave money to Sipho." 
+
+	A2: \gll \#bá-níké   ú-Síphó  í-mà:li    IO-DO \\
+	\\
+\z
+\z
+
+(1a) shows the canonical IO-DO order in neutral contexts in \ili{Zulu}. (1b) is a question-answer pair in \ili{Zulu} where the DO is questioned and A1 and A2 show the two potential answers. Of these, only A1 with DO-IO order is judged fully acceptable. A2 with IO-DO order is judged infelicitous. This shows that \ili{Zulu} does have what looks like IAV-\isi{focus}. 
+
+The strongest evidence that \citet{chengdowning2012} provide for their claim that \ili{Zulu} IAV \isi{focus} follows the dislocation strategy in Figure (1b) is the fact \ili{Zulu} IAV requires an obligatory \isi{object marker} (OM) on the verb corresponding to the non-focused arguments. This OM is commonly analyzed as a dislocation marker as \citet{vanderSpuy1993}, \citet{Buell2005,Buell2006}, \citet{Halpert2012} show that in \ili{Zulu}, a left-dislocated phrase is obligatorily accompanied by an OM.
+
+\ea\label{ex:selvanathan:2}
+\ili{Zulu}\\
+Q: \gll ízi-vakâ:shi  u-zi-phekéla:-ni? \\
+	8-visitor      you-\textsc{8obj}{}-cook.for-what \\
+\glt \-\hspace{0.5cm}`What are you cooking for the visitors?' 
+
+A: \gll  ízi-vakáshi    ngi-zi-phekél’    í-nya:ma.\\
+	8-visitor      I-\textsc{8obj}{}-cook.for    9-meat\\
+\glt \-\hspace{0.5cm}`I am cooking visitors some meat.'
+\z
+
+
+
+ shows that an \isi{indirect object} \textit{ízi-vakâ:shi} 'visitor' which usually occurs post-verbally, can be dislocated to the sentence-initial position. The dislocation of this object to a pre-verbal position must be accompanied by the appearance of the marker \textit{zi} on the verb. This marker must have the same class marking as the fronted \isi{indirect object}. Interestingly, in IAV-\isi{focus} contexts, the verb must have an OM that is associated with the \textit{non-focused} post-verbal phrase.  
+
+\ea\label{ex:selvanathan:3}
+\ili{Zulu} \citep[4]{chengdowning2012}\\
+Q: \gll bá-m-níké:-ni      ú-Sî:phó?\\ 
+	\textsc{2subj}{}-\textsc{1obj}{}-give-what    1-Sipho\\ 
+	\glt \-\hspace{0.5cm}`What did they give to Sipho?’
+
+A: \gll bá-m-níké:      í-ma:li   ú-Si:pho.     DO-IO\\
+\textsc{2subj}{}-\textsc{1obj}{}-give   9-money   1-Sipho\\
+\glt    \-\hspace{0.5cm}`They gave money to Sipho.’ 
+\z
+
+(3) shows a question-answer pair where the \isi{direct object} is focused. As can be seen in the answer, not only must the order between the post-verbal elements be DO-IO, the verb must also carry an OM that matches the class of the non-focused IO. We can compare this with (1a) where we can see that in neutral contexts, there are no markers on the verb that matches the class of the post-verbal arguments. This OM also appears even if the focused phrase is a IO and the post-verbal elements are in an IO-DO order. 
+
+\ea\label{ex:selvanathan:4}
+\ili{Zulu} \citep[4]{chengdowning2012}\\
+Q: \gll  Ú-si:pho    ú-yí-phékéla        ba:ni   ín-ku:khu?\\
+1-Sipho       \textsc{1subj}{}-\textsc{9obj}{}-cook.for  who    9-chicken\\ 
+\glt \-\hspace{0.5cm}`Who is Sipho cooking the chicken for?’
+
+A: \gll  Ú-síph’   ú-yí-phékél’              ízí-vakâ:sh’    ín-ku:khu.\\
+	1-Sipho  \textsc{1subj}{}-\textsc{9obj}{}-cook.for    8-visitor    9-chicken\\
+\glt \-\hspace{0.5cm}`Sipho is cooking the chicken for the visitors.’
+\z
+
+(4) shows a question that places \isi{focus} on the IO. The corresponding answer to this question will thus have an IO-DO order as seen in the answer. Additionally, the verb must have an OM that corresponds to the non-focused DO. In summary, \ili{Zulu} appears to have an OM that indicates dislocation of a post-verbal argument. In addition, such an OM appears in IAV-\isi{focus} contexts, but one that matches the non-focused post-verbal argument. These facts are taken by \citet{chengdowning2012} to be an indicator that \ili{Zulu} IAV-\isi{focus} is realized by the strategy in Figure (1b). Namely, the non-focused argument is dislocated out of the VP such that the focused argument appears to be in an IAV configuration.\footnote{However, note that even if dislocation of non-focused elements is obligatory as Cheng \& Downing note, it is still compatible with the view that the focused phrase still moves to a low Spec, FocP as a reviewer notes.} 
+
+\begin{figure}
+% 	\includegraphics[width=0.6\textwidth]{figures/sel2.png}	
+  \begin{forest}
+   [vP
+    [SUBJ] [v'
+      [v + V\textsubscript{i},name=vvi] [FocP
+	[OBJ\textsubscript{j},name=objj] [Foc'
+	  [Foc] [VP
+	    [LOBJ] [V'
+	      [t\textsubscript{i},name=ti] [t\textsubscript{j},name=tj]
+	    ]
+	  ]
+	]
+      ]
+    ]
+   ]
+  \draw[-{Triangle[]}] (ti) to [bend left] (vvi);
+  \draw[-{Triangle[]}] (tj) to [bend left=90] (objj.south);
+  \end{forest}  
+	\caption{Non-dislocation approach to IAV-focus}
+	\label{fig:selvanathan:2}
+\end{figure}  
+
+ Alternatively, \citet{vanderwal2006} proposes a non-dislocation account of IAV-\isi{focus} in \ili{Makhuwa}. In this approach, a focused phrase \isi{direct object} acquires an IAV configuration in the following way. 
+
+
+In this analysis, the focused \isi{direct object} is moved to the specifier of a FocP that is a complement of little v. In doing so, this focused phrase moves higher past the non-focused \isi{indirect object} (I.OBJ). This results in an IAV configuration for the focused phrase as the verb is further assumed to move to little v. Such an account is appealing because such a projection has cross-linguistic support as it has been proposed by \citet{belletti2001,belletti2004} for \ili{Italian}, \citet{Ndayiragije1999} for \ili{Kirundi}, and \citet{Jayaseelan1999,Jayaseelan2001} for \ili{Malayalam} among others. 
+
+  In the two accounts we have seen, there is one core difference characterizing each approach. In the dislocation approach, the focused phrase remains in situ and it is the non-focused post-verbal elements that are dislocated out of the VP. In the non-dislocation approach, it is the focused phrase itself that moves.
+
+\section{ IAV-focus in Lubukusu}
+
+In this section, I describe how the IAV-\isi{focus} configuration is achieved in \ili{Lubukusu}. In doing so, my objective is to show \ili{Lubukusu} does not utilize the dislocation approach thus arguing for an approach in which the focused phrase is moved. First, I will show that \ili{Lubukusu} too realizes IAV-\isi{focus}. Consider the following base sentences.
+
+\ea\label{ex:selvanathan:5}
+\ili{Lubukusu}\\
+\ea\label{ex:selvanathan:5a}
+\gll ba-saani   ba-rum-ir-a        Maria   bi-tabu   IO-DO \\
+	\textsc{c}2-men   c2.\textsc{tns}{}-send-\textsc{appl}{}-\textsc{fv}   Mary   \textsc{c}8-book \\
+\glt `The men sent Mary books.'
+
+\ex\label{ex:selvanathan:5b}
+	\gll ba-saani   ba-rum-ir-a    bi-tabu   Maria     DO-IO \\
+	\\
+\z
+\z
+%TODO Ask about what to do about weird glosses
+(5) shows a ditransitive clause and my informant notes that either order between the \isi{direct object} and \isi{indirect object} is possible in neutral contexts.\footnote{As mentioned above, I assume that such contexts are not associated with any topic/ \isi{focus} information. Below, I discuss briefly the afterthought reading that dislocated elements in \ili{Lubukusu} have \citep{Diercks2013}.}  In such contexts, the sentence is a simple declarative statement with neither the \isi{direct object} nor the \isi{indirect object} being focused. Thus (5a) and (5b) are both possible. In \isi{focus} contexts, however, this is not the case.
+
+\ea\label{ex:selvanathan:6}
+\ili{Lubukusu} \\
+Q: \gll Naanu      ni-ye            ba-saani    ba-rum-ir-a     bi-tabu?\\
+who       that-\textsc{agr}   \textsc{c}2-man      \textsc{c}2-send-\textsc{appl}{}-\textsc{fv}  \textsc{c}8-book\\
+\glt \-\hspace{0.5cm}`Who did the men send the books to?' \\
+
+A1: \gll ba-saani    ba-rum-ir-a            Maria  bi-tabu       IO-DO \\
+	\textsc{c}2-men     \textsc{c}2.\textsc{tns}{}-send-\textsc{appl}{}-\textsc{fv}   Mary   \textsc{c}8-book \\
+
+\glt \-\hspace{0.5cm}`The men sent Mary books.'\\
+
+A2: \gll \#ba-saani  ba-rum-ir-a            bi-tabu   Maria         DO-IO \\
+\\
+\z
+
+(6) shows a question-answer pair where the question places \isi{focus} on the \isi{indirect object}. In such contexts, A1, where the \isi{indirect object} is IAV is fully acceptable whereas A2, where the \isi{direct object} intervenes between the verb and the \isi{indirect object} is infelicitous. This illustrates that \ili{Lubukusu} does exhibit IAV-\isi{focus}. When the post-verbal elements consist of one argument and one adjunct, we also see IAV-\isi{focus}.
+
+\ea\label{ex:selvanathan:7}
+\ili{Lubukusu}\\
+
+Q: \gll Naanu  ni-ye    ba-saani   ba-a-pa     lukali?\\
+who  that-\textsc{agr}   \textsc{c}2-man   \textsc{c}2-\textsc{tns}{}-beat  fiercely\\
+
+\glt \-\hspace{0.5cm}`Who did the men beat fiercely?'\\
+
+A1: \gll Ba-saani  ba-a-pa  Yohana      lukali DO-ADV\\
+	\textsc{c}2-man   \textsc{c}2-\textsc{tns}{}-beat  John          fiercely\\
+\glt \-\hspace{0.5cm}`The men beat John fiercely.'\\
+
+A2: \gll \#Ba-saani  ba-a-pa  lukali        Yohana ADV-DO \\
+	\\
+\z
+
+(7) shows a question-answer pair in which the \isi{direct object} is focused. In such a configuration, the \isi{direct object} must occur in an IAV configuration. Thus, A1 is possible but A2 is infelicitous. Note that in A2, the adverb intervenes between the verb and the focused \isi{direct object}. This is in contrast to neutral contexts where either order between the \isi{direct object} and the adjunct is possible. In addition, when the adverb is focused, it can occur immediately after the verb, i.e. intervening between the verb and the \isi{direct object}.\footnote{Later, we will see that \ili{Lubukusu} differs from \ili{Zulu} in an unexpected way. While \ili{Zulu} adjuncts must also be IAV when focused, \ili{Lubukusu} adjuncts need not. The case-based proposal for IAV-\isi{focus} advanced here is argued to better account for this difference.}  In that context, A2 is fully acceptable. What this shows, again, is that \ili{Lubukusu} exhibits IAV-\isi{focus}.
+
+Note that in all the cases of IAV \isi{focus}, especially in (6), there is no evidence by way of verbal marking that there has been any dislocation of any post-verbal element at all. Of course, this could just mean that \ili{Lubukusu} does not mark dislocated elements with an OM, but this is not true as \citet{Sikuku2012} argues that \ili{Lubukusu} does employ such marking.
+
+\ea\label{ex:selvanathan:8}
+\ili{Lubukusu} \citep[8]{Sikuku2012}\\
+\ea\label{ex:selvanathan:8a}
+\gll Mayi     a-siima   ba-ba-ana\\
+1mother   \textsc{1sm}{}-like   2-2-children \\
+\glt `The mother likes the children.' \\
+
+\ex\label{ex:selvanathan:8b}
+\gll Babaana,   mayi     a-*(ba)-siima\\
+	2-2-children   1mother   \textsc{1sm}{}-*(\textsc{2om})-like \\
+\glt `The children, the mother likes them.' 
+\z
+\z
+(8a) shows a simple SVO clause with only a marker corresponding to the \isi{subject} on the verb. This is similar to all the \ili{Lubukusu} sentences above. While each sentence requires a \isi{subject marker}, there is no OM corresponding to the direct or the \isi{indirect object}. (8b) shows that when the DO is dislocated (in this case through fronting), an OM corresponding to the dislocated phrase is obligatory. Thus, this shows that dislocation of the \isi{direct object} is accompanied with verbal marking. It appears that \ili{Lubukusu} is just like \ili{Zulu} in this regard. If it is true that \ili{Lubukusu} is like \ili{Zulu} in marking dislocated arguments with an OM, then one wonders why such an OM is not seen in A1, the felicitous answer for the question in (6). A dislocation analysis for \ili{Lubukusu} IAV-\isi{focus} seems unlikely. 
+
+One could argue that perhaps \isi{left-dislocation} (like in (8)) is different from right-dislocation seen in IAV-\isi{focus}. Perhaps, right-dislocation is realized without a dislocation marker. But this can be shown to be false as well. Recall from A1 in (6) that there is no OM corresponding to the non-focused \isi{indirect object}. However, such a marker is possible. 
+
+\ea\label{ex:selvanathan:9}
+\ili{Lubukusu}\\
+\gll ba-saani    ba-bi-rum-ir-a           Maria   bi-tabu    IO-DO \\
+\textsc{c}2-men      \textsc{c}2.\textsc{tns}{}-\textsc{c}8-send-\textsc{appl}{}-\textsc{fv}  Mary     \textsc{c}8-book  \\ 
+\glt `The men sent Mary books.'
+\z
+
+(9) shows that an OM is compatible with IAV \isi{focus} in \ili{Lubukusu}, such that the answer to the question 'Who did the men send the books to?' could look like (9). (9), thus, shows that the non-focused \isi{direct object} can be dislocated, although crucially, dislocation is not necessary to realize IAV \isi{focus} in \ili{Lubukusu}.
+
+Perhaps, the strongest evidence that indicates that \ili{Lubukusu} IAV-\isi{focus} does not require dislocation but can co-occur with it comes from instances where the focused phrase is an adjunct. A surprising fact about IAV-\isi{focus} in \ili{Lubukusu} (also discussed previously in \citet{Carstens2013}, and \citet{safirforthcoming}) is the fact that \ili{Lubukusu} adjuncts, even when focused, do not need to be IAV.
+
+\ea\label{ex:selvanathan:10}
+\ili{Lubukusu}\\
+
+Q: \gll Wekesa   e-ra     embeba   aryeena? \\
+	Wekesa   \textsc{sm}{}-kill   {the rat}    how \\
+\glt \-\hspace{0.5cm}`How did Wekesa kill the rat?' \\
+
+A1: \gll Wekesa    e-ra   kalaha   embeba ADV-DO \\
+Wekesa   \textsc{sm}{}-kill   slowly    {the rat} \\
+
+A2: \gll Wekesa    e-ra   embeba   kalaha   DO-ADV\\
+\\
+\z
+
+More will be said about this argument-adjunct asymmetry in \ili{Lubukusu} with respect to IAV-\isi{focus} later but for now note that when the \isi{focus} is on the adjunct, it can occur either in an IAV position or after the non-focused DO. Thus, the question in (10) can be answered with A1 or A2. Either order between the \isi{direct object} and the adjunct is possible. However, it is also possible to add an OM to A1 but in this case the order becomes fixed. Compare the following.
+
+\ea\label{ex:selvanathan:11}
+\ili{Lubukusu}\\
+\ea\label{ex:selvanathan:11a}
+\gll Wekesa  a-ki-ra   kalaha   embeba  ADV-DO\\
+Wekesa  \textsc{sm}{}-\textsc{om}{}-kill  slowly    {the rat}\\
+\glt `Wekesa killed the rat slowly.' 
+
+\ex\label{ex:selvanathan:11b}
+\gll *Wekesa  a-ki-ra   embeba  kalaha        *DO-ADV\\
+Wekesa  \textsc{sm}{}-\textsc{om}{}-kill  {the rat}    slowly\\
+\glt `Wekesa killed the rat slowly.'
+\z
+\z
+
+(11a) is a possible answer to the question in (10). Here, there is an OM corresponding to the DO. However, if there is such an OM, then the order between the adjunct and \isi{direct object} must be the one shown in (11a), i.e. ADJ - DO. The DO-ADJ order in (13b) becomes impossible.   
+
+What these facts show is that dislocation (as evidenced by an OM on the verb) is compatible with IAV-\isi{focus} in \ili{Lubukusu} as long as it is the non-focused phrase that is being dislocated. However, (6) shows that IAV-\isi{focus} of an argument in \ili{Lubukusu} can be attained even without dislocation. I conclude that \ili{Lubukusu} IAV-\isi{focus} can be achieved without using the dislocation strategy but compatible with it. I propose that the reason why dislocation is compatible with the \isi{movement} strategy in \ili{Lubukusu} is because dislocated elements in \ili{Lubukusu} are associated with an after-thought reading \citep{Diercks2013}. Thus, in a VP in which there is a focused element which is moved to a special position, the non-focused element (if it is an object) can be further backgrounded through dislocation. What the comparison of dislocation facts in \ili{Zulu} and \ili{Lubukusu} indicate is that a non-dislocation strategy is used by languages like \ili{Lubukusu} to realize IAV-\isi{focus}.
+
+\section{ IAV-focus is not a purely focus phenomenon}
+
+Now that we have seen that the IAV-\isi{focus} configuration is realized through \isi{movement} of a focused phrase in \ili{Lubukusu}, I will now argue that \ili{Lubukusu} IAV-\isi{focus} is partly motivated by case-considerations. First, I describe briefly how the two strategies to realizing the IAV-\isi{focus} configuration have been hypothesized to feed \isi{focus} interpretation in the literature.
+
+In the non-dislocation strategy where the focused element moves to a focused projection (as in Figure (1a)), this is quite obvious. Following in the footsteps of the cartographic approaches to clause peripheries \citep{rizzi1997}, interpretation of the moved element as \isi{focus} is a direct result of it being in a position reserved for such an interpretation. On the other hand, in the dislocation strategy advanced by \citet{chengdowning2012} (as in Figure (1b)), dislocation of the non-focused elements out of the VP is driven by prosodic requirements. In \posscitet{chengdowning2012} Optimality Theoretic (OT, \citealt{Prince1993}) analysis, a focused element occurs in an IAV position because of the twin requirements of prosodic prominence and structural prominence. In short, non-focused post-verbal elements are dislocated out of the VP because of the requirement to ensure that the prosodically prominent focused phrase is also structurally prominent, i.e. the highest element within the vP. 
+
+However, we have already seen some \ili{Lubukusu} facts that suggest that IAV-\isi{focus} cannot be purely a \isi{focus} phenomenon. For one, if this was the case, then the fact seen in (10) where focused adjuncts in \ili{Lubukusu} need not be in an IAV-position is surprising for both approaches. In the non-dislocation approach, if a focused phrase has to move to Spec, FocP, then why doesn't a focused adjunct need to? Such data is problematic for Cheng \& Downing's account of the dislocation approach as well. If a focused element has to be structurally prominent, then why doesn’t a focused adjunct have to be structurally prominent as well? One cannot put these aside by claiming that adjuncts are in general exempt from IAV-\isi{focus}. For one, \ili{Zulu} focused adjuncts are required to occur in the IAV position as seen below.
+
+\ea\label{ex:selvanathan:12}
+\ili{Zulu} \citep[8]{chengdowning2014}\\
+\ea\label{ex:selvanathan:12a}
+	\gll ú-Si:pho  úphéké          í-só:bho   kamná:ndi  DO-Adv\\
+	1-Sipho   \textsc{1subj}{}-cooked    5-soup    deliciously\\
+\glt `Sipho cooked the soup deliciously.'
+
+\ex\label{ex:selvanathan:12b}
+	\gll ú-lí-phéké          kánja:n’    í-só:bh’     Adv-DO\\
+\textsc{1subj}{}-\textsc{5om}{}-cooked   how     5-soup\\
+\glt `How did s/he cook the soup?'
+
+\ex\label{ex:selvanathan:12c}
+	\gll *ú-lí-phéké     í-só:bh’  kánja:n’     *DO-Adv\\
+	\\	
+\z
+\z
+
+In the representative example above, (12a) shows that an adverbial adjunct occurs after the DO in a neutral context. However, when the adjunct is focused, as in (12b), it has to occur in an IAV position. Note that there is an obligatory OM on the verb indicating dislocation of the \isi{direct object}. Thus, (12c) as an answer to (12b) is not acceptable. (12) shows that \ili{Zulu} adjuncts when focused must be IAV as well. I take this to indicate that focused adjuncts can require the IAV configuration. This makes the fact that \ili{Lubukusu} focused adjuncts need not be in an IAV-position all the more surprising. I conclude that this indicates that IAV-\isi{focus} is not purely a \isi{focus} based phenomenon, at least in \ili{Lubukusu}.\footnote{Later in the paper, I discuss focused locative adjuncts in \ili{Zulu} which suggest that IAV-\isi{focus} may not be a purely \isi{focus} phenomenon in \ili{Zulu} either.}  
+
+\section{ The analysis of Lubukusu IAV-focus}
+
+In this section, I propose an analysis of the \ili{Lubukusu} facts. I claim that \ili{Lubukusu} does have a head similar to a Focus head as a complement of v as proposed by \citet{vanderwal2006}, but this head is a variation of a Linker head (Lk, \citealt{Baker2006}). This head must be in the derivation when there is a focused phrase in the structure. However, this head does not require a focused phrase to be in its specifier, as \textsc{Agree} (\citealt{Chomsky2000}; \citeyear{chomsky2001}) is sufficient to delete the uninterpretable \isi{focus} features on this F head. I propose that this head is hybrid in the sense that it checks \isi{focus} features but is also sensitive to \isi{case assignment}. In order to place my proposal in the correct setting, it is necessary to see my assumptions first. I do this by describing the structure of a ditransitive in the neutral context first.
+\begin{figure}
+% 	\includegraphics[width=0.6\textwidth]{figures/sel3.png}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i},name=vvi] [LkP
+      [LOBJ\textsubscript{j}\\{[}\st{uCASE}{]},align=center,base=top,name=lobjj] [Lk'
+	[Lk, name=lk] [VP
+	  [t\textsubscript{j}] [V'
+	    [t\textsubscript{i}] [OBJ\\{[}\st{uCASE}{]},name=obj2]
+	  ]
+	]
+      ]
+    ]
+  ]
+ ]
+\coordinate[below=.5\baselineskip of obj2] (bofobj2);
+\draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (lobjj.165);
+\draw[-{Triangle[]}] (lk.west) -| ++(-\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
+\end{forest}
+	\caption{Ditransitive in neutral context}
+	\label{fig:salvanathan:3}
+\end{figure} 
+
+
+Figure (3) shows the proposed structure of a ditransitive in canonical IO-DO order. I assume, following \posscitet{Baker2006} account of \ili{Kinande} and other \ili{Bantu} languages, a linker phrase (LkP) that facilitates \isi{case assignment} to the two internal arguments. This assumption is supported by the fact that \ili{Lubukusu} is an object symmetry language \cite{Diercks2013} just like \ili{Kinande} for which \citet{Baker2006} propose a LkP. I also largely adopt their assumptions about \isi{case assignment} which is along the lines of feature checking (\citealt{Chomsky1995}; \citeyear{Chomsky2000}, etc.). DPs have uninterpretable case features that can be checked off by heads such as v, preposition heads and Lk (unlike V). An uninterpretable feature that is to be deleted is at the end of the arrow head as seen in Figure (3) (I do not show the corresponding interpretable features to reduce clutter in the diagram). Thus in Figure (3), little v deletes the \isi{case feature} of the \isi{indirect object} whereas Lk deletes the \isi{case feature} of the \isi{direct object}. I also assume following \citet{Baker2006} that Lk provides a specifier position to a DP such that v can access it for the purposes of deleting a DP’s uninterpretable \isi{case feature}, in this case, the \isi{indirect object}’s.
+
+A simple way to understand the F head I propose for focused structures is to think of it as a head like Lk but one which is also responsible for facilitating the \isi{focus} reading. Thus, like the Lk head, it can delete the uninterpretable case features of a DP and provide a specifier position to which a DP can move to in order for v to delete this DP’s uninterpretable case features. But this F head also has uninterpretable \isi{focus} features that has to be deleted. The best way to understand what this F head does is to see some derivations, so we will now see how \ili{Lubukusu} IAV-\isi{focus} is derived, starting with a focused \isi{direct object} in ditransitive constructions. Recall that in \ili{Lubukusu}, the focused \isi{direct object} must be in an IAV position.   
+
+Consider the following. 
+
+\begin{figure}
+% 	\includegraphics[width=\textwidth]{figures/sel4.png}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i}] [FP
+      [F\\{[}\st{uFOCUS}{]},name=ufocus,align=center,base=top] [VP
+	[LOBJ\\{[}uCASE{]},base=top,align=center] [V'
+	 [t\textsubscript{i}] [OBJ\textsubscript{j}\\{[}uCASE{]},base=top,align=center,name=ucase] 
+	]	
+	]
+      ] 
+    ]
+  ]
+ ]
+ \draw[-{Triangle[]}] (ucase.east) -| ++(\baselineskip,-2\baselineskip) -| (ufocus);
+\end{forest}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i},name=vvi] [FP
+      [OBJ\textsubscript{j}\\{[}\st{uCASE}{]},align=center,base=top,name=obj1] [F'
+	[F,name=F] [VP
+	  [LOBJ\\{[}\st{uCASE}{]},align=center,base=top,name=obj2] [V'
+	    [t\textsubscript{i}] [t\textsubscript{j}]
+	  ]
+	  ]
+	]
+      ]
+    ]
+  ]
+ \coordinate[below=.5\baselineskip of obj2] (bofobj2);
+ \draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (obj1.165);
+ \draw[-{Triangle[]}] (F.west) -| ++(-2\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
+\end{forest}
+	\caption{Ditransitive with focused direct object: Step 1 \& Step 2}
+	\label{fig:selvanathan:4}
+\end{figure}
+
+\figref{fig:selvanathan:4} shows the two steps of uninterpretable feature deletion involved. In step 1, instead of a LkP, the FP is generated. The F head has uninterpretable \isi{focus} features which is deleted by \textsc{Agree} between the F head and the focused \isi{direct object}. However, there are still two DPs that have uninterpretable case features which have to be deleted and this can be seen in step 2. Here, the DP that the F head deletes its uninterpretable \isi{focus} features with moves to Spec, FP. For now, I will assume that the F head has an EPP feature that must be checked by the DP that F has agreed with.\footnote{Below I discuss why it has to be the focused DP that moves to Spec, FP.} This allows v to assign case to the focused object by deleting the object’s uninterpretable case features. F, itself, deletes the uninterpretable case features of the lower \isi{indirect object}. 
+
+We can also see how this analysis accounts for transitive clauses which have an adjunct. First, recall that an adjunct in \ili{Lubukusu} can occur in either order with a \isi{direct object} in neutral contexts.
+
+\ea\label{ex:selvanathan:13}
+\ili{Lubukusu}\\
+\ea\label{ex:selvanathan:13a}
+\gll Wekesa  e-ra     kalaha   embeba  ADJ-DO \\
+Wekesa   \textsc{sm}{}-kill   slowly    {the rat} \\
+\glt `Wekesa killed the rat slowly.'
+
+\ex\label{ex:selvanathan:13b}
+\gll Wekesa  e-ra     embeba  kalaha   DO-ADJ \\
+Wekesa   \textsc{sm}{}-kill   {the rat}    slowly \\
+\z
+\z
+  
+\begin{figure}
+% 	\includegraphics[width=\textwidth]{figures/sel5.png}
+\begin{forest}
+ [vP
+ [SUBJ] [v'
+  [v + V\textsubscript{i}] [VP
+    [ADJ] [VP
+      [t\textsubscript{i}] [OBJ\\{[}\st{uCASE}{]},align=center,base=top,name=obj2]
+    ]
+  ]
+ ]
+ ]
+ \coordinate[below=.5\baselineskip of obj2] (bofobj2);
+ \draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
+\end{forest}
+\hspace{4em}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i},name=vvi] [VP
+      [VP] [ADJ
+	[t\textsubscript{i}] [OBJ\\{[}\st{uCASE}{]},name=obj2]
+      ]
+    ]
+  ]
+ ]
+ \coordinate[below=.5\baselineskip of obj2] (bofobj2);
+ \draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
+\end{forest}
+
+
+	\caption{(a) ADJ-OBJ order    \hspace{2cm}      (b) OBJ-ADJ order}
+	\label{fig:selvanathan:5}	
+\end{figure}
+
+   
+ (13a) and (13b) show the two possible orders which I account for by assuming that the \ili{Lubukusu} adjunct can either be right or left-adjoined to the VP. In addition, I assume that there is no Linker Phrase in transitives. This follows \citet{Baker2006} who also argue that \ili{Kinande} transitives do not have a LkP. Thus, \figref{fig:selvanathan:5}  has the following structures.
+
+In \figref{fig:selvanathan:5} the \isi{case feature} of the objects is deleted by v. The adjunct in \ili{Lubukusu} (whether left-adjoined or right-adjoined) does not intervene in \isi{case feature} checking because it does not have any interpretable case features which v can check since \textit{kalaha} 'slowly' is not nominal.\footnote{In cases where the adjunct is arguably nominal, such as \textit{yesterday, today} etc, it could be that such adjuncts have a null P that assigns case.}  Given this basic picture, we can now discuss the structures in which the \isi{direct object} is focused and the ones in which the adjunct is focused. We start with the case where the \isi{direct object} is focused. In this sentence, recall that the object must be IAV. I will use the instance where the adjunct is left-adjoined although the main point holds even if the adjunct is right-adjoined.
+
+\begin{figure}
+% 	\includegraphics[width=0.6\textwidth]{figures/sel6.png}	
+\begin{forest}
+[vP
+[SUBJ] [v'
+  [v + V\textsubscript{i},name=vvi] [FP
+    [OBJ\textsubscript{j}\\{[}\st{uCASE}{]},align=center,base=top, name=obj1] [F'
+      [F\\{[}\st{uFOCUS}{]},name=ufocus] [VP
+	[ADJ] [VP
+	  [t\textsubscript{i}] [t\textsubscript{j}]
+	]
+      ]
+    ]
+  ]
+]
+]
+ \draw[-{Triangle[]}] (vvi.west) -| ++(-2\baselineskip,-\baselineskip) |- (obj1.165);
+ \draw[-{Triangle[]}] (obj1.west) -| ++(-.75\baselineskip,-\baselineskip) |- (ufocus.195);
+\end{forest}
+	\caption{Transitive with a focused direct object}
+	\label{fig:selvanathan:6}
+\end{figure}
+
+
+Figure (6) shows a structure in which the \isi{direct object} is focused. Since there is a focused phrase, FP is projected and the uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused \isi{direct object}. Since the object is in an \textsc{agree} relation with F and it needs case, it moves to Spec, FP to check the EPP feature of the F head. This allows v to be in the right configuration to delete the uninterpretable case features of the raised focused object. This also gives the right order for a focused object and an adjunct.\footnote{F has interpretable case features too but it does not have any DP to check. This does not matter because I assume that interpretable case features that do not take part in a checking relation do not induce a crash at LF, unlike uninterpretable features.}  Now let's move on to see what happens when it is the adjunct in a transitive that is focused.\\
+
+  
+\begin{figure}
+% % 	\includegraphics[width=\textwidth]{figures/sel7.png}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i}] [FP
+      [F\\{[}\st{uFOCUS}{]},name=ufocus] [VP
+	[ADJ,name=adj] [VP
+	  [t\textsubscript{i}] [OBJ\\{[}\st{uCASE}{]},name=ucase]
+	]
+      ]
+    ]
+  ]
+ ]
+ \draw[-{Triangle[]}] (ufocus.165) -| ++(-\baselineskip,-\baselineskip) |- (ucase.195);
+ \draw[-{Triangle[]}] (adj.south) |- ++(-\baselineskip,-.5\baselineskip) -| (ufocus.south);
+\end{forest}
+\begin{forest}
+ [vP
+  [SUBJ] [v'
+    [v + V\textsubscript{i}] [FP
+      [F\\{[}\st{uFOCUS}{]},name=ufocus] [VP, s sep=4em
+	[VP
+	  [t\textsubscript{i}] [OBJ\\{[}\st{uCASE}{]},name=ucase]
+	] [ADJ,name=adj]
+      ]
+    ]
+  ]
+ ]
+ \draw[-{Triangle[]}] (ufocus.165) -| ++(-\baselineskip,-\baselineskip) |- (ucase.195);
+ \draw[-{Triangle[]}] (adj.south) |- ++(-\baselineskip,-4\baselineskip) -| (ufocus.south);
+\end{forest}
+	\caption{(a) Focused ADJ-OBJ     \hspace{1cm}     (b) OBJ- Focused ADJ}
+	\label{fig:selvanathan:7}
+\end{figure}
+
+
+Figure (7) shows the two different orders that are possible when the adjunct is focused. Since there is a focused phrase in these constructions, there is an FP. The uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused adjunct. The case features of the object are deleted by the F head since it is the closest head to the \isi{direct object} that can do so. Crucially, there is no \isi{movement} of the adjunct to Spec, FP because the adjunct does not require case and as such need not be in a configuration in which v can assign case to it. 
+
+Figure (7) reveals two peculiarities of what I have proposed to be an EPP feature of the F head. The first is that the phrase that checks the EPP feature must be focused. In my analysis, this translates to a previously established \textsc{Agree} relationship between the F head and the focused phrase. The second is that the phrase must be an element that requires case. These two properties mean that only focused DPs move to Spec, FP. Focused adjuncts do not. The implication of this is that the EPP feature of F cannot be formalized as an uninterpretable feature. If this were the case, then derivations like Figure (7) where the focused adjunct does not move to Spec, FP should lead to a crash. Instead, I recharacterize the EPP feature as the following. 
+
+\ea\label{ex:selvanathan:14}
+Recharacterizing the EPP feature of F\footnote{My thanks to an anonymous reviewer who suggested an alternative analysis along these general lines.} \\
+The F head triggers \isi{movement} of some XP to its specifier iff 
+
+\begin{enumerate}
+\item 
+An independently established \textsc{Agree} relation holds between F and XP, and,
+\item 
+Doing so facilitates \isi{case assignment} to XP by v. 
+\end{enumerate}
+\z
+
+In the \ili{Lubukusu} IAV facts, a focused DP satisfies both (i) and (ii) and thus has to move to Spec, FP. A non-focused DP cannot move to Spec, FP because it satisfies (ii) but not (i). A focused adjunct cannot move to Spec, FP either as it satisfies (i) but not (ii). 
+
+The above shows how IAV-\isi{focus} is realized in \ili{Lubukusu}, including an account for why focused adjuncts need not occur in an IAV-configuration. The account provided here fares better than existing accounts. In a non-dislocation approach such as \citet{vanderwal2006}, a focused phrase must move to Spec, FocP which is clearly not the case with \ili{Lubukusu} focused adjuncts. A dislocation approach such as \citet{chengdowning2012} faces the same problem. In my proposal, the F head is not only sensitive to \isi{focus} features, but also sensitive to the case features of the phrase in question.
+
+\section{ Reconsidering Zulu IAV-focus}
+
+While my objective here is not to propose a detailed reanalysis of \ili{Zulu} IAV-\isi{focus}, I will review some data which indicates that \ili{Zulu} IAV-\isi{focus} is not purely a \isi{focus} phenomenon either. In fact, there is evidence that indicates that something like the FP is present in \ili{Zulu} as well. Some very suggestive evidence that indicates that \ili{Zulu} IAV-\isi{focus} is not just a \isi{focus} phenomenon comes from locatives in \ili{Zulu} which do not need to be IAV. 
+
+\ea\label{ex:selvanathan:15}
+\ili{Zulu} \citep[168]{Buell2009}\\
+\ea\label{ex:selvanathan:15a}
+	\gll U-leth-e      izimpahla  zami   [\textsubscript{PP} ku-liphi      ikamelo]? \\
+	2\textsc{s}{}-bring-\textsc{perf}  10.stuff   10.my   {}     to-5.which   5.room\\
+	
+\ex\label{ex:selvanathan:15b}
+	\gll U-leth-e          [\textsubscript{PP} ku-liphi   ikamelo]   izimpahla  zami?\\
+	2\textsc{s}{}-bring-\textsc{perf}   {}   to-5.which   5.room     10.stuff     10.my\\
+	\glt `To which room did you take my stuff to?'
+\z
+\z
+
+(15) shows a construction which has a focused locative argument. Notably, (15) shows that the locative argument need not be IAV as seen in the fact that the \isi{direct object} can intervene between the verb and the PP, specifically in (15a). If a prosodically prominent phrase has to be structurally prominent as Cheng \& Downing claim, then why isn't the prosodically prominent locative argument in (15a) required to be structurally prominent as well? 
+
+In fact, the FP analysis I propose can capture this fact. Under my analysis, the reason why the locative need not be IAV is because it does not have case features. There is suggestive evidence that indicates that this is correct. For one, note that the locatives in (15) have a preposition-like element \textit{ku}. Interestingly, when such a locative occurs as a \isi{subject}, there is no such preposition head. Consider the following alternation.
+
+\ea\label{ex:selvanathan:16}
+\ili{Zulu} \citep[107]{Buell2007}\\
+\ea\label{ex:selvanathan:16a}
+\gll Abantu  abadala  ba-hlala  [ku-lezi   zindlu] \\
+2people   2old     2-stay   at-10these   10houses\\
+\glt `Old people live in these houses.' 
+
+\ex\label{ex:selvanathan:16b}
+	\gll [Lezi    zindlu]  zi-hlala  abantu  abadala. \\
+	10these   10houses   10-live   2people   2old\\
+	\glt `Old people live in these houses.' 
+\z
+\z
+(16a) shows a clause with a locative in a post-verbal position. (16b) shows an inverted clause where the locative occurs in the \isi{subject} position (as seen in \isi{subject agreement}). Notably, the locative does not have a P head anymore.\footnote{It is possible to realize the P head even in a fronted PP as in the following, but the fronted locative would then be better analyzed as a fronted topic, as \citet{Buell2007} does. a)  \ili{Zulu} \citep[108]{Buell2007}  \textit{[Ku-lezi  zindlu]    ku-hlala  abantu   abadala}.   At-10these   10houses   17-live     2people  2old  “Old people live in these houses.”(a) has a fronted locative but has the \textit{ku} affix. However, I will follow \posscitet{Buell2007} claim that the agreement we see in (a) is not \isi{subject agreement} but a default marker that shows up even in subject-expletive contexts.} (16) suggests that \textit{ku} is a P head. If true, then this P head would check the case features of the nominal in the locative but the PP itself would not have case features like PPs in general. In my analysis, this means that the locative does not need to be IAV. 
+
+If the locative facts in \ili{Zulu} are showing that only phrases with case features need to move to Spec, FP and this is what IAV-\isi{focus} is even in \ili{Zulu}, then we also need to answer why focused adjuncts in \ili{Zulu}, unlike their \ili{Lubukusu} counterparts, must be IAV (see (12). If my FP analysis is correct, this must mean that \ili{Zulu} adjuncts have case features. At first, it seems unusual to analyze adjuncts as having case features, but as it turns out, \citet{Halpert2012} and \citet{chengdowning2014} actually argue that \ili{Zulu} adjuncts are nominal. Part of the evidence they provide for this claim is that \ili{Zulu} adjuncts are compositionally made up of pronouns and nouns. 
+
+\ea\label{ex:selvanathan:17}
+\ili{Zulu}\\
+\ea\label{ex:selvanathan:17a}
+\gll ngo-kushesha\\
+NGA.\textsc{aug}{}-15speed\\
+\glt `quickly'
+
+\ex\label{ex:selvanathan:17b}
+\gll ngo-buhlungu\\
+NGA.\textsc{aug}{}-14pain\\
+\glt `painfully'
+\z
+\z
+
+If these authors are right, it is not a stretch to say that these have case features as well. 
+
+I will make a final point with respect to \ili{Zulu} IAV-\isi{focus}. While I have discussed some ways in which my FP analysis could account for \ili{Zulu}-IAV \isi{focus}, this still leaves the question of why dislocation is necessary in \ili{Zulu} in IAV-\isi{focus} constructions. To answer this, recall that while \ili{Lubukusu} does not require dislocation, it can exhibit dislocation in IAV-\isi{focus} contexts.
+
+\ea\label{ex:selvanathan:18}
+\ili{Lubukusu}\\
+Q: \gll Wekesa    e-ra   embeba   aryeena? \\
+Wekesa   \textsc{sm}{}-kill   {the rat}    how \\
+\glt \-\hspace{.5cm}`How did Wekesa kill the rat?' \\
+
+A1: \gll Wekesa    e-(ki)-ra        kalaha   embeba    ADJ-DO \\
+Wekesa   \textsc{sm}{}-\textsc{om}{}-kill    slowly  {the rat} \\
+\z
+Thus, the answer to the question in (18) can be optionally dislocated. I take this to mean that dislocation in \ili{Lubukusu} as seen in A2 is actually orthogonal to the issue of IAV-\isi{focus} in \ili{Lubukusu}. I propose that the difference between \ili{Lubukusu} and \ili{Zulu} is the following.\footnote{Thanks to an anonymous reviewer for suggesting that the difference between \ili{Zulu} and \ili{Lubukusu} is better characterized as shown.}
+
+\begin{table}
+\begin{tabularx}{\textwidth}{XXX} 
+\lsptoprule
+& \ili{Lubukusu} & \ili{Zulu}\\
+\midrule
+Focused nominal & Must move to prominent position & Must move to prominent position\\
+Non-focused elements & Optionally move out of VP & Must move out of VP\\
+\lspbottomrule
+\end{tabularx}
+\caption{Difference between Lubukusu \& Zulu}
+\label{tab:selvanathan:1}
+\end{table}
+
+
+\tabref{tab:1} shows that in both \ili{Lubukusu} and \ili{Zulu}, only focused phrases that require case (i.e. nominal) move to Spec, FP. The difference between the two pertains to how they treat non-focused elements within the VP. While \ili{Lubukusu} tolerates such elements within the VP, \ili{Zulu} does not. 
+
+\section{ Conclusion}
+
+In this paper, I have argued that \ili{Lubukusu} provides good evidence that IAV \isi{focus} does not require dislocation in order to be realized. Based on the fact that \ili{Lubukusu} focused adjuncts do not require to be in an IAV-position, I argued that IAV-\isi{focus} is not purely a \isi{focus} phenomenon. Instead I claim that the case features of the focused phrase also determine whether the IAV-position is required. Finally, I argued that the same analysis can be extended to \ili{Zulu} IAV-\isi{focus}.
+
+\section*{Abbreviations}
+
+I would like to thank Ken Safir, Mark Baker, Paul Roger Bassong, two anonymous reviewers and the audience at ACAL 46 for discussion and comments at earlier stages of this work. I would like to especially thank Justine \ili{Sikuku} for all of the \ili{Lubukusu} data here. Much of the initial groundwork for this paper was carried out during the time I was a research assistant for the Afranaph Project (http://www.africananaphora.rutgers.edu) which was/ is supported by NSF BCS 0303447, NSF BCS 0523102, NSF BCS 0919086 and NSF BCS 1324404. All errors are solely mine.
+
+\section*{Acknowledgements}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{agr} & Agreement\\
+\textsc{appl} & Applicative marker\\
+\textsc{aug} & Augment\\
+\textsc{c1, c2} etc & Class marker\\
+\textsc{fv} & Final vowel\\
+\textsc{obj} & Object marker\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{om} & Object marker\\
+\textsc{perf} & Perfective\\
+\textsc{sm} & Subject marker\\
+\textsc{subj} & Subject marker\\
+\textsc{s} & Subject marker\\
+\textsc{tns} & Tense\\
+\end{tabularx}
+
+% Edwin: biblio entries added
+\begin{comment}
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\textbf{References}
+
+Belletti, Andrea. 2001. Agreement Projections. In Baltin, Michael and Chris Collins eds, The Handbook of Contemporary Syntactic theory. 489-510.
+
+Belletti, Andrea. 2004. Aspect of the low IP area. in The structure of CP and IP. The Cartography of   syntactic structures, Rizzi, Luigi (ed.), 16-51. Oxford: Oxford University Press.
+
+Cheng, Lisa and Laura Downing. 2012. Against FocusP: arguments from \ili{Zulu}. In Kucerova, Ivona and Ad Neeleman (eds.) Information Structure. Contrasts and Positions. Cambridge: Cambridge University Press, 247-266.
+
+Cheng, Lisa and Laura Downing. 2014. The Problem of Adverbs. In Caspers, Johanneke, Yiya   Chen, Willemijn Heeren, Jos Pacilly, Niels O. Schiller and Ellen van Zanten (eds.) Above and Beyond the Segments. Experimental linguistics and phonetics.~Amsterdam, John Benjamins
+
+Chomsky, Noam. 2001. Derivation by Phase. in Kenstowicz, Michael (ed.) Ken Hale: A Life in Language. 1-52. Cambridge, Mass.: MIT Press.
+
+Hyman, Larry M. 1979. Phonology and noun structure. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 1-72.
+
+Jayaseelan, Karattuparambil A. 1999. A Focus Phrase above vP. Proceedings of the 2nd Asian GLOW   Colloquium, 195-212. Nanzan University.
+
+Rizzi, Luigi. 1997. The Fine Structure of the Left Periphery. In L. Haegeman (ed.), Elements of Grammar. Dordrecht: Kluwer, 281–337.
+
+Safir, Ken and Naga Selvanathan. forthcoming. Niger-Congo transitive reciprocal constructions and polysmeny with reflexives. in Payne, Doris L., Sara Pachiarotti and Mokaya Bosire (eds.) Diversity in African Languages: Selected Papers from the 46th Annual Conference on African Linguistics. (Contemporary African Linguistics 2.) Berlin: Language Science Press.
+
+
+Watters, John. 1979. Focus in \ili{Aghem}: a study of its formal correlates and typology. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 137-197.
+
+\end{verbatim} 
+\end{comment}
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
