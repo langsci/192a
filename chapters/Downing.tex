@@ -1,5 +1,3 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
 \documentclass[output=paper
 ,newtxmath
 ,modfonts
@@ -8,13 +6,17 @@
 % \input{localpackages.tex}
 % \input{localhyphenation.tex}
 % \input{localcommands.tex} 
-\usepackage{pifont.sty}
+% \usepackage{pifont.sty}
 
 \author{Laura Downing\affiliation{University of Gothenburg}}
 \title{Tumbuka prosody: Between tone and stress}
-
 \abstract{Tumbuka is spoken in the northern Lake Malawi region where it is typical for Bantu languages to have what has been called a restricted tone system: all words must have a High tone. This kind of prosodic system has stress-like properties, and work like \citet{Kisseberth&Odden2003} and \citet{Vail1972} suggests that Tumbuka is a purely stress language. This paper argues, in contrast, that because Tumbuka High tone realization has tone-like properties, as defined in \citet{Hyman2006,Hyman2009,Hyman2012,Hyman2014}, as well as stress-like properties, it cannot be considered a canonical stress language. It is proposed that the synchronic Tumbuka prosodic system evolved from one where contrastive High tone takes a phrasal domain through processes – formalizable as an OT factorial typology – which made phrasal prosody more transparently predictable by eliminating most tonal contrasts.}
 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
 \begin{document}
 
 \graphicspath{{figures/}}

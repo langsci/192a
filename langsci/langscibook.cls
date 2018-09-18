@@ -54,7 +54,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{langscibook}[2018/01/15 Language Science Press]
-
+ 
 \RequirePackage[]{silence}
 \WarningsOff[hyperref]
 \WarningsOff[tocstyle]

@@ -872,3 +872,21 @@
 }  
   
 \newcommand{\ilit}[1]{#1\il{#1}}  
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author 
+\makeatother
+
+\newcommand{\togglepaper}{ 
+  \bibliography{../localbibliography}
+  \papernote{\scriptsize\normalfont
+    \theauthor.
+    \thetitle. 
+    To appear in: 
+    Emily Clem,   Peter Jenks \& Hannah Sande.
+    Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
+    Berlin: Language Science Press. [preliminary page numbering]
+  }
+  \pagenumbering{roman}
+}

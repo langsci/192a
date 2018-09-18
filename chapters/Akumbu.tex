@@ -1,34 +1,30 @@
 \documentclass[output=paper,modfonts,nonflat,
 colorlinks, citecolor=brown,
-draftmode
+draftmode,
+draft
 ]{langsci/langscibook} 
-
-\IfFileExists{../localpackages.tex}{%
-  \input{../localpackages}
-  \input{../localcommands}
-  \bibliography{localbibliography}
-  \papernote{\scriptsize\normalfont
-  Pius W. Akumbu.
-  A featural analysis of mid and downstepped high tone in Babanki. 
-  To appear in: 
-  Emily Clem,   Peter Jenks \& Hannah Sande.
-  Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
-  Berlin: Language Science Press. [preliminary page numbering]
-  }
-  \pagenumbering{roman}
-}{}
 
 
 \author{Pius W. Akumbu\affiliation{University of Buea, Cameroon}}
 \title{A featural analysis of mid and downstepped high tone in Babanki} 
 \abstract{In this study, I examine the occurrence of the surface Mid (M) and downstepped High (↓H) tone in Babanki, a Central Ring Grassfields Bantu language of Cameroon. \citet{Hyman1979babanki} has demonstrated that Babanki has two underlying tones, namely, High (H) and Low (L), and that on the surface, it contrasts three level tones, H, M, L, plus a downstepped High (↓H). There is also contrast between a falling (L) and a level low (Lo) tone before pause in the language. I demonstrate in this paper that the M tone is from two different phonological sources and derived by the regressive spread of the high register feature of a following H tone while ↓H is caused by the progressive spread of the low register feature of a preceding floating L tone. The M and ↓H tone are phonetically identical in the language but differ in that ↓H establishes a ceiling for following H tones within the same tonal phrase.
 }
+
+ 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
+
+
+
 \newtier{top,bot,reg}
 \psset{everyasr=\tiershortcuts,
  ph=0,ts=0,top=(ph) 4 1.5em 0.5em,bot=(ph) -3 1em 1em,reg=(ph) -6 1em 1em,botB=-1.5,topB=4.5,regB=-3.5,phht=2.5ex}
 \begin{document}
 
-\maketitle
+\maketitle 
 
 \section{Introduction}\label{sec:akumbu:1}
 

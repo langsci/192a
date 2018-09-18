@@ -3,29 +3,18 @@ colorlinks, citecolor=brown,
 % draftmode
 ]{langsci/langscibook} 
 
-\IfFileExists{../localpackages.tex}{%
-  \setcounter{chapter}{19}
-  \input{../localpackages}
-  \input{../localcommands}
-  \bibliography{localbibliography}
-  \papernote{\scriptsize\normalfont
-  Ọbádélé Bakari Kambon,  Reginald Akuoko Duah \& Clement Kwamina Insaidoo Appah.
-  Serial verb nominalization in Akan: The question of intervening elements.
-  To appear in: 
-  Emily Clem,   Peter Jenks \& Hannah Sande.
-  Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
-  Berlin: Language Science Press. [preliminary page numbering]
-  }
-  \pagenumbering{roman}
-}{}
-
 
 
 \author{Ọbádélé Bakari Kambon\affiliation{University of Ghana, Legon}\and Reginald Akuoko Duah\affiliation{University of Ghana, Legon}\lastand Clement Kwamina Insaidoo Appah\affiliation{University of Ghana, Legon}}
 \title{Serial verb nominalization in Akan: The question of intervening elements}
-
 \abstract{In this paper, we hope to disambiguate the nature of look-alike intervening elements that appear between verbs in Serial Verb Constructions (SVCs) and Serial Verb Construction Nominalizations (SVCNs). To do so, we will first show that these intervening elements share the same phonological form. We will then show that although the intervening elements look the same on the surface, they can be differentiated by appealing to semantics and the construction from which the SVCN is derived. In doing so, we find that some of the intervening elements should, indeed, be regarded as \textsc{tamp} markers, while others are nominalizers (\textsc{nmlz}). In conclusion, we identify abstract schemata/templates that account for, and predict the positioning of, intervening elements found in Akan SVCNs. 
 }
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
 
 \begin{document}
 \lehead{Ọbádélé B. Kambon, Reginald A. Duah \& Clement K. I. Appah}
