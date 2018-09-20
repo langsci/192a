@@ -1,13 +1,14 @@
 \documentclass[output=paper,modfonts,nonflat,
-colorlinks, citecolor=brown,
-draftmode
+% colorlinks, citecolor=brown,
+% draftmode,
+hidelinks
 ]{langsci/langscibook} 
 
 \IfFileExists{../localpackages.tex}{%
   \setcounter{chapter}{22}
   \input{../localpackages}
   \input{../localcommands}
-  \bibliography{localbibliography} 
+  \bibliography{../localbibliography} 
   \papernote{\scriptsize\normalfont
   Christopher R. Green \&  Evan Jones.
   Notes on the morphology of Marka (Af-Ashraaf). 
@@ -105,7 +106,7 @@ draftmode
  	\label{tab:1:Pluralization} 
  	\begin{tabularx}{\textwidth}{Xllll} 
  		\lsptoprule
- 		\ilit{Marka} Singular  &  & \ilit{Marka} Plural & & \ilit{Somali} plural\\ 
+ 		\mbox{\ilit{Marka} Singular}  &  & \ilit{Marka} Plural & & \ilit{Somali} plural\\ 
  		\midrule
  		dabaal  & fool & dabaal-ajɲo & fools & dabbaal-o \\
  		af  &   language & af-ajɲo & languages & af-af \\
@@ -146,11 +147,10 @@ draftmode
  \end{table}
  
 Although there is no overt \isi{gender} marking on \ili{Marka} nouns, it appears at least preliminarily that the accentual \isi{gender} distinction found in \ili{Somali} is maintained in \ili{Marka}. As discussed in detail in \citet{Hyman1981somali} and \citet{GreenMorrison2016}, \ili{Somali} nouns exhibit a tonal accent on either their final or penultimate mora; the mora is the \isi{tone} and accent bearing unit in the language. It is typically the case that non-derived \isi{masculine} singular nouns have a tonal accent on their penultimate mora while non-derived \isi{feminine} singular nouns have a tonal accent on their final mora. Like \ili{Somali}, \ili{Marka} appears to exhibit this same phenomena, as seen for example in a comparison of \isi{masculine} \emphgj{k\'{a}rfin-ke} `the tomb' and \isi{feminine} \emphgj{mind\'{\i}-re} `the knife.' This accentual distinction is helpful in determining the grammatical \isi{gender} of nouns with vowel-final stems. Compare, for example, the \isi{masculine} noun \emphgj{s\'{a}nno} `year' to the \isi{feminine} noun \emphgj{mind\'{\i}} `knife,' both of which take the same \isi{definite determiner} \emphgj{-re}. Their corresponding definite forms are \emphgj{s\'{a}nna-re} `the year' and \emphgj{mind\'{\i}-re} `the knife.'
- 
- \newpage 
+  
 While \ili{Marka} maintains a fairly clear distinction between \isi{masculine} and \isi{feminine} grammatical \isi{gender} in singular nouns, whether segmental, accentual, or both, this distinction is lost upon pluralization. That is, all plural nouns require \isi{feminine} \isi{gender} agreement. This characteristic distinguishes \ili{Marka} from both \ili{Somali} and \ili{Maay}. \ili{Somali} has a complex grammatical \isi{gender} system; following the noun classification adopted in \citet{Greenetal2015}, nouns in Classes 1c and 2 maintain the same \isi{gender} in both the singular and plural, while nouns in Classes 1a, 1b, 3, 4, and 5 exhibit so-called \textit{\isi{gender} polarity} (\citealt{Meinhof1912}) where a noun's \isi{gender} changes from \isi{masculine} to \isi{feminine} (or vice versa) upon pluralization. \ili{Maay}, on the other hand, also collapses its grammatical \isi{gender} distinction in nouns upon pluralization, but unlike \ili{Marka} which levels \isi{gender} to \isi{feminine}, all \ili{Maay} plural nouns are \isi{masculine}. A summarized comparison of these three systems is in \tabref{tab:1:Grammatical gender comparison}. 
  
-  \begin{table}
+  \begin{table}[t]
   	\caption{{Grammatical gender -- singular vs. plural}}
   	\label{tab:1:Grammatical gender comparison} 
   	\begin{tabularx}{\textwidth}{Xlll} 
@@ -171,10 +171,8 @@ While \ili{Marka} maintains a fairly clear distinction between \isi{masculine} a
   		\lspbottomrule
   	\end{tabularx} 
   \end{table}
- 
- In addition to the definite determiners described above, \ili{Marka} has four additional determiner which can modify nouns. The initial consonant of each determiner alternates under the same conditions described above for definite determiners. There are two demonstrative determiners: \emphgj{koŋ/toŋ} `this' and \emphgj{kaas/taas} `that.' These have direct correspondents in both \ili{Somali} and \ili{Maay}, although \ili{Somali} has an additional distal demonstrative to point out `that yonder.' The \ili{Marka} interrogative determiner is \emphgj{kee/tee} `which?,' which, once again, has direct correspondents in both \ili{Somali} and \ili{Maay}. Like \ili{Somali}, \ili{Marka} exhibits so-called \textit{remote} or \textit{anaphoric} definite determiners, namely \emphgj{kii/tii}. In \ili{Somali}, these are described as being associated with \isi{past tense} referents (\citealt{Lecarme2008,Tosco1994}). They appear to instead have a disambiguating function in \ili{Marka}, which we gloss as `the/that (one) X.' In addition, \ili{Marka} has a determiner, \emphgj{koo/too}, that speakers use to point out an item that the speaker knows about but the hearer does not. There is a great deal of similarity in the determiners discussed thus far when comparing \ili{Marka} to both \ili{Somali} and \ili{Maay}; however, the possessive determiners in each are more divergent. Possessive determiners in the three varieties are shown in \tabref{tab:1:Possessive determiners}; they are presented in \isi{masculine}/\isi{feminine} pairs in their default forms. Note that \ili{Marka} and \ili{Maay} lack the exclusive vs. inclusive distinction encoded in \ili{Somali} for \isi{first person} plural. Also, \isi{third person} \isi{masculine} possessive determiners in both the singular and plural in \ili{Maay} differ greatly from those found in both \ili{Somali} and \ili{Marka}.
- 
- \begin{table}
+
+ \begin{table}[t]
  	\caption{{Possessive determiners}}
  	\label{tab:1:Possessive determiners}
  	\begin{tabularx}{\textwidth}{XXXX} 
@@ -193,10 +191,14 @@ While \ili{Marka} maintains a fairly clear distinction between \isi{masculine} a
  	\end{tabularx}
  \end{table}
  
+  \largerpage
+ In addition to the definite determiners described above, \ili{Marka} has four additional determiner which can modify nouns. The initial consonant of each determiner alternates under the same conditions described above for definite determiners. There are two demonstrative determiners: \emphgj{koŋ/toŋ} `this' and \emphgj{kaas/taas} `that.' These have direct correspondents in both \ili{Somali} and \ili{Maay}, although \ili{Somali} has an additional distal demonstrative to point out `that yonder.' The \ili{Marka} interrogative determiner is \emphgj{kee/tee} `which?,' which, once again, has direct correspondents in both \ili{Somali} and \ili{Maay}. Like \ili{Somali}, \ili{Marka} exhibits so-called \textit{remote} or \textit{anaphoric} definite determiners, namely \emphgj{kii/tii}. In \ili{Somali}, these are described as being associated with \isi{past tense} referents (\citealt{Lecarme2008,Tosco1994}). They appear to instead have a disambiguating function in \ili{Marka}, which we gloss as `the/that (one) X.' In addition, \ili{Marka} has a determiner, \emphgj{koo/too}, that speakers use to point out an item that the speaker knows about but the hearer does not. There is a great deal of similarity in the determiners discussed thus far when comparing \ili{Marka} to both \ili{Somali} and \ili{Maay}; however, the possessive determiners in each are more divergent. Possessive determiners in the three varieties are shown in \tabref{tab:1:Possessive determiners}; they are presented in \isi{masculine}/\isi{feminine} pairs in their default forms. Note that \ili{Marka} and \ili{Maay} lack the exclusive vs. inclusive distinction encoded in \ili{Somali} for \isi{first person} plural. Also, \isi{third person} \isi{masculine} possessive determiners in both the singular and plural in \ili{Maay} differ greatly from those found in both \ili{Somali} and \ili{Marka}.
+ 
+ 
  Concerning the derivational morphology that can be added to nouns, there are several parallels between \ili{Marka} and \ili{Somali}; the following list should not be taken as exhaustive. Thus far, we find that there are two \ili{Marka} suffixes, \mbox{\emphgj{-nimo}} and \emphgj{-ija}, that derive abstract nouns. Examples include: \emphgj{ħurnimo} `freedom' (cf. \emphgj{ħur} `free') and \emphgj{insaanija} `humanity' (cf. \emphgj{insaan} `human'). These correspond to \mbox{\emphgj{-nimo}} and \emphgj{-iyad} in \ili{Somali}. The \ili{Somali} suffix \emphgj{-tooyo}, which derives stative abstract nouns is absent in \ili{Marka}, and we have not yet been able to find another morpheme that accomplishes this function. The \ili{Marka} suffix \emphgj{-dari} derives antonyms, as in \emphgj{naħariisdari} `merciless' (cf. \emphgj{naħaris} `mercy'); this corresponds to \emphgj{-darro} in \ili{Somali}, which accomplishes the same function. The \ili{Marka} suffix \emphgj{-lo} corresponds to \ili{Somali} \emphgj{-le} and is used to derive agentive nouns, as in \emphgj{dukaanlo} `store owner' (cf. \emphgj{dukaan} `store'). Finally, we have found that inchoative and experiencer verbs can be derived from nouns in \ili{Marka} via the suffixes \emphgj{-wow} and \emphgj{-ʃow}, respectively, as in \emphgj{duqowow} `to become old' (cf. \emphgj{duq} `elder') and \emphgj{rijoʃow} `to have a dream' (cf. \emphgj{rijo} `dream'). 
  
  \section{Pronouns}
- 
+  
  \ili{Marka} has a single series of \isi{subject} pronouns which are inflected for person, number, and for biological \isi{gender} with human referents; \ili{Marka} does not encode an exclusive vs. inclusive distinction in its \isi{first person} plural \isi{subject} pronouns. \ili{Marka} \isi{subject} pronouns may be used independently whereupon they take on characteristics similar to other nouns. In addition, they may also cliticize to complementizers and negative markers under some conditions. A comparison between \isi{subject} pronouns in \ili{Marka}, \ili{Somali}, and \ili{Maay} is in \tabref{tab:1:Subject pronouns}. In addition to these \isi{subject} pronouns, \ili{Marka} (like \ili{Somali}) has a non-specific \isi{subject pronoun}, \emphgj{la}.
  
  \begin{table}
@@ -223,7 +225,7 @@ While \ili{Marka} maintains a fairly clear distinction between \isi{masculine} a
  \begin{table}
  	\caption{{Object pronouns}}
  	\label{tab:1:Object pronouns}
- 	\begin{tabularx}{\textwidth}{Xllll} 
+ 	\begin{tabularx}{\textwidth}{XXXll} 
  		\lsptoprule
  		& \ilit{Marka}  & \ilit{Somali} (OP1) & \ilit{Somali} (OP2) & \ilit{Maay}   \\ 
  		\midrule
@@ -325,7 +327,7 @@ The simplest \ili{Marka} verbs are formed by a single verbal base. These simple 
  \begin{table}
  	\caption{{Northern Somali vs. Marka -- `to say'}}
  	\label{tab:1:Irregular Verbs}
- 	\begin{tabularx}{\textwidth}{Xllll} 
+ 	\begin{tabularx}{\textwidth}{XlXll} 
  		\lsptoprule
  		& Past Simple   &   & Past Progressive &    \\
  		& \ilit{Somali} & \ilit{Marka} & \ilit{Somali} & \ilit{Marka} \\ 
@@ -345,7 +347,7 @@ The simplest \ili{Marka} verbs are formed by a single verbal base. These simple 
   \begin{table}
  	\caption{{Inflection of `to be' (Marka)}}
  	\label{tab:1:ToBe}
- 	\begin{tabularx}{\textwidth}{Xlll} 
+ 	\begin{tabularx}{\textwidth}{XXXl} 
  		\lsptoprule
  		& Past Simple   &  Present Habitual & Past Progressive    \\  
  		\midrule
@@ -362,7 +364,7 @@ The simplest \ili{Marka} verbs are formed by a single verbal base. These simple 
  A last point pertaining to \isi{verbal morphology} in \ili{Marka} verbs concerns reduplication. Partial prefixing reduplication is used to indicate intensity or iteration of action in some verbs.  When this occurs, the maximum size of the reduplicant appears to be CVV; for example, \emphgj{dhadhaqaaqo} `to move about restlessly, fidget.' In such instances of reduplication, \ili{Marka} remains faithful to the underlying quality of the vowel in its reduplicants. We have found that \ili{Marka} also employs total prefixing reduplication to derive an adjective from a noun, as in \emphgj{buurbuur} `mountainous' (cf. \emphgj{buur} `mountain'). 
  
  \section{Concluding thoughts}
- 
+ \largerpage
  This paper offers a renewed look at the nominal, pronominal, and \isi{verbal morphology} of the \ili{Marka} variety of \ili{Af-Ashraaf}. While we have not yet had the opportunity to conduct a systematic comparison of \ili{Marka} and its closest relative, \ili{Shingani}, we have taken the first steps to compare \ili{Marka} directly to two of its better-known and better-documented relatives, \ili{Maay} and \ili{Somali}. \ili{Marka} shares characteristics with both \ili{Somali} and \ili{Maay}, but conclusions concerning the extent to which \ili{Marka} aligns more closely with one or the other must await further research. At present, we endeavor to highlight those properties of \ili{Marka} that distinguish it from both \ili{Somali} and \ili{Maay}, such as its methods of encoding pluralization and \isi{gender}. While there is most certainly a great deal more work to be done, we hope that this short description lays the foundation for further inquiries into \ili{Marka} grammar and provides those with interest in the ongoing debate concerning the internal classification of East \ili{Cushitic} languages new information upon which to justify their analyses.
  
 \section*{Abbreviations}
