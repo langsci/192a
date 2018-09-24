@@ -1,8 +1,8 @@
 \documentclass[output=paper,modfonts,nonflat,
-% colorlinks, citecolor=brown,
-% draftmode,
+colorlinks, citecolor=brown,
+draftmode,
 % draft
- hidelinks
+%  hidelinks
 ]{langsci/langscibook} 
  
 
@@ -10,11 +10,11 @@
 \title{Liquid realization in Rutooro}
 \abstract{This paper provides a description and analysis of te distribution of the liquids [r] and [l] in Rutooro (E.12), a Ugandan Bantu language. The allophone that appears is conditioned by the backness of both the preceding and following vowel. Assuming /r/ is underlying, it changes to [l] in contexts when the preceding vowel is back and the following vowel is front. A systematic set of apparent surface counter-examples, leading to phrasal minimal pairs, are argued to be the result of the rule applying twice -- both lexically and post lexically, where a separate post-lexical rule of vowel deletion is responsible for the opacity.}
 
-% \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
-%   \input{../localpackages}
-%   \input{../localcommands} 
-%   \togglepaper
-% }{}
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
 
 
 \begin{document}
@@ -28,7 +28,7 @@ The goal of this paper is to describe and analyze the distribution of \isi{liqui
 \section{Distribution of liquid consonants}
 \subsection{Liquid realization at the word level}
 
-Phonetically, there are three \isi{liquid} consonants in \ili{Rutooro}: the lateral [l], the flap [ɾ] and the trilled [r], all in \isi{complementary distribution}. (The articulation of the [r], while a trill in the speech of some \ili{Rutooro} spreakers, is realized as an alveolar approximate in that of others.) The practical orthography of the language represents the \isi{liquid} as <l>, the flap as <r> and the trill as <rr>. I will use this more orthographic representation of these three sounds from here forward. In addition, while I will suggest below that it is not in fact immediately obvious whether the underlying segment should be posited as /l/ or /r/, evidence discussed later suggests it should be /r/. I assume that here and will defend it in \sectref{sec:bickmore:2.3}.\footnote{With regard to the \ili{Rutooro} transcriptions, no \isi{tone} is marked. \ili{Rutooro} is one of the relatively few \ili{Bantu} languages where all lexical \isi{tone} contrast has been lost. Synchronically, a High is predictably found on the penult of each \isi{phonological phrase}.}%
+Phonetically, there are three \isi{liquid} consonants in \ili{Rutooro}: the lateral [l], the flap [ɾ] and the trilled [r], all in \isi{complementary distribution}. (The articulation of the [r], while a trill in the speech of some \ili{Rutooro} spreakers, is realized as an alveolar approximate in that of others.) The practical orthography of the language represents the \isi{liquid} as {$\langle$}l{$\rangle$}, the flap as {$\langle$}r{$\rangle$} and the trill as {$\langle$}rr{$\rangle$}. I will use this more orthographic representation of these three sounds from here forward. In addition, while I will suggest below that it is not in fact immediately obvious whether the underlying segment should be posited as /l/ or /r/, evidence discussed later suggests it should be /r/. I assume that here and will defend it in \sectref{sec:bickmore:2.3}.\footnote{With regard to the \ili{Rutooro} transcriptions, no \isi{tone} is marked. \ili{Rutooro} is one of the relatively few \ili{Bantu} languages where all lexical \isi{tone} contrast has been lost. Synchronically, a High is predictably found on the penult of each \isi{phonological phrase}.}%
 %Footnote added in response to reviewer’s question about \isi{tone}. 
 %
 
@@ -38,7 +38,7 @@ The trilled \isi{liquid} is the phonetic realization of two underlying /r/s beco
 \ea\label{ex:bickmore:1a}
 \glll omu-rro \\
 /omu-riro/\\
-C3-fire\\
+\textsc{c3}-fire\\
 \glt ‘fire’\\
 \ex\label{ex:bickmore:1b}
 \glll ku-rr-a \\
@@ -48,7 +48,7 @@ C3-fire\\
 \ex\label{ex:bickmore:1c}
 \glll ba-kor-r-e \\
 /ba-kor-ir-e/\\
-\textsc{3pl-}\textup{work}\textsc{{}-appl-fv}\\
+\textsc{3pl-}\textup{work}\textsc{{}-\textsc{appl}-fv}\\
 \glt  ‘that they work for’\\
 \z
 \z
@@ -63,7 +63,7 @@ I will now show that the distribution of the lateral and flap allophones of /r/ 
 are met: 1) it is word-initial or preceded by a back vowel, and 2) it is followed by a front vowel. This is illustrated in the examples from nouns below (where the hyphen separates the nominal class prefix and the stem).
 
 \ea\label{ex:bickmore:2}
-[l] in  [+bk] \underline{ }\underline{ } [-bk]
+[l] in  [+bk] {\longrule} [--bk]
 \ea\label{ex:bickmore:2a}
 \downingdouble{omu-gole}{‘bride’}
 \ex\label{ex:bickmore:2b}
@@ -75,15 +75,15 @@ are met: 1) it is word-initial or preceded by a back vowel, and 2) it is followe
 \z
 \z
 
-\ea\label{ex:bickmore:3}
-[l] in  [\textsubscript{w} \underline{ }\underline{ } [-bk]
+\ea\label{ex:bickmore:3} 
+[l] in  [\textsubscript{w} {\longrule} [--bk]
 \downingdouble{leesu}{‘waistcloth’}
 \z
 
 The \isi{liquid} phoneme is realized as [r] when either: a) followed by a back vowel or b) preceded by a front vowel.
 
 \ea\label{ex:bickmore:4}
-[r] in  [+bk] \underline{ }\underline{ } [+bk]
+[r] in  [+bk] {\longrule} [+bk]
 \ea\label{ex:bickmore:4a}
 \downingdouble{en-garo}{‘hand’}
 \ex\label{ex:bickmore:4b}
@@ -96,7 +96,7 @@ The \isi{liquid} phoneme is realized as [r] when either: a) followed by a back v
 \z
 
 \ea\label{ex:bickmore:5}
-[r] in  [-bk] \underline{ }\underline{ } [+bk]
+[r] in  [--bk] {\longrule} [+bk]
 \ea\label{ex:bickmore:5a}
 \downingdouble{bendera}{‘flag’}
 \ex\label{ex:bickmore:5b}
@@ -109,10 +109,10 @@ The \isi{liquid} phoneme is realized as [r] when either: a) followed by a back v
 \z
 
 \noindent\parbox{\textwidth}{\ea\label{ex:bickmore:6}
-[r] in  [\textsubscript{W}%
+[r] in  [\textsubscript{w}%
 %I’ll leave the bracket labeling to the editors as they’ll want consistency across papers.
 %
- \underline{ }\underline{ } [+bk]
+ {\longrule} [+bk]
 \ea\label{ex:bickmore:6a}
 \downingdouble{raangi}{‘color’}
 \ex\label{ex:bickmore:6b}
@@ -123,7 +123,7 @@ The \isi{liquid} phoneme is realized as [r] when either: a) followed by a back v
 \z}
 
 \ea\label{ex:bickmore:7}
-[r] in  [-bk] \underline{ }\underline{ } [-bk]
+[r] in  [--bk] {\longrule} [--bk]
 \ea\label{ex:bickmore:7a}
 \downingdouble{omu-zaire}{‘parent’}
 \ex\label{ex:bickmore:7b}
@@ -141,34 +141,28 @@ Given the distribution described and illustrated above, neither the environment 
 % \newcommand{\featurebox}[1]{$\left[\begin{tabular}{>{\scshape}c}#1\end{tabular}\right]$}
 
 \ea\label{ex:bickmore:8}
-Assuming /r/ to be underling    \\
-$r\to l/
-\left\{
-\begin{array}{l}
-{\db}\#\\{}
-[+bk]
-\end{array}
-\right\}
-{\longrule}
-[-bk]
-$
-
-
- 
- \z
+  Assuming /r/ to be under\rephrase{ling}{lying}    \\ 
+  \phonrule{r}{l}{
+  $\left\{
+  \begin{tabular}{l}
+  {\db}\#\\{}
+  [+bk]
+  \end{tabular}%
+  \right\} 
+  $
+  {\longrule}[+bk]}
+\z
 
 \ea\label{ex:bickmore:9}
-Assuming /l/ to be underling\\
-$l\to r/
-\left\{
-\begin{array}{l}
-[-bk]{\longrule}\\
-{\longrule}[+bk]
-\end{array}
-\right\} 
-$
-
- 
+  Assuming /l/ to be under\rephrase{ling}{lying} \\
+  \phonrule{l}{r}{
+  $\left\{
+  \begin{tabular}{l}
+  [--bk]{\longrule}\\
+  {\longrule}[+bk]
+  \end{tabular}%
+  \right\} 
+  $ }  
  
 \z
 
@@ -179,10 +173,11 @@ While neither the distribution of [l], nor [r] is easily identified as the “el
 
 The forms in (\ref{ex:bickmore:2}--\ref{ex:bickmore:6}) show the realization of the \isi{liquid} in contexts where the \isi{liquid} is tautomorphemic with the surrounding vowels. That this allophonic variation can in fact result in morphological alternations is shown in the examples below:
 
+\newpage 
 \ea\label{ex:bickmore:10}
 Verb roots ending Back Vowel + /r/ 
 \ea\label{ex:bickmore:10a}
-ku-har-a  ‘to scratch’%
+\downingdouble{ku-har-a}{‘to scratch’}%
 %Footnote 1 was added to address the question of \isi{tone}.
 %
 \ex\label{ex:bickmore:10b}
@@ -215,10 +210,12 @@ Alternations in class 5 nominal prefix /ri-/
 \z
 \z
 
-In \REF{ex:bickmore:10} it can be seen that the root-final \isi{liquid}, preceded by a [+back] vowel, surfaces as [r] before the [+back] default Final Vowel /-a/ (cf. \ref{ex:bickmore:4}), but as [l] before the [-back] subjunctive Final Vowel /-e/ (cf. \ref{ex:bickmore:2}). In \REF{ex:bickmore:11} the \isi{liquid} of the Class 5 noun prefix surfaces as [r] when preceded by the [-back] preprefix /e-/ (cf. \ref{ex:bickmore:7}), but as [l], when no preprefix precedes (cf. \ref{ex:bickmore:3}), signaling the copulative meaning. 
+In \REF{ex:bickmore:10} it can be seen that the root-final \isi{liquid}, preceded by a [+back] vowel, surfaces as [r] before the [+back] default Final Vowel /-a/ (cf. \ref{ex:bickmore:4}), but as [l] before the [--back] subjunctive Final Vowel /-e/ (cf. \ref{ex:bickmore:2}). In \REF{ex:bickmore:11} the \isi{liquid} of the Class 5 noun prefix surfaces as [r] when preceded by the [--back] preprefix /e-/ (cf. \ref{ex:bickmore:7}), but as [l], when no preprefix precedes (cf. \ref{ex:bickmore:3}), signaling the copulative meaning. 
 
 Below, it is shown that [back] value of glides is equally relevant in the determination of the distribution of the \isi{liquid} allophones. 
 
+
+\renewcommand{\downingtriple}[3]{\parbox{3.5cm}{#1}\parbox{4cm}{#2}\parbox{3cm}{#3}}
 \ea\label{ex:bickmore:12}
 Effect of glides
 \ea\label{ex:bickmore:12a}
@@ -242,7 +239,9 @@ Effect of glides
 %I have in fact represented the passive as a /{}-u/, as in 12b,d. But no, I have not collected the relevant forms with an enclitic to see if you get compensatory lengthening in passives. My guess is that you would, but again, while interesting, I don’t see how this is at all crucial to the point at hand or goals of the paper.
 %
 
-The examples in (\ref{ex:bickmore:12a}--\ref{ex:bickmore:12d}) show that the glide [w] acts as a [+back] segment in triggering the realization of this \isi{liquid} phoneme. As the \isi{liquid} is surrounded by two [+back] vocoids in those cases, it surfaces as [r]. The examples in (\ref{ex:bickmore:12e}--\ref{ex:bickmore:12h}) show that the glide [y] acts as a [-back] segment in this regard. Since the \isi{liquid} is word-initial and followed by a [-back] vocoid in those cases, it surfaces as [l]
+\renewcommand{\downingtriple}[3]{\parbox{4.5cm}{#1}\parbox{3cm}{#2}\parbox{3cm}{#3}}
+
+The examples in (\ref{ex:bickmore:12a}--\ref{ex:bickmore:12d}) show that the glide [w] acts as a [+back] segment in triggering the realization of this \isi{liquid} phoneme. As the \isi{liquid} is surrounded by two [+back] vocoids in those cases, it surfaces as [r]. The examples in (\ref{ex:bickmore:12e}--\ref{ex:bickmore:12h}) show that the glide [y] acts as a [--back] segment in this regard. Since the \isi{liquid} is word-initial and followed by a [--back] vocoid in those cases, it surfaces as [l]
 
 \subsection{Liquids realization at the phrase level}
 
@@ -250,13 +249,13 @@ Having established the environments that [l] and [r] appear in at the level of t
 
 \ea\label{ex:bickmore:13}
 \gll  ku-leet-a li-nu  \\
-\textsc{inf-}\textup{bring}\textsc{{}-fv} \textsc{c5-dem}\\
+\textsc{inf-}\textup{bring}\textsc{-fv} \textsc{c5-dem}\\
 \glt  ‘to bring this one (C5)’  
 \z
 
 \ea\label{ex:bickmore:14}
 \gll  ba-leet-e li-nu  \\
-\textsc{3pl-}\textup{bring}\textsc{{}-Subj} \textsc{c5-dem}\\
+\textsc{3pl-}\textup{bring}\textsc{-subj} \textsc{c5-dem}\\
 \glt  ‘that they bring this one (C5)’
 \z
 
@@ -266,55 +265,55 @@ Having established the environments that [l] and [r] appear in at the level of t
 \glt  ‘the drawing is a tooth’    
 \z
 
-In (\ref{ex:bickmore:13}--\ref{ex:bickmore:15}) the word-initial (but phrase-medial) Class 5 noun prefix in each case is realized as [l]. We saw this in \REF{ex:bickmore:15} and (\ref{ex:bickmore:11}b,~d,~f) where the \isi{liquid} was followed by a [-back] vowel but not preceded by any sound (being both word and phrase-initial in those cases). However, we have also seen that when the \isi{liquid} is both preceded by and followed by [-back] vowels, as in \REF{ex:bickmore:7} and (\ref{ex:bickmore:11}a,~c,~e), it is realized as [r]. We conclude from the examples in (\ref{ex:bickmore:13}--\ref{ex:bickmore:15}) that it is not possible to simply say that the domain of application of the r → l rule in \REF{ex:bickmore:8} is the phrase (with no regard to word boundaries) as such would ungrammatically predict the realization of [r] in these cases. One way to account for these facts is to posit the r → l rule in \REF{ex:bickmore:8} as a word-level process, taking place before any post-lexical rules. 
+In (\ref{ex:bickmore:13}--\ref{ex:bickmore:15}) the word-initial (but phrase-medial) Class 5 noun prefix in each case is realized as [l]. We saw this in \REF{ex:bickmore:15} and (\ref{ex:bickmore:11}b,~d,~f) where the \isi{liquid} was followed by a [--back] vowel but not preceded by any sound (being both word and phrase-initial in those cases). However, we have also seen that when the \isi{liquid} is both preceded by and followed by [--back] vowels, as in \REF{ex:bickmore:7} and (\ref{ex:bickmore:11}a,~c,~e), it is realized as [r]. We conclude from the examples in (\ref{ex:bickmore:13}--\ref{ex:bickmore:15}) that it is not possible to simply say that the domain of application of the r→l rule in \REF{ex:bickmore:8} is the phrase (with no regard to word boundaries) as such would ungrammatically predict the realization of [r] in these cases. One way to account for these facts is to posit the r→l rule in \REF{ex:bickmore:8} as a word-level process, taking place before any post-lexical rules. 
 
-Before investigating \isi{liquid} resolution in additional phrasal contexts, we must first examine a process of \isi{vowel deletion} that operates across words. As seen in the phrasal data below, a [-hi] vowel at the end of a word deletes before a following word-initial vowel, with a compensatory lengthening of that second vowel.
+Before investigating \isi{liquid} resolution in additional phrasal contexts, we must first examine a process of \isi{vowel deletion} that operates across words. As seen in the phrasal data below, a [--hi] vowel at the end of a word deletes before a following word-initial vowel, with a compensatory lengthening of that second vowel.
 
 
 \ea\label{ex:bickmore:16}
 \ea\label{ex:bickmore:16a}
 \glll ku-leet oo-muu-ntu  \\
       /ku-leet-a o-mu-ntu/\\
-  \textsc{inf-}\textup{bring}\textsc{{}-fv} \textsc{iv-c1-}\textup{person}\\
+  \textsc{inf-}\textup{bring}\textsc{-fv} \textsc{iv-c1-}\textup{person}\\
 \glt      ‘to bring the person’
 
 \ex\label{ex:bickmore:16b}
 \glll ku-som ee-ki-tabu\\        
 /ku-som-a e-ki-tabu/\\
-\textsc{inf-}\textup{read}\textsc{{}-fv} \textsc{iv-c7-}\textup{book}\\
+\textsc{inf-}\textup{read}\textsc{-fv} \textsc{iv-c7-}\textup{book}\\
 \glt      ‘to read the book’
 
 \ex\label{ex:bickmore:16c}
 \glll ba-han aa-baa-ntu\\
 /ba-han-e a-ba-ntu/\\
-\textsc{3pl-}\textup{advise}\textsc{{}-Subj} \textsc{iv-c2-}\textup{people}\\
+\textsc{3pl-}\textup{advise}\textsc{-subj} \textsc{iv-c2-}\textup{people}\\
 \glt      ‘that they advise people’
 \z
 \z
 
 The rule accounting for this is formalized below:
 
-\ea\label{ex:bickmore:17}
+\ea\label{ex:bickmore:17}\todo{what is the scope of --hi? Does it belong to the left V or to the right V?}
 Vowel Deletion%
 %Yes. I didn’t include every possible VV combination as that would lengthen the paper unnecessarily.
 %
 
-         V → ø / \underline{ }\underline{ }\underline{ } ]\textsubscript{w} \textsubscript{w}[ V  
+\phonrule{V}{ø}{{\longrule}]\textsubscript{w} \textsubscript{w}[ V  
 
-      [-hi]
+      [--hi]}
 \z
-Given, this process we can now examine some additional phrases that are relevant to our understanding of \isi{liquid} realization, namely those where an underlying \isi{liquid} precedes a word-\isi{final vowel} that will be deleted by the rule in \REF{ex:bickmore:17}. First let us examine the case where the vowel preceding the \isi{liquid} is [-back], and the first vowel of the following word is [+back]
+Given, this process we can now examine some additional phrases that are relevant to our understanding of \isi{liquid} realization, namely those where an underlying \isi{liquid} precedes a word-\isi{final vowel} that will be deleted by the rule in \REF{ex:bickmore:17}. First let us examine the case where the vowel preceding the \isi{liquid} is [--back], and the first vowel of the following word is [+back]
 
 \ea\label{ex:bickmore:18}
 \ea\label{ex:bickmore:18a}
 \glll  ba-zool oo-muu-ntu    \\
       /ba-zoor-e o-mu-ntu/	\\
-\textsc{3pl-}\textup{find}\textsc{{}-Subj} \textsc{iv-c1-}\textup{person}\\
+\textsc{3pl-}\textup{find}\textsc{-subj} \textsc{iv-c1-}\textup{person}\\
 \glt      ‘that they find the person’
 \ex\label{ex:bickmore:18b}
 \glll  ba-zool aa-baa-ntu    \\
       /ba-zoor-e a-ba-ntu/	\\
-\textsc{3pl-}\textup{find}\textsc{{}-Subj} \textsc{iv-c2-}\textup{person}\\
+\textsc{3pl-}\textup{find}\textsc{-subj} \textsc{iv-c2-}\textup{person}\\
 \glt      ‘that they find the people’
 \ex\label{ex:bickmore:18c}
 \glll  a-ka-tal aa-ko    \\
@@ -329,41 +328,42 @@ Given, this process we can now examine some additional phrases that are relevant
 \z
 \z
 
-In each case above the \isi{liquid} is underlying preceded by a back vowel. While it is followed by a [-back] vowel underlyingly, due to application of Vowel Deletion, it is followed by a [+back] vowel on the surface within the phrase. As can be seen, in each case the \isi{liquid} is realized as [l]. Here again, if were to assume that \isi{liquid} realization is a phrase-level process that occurs after Vowel Deletion, we would incorrectly predict that the \isi{liquid} should surface as [r], as it did in \REF{ex:bickmore:4} between two back vowels. If, however, we consider the \isi{liquid} realization rule to take place at the word level, we directly account for the patterns in \REF{ex:bickmore:18}, as we did in \REF{ex:bickmore:16}. This is illustrated in the derivation below of 18a), where Vowel Deletion counter-bleeds the r → l rule.
+In each case above the \isi{liquid} is underlying preceded by a back vowel. While it is followed by a [--back] vowel underlyingly, due to application of Vowel Deletion, it is followed by a [+back] vowel on the surface within the phrase. As can be seen, in each case the \isi{liquid} is realized as [l]. Here again, if were to assume that \isi{liquid} realization is a phrase-level process that occurs after Vowel Deletion, we would incorrectly predict that the \isi{liquid} should surface as [r], as it did in \REF{ex:bickmore:4} between two back vowels. If, however, we consider the \isi{liquid} realization rule to take place at the word level, we directly account for the patterns in \REF{ex:bickmore:18}, as we did in \REF{ex:bickmore:16}. This is illustrated in the derivation below of \REF{ex:bickmore:18a}, where Vowel Deletion counter-bleeds the r→l rule.
 
 \ea\label{ex:bickmore:19}
 \downingdouble{/ba-zoor-e o-mu-ntu/}{UR}
-\downingdouble{ba-zool-e o-mu-ntu}{r → l (word-level)}
+\downingdouble{ba-zool-e o-mu-ntu}{r→l (word-level)}
 \downingdouble{ba-zool oo-mu-ntu}{V-Deletion (phrase-level)}
 \z
 
-Finally, let us examine the case where the vowel preceding the \isi{liquid} is [+back], the word-\isi{final vowel} after it is [-back], and the following word begins with a [+back] vowel.
+Finally, let us examine the case where the vowel preceding the \isi{liquid} is [+back], the word-\isi{final vowel} after it is [--back], and the following word begins with a [+back] vowel.
 
 \ea\label{ex:bickmore:20}
 \ea\label{ex:bickmore:20a}
 \glll ku-zool ee-bi-tabu\\
       /ku-zool-a e-bi-tabu    \\
-\textsc{inf-}\textup{find}\textsc{{}-fv} \textsc{iv-C8-}\textup{book}\\
+\textsc{inf-}\textup{find}\textsc{-fv} \textsc{iv-\textsc{c8}-}\textup{book}\\
 \glt      ‘to find the books’
 \ex\label{ex:bickmore:20b}
 \glll  ku-hal ee-bii-ntu    \\
       /ku-har-a e-bi-ntu/	\\
-\textsc{inf-}\textup{scratch}\textsc{{}-fv} \textsc{iv-C8-}\textup{thing}\\
+\textsc{inf-}\textup{scratch}\textsc{-fv} \textsc{iv-\textsc{c8}-}\textup{thing}\\
 \glt      ‘to scratch the things’
 \ex\label{ex:bickmore:20c}
 \glll e-ky-aal ee-ki    \\
       /e-ki-ara e-ki/	\\
-\textsc{iv-C7-}\textup{finger} \textsc{iv-dem.7}\\
+\textsc{iv-\textsc{c7}-}\textup{finger} \textsc{iv-dem.7}\\
 \glt      ‘that finger’
 \ex\label{ex:bickmore:20d}
 \glll e-ki-kool ee-ki    \\
       /e-ki-koora e-ki/	\\
-\textsc{iv-C7-}\textup{dry.leaf} \textsc{iv-dem.7}\\
+\textsc{iv-\textsc{c7}-}\textup{dry.leaf} \textsc{iv-dem.7}\\
 \glt      ‘that dry leaf’
 \z
 \z
 
-In each case above the \isi{liquid} is realized as [l]. Yet, this is unexpected given our current analysis. If the r → l rule applies at the level of the word, we would expect it not to apply in these cases since the \isi{liquid} within the word is both preceded and followed by a [+back] vowel, an environment where [r] is attested (cf. \ref{ex:bickmore:4}). In order to account for the realization of the \isi{liquid} as the lateral in these phrases, we must assume that the r → l rule applies \textit{after} Vowel Deletion, as it must be fed by it. This is shown in the derivation below of 20a). 
+\largerpage
+In each case above the \isi{liquid} is realized as [l]. Yet, this is unexpected given our current analysis. If the r→l rule applies at the level of the word, we would expect it not to apply in these cases since the \isi{liquid} within the word is both preceded and followed by a [+back] vowel, an environment where [r] is attested (cf. \ref{ex:bickmore:4}). In order to account for the realization of the \isi{liquid} as the lateral in these phrases, we must assume that the r→l rule applies \textit{after} Vowel Deletion, as it must be fed by it. This is shown in the derivation below of \REF{ex:bickmore:20a}. 
 
 \ea\label{ex:bickmore:21}
 \downingdouble{/ku-zoor-a e-bi-tabu/}{UR}
@@ -371,10 +371,10 @@ In each case above the \isi{liquid} is realized as [l]. Yet, this is unexpected 
 \downingdouble{ku-zool ee-bii-tabu}{r → l (phrase-level)}
 \z
 
-Yet, if the r → l rule is only a phrase-level one, it will fail to account for phrases such as the ones in (\ref{ex:bickmore:13}--\ref{ex:bickmore:18}), as detailed above. Within this rule-based derivational framework, one way to account for all of the phrases examined here is to posit the r → l rule as \textit{both} a word-level, as well as a post-lexical phrasal process.%
+Yet, if the r→l rule is only a phrase-level one, it will fail to account for phrases such as the ones in (\ref{ex:bickmore:13}--\ref{ex:bickmore:18}), as detailed above. Within this rule-based derivational framework, one way to account for all of the phrases examined here is to posit the r→l rule as \textit{both} a word-level, as well as a post-lexical phrasal process. %
 %While potentially interesting, and while I’ve played around with various OT analysis, I just don’t think it prudent in terms of space or \isi{focus} to introduce even the beginning of one here.
 %
- In crude terms, under this analysis an underling /r/ has two chances to become [l]—first if the structural description of the process is met within the word, and again if the structural description is met at the level of the phrase, after \isi{vowel deletion}. 
+ In crude terms, under this analysis an underling /r/ has two chances to become [l]: first if the structural description of the process is met within the word, and again if the structural description is met at the level of the phrase, after \isi{vowel deletion}. 
 
 Next, it is interesting to note that while [r] and [l] are allophonic variations of a single phoneme in \ili{Rutooro}, their complex realization%
 %My response to the reviewer’s comment is really the last sentence before section 2.3.  Not sure if I have anything further to add. I agree that r and l can be justified as allophones on the word level. But you do get these minimal pairs at the phrase level.
@@ -384,55 +384,57 @@ Next, it is interesting to note that while [r] and [l] are allophonic variations
 \ea\label{ex:bickmore:22}
 \glll    tu-bal aa-maa-ndazi\\
     /tu-bar-e a-ma-ndazi/	\\
-\textsc{1pl-}\textup{count}\textsc{{}-Subj} \textsc{iv-C6-}\textup{donut}\\
+\textsc{1pl-}\textup{count}\textsc{-subj} \textsc{iv-\textsc{c6}-}\textup{donut}\\
 \glt    ‘let’s count the donuts’
 \z
 
 \ea\label{ex:bickmore:23}
 \glll    tu-bar-a a-maa-ndazi\\
     /tu-bar-a a-ma-ndazi/	\\
-\textsc{1pl-}\textup{count}\textsc{{}-fv} \textsc{iv-C6-}\textup{donut}\\
+\textsc{1pl-}\textup{count}\textsc{-fv} \textsc{iv-\textsc{c6}-}\textup{donut}\\
 \glt    ‘we count donuts (Habit)’
 \z
 
-
-The example in \REF{ex:bickmore:22} is in the Subjunctive which is formed by adding the suffix /-e/ onto the verb. The r→l rule will apply at the level of the word as its structural description is met there. Vowel Deletion will eliminate the /-e/ resulting in a compensatorily lengthened [aa] after the \isi{liquid}. The example in \REF{ex:bickmore:23} is in the Habitual which is formed by adding the default Final Vowel /-a/ onto the verb. The r→l rule will not apply at the level of the word as the /l/ is both preceded and followed by a [+back] vowel. This remains true at the phrasal level as well, and thus the \isi{liquid} is realized as [r]. Thus, even though these two phrases are minimal pairs, differing only in distinct realizations of [r] and [l], it is not evidence of an underlying contrast between these two sounds, as has been carefully shown throughout this paper.
+\largerpage
+The example in \REF{ex:bickmore:22} is in the Subjunctive which is formed by adding the suffix \mbox{/-e/} onto the verb. The r→l rule will apply at the level of the word as its structural description is met there. Vowel Deletion will eliminate the /-e/ resulting in a compensatorily lengthened [aa] after the \isi{liquid}. The example in \REF{ex:bickmore:23} is in the Habitual which is formed by adding the default Final Vowel /-a/ onto the verb. The r→l rule will not apply at the level of the word as the /l/ is both preceded and followed by a [+back] vowel. This remains true at the phrasal level as well, and thus the \isi{liquid} is realized as [r]. Thus, even though these two phrases are minimal pairs, differing only in distinct realizations of [r] and [l], it is not evidence of an underlying contrast between these two sounds, as has been carefully shown throughout this paper.
 
 \subsection{Evidence for /r/}\label{sec:bickmore:2.3}
 
-Having now considered all of these phrases, let us return to the question as to whether it would be equally plausible to set up the \isi{liquid} as underlyingly /l/. In (\ref{ex:bickmore:13}--\ref{ex:bickmore:18}), one could assume the l → r rule formalized in \REF{ex:bickmore:9} would be applicable only at the level of the word. At that level it would not apply to a form such as /ba-zool-e o-mu-ntu/ 18a) since a [+back] vowel precedes the \isi{liquid} and a [-back] vowel follows. Vowel Deletion would yield ba-zool oo-mu-ntu (the correct phonetic output). The structural description of the l → r is now met, but we must prevent the rule from applying, as it would incorrectly predict the \isi{liquid} should surface as [r]. We would therefore be forced to posit that the rule only applies at the word level, and not the phrasal one.
+Having now considered all of these phrases, let us return to the question as to whether it would be equally plausible to set up the \isi{liquid} as underlyingly /l/. In (\ref{ex:bickmore:13}--\ref{ex:bickmore:18}), one could assume the l→r rule formalized in \REF{ex:bickmore:9} would be applicable only at the level of the word. At that level it would not apply to a form such as /ba-zool-e o-mu-ntu/ \REF{ex:bickmore:18a} since a [+back] vowel precedes the \isi{liquid} and a \mbox{[--back]} vowel follows. Vowel Deletion would yield ba-zool oo-mu-ntu (the correct phonetic output). The structural description of the l→r is now met, but we must prevent the rule from applying, as it would incorrectly predict the \isi{liquid} should surface as [r]. We would therefore be forced to posit that the rule only applies at the word level, and not the phrasal one.
 
-Under the /l/ analysis, the UR of \REF{ex:bickmore:21} would be /ku-zool-a e-bi-tabu/. The structural description of the l → r rule is met at the level of the word as the /l/ is followed by a [+back] vowel, yielding: ku-zoor-a e-bi-tabu. Vowel deletion would apply at the phrase level, producing the ungrammatical *ku-zoor ee-bi-tabu (whereas the grammatical output is [ku-zool ee-bi-tabu]). This, then, is evidence that under this rule-based account, the \isi{liquid} must be set up underlyingly as /r/, and not /l/.
+Under the /l/ analysis, the UR of \REF{ex:bickmore:21} would be /ku-zool-a e-bi-tabu/. The structural description of the l→r rule is met at the level of the word as the /l/ is followed by a [+back] vowel, yielding: ku-zoor-a e-bi-tabu.\todo{should this be in italics?} 
+Vowel deletion would apply at the phrase level, producing the ungrammatical *ku-zoor ee-bi-tabu \todo{should this be in italics?} 
+(where\-as the grammatical output is [ku-zool ee-bi-tabu]). This, then, is evidence that under this rule-based account, the \isi{liquid} must be set up underlyingly as /r/, and not /l/.
 
 One final note on the allomorphy involving liquids should be noted here. As in many \ili{Bantu} languages, the \isi{liquid}(s) in \ili{Rutooro} also alternate with /d/, the latter allophone appearing only after a nasal. Relevant \ili{Rutooro} forms are given in \REF{ex:bickmore:24}, and the rule to account for this in \REF{ex:bickmore:25}.
 
 \ea\label{ex:bickmore:24}
 \ea\label{ex:bickmore:24a}
 \gll ku-ras-a\\
-\textsc{inf}{}-shoot-\textsc{fv}\\
+\textsc{inf}-shoot-\textsc{fv}\\
 \glt ‘to shoot’
 
 \ex\label{ex:bickmore:24b}
 \gll kuu-n-das-a\\
-\textsc{inf}{}-\textsc{1sg}{}-shoot-\textsc{fv}\\
+\textsc{inf}-\textsc{1sg}-shoot-\textsc{fv}\\
 \glt ‘to shoot me’
 \z
 \z
 
 \ea\label{ex:bickmore:25}
-r → d/ [+nas] \underline{ }\underline{ }\underline{ }  
+\phonrule{r}{d}{[+nas] {\longrule}}
 \z
 
-The analysis proposed in this paper posits /r/ as the phoneme, with the r → l rule in \REF{ex:bickmore:8} and the fortition rule in \REF{ex:bickmore:25}. (It is not clear whether the existence of the trilled-\textit{r} requires a third allophonic rule or is simply what happens to a geminate [rr] in the phonetic implementation component.) If one were to posit /d/ as the underlying segment, then both a d → l rule (with the environment found in \ref{ex:bickmore:8}) as well as a d → r rule (with the environment found in \ref{ex:bickmore:9}) would be required. I would submit that the /r/ analysis is to be preferred over a /d/ one since the rule in \REF{ex:bickmore:25} is less complex, not having the disjunctive environment found within the rule in \REF{ex:bickmore:9}. 
+The analysis proposed in this paper posits /r/ as the phoneme, with the r→l rule in \REF{ex:bickmore:8} and the fortition rule in \REF{ex:bickmore:25}. (It is not clear whether the existence of the trilled-\textit{r} requires a third allophonic rule or is simply what happens to a geminate [rr] in the phonetic implementation component.) If one were to posit /d/ as the underlying segment, then both a d→l rule (with the environment found in \ref{ex:bickmore:8}) as well as a d→r rule (with the environment found in \ref{ex:bickmore:9}) would be required. I would submit that the /r/ analysis is to be preferred over a /d/ one since the rule in \REF{ex:bickmore:25} is less complex, not having the disjunctive environment found within the rule in \REF{ex:bickmore:9}. 
 
 \section{Character of rule}
 
-The last point of discussion concerns the character of the rule itself. The first point to be made is that \isi{liquid} realization in \ili{Rutooro} does not fall among the vast class of rules which are triggered by a single adjacent segment. We have provided ample justification above that this allophony is dependent on the backness of both the preceding and following vowels. Second, one can ask whether this process is one of assimilation. I would submit that there is no evidence to support that. In the distinctive feature model, the structural change of this process involves a single feature, [lateral], but what conditions the change is not [lateral] but [back]. Even from a more phonetic perspective, while one might be able to argue that in some language one of the liquids has a somewhat more fronted or backed realization vis-à-vis the other \isi{liquid}, in \ili{Rutooro} such a motivation seems impossible, since the allophone [r] is realized \textit{both} in the most back context (i.e. between two [+back] vowels) as well as the most front context (i.e. between two [-back] vowels). Even saying that the lateral is phonetically motivated as a result of some kind of “transition,” from the tongue being more back and moving to the front is problematic, since the [l] also occurs word-initially before back vowels, where arguably no transition is involved. In summary, it seems that while cannonical cases of allophonic variation are both postlexical and assimilatory in nature, \isi{liquid} realization in \ili{Rutooro} is neither—being required to apply at the word (lexical) level and involving changing one feature ([lateral]) due to the presence of a very different one ([back]).
+The last point of discussion concerns the character of the rule itself. The first point to be made is that \isi{liquid} realization in \ili{Rutooro} does not fall among the vast class of rules which are triggered by a single adjacent segment. We have provided ample justification above that this allophony is dependent on the backness of both the preceding and following vowels. Second, one can ask whether this process is one of assimilation. I would submit that there is no evidence to support that. In the distinctive feature model, the structural change of this process involves a single feature, [lateral], but what conditions the change is not [lateral] but [back]. Even from a more phonetic perspective, while one might be able to argue that in some language one of the liquids has a somewhat more fronted or backed realization vis-à-vis the other \isi{liquid}, in \ili{Rutooro} such a motivation seems impossible, since the allophone [r] is realized \textit{both} in the most back context (i.e. between two [+back] vowels) as well as the most front context (i.e. between two [--back] vowels). Even saying that the lateral is phonetically motivated as a result of some kind of “transition,” from the tongue being more back and moving to the front is problematic, since the [l] also occurs word-initially before back vowels, where arguably no transition is involved. In summary, it seems that while cannonical cases of allophonic variation are both postlexical and assimilatory in nature, \isi{liquid} realization in \ili{Rutooro} is neither—being required to apply at the word (lexical) level and involving changing one feature ([lateral]) due to the presence of a very different one ([back]).
 
 \section*{Abbreviations}
 
 \begin{tabularx}{.45\textwidth}{lQ}
-{Appl} & {Applicative}\\
+\textsc{appl} & {Applicative}\\
 {C\#} & {Class(Number)}\\
 {\textsc{dem}} & {Demonstrative}\\
 {\textsc{fv}} & {Final Vowel}\\
