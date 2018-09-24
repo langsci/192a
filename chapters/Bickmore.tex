@@ -1,19 +1,22 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-\usepackage{pifont.sty}
+\documentclass[output=paper,modfonts,nonflat,
+% colorlinks, citecolor=brown,
+% draftmode,
+% draft
+ hidelinks
+]{langsci/langscibook} 
+ 
 
-% TODO Fll this in
 \author{Lee Bickmore\affiliation{University at Albany, SUNY}}
 \title{Liquid realization in Rutooro}
 \abstract{This paper provides a description and analysis of te distribution of the liquids [r] and [l] in Rutooro (E.12), a Ugandan Bantu language. The allophone that appears is conditioned by the backness of both the preceding and following vowel. Assuming /r/ is underlying, it changes to [l] in contexts when the preceding vowel is back and the following vowel is front. A systematic set of apparent surface counter-examples, leading to phrasal minimal pairs, are argued to be the result of the rule applying twice -- both lexically and post lexically, where a separate post-lexical rule of vowel deletion is responsible for the opacity.}
+
+% \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+%   \input{../localpackages}
+%   \input{../localcommands} 
+%   \togglepaper
+% }{}
+
+
 \begin{document}
 \maketitle
 \section{Introduction}
