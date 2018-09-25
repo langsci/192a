@@ -12,11 +12,11 @@
 }
 
  
-% \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
-%   \input{../localpackages}
-%   \input{../localcommands} 
-%   \togglepaper
-% }{}
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
 
 
 
