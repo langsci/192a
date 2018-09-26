@@ -1,8 +1,8 @@
 \documentclass[output=paper,modfonts,nonflat,
-colorlinks, citecolor=brown,
-draftmode,
+% colorlinks, citecolor=brown,
+% draftmode,
 % draft
-%  hidelinks
+ hidelinks
 ]{langsci/langscibook} 
  
 
@@ -13,7 +13,7 @@ draftmode,
 \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
   \input{../localpackages}
   \input{../localcommands} 
-  \togglepaper
+  \togglepaper[4]
 }{}
 
 
@@ -76,7 +76,7 @@ are met: 1) it is word-initial or preceded by a back vowel, and 2) it is followe
 \z
 
 \ea\label{ex:bickmore:3} 
-[l] in  [\textsubscript{w} {\longrule} [--bk]
+[l] in  [\textsubscript{ω} {\longrule} [--bk]
 \downingdouble{leesu}{‘waistcloth’}
 \z
 
@@ -109,7 +109,7 @@ The \isi{liquid} phoneme is realized as [r] when either: a) followed by a back v
 \z
 
 \noindent\parbox{\textwidth}{\ea\label{ex:bickmore:6}
-[r] in  [\textsubscript{w}%
+[r] in  [\textsubscript{ω}%
 %I’ll leave the bracket labeling to the editors as they’ll want consistency across papers.
 %
  {\longrule} [+bk]
@@ -141,7 +141,7 @@ Given the distribution described and illustrated above, neither the environment 
 % \newcommand{\featurebox}[1]{$\left[\begin{tabular}{>{\scshape}c}#1\end{tabular}\right]$}
 
 \ea\label{ex:bickmore:8}
-  Assuming /r/ to be under\rephrase{ling}{lying}    \\ 
+  Assuming /r/ to be underlying    \\ 
   \phonrule{r}{l}{
   $\left\{
   \begin{tabular}{l}
@@ -154,7 +154,7 @@ Given the distribution described and illustrated above, neither the environment 
 \z
 
 \ea\label{ex:bickmore:9}
-  Assuming /l/ to be under\rephrase{ling}{lying} \\
+  Assuming /l/ to be underlying \\
   \phonrule{l}{r}{
   $\left\{
   \begin{tabular}{l}
@@ -293,14 +293,13 @@ Before investigating \isi{liquid} resolution in additional phrasal contexts, we 
 
 The rule accounting for this is formalized below:
 
-\ea\label{ex:bickmore:17}\todo{what is the scope of --hi? Does it belong to the left V or to the right V?}
+\ea\label{ex:bickmore:17}
 Vowel Deletion%
 %Yes. I didn’t include every possible VV combination as that would lengthen the paper unnecessarily.
 %
 
-\phonrule{V}{ø}{{\longrule}]\textsubscript{w} \textsubscript{w}[ V  
-
-      [--hi]}
+\phonrule{\begin{tabular}[t]{c}V\\{}[--hi]\end{tabular}}{ø}{{\longrule}]\textsubscript{ω} \textsubscript{ω}[ V  
+      }
 \z
 Given, this process we can now examine some additional phrases that are relevant to our understanding of \isi{liquid} realization, namely those where an underlying \isi{liquid} precedes a word-\isi{final vowel} that will be deleted by the rule in \REF{ex:bickmore:17}. First let us examine the case where the vowel preceding the \isi{liquid} is [--back], and the first vowel of the following word is [+back]
 
@@ -402,8 +401,8 @@ The example in \REF{ex:bickmore:22} is in the Subjunctive which is formed by add
 
 Having now considered all of these phrases, let us return to the question as to whether it would be equally plausible to set up the \isi{liquid} as underlyingly /l/. In (\ref{ex:bickmore:13}--\ref{ex:bickmore:18}), one could assume the l→r rule formalized in \REF{ex:bickmore:9} would be applicable only at the level of the word. At that level it would not apply to a form such as /ba-zool-e o-mu-ntu/ \REF{ex:bickmore:18a} since a [+back] vowel precedes the \isi{liquid} and a \mbox{[--back]} vowel follows. Vowel Deletion would yield ba-zool oo-mu-ntu (the correct phonetic output). The structural description of the l→r is now met, but we must prevent the rule from applying, as it would incorrectly predict the \isi{liquid} should surface as [r]. We would therefore be forced to posit that the rule only applies at the word level, and not the phrasal one.
 
-Under the /l/ analysis, the UR of \REF{ex:bickmore:21} would be /ku-zool-a e-bi-tabu/. The structural description of the l→r rule is met at the level of the word as the /l/ is followed by a [+back] vowel, yielding: ku-zoor-a e-bi-tabu.\todo{should this be in italics?} 
-Vowel deletion would apply at the phrase level, producing the ungrammatical *ku-zoor ee-bi-tabu \todo{should this be in italics?} 
+Under the /l/ analysis, the UR of \REF{ex:bickmore:21} would be /ku-zool-a e-bi-tabu/. The structural description of the l→r rule is met at the level of the word as the /l/ is followed by a [+back] vowel, yielding: \textit{ku-zoor-a e-bi-tabu}.
+Vowel deletion would apply at the phrase level, producing the ungrammatical *\textit{ku-zoor ee-bi-tabu} 
 (where\-as the grammatical output is [ku-zool ee-bi-tabu]). This, then, is evidence that under this rule-based account, the \isi{liquid} must be set up underlyingly as /r/, and not /l/.
 
 One final note on the allomorphy involving liquids should be noted here. As in many \ili{Bantu} languages, the \isi{liquid}(s) in \ili{Rutooro} also alternate with /d/, the latter allophone appearing only after a nasal. Relevant \ili{Rutooro} forms are given in \REF{ex:bickmore:24}, and the rule to account for this in \REF{ex:bickmore:25}.
