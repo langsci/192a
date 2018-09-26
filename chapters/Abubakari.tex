@@ -1,37 +1,33 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-\usepackage{pifont.sty}
+\documentclass[output=paper,modfonts,nonflat,
+% colorlinks, citecolor=brown,
+% draftmode,
+% draft
+ hidelinks
+]{langsci/langscibook} 
 
 \author{Hasiyatu Abubakari\affiliation{University of Vienna, Austria}}
-\title{Contrastive focus particles in Kʋ́sáàl} 
+\title{Contrastive focus particles in Kusaal} 
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[18]
+}{}
 
 
-\abstract{This paper presents and discusses the particles used in expressing contrastive focus\footnote{The use of the term contrastive focus is aligned with what \citet{ÉKiss1998} refers to as exhaustive focus or identificational focus. With this background, the terminological use of identificational focus, contrastive focus and exhaustive focus are meant to refer to the same notion that is expressed by the particles \textit{kà, ń, nɛ́} in Kʋ́sáàl.} in Kʋ́sáàl, a Gur language spoken in Ghana, Burkina Faso and Togo. Contrary to the earlier claim made by \citet{Abubakari2011} that focus is morphologically null in the language, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are identified as contrastive focus markers in Kʋ́sáàl. The particle \textit{kà} is limited to fronted focused items, whilst \textit{ń} and \textit{nɛ́} are limited to in-situ focused constituents. Ex-situ focus always bears contrastive interpretation, hence the obligatory use of \textit{kà}. In-situ focus is marked prosodically. However, the in-situ use of \textit{ń} and \textit{nɛ́} correlates with a contrastive and exhaustive focus interpretation. To determine the validity of \textit{ń, nɛ́} and \textit{kà} as contrastive focus particles, I subject them to various tests of exhaustivity from which I conclude that these are contrastive focus particles in the language.}
+\abstract{This paper presents and discusses the particles used in expressing contrastive focus\footnote{The use of the term contrastive focus is aligned with what \citet{ÉKiss1998} refers to as exhaustive focus or identificational focus. With this background, the terminological use of identificational focus, contrastive focus and exhaustive focus are meant to refer to the same notion that is expressed by the particles \textit{kà, ń, nɛ́} in \ili{Kusaal}.} in \ili{Kusaal}, a Gur language spoken in Ghana, Burkina Faso and Togo. Contrary to the earlier claim made by \citet{Abubakari2011} that focus is morphologically null in the language, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are identified as contrastive focus markers in \ili{Kusaal}. The particle \textit{kà} is limited to fronted focused items, whilst \textit{ń} and \textit{nɛ́} are limited to in-situ focused constituents. Ex-situ focus always bears contrastive interpretation, hence the obligatory use of \textit{kà}. In-situ focus is marked prosodically. However, the in-situ use of \textit{ń} and \textit{nɛ́} correlates with a contrastive and exhaustive focus interpretation. To determine the validity of \textit{ń, nɛ́} and \textit{kà} as contrastive focus particles, I subject them to various tests of exhaustivity from which I conclude that these are contrastive focus particles in the language.}
 
-%Key words: Kʋsaal, focus particles, contrastive/exhaustive focus, information focus
+%\keywords{Kʋsaal, focus particles, contrastive{\slash}exhaustive focus, information focus}
 
 \begin{document}
 
 \maketitle
 
-% \section{Introduction}
-% <<<<<<< HEAD
-% % \todo[inline]{check the paper for ʋ and $\upsilon$ and unify if appropriate}
-% The concept of contrastive \isi{focus}, marked with different strategies in most languages, has received a lot of attention in the literature. \citet{ÉKiss1998} looks at the concept with data from \ili{Hungarian} and \ili{English}, \citet{horn1981} with data from \ili{English}, \citet{szabolcsi1981} with \ili{Hungarian}, \citet{hartmann2007} with \ili{Hausa}, and \citet{duah2015} with \ili{Akan}. Additionally, \citet{hudu2012} discusses contrastive \isi{focus} constructions in \ili{Dagbani}, \citet{hiraiwa2005} and \citet{hiraiwabodomo2008} also mention \isi{focus} constructions in \ili{Buli} and \ili{Dagaare} respectively. \citet{Abubakari2011} analyses \isi{focus} as morphologically null in Kʋsáàl. This paper seeks to clarify that notion by showing that \textit{information} \isi{focus} is not overtly marked since Kʋsáàl does not have a grammatical \isi{focus} marker (\ref{ex:abubakari:1}b); but \textit{contrastive} \isi{focus} is marked using the particles \textit{kà, ń, nɛ} (\ref{ex:abubakari:2}a-b). 
-% =======
-% \todo[inline]{check the paper for ʋ and $\upsilon$ and unify if appropriate}
-The concept of contrastive \isi{focus}, marked with different strategies in most languages, has received a lot of attention in the literature. \citet{ÉKiss1998} looks at the concept with data from \ili{Hungarian} and \ili{English}, \citet{horn1981} with data from \ili{English}, \citet{szabolcsi1981} with \ili{Hungarian}, \citet{hartmann2007} with \ili{Hausa}, and \citet{duah2015} with \ili{Akan}. Additionally, \citet{hudu2012} discusses contrastive \isi{focus} constructions in \ili{Dagbani}, \citet{hiraiwa2005} and \citet{hiraiwabodomo2008} also mention \isi{focus} constructions in \ili{Buli} and \ili{Dagaare} respectively. \citet{Abubakari2011} analyses \isi{focus} as morphologically null in Kʋ́sáàl. This paper seeks to clarify that notion by showing that \textit{information} \isi{focus} is not overtly marked since Kʋ́sáàl does not have a grammatical \isi{focus} marker (\ref{ex:abubakari:1}b); but \textit{contrastive} \isi{focus} is marked using the particles \textit{kà, ń, nɛ́} (\ref{ex:abubakari:2}a-b). 
-% >>>>>>> e0241a6872529cc2f2761cad2f0e5b047737d375
+\section{Introduction}
+The concept of contrastive \isi{focus}, marked with different strategies in most languages, has received a lot of attention in the literature. \citet{ÉKiss1998} looks at the concept with data from \ili{Hungarian} and \ili{English}, \citet{horn1981} with data from \ili{English}, \citet{szabolcsi1981} with \ili{Hungarian}, \citet{hartmann2007} with \ili{Hausa}, and \citet{duah2015} with \ili{Akan}. Additionally, \citet{hudu2012} discusses contrastive \isi{focus} constructions in \ili{Dagbani}, \citet{hiraiwa2005} and \citet{hiraiwabodomo2008} also mention \isi{focus} constructions in \ili{Buli} and \ili{Dagaare} respectively. \citet{Abubakari2011} analyses \isi{focus} as morphologically null in \ili{Kusaal}. This paper seeks to clarify that notion by showing that \textit{information} \isi{focus} is not overtly marked since \ili{Kusaal} does not have a grammatical \isi{focus} marker (\ref{ex:abubakari:1}b); but \textit{contrastive} \isi{focus} is marked using the particles \textit{kà, ń, nɛ́} (\ref{ex:abubakari:2}a--b). 
 
-Context: Meals are not to be repeated; the questioner in (\ref{ex:abubakari:1}a) knows that the children ate something yesterday but does not know what exactly they ate. Focus is therefore on what was eaten.\footnote{Verbs do not inflect for tense in Kʋ́sáàl. The remoteness of an activity is expressed using particles. The particle \textit{sà} means the event is a day old, \textit{dàà} means the event is two days old but less than a year and \textit{dà} means the event is a year and beyond.}
+Context: Meals are not to be repeated; the questioner in (\ref{ex:abubakari:1}a) knows that the children ate something yesterday but does not know what exactly they ate. Focus is therefore on what was eaten.\footnote{Verbs do not inflect for tense in \ili{Kusaal}. The remoteness of an activity is expressed using particles. The particle \textit{sà} means the event is a day old, \textit{dàà} means the event is two days old but less than a year and \textit{dà} means the event is a year and beyond.}
 
 % TODO Ask about the footnote
  
@@ -48,7 +44,7 @@ children    \textsc{def}  \textsc{prt}  eat.\textsc{perf}  rice\\
  \z
  \z
  
-Context: The hearer thought the children ate something other than rice, for example beans. The sentences in (\ref{ex:abubakari:2}a-b) are corrections to the perceived notion of what was eaten yesterday. 
+Context: The hearer thought the children ate something other than rice, for example beans. The sentences in (\ref{ex:abubakari:2}a--b) are corrections to the perceived notion of what was eaten yesterday. 
  
  
 \ea\label{ex:abubakari:2}
@@ -64,7 +60,7 @@ rice  \textsc{foc}  3\textsc{pl}.  \textsc{prt}  eat.\textsc{perf}   \\
 \z
 \z
 
-In these examples, (\ref{ex:abubakari:1}b) is an instance of information or presentational \isi{focus}, where the focused constituent does not carry any \isi{contrastive interpretation}. The utterances in (\ref{ex:abubakari:2}a-b) on the other hand convey exhaustive interpretation, where what is eaten is not only emphasized but also exhaustive (in the sense that \textit{only rice} is eaten) and contrastive (in the sense that \textit{what is eaten is rice and nothing else}). 
+In these examples, (\ref{ex:abubakari:1}b) is an instance of information or presentational \isi{focus}, where the focused constituent does not carry any \isi{contrastive interpretation}. The utterances in (\ref{ex:abubakari:2}a--b) on the other hand convey exhaustive interpretation, where what is eaten is not only emphasized but also exhaustive (in the sense that \textit{only rice} is eaten) and contrastive (in the sense that \textit{what is eaten is rice and nothing else}). 
 
 Extensive research on discourse-related information widely differentiates between two different forms of \isi{focus} \citep{Halliday1967, chafe1976,szabolcsi1981,michael1986,ÉKiss1998,Vallduví1998,Molnár2002}. \citet{ÉKiss1998} refers to the two forms as: “\isi{information focus}” and  “\isi{identificational focus}”. Alongside \citet{ÉKiss1998}, \citet{Vallduví1998} and \citet{selkirk2008}, where it is assumed that the evocation of alternative is restricted to contrastive or \isi{identificational focus}, another widely acknowledged semantic definition of \isi{focus} is \citeauthor{rooth1985}’s (\citeyear{rooth1985}; \citeyear{Rooth1992}; \citeyear{rooth1996}) “alternative semantics” where the argument is made that “\isi{focus} indicates the presence of alternatives that are relevant for the interpretation of linguistic expression” (cf \citealt{krifka2007}:6).  By consequence, any kind of \isi{focus} is assumed to set an alternative against which focused constituents are evaluated. This line of argumentation is followed by Zimmermann, who further adds that: 
 
@@ -72,42 +68,41 @@ Extensive research on discourse-related information widely differentiates betwee
 …the alternatives that play a role with contrastive \isi{focus} are not just calculated relative to the semantic denotation of the \isi{focus} constituent (the semantic alternative). Instead, they are calculated relative to the \isi{focus} denotation together with the speaker’s suppositions as to which of these alternatives the hearer is likely to expect (discourse-semantic alternative). \citep[3]{Zimmermann2008}. 
 \end{quote}
 
-This work is not intended to go through the merits or demerits of these arguments. The fundamental goal is to provide empirical evidence in support of the claim that Kʋ́sáàl does not have an overt grammatical \isi{focus particle} and that the particles \textit{kà, ń} and \textit{nɛ́} are used in marking contrastive \isi{focus}. I will therefore align this work with the definition of \citet{ÉKiss1998}, which provides the platform for differentiating \isi{information focus}, which is morphologically null, from \isi{identificational focus}, which uses the particles \textit{kà, ń} and \textit{nɛ́} in Kʋ́sáàl. The following serve as the working definitions for (I) \isi{information focus} and (II) \isi{identificational focus} respectively. 
+This work is not intended to go through the merits or demerits of these arguments. The fundamental goal is to provide empirical evidence in support of the claim that \ili{Kusaal} does not have an overt grammatical \isi{focus particle} and that the particles \textit{kà, ń} and \textit{nɛ́} are used in marking contrastive \isi{focus}. I will therefore align this work with the definition of \citet{ÉKiss1998}, which provides the platform for differentiating \isi{information focus}, which is morphologically null, from \isi{identificational focus}, which uses the particles \textit{kà, ń} and \textit{nɛ́} in \ili{Kusaal}. The following serve as the working definitions for (I) \isi{information focus} and (II) \isi{identificational focus} respectively. 
 
 \begin{enumerate}
-	\item[(I)]  ‘‘If a sentence part conveys new, nonpresupposed information marked by one or more pitch accents – without expressing exhaustive identification performed on a set of contextually or situationally given entities, it is a mere \isi{information focus}.”  \citep[246]{ÉKiss1998}
+	\item[(I)]  ``If a sentence part conveys new, nonpresupposed information marked by one or more pitch accents – without expressing exhaustive identification performed on a set of contextually or situationally given entities, it is a mere \isi{information focus}.”  \citep[246]{ÉKiss1998}
  
 
  
-	\item[(II)]  ‘‘An \isi{identificational focus} represents a subset of the set of contextually or situationally given elements for which the predicate phrase can potentially hold; it is identified as the exhaustive subset of this set for which the predicate phrase actually holds.” \citep[249]{ÉKiss1998}
+	\item[(II)]  ``An \isi{identificational focus} represents a subset of the set of contextually or situationally given elements for which the predicate phrase can potentially hold; it is identified as the exhaustive subset of this set for which the predicate phrase actually holds.” \citep[249]{ÉKiss1998}
 \end{enumerate}  
 
-In this paper I discuss the syntax and semantics of the particles \textit{kà, ń,} and \textit{nɛ́} in Kʋ́sáàl and argue that these particles are used in expressing exhaustive/contrastive \isi{focus} every time they occur in a construction with \isi{focus} interpretation. Whereas the particle \textit{kà} is limited to fronted focused items only and is obligatory whenever fronting occurs, \textit{ń} and \textit{nɛ́} are limited to in-situ focused constituents any time a contrastive/exhaustive \isi{focus} interpretation is desired. Ex-situ \isi{focus} always bears a \isi{contrastive interpretation} and as such requires the obligatory use of \textit{kà}. Kʋ́sáàl marks \isi{in-situ focus} using focal stress. The use of \textit{ń} and \textit{nɛ́} correlates with a contrastive/exhaustive \isi{focus} interpretation. The grounds for these assertions are born out of the observed syntactic and semantic properties exhibited by these particles in Kʋ́sáàl. Even though they perform similar functions compared to grammatical \isi{focus} markers by triggering \isi{focus} related interpretations, they differ significantly from default grammatical \isi{focus} markers on the following grounds: First, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are not default grammatical \isi{focus} elements like \textit{lá} and its variants in \ili{Dagaare}, where the default \isi{focus} marker must obligatorily occur in all declarative constructions \citep{Bodomo1997}, even when no contrastive/exhaustive \isi{focus} interpretations are encoded. Second, the presence of these particles has a direct semantic impact on the interpretation of the focused constituent. Either they cause an exhaustive/\isi{contrastive interpretation} of the focused item, or the focused status of the constituent could be said to cause the appearance of these particles. They are excluded in non-exhaustive environments such as ‘mention-some’ contexts or contexts where a property is known to hold more than the focused entity \citep[242]{hartmann2007}. 
+In this paper I discuss the syntax and semantics of the particles \textit{kà, ń,} and \textit{nɛ́} in \ili{Kusaal} and argue that these particles are used in expressing exhaustive{\slash}contrastive \isi{focus} every time they occur in a construction with \isi{focus} interpretation. Whereas the particle \textit{kà} is limited to fronted focused items only and is obligatory whenever fronting occurs, \textit{ń} and \textit{nɛ́} are limited to in-situ focused constituents any time a contrastive{\slash}\isi{exhaustive focus} interpretation is desired. Ex-situ \isi{focus} always bears a \isi{contrastive interpretation} and as such requires the obligatory use of \textit{kà}. \ili{Kusaal} marks \isi{in-situ focus} using focal stress. The use of \textit{ń} and \textit{nɛ́} correlates with a contrastive{\slash}\isi{exhaustive focus} interpretation. The grounds for these assertions are born out of the observed syntactic and semantic properties exhibited by these particles in \ili{Kusaal}. Even though they perform similar functions compared to grammatical \isi{focus} markers by triggering \isi{focus} related interpretations, they differ significantly from default grammatical \isi{focus} markers on the following grounds: First, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are not default grammatical \isi{focus} elements like \textit{lá} and its variants in \ili{Dagaare}, where the default \isi{focus} marker must obligatorily occur in all declarative constructions \citep{Bodomo1997}, even when no contrastive{\slash}\isi{exhaustive focus} interpretations are encoded. Second, the presence of these particles has a direct semantic impact on the interpretation of the focused constituent. Either they cause an exhaustive/\isi{contrastive interpretation} of the focused item, or the focused status of the constituent could be said to cause the appearance of these particles. They are excluded in non-exhaustive environments such as ‘mention-some’ contexts or contexts where a property is known to hold more than the focused entity \citep[242]{hartmann2007}. 
 
 Some of the major questions this paper seeks to answer are:
-(1) How is discourse-related information packaged using the particles \textit{kà, ń} and \textit{nɛ́} in Kʋ́sáàl? 
-(2) How can one determine whether indeed the identified particles are contrastive/exhaustive \isi{focus} particles in Kʋ́sáàl? 
+\begin{enumerate}
+\item How is discourse-related information packaged using the particles \textit{kà, ń} and \textit{nɛ́} in \ili{Kusaal}? 
+\item How can one determine whether indeed the identified particles are contrastive{\slash}\isi{exhaustive focus} particles in \ili{Kusaal}? 
+\end{enumerate}
 
-The paper is organized into five sections. The second section looks at information packaging strategies in Kʋ́sáàl and analyses the various types of \isi{focus} constructions. In the third and fourth sections, I apply various standard tests for exhaustivity on the identified \isi{focus} particles to verify whether they are indeed contrastive/exhaustive \isi{focus} particles. The conclusion forms the final section.
 
-\section{Focus constructions in Kʋ́sáàl}
+The paper is organized into five sections. The second section looks at information packaging strategies in \ili{Kusaal} and analyses the various types of \isi{focus} constructions. In the third and fourth sections, I apply various standard tests for exhaustivity on the identified \isi{focus} particles to verify whether they are indeed contrastive{\slash}\isi{exhaustive focus} particles. The conclusion forms the final section.
 
-As indicated earlier, this work uses the definition of \citet{ÉKiss1998} as a background in analyzing and setting apart the two types of \isi{focus} in Kʋ́sáàl. Information or presentational \isi{focus} is expressed prosodically where the focused item receives extra stress in its pronunciation. No grammaticalized \isi{focus particle} is used in such instances. Information \isi{focus} is therefore argued to be overtly null in Kʋ́sáàl. Contrastive \isi{focus} on the other hand uses the particles \textit{kà, ń,} and \textit{nɛ́}. In the following subsections, I present various contexts that naturally elucidate the use of \isi{information focus} (\sectref{sec:abubakari:2.1}) and contrastive \isi{focus} (\sectref{sec:abubakari:2.2}).
+\section{Focus constructions in \ili{Kusaal}}
 
-\subsection{Information focus constructions in Kʋ́sáàl}\label{sec:abubakari:2.1}
+As indicated earlier, this work uses the definition of \citet{ÉKiss1998} as a background in analyzing and setting apart the two types of \isi{focus} in \ili{Kusaal}. Information or presentational \isi{focus} is expressed prosodically where the focused item receives extra stress in its pronunciation. No grammaticalized \isi{focus particle} is used in such instances. Information \isi{focus} is therefore argued to be overtly null in \ili{Kusaal}. Contrastive \isi{focus} on the other hand uses the particles \textit{kà, ń,} and \textit{nɛ́}. In the following subsections, I present various contexts that naturally elucidate the use of \isi{information focus} (\sectref{sec:abubakari:2.1}) and contrastive \isi{focus} (\sectref{sec:abubakari:2.2}).
 
-% <<<<<<< HEAD
-% Following the definition in (I) by \citet[246]{ÉKiss1998}, the notions expressed using \isi{information focus} are not expected to be exhaustive in nature. They serve to dissuade one’s ignorance about an event, action or situation. The answers to the \textit{wh}-questions in the examples below represent instances of \isi{information focus} in Kʋsáàl. 
-% =======
-Following the definition in (I) by \citet[246]{ÉKiss1998}, the notions expressed using \isi{information focus} are not expected to be exhaustive in nature. They serve to dissuade one’s ignorance about an event, action or situation. The answers to the \textit{wh}{}-questions in the examples below represent instances of \isi{information focus} in Kʋ́sáàl. 
-% >>>>>>> e0241a6872529cc2f2761cad2f0e5b047737d375
+\subsection{Information focus constructions in \ili{Kusaal}}\label{sec:abubakari:2.1}
 
-Context 1: Several things need to be done. The questioner does not know the activity carried out by a partner and underrates the relevance of what was done. The question in (\ref{ex:abubakari:3}a) is used and the response in (\ref{ex:abubakari:3}b) provides new information with \isi{focus} on the activity that was carried out. It could be that several other activities were carried out but the most salient is the \textit{buying of the items}
+Following the definition in (I) by \citet[246]{ÉKiss1998}, the notions expressed using \isi{information focus} are not expected to be exhaustive in nature. They serve to dissuade one’s ignorance about an event, action or situation. The answers to the \textit{wh}{}-questions in the examples below represent instances of \isi{information focus} in \ili{Kusaal}. 
+
+Context 1: Several things need to be done. The questioner does not know the activity carried out by a partner and underrates the relevance of what was done. The question in (\ref{ex:abubakari:3}a) is used and the response in (\ref{ex:abubakari:3}b) provides new information with \isi{focus} on the activity that was carried out. It could be that several other activities were carried out but the most salient is the \textit{buying of the items}.
  
 \ea\label{ex:abubakari:3}
 \ea{ \label{ex:abubakari:3a}
 Q: \gll \`{O}    sà  k\={e}ŋŋɛ̄    māāl    bɔ́?         \\
-3Sg  \textsc{prt}  go.\textsc{perf}  do.\textsc{perf}  what\\}
+3\textsc{sg}  \textsc{prt}  go.\textsc{perf}  do.\textsc{perf}  what\\}
 \glt ‘What at all did s/she go to do yesterday.’   
 \ex{ \label{ex:abubakari:3b}
 Ans: \gll \`{O}  sà  k\={e}ŋŋɛ̄ \textbf{\textit{dāˈ}}    \textbf{\textit{láˈád} } \textbf{\textit{lá.}}\\
@@ -148,19 +143,15 @@ Aduku    beat-\textsc{perf}  Asibi.\\
 \z
 \z
 
-In all the answers to questions (\ref{ex:abubakari:3}a-\ref{ex:abubakari:5}i) above, the sentences convey new, nonpresupposed information, since the questioner has no knowledge of the information or the response the respondent is going to offer. The focused items do not have any form of contrastive/exhaustive interpretation and no overt morphological \isi{focus} particles are used. 
+In all the answers to questions (\ref{ex:abubakari:3}a--\ref{ex:abubakari:5}i) above, the sentences convey new, nonpresupposed information, since the questioner has no knowledge of the information or the response the respondent is going to offer. The focused items do not have any form of contrastive{\slash}exhaustive interpretation and no overt morphological \isi{focus} particles are used. 
 
-\subsection{Contrastive focus constructions in Kʋ́sáàl}\label{sec:abubakari:2.2}
+\subsection{Contrastive focus constructions in \ili{Kusaal}}\label{sec:abubakari:2.2}
 
 Again following the working definition for \isi{identificational focus} in (II), it will be seen that unlike \isi{information focus}, contrastive \isi{focus} constructions are largely inherently exhaustive or exhaustive by implicature. I illustrate the various distributions of the particles \textit{kà, ń, nɛ́} in packaging this notion.
 
 \subsubsection{Ex-situ focus marking with \textit{kà}}
 
-% <<<<<<< HEAD
-% The particle \textit{kà} occurs immediately after any item fronted to the left periphery of any construction. \textit{Wh}-\isi{focus} phrases are assumed to have moved to a designated \isi{focus} position and they co-occur with the ex-situ \isi{focus particle} \textit{kà} (see \citealt{aboh2007}). Answers to questions involving \textit{wh}-focus-phrases must have the particle \textit{kà} after the focused constituent. It is ungrammatical to substitute \textit{kà} with either \textit{ń} or \textit{nɛ} in ex-situ \isi{focus} constructions in the language. 
-% =======
 The particle \textit{kà} occurs immediately after any item fronted to the left periphery of any construction. \textit{Wh}{}-\isi{focus} phrases are assumed to have moved to a designated \isi{focus} position and they co-occur with the ex-situ \isi{focus particle} \textit{kà} (see \citealt{aboh2007}). Answers to questions involving \textit{wh}{}-focus-phrases must have the particle \textit{kà} after the focused constituent. It is ungrammatical to substitute \textit{kà} with either \textit{ń} or \textit{nɛ́} in ex-situ \isi{focus} constructions in the language. 
-% >>>>>>> e0241a6872529cc2f2761cad2f0e5b047737d375
 
  
 \ea\label{ex:abubakari:6}
@@ -201,22 +192,18 @@ goat  \textsc{foc}  1\textsc{sg}  \textsc{prt}  buy.\textsc{perf}\\
 
 \ea\label{ex:abubakari:7}
 \ea\label{ex:abubakari:7a}
-Q: \gll \`{A}nɔ́'ɔ́n  bííg  kà  fʋ̀  ī\={e}dá:  Àsíbí  bɛ́ɛ  Àdúkɔ́?      \\
+Q: \gll Ànɔ́'ɔ́n  bííg  kà  fʋ̀  ī\={e}dá:  Àsíbí  bɛ́ɛ  Àdúkɔ́?      \\
 who  child  \textsc{foc}  2\textsc{sg}  search  Asibi  or  Adukɔ         \\
 \glt ‘Whose child are you after: Asibi or Adukɔ?’                         
 
 \ex\label{ex:abubakari:7b}
 Ans: \gll Àsíbí  bííg  kà  \`{m}  ī\={e}d.\\
 Asibi  child  \textsc{foc}  1\textsc{sg}  search\\
-\glt ‘It is \textit{Asibi’s child} I am after.
+\glt ‘It is \textit{Asibi’s child} I am after.'
 \z
 \z 
 
-% <<<<<<< HEAD
-% The question in (\ref{ex:abubakari:6}a) is an example of a contrastive \textit{wh}-\isi{focus} construction with a set of alternatives. The response equally conveys a strong contrastive \isi{focus} interpretation by excluding other alternatives from what is bought to ‘a goat’ and not, for instance, ‘a sheep’. The use of \textit{kà} in \textit{wh}-questions as well as in fronted focused items causes a contrastive \isi{focus} interpretation of the focused constituent. It is implied that the particle \textit{kà} serves as a contrastive \isi{focus particle} in Kʋsáàl in ways similar to the particle \textit{ka} in \ili{Dagbani} \citep{hudu2012}. 
-% =======
-The question in (\ref{ex:abubakari:6}a) is an example of a contrastive \textit{wh}{}-\isi{focus} construction with a set of alternatives. The response equally conveys a strong contrastive \isi{focus} interpretation by excluding other alternatives from what is bought to ‘a goat’ and not, for instance, ‘a sheep’. The use of \textit{kà} in \textit{wh}{}-questions as well as in fronted focused items causes a contrastive \isi{focus} interpretation of the focused constituent. It is implied that the particle \textit{kà} serves as a contrastive \isi{focus particle} in Kʋ́sáàl in ways similar to the particle \textit{ka} in \ili{Dagbani} \citep{hudu2012}. 
-% >>>>>>> e0241a6872529cc2f2761cad2f0e5b047737d375
+The question in (\ref{ex:abubakari:6}a) is an example of a contrastive \textit{wh}{}-\isi{focus} construction with a set of alternatives. The response equally conveys a strong contrastive \isi{focus} interpretation by excluding other alternatives from what is bought to ‘a goat’ and not, for instance, ‘a sheep’. The use of \textit{kà} in \textit{wh}{}-questions as well as in fronted focused items causes a contrastive \isi{focus} interpretation of the focused constituent. It is implied that the particle \textit{kà} serves as a contrastive \isi{focus particle} in \ili{Kusaal} in ways similar to the particle \textit{ka} in \ili{Dagbani} \citep{hudu2012}. 
 
 \subsubsection{In-situ focus marking with \textit{nɛ́}}
 
@@ -229,7 +216,7 @@ Q: \gll Bɔ́  kà  púˈá    lá  sà  dāˈ  dáˈá-n  lá?\\
       what  \textsc{foc}   woman  \textsc{def}.  \textsc{prt}  buy.\textsc{perf}     market-\textsc{loc}  \textsc{def}. \\
  \glt   ‘What did the woman buy at the market?’
 \ex \label{ex:abubakari:8b} 
-Ans: \gll  Púˈá  lá   [\textsubscript{VP} sà  dāˈ    nɛ́  núá ]  \textit{[\textsubscript{PP}} dáˈá-n    lá.]\\ 
+Ans: \gll  Púˈá  lá   [\textsubscript{VP} sà  dāˈ    nɛ́  núá ]  [{\textsubscript{PP}} dáˈá-n    lá.]\\ 
              woman  \textsc{def} {}  \textsc{prt}  buy.\textsc{perf}  \textsc{foc}  fowl  {} {}  marke-\textsc{loc}  \textsc{def}.\\
  \glt ‘The woman bought a \textit{fowl} at the market’
  \ex \label{ex:abubakari:8c} 
@@ -278,12 +265,13 @@ what  make/do.\textsc{perf}\\
 
 \ex\label{ex:abubakari:11b}
 Ans: \gll [\textbf{\textit{IP}} Bíís  lá  dī    dīīb  lá  nɛ́.]\\
-child   \textsc{def}.  eat.\textsc{perf}  food  \textsc{def}.  \textsc{foc}\\
+~ child   \textsc{def}.  eat.\textsc{perf}  food  \textsc{def}  \textsc{foc}\\
 \glt ‘The children ate the food.’(an unexpected occurrence)   
 \z
 \z
 
-In (\ref{ex:abubakari:10}b-\ref{ex:abubakari:11}b) the particle \textit{nɛ́} assumes an IP internal right position with a \isi{scope} that extends to cover the entire construction. It is equally possible to have \textit{nɛ́} focusing the object DP in instances such as below.
+\newpage 
+In (\ref{ex:abubakari:10}b--\ref{ex:abubakari:11}b) the particle \textit{nɛ́} assumes an IP internal right position with a \isi{scope} that extends to cover the entire construction. It is equally possible to have \textit{nɛ́} focusing the object DP in instances such as below.
 
  
 \ea\label{ex:abubakari:12}
@@ -297,13 +285,13 @@ Adoluba   buy.\textsc{perf}  \textsc{foc}  fowl\\
 \glt ‘Adoluba bought \textit{a fowl}’
  
 \ex\label{ex:abubakari:12c} 
-Ans 2: \gll Àdólúb\'{a}  dāˈ    núá  nɛ́.\\
+Ans 2: \gll Àdólúbá  dāˈ    núá  nɛ́.\\
 Adoluba  buy.\textsc{perf}  fowl  \textsc{foc}\\
 \glt ‘Adoluba bought \textit{a fowl}’
 \z
 \z
  
-The example in (\ref{ex:abubakari:12}b) serves as the expected response to the question in (\ref{ex:abubakari:12}a). The particle \textit{nɛ́} occurs before the focused item and causes an exhaustive/\isi{contrastive interpretation} of the item bought. On the other hand, the example in (\ref{ex:abubakari:12}c), where the particle occurs after the focused object DP, can be used in a context where \textit{Adoluba} is known for not buying anything when he is visiting. This time around he surprises everybody by buying ‘a \textit{fowl}’. 
+The example in (\ref{ex:abubakari:12}b) serves as the expected response to the question in (\ref{ex:abubakari:12}a). The particle \textit{nɛ́} occurs before the focused item and causes an exhaustive{\slash}contrast\-ive interpretation of the item bought. On the other hand, the example in (\ref{ex:abubakari:12}c), where the particle occurs after the focused object DP, can be used in a context where \textit{Adoluba} is known for not buying anything when he is visiting. This time around he surprises everybody by buying ‘a \textit{fowl}’. 
  
 
 To account for the word order variation, it is assumed that \textit{nɛ́} behaves as an adnominal selected by the NP/DP or PP it modifies (see \citealt{renans2016}:§3). It behaves as an adverbial when it modifies VPs and IPs, in which case it merges with the entire IP or VP as illustrated below. 
@@ -317,71 +305,72 @@ To account for the word order variation, it is assumed that \textit{nɛ́} behav
 
 \subsection{In-situ focus marking with \textit{ń}}
 
-The particle \textit{ń} is restricted to \isi{subject} \isi{focus}. It is expected to occur after all \isi{subject} NPs or DPs deemed to have an exhaustive/contrastive \isi{focus} interpretations.
+The particle \textit{ń} is restricted to \isi{subject} \isi{focus}. It is expected to occur after all \isi{subject} NPs or DPs deemed to have an exhaustive{\slash}contrastive \isi{focus} interpretations.
 
-% <<<<<<< HEAD
-% % \todo{This footnote is over one page long. Consider incorporating it into the main text}
-%  It is infelicitous to use the particles \textit{nɛ} and \textit{kà} in focusing \isi{subject} constituents, as shown in (\ref{ex:abubakari:13}b-c).\footnote{A 
-%     reviewer raised a question as to whether \isi{subject} \isi{focus} involves any form of \isi{movement} in Kʋsáàl. The situation is not immediately clear for the following reasons: 
-% =======
-\todo{This footnote is over one page long. Consider incorporating it into the main text}
+\newpage 
  It is infelicitous to use the particles \textit{nɛ́} and \textit{kà} in focusing \isi{subject} constituents, as shown in (\ref{ex:abubakari:13}b-c).\footnote{A 
-    reviewer raised a question as to whether \isi{subject} \isi{focus} involves any form of \isi{movement} in Kʋ́sáàl. The situation is not immediately clear for the following reasons: 
-% >>>>>>> e0241a6872529cc2f2761cad2f0e5b047737d375
-    (1) Assuming that \isi{subject} \isi{focus} has the structure: [\textsubscript{FocP} n [\textsubscript{TP} Subj [VP OBJ]]], the hypothesis is that the \isi{subject} moves from Spec TP to Spec FocP, triggered by both Agree and EPP features on FocP. 
-    (2) A problem arises when the \isi{subject} is substituted by other elements such as the \textit{wh}-phrases \textit{ànɔˈ}\textit{ɔn(ɛ)} ‘who’ and \textit{bɔɔ} ‘what’. It is ungrammatical to \isi{focus} the \textit{wh}-phrase as \isi{subject} with the \isi{subject} \isi{focus particle} \textit{ń}, as in \REF{ex:abubakari:fnii} and \REF{ex:abubakari:fnvi}, though the constituent that corresponds to the \textit{wh}-phrase in the answer to the question can be focused with \textit{ń} as in (iii) or it can be left bare as in (iv).
+    reviewer raised a question as to whether \isi{subject} \isi{focus} involves any form of \isi{movement} in \ili{Kusaal}. The situation is not immediately clear for the following reasons: \\
+    (1) Assuming that \isi{subject} \isi{focus} has the structure: [\textsubscript{FocP} n [\textsubscript{TP} Subj [VP OBJ]]], the hypothesis is that the \isi{subject} moves from Spec TP to Spec FocP, triggered by both Agree and EPP features on FocP. \\
+    (2) A problem arises when the \isi{subject} is substituted by other elements such as the \textit{wh}-phrases \textit{ànɔˈ}\textit{ɔn(ɛ)} ‘who’ and \textit{bɔɔ} ‘what’. It is ungrammatical to \isi{focus} the \textit{wh}-phrase as \isi{subject} with the \isi{subject} \isi{focus particle} \textit{ń}, as in \REF{ex:abubakari:fnii} and \REF{ex:abubakari:fnvi}, though the constituent that corresponds to the \textit{wh}-phrase in the answer to the question can be focused with \textit{ń} as in (iii) or it can be left bare as in \REF{ex:abubakari:fniv}.\vspace*{-2mm}
     
 %     \todo[inline]{ordering of diacritics inversed across the board} 
+\noindent
+      \parbox[t]{6.5cm}{
       \ea
-      \gll \`{A} n\'{ɔ} ˈ\'{ɔ} n\`{ɛ}   d\={i}     d\'{i} \'{i} b  l\'{a} ?     \\
-      who    eat.perf   food   \textsc{def}    \\
+      \gll Àn\'{ɔ}ˈ\'{ɔ}n\`{ɛ}   d\={i}     dííb  lá?     \\
+	   who           eat.\textsc{perf}   food   \textsc{def}    \\
       \glt ‘Who ate the food?                            
       \z
-      
+      }
+      \parbox[t]{5.5cm}{
       \ea\label{ex:abubakari:fnii}
-      \gll *\`{A} n\'{ɔ} ˈ\'{ɔ} n\`{ɛ}   \'{n}   d\={i}   d\'{i} \'{i} b  l\'{a} ?    \\
-      who  \textsc{foc}  eat  food   \textsc{def}                            \\
+      \gll *Àn\'{ɔ}ˈ\'{ɔ}n\`{ɛ}   ń   d\={i}   dííb  lá?    \\
+      who                   \textsc{foc}  eat  food   \textsc{def}                            \\
+      \glt ~
       \z
-      
+      }\\
+      \parbox[t]{6.5cm}{     
       \ea
-      \gll Ans: P\'{u} ˈ\'{a}     l\'{a}   \'{n}    d\={i}   d\'{i} \'{i} b  l\'{a} . \\
-      woman  \textsc{def}  \textsc{foc}  eat  food   \textsc{def} \\
+      \gll Ans: Púˈá     lá           ń    d\={i}   dííb  lá. \\
+     ~          woman  \textsc{def}  \textsc{foc}  eat  food   \textsc{def} \\
       \glt ‘It is the woman who ate the food.’                          
       \z
-      
-      \ea
-      \gll P\'{u} ˈ\'{a}   l\'{a}   d\={i}   d\'{i} \'{i} b  l\'{a} .\\
+      }\parbox[t]{5.5cm}{
+      \ea\label{ex:abubakari:fniv}
+      \gll Púˈá   lá   d\={i}   dííb  lá.\\
       woman  \textsc{def}   eat  food   \textsc{def}        \\
       \glt ‘The woman ate the food.’                              
       \z
-      
+      }\\
+      \parbox[t]{6.5cm}{
       \ea
-      \gll B\'{ɔ} \'{ɔ}   \={ɔ} nb  v\'{a} \'{a} nd  l\'{a} ?     \\
+      \gll B\'{ɔ}\'{ɔ}   \={ɔ}nb  váánd  lá?     \\
       what  chew   leaves   \textsc{def}         \\
       \glt ‘What chewed the leaves?’        
       \z
-      
+      }\parbox[t]{5.5cm}{
       \ea\label{ex:abubakari:fnvi}
-      \gll *B\'{ɔ} \'{ɔ}   \'{n}   \={ɔ} nb  v\'{a} \'{a} nd  l\'{a} ?     \\
+      \gll *B\'{ɔ}\'{ɔ}   ń   \={ɔ}nb  váánd  lá?     \\
       what   \textsc{foc}  chew   leaves   \textsc{def}\\
       \z 
-     
-    However, it is grammatical to \isi{focus} \textit{wh}-phrases, using the non-\isi{subject} \isi{focus particle} \textit{nɛ́}, if they happen to be objects of the sentence.                                        
+      }
+      
+    However, it is grammatical to \isi{focus} \textit{wh}-phrases, using the non-\isi{subject} \isi{focus particle} \textit{nɛ́}, if they happen to be objects of the sentence.  
     
+ 
     \ea 
-    \gll \`{A} d\'{u} k  b\={u} ˈ    nɛ́  ànɔɔn\`{ɛ} ? \\ 
-    Aduk  beat.perf   \textsc{foc}  who       \\
+    \gll Àdúk  b\={u}ˈ    nɛ́  ànɔɔn\`{ɛ}? \\ 
+    Aduk  beat.\textsc{perf}   \textsc{foc}  who       \\
     \glt ‘Who (specifically) did Aduk beat?       
     \z
     
     \ea
-    \gll B\'{ʋ} \'{ʋ} g  l\'{a}   \={ɔ} nb  n\'{ɛ}   b\'{ɔ} \'{ɔ} ?    \\
+    \gll B\'{ʋ}\'{ʋ}g  lá   \={ɔ}nb  n\'{ɛ}   b\'{ɔ}\'{ɔ}?    \\
     goat  \textsc{def}  chew  \textsc{foc}  what    \\
     \glt ‘What (specifically) did the goat chew?’      
-    \z 
+    \z  
      
-    The situation is unclear in view of the fact that \textit{wh}{}-phrases cannot co-occur with the \isi{focus particle} \textit{ń} in \isi{subject} position, even though it is grammatical to have the non-\isi{subject} \isi{focus particle} \textit{nɛ́} co-occurring with the same \textit{wh}{}-phrases at object position. One cannot argue that \textit{wh}{}-phrases in \isi{subject} position have the structure in (1) even though the constituents in the answer which correspond to the \textit{wh}{}-phrase can be focused using \textit{ń.} I therefore assume the vacuous \isi{movement} hypothesis and argue that \isi{subject} \isi{focus} in Kʋ́sáàl is an instance of \isi{in-situ focus} until further evidence is found to counter this assumption.
- 
+    The situation is unclear in view of the fact that \textit{wh}{}-phrases cannot co-occur with the \isi{focus particle} \textit{ń} in \isi{subject} position, even though it is grammatical to have the non-\isi{subject} \isi{focus particle} \textit{nɛ́} co-occurring with the same \textit{wh}{}-phrases at object position. One cannot argue that \textit{wh}{}-phrases in \isi{subject} position have the structure in (1) even though the constituents in the answer which correspond to the \textit{wh}{}-phrase can be focused using \textit{ń.} I therefore assume the vacuous \isi{movement} hypothesis and argue that \isi{subject} \isi{focus} in \ili{Kusaal} is an instance of \isi{in-situ focus} until further evidence is found to counter this assumption.
  }  
 
  
@@ -409,43 +398,43 @@ man  \textsc{foc}  COP.be    room-\textsc{loc}  \textsc{def}\\
 \glt ‘\textit{A brave man} is in the room (not a coward).’
 \z 
 
-The particle \textit{ń} also cliticizes on \isi{subject} pronouns to form strong or emphatic forms.\footnote{Subject pronouns and their corresponding emphatic forms: m/man ‘1\textsc{sg}/1\textsc{sg}Emph.’ f$\upsilon $/f$\upsilon $n ‘2\textsc{sg}/2\textsc{sg}Emph.’ ɔ/ɔn ‘3\textsc{sg}/3\textsc{sg}Emph.’ ti/tinam ‘1Pl./1Pl.Emph.’, ya/yanam ‘2Pl./2Pl.Emph.’, ba-ban/banam ‘3\textsc{pl}./3\textsc{pl}.Emph.’}
+The particle \textit{ń} also cliticizes on \isi{subject} pronouns to form strong or emphatic forms.\footnote{Subject pronouns and their corresponding emphatic forms: m/man ‘1\textsc{sg}/1\textsc{sg}.\textsc{emph}’ fʋ/fʋn ‘2\textsc{sg}/2\textsc{sg}.\textsc{emph}’ ɔ/ɔn ‘3\textsc{sg}/3\textsc{sg}.\textsc{emph}’ ti/tinam ‘1\textsc{pl}/1\textsc{pl}.\textsc{emph}’, ya/yanam ‘2\textsc{pl}/\textsc{pl}.\textsc{emph}’, ba-ban/banam ‘3\textsc{pl}./3\textsc{pl}.\textsc{emph}’}
 
  
 \ea\label{ex:abubakari:15}  
 \gll \'{O}n    sá  dāˈ    núá  lá\\
-3\textsc{sg}-Emph.  \textsc{prt}  buy.\textsc{perf}  fowl  \textsc{def}\\
+3\textsc{sg}-\textsc{emph}  \textsc{prt}  buy.\textsc{perf}  fowl  \textsc{def}\\
 \glt ‘\textit{S/he} bought the fowl’    
 \z 
 
-In \REF{ex:abubakari:15}, the \isi{focus particle} is attached to the \isi{subject pronoun} to create the emphatic form \textit{on/ɔn} ‘3\textsc{sg} Emph.’. The emphatic \isi{pronoun} is not exclusive in its interpretation. In fronting, it occurs with \textit{kà} and in \isi{in-situ focus} it co-occurs with the adverbials \textit{máˈáá} ‘alone, only, just’ and \textit{k$\upsilon $n-k$\upsilon $n} ‘just’ for an exclusive interpretation as illustrated in (\ref{ex:abubakari:16}-\ref{ex:abubakari:17}). This will be further discussed in \sectref{sec:abubakari:4.1}.
+In \REF{ex:abubakari:15}, the \isi{focus particle} is attached to the \isi{subject pronoun} to create the emphatic form \textit{on/ɔn} ‘3\textsc{sg}.\textsc{emph}’. The emphatic \isi{pronoun} is not exclusive in its interpretation. In fronting, it occurs with \textit{kà} and in \isi{in-situ focus} it co-occurs with the adverbials \textit{máˈáá} ‘alone, only, just’ and \textit{kʋn-kʋn} ‘just’ for an exclusive interpretation as illustrated in (\ref{ex:abubakari:16}--\ref{ex:abubakari:17}). This will be further discussed in \sectref{sec:abubakari:4.1}.
 
  
 \ea\label{ex:abubakari:16} 
 \gll \'{O}n    kà  \`{m}  bɔ̄ɔ̄d.\\
-3\textsc{sg}-Emph.  \textsc{foc}  1\textsc{sg}  like\\
+3\textsc{sg}-\textsc{emph}  \textsc{foc}  1\textsc{sg}  like\\
 \glt ‘It is \textit{him/her} that I like (not any other person).’
 \z
  
 \ea\label{ex:abubakari:17} 
 \gll \'{O}n    máˈáá  dá  dāˈ    núá  lá\\
-3\textsc{sg}-Emph.  alone  \textsc{prt}  buy.\textsc{perf}  fowl  \textsc{def}\\
+3\textsc{sg}-\textsc{emph}  alone  \textsc{prt}  buy.\textsc{perf}  fowl  \textsc{def}\\
 \glt ‘\textit{S/he} alone bought the fowl.’
 \z
 
  
-In this section, the various ways of packaging both information and contrastive \isi{focus} in Kʋ́sáàl have been demonstrated. It has been shown that Kʋ́sáàl does not have an overt grammatical \isi{focus particle} and whereas \isi{information focus} is morphologically null, contrastive \isi{focus} is marked using the particles \textit{kà}, \textit{ń} and \textit{nɛ́}. The particles \textit{kà}, \textit{ń} and \textit{nɛ́} are purposely used to convey contrastive/exhaustive \isi{focus} any time they occur in a construction with \isi{focus} interpretation. Whereas \textit{kà} is used for fronted DPs and NPs, \textit{ń} and \textit{nɛ́} are used in-situ: \textit{ń} for \isi{subject} NPs, and \textit{nɛ́} for object NPs, VPs as well as IPs. In the following section, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are subjected to several tests for exhaustivity to ascertain their true statuses as contrastive/exhaustive \isi{focus particle} in Kʋ́sáàl.
+In this section, the various ways of packaging both information and contrastive \isi{focus} in \ili{Kusaal} have been demonstrated. It has been shown that \ili{Kusaal} does not have an overt grammatical \isi{focus particle} and whereas \isi{information focus} is morphologically null, contrastive \isi{focus} is marked using the particles \textit{kà}, \textit{ń} and \textit{nɛ́}. The particles \textit{kà}, \textit{ń} and \textit{nɛ́} are purposely used to convey contrastive{\slash}\isi{exhaustive focus} any time they occur in a construction with \isi{focus} interpretation. Whereas \textit{kà} is used for fronted DPs and NPs, \textit{ń} and \textit{nɛ́} are used in-situ: \textit{ń} for \isi{subject} NPs, and \textit{nɛ́} for object NPs, VPs as well as IPs. In the following section, the particles \textit{kà}, \textit{ń} and \textit{nɛ́} are subjected to several tests for exhaustivity to ascertain their true statuses as contrastive{\slash}exhaustive \isi{focus particle} in \ili{Kusaal}.
  
 
 \section{Tests for exhaustivity}
 
  
-Several standard tests are used in the literature in testing exhaustive \isi{focus}. In this section, I demonstrate how some of these tests are used to justify the claim that the particles \textit{kà, ń} and \textit{nɛ́} are indeed contrastive/exhaustive \isi{focus} particles in Kʋ́sáàl. In all \isi{focus} constructions with the aforementioned particles in the language, there is a conversational implicature that the answer to the question/\isi{subject} under discussion is the strongest true answer \citep{Beaver2008,roberts2012}. The following are accounts of some tests on the particles: \textit{kà, ń} and \textit{nɛ́} in Kʋ́sáàl.
+Several standard tests are used in the literature in testing \isi{exhaustive focus}. In this section, I demonstrate how some of these tests are used to justify the claim that the particles \textit{kà, ń} and \textit{nɛ́} are indeed contrastive{\slash}\isi{exhaustive focus} particles in \ili{Kusaal}. In all \isi{focus} constructions with the aforementioned particles in the language, there is a conversational implicature that the answer to the question/\isi{subject} under discussion is the strongest true answer \citep{Beaver2008,roberts2012}. The following are accounts of some tests on the particles: \textit{kà, ń} and \textit{nɛ́} in \ili{Kusaal}.
  
 
 \subsection{Natural context/Spontaneous speech context}
 
-This test is in line with what \citet{vanderWal2013} refers to as \textit{Heuristic: Context conjuring}. It is considered as one of the simplest tests for \isi{focus} diagnostics in languages. This test involves the creation of contexts or scenarios where speakers are presented with situations that will naturally incite/elicit responses with contrastive \isi{focus} interpretations. Another angle is to present speakers with utterances with a (contrastive) \isi{focus} interpretation and ask their intuitions about when these utterances could be used felicitously or more naturally \citep[5]{vanderWal2013}. The following contexts, \REF{ex:abubakari:18} and \REF{ex:abubakari:19}, generate the responses in examples (\ref{ex:abubakari:18}a-b) and (\ref{ex:abubakari:19}a) respectively.
+This test is in line with what \citet{vanderWal2013} refers to as   ``Heuristic: Context conjuring''. It is considered as one of the simplest tests for \isi{focus} diagnostics in languages. This test involves the creation of contexts or scenarios where speakers are presented with situations that will naturally incite/elicit responses with contrastive \isi{focus} interpretations. Another angle is to present speakers with utterances with a (contrastive) \isi{focus} interpretation and ask their intuitions about when these utterances could be used felicitously or more naturally \citep[5]{vanderWal2013}. The following contexts, \REF{ex:abubakari:18} and \REF{ex:abubakari:19}, generate the responses in examples (\ref{ex:abubakari:18}a--b) and (\ref{ex:abubakari:19}a) respectively.
 
  
 \ea\label{ex:abubakari:18} 
@@ -478,17 +467,20 @@ man    \textsc{def}  \textsc{foc}  \textsc{prt}  buy.\textsc{perf}  goat\\
 \z
 \z 
 
-The examples in (\ref{ex:abubakari:18}-\ref{ex:abubakari:19}) are naturally produced by speakers under the proposed contexts with the use of the particles \textit{kà, ń} and \textit{nɛ́}. These sentences convey both contrastive and exhaustive \isi{focus} interpretations. It is infelicitous to respond to the questions under the supposed contexts without using these particles.
+The examples in (\ref{ex:abubakari:18}--\ref{ex:abubakari:19}) are naturally produced by speakers under the proposed contexts with the use of the particles \textit{kà, ń} and \textit{nɛ́}. These sentences convey both contrastive and \isi{exhaustive focus} interpretations. It is infelicitous to respond to the questions under the supposed contexts without using these particles.
  
 
 \subsection{Coordination}
 
-\citet{szabolcsi1981} uses \isi{coordination} to identify exhaustive \isi{focus} in \ili{Hungarian}. \citet{duah2015} applies this technique to data in \ili{Akan}, a \ili{Kwa} language, with similar results. In my own test, I use a pair of sentences: one with a focused coordinated DP (\ref{ex:abubakari:20}b-c) and another one where one of the coordinated DPs is dropped (\ref{ex:abubakari:20}d-e). With exhaustive \isi{focus}, the second sentence without the \isi{coordination} cannot be a logical consequence of the first one. In the answers to question (\ref{ex:abubakari:20}a), I use both ex-situ and in-situ contrastive/exhaustive particles \textit{kà} (\ref{ex:abubakari:20}b) and \textit{nɛ́} (\ref{ex:abubakari:20}c) in comparison with \isi{in-situ focus} without these particles (\ref{ex:abubakari:21}a).
+ 
+\citet{szabolcsi1981} uses \isi{coordination} in order to identify \isi{exhaustive focus} in \ili{Hungarian}. \citet{duah2015} applies this technique to data in \ili{Akan}, a \ili{Kwa} language, with similar results. In my own test, I use a pair of sentences: one with a focused coordinated DP (\ref{ex:abubakari:20}b-c) and another one where one of the coordinated DPs is dropped (\ref{ex:abubakari:20}d-e). With \isi{exhaustive focus}, the second sentence without the \isi{coordination} cannot be a logical consequence of the first one. In the answers to question (\ref{ex:abubakari:20}a), I use both ex-situ and in-situ contrastive{\slash}exhaustive particles \textit{kà} (\ref{ex:abubakari:20}b) and \textit{nɛ́} (\ref{ex:abubakari:20}c) in comparison with \isi{in-situ focus} without these particles (\ref{ex:abubakari:21}a).
+ 
 
  
 \ea\label{ex:abubakari:20}
 \ea\label{ex:abubakari:20a}
-\gll Q: Bɔ́  kà  dáú  lá  dāˈā?\\                      what  \textsc{foc}  man  \textsc{def}.  buy-\textsc{perf}   \\
+\gll Q: Bɔ́  kà  dáú  lá  dāˈā?\\                  
+  ~     what  \textsc{foc}  man  \textsc{def}.  buy-\textsc{perf}   \\
 \glt ‘What did the man buy?’
 
 \ex\label{ex:abubakari:20b}
@@ -525,11 +517,12 @@ man  \textsc{def}  buy-\textsc{perf}  goat\\
 \z
 \z
 
-If the utterances in (\ref{ex:abubakari:20}b-c), in which the coordinated NPs \textit{a goat and a cow} are focused with the particles \textit{kà} and \textit{nɛ́} respectively, are given by a speaker, this speaker cannot give the responses in (\ref{ex:abubakari:20}d-e) as partial descriptions of the former since this will amount to a contradiction. This arises due to the presence of the particles \textit{kà} and \textit{nɛ́} which contrastively/exhaustively express the number of items bought to be two: \textit{a} \textit{goat} \textit{and} \textit{a} \textit{cow}. However, if the speaker had used the construction in (\ref{ex:abubakari:21}a) where \textit{a} \textit{goat} and \textit{a} \textit{sheep} are focused in-situ (suprasegmentally) without the use of \textit{kà} or \textit{nɛ́} then the answer in (\ref{ex:abubakari:21}b) can also be given as a partial response to the question in (\ref{ex:abubakari:20}a)\footnote{See \citet{duah2015} for a similar analysis of data from \ili{Akan}.}. 
+If the utterances in (\ref{ex:abubakari:20}b-c), in which the coordinated NPs \textit{a goat and a cow} are focused with the particles \textit{kà} and \textit{nɛ́} respectively, are given by a speaker, this speaker cannot give the responses in (\ref{ex:abubakari:20}d-e) as partial descriptions of the former since this will amount to a contradiction. This arises due to the presence of the particles \textit{kà} and \textit{nɛ́} which contrastively{\slash}exhaustively express the number of items bought to be two: 
+`a goat and a cow'. However, if the speaker had used the construction in (\ref{ex:abubakari:21}a) where `a goat' and `a sheep' are focused in-situ (suprasegmentally) without the use of \textit{kà} or \textit{nɛ́} then the answer in (\ref{ex:abubakari:21}b) can also be given as a partial response to the question in (\ref{ex:abubakari:20}a)\footnote{See \citet{duah2015} for a similar analysis of data from \ili{Akan}.}. 
 
 \subsection{Numerals}
 
-Using a variation of the \isi{coordination} test with focused numerals (see \citealt{szabolcsi1981,ÉKiss1998}) where a numeral is added to the noun and focused in instances where \isi{focus} is exhaustive, the focused entity must be equal to the original entity in number; if not there will be contradiction in the sentence. The \isi{scope} of the quantifier interprets as ‘exactly’ in exhaustive \isi{focus} environments whereas it interprets as ‘at least’ in non-exhaustive environments in Kʋ́sáàl. (see \citealt[155]{szabolcsi1981}).
+Using a variation of the \isi{coordination} test with focused numerals (see \citealt{szabolcsi1981,ÉKiss1998}) where a numeral is added to the noun and focused in instances where \isi{focus} is exhaustive, the focused entity must be equal to the original entity in number; if not there will be contradiction in the sentence. The \isi{scope} of the quantifier interprets as ‘exactly’ in \isi{exhaustive focus} environments whereas it interprets as ‘at least’ in non-exhaustive environments in \ili{Kusaal}. (see \citealt[155]{szabolcsi1981}).
 
  The sentence in (\ref{ex:abubakari:22}b) suggests that the number of people who went to the market is five. But (\ref{ex:abubakari:22}c) which follows from (\ref{ex:abubakari:22}b) shows that if five people went to the market then at least three people went to the market. 
 
@@ -554,7 +547,7 @@ people    three  \textsc{prt}  go.\textsc{perf} market  \textsc{def}\\
 
 The logical conclusion from the interpretations of (\ref{ex:abubakari:22}b-c) further reveals that the semantics of numerals as not always exact. It could be either the exact amount or a lower boundary (\citealt{horn1972,levinson2000}; \citealt[cf][15]{vanderWal2013}).
 
-In contrast, the contrastive and exhaustive \isi{focus} particles; \textit{kà, ń} and \textit{nɛ́}, make it impossible for numerals to maintain their upward entailing quality and as such they only refer to the exact quantity of the number (see \citealt{vanKuppevelt1996,vanRooij2002,vanRooij2004}).
+In contrast, the contrastive and \isi{exhaustive focus} particles; \textit{kà, ń} and \textit{nɛ́}, make it impossible for numerals to maintain their upward entailing quality and as such they only refer to the exact quantity of the number (see \citealt{vanKuppevelt1996,vanRooij2002,vanRooij2004}).
 
  
 \ea\label{ex:abubakari:23}
@@ -576,11 +569,11 @@ people  three  \textsc{foc}  \textsc{prt}       go.\textsc{perf}  market  \texts
 
 The answer in (\ref{ex:abubakari:23}b) contradicts (\ref{ex:abubakari:23}c) because (\ref{ex:abubakari:23}b) implies that exactly five people went to the market, whilst (\ref{ex:abubakari:23}c) implies that exactly three people went to the market. 
 
-The different interpretations of the answers to the same questions (\ref{ex:abubakari:22}a) and (\ref{ex:abubakari:23}a) are due to the types of \isi{focus} expressed by the answers to these questions. Whereas the answers to the question in (\ref{ex:abubakari:22}a) express \isi{information focus}, the answers to the question in (\ref{ex:abubakari:23}a) express exhaustive/contrastive \isi{focus} using the particle \textit{ń} for \isi{subject} \isi{focus}. The answers in (\ref{ex:abubakari:23}b-c) suggest the impossibility of using the exhaustive \isi{focus} marker in identifying a single entity out of a plural group \citep[253]{hartmann2007}. This suggests that the particles identified are contrastive and exhaustive \isi{focus} particles in Kʋ́sáàl. 
+The different interpretations of the answers to the same questions (\ref{ex:abubakari:22}a) and (\ref{ex:abubakari:23}a) are due to the types of \isi{focus} expressed by the answers to these questions. Whereas the answers to the question in (\ref{ex:abubakari:22}a) express \isi{information focus}, the answers to the question in (\ref{ex:abubakari:23}a) express exhaustive/contrastive \isi{focus} using the particle \textit{ń} for \isi{subject} \isi{focus}. The answers in (\ref{ex:abubakari:23}b-c) suggest the impossibility of using the \isi{exhaustive focus} marker in identifying a single entity out of a plural group \citep[253]{hartmann2007}. This suggests that the particles identified are contrastive and \isi{exhaustive focus} particles in \ili{Kusaal}. 
 
 \subsection{Weak quantifiers}
 
-The indefinite quantifiers \textit{síˈá/ síébá} ‘some’ and \textit{bíˈél/bíˈélá} ‘a few’ cause a narrow \isi{focus} interpretation whenever they co-occur with the contrastive/exhaustive \isi{focus} particles \textit{kà, ń} and \textit{nɛ́} in Kʋ́sáàl. This, as also observed by \citeauthor{Skopeteas2010} (\citeyear[1387]{Skopeteas2010}; \citealt[cf][]{vanderWal2013}), is because “the definite quantifiers ‘some’ and ‘a few’ are upward entailing, i.e. they imply that the denoted quantity reaches at least a minimum from a scale of potential quantities” \citep[cf][15]{vanderWal2013}.
+The indefinite quantifiers \textit{síˈá/síébá} ‘some’ and \textit{bíˈél/bíˈélá} ‘a few’ cause a narrow \isi{focus} interpretation whenever they co-occur with the contrastive{\slash}\isi{exhaustive focus} particles \textit{kà, ń} and \textit{nɛ́} in \ili{Kusaal}. This, as also observed by \citeauthor{Skopeteas2010} (\citeyear[1387]{Skopeteas2010}; \citealt[cf][]{vanderWal2013}), is because “the definite quantifiers ‘some’ and ‘a few’ are upward entailing, i.e. they imply that the denoted quantity reaches at least a minimum from a scale of potential quantities” \citep[cf][15]{vanderWal2013}.
  
 \ea\label{ex:abubakari:24} 
 \gll Tì  sà  pāām    lígídi    lá  síébá.\\
@@ -592,7 +585,7 @@ The indefinite quantifiers \textit{síˈá/ síébá} ‘some’ and \textit{bí
 
 The upward entailment quality of the quantifier in \REF{ex:abubakari:24} makes it possible to interpret the sentence as ‘receiving/getting all the required money or getting at least a substantial amount of the required money which can be used to address the situation at hand’.
 
-On the other hand, when the contrastive or exhaustive \isi{focus} particles \textit{kà, ń} and \textit{nɛ́} are used with the indefinite quantifiers, \textit{si’a/sieba} ‘some’, the derived interpretation excludes the upward entailing quality of the quantifier, resulting in an interpretation with a narrow \isi{focus} (\ref{ex:abubakari:25}b).
+On the other hand, when the contrastive or \isi{exhaustive focus} particles \textit{kà, ń} and \textit{nɛ́} are used with the indefinite quantifiers, \textit{si’a/sieba} ‘some’, the derived interpretation excludes the upward entailing quality of the quantifier, resulting in an interpretation with a narrow \isi{focus} (\ref{ex:abubakari:25}b).
 
  
 \ea\label{ex:abubakari:25}
@@ -613,7 +606,7 @@ On the other hand, when the contrastive or exhaustive \isi{focus} particles \tex
 
 \subsection{Part as a whole relationship} 
 
-Unlike instances involving non-exhaustive \isi{focus} when a part can be used in connection to a whole as illustrated in (\ref{ex:abubakari:26}b), which is an answer to (\ref{ex:abubakari:26}a), it is illogical and illicit to use the exhaustive particles \textit{ń} and \textit{nɛ́} after a focused entity, (\ref{ex:abubakari:26}c), which captures part of a whole group (wider entity). \citet[253]{hartmann2007} refer to this context as the “mention-some environment”. Consider the scenario below and the question and answer that follow it.
+Unlike instances involving non-\isi{exhaustive focus} when a part can be used in connection to a whole as illustrated in (\ref{ex:abubakari:26}b), which is an answer to (\ref{ex:abubakari:26}a), it is illogical and illicit to use the exhaustive particles \textit{ń} and \textit{nɛ́} after a focused entity, (\ref{ex:abubakari:26}c), which captures part of a whole group (wider entity). \citet[253]{hartmann2007} refer to this context as the “mention-some environment”. Consider the scenario below and the question and answer that follow it.
 
  
 \ea\label{ex:abubakari:26} 
@@ -626,27 +619,27 @@ Q: Àsíbí: \gll fʋ̀  mīˈ  bánɛ  díˈém    yíŋ lá?\\
 
 \ex\label{ex:abubakari:26b} 
 Ans 1: Àkúdà: \gll ɛ́ɛ́n,  Àzúmà  bɛ̄ɛ̄    bà sʋ́ʋ́gi-n. \\
-Yes,  Azuma  COP.be    their middle-\textsc{loc}\\
+Yes,  Azuma  \textsc{cop}.be    their middle-\textsc{loc}\\
 \glt ‘\textit{Azuma} is among them’
  
 \ex\label{ex:abubakari:26c}
 Ans 2: Àkúdà:? \gll ɛ́ɛ́n,  Àzúma  ḿ  bɛ̄ɛ̄ bà  sʋ́ʋ́gi-n.\\
-Yes,  Azuma  \textsc{foc}  COP.be   their  middle-\textsc{loc}\\
+Yes,  Azuma  \textsc{foc}  \textsc{cop}.be   their  middle-\textsc{loc}\\
 \glt ‘It is \textit{Azuma} who is among them.’
 \z
 \z
 
-\textit{Akuda} in (\ref{ex:abubakari:26}b) mentions the name of a child who is among the children who are playing. In this context it would be contradictory as well as illogical to use the exhaustive in-situ \isi{subject} particle \textit{\'{m} } \textit{(=/\'{n} }\textit{/)}, as in (\ref{ex:abubakari:26}c), since it would capture only part of the entire group of children playing outside. What this implies is that the stronger the effect of an exhaustive \isi{focus} interpretation, whether by implicature or in the semantics, the less appropriate it will be as a response to a mention-some question \citep[see][10]{vanderWal2013}.
+\textit{Akuda} in (\ref{ex:abubakari:26}b) mentions the name of a child who is among the children who are playing. In this context it would be contradictory as well as illogical to use the exhaustive in-situ \isi{subject} particle \textit{ḿ (=/ń/)}, as in (\ref{ex:abubakari:26}c), since it would capture only part of the entire group of children playing outside. What this implies is that the stronger the effect of an \isi{exhaustive focus} interpretation, whether by implicature or in the semantics, the less appropriate it will be as a response to a mention-some question \citep[see][10]{vanderWal2013}.
 
-\section{‘Strongly exhaustive’ and ‘Weakly exhaustive’ particles}
+\section{``Strongly exhaustive'' and  ``Weakly exhaustive'' particles}
 
-There appears to be a subtle difference in the statuses of the exhaustive particles \textit{kà} on the one hand and \textit{ń} and \textit{nɛ́} on the other. Available data reveal a tendency for the particles \textit{ń} and \textit{nɛ́} to be inherently ‘strongly exhaustive’ compared to the particle \textit{kà,} which is only inherently contrastive and exhaustive by implicature, hence referred to as ‘weakly exhaustive’. The tests in sections \sectref{sec:abubakari:4.1} and \sectref{sec:abubakari:4.2} show that whereas \textit{ń} and \textit{nɛ́} are in \isi{complementary distribution} with exhaustive adverbial particles as well as exhaustive additive particles, the particle \textit{kà} freely co-occurs with both adverbial and additive particles. 
+There appears to be a subtle difference in the statuses of the exhaustive particles \textit{kà} on the one hand and \textit{ń} and \textit{nɛ́} on the other. Available data reveal a tendency for the particles \textit{ń} and \textit{nɛ́} to be inherently ``strongly exhaustive'' compared to the particle \textit{kà}, which is only inherently contrastive and exhaustive by implicature, hence referred to as ``weakly exhaustive''. The tests in sections \sectref{sec:abubakari:4.1} and \sectref{sec:abubakari:4.2} show that whereas \textit{ń} and \textit{nɛ́} are in \isi{complementary distribution} with exhaustive adverbial particles as well as exhaustive additive particles, the particle \textit{kà} freely co-occurs with both adverbial and additive particles. 
 
  
-\subsection{The Omission of \textit{ń, nɛ́}} \textbf{in the environment of adverbials}\label{sec:abubakari:4.1}
+\subsection{The omission of \textit{ń, nɛ́} in the environment of adverbials}\label{sec:abubakari:4.1}
  
 
-The adverbials \textit{máˈáa/ máˈáanɛ} “only, just, alone, \textit{k$\upsilon $n-k$\upsilon $n} ‘only/just’ \textit{zaŋ-zaŋ} ‘only’ correlate with an exhaustive \isi{focus} interpretation such that all other alternative possibilities are excluded from the reading (\citealt[see][]{rooth1985,Rooth1992,krifka2006,vanderWal2013}, among others). The particles \textit{ń} and \textit{nɛ́} are often in \isi{complementary distribution} with the exhaustive adverbial particles on the grounds of redundancy. This trend is consistent with the observation made by \citet[256]{hartmann2007}, \citet[511]{jaggar2001} and \citet[190]{newman2000hausa} that the exhaustive particles \textit{nee/cee} in \ili{Hausa} are often omitted in the environment of other adverbials. 
+The adverbials \textit{máˈáa/máˈáanɛ} `only, just, alone', \textit{kʋn-kʋn} ‘only/just’, \textit{zaŋ-zaŋ} ‘only’ correlate with an \isi{exhaustive focus} interpretation such that all other alternative possibilities are excluded from the reading (\citealt[see][]{rooth1985,Rooth1992,krifka2006,vanderWal2013}, among others). The particles \textit{ń} and \textit{nɛ́} are often in \isi{complementary distribution} with the exhaustive adverbial particles on the grounds of redundancy. This trend is consistent with the observation made by \citet[256]{hartmann2007}, \citet[511]{jaggar2001} and \citet[190]{newman2000hausa} that the exhaustive particles \textit{nee/cee} in \ili{Hausa} are often omitted in the environment of other adverbials. 
 
  
 \ea\label{ex:abubakari:27}
@@ -662,7 +655,7 @@ children  \textsc{def}  \textsc{prt}  eat.\textsc{perf}  \textsc{foc}  rice   \t
 \glt ‘The children ate only the rice.’ 
 \z 
 
-The particle \textit{ka\`{,}} on the other hand, must obligatorily co-occur with the adverbial when the focused constituent is fronted.
+The particle \textit{kà}, on the other hand, must obligatorily co-occur with the adverbial when the focused constituent is fronted.
 
  
 \ea\label{ex:abubakari:29} 
@@ -693,11 +686,11 @@ The lack of exhaustivity in the interpretation of the emphatic \isi{pronoun}, as
 \z
 
  
-\subsection{Restrictions on ń, nɛ́ with exhaustive additive particles }\label{sec:abubakari:4.2}
+\subsection{Restrictions on \textit{ń, nɛ́} with exhaustive additive particles}\label{sec:abubakari:4.2}
  
 
  
-The exhaustive \isi{focus} particles \textit{ń,}and \textit{nɛ́} do not co-occur with the additive particles \textit{mɛ́n/mɛ́} ‘also, too’ or \textit{yá’ásì} ‘else, again’. This is because the additive particles make the referent non-exhaustive in the sense that the action of the verb is assumed to have taken place with different/other referents.
+The \isi{exhaustive focus} particles \textit{ń}, and \textit{nɛ́} do not co-occur with the additive particles \textit{mɛ́n/mɛ́} ‘also, too’ or \textit{yá’ásì} ‘else, again’. This is because the additive particles make the referent non-exhaustive in the sense that the action of the verb is assumed to have taken place with different/other referents.
  
 
 \ea\label{ex:abubakari:32}
@@ -712,7 +705,7 @@ Asibi	also   \textsc{foc}       \textsc{prt}     read.\textsc{perf}           bo
 \glt ‘Asibi also read the book yesterday.’
 \z
 
-Unlike ń and nɛ́, which do not co-occur with the exhaustive \isi{focus} additives, it is grammatical to have kà in fronted wh-\isi{focus} questions as well as with fronted DPs co-occurring with the exhaustive \isi{focus} additive yáˈásì ‘else’  (\ref{ex:abubakari:34}) and mɛ́ ‘also’ (\ref{ex:abubakari:35}-\ref{ex:abubakari:37}).
+Unlike ń and nɛ́, which do not co-occur with the \isi{exhaustive focus} additives, it is grammatical to have kà in fronted wh-\isi{focus} questions as well as with fronted DPs co-occurring with the \isi{exhaustive focus} additive yáˈásì ‘else’  (\ref{ex:abubakari:34}) and mɛ́ ‘also’ (\ref{ex:abubakari:35}--\ref{ex:abubakari:36}).
 
 \ea\label{ex:abubakari:33}
 \gll Bɔ́bín		yáˈásì	kà	Asibi	sá	kārīm.\\
@@ -738,115 +731,15 @@ book	\textsc{def}	\textsc{foc}	Asibi	\textsc{prt}	read.\textsc{perf}	also\\
 \glt ‘It is also the book that Asibi read yesterday/ it was also reading the book that Asibi did’
 \z
 
-Since an item or a situation is either exhaustive or additive but not both, the grammaticality of kà co-occurring with the additive exhaustive particles yá’ás ‘else’ and mɛ́ ‘also’ further shows that the particle kà has a weaker exhaustive \isi{focus} interpretation in Kʋ́sáàl. 
+Since an item or a situation is either exhaustive or additive but not both, the grammaticality of kà co-occurring with the additive exhaustive particles \textit{yá’ás} ‘else’ and \textit{mɛ́} ‘also’ further shows that the particle kà has a weaker \isi{exhaustive focus} interpretation in \ili{Kusaal}. 
 
-
-\begin{comment}
-\begin{itemize}
-\item  
-\textit{\textsuperscript{Ànɔ’ɔn  yá’ási  (*n)  sá  kārīm    gbàùŋ} }\textsuperscript{   who    else} \textsuperscript{\textsc{foc}  \textsc{prt}}\textsuperscript{  read.\textsc{perf}  book} \textit{\textsuperscript{lá?}}
- \end{itemize}
- 
-\textsuperscript{           \textsc{def}}
- 
-
- 
-\textsuperscript{                       ‘Who else read the book yesterday?’}
- 
-
-\begin{itemize}
-\item  
-\textit{\textsuperscript{Àsíbí  mɛ    (*n)      sá     kārīm                gbàùŋ      lá.}}
- \end{itemize}
- 
-\textsuperscript{                     Asibi  also} \textsuperscript{\textsc{foc}       \textsc{prt}}\textsuperscript{     read.\textsc{perf}           book} \textsuperscript{\textsc{def}}\textsuperscript{} 
- 
-
- 
-\textsuperscript{                     ‘Asibi also read the book yesterday.’}
- 
-
-\textsuperscript{Unlike}\textit{\textsuperscript{ ń}}\textsuperscript{ and} \textit{\textsuperscript{nɛ}}\textsuperscript{,}\textsuperscript{ which do not co-occur with the exhaustive \isi{focus} additives, it is grammatical to have} \textit{\textsuperscript{kà}}\textsuperscript{ in fronted} \textit{\textsuperscript{wh}}\textsuperscript{-\isi{focus} questions as well as with fronted DPs co-occurring with the exhaustive \isi{focus} additive} \textit{yáˈásì}\textsuperscript{ ‘else’  (34) and} \textit{\textsuperscript{mɛ}}\textsuperscript{ ‘also’ (35-37).}
- 
-
- \begin{itemize}
-\item  
-\textit{Bɔbín    yáˈásì  kà}\textbf{ }\textit{Asibi  sá  kārīm.}
- \end{itemize}
- 
-            what    else  \textsc{foc}  Asibi  \textsc{prt}  read.\textsc{perf}
- 
-
- 
-~~                       ‘What else did Asibi read yesterday?’
- 
-
-\begin{itemize}
-\item  
-\textit{\textsuperscript{Àsíbí    sá  kārīm    (*nɛ)  gbàùŋ  lá} }
- \end{itemize}
- 
-\textsuperscript{                        Asibi} \textsuperscript{\textsc{prt}}\textsuperscript{  read.\textsc{perf}} \textsuperscript{\textsc{foc}}\textsuperscript{  book} \textsuperscript{\textsc{def}}
- 
-
- 
- \textit{mɛ.}
- 
-
- 
-\textsuperscript{               also} 
- 
-
- 
-\textsuperscript{                    ‘Asibi read the book also yesterday/it was also the book} 
- 
-
- 
-\textsuperscript{                       that Asibi read yesterday.’}
- 
-
-\begin{itemize}
-\item  
-\textit{Gbàùŋ  lá  mɛ  kà  Àsíbí  sá  kārīm.}
- \end{itemize}
- 
-              book    \textsc{def}  also  \textsc{foc}  Asibi  \textsc{prt}  read.\textsc{perf}
- 
-
- 
-                         ‘It is also the book that Asibi read yesterday.’
- 
-
- \begin{itemize}
-\item  
-\textit{Gbàùŋ  lá  kà  Àsíbí  sá  kārīm} 
- \end{itemize}
- 
-             book  \textsc{def}  \textsc{foc}  Asibi  \textsc{prt}  read.\textsc{perf}  
- 
-
- 
- \textit{mɛ.}
- 
-
- 
-            also
- 
-
- 
-           ‘It is also the book that Asibi read yesterday/ it was also reading the book that Asibi did’
- 
-
- 
-\textsuperscript{Since an item or a situation is either exhaustive or additive but not both, the grammaticality of} \textit{\textsuperscript{kà}}\textsuperscript{ co-occurring with the additive exhaustive particles} \textit{yá’ás}\textsuperscript{ ‘else’ and} \textit{\textsuperscript{mɛ}}\textsuperscript{ ‘also’ further shows that the particle} \textit{\textsuperscript{kà}}\textsuperscript{ has a weaker exhaustive \isi{focus} interpretation in Kʋ́sáàl.} 
-\end{comment} 
 
 \section{Conclusion}
 
-Returning to the questions raised at the beginning of this paper, it is now possible to state that Kʋ́sáàl does not have a default grammatical \isi{focus} marker and that the language employs two different strategies in the packaging of discourse related information. Whereas \isi{information focus} is morphologically null, contrastive \isi{focus} is marked using the particles \textit{kà}, \textit{ń} and \textit{nɛ́}. The particle \textit{kà} is used for ex-situ contrastive/exhaustive \isi{focus} marking and the particles \textit{ń} and \textit{nɛ́} are also used for in-situ contrastive/exhaustive \isi{focus} marking. The evidence from all the tests suggests that the particles \textit{kà}, \textit{ń} and \textit{nɛ́} encode strong contrastive \isi{focus}, leading to the assumption that there are indeed contrastive \isi{focus} particles in Kʋ́sáàl. On exhaustivity, the study shows that whereas the particles \textit{ń} and \textit{nɛ́} evoke a strong exhaustive \isi{focus} interpretation, the particle \textit{kà} evokes a weak exhaustive \isi{focus} interpretation.  The reason is that \textit{ń} and \textit{nɛ́}, unlike \textit{kà}, are in \isi{complementary distribution} with the exhaustive adverbial particles and additive particles in Kʋ́sáàl. 
+Returning to the questions raised at the beginning of this paper, it is now possible to state that \ili{Kusaal} does not have a default grammatical \isi{focus} marker and that the language employs two different strategies in the packaging of discourse related information. Whereas \isi{information focus} is morphologically null, contrastive \isi{focus} is marked using the particles \textit{kà}, \textit{ń} and \textit{nɛ́}. The particle \textit{kà} is used for ex-situ contrastive{\slash}\isi{exhaustive focus} marking and the particles \textit{ń} and \textit{nɛ́} are also used for in-situ contrastive{\slash}\isi{exhaustive focus} marking. The evidence from all the tests suggests that the particles \textit{kà}, \textit{ń} and \textit{nɛ́} encode strong contrastive \isi{focus}, leading to the assumption that there are indeed contrastive \isi{focus} particles in \ili{Kusaal}. On exhaustivity, the study shows that whereas the particles \textit{ń} and \textit{nɛ́} evoke a strong \isi{exhaustive focus} interpretation, the particle \textit{kà} evokes a weak \isi{exhaustive focus} interpretation.  The reason is that \textit{ń} and \textit{nɛ́}, unlike \textit{kà}, are in \isi{complementary distribution} with the exhaustive adverbial particles and additive particles in \ili{Kusaal}. 
 
 \section*{Acknowledgements}
-I gratefully acknowledge funding support from: The Global African Research Platform, Research Services and Career Development Center, and the Department of African Studies all of the University of Vienna. I am equally grateful to Adams Bodomo, Malte Zimmermann, Mira Grubic as well as two anonymous reviewers and the team at ACAL 47 for their helpful comments and suggestions not forgetting John Rennison for proofreading as well as useful comments. My sincere gratitude also goes to Micheal Awimbila (GILLBT) for his relentless effort in making sure that data used in this work reflect both spoken and written Kʋ́sáàl.                                      
+I gratefully acknowledge funding support from: The Global African Research Platform, Research Services and Career Development Center, and the Department of African Studies all of the University of Vienna. I am equally grateful to Adams Bodomo, Malte Zimmermann, Mira Grubic as well as two anonymous reviewers and the team at ACAL 47 for their helpful comments and suggestions not forgetting John Rennison for proofreading as well as useful comments. My sincere gratitude also goes to Micheal Awimbila (GILLBT) for his relentless effort in making sure that data used in this work reflect both spoken and written \ili{Kusaal}.                                      
 
 \section*{Abbreviations}
 \begin{tabularx}{.55\textwidth}{ll}
@@ -854,7 +747,7 @@ I gratefully acknowledge funding support from: The Global African Research Platf
 \textsc{prt} & {temporal adverbial particle}\\
 \textsc{pl} & {plural}                      \\
 \textsc{sg}& {singular}                      \\
-\textsc{foc} & {\isi{focus} particle}             \\
+\textsc{foc} & {focus particle}             \\
 \textsc{conj} & {conjunction}               \\
 \textsc{perf} & {perfective}                \\
 \textsc{fut} & {future}                     \\
@@ -877,7 +770,7 @@ A & {answer}                                \\
 % 
 % Aboh, Enoch O. 2007. Focused versus non-\isi{focus} wh-phrases. In Bisang, W., Hock, H. H., \& Winter, W. (eds.), \textit{Trends in Linguistics Studies and Monographs,} (191)287-314. Berlin. New York: Mouton de Gruyter.
 % 
-% \subsubsection{\textup{Abubakari, Hasiyatu. 2011.} Object-sharing as symmetric sharing: predicate clefting and serial verb constructions in Kʋ́sáàl\textup{. Tromsø: University of Tromsø. (MPhil Dissertation).}}
+% \subsubsection{\textup{Abubakari, Hasiyatu. 2011.} Object-sharing as symmetric sharing: predicate clefting and serial verb constructions in \ili{Kusaal}\textup{. Tromsø: University of Tromsø. (MPhil Dissertation).}}
 % 
 % Beaver, David \& Clark, Brady. 2008. \textit{Sense and Sensitivity: How Focus Determines Meaning.} Wiley-Blackwell, Oxford.
 % 
