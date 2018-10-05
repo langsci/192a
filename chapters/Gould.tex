@@ -1,13 +1,9 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,modfonts,nonflat,
+colorlinks, citecolor=brown,
+draftmode,
+% draft
+%  hidelinks
+]{langsci/langscibook} 
 
 \title{On the derivation of Swahili \textit{amba} relative clauses: Evidence for movement}
 
@@ -19,6 +15,15 @@ This paper brings together two disparate strands of research in the literature o
 
 %\keywords{Swahili relative clauses, relative clause islands, scope economy, long-distance Quantifier Raising}
 
+ 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
+
+ 
+ 
 \begin{document}
 \maketitle
 

@@ -1,8 +1,8 @@
 \documentclass[output=paper,modfonts,nonflat,
-colorlinks, citecolor=brown,
-draftmode,
+% colorlinks, citecolor=brown,
+% draftmode,
 % draft
-%  hidelinks
+ hidelinks
 ]{langsci/langscibook} 
 
 
@@ -15,11 +15,10 @@ draftmode,
 \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
   \input{../localpackages}
   \input{../localcommands} 
-  \togglepaper
+  \togglepaper[7]
 }{}
 
-
-\setcounter{chapter}{6}
+ 
 \hyphenation{Clem-ents}
 \begin{document}
 \maketitle
@@ -30,7 +29,7 @@ draftmode,
 
  The occurrence of \isi{implosive}s is areally expected in northwestern \ili{Bantu}, as  \citet[58]{Clements2008} have shown. Implosives have also been reported for several \ili{Bantu} A80 languages, including \ili{Mpiemo}, \ili{Shiwa}, Kola, and \ili{Bekwel}. Most authors agree that \isi{implosive}s in A80 languages have phonetic rather than phonemic status, but differ in how they view the relation between \isi{implosive}s and voiced stops, e.g., whether /ɓ/ is an allophone of /b/ or whether a language lacks /b/ altogether. There are also cases where different authors do not agree on the presence or absence of \isi{implosive} sounds in the same language, namely in \ili{Gyeli} and \ili{Shiwa}. This differing treatment of \isi{implosive}s in the A80 literature raises the question whether these consonants really are \isi{implosive}s in the first place in all of these languages.
 
-Data from \ili{Gyeli}, an endangered and under-studied \ili{Bantu} A80 language spoken by ``Pygmy'' hunter-gatherers in southern Cameroon, suggests that consonants which could be taken to be \isi{implosive}s are better described as phonemic voiced plosives that are phonetically realized with pre-glottalization and relatively long prevoicing, typically in stem-initial position. During prevoicing, speakers expand their cheeks, increasing both the vocal tract size and amplitude before release of the voiced plosives /b, d/.   The effects of this realization can easily be mistaken for an \isi{implosive}, given that both \isi{implosive}s and pre-glottalized stops involve the manipulation of the larynx and the resulting waveform looks in many cases like that of a typical \isi{implosive}. The \isi{cheek expansion} clearly indicates, however, that the \isi{airstream mechanism} in \ili{Gyeli} is egressive. The case of pre-glottalized voiced stops in \ili{Gyeli} may serve as a starting point to reconsider special voiced stops in A80 languages and clarify the status of \isi{implosive}s, at least in some languages.
+Data from \ili{Gyeli}, an endangered and understudied \ili{Bantu} A80 language spoken by ``Pygmy'' hunter-gatherers in southern Cameroon, suggests that consonants which could be taken to be \isi{implosive}s are better described as phonemic voiced plosives that are phonetically realized with pre-glottalization and relatively long prevoicing, typically found in stem-initial position. During prevoicing, speakers expand their cheeks, increasing both the vocal tract size and amplitude before release of the voiced plosives /b, d/.   The effects of this realization can easily be mistaken for an \isi{implosive}, given that both \isi{implosive}s and pre-glottalized stops involve the manipulation of the larynx and the resulting waveform looks in many cases like that of a typical \isi{implosive}. The \isi{cheek expansion} clearly indicates, however, that the \isi{airstream mechanism} in \ili{Gyeli} is egressive. The case of pre-glottalized voiced stops in \ili{Gyeli} may serve as a starting point to reconsider special voiced stops in A80 languages and clarify the status of \isi{implosive}s, at least in some languages.
 
 In the remainder of the Introduction, I will critically review definitions of \isi{implosive}s provided by the literature and introduce the \ili{Gyeli} language. In \sectref{sec:grimm:2}, I present the distribution of \isi{implosive}s and their phonetic/phonemic status in \ili{Bantu} A80 languages. \sectref{sec:grimm:3} provides a detailed discussion of voiced stops in \ili{Gyeli}, while \sectref{sec:grimm:4} concludes this paper and gives an outlook on future work that is needed.
 
@@ -109,7 +108,7 @@ While \isi{implosive}s have been widely reported for \ili{Bantu} A80 languages, 
 \tabref{tab:grimm:1} summarizes the status of potential \isi{implosive}s\footnote{Square brackets indicate phonetic status while slashes / / indicate phonemic status.} within the phonemic plosive series in a representative sample of A80 languages.\footnote{There are, of course, more A80 languages, as classified by \citet{Maho2009}. Also \citet{Cheucle2014} gives an excellent overview of A80 languages and the existing literature. Sufficient description for comparison, however, is mainly restricted to the languages listed in \tabref{tab:grimm:1} which almost cover the major languages, with the exceptions of A82 (\ili{So}) and A87 (\ili{Bomwali}) for which there is no data.}
 Most authors agree that \isi{implosive}s in A80 languages, if present, have phonetic rather than phonemic status. \citet[461]{Cheucle2014} even reconstructs voiced stops in Proto-A80 as \isi{implosive}s.
  Despite this tendency, there is still a lot of variation in the description of voiced plosives and/or \isi{implosive}s in several respects, including i) their general presence or absence, ii) the type of voiced plosive/\isi{implosive} (e.g.,  bilabial, alveolar, palatal, velar), and iii) their phonemic status.\footnote{Obviously, there are differences across languages pertaining to the phoneme inventory and realization rules. \ili{Bantu} A80 languages differ most noticeably in the presence or absence of palatal stops and labio-velars. Some languages also lack the voiceless bilabial stop. There are also some commonalities though, including bilabial, alveolar, and velar places of stop articulation, and voicing contrast as a distinctive feature. For reasons of space, I refrain from discussing prenasalized plosives and affricates.  Realization rules, if not involving \isi{implosive} allophones, are not described here. It should only be noted that they may differ across languages and/or authors' descriptions.}
- \todo{check palatal stopl in Ngolo in \tabref{tab:grimm:1}}
+%  \todo{check palatal stopl in Ngolo in \tabref{tab:grimm:1}}
  
 \begin{table}
 \caption{Status of voiced stops/\isi{implosive}s in A80 languages}
@@ -191,7 +190,7 @@ Despite expectations inherited from the literature on other \ili{Gyeli} dialects
  What \citet[28]{Maddieson2003} generally says about \ili{Bantu} \isi{implosive}s, namely that they are produced without any \isi{glottal constriction}, does not apply to \ili{Gyeli} voiced stops. There is \isi{glottal constriction} throughout, accompanying the entire bilabial or alveolar closure. This might be visible as `noise' in the spectrogram in the circled area of \figref{fig:grimm:2}.\footnote{Glottalization effects might not be as obvious in every token; in \figref{fig:grimm:3}, for instance, it is not.} This could mean two things. On the one hand, one might want to say that \ili{Gyeli} voiced stops could still be \isi{implosive}s which just exhibit different acoustic features than the majority of \ili{Bantu} \isi{implosive}s. On the other hand, one could take this as a cue that \ili{Gyeli} voiced stops are indeed different from \isi{implosive}s found in other \ili{Bantu} languages. The criterion of glottalization alone is, as also discussed in \sectref{sec:grimm:1.1}, inconclusive. Data from \ili{Mpiemo} also illustrates that the degree of vocal fold constriction might be \isi{subject} to variation across speakers \citep[75]{Nagano2012}. 
 
 
-\subsection{Voicing}\todo{converted to subsections}
+\subsection{Voicing}
 As can be seen in both \figref{fig:grimm:2} and \figref{fig:grimm:3}, voiced stops in \ili{Gyeli} are fully voiced, from the onset through the offset of the closure. This is a feature they have in common with voiced stops as well as \isi{implosive}s in \ili{Mpiemo} \citep[74]{Nagano2012}.
 
 \begin{figure}
