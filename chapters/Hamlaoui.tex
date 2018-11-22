@@ -1,4 +1,4 @@
-\documentclass[output=paper,newtxmath,modfonts,nonflat]{langsci/langscibook} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 
 \title{Downstep and recursive phonological phrases in Bàsà{á} (Bantu A43)}
 \author{Fatima Hamlaoui\affiliation{ZAS, Berlin; University of Toronto} \lastand Emmanuel-Moselly Makasso\affiliation{ZAS, Berlin}}
@@ -63,8 +63,7 @@ Bàsà{á} is a tonal language with a three-way underlying opposition between H(
 {jáχ} & `to annoy' &{jàχ} & `also' &&&&\\
 {b{á}ŋ} & `to tolerate' &{bàŋ} & `to make' &&&&\\
 {bó:} & `to move out' &{bò:} & `(smell) bad' &&&{b\v{o} }& `nine' \\
-&& {tù}ː & `to be unable &{tû}ː & `shoulder &&\\
-&&& to cut' && (\textsc{cl}7)' &&\\
+&& {tù}ː & `to be unable to cut' &{tû}ː & `shoulder  (\textsc{cl}7)'&&\\
 && ɲ\`ɔː & `to copulate' &&& ɲ\v{ɔ}ː & `snake (\textsc{cl}9)'\\ &&&& {b{á}ŋgà} & `drug' (\textsc{cl}7) &
 {bàŋg{á}} & `great'\\
 \lspbottomrule
@@ -82,13 +81,14 @@ As in many other African \isi{tone} languages, in utterances presenting mixed se
 \textsc{aug}-2-children 2.\textsc{dem} 2.\textsc{agr}-\textsc{pst1}-take 6-mangoes 6.\textsc{conn} 2-fathers\\
 \glt `These children picked up the mangoes of the fathers.' \label{ex:HamlaouiMakasso:1} \\ \citep{MakassoEtAl17}
 \z
+\todo{<b> has to implosive in graphics}
 
 \begin{figure} 
 \includegraphics[width=10cm]{figures/Downdrift}
 \caption{Downdrift in a Bàsà{á} sentence with a mixed tone sequence \citep{MakassoEtAl17} \label{fig:HamlaouiMakasso:2}} 
-\todo[inline]{<b> has to implosive in graphics}
 \end{figure}
 
+\newpage 
 \noindent In sentence \REF{ex:HamlaouiMakasso:1}, tones that are phonologically identified as H are realized on four different pitch registers. The first three of these correspond to the phenomenon known as `downdrift'. We will come back subsequently to the last change of \isi{register}, a case of (non-automatic) downstep. Note in passing that H tones preceding a L \isi{tone} display H-raising, a phenomenon also found in languages like \ili{Yoruba} \citep[a.o.][]{ConnellLadd90, Laniran92, LaniranClements03} or \ili{Dagara} \citep{RiallandSome00, Rialland01}, and that the first H in \REF{ex:HamlaouiMakasso:1} displays greater H-raising than the next H that also precedes a L (but that no such raising is observed when the initial H is followed by a H, as in \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4}).  
 
 
@@ -451,7 +451,7 @@ If an upstep occurs at certain prosodic edges (e.g. the left-edge of $\phi$max),
 
 In this paper, we have concentrated on the distinction of \isi{consecutive} H tones in absence of an intervening (floating) L \isi{tone} in Bàsà{á}, a Northwest \ili{Bantu} language spoken in Cameroon. Based on evidence from simple sentences, we have proposed that this particular type of downstep is indicative of recursive \isi{prosodic phrasing}. In particular, and in line with \posscitet{ItoMester13} Prosodic Projection Theory, we have proposed that in the present language, a downstep is inserted between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. Too little information on the syntactic representation of noun phrases is available at the time of writing to check our proposal against this type of data. 
 %\newpage
-Before closing this paper, let us briefly mention that in sentences like \REF{ex:HamlaouiMakasso:27} and \REF{ex:HamlaouiMakasso:28}, where a downstep is found within each of the complements, the complements themselves fail to be distinguished. Sentence \REF{ex:HamlaouiMakasso:27} is shown in \figref{fig:HamlaouiMakasso:9}. 
+Before closing this paper, let us briefly mention that in sentences like \REF{ex:HamlaouiMakasso:27} and \REF{ex:HamlaouiMakasso:28}, where a downstep is found within each of the complements, the complements themselves fail to be distinguished. Sentence \REF{ex:HamlaouiMakasso:27} is shown in \figref{fig:HamlaouiMakasso:9b}. 
 
 \ea \gll m\`ɛ ǹ-tí núnú {\textdownstep}sóγ\textbf{ó}l \textbf{í}ní {\textdownstep}kwémbé.\\
 I \textsc{pst1}-give 1.\textsc{dem} 1.grandfather 7.\textsc{dem} 7.box\\
@@ -466,7 +466,7 @@ I \textsc{pst1}-give which 1.grandfather which 1.grandfather\\
 \begin{figure}
 
 \caption{Downstep neutralization in sentence \REF{ex:HamlaouiMakasso:27}}
-\label{fig:HamlaouiMakasso:9}
+\label{fig:HamlaouiMakasso:9b}
 \includegraphics[width=10cm]{figures/NeutralizationSept16B}
 
 \end{figure}
@@ -483,25 +483,30 @@ For fruitful discussions at various stages of elaboration of this work, we are v
 
 
 \begin{tabularx}{.45\textwidth}{lQ}
-1...n &  \isi{noun class}\\
+1...n &  {noun class}\\
  \textsc{agr} &  agreement\\
  AP &  Adjective Phrase\\
  \textsc{aug} &  augment\\
  \textsc{conn} &  connective\\
  \textsc{dem} &  demonstrative\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
  FTS &  Falling Tone Simplification\\
  H &  high \isi{tone}\\
  HL &  falling \isi{tone}\\
  HTS &  High Tone Spread\\
-\end{tabularx}
-\begin{tabularx}{.45\textwidth}{lQ}
  L &  low \isi{tone}\\
+\end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{lQ}
  LH &  rising \isi{tone}\\
  \textsc{loc} &  locative\\
  NP &  Noun Phrase\\
  \textsc{poss} &  possessive\\
  \textsc{pres} &  present\\
- \textsc{pro} &  \isi{pronoun}\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ \textsc{pro} &  {pronoun}\\
  \textsc{pst} &  past\\
  Q &  question particle\\
  TP &  Tense Phrase\\
