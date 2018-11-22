@@ -1,25 +1,20 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat]{langsci/langscibook} 
 
-\title{Downstep and recursive phonological phrases in B\`as\`a\'a (Bantu A43)}
-\author{%
-Fatima Hamlaoui\affiliation{ZAS, Berlin}
- \lastand Emmanuel-Moselly Makasso\affiliation{ZAS, Berlin}
-}
+\title{Downstep and recursive phonological phrases in Bàsà{á} (Bantu A43)}
+\author{Fatima Hamlaoui\affiliation{ZAS, Berlin; University of Toronto} \lastand Emmanuel-Moselly Makasso\affiliation{ZAS, Berlin}}
 
+ 
+\abstract{This paper identifies contexts in which a downstep is realized between consecutive H tones in absence of an intervening L tone in Bàsà{á} (Bantu A43, Cameroon). Based on evidence from simple sentences, we propose that this type of downstep is indicative of recursive prosodic phrasing. In particular, we propose that a downstep occurs between the phonological phrases that are immediately dominated by a maximal phonological phrase ($\phi$max).}
 
-%\epigram{Change epigram in chapters/01.tex or remove it there }
-%\abstract{blblb} %Change the  abstract in chapters/01.tex \lipsum[1]}
-\abstract{This paper identifies contexts in which a downstep is realized between consecutive H tones in absence of an intervening L tone in B\`as\`a\'a (Bantu A43, Cameroon). Based on evidence from simple sentences, we propose that this type of downstep is indicative of recursive prosodic phrasing. In particular, we propose that a downstep occurs between the phonological phrases that are immediately dominated by a maximal phonological phrase ($\phi$max).}
-%\maketitle
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[9]
+}{}
 
+ 
+ 
 \begin{document}
-
-\graphicspath{{figures/}}
 
 \maketitle
 
@@ -36,75 +31,62 @@ In their book on the relation between \isi{tone} and intonation in African langu
 \item Register compression/expansion or \isi{register} lowering/raising
 \end{enumerate}
 
-\noindent In the present paper, which concentrates on B\`as\`a\'a, a Narrow \ili{Bantu} language (A43 in Guthrie's classification) spoken in the Centre and Littoral regions of Cameroon by approx. 300,000 speakers \citep{SIL}, we will first briefly define and discuss declination and downdrift, as the language displays both phenomena. We will then turn to the \isi{focus} of this paper, that is (`non-automatic') downstep. The fact that,  under the influence of floating Low tones,  B\`as\`a\'a displays downstepped High tones, i.e. tones that are identified as phonologically High but display a \isi{register} that is lower than an immediately preceding H, is well known \citep[a.o.][]{Dimmendaal88,Kody93,Hyman03,HamlaouiEtAl14}. The originality of the present paper lies in the fact that downstep can also be found at certain word junctures where it cannot be traced to the presence of a lexical L \isi{tone}. In line with Match Theory \citep{Selkirk09, Selkirk11} and the Theory of Prosodic Projection \citep[a.o.][]{ItoMester12}, we propose that this type of downstep is indicative of recursive phonological phrasing. More specifically, we propose that in B\`as\`a\'a, a downstep occurs between the immediate daughters of a maximal \isi{phonological phrase} ($\phi$max).
+\noindent In the present paper, which concentrates on Bàsà{á}, a Narrow \ili{Bantu} language (A43 in Guthrie's classification) spoken in the Centre and Littoral regions of Cameroon by approx. 300,000 speakers \citep{SIL}, we will first briefly define and discuss declination and downdrift, as the language displays both phenomena. We will then turn to the \isi{focus} of this paper, that is (`non-automatic') downstep. The fact that,  under the influence of floating Low tones,  Bàsà{á} displays downstepped High tones, i.e. tones that are identified as phonologically High but display a \isi{register} that is lower than an immediately preceding H, is well known \citep[a.o.][]{Dimmendaal88,Kody93,Hyman03,HamlaouiEtAl14}. The originality of the present paper lies in the fact that downstep can also be found at certain word junctures where it cannot be traced to the presence of a lexical L \isi{tone}. In line with Match Theory \citep{Selkirk09, Selkirk11} and the Theory of Prosodic Projection \citep[a.o.][]{ItoMester12}, we propose that this type of downstep is indicative of recursive phonological phrasing. More specifically, we propose that in Bàsà{á}, a downstep occurs between the immediate daughters of a maximal \isi{phonological phrase} ($\phi$max).
 \nocite{Guthrie48}
 
-The paper is structured as follows. \sectref{sec:HamlaouiMakasso:2} introduces B\`as\`a\'a and its basic \isi{tone} patterns. It also provides a brief overview of the types of downtrends found in this \ili{Bantu} language. \sectref{sec:HamlaouiMakasso:3} concentrates on the distribution of the particular type of downstep that interests us, i.e. with no lexical L \isi{tone} involved. \sectref{sec:HamlaouiMakasso:4} provides a possible analysis for this tonal phenomenon. \sectref{sec:HamlaouiMakasso:5} concludes the paper.
+The paper is structured as follows. \sectref{sec:HamlaouiMakasso:2} introduces Bàsà{á} and its basic \isi{tone} patterns. It also provides a brief overview of the types of downtrends found in this \ili{Bantu} language. \sectref{sec:HamlaouiMakasso:3} concentrates on the distribution of the particular type of downstep that interests us, i.e. with no lexical L \isi{tone} involved. \sectref{sec:HamlaouiMakasso:4} provides a possible analysis for this tonal phenomenon. \sectref{sec:HamlaouiMakasso:5} concludes the paper.
 
 
 
-\section{Basic patterns of tone in B\`as\`a\'a}\label{sec:HamlaouiMakasso:2} 
+\section{Basic patterns of tone in Bàsà{á}}\label{sec:HamlaouiMakasso:2} 
 \subsection{Downdrift}
-B\`as\`a\'a is a tonal language with a three-way underlying opposition between H(igh), L(ow) and toneless ($\emptyset$) tone-bearing units (TBUs) (\citealt{Dimmendaal88,Hyman03,Makasso08a} and in particular \citealt{Kody93,HamlaouiEtAl14,MakassoEtAl17} on toneless TBUs). As a result of a number of tonal processes, B\`as\`a\'a's surface realizations contrast H, L, LH (rising), HL (falling) and \textdownstep H (`downstepped' H) tones. \tabref{tab:HamlaouiMakasso:1} provides an illustration of B\`as\`a\'a's minimal tonal contrasts.\footnote{The system of transcription used in this work is the IPA. For the readers familiar with previous literature on B\`as\`a\'a, we have the following correspondences: /p/ or /b/ $\to$ \textbf{/\textbeta/}; /t/ or /d/ $\to$ \textbf{/r/}; /k/ or /g/ $\to$ \textbf{/\textgamma/}; /y/ $\to$ \textbf{/j/}; /ny/ $\to$ \textbf{/\textltailn/}; /j/ $\to$ \textbf{/\textdyoghlig/}; /c/ $\to$ \textbf{/\textteshlig/}.} 
+Bàsà{á} is a tonal language with a three-way underlying opposition between H(igh), L(ow) and toneless ($\emptyset$) tone-bearing units (TBUs) (\citealt{Dimmendaal88,Hyman03,Makasso08a} and in particular \citealt{Kody93,HamlaouiEtAl14,MakassoEtAl17} on toneless TBUs). As a result of a number of tonal processes, Bàsà{á}'s surface realizations contrast H, L, LH (rising), HL (falling) and {\textdownstep}H (`downstepped' H) tones. \tabref{tab:HamlaouiMakasso:1} provides an illustration of Bàsà{á}'s minimal tonal contrasts.\footnote{The system of transcription used in this work is the IPA. For the readers familiar with previous literature on Bàsà{á}, we have the following correspondences: /p/ or /b/ $\to$ \textbf{/β/}; /t/ or /d/ $\to$ \textbf{/r/}; /k/ or /g/ $\to$ \textbf{/γ/}; /y/ $\to$ \textbf{/j/}; /ny/ $\to$ \textbf{/ɲ/}; /j/ $\to$ \textbf{/ʤ/}; /c/ $\to$ \textbf{/ʧ/}.} 
 
 
-%\begin{figure}[ht!]
-%\begin{center}
-%\caption{Tonal Minimal Pairs in B\`as\`a\'a \citep{MakassoLee15} \label{fig:HamlaouiMakasso:1}}
+%\begin{figure}
+%
+%\caption{Tonal Minimal Pairs in Bàsà{á} \citep{MakassoLee15} \label{fig:HamlaouiMakasso:1}}
 %\includegraphics[width=12cm]{TonalContrasts}
-%\end{center}
+%
 %\end{figure}
 
 \begin{table}
-\caption{Tonal minimal pairs in B\`as\`a\'a \citep{MakassoLee15}}
+\caption{Tonal minimal pairs in Bàsà{á} \citep{MakassoLee15}}
 \label{tab:HamlaouiMakasso:1}
 \fittable{
 \begin{tabular}{l@{\ }ll@{\ }ll@{\ }ll@{\ }l}\lsptoprule
 \multicolumn{2}{c}{\bfseries H tone} &
-\multicolumn{2}{c}{\bfseries L tone} &
-\multicolumn{2}{c}{\bfseries HL tone} &
-\multicolumn{2}{c}{\bfseries LH tone}\\
+  \multicolumn{2}{c}{\bfseries L tone} &
+    \multicolumn{2}{c}{\bfseries HL tone} &
+      \multicolumn{2}{c}{\bfseries LH tone}\\
 \midrule
-\textipa{j\'aX} & `to annoy' &
-\textipa{j\`aX} & `also' &
-&&&\\
-\textipa{b\'aN} & `to tolerate' &
-\textipa{b\`aN} & `to make' &
-&&&\\
-\textipa{b\'o:} & `to move out' &
-\textipa{b\`o:} & `(smell) bad' &
-&&
-\textipa{b\v{o}:} & `nine' \\
-&& \textipa{t\`u:} & `to be unable &
-\textipa{t\^u:} & `shoulder &
-&\\
-&&& to cut' &
-& (\textsc{cl}7)' &
-&\\
-&& \textipa{\textltailn\`\textopeno:} & `to copulate' &
-&& \textipa{\textltailn\v\textopeno:} & `snake (\textsc{cl}9)'\\ 
-&&&& \textipa{b\'aNg\`a} & `drug' (\textsc{cl}7) &
-\textipa{b\`aNg\'a} & `great'\\
+{jáχ} & `to annoy' &{jàχ} & `also' &&&&\\
+{b{á}ŋ} & `to tolerate' &{bàŋ} & `to make' &&&&\\
+{bó:} & `to move out' &{bò:} & `(smell) bad' &&&{b\v{o} }& `nine' \\
+&& {tù}ː & `to be unable &{tû}ː & `shoulder &&\\
+&&& to cut' && (\textsc{cl}7)' &&\\
+&& ɲ\`ɔː & `to copulate' &&& ɲ\v{ɔ}ː & `snake (\textsc{cl}9)'\\ &&&& {b{á}ŋgà} & `drug' (\textsc{cl}7) &
+{bàŋg{á}} & `great'\\
 \lspbottomrule
 \end{tabular}
 }
 \end{table}
 
 %\newpage
-As in many other African \isi{tone} languages, in utterances presenting mixed sequences of \isi{tone}, B\`as\`a\'a displays `automatic downstep' or downdrift: `a progressive lowering of \isi{tone} realisation' \citep[2]{DowningRialland16}. As seen in the pitch track in \figref{fig:HamlaouiMakasso:2}, corresponding to the sentence in \REF{ex:HamlaouiMakasso:1}, each L \isi{tone} sets ``a new, lower, `ceiling''' for the following H tones \citep{Connell11}.
+As in many other African \isi{tone} languages, in utterances presenting mixed sequences of \isi{tone}, Bàsà{á} displays ``automatic downstep'' or downdrift: 
+``a progressive lowering of \isi{tone} realisation'' \citep[2]{DowningRialland16}. As seen in the pitch track in \figref{fig:HamlaouiMakasso:2}, corresponding to the sentence in \REF{ex:HamlaouiMakasso:1}, each L \isi{tone} sets ``a new, lower, `ceiling'{}'' for the following H tones \citep{Connell11}.
 %\newpage
 
-\ea \'i-\texthtb-\`{\textopeno}\`{\textopeno}\textipa{N}g\'{\textepsilon} \texthtb\'an\'a \texthtb\'a-\'m-\texthtb\'ar\'a m-\'a\textipa{N}g\`ol\`o m\'a \texthtb-\'a\textdownstep s\'a\textipa{N}.\\
-\gll \'i\`~-\texthtb-\textopeno\textopeno\textipa{N}g\'{\textepsilon} \texthtb\'an\'a \texthtb\'a-m-\texthtb\'ar\'a m-\'a\textipa{N}g\`ol\`o m\'a \texthtb-\`as\'a\textipa{N}\\
+\ea í-ɓ-\`ɔ\`ɔŋg\'ɛ ɓ{á}n{á} ɓ{á}-\'m-ɓ{á}r{á} m-{á}ŋgòlò m{á} ɓ-{á}{\textdownstep}s{á}ŋ.\\
+\gll í\`~-ɓ-ɔɔŋg\'ɛ ɓ{á}n{á} ɓ{á}-m-ɓ{á}r{á} m-{á}ŋgòlò m{á} ɓ-às{á}ŋ\\
 \textsc{aug}-2-children 2.\textsc{dem} 2.\textsc{agr}-\textsc{pst1}-take 6-mangoes 6.\textsc{conn} 2-fathers\\
 \glt `These children picked up the mangoes of the fathers.' \label{ex:HamlaouiMakasso:1} \\ \citep{MakassoEtAl17}
 \z
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{Downdrift}
-\caption{Downdrift in a B\`as\`a\'a sentence with a mixed tone sequence \citep{MakassoEtAl17} \label{fig:HamlaouiMakasso:2}}
-\end{center}
+\begin{figure} 
+\includegraphics[width=10cm]{figures/Downdrift}
+\caption{Downdrift in a Bàsà{á} sentence with a mixed tone sequence \citep{MakassoEtAl17} \label{fig:HamlaouiMakasso:2}} 
+\todo[inline]{<b> has to implosive in graphics}
 \end{figure}
 
 \noindent In sentence \REF{ex:HamlaouiMakasso:1}, tones that are phonologically identified as H are realized on four different pitch registers. The first three of these correspond to the phenomenon known as `downdrift'. We will come back subsequently to the last change of \isi{register}, a case of (non-automatic) downstep. Note in passing that H tones preceding a L \isi{tone} display H-raising, a phenomenon also found in languages like \ili{Yoruba} \citep[a.o.][]{ConnellLadd90, Laniran92, LaniranClements03} or \ili{Dagara} \citep{RiallandSome00, Rialland01}, and that the first H in \REF{ex:HamlaouiMakasso:1} displays greater H-raising than the next H that also precedes a L (but that no such raising is observed when the initial H is followed by a H, as in \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4}).  
@@ -112,29 +94,29 @@ As in many other African \isi{tone} languages, in utterances presenting mixed se
 
 \subsection{Declination}
 
-In addition to having downdrift, B\`as\`a\'a also exhibits declination, that is, `a gradual modification (over the course of a phrase or utterance) of the phonetic backdrop against which the phonologically specified F$0$ targets are scaled' \citep{ConnellLadd90, Connell11}. Declination, which is considered a phonetic universal \citep{Ladd84, Connell11}, is found in both B\`as\`a\'a declarative sentences and \emph{yes/no}-questions. This is illustrated in \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4}, for the sentence with only H tones in \REF{ex:HamlaouiMakasso:2} \citep{MakassoEtAl17}.
+In addition to having downdrift, Bàsà{á} also exhibits declination, that is, `a gradual modification (over the course of a phrase or utterance) of the phonetic backdrop against which the phonologically specified F$0$ targets are scaled' \citep{ConnellLadd90, Connell11}. Declination, which is considered a phonetic universal \citep{Ladd84, Connell11}, is found in both Bàsà{á} declarative sentences and \emph{yes/no}-questions. This is illustrated in \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4}, for the sentence with only H tones in \REF{ex:HamlaouiMakasso:2} \citep{MakassoEtAl17}.
 
 
 \ea \label{ex:HamlaouiMakasso:2} 
-\ea \gll h\'ind\'a \'i k\'op \'i-\'n-l\'am\'a j\'e\textipa{N} \textipa{N}w\'{\textepsilon}r.\\
+\ea \gll hínd{á} í kóp í-ń-l{á}m{á} j\'eŋ ŋw\'ɛr.\\
 7.black 7.\textsc{conn} hen 7.\textsc{agr}-\textsc{pst}1-may search 1.owner\\
 \glt `The black hen may look for its owner.'\label{ex:HamlaouiMakasso:2a} 
-\ex \gll h\'ind\'a \'i k\'op \'i-\'nl\'am\'a j\'e\textipa{N} \textipa{N}w\'{\textepsilon}r-\'{\textepsilon}.\\
+\ex \gll hínd{á} í kóp í-ńl{á}m{á} j\'eŋ ŋw\'ɛr-\'ɛ.\\
 7.black 7.\textsc{conn} hen 7.\textsc{agr}-\textsc{pst}1-may search owner-Q\\
 \glt `May the black hen look for its owner?'\label{ex:HamlaouiMakasso:2b} 
 \z
 \z
 
 
-\begin{figure}[h!]
+\begin{figure}
 \centering
- \includegraphics[width=10cm]{HenManNov}  
+ \includegraphics[width=10cm]{figures/HenManNov}  
 \caption{Assertion -- High tones only \citep{MakassoEtAl17} \label{fig:HamlaouiMakasso:3}}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}
 \centering
-\includegraphics[width=10cm]{HenManQNov}  
+\includegraphics[width=10cm]{figures/HenManQNov}  
 \caption{\emph{Yes-no} question -- High tones only \citep{MakassoEtAl17} \label{fig:HamlaouiMakasso:4}}
 \end{figure}
 
@@ -144,92 +126,93 @@ In addition to having downdrift, B\`as\`a\'a also exhibits declination, that is,
 
 \subsection{Downstep under the influence of a floating L tone}
 
-Several tonal/segmental processes have been identified that result in the realization of a downstepped H \isi{tone}. High Tone Spread (HTS), the major tonal process of present day B\`as\`a\'a according to \citet{Hyman03}, can lead a L \isi{tone} to disassociate and lower a following H. This is the case in example \REF{ex:HamlaouiMakasso:1}. The word for `fathers' is underlyingly L-H. When following the H-toned class 2 connective, it acquires a H on its first TBU through HTS. That has the effect of disassociating the initial L, which in turn creates a downstepped H (\textdownstep H, see again \figref{fig:HamlaouiMakasso:2}).
+Several tonal/segmental processes have been identified that result in the realization of a downstepped H \isi{tone}. High Tone Spread (HTS), the major tonal process of present day Bàsà{á} according to \citet{Hyman03}, can lead a L \isi{tone} to disassociate and lower a following H. This is the case in example \REF{ex:HamlaouiMakasso:1}. The word for `fathers' is underlyingly L-H. When following the H-toned class 2 connective, it acquires a H on its first TBU through HTS. That has the effect of disassociating the initial L, which in turn creates a downstepped H ({\textdownstep}H, see again \figref{fig:HamlaouiMakasso:2}).
 
 
-Floating L tones are also pretty common in B\`as\`a\'a, some of them clearly resulting from a historical loss of segments. The augment in \REF{ex:HamlaouiMakasso:1} introduces a floating L, which systematically creates a downstep on a following H.\footnote{See example \REF{ex:HamlaouiMakasso:13b} for a case where both the H and L \isi{tone} of the augment are carried by the noun it modifies, suggesting that this type of downstep involves an underlying lexical L.}  This is also the case of the present tense morpheme and the locative marker, for instance, illustrated respectively in \REF{ex:HamlaouiMakasso:3} and \REF{ex:HamlaouiMakasso:4}.
+Floating L tones are also pretty common in Bàsà{á}, some of them clearly resulting from a historical loss of segments. The augment in \REF{ex:HamlaouiMakasso:1} introduces a floating L, which systematically creates a downstep on a following H.\footnote{See example \REF{ex:HamlaouiMakasso:13b} for a case where both the H and L \isi{tone} of the augment are carried by the noun it modifies, suggesting that this type of downstep involves an underlying lexical L.}  This is also the case of the present tense morpheme and the locative marker, for instance, illustrated respectively in \REF{ex:HamlaouiMakasso:3} and \REF{ex:HamlaouiMakasso:4}.
 
 
-\ea \`a-\'n-\textdownstep\textdyoghlig\'{\textepsilon}. \label{ex:HamlaouiMakasso:3}\\
-\gll \`a-\'n\`~-\textdyoghlig\'{\textepsilon}\\ 
+\ea à-ń-{\textdownstep}ʤ\'ɛ. \label{ex:HamlaouiMakasso:3}\\
+\gll à-ń\`~-ʤ\'ɛ\\ 
 1.\textsc{agr}-\textsc{pres}-eat\\
 \glt `He/She is eating.'
 \z
 
 
-\ea \'i \textdownstep nd\'ap \label{ex:HamlaouiMakasso:4} \\
- \gll \'i\`~ nd\'ap\\
+\ea í {\textdownstep}nd{á}p \label{ex:HamlaouiMakasso:4} \\
+ \gll í\`~ nd{á}p\\
 \textsc{loc} 9.house\\
 \glt `in the house'
 \z
 
-The rightward association of floating L tones that creates \textdownstep H tones is found within prosodic words ($\omega$), i.e. prosodic units roughtly corresponding to lexical heads, within phonological phrases ($\phi$), i.e. prosodic units based on (lexical) syntactic phrases (XPs), and within intonational phrases ($\iota$), i.e. prosodic units based on syntactic clauses, in a prosodic hierarchy where $\iota$ $>$ $\phi$ $>$ $\omega$ (see for instance \citet{Selkirk11} and references therein for details on the prosodic hierarchy, and \citet{HamlaouiSzendroi15, HamlaouiSzendroi16} for the definition of syntactic `clause' assumed here).
+\noindent
+The rightward association of floating L tones that creates {\textdownstep}H tones is found within prosodic words ($\omega$), i.e. prosodic units roughtly corresponding to lexical heads, within phonological phrases ($\phi$), i.e. prosodic units based on (lexical) syntactic phrases (XPs), and within intonational phrases ($\iota$), i.e. prosodic units based on syntactic clauses, in a prosodic hierarchy where $\iota$ $>$ $\phi$ $>$ $\omega$ (see for instance \citet{Selkirk11} and references therein for details on the prosodic hierarchy, and \citet{HamlaouiSzendroi15, HamlaouiSzendroi16} for the definition of syntactic `clause' assumed here).
 
 
 \section{Where adjacent Hs are distinguished}\label{sec:HamlaouiMakasso:3} 
 
-We have briefly illustrated in \figref{fig:HamlaouiMakasso:2}, \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4} than whenever two H tones are brought together in B\`as\`a\'a, within words and between words, they form a plateau. This is also what we have observed in all the repetitions of various sentences that we have recorded (see \citet{MakassoEtAl17} for an overview). At least on the surface then, B\`as\`a\'a thus differs from a language like KiShambaa (\ili{Bantu} G23, Tanzania), in which downstep applies between any two independent H tones \citep{Odden82}. We have however identified a few contexts in which two adjacent H tones are realized on different registers, where the second one is perceived as downstepped. Let us look at them in turn.
+We have briefly illustrated in \figref{fig:HamlaouiMakasso:2}, \figref{fig:HamlaouiMakasso:3} and \figref{fig:HamlaouiMakasso:4} than whenever two H tones are brought together in Bàsà{á}, within words and between words, they form a plateau. This is also what we have observed in all the repetitions of various sentences that we have recorded (see \citet{MakassoEtAl17} for an overview). At least on the surface then, Bàsà{á} thus differs from a language like KiShambaa (\ili{Bantu} G23, Tanzania), in which downstep applies between any two independent H tones \citep{Odden82}. We have however identified a few contexts in which two adjacent H tones are realized on different registers, where the second one is perceived as downstepped. Let us look at them in turn.
 
 
 
 \subsection{In the phrasal domain}
 
-First, in the phrasal domain, [Dem N] and [Wh N] present a downstep at the juncture between the two words. They are so far the only noun phrases in which we have observed a downstep, and in that they contrast with [N Dem], [N Adj], [N conn N], [poss N] and [N poss], where no such downstep is found. 
+First, in the phrasal domain, [Dem N] and [Wh N] present a downstep at the juncture between the two words. They are so far the only noun phrases in which we have observed a downstep, and in that they contrast with [N Dem], [N Adj], [N \textsc{conn} N], [\textsc{poss} N] and [N \textsc{poss}], where no such downstep is found. 
 
-\ea \gll \'in\'i \textdownstep kwémbé\\
+\ea \gll íní {\textdownstep}kwémbé\\
 7.\textsc{dem} 7.box\\
 \glt `this box'\label{ex:HamlaouiMakasso:5}\\
 \z
 
-\ea \gll n\textdyoghlig\'{\textepsilon} \textdownstep s\'o\textgamma\'ol\\
+\ea \gll nʤ\'ɛ {\textdownstep}sóγól\\
 which 1.grandfather\\
 \glt `which grandfather' \label{ex:HamlaouiMakasso:6}\\
 \z
 
-\noindent According to \citet{Hyman03} and \citet{HymanLionnet14}, who assume a H vs. L underlying tonal distinction in both \ili{Abo} (\ili{Bantu} A42, Cameroon) and B\`as\`a\'a, all \isi{noun class} prefixes are underlyingly L. In their approach, prefixless nouns thus start with a floating L \isi{tone} which would be responsible for the downstep observed in examples \REF{ex:HamlaouiMakasso:5}, \REF{ex:HamlaouiMakasso:6} and \REF{ex:HamlaouiMakasso:7} to \REF{ex:HamlaouiMakasso:16}. Whenever the prefixless noun follows e.g. a verb or a connective, i.e. a context where HTS (or metatony) applies, this floating L \isi{tone} could be overridden and thus not create a downstep. We provide sentences in the next subsection in which words that are not analysed by Hyman and Hyman \& Lionnet as starting with a floating L \isi{tone} also display a downstep when preceded by a word that ends with a H \isi{tone}.
+\noindent According to \citet{Hyman03} and \citet{HymanLionnet14}, who assume a H vs. L underlying tonal distinction in both \ili{Abo} (\ili{Bantu} A42, Cameroon) and Bàsà{á}, all \isi{noun class} prefixes are underlyingly L. In their approach, prefixless nouns thus start with a floating L \isi{tone} which would be responsible for the downstep observed in examples \REF{ex:HamlaouiMakasso:5}, \REF{ex:HamlaouiMakasso:6} and \REF{ex:HamlaouiMakasso:7} to \REF{ex:HamlaouiMakasso:16}. Whenever the prefixless noun follows e.g. a verb or a connective, i.e. a context where HTS (or metatony) applies, this floating L \isi{tone} could be overridden and thus not create a downstep. We provide sentences in the next subsection in which words that are not analysed by Hyman and Hyman \& Lionnet as starting with a floating L \isi{tone} also display a downstep when preceded by a word that ends with a H \isi{tone}.
 
 
 \subsection{At the sentence level}
 
 Whenever the proper tonal configuration is met, a downstep distinguishes the two complements of a verb. This is illustrated in \REF{ex:HamlaouiMakasso:7} to \REF{ex:HamlaouiMakasso:11}, with different types of complements. Sentence \REF{ex:HamlaouiMakasso:8} is illustrated in \figref{fig:HamlaouiMakasso:5}.
 
-\ea \gll  \texthtb\'a-\'n-t\'i s\'o\textgamma\'ol \textdownstep kwémbé.\\
+\ea \gll  ɓ{á}-ń-tí sóγól {\textdownstep}kwémbé.\\
 2.\textsc{agr}-\textsc{pst1}-give 1.grandfather 7.box\\
 \glt `They gave the grandfather the box.'\label{ex:HamlaouiMakasso:7}
 \z
 
-\ea \gll m\`{\textepsilon} \`n-t\'i l\'iw\'and\'a l\'i s\'o\textgamma\'ol \textdownstep nd\'ap.\\
+\ea \gll m\`ɛ ǹ-tí líw{á}nd{á} lí sóγól {\textdownstep}nd{á}p.\\
 I \textsc{pst1}-give 5-friend 5.\textsc{conn} 1.grandfather 9.house\\
 \glt `I gave the friend of the grandfather the house.'\label{ex:HamlaouiMakasso:8} 
 \z
 
-\ea \gll m\`{\textepsilon} \`n-t\'i \'i-\textdownstep s\'o\textgamma\'ol n\'un\'u \textdownstep nd\'ap j\^{\textopeno}\textipa{N}.\\
+\ea \gll m\`ɛ ǹ-tí í-{\textdownstep}sóγól núnú {\textdownstep}nd{á}p j\^ɔŋ.\\
 I \textsc{pst1}-give \textsc{aug}-1.grandfather  1.\textsc{dem} 9.house 9.your\\
 \glt `I gave this grandfather your house.'\label{ex:HamlaouiMakasso:9}
 \z
 
-\ea \gll  m\`{\textepsilon} \`n-t\'i n\textdyoghlig\'{\textepsilon} m\'a\'a\textipa{N}g\'{\textepsilon} \textdownstep n\textdyoghlig\'{\textepsilon} m\'ur\`a\'a?\\
+\ea \gll  m\`ɛ ǹ-tí nʤ\'ɛ m{á}{á}ŋg\'ɛ {\textdownstep}nʤ\'ɛ múrà{á}?\\
 I \textsc{pst1}-give which 1.child which 1.woman\\
 \glt `Which woman did I give to which child?'\label{ex:HamlaouiMakasso:10}
 \z
 
-\ea \gll  m\`{\textepsilon} \`n-t\'i m\'alêr \textipa{\`N}k\'{\textepsilon}\textipa{N}\'i \textdownstep nd\'ap \`ik\'{\textepsilon}\textipa{N}\'i.\\
+\ea \gll  m\`ɛ ǹ-tí m{á}lêr \`ŋk\'ɛŋí {\textdownstep}nd{á}p ìk\'ɛŋí.\\
 I \textsc{pst1}-give 1.teacher 1.big 9.house 9.big\\
 \glt `I gave the big teacher the big house.'\label{ex:HamlaouiMakasso:11}
 \z
 
-\begin{figure}[ht!]
-\begin{center}
+\begin{figure}
+
 \caption{Downstep between two complements in sentence \REF{ex:HamlaouiMakasso:8} \label{fig:HamlaouiMakasso:5}}
-\includegraphics[width=10cm]{ComplexO1Sept16B}
-\end{center}
+\includegraphics[width=10cm]{figures/ComplexO1Sept16B}
+
 \end{figure}
 
 
 \noindent Example \REF{ex:HamlaouiMakasso:12} is crucial in connection to Hyman and Hyman \& Lionnet's hypothesis, as demonstratives are not, to the best of our knowledge, among the words that they would posit have a floating L \isi{tone} but still display a downstep when they are the second complement of a verb.
 
 
-\ea \gll  m\`{\textepsilon} \`n-t\'i s\'o\textgamma\'ol \textdownstep{\'i}n\'i \textdownstep kwémbé.\\
+\ea \gll  m\`ɛ ǹ-tí sóγól \textdownstep{í}ní {\textdownstep}kwémbé.\\
 I \textsc{pst1}-give 1.grandfather 7.\textsc{dem} 7.box\\
 \glt `I gave the grandfather this box.'\label{ex:HamlaouiMakasso:12}
 \z
@@ -237,10 +220,10 @@ I \textsc{pst1}-give 1.grandfather 7.\textsc{dem} 7.box\\
 \noindent If an initial floating L \isi{tone} were posited to be associated with demonstratives, it would remain to be explained why no downstep is found in [N Dem] phrases, as in \REF{ex:HamlaouiMakasso:9} and \REF{ex:HamlaouiMakasso:13} \citep[273]{Hyman03}, a context where HTS does not apply \citep[28]{HamlaouiEtAl14}. The absence of downstep before the second complement in example \REF{ex:HamlaouiMakasso:27} in \sectref{sec:HamlaouiMakasso:5}, which starts with a demonstrative, would also be unexpected if a lexical L \isi{tone} is present in the underlying representation.
 
 \ea \label{ex:HamlaouiMakasso:13}
- \gll \'i-\texthtb\`{\textopeno}\`{\textopeno}\textipa{N}g\'{\textepsilon} \texthtb\'an\'a\\
+ \gll í-ɓ\`ɔ\`ɔŋg\'ɛ ɓ{á}n{á}\\
 \textsc{aug}-2.children 2.\textsc{dem}\\
 \glt `these children'
-\ex \gll l\'i\textdownstep w\'and\'a l\'in\'i\\
+\ex \gll lí{\textdownstep}w{á}nd{á} líní\\
 \textsc{aug}.5-friend 5.\textsc{dem}\\
 \glt `this friend'\label{ex:HamlaouiMakasso:13b}
 \z
@@ -248,29 +231,29 @@ I \textsc{pst1}-give 1.grandfather 7.\textsc{dem} 7.box\\
 A further context in which a downstep is inserted at the sentence level is between a complement and a verb modifier, as illustrated in \REF{ex:HamlaouiMakasso:14}.
 
 %\newpage
-\ea \gll \`a-\`n-s\'omb m\'o\'o \textdownstep l\'{\textopeno}\textipa{N}g\^{\textepsilon}.\\
+\ea \gll à-ǹ-sómb móó {\textdownstep}l\'ɔŋg\^ɛ.\\
 1.\textsc{agr}-\textsc{pst1}-buy 6.oil 7.well.\\
 \glt `He did buy the oil.'\label{ex:HamlaouiMakasso:14}
 \z
 
-Whenever the verb is followed by a complement and a locative adjunct though, as in \REF{ex:HamlaouiMakasso:15} and \REF{ex:HamlaouiMakasso:16}, no such downstep occurs between them (the downstep on the last word, `nd\'ap' is due to the floating L introduced by the locative). Sentence \REF{ex:HamlaouiMakasso:15} is illustrated in \figref{fig:HamlaouiMakasso:6}, where the last H \isi{tone} of the second complement forms a plateau with the first H \isi{tone} of the locative phrase.
+Whenever the verb is followed by a complement and a locative adjunct though, as in \REF{ex:HamlaouiMakasso:15} and \REF{ex:HamlaouiMakasso:16}, no such downstep occurs between them (the downstep on the last word, `nd{á}p' is due to the floating L introduced by the locative). Sentence \REF{ex:HamlaouiMakasso:15} is illustrated in \figref{fig:HamlaouiMakasso:6}, where the last H \isi{tone} of the second complement forms a plateau with the first H \isi{tone} of the locative phrase.
 
-\ea  \gll \'i-\texthtb\`{\textopeno}\`{\textopeno}\textipa{N}g\'{\textepsilon} \texthtb\'an\'a \texthtb\'a-\'m-\texthtb\'ar\'a kwémbé \'i s\'o\textgamma\'ol \'i \textdownstep nd\'ap.\\
+\ea  \gll í-ɓ\`ɔ\`ɔŋg\'ɛ ɓ{á}n{á} ɓ{á}-\'m-ɓ{á}r{á} kwémbé í sóγól í {\textdownstep}nd{á}p.\\
 \textsc{aug}-2.children 2.\textsc{dem} 2.\textsc{agr}-\textsc{pst1}-pick.up 7.box 7.\textsc{conn} 1.grandfather \textsc{loc} 9.house\\
 \glt `These children picked up the box of the grandfather at home.'\label{ex:HamlaouiMakasso:15}
 \z
 
-\ea \gll \'i-\texthtb\`{\textopeno}\`{\textopeno}\textipa{N}g\'{\textepsilon} \texthtb\'an\'a \texthtb\'a-\'n-t\'i s\'o\textgamma\'ol \textdownstep kwémbé \'i \textdownstep nd\'ap.\\
+\ea \gll í-ɓ\`ɔ\`ɔŋg\'ɛ ɓ{á}n{á} ɓ{á}-ń-tí sóγól {\textdownstep}kwémbé í {\textdownstep}nd{á}p.\\
 \textsc{aug}-2.children 2.\textsc{dem} 2.\textsc{agr}-\textsc{pst1}-give 1.grandfather 7.box \textsc{loc} 9.house\\
 \glt `These children gave the box to the grandfather at home.'\label{ex:HamlaouiMakasso:16}
 \z
 
 
-\begin{figure}[ht!]
-\begin{center}
+\begin{figure}
+
 \caption{Absence of downstep between a complement and a locative phrase \REF{ex:HamlaouiMakasso:15} \label{fig:HamlaouiMakasso:6}}
-\includegraphics[width=10cm]{LocSept16B}
-\end{center}
+\includegraphics[width=10cm]{figures/LocSept16B}
+
 \end{figure}
 
 
@@ -291,13 +274,13 @@ We have also examined various types of phrases, and concluded that the non-appli
 \ex N)$_{\phi}$ Dem)$_{\phi}$
 \ex N)$_{\phi}$ Adj)$_{\phi}$
 \ex Adj)$_{\phi}$ N)$_{\phi}$
-\ex N)$_{\phi}$ conn N)$_{\phi}$
+\ex N)$_{\phi}$ \textsc{conn} N)$_{\phi}$
 \z
 \z
 
 \ea \label{ex:HamlaouiMakasso:19}
-\ea poss N)$_{\phi}$
-\ex N poss)$_{\phi}$
+\ea \textsc{poss} N)$_{\phi}$
+\ex N \textsc{poss})$_{\phi}$
 \ex wh N)$_{\phi}$
 \z
 \z
@@ -306,7 +289,7 @@ Note that the groupings given in \REF{ex:HamlaouiMakasso:18} and \REF{ex:Hamlaou
 
 \ea
 \ea XP)$_{\phi}$ V N)$_{\phi}$ A)$_{\phi}$ \label{ex:HamlaouiMakasso:20}
-\ex XP)$_{\phi}$ V N)$_{\phi}$ conn N)$_{\phi}$ \label{ex:HamlaouiMakasso:21}
+\ex XP)$_{\phi}$ V N)$_{\phi}$ \textsc{conn} N)$_{\phi}$ \label{ex:HamlaouiMakasso:21}
 \z
 \z
 
@@ -317,7 +300,7 @@ Second, we have proposed that Falling Tone Simplification (FTS), in its turn, pr
 \ea (XP V XP XP)$_{\iota}$.\label{ex:HamlaouiMakasso:22}
 \z
 
-We have seen that the configurations in which we observed a downstep could not be traced to the presence of a lexical floating L \isi{tone}. What then determines the presence of these downsteps? We propose that the contexts in which downstep occurs in B\`as\`a\'a correspond to the maximal \isi{phonological phrase} of the prosodic hierarchy, where $\phi$ and other prosodic categories are recursive \citep[a.o.][]{ItoMester12}. More specifically, we propose that B\`as\`a\'a inserts a downstep between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. The distinction of adjacent H tones in absence of a lexical floating L is thus indicative of recursive phonological phrasing.
+We have seen that the configurations in which we observed a downstep could not be traced to the presence of a lexical floating L \isi{tone}. What then determines the presence of these downsteps? We propose that the contexts in which downstep occurs in Bàsà{á} correspond to the maximal \isi{phonological phrase} of the prosodic hierarchy, where $\phi$ and other prosodic categories are recursive \citep[a.o.][]{ItoMester12}. More specifically, we propose that Bàsà{á} inserts a downstep between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. The distinction of adjacent H tones in absence of a lexical floating L is thus indicative of recursive phonological phrasing.
 
 Let us spell out our reasoning. We \isi{focus} on the sentence level, as this is where our hypotheses concerning the syntactic structure are the most restricted. First, we know from the data we have examined that downstep does not occur between two phrases that do not belong to a larger lexical XP, that is, between \isi{subject} and verb, for instance, or a complement and (what can safely be assumed) a clause-level adjunct. These phrases form a plateau (a point we will come back to subsequently). Second, we know that downstep does not occur either between a verb and its complement, which do belong to a simple lexical XP (VP). Third, we know that downstep occurs between two complements of a verb, or a complement and a verb modifier. It thus seems that downstep occurs when more syntactic structure is involved within a lexical phrase (here VP), and thus intuitively indicates an `intermediate' degree of cohesion between two phrases. In a canonical sentence with a verb with more than one complement, it is usually assumed that all the arguments of the verb are contained within a complex V(erb)P(hrase), which can be represented (among other ways) as shown in \figref{fig:HamlaouiMakasso:7} \citep{Larson88}.
 
@@ -327,12 +310,12 @@ Let us spell out our reasoning. We \isi{focus} on the sentence level, as this is
 % \includegraphics[width=7cm]{VP}
 \begin{forest} nice empty nodes, baseline
 [VP\textsubscript{1}
-  [] [V\textsubscript{1}'
+  [] [V\textsubscript{1}$'$
      [V\textsubscript{1}
       [verb, name=verb]
      ]
      [VP\textsubscript{2}
-      [NP1] [V\textsubscript{2}'
+      [NP1] [V\textsubscript{2}$'$
 	[V\textsubscript{2},name=v2] [NP2]
       ]
      ]
@@ -343,9 +326,9 @@ Let us spell out our reasoning. We \isi{focus} on the sentence level, as this is
 
 \end{figure}
 
-\noindent In this syntactic representation, the VP is recursive. Although it was long assumed that the \isi{prosodic structure} was flater than the syntactic structure \citep{Selkirk81,Selkirk84,Selkirk86, NesporVogel86}, a number of studies have provided evidence that prosody can be as recursive as syntax \citep{Ladd86}, and this view can now be considered standard \citep[a.o.][]{Selkirk95b, Selkirk09, Selkirk11, Truckenbrodt99, Wagner05, Elfner12}. If \isi{prosodic structure} is by default based on syntactic structure, as is assumed here, it is expected that, at least in some languages, phonological evidence is found for recursive \isi{prosodic phrasing} within VPs. \citet{Truckenbrodt99}, for instance, argues that this is the case in \ili{Kimatuumbi} (\ili{Bantu} P13), a distant relative of B\`as\`a\'a \citep{Odden87,Odden90}, where prosody suggests that the sequence [V NP NP] is phrased ((V NP)$_{\phi}$ NP)$_{\phi}$. 
+\noindent In this syntactic representation, the VP is recursive. Although it was long assumed that the \isi{prosodic structure} was flater than the syntactic structure \citep{Selkirk81,Selkirk84,Selkirk86, NesporVogel86}, a number of studies have provided evidence that prosody can be as recursive as syntax \citep{Ladd86}, and this view can now be considered standard \citep[a.o.][]{Selkirk95b, Selkirk09, Selkirk11, Truckenbrodt99, Wagner05, Elfner12}. If \isi{prosodic structure} is by default based on syntactic structure, as is assumed here, it is expected that, at least in some languages, phonological evidence is found for recursive \isi{prosodic phrasing} within VPs. \citet{Truckenbrodt99}, for instance, argues that this is the case in \ili{Kimatuumbi} (\ili{Bantu} P13), a distant relative of Bàsà{á} \citep{Odden87,Odden90}, where prosody suggests that the sequence [V NP NP] is phrased ((V NP)$_{\phi}$ NP)$_{\phi}$. 
 
-When it comes to B\`as\`a\'a sentences, the evidence provided by HTS and downstep is compatible with the phrasing suggested by Truckenbrodt for \ili{Kimatuumbi}, and repeated in \REF{ex:HamlaouiMakasso:23}. It is also compatible, among others, with the phrasing in \REF{ex:HamlaouiMakasso:24} \citep{Selkirk09, Selkirk11}, which better reflects the amount of embedding found in the syntactic structure. Downstep could be a correlate of the \isi{phonological phrase} that contains the entire VP.
+When it comes to Bàsà{á} sentences, the evidence provided by HTS and downstep is compatible with the phrasing suggested by Truckenbrodt for \ili{Kimatuumbi}, and repeated in \REF{ex:HamlaouiMakasso:23}. It is also compatible, among others, with the phrasing in \REF{ex:HamlaouiMakasso:24} \citep{Selkirk09, Selkirk11}, which better reflects the amount of embedding found in the syntactic structure. Downstep could be a correlate of the \isi{phonological phrase} that contains the entire VP.
 
 
 \ea{} [V NP NP] $\to$ ((V NP)$_{\phi}$ NP)$_{\phi}$\label{ex:HamlaouiMakasso:23}
@@ -354,7 +337,7 @@ When it comes to B\`as\`a\'a sentences, the evidence provided by HTS and downste
 \ea{} [V NP NP] $\to$ ((V (NP)$_{\phi}$)$_{\phi}$ (NP)$_{\phi}$)$_{\phi}$\label{ex:HamlaouiMakasso:24}
 \z
 
-The occurrence of downstep in sentences with ``complex'' complements as in sentences \REF{ex:HamlaouiMakasso:10} and \REF{ex:HamlaouiMakasso:11}, however suggests that in B\`as\`a\'a, the second complement forms a phrase of its own, as in \REF{ex:HamlaouiMakasso:24}. What we can see indeed is that downstep does not occur just anywhere within a complex VP. The fact that the two complements are distinguished by a downstep suggests that there is more prosodic cohesion within each of the complements than suggested solely by the evidence provided by HTS. Indeed, the phrasing provided by HTS suggests a flat structure within a VP such as the one in example \REF{ex:HamlaouiMakasso:11}. This is shown in \REF{ex:HamlaouiMakasso:25}. In this structure there does not seem to be a reason why downstep should not occur between any (or each) of the phonological phrases.
+The occurrence of downstep in sentences with ``complex'' complements as in sentences \REF{ex:HamlaouiMakasso:10} and \REF{ex:HamlaouiMakasso:11}, however suggests that in Bàsà{á}, the second complement forms a phrase of its own, as in \REF{ex:HamlaouiMakasso:24}. What we can see indeed is that downstep does not occur just anywhere within a complex VP. The fact that the two complements are distinguished by a downstep suggests that there is more prosodic cohesion within each of the complements than suggested solely by the evidence provided by HTS. Indeed, the phrasing provided by HTS suggests a flat structure within a VP such as the one in example \REF{ex:HamlaouiMakasso:11}. This is shown in \REF{ex:HamlaouiMakasso:25}. In this structure there does not seem to be a reason why downstep should not occur between any (or each) of the phonological phrases.
 
 
 \ea V N)$_{\phi}$ A)$_{\phi}$ N)$_{\phi}$ A)$_{\phi}$ \label{ex:HamlaouiMakasso:25}
@@ -366,23 +349,23 @@ Downstep however only targets the juncture between the two complements, which su
 \ea \textbf{(} V N)$_{\phi}$ A)$_{\phi}$ \textbf{)$_{\phi}$} \textbf{(} N)$_{\phi}$ A)$_{\phi}$ \textbf{)$_{\phi}$} [full bracketing:  ((V N)$_{\phi}$ (A)$_{\phi}$)$_{\phi}$ ((N)$_{\phi}$ (A)$_{\phi}$)$_{\phi}$]\label{ex:HamlaouiMakasso:26}
 \z
 
-What seems crucial here is that not all phonological phrases are distinguished. In \REF{ex:HamlaouiMakasso:26}, if noun and adjective are indeed contained within a single \isi{phonological phrase}, how come they do not show downstep just like the two complements of a verb? After all, they seem to be in a pretty comparable syntactic configuration (i.e. two lexical phrases contained in a larger lexical phrase).
+What seems crucial here is that not all phonological phrases are distinguished. In \REF{ex:HamlaouiMakasso:26}, if noun and adjective are indeed contained within a single \isi{phonological phrase}, how come they do not show downstep just like the two complements of a verb? After all, they seem to be in a  comparable syntactic configuration (i.e. two lexical phrases contained in a larger lexical phrase).
 
 We propose that this is because downstep only targets the phonological phrases that are immediately dominated by a \emph{maximal} \isi{phonological phrase}. This is in line with \citeauthor{ItoMester12}'s \citeyearpar{ItoMester12, ItoMester13} Prosodic Projection Theory, in which domain-sensitive processes can target different projection levels (i.e. (non-)maximal, (non)-minimal projections). Downstep would here constitute e\-vi\-dence for a certain type of nesting of phonological phrases.
 %\newpage
 Let us examine the \isi{prosodic structure} that obtains in some of the sentences in which downstep is found, and contrast them with some in which it isn't.  
 
 \begin{figure}
-% \begin{center}
-\caption{Simplified syntactic representation and corresponding recursive prosodic structure in a B\`as\`a\'a ditransitive sentence.\label{fig:HamlaouiMakasso:8}}
+% 
+\caption{Simplified syntactic representation and corresponding recursive prosodic structure in a Bàsà{á} ditransitive sentence\label{fig:HamlaouiMakasso:8}}
 % \includegraphics[width=12cm]{Set1}
 \begin{forest}
 [TP 
-  [NP] [T'
+  [NP] [T$'$
     [T] [VP1
-      [{<}NP{>}] [V1'
+      [{<}NP{>}] [V1$'$
 	[V1] [VP2
-	  [NP] [V2'
+	  [NP] [V2$'$
 	    [V2] [NP]
 	  ]
 	]
@@ -411,14 +394,14 @@ Let us examine the \isi{prosodic structure} that obtains in some of the sentence
 \figref{fig:HamlaouiMakasso:9} corresponds to a transitive sentence with a simple \isi{subject}, a complement consisting of a noun and an adjective, and a clause-level adjunct.
 
 \begin{figure}
-\caption{Simplified syntactic representation and corresponding recursive prosodic structure in a B\`as\`a\'a transitive sentence.\label{fig:HamlaouiMakasso:9}}
+\caption{Simplified syntactic representation and corresponding recursive prosodic structure in a Bàsà{á} transitive sentence.\label{fig:HamlaouiMakasso:9}}
 % % \includegraphics[width=12cm]{Set2}
 \begin{forest}
 [TP
   [TP [NP] 
-    [T' 
+    [T$'$ 
       [T] [VP
-	[{<}NP{>}] [V'
+	[{<}NP{>}] [V$'$
 	  [V] [NP
 	    [NP] [AP]
 	  ]
@@ -457,7 +440,7 @@ Let us examine the \isi{prosodic structure} that obtains in some of the sentence
 
 \subsection{How H tones are downstepped}
 
-As pointed out by one of our reviewers, the question arises whether B\`as\`a\'a has a rule of downstep insertion which specifies the contexts in which downstep takes place, or whether downstep is simply the ``elsewhere case''. In the latter view, B\`as\`a\'a would be underlyingly similar to KiShambaa, in that adjacent independent H tones are systematically distinguished and that this distinction is phonetically implemented as a downstep. Under this view, a process of H-\isi{tone} fusion \citep{Odden82, Bickmore00} would apply within multimorphemic words and non-maximal phonological phrases that would result in H \isi{tone} plateaus within these prosodic domains. As for the plateaus between maximal phonological phrases they could be the result of the application of an upstep process systematically taking place at the left edge of that domain (with the idea that downstep $+$ upstep $=$ plateau). Default downstepping of H tones would thus only be visible between the daughters of maximal phonological phrases as neither H-\isi{tone} fusion nor upstepping applies. This seems like an interesting approach, which according to our reviewer would be more in line with what has been described in other \ili{Bantu} languages. For the time being, it is however unclear to us whether this inflation in assumptions is generally more desirable to account for the grammar of B\`as\`a\'a than assuming that \isi{consecutive} tones of the same category are realized on the same level (albeit with a slight declination) and that a rule (categorically) distinguishes H tones in one particular prosodic configuration (potentially via the insertion of a L \isi{tone} at particular prosodic edges). It is also unclear to us whether the H-\isi{tone} fusion hypothesis makes any empirical predictions that could be tested in B\`as\`a\'a.
+As pointed out by one of our reviewers, the question arises whether Bàsà{á} has a rule of downstep insertion which specifies the contexts in which downstep takes place, or whether downstep is simply the ``elsewhere case''. In the latter view, Bàsà{á} would be underlyingly similar to KiShambaa, in that adjacent independent H tones are systematically distinguished and that this distinction is phonetically implemented as a downstep. Under this view, a process of H-\isi{tone} fusion \citep{Odden82, Bickmore00} would apply within multimorphemic words and non-maximal phonological phrases that would result in H \isi{tone} plateaus within these prosodic domains. As for the plateaus between maximal phonological phrases, they could be the result of the application of an upstep process systematically taking place at the left edge of that domain (with the idea that downstep $+$ upstep $=$ plateau). Default downstepping of H tones would thus only be visible between the daughters of maximal phonological phrases as neither H-\isi{tone} fusion nor upstepping applies. This seems like an interesting approach, which according to our reviewer would be more in line with what has been described in other \ili{Bantu} languages. For the time being, it is however unclear to us whether this inflation in assumptions is generally more desirable to account for the grammar of Bàsà{á} than assuming that \isi{consecutive} tones of the same category are realized on the same level (albeit with a slight declination) and that a rule (categorically) distinguishes H tones in one particular prosodic configuration (potentially via the insertion of a L \isi{tone} at particular prosodic edges). It is also unclear to us whether the H-\isi{tone} fusion hypothesis makes any empirical predictions that could be tested in Bàsà{á}.
 
 
 If an upstep occurs at certain prosodic edges (e.g. the left-edge of $\phi$max), it seems to us that this would be measurable at certain junctures (e.g. between the last downstepped H of a complement and the first H of a following clausal adjunct, for instance). It would also result in the absence (or reduction) of downdrift when H and L tones alternate. We know that this happens in \isi{left-dislocation} contexts where FTS is prevented from applying which, according to \citet{HamlaouiSzendroi16}, correspond to the left edge of the clause (the core $\iota$). We have informally checked sequences where H and L tones alternate within an intonation phrase (in particular (H-L)$_{\text{subject}}$ (H-L-X)$_{\text{verb}}$ sequences) and we have identified 5 cases out of 13 (in repetitions of 4 sentences) where there was a reset, and thus no downdrift at the left edge of the verb. Although this result does not strongly support the idea that downstep is the elsewhere case, it suggests that more phonetic investigations are needed to decide between the two approaches.
@@ -466,25 +449,26 @@ If an upstep occurs at certain prosodic edges (e.g. the left-edge of $\phi$max),
 %\newpage
 \section{Conclusion}\label{sec:HamlaouiMakasso:5} 
 
-In this paper, we have concentrated on the distinction of \isi{consecutive} H tones in absence of an intervening (floating) L \isi{tone} in B\`as\`a\'a, a Northwest \ili{Bantu} language spoken in Cameroon. Based on evidence from simple sentences, we have proposed that this particular type of downstep is indicative of recursive \isi{prosodic phrasing}. In particular, and in line with \posscitet{ItoMester13} Prosodic Projection Theory, we have proposed that in the present language, a downstep is inserted between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. Too little information on the syntactic representation of noun phrases is available at the time of writing to check our proposal against this type of data. 
+In this paper, we have concentrated on the distinction of \isi{consecutive} H tones in absence of an intervening (floating) L \isi{tone} in Bàsà{á}, a Northwest \ili{Bantu} language spoken in Cameroon. Based on evidence from simple sentences, we have proposed that this particular type of downstep is indicative of recursive \isi{prosodic phrasing}. In particular, and in line with \posscitet{ItoMester13} Prosodic Projection Theory, we have proposed that in the present language, a downstep is inserted between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. Too little information on the syntactic representation of noun phrases is available at the time of writing to check our proposal against this type of data. 
 %\newpage
-Before closing this paper, let us briefly mention that in sentences like \REF{ex:HamlaouiMakasso:27} and \REF{ex:HamlaouiMakasso:28}, where a downstep is found within each of the complements, the complements themselves fail to be distinguished. 
+Before closing this paper, let us briefly mention that in sentences like \REF{ex:HamlaouiMakasso:27} and \REF{ex:HamlaouiMakasso:28}, where a downstep is found within each of the complements, the complements themselves fail to be distinguished. Sentence \REF{ex:HamlaouiMakasso:27} is shown in \figref{fig:HamlaouiMakasso:9}. 
 
-\ea \gll m\`{\textepsilon} \`n-t\'i n\'un\'u \textdownstep s\'o\textgamma\textbf{\'o}l \textbf{\'i}n\'i \textdownstep kwémbé.\\
+\ea \gll m\`ɛ ǹ-tí núnú {\textdownstep}sóγ\textbf{ó}l \textbf{í}ní {\textdownstep}kwémbé.\\
 I \textsc{pst1}-give 1.\textsc{dem} 1.grandfather 7.\textsc{dem} 7.box\\
 \glt `I gave this grandfather this box.'\label{ex:HamlaouiMakasso:27}
 \z
 
-\ea \gll m\`{\textepsilon} \`n-t\'i n\textdyoghlig\'{\textepsilon} \textdownstep s\'o\textgamma\'ol n\textdyoghlig\'{\textepsilon} \textdownstep s\'o\textgamma\'ol?\\
+\ea \gll m\`ɛ ǹ-tí nʤ\'ɛ {\textdownstep}sóγól nʤ\'ɛ {\textdownstep}sóγól?\\
 I \textsc{pst1}-give which 1.grandfather which 1.grandfather\\
 \glt `Which grandfather did I give to which grandfather?'\label{ex:HamlaouiMakasso:28} 
 \z
 
-\begin{figure}[ht!]
-\begin{center}
+\begin{figure}
+
 \caption{Downstep neutralization in sentence \REF{ex:HamlaouiMakasso:27}}
-\includegraphics[width=10cm]{NeutralizationSept16B}
-\end{center}
+\label{fig:HamlaouiMakasso:9}
+\includegraphics[width=10cm]{figures/NeutralizationSept16B}
+
 \end{figure}
 
 \noindent This might suggest that the number of possible downsteps is maybe not unlimited and that there are cases of neutralizations. We leave this issue open for future research.
