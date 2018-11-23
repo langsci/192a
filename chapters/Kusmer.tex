@@ -1,40 +1,26 @@
-\documentclass[output=paper 
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-
+\documentclass[output=paper,modfonts,nonflat,draftmode]{langsci/langscibook}  
 \title{Prosody \& the conjoint\slash disjoint alternation in {T}shivenḓa} 
-\author{%
-	Leland Paul Kusmer\affiliation{University of Massachusetts at Amherst}
-}
-% \chapterDOI{} %will be filled in at production
+\author{Leland Paul Kusmer\affiliation{University of Massachusetts at Amherst}}
+ 
 
-% \epigram{}
+\abstract{Tshivenḓa (Guthrie S21) shares with other Southern Bantu languages a distinctive alternation in the form of the verb, termed the conjoint\slash disjoint alternation. I will present data from original fieldwork showing that, in contrast to other related languages, the Tshivenḓa conjoint and disjoint forms are not in complementary distribution by syntactic context, and instead show a distinctive three-way split in acceptability. I will also show that the same three-way split obtains in the frequency of utterance-internal penultimate lengthening. I discuss two possible analyses of this correlation, one in which the disjoint is a purely prosodic phenomenon and one in which the correlation is due to the influence of some third factor such as information structure. }
 
-\abstract{Tshivenḓa (Guthrie S21) shares with other Southern Bantu languages a
-distinctive alternation in the form of the verb, termed the conjoint\slash disjoint
-alternation. I will present data from original fieldwork showing that, in
-contrast to other related languages, the Tshivenḓa conjoint and disjoint forms
-are not in complementary distribution by syntactic context, and instead show a
-distinctive three-way split in acceptability. I will also show that the same
-three-way split obtains in the frequency of utterance-internal penultimate
-lengthening. I discuss two possible analyses of this correlation, one in which
-the disjoint is a purely prosodic phenomenon and one in which the correlation
-is due to the influence of some third factor such as information structure.
-}
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[12]
+}{}
 
-\maketitle 
+
 \begin{document}
+\maketitle 
 
 \section{Introduction}\label{sec:kusmer:intro}
 
 \ili{Tshivenḓa}\footnote{Guthrie S21; \textasciitilde 1.3m speakers in South
 Africa (Limpopo Province) \& Zimbabwe.} shares with other Southern \ili{Bantu}
 	languages a distinctive morphological alternation in the form of the
-	present tense prefix, commonly termed the \textbf{\isi{conjoint}\slash \isi{disjoint}
+	present tense prefix, commonly termed the \textsc{\isi{conjoint}\slash \isi{disjoint}
 	alternation}. As shown below, the simple present is expressed either by the
 	prefix /a-/ (termed the \isi{disjoint} form) or /\o-/ (termed the \isi{conjoint}).
 
@@ -52,14 +38,14 @@ Africa (Limpopo Province) \& Zimbabwe.} shares with other Southern \ili{Bantu}
 examples are from my own fieldwork on \ili{Tshivenḓa}.}\\
 
 	\ea\gll ndi (a) ḽá ṋemeṋeme\\
-		 1sg \textsc{dsj} eat termite\\
+		 1\textsc{sg} \textsc{dsj} eat termite\\
 		\glt `I eat termite.'
 	
 
 \columnbreak
 {~}
 	\ex\gll ndi *(a) ḽá\\
-		 1s \textsc{dsj} eat\\
+		 1\textsc{sg} \textsc{dsj} eat\\
 		 \glt`I eat.'
 	\z
 
@@ -288,23 +274,19 @@ variety of sentences. The design of the survey was as follows:
 \noindent
 The conditions varied based on what material followed the verb:
 
-\begin{enumerate}
-\item \textbf{final} -- the verb was sentence final.
-\item \textbf{temporal} -- the verb was followed by a \isi{temporal adverb} (`today',
-	`now').
-\item \textbf{locative} -- followed by a locative adverb (`at home', `in the
-forest').
-\item \textbf{manner} -- followed by a manner adverb (`well', `badly').
-\item \textbf{fhedzi} -- followed by the focus-sensitive operator \textit{fhedzi}
-(`only').
-\item \textbf{secondary} -- followed by a \isi{secondary predicate} (`go to the
-tree').
-\item \textbf{object} -- transitive verb + \textit{in situ} object.
-\item \textbf{dislocated} -- transitive verb + right-dislocated object.
-\end{enumerate}
+\begin{description}
+\item[\textbf{final}] the verb was sentence final.
+\item[\textbf{temporal}] the verb was followed by a \isi{temporal adverb} (`today',now').
+\item[\textbf{locative}] followed by a locative adverb (`at home', `in the forest').
+\item[\textbf{manner}] followed by a manner adverb (`well', `badly').
+\item[\textbf{fhedzi}] followed by the focus-sensitive operator \textit{fhedzi} (`only').
+\item[\textbf{secondary}] followed by a \isi{secondary predicate} (`go to the tree').
+\item[\textbf{object}] transitive verb + in situ object.
+\item[\textbf{dislocated}] transitive verb + right-dislocated object.
+\end{description}
 
 A few of these conditions merit some further explanation. First, the
-\textbf{dislocated} condition included sentences in which the \isi{direct object} was
+\textsc{dislocated} condition included sentences in which the \isi{direct object} was
 coreferenced by an \isi{object marker} on the verb. In many \ili{Bantu} languages,
 including \ili{Tshivenḓa}, objects coreferenced in this manner are generally not
 in their base position inside the vP \citep{Buell2005}. For instance, as shown in
@@ -322,14 +304,13 @@ adverb; this is not possible with a non-coreferenced object.
 \ea \gll Tshiṋoni tshi a dzhia (*zwíno) thanga\\
 		  7.bird  \textsc{s.7} \textsc{dsj} take now 9.seed\\
 		\glt  `The bird takes (*now) a seed.'
-		\z
-	\ea \gll Tshiṋoni tshi a í dzhi zwíno thanga\\
+  \ex \gll Tshiṋoni tshi a í dzhi zwíno thanga\\
 		  7.bird  \textsc{s.7} \textsc{dsj} \textsc{9.obj} take now 9.seed\\
 	 \glt `The bird takes it now, the seed.'
 	 \z
  \z
 
-The \textbf{secondary} block included sentences in which the verb was followed
+The \textsc{secondary} block included sentences in which the verb was followed
 by a clausal adjunct marked with the dependent prefix \textit{tshi-}
 (\citealt{Warmelo1989}):
 
@@ -345,7 +326,7 @@ by a clausal adjunct marked with the dependent prefix \textit{tshi-}
  \z
 
 
-Finally, in the \textbf{fhedzi} condition the verb was followed by the
+Finally, in the \textsc{fhedzi} condition the verb was followed by the
 focus-sensitive operator \textit{fhedzi}, which may be roughly glossed as
 `only'. The intention was for this to narrowly \isi{scope} over the VP. However, the
 results show that speakers mostly rejected these sentences (regardless of which
@@ -459,11 +440,11 @@ of intonational phrases:
 	\ea \gll ndó mbíndímédza \textbf{ludambwa:na}\\
 	  1sg.\textsc{pst} destroy 11.dam\\
 	  \glt `I destroyed the dam.'
-	  \z
-	  \ea \gll ndó mbíndímédza ludambwana \textbf{namú:si}\\
-		   1sg.\textsc{pst} destroy 11.dam today\\
-		  \glt `I destroyed the dam today.'
-		  \z
+	  \ex
+	  \gll ndó mbíndímédza ludambwana \textbf{namú:si}\\
+	  1sg.\textsc{pst} destroy 11.dam today\\
+	\glt `I destroyed the dam today.'
+		\z
 \z
 
 Penultimate lengthening is common across the \ili{Bantu} family
@@ -510,10 +491,10 @@ and \isi{prosodic structure} formation.
 
 I conducted a production study to determine the distribution of
 sentence-in\-ter\-nal penultimate lengthening. The study comprised four syntactic
-contexts which varied in what material followed the verb: \textbf{\textit{in
+contexts which varied in what material followed the verb: \textsc{\textit{in
 situ} direct objects}, \textbf{dislocated direct objects}, intransitive verbs
-followed by \textbf{adverbs} (balanced across temporal, manner, and locative
-adverbials), and \textbf{secondary predicate} clauses. Several other syntactic
+followed by \textsc{adverbs} (balanced across temporal, manner, and locative
+adverbials), and \textsc{secondary predicate} clauses. Several other syntactic
 contexts were also included and acted as controls for this study.  Within each
 syntactic condition, sentences were balanced for other prosodic factors such as
 the length and lexical \isi{tone} on the verb. 12 native speakers of \ili{Tshivenḓa} were
@@ -597,14 +578,14 @@ the verb within each syntactic condition. The results are shown in
 
 Strikingly, the distributions also show a three-way split: Utterance-internal
 lengthening is common when only a dislocated object follows the verb; when an
-\textit{in situ} object or an adverb follows the verb, lengthening is less
+ {in situ} object or an adverb follows the verb, lengthening is less
 common; and when only a \isi{secondary predicate} follows the verb, lengthening is
 vanishingly rare.\footnote{All but one of the \isi{secondary predicate} cases showing
 internal lengthening come from the same speaker, who shows many signs of list
 intonation in general.} Notably, the syntactic conditions on this distribution
 are the same as for the \isi{conjoint}\slash \isi{disjoint} alternation: That is, verbs
 followed by dislocated objects pattern the same as sentence-final verbs;
-\textit{in situ} objects and adverbs pattern together, and secondary predicates
+ {in situ} objects and adverbs pattern together, and secondary predicates
 pattern a third way.\footnote{Such a correlation between prosody and \isi{disjoint}
 marking has been noted before; see, for instance: \cite{vanderSpuy1993,
 Buell2005, chengdowning2012} on \ili{Zulu}; \cite{Devos2008} on \ili{Makwe}. I'm grateful
@@ -638,7 +619,7 @@ frequency of lengthening. This first property can be captured by proposing that
 that, even in contexts where the verb is always final in an intonational
 phrase, the lengthening will not always be present. This second property can be
 captured by specifying that these contexts are not actually uniform, but that
-differences in the interpretation of \textit{in situ} objects and adverbs
+differences in the interpretation of  {in situ} objects and adverbs
 changes whether they are prosodically grouped with the verb or not. Information
 structure (e.g. \isi{focus} or givenness) is the most likely factor at play; since the
 present study did not control \isi{information structure}, these differences might
@@ -681,7 +662,7 @@ I propose that penultimate lengthening is controlled by two rules:
 Consider the dislocated object case. I propose that these sentences have a
 \isi{prosodic structure} like the following:\footnote{Space does not permit me to
 include a full analysis of how the prosodic structures here are generated, but I
-assume a constraint-based analysis along the lines of \textsc{Match} Theory
+assume a constraint-based analysis along the lines of  ``{Match} Theory''
 \citep{Selkirk11}.}
 
 
@@ -726,7 +707,7 @@ have a \isi{prosodic structure} like the following:
 	\item[$\rightarrow$] In my data: The verb is lengthened <5\% of the time.
 \end{itemize}
 
-Finally, consider the other cases -- adverbs and \textit{in situ} objects.
+Finally, consider the other cases -- adverbs and  {in situ} objects.
 Here, I will propose that these sentences may be assigned on of two possible
 structures. While I will remain neutral on what conditions each of these
 structures, information structural factors such as \isi{focus} or givenness seems
@@ -775,7 +756,7 @@ relationship between intonational phrases, lengthening, and \isi{disjoint} marki
 obtains:
 
 \begin{table}
-	\caption{Summary of prosody \& verb form relationship}
+	\caption{Summary of prosody and verb form relationship}
 	\label{tab:kusmer:summary_ip_disj}
 \begin{tabular}{llll}
 \lsptoprule
@@ -783,7 +764,7 @@ obtains:
 	\textsc{Form?}\\
 	\midrule
 {Dislocated obj}       & Always    & Frequently & Disjoint\\
-{Adverb, \textit{in situ} obj} & Sometimes & Sometimes  & Variable\\
+{Adverb, in situ obj} & Sometimes & Sometimes  & Variable\\
 {Secondary predicate}     & Never     & Rarely     & Conjoint\\
 \lspbottomrule
 \end{tabular}
@@ -791,7 +772,7 @@ obtains:
 
 It seems desirable to explain why \isi{disjoint} marking should track the prosodic
 structure so closely. There are at least two possible analyses compatible with
-the data presented here. The first is what I will term the \textbf{prosodic
+the data presented here. The first is what I will term the \textsc{prosodic
 disjoint} analysis, in which \isi{disjoint} marking is taken to be a direct
 consequence of the \isi{prosodic structure}. More specifically, \ili{Tshivenḓa} \isi{disjoint}
 marking would obey the following generalization:
@@ -864,7 +845,7 @@ other overt tense morphology is present. More work will be required to
 determine if this specific analysis is the correct one.
 
 The structural \isi{disjoint analysis}, by contrast, requires that we understand
-dislocated objects, some \textit{in situ} objects, and some adverbs to form a
+dislocated objects, some in situ objects, and some adverbs to form a
 natural class, in opposition to secondary predicates. As noted above, the most
 likely factor at play here is \isi{information structure}; furthermore, in order to
 explain the prosodic facts, we need this factor regardless of which analysis of
