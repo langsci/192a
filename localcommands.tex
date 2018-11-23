@@ -26,7 +26,7 @@
 \newcommand{\deva}{\textipa{\r*a}}
 \renewcommand{\N}{\textipa{N}}
 \newcommand{\Z}{\textipa{Z}}
-
+% 
 
 %commands for Diercks paper below
 \newcommand{\circled}[1]{\begin{tikzpicture}[baseline=(word.base)]
@@ -48,18 +48,19 @@
     [\textipa{#3}] & 
     `#4' \\ 
 }
-%\newcommand{\tipa}[1]{\textipa{#1}}
 %\newcounter{tableauxcounter}
 \newcommand{\tabhead}[2]{
-    \captionsetup{labelformat=empty}
-    \stepcounter{tableauxcounter}
-    \addtocounter{table}{-1}
-	\centering
-	\caption{Tableau \thetableauxcounter: #1}
+%     \captionsetup{labelformat=empty}
+%     \stepcounter{tableauxcounter}
+%     \addtocounter{table}{-1}
+% 	\centering
+% 	\caption{Tableau \thetableauxcounter: #1}
+	\caption{#1}
 	\label{#2}
 }
+\newcommand{\candref}[2]{(\ref{#1}#2)}
 % tableaux
-\newcommand{\inp}[1]{\multicolumn{2}{|l||}{\tipa{#1}}}
+\newcommand{\inp}[1]{\multicolumn{2}{|l||}{{#1}}}
 \newcommand{\inpno}[1]{\multicolumn{2}{|l||}{#1}}
 \newcommand{\g}{\cellcolor{lightgray}}
 \newcommand{\hanl}{\HandLeft}

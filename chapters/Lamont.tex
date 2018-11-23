@@ -1,4 +1,4 @@
-\documentclass[output=paper,modfonts,nonflat,hidelinks]{langsci/langscibook}  
+\documentclass[output=paper,modfonts,nonflat,draftmode]{langsci/langscibook}  
 
 \author{Andrew Lamont\affiliation{University of Massachusetts Amherst}}
 \title{Obstacles for gradual place assimilation}  
@@ -18,23 +18,21 @@
 
 \maketitle
 
-\section{Introduction}
-\todo{tipa   1 schwa P ! }
+\section{Introduction} 
 Harmonic Serialism (HS) is a serial version of Optimality Theory (OT) \citep{princesmolensky1993,mccarthy2000}.\footnote{See \citet{mccarthy2016} for a recent overview.} HS shares the basic framework of OT: a function \textsc{Gen} takes an input and produces a set of candidates. The set of candidates is fed into a function \textsc{Eval}, which returns the optimal candidate with respect to the ranked set of constraints, \textsc{Con}.
 
 The main difference between HS and Parallel OT is the function \textsc{Gen}. In Parallel OT, \textsc{Gen} is unrestricted, producing an infinite set of candidates that can differ from the input in unlimited ways. In HS, \textsc{Gen} is restricted to producing a set of candidates that differ only minimally from the input. Given a finite set of operations, the candidate set includes the fully faithful candidate and every candidate that can be derived from the input via the application of a single operation. This property of \textsc{Gen} is called \textit{gradualness}.
 
 Gradualness means that derivations involving the application of more than one operation take multiple steps in HS. This is modeled by looping between \textsc{Gen} and \textsc{Eval}. An initial input \textit{in$_0$} is fed into \textsc{Gen}, and \textsc{Eval} selects the optimal candidate \textit{out$_0$}. If candidate \textit{out$_0$} differs from its input \textit{in$_0$}, it serves as the input to the next step, \textit{in$_1$} = \textit{out$_0$}, and the process repeats. The derivation converges once the optimal candidate does not differ from the most recent input: \textit{out$_n$} = \textit{in$_n$}. That final optimal candidate is the output.
 
-The effects of gradualness are clearly seen in iterative processes like feature spreading \citep{mccarthy2009}. For example, in \ili{Copperbelt Bemba} (\ili{Bantu}), if a word does not end in a high toned mora, the rightmost high \isi{tone} will spread to the end of the word \citep{kulabickmore2015}, e.g. /\textipa{bá-ka-fik-a}/ $>$ [\textipa{bá-ká-fík-á}] `they will arrive'. In Parallel OT, the output \textit{\textipa{bá-ká-fík-á}} is a member of the candidate set produced from the input /\textipa{bá-ka-fik-a}/ by \textsc{Gen}. In HS, \textsc{Gen} is limited to spreading the high \isi{tone} once, and this derivation takes three steps: /\textipa{bá-ka-fik-a}/ $>$ \textipa{bá-ká-fik-a} $>$ \textipa{bá-ká-fík-a} $>$ [\textipa{bá-ká-fík-á}]. 
+The effects of gradualness are clearly seen in iterative processes like feature spreading \citep{mccarthy2009}. For example, in \ili{Copperbelt Bemba} (\ili{Bantu}), if a word does not end in a high toned mora, the rightmost high \isi{tone} will spread to the end of the word \citep{kulabickmore2015}, e.g. /{bá-ka-fik-a}/ $>$ [{bá-ká-fík-á}] `they will arrive'. In Parallel OT, the output [{bá-ká-fík-á}] is a member of the candidate set produced from the input /{bá-ka-fik-a}/ by \textsc{Gen}. In HS, \textsc{Gen} is limited to spreading the high \isi{tone} once, and this derivation takes three steps: /{bá-ka-fik-a}/ $>$ {bá-ká-fik-a} $>$ {bá-ká-fík-a} $>$ [{bá-ká-fík-á}]. 
 
-This example also speaks to the trade-off between \textsc{Gen} and \textsc{Con} in HS. Both the Parallel OT and HS analyses require a motivating \isi{markedness constraint} against final toneless moras \citep{kulabickmore2015}. A simple constraint against toneless final moras is sufficient for a Parallel OT analysis; candidates like \textit{\textipa{bá-ká-fik-a}} are not optimal because they contain final toneless moras. In an HS analysis, forms like \textit{\textipa{bá-ká-fik-a}} are optimal candidates at intermediate steps and this \isi{markedness constraint} cannot motivate gradual spreading. Instead, an \isi{alignment constraint} is necessary \citep{mccarthyprince1993}, assigning violations in proportion to the number of intervening moras between the rightmost high \isi{tone} and the end of the word. The optimal candidate at each step of the derivation improves on this constraint by spreading the high \isi{tone} further until the derivation converges.
+This example also speaks to the trade-off between \textsc{Gen} and \textsc{Con} in HS. Both the Parallel OT and HS analyses require a motivating \isi{markedness constraint} against final toneless moras \citep{kulabickmore2015}. A simple constraint against toneless final moras is sufficient for a Parallel OT analysis; candidates like [{{bá-ká-fik-a}] are not optimal because they contain final toneless moras. In an HS analysis, forms like [{{bá-ká-fik-a}}] are optimal candidates at intermediate steps and this \isi{markedness constraint} cannot motivate gradual spreading. Instead, an \isi{alignment constraint} is necessary \citep{mccarthyprince1993}, assigning violations in proportion to the number of intervening moras between the rightmost high \isi{tone} and the end of the word. The optimal candidate at each step of the derivation improves on this constraint by spreading the high \isi{tone} further until the derivation converges.
 
-Derivational steps in HS exhibit \textit{harmonic improvement}, and can be modeled in a \isi{harmonic improvement} tableau as in (\ref{harmonicimprovement:copperbeltbemba}) below. (\ref{harmonicimprovement:copperbeltbemba}) shows that the output at each step of the derivation better fits the constraint ranking than the input at that step. Successive optima improve gradually on the gradient \isi{alignment constraint}, \textsc{Align-R(Word, H)}, which penalizes the distance between the \isi{right edge} of the word and the rightmost high \isi{tone}. Violations of the faithfulness constraint against spreading a high \isi{tone}, \textsc{NoSpread}, are determined relative to the input of the current step, not the input to the entire derivation. Hence, each successive output only violates \textsc{NoSpread} once. Every step of the derivation must show \isi{harmonic improvement}.
+Derivational steps in HS exhibit \textit{harmonic improvement}, and can be modeled in a \isi{harmonic improvement} tableau (\tabref{harmonicimprovement:copperbeltbemba}). \tabref{harmonicimprovement:copperbeltbemba} shows that the output at each step of the derivation better satisfies the constraint ranking than the input at that step. Successive optima improve gradually on the gradient \isi{alignment constraint}, \textsc{Align-R(Word, H)}, which penalizes the distance between the \isi{right edge} of the word and the rightmost high \isi{tone}. Violations of the faithfulness constraint against spreading a high \isi{tone}, \textsc{NoSpread}, are determined relative to the input of the current step, not the input to the entire derivation. Hence, each successive output only violates \textsc{NoSpread} once. Every step of the derivation must show \isi{harmonic improvement}.
 
 \begin{table}
-	\caption{Harmonic improvement in Copperbelt Bemba}
-	\label{harmonicimprovement:copperbeltbemba}
+	\tabhead{Harmonic improvement in Copperbelt Bemba}{harmonicimprovement:copperbeltbemba}
     \begin{tabular}{|l||c|c|} \hline
     /{bá-ka-fik-a}/ &
     	\textsc{Align-R(Word, H)} &
@@ -42,18 +40,19 @@ Derivational steps in HS exhibit \textit{harmonic improvement}, and can be model
     \hline \hline
 	a. {bá-ka-fik-a}         & 3 &   \\ \hline
     b. {bá-ká-fik-a}       & 2 & 1 \\ \hline
-    c. \textipa{bá-ká-fík-a}     & 1 & 1 \\ \hline
+    c. {bá-ká-fík-a}     & 1 & 1 \\ \hline
     d. [{bá-ká-fík-á}] &   & 1 \\ \hline
     \end{tabular}
 \end{table}
 
+\newpage 
 In Parallel OT, the constraint set \textsc{Con} defines the predicted typology. In HS, the predicted typology results from the interaction between \textsc{Con} and \textsc{Gen}. Imposing limits on \textsc{Gen} restricts the typological predictions. Determining the operations available to \textsc{Gen} is an important research question in HS (see the papers in \citet{mccarthypater2016} for perspectives on a broad range of topics).
 
 This paper compares two approaches to place assimilation in HS, focusing on \isi{progressive place assimilation}: a two-step derivation with delinking and then spreading \citep{mccarthy2007,mccarthy2008}, and a one-step derivation where place features are directly changed, ultimately arguing that the one-step derivation better fits the attested typology. These two approaches to place assimilation are laid out in \sectref{sec:lamont:2}. \sectref{sec:lamont:3} tests the predictions of these approaches against cases of \isi{progressive place assimilation} cross-linguistically. \sectref{sec:lamont:4} concludes.
 
 \section{Place assimilation in Harmonic Serialism}\label{sec:lamont:2}
 
-Place assimilation is a common process cross-linguistically wherein a consonant takes on the place features of an adjacent consonant. Assimilation is overwhelmingly regressive, i.e. in a cluster C$_1$C$_2$, C$_1$ is much more likely to assimilate to C$_2$ than C$_2$ is to assimilate to C$_1$ \citep{webb1982,jun1995}. A robust example of \isi{regressive assimilation} is found in Diola-Fogny (Niger-Congo) \citep{sapir1965}. \tabref{diolafogny} gives examples of the four phonemic nasals in the language taking on the place features of a following consonant in coda-onset clusters, e.g. /{ni-gam-gam}/ $>$ [\textipa{ni.gaŋ.gam}] `I judge' (\ref{diolafogny}a).\footnote{Tones are omitted from data throughout this paper.}
+Place assimilation is a common process cross-linguistically wherein a consonant takes on the place features of an adjacent consonant. Assimilation is overwhelmingly regressive, i.e. in a cluster C$_1$C$_2$, C$_1$ is much more likely to assimilate to C$_2$ than C$_2$ is to assimilate to C$_1$ \citep{webb1982,jun1995}. A robust example of \isi{regressive assimilation} is found in Diola-Fogny (Niger-Congo) \citep{sapir1965}. \tabref{diolafogny} gives examples of the four phonemic nasals in the language taking on the place features of a following consonant in coda-onset clusters, e.g. /{ni-gam-gam}/ $>$ [{ni.gaŋ.gam}] `I judge' (\tabref{diolafogny}a).\footnote{Tones are omitted from data throughout this paper.}
  
 \begin{table}
 \caption{Regressive place assimilation in Diola Fogny}
@@ -70,7 +69,7 @@ Place assimilation is a common process cross-linguistically wherein a consonant 
  \end{tabular}
 \end{table}
 
-Progressive place assimilation, i.e. where C$_2$ assimilates to C$_1$ in a C$_1$C$_2$ cluster, is often restricted to certain environments such as root-enclitic junctures \citep{lamont2015}. An example is found in \ili{Masa} (Chadic) \citep{antonino1999,shryock1997}. \tabref{masa} gives examples of the \isi{masculine} enclitic /-na/ and the \isi{feminine} enclitic /-da/. Attached to roots ending with vowels, the enclitics surface faithfully with \isi{coronal place}, e.g. /{tuu-na}/ $>$ [{tuu.na}] `body-\textsc{masc}' (\ref{masa}a). Attached to roots ending with obstruents or nasals, the enclitics surface with the place features of the root-final consonant, e.g. /\textipa{vok-na}/ $>$ [\textipa{vok.ŋa}] `front-\textsc{masc}' (\ref{masa}g).
+Progressive place assimilation, i.e. where C$_2$ assimilates to C$_1$ in a C$_1$C$_2$ cluster, is often restricted to certain environments such as root-enclitic junctures \citep{lamont2015}. An example is found in \ili{Masa} (Chadic) \citep{antonino1999,shryock1997}. \tabref{masa} gives examples of the \isi{masculine} enclitic /-na/ and the \isi{feminine} enclitic /-da/. Attached to roots ending with vowels, the enclitics surface faithfully with \isi{coronal place}, e.g. /{tuu-na}/ $>$ [{tuu.na}] `body-\textsc{masc}' (\tabref{masa}a). Attached to roots ending with obstruents or nasals, the enclitics surface with the place features of the root-final consonant, e.g. /{vok-na}/ $>$ [{vok.ŋa}] `front-\textsc{masc}' (\tabref{masa}g).
 
 \begin{table}
 \caption{Progressive place assimilation in Masa}
@@ -99,10 +98,10 @@ Progressive place assimilation, i.e. where C$_2$ assimilates to C$_1$ in a C$_1$
 \end{table}
 
 \subsection{Place assimilation as a two-step process}
+ 
+\citet{mccarthy2007,mccarthy2008} proposes an HS analysis of place assimilation in which the targeted consonant first loses its place features and then place from an adjacent consonant spreads onto the target. Because only one operation can apply at a time in HS, this gives two derivational steps: debuccalization and spreading. This two-step process is referred to as \textit{\isi{gradual place assimilation}} in this paper exactly because it takes multiple steps in the derivation.
 
-\citet{mccarthy2007,mccarthy2008} proposes an HS analysis of place assimilation in which the targeted consonant first loses its place features and then place from an adjacent consonant spreads onto the target. Because only one operation can apply at a time in HS, this gives two derivational steps: debuccalization and spreading. This two-step process is referred to as \isi{gradual place assimilation} in this paper exactly because it takes multiple steps in the derivation.
-
-In \isi{regressive assimilation}, debuccalization, the first step, satisfies the Coda Condition (\textsc{CodaCond}), which is violated by place features that are not associated with an onset. This constraint motivates deleting the place features from the coda consonant, which violates \textsc{Max(Place)}. Tableau~1 shows the first step of /\textipa{ni-gam-gam}/ $>$ [\textipa{ni.gaŋ.gam}] `I judge' (\ref{diolafogny}a). Candidates (1a) and (1b) violate \textsc{CodaCond} because the labial place associated with the medial nasal is not associated with an onset; the final-consonant is taken to be exceptional. A place node deletes in (1b) and (1c), as indicated with the capital letters \textit{H} and \textit{N}, for debuccalized oral and nasal consonants, respectively. (1c) is optimal because it does not violate \textsc{CodaCond}. This tableau demonstrates that only the coda can be targeted for debuccalization; deleting the place features from the onset does not improve on \textsc{CodaCond}.
+In \isi{regressive assimilation}, debuccalization, the first step, satisfies the Coda Condition (\textsc{CodaCond}), which is violated by place features that are not associated with an onset. This constraint motivates deleting the place features from the coda consonant, which violates \textsc{Max(Place)}. \tabref{diola:one} shows the first step of /{ni-gam-gam}/ $>$ [{ni.gaŋ.gam}] `I judge' (\tabref{diolafogny}a). Candidates (\ref{diolafogny}a) and (\ref{diolafogny}b) violate \textsc{CodaCond} because the labial place associated with the medial nasal is not associated with an onset; the final-consonant is taken to be exceptional. A place node deletes in \candref{1}{b} and \candref{1}{c}, as indicated with the capital letters \textit{H} and \textit{N}, for debuccalized oral and nasal consonants, respectively. (\ref{diolafogny}c) is optimal because it does not violate \textsc{CodaCond}. This tableau demonstrates that only the coda can be targeted for debuccalization; deleting the place features from the onset does not improve on \textsc{CodaCond}.
 
 \begin{table}
 	\tabhead{Regressive place assimilation: Step 1}
@@ -112,60 +111,60 @@ In \isi{regressive assimilation}, debuccalization, the first step, satisfies the
     	\textsc{CodaCond} &
         \textsc{Max(Pl)} \\
     \hline \hline
-	      & a. \textipa{ni.gam.gam}        & W & L  \\ \hline
-          & b. \textipa{ni.gam.}H\textipa{am} & W & 1  \\ \hline
-    $\to$ & c. \textipa{ni.ga}N\textipa{.gam} &   & 1  \\ \hline
+	      & a. {ni.gam.gam}        & W & L  \\ \hline
+          & b. {ni.gam.}H{am} & W & 1  \\ \hline
+    $\to$ & c. {ni.ga}N{.gam} &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
-The second step satisfies a \isi{markedness constraint} against placeless segments, \textsc{HavePlace}. This constraint motivates spreading the place features from an adjacent consonant onto the placeless segment, which violates \textsc{NoLink(Place)}. Tableau~2 shows this step, continuing the derivation from Tableau~1; the input to this step is the output of the previous step \textit{\textipa{ni.ga}N\textipa{.gam}}. Candidate (2a), the output of Tableau~1, contains a placeless nasal and violates \textsc{HavePlace}. Candidate (2b) is optimal because it does not contain any placeless segments. This candidate will be the input to a third step, where the derivation converges (not shown here).
+The second step satisfies a \isi{markedness constraint} against placeless segments, \textsc{HavePlace}. This constraint motivates spreading the place features from an adjacent consonant onto the placeless segment, which violates \textsc{NoLink(Place)}. \tabref{tableau2} shows this step, continuing the derivation from \tabref{tableau1}; the input to this step is the output of the previous step [{{ni.ga}N{.gam}]. Candidate \candref{2}{a}, the output of \tabref{tableau1}, contains a placeless nasal and violates \textsc{HavePlace}. Candidate \candref{2}{b} is optimal because it does not contain any placeless segments. This candidate will be the input to a third step, where the derivation converges (not shown here).
 
 \begin{table}
 	\tabhead{Regressive place assimilation: Step 2}
     		{diola:two}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{\textipa{ni.ga}N\textipa{.gam}} &
+    \inpno{{ni.ga}N{.gam}} &
     	\textsc{HavePlace} &
         \textsc{NoLink(Pl)} \\
     \hline \hline
-	      & a. \textipa{ni.ga}N\textipa{.gam}  & W & L  \\ \hline
-    $\to$ & b. \textipa{ni.gaŋ.gam}         &   & 1  \\ \hline
+	      & a. {ni.ga}N{.gam}  & W & L  \\ \hline
+    $\to$ & b. {ni.gaŋ.gam}         &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
-The output of each step of the derivation is shown in the \isi{harmonic improvement} tableau (4) along with the full constraint ranking. As this tableau makes clear, each subsequent optimum increases in harmony until the convergent optimum is reached (\ref{harmonicimprovement:diolafogny}c). This candidate does not violate either \isi{markedness constraint} and therefore does not motivate further derivational steps. As the square brackets indicate, it is the ultimate output.
+The output of each step of the derivation is shown in the \isi{harmonic improvement} \tabref{tableau4} along with the full constraint ranking. As this tableau makes clear, each subsequent optimum increases in harmony until the convergent optimum is reached (\tabref{harmonicimprovement:diolafogny}c). This candidate does not violate either \isi{markedness constraint} and therefore does not motivate further derivational steps. As the square brackets indicate, it is the ultimate output.
 
 \begin{table}
 	\caption{Harmonic improvement in Diola Fogny}
 	\label{harmonicimprovement:diolafogny}
     \begin{tabular}{|l||c|c:c|c|} \hline
-    /\textipa{ni-gam-gam}/ &
+    /{ni-gam-gam}/ &
     	\textsc{CodaCond} &
         \textsc{HavePlace} &
         \textsc{Max(Pl)} & 
         \textsc{NoLink(Pl)}\\
     \hline \hline
-	a. \textipa{ni.gam.gam}            & 1 &   &   &   \\ \hline
-    b. \textipa{ni.ga}N\textipa{.gam}     &   & 1 & 1 &   \\ \hline
-    c. [\textipa{ni.gaŋ.gam}]          &   &   &   & 1 \\ \hline
+	a. {ni.gam.gam}            & 1 &   &   &   \\ \hline
+    b. {ni.ga}N{.gam}     &   & 1 & 1 &   \\ \hline
+    c. [{ni.gaŋ.gam}]          &   &   &   & 1 \\ \hline
     \end{tabular}
 \end{table}
 
 Progressive place assimilation, like that in \ili{Masa}, cannot be motivated by \textsc{CodaCond}, as this constraint is only satisfied by debuccalizing a coda consonant. Instead, \citet[297]{mccarthy2008} analyzes the first step as satisfying a constraint against place features belonging to affixes, \textsc{*Place\textsubscript{affix}}. The derivation is otherwise identical to \ili{Diola Fogny}'s: the targeted consonant debuccalizes before place features spread from an adjacent consonant. 
 
-Tableaux 3 and 4 below show the derivation of /\textipa{vok-na}/ $>$ [\textipa{vok.ŋa}] `front-\textsc{masc}' (\ref{masa}g). In Tableau~3, the faithful candidate (3a) and a candidate in which the root-final coda has debuccalized (3b) both violate \textsc{*Place\textsubscript{affix}}, and lose to the optimal candidate (3c), in which the affix nasal has lost its place features. This candidate serves as the input to Tableau~4, where it loses to candidate (4b), in which the place features of the adjacent dorsal stop spread onto the nasal.
+Tables \ref{tableau3} and \ref{tableau4} below show the derivation of /{vok-na}/ $>$ [{vok.ŋa}] `front-\textsc{masc}' (\tabref{masa}g). In \tabref{tableau3}, the faithful candidate \candref{3}{a} and a candidate in which the root-final coda has debuccalized \candref{3}{b} both violate \textsc{*Place\textsubscript{affix}}, and lose to the optimal candidate \candref{3}{c}, in which the affix nasal has lost its place features. This candidate serves as the input to \tabref{tableau4}, where it loses to candidate \candref{4}{b}, in which the place features of the adjacent dorsal stop spread onto the nasal.
 
 \begin{table}
 	\tabhead{Progressive place assimilation: Step 1}
     		{masa:one}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{/\textipa{vok-na}/} &
+    \inpno{/{vok-na}/} &
     	\textsc{*Place\textsubscript{affix}} &
         \textsc{Max(Pl)} \\
     \hline \hline
-	      & a. \textipa{vok.na}        & W & L  \\ \hline
-          & b. \textipa{vo}H\textipa{.na} & W & 1  \\ \hline
-    $\to$ & c. \textipa{vok.}N\textipa{a} &   & 1  \\ \hline
+	      & a. {vok.na}        & W & L  \\ \hline
+          & b. {vo}H{.na} & W & 1  \\ \hline
+    $\to$ & c. {vok.}N{a} &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
@@ -173,49 +172,52 @@ Tableaux 3 and 4 below show the derivation of /\textipa{vok-na}/ $>$ [\textipa{v
 	\tabhead{Progressive place assimilation: Step 2}
     		{masa:two}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{\textipa{vok.}N\textipa{a}} &
+    \inpno{{vok.}N{a}} &
     	\textsc{HavePlace} &
         \textsc{NoLink(Pl)} \\
     \hline \hline
-	      & a. \textipa{vok.}N\textipa{a}  & W & L  \\ \hline
-    $\to$ & b. \textipa{vok.ŋa}         &   & 1  \\ \hline
+	      & a. {vok.}N{a}  & W & L  \\ \hline
+    $\to$ & b. {vok.ŋa}         &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
-A \isi{harmonic improvement} tableau for \isi{progressive place assimilation} in \ili{Masa} is given in (\ref{harmonicimprovement:masa}). This exactly parallels the derivation in \ili{Diola Fogny} (\ref{harmonicimprovement:diolafogny}), except for the highest-ranked \isi{markedness constraint}: \textsc{CodaCond} motivates regressive place assimilation and \textsc{*Place\textsubscript{affix}} motivates \isi{progressive place assimilation}.
+\newpage 
+A \isi{harmonic improvement} tableau for \isi{progressive place assimilation} in \ili{Masa} is given in (\tabref{harmonicimprovement:masa}). This exactly parallels the derivation in \ili{Diola Fogny} (\tabref{harmonicimprovement:diolafogny}), except for the highest-ranked \isi{markedness constraint}: \textsc{CodaCond} motivates regressive place assimilation and \textsc{*Place\textsubscript{affix}} motivates \isi{progressive place assimilation}.
 
 \begin{table}
 	\caption{Harmonic improvement in Masa}
 	\label{harmonicimprovement:masa}
     \begin{tabular}{|l||c|c:c|c|} \hline
-    /\textipa{vok-na}/ &
+    /{vok-na}/ &
     	\textsc{*Place\textsubscript{affix}} &
         \textsc{HavePlace} &
         \textsc{Max(Pl)} & 
         \textsc{NoLink(Pl)}\\
     \hline \hline
-	a. \textipa{vok.na}            & 1 &   &   &   \\ \hline
-    b. \textipa{vok.}N\textipa{a}     &   & 1 & 1 &   \\ \hline
-    c. [\textipa{vok.ŋa}]          &   &   &   & 1 \\ \hline
+	a. {vok.na}            & 1 &   &   &   \\ \hline
+    b. {vok.}N{a}     &   & 1 & 1 &   \\ \hline
+    c. [{vok.ŋa}]          &   &   &   & 1 \\ \hline
     \end{tabular}
 \end{table}
 
-This constraint ranking motivates a similar derivation with vowel-final roots like /\textipa{tuu-na}/ $>$ [\textipa{tuu.na}] `body-\textsc{masc}' (\ref{masa}a). The \isi{markedness constraint} \textsc{*Place\textsubscript{affix}} is violated by the enclitic nasal regardless of the shape of the root. Debuccalization therefore occurs with vowel-final roots just as it does with nasal- and obstruent-final roots.
+This %constraint 
+ranking motivates a similar derivation with vowel-final roots like /{tuu-na}/ $>$ [{tuu.na}] `body-\textsc{masc}' (\tabref{masa}a). The \isi{markedness constraint} \textsc{*Place\textsubscript{affix}} is violated by the enclitic nasal regardless of the shape of the root. Debuccalization therefore occurs with vowel-final roots just as it does with nasal- and obstruent-final roots.
 
-The enclitics surface with \isi{coronal place} regardless of the adjacent vowel's quality, e.g. compare [\textipa{tuu.na}] `body-\textsc{masc}' with [\textipa{ma.ɗii.na}] `dew-\textsc{masc}' and [\textipa{ci.ta.na}] `job-\textsc{masc}'. The violation of \textsc{HavePlace} introduced in the first step of the derivation is therefore not repaired by spreading place features from the adjacent root vowel. Instead, \isi{coronal place} features are inserted as a default \citep{lombardi2002,delacy2006}, which violates \textsc{Dep(Place)}.
+The enclitics surface with \isi{coronal place} regardless of the adjacent vowel's quality, e.g. compare [{tuu.na}] `body-\textsc{masc}' with [{ma.ɗii.na}] `dew-\textsc{masc}' and [{ci.ta.na}] `job-\textsc{masc}'. The violation of \textsc{HavePlace} introduced in the first step of the derivation is therefore not repaired by spreading place features from the adjacent root vowel. Instead, \isi{coronal place} features are inserted as a default \citep{lombardi2002,delacy2006}, which violates \textsc{Dep(Place)}.
 
-The derivation of /\textipa{tuu-na}/ $>$ [\textipa{tuu.na}] `body-\textsc{masc}' (\ref{masa}a) is shown in Tableaux 5 and 6. In the first step, the affix nasal debuccalizes to satisfy \textsc{*Place\textsubscript{affix}}. In the second step, \isi{default place} features are inserted to satisfy \textsc{HavePlace}. Because spreading place is preferred to inserting place with nasal- and obstruent-final roots, \textsc{Dep(Place)} dominates \textsc{NoLink(Place)}. The nasal losing its \isi{coronal place} features only to later gain \isi{coronal place} features constitutes a vacuous Duke-of-York derivation \citep{mccarthy2003}.
+The derivation of /{tuu-na}/ $>$ [{tuu.na}] `body-\textsc{masc}' (\tabref{masa}a) is shown in Tables \ref{tableau5} and \ref{tableau6}. In the first step, the affix nasal debuccalizes to satisfy \textsc{*Place\textsubscript{affix}}. In the second step, \isi{default place} features are inserted to satisfy \textsc{HavePlace}. Because spreading place is preferred to inserting place with nasal- and obstruent-final roots, \textsc{Dep(Place)} dominates \textsc{NoLink(Place)}. 
+
 
 \begin{table}
 	\tabhead{Default place epenthesis: Step 1}
     		{masa:oneb}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{/\textipa{tuu-na}/} &
+    \inpno{/{tuu-na}/} &
     	\textsc{*Place\textsubscript{affix}} &
         \textsc{Max(Pl)} \\
     \hline \hline
-	      & a. \textipa{tuu.na}        & W & L  \\ \hline
-    $\to$ & b. \textipa{tuu.}N\textipa{a} &   & 1  \\ \hline
+	      & a. {tuu.na}        & W & L  \\ \hline
+    $\to$ & b. {tuu.}N{a} &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
@@ -223,31 +225,31 @@ The derivation of /\textipa{tuu-na}/ $>$ [\textipa{tuu.na}] `body-\textsc{masc}'
 	\tabhead{Default place epenthesis: Step 2}
     		{masa:twob}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{\textipa{tuu.}N\textipa{a}} &
+    \inpno{{tuu.}N{a}} &
     	\textsc{HavePlace} &
         \textsc{Dep(Pl)} \\
     \hline \hline
-	      & a. \textipa{tuu.}N\textipa{a}  & W & L  \\ \hline
-    $\to$ & b. \textipa{tuu.na}         &   & 1  \\ \hline
+	      & a. {tuu.}N{a}  & W & L  \\ \hline
+    $\to$ & b. {tuu.na}         &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
 This analysis treats the enclitics as underlyingly having \isi{coronal place} features: /-na/ and /-da/. The facts of the language are also consistent with their being underspecified for place: the \isi{masculine} enclitic underlyingly being /-Na/ and the \isi{feminine} enclitic being /-Ha/, their place and voice features predictable from context. As \citet[286]{mccarthy2008} argues, underlyingly placeless consonants do not have to pass through a debuccalization step, as \textsc{CodaCond} can motivate  place assimilation directly.
 
-Such a derivation is shown for [\textipa{vok.ŋa}] `front-\textsc{masc}' (\ref{masa}g) in Tableau~7, with the underlying form of the affix containing a nasal underspecified for place. Because \textsc{CodaCond} is satisfied by place features linked to an onset, directly spreading place onto the nasal in (7c) is optimal. Debuccalizing the root-final stop (7b) is dispreferred by the relative ranking of \textsc{Max(Place)} and \textsc{NoLink(Place)}. Assuming underspecification, with vowel-final roots, \isi{default place} features are inserted without the enclitics first passing through a debuccalization step.
+Such a derivation is shown for [{vok.ŋa}] `front-\textsc{masc}' (\tabref{masa}g) in \tabref{Tableau7}, with the underlying form of the affix containing a nasal underspecified for place. Because \textsc{CodaCond} is satisfied by place features linked to an onset, directly spreading place onto the nasal in \candref{7}{c} is optimal. Debuccalizing the root-final stop \candref{7}{b} is dispreferred by the relative ranking of \textsc{Max(Place)} and \textsc{NoLink(Place)}. Assuming underspecification, with vowel-final roots, \isi{default place} features are inserted without the enclitics first passing through a debuccalization step.
 
 \begin{table}
 	\tabhead{Progressive place assimilation as underspecification}
     		{masa:under}
     \begin{tabular}{|rl||c|c|c|} \hline
-    \inpno{/\textipa{vok-}N\textipa{a}/} &
+    \inpno{/{vok-}N{a}/} &
     	\textsc{CodaCond} &
         \textsc{Max(Pl)} &
         \textsc{NoLink(Pl)} \\
     \hline \hline
-	      & a. \textipa{vok.}N\textipa{a}       & W &   & L   \\ \hline
-          & b. \textipa{vo}H.N\textipa{a}       &   & W & L  \\ \hline
-    $\to$ & c. \textipa{vok.ŋa}              &   &   & 1  \\ \hline
+	      & a. {vok.}N{a}       & W &   & L   \\ \hline
+          & b. {vo}H.N{a}       &   & W & L  \\ \hline
+    $\to$ & c. {vok.ŋa}              &   &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
@@ -259,7 +261,7 @@ The two-step process outlined above can be compared to a one-step process, which
 
 In the one-step process, both regressive and \isi{progressive place assimilation} are motivated by a \isi{markedness constraint} against heterorganic clusters, \textsc{Agree(Place)} \citep{yip1991,lombardi1999,bakovic2000,bakovic2007}. This constraint is satisfied by changing the place features of one of the consonants, violating \textsc{Ident(Place)}. Which consonant is targeted follows from the relative ranking of \isi{positional faithfulness} constraints. For the purposes of this paper, the two relevant constraints are \textsc{Ident(Place)\textsubscript{onset}} \citep{beckman1998}, which is violated by changing the place features of a consonant in onset position, and \textsc{Ident(Place)\textsubscript{root}} \citep{mccarthyprince1995}, which is violated by changing the place features of a consonant in the morphological root.\footnote{Positional faithfulness constraints have been shown to produce pathological effects unless the relevant position is defined over the input \citep{jesney2011}. This paper assumes that syllabification co-occurs with other operations at each step, following \citet{mccarthy2008}, which makes \textsc{Ident(Place)\textsubscript{onset}} meaningless in the first step as the input is not syllabified. This problem can be avoided by assuming syllabification applies at an earlier derivational step \citep{elfner2009}. \textsc{Ident(Place)\textsubscript{root}} does not have this problem because Consistency of Exponence ensures that morphological affiliation is invariant throughout the derivation \citep{mccarthyprince1993b}.}
 
-In coda-onset clusters, \textsc{Ident(Place)\textsubscript{onset}} prefers regressive place assimilation. Tableau~8 shows the one-step derivation of /\textipa{ni-gam-gam}/ $>$ [\textipa{ni.gaŋ.gam}] `I judge' (\ref{diolafogny}a). The faithful candidate (8a) contains a heterorganic cluster and violates \textsc{Agree(Place)}. It is dispreferred to the unfaithful candidates in which the place assimilation operation has applied (8b-c). An onset is targeted in (8b), which is dispreferred to (8c), in which a coda is targeted. Under this analysis, the word-final consonant does not enjoy any special status; it is not a member of a cluster, and does not violate the \isi{markedness constraint}.
+In coda-onset clusters, \textsc{Ident(Place)\textsubscript{onset}} prefers regressive place assimilation. \tabref{tableau8} shows the one-step derivation of /{ni-gam-gam}/ $>$ [{ni.gaŋ.gam}] `I judge' (\tabref{diolafogny}a). The faithful candidate \candref{8}{a} contains a heterorganic cluster and violates \textsc{Agree(Place)}. It is dispreferred to the unfaithful candidates in which the place assimilation operation has applied (8b--c). An onset is targeted in \candref{8}{b}, which is dispreferred to \candref{8}{c}, in which a coda is targeted. Under this analysis, the word-final consonant does not enjoy any special status; it is not a member of a cluster, and does not violate the \isi{markedness constraint}.
 
 \begin{table}
 	\tabhead{Regressive place assimilation as one step}
@@ -270,37 +272,37 @@ In coda-onset clusters, \textsc{Ident(Place)\textsubscript{onset}} prefers regre
         \textsc{Ident(Pl)} &
         \textsc{Ident(Pl)\textsubscript{onset}}\\
     \hline \hline
-	      & a. \textipa{ni.gam.gam}        & W & L &   \\ \hline
-          & b. \textipa{ni.gam.bam}        &   & 1 & W \\ \hline
-    $\to$ & c. \textipa{ni.gaŋ.gam}        &   & 1 &   \\ \hline
+	      & a. {ni.gam.gam}        & W & L &   \\ \hline
+          & b. {ni.gam.bam}        &   & 1 & W \\ \hline
+    $\to$ & c. {ni.gaŋ.gam}        &   & 1 &   \\ \hline
     \end{tabular}
 \end{table}
 
-The conflict between the two \isi{positional faithfulness} constraints is seen at root-enclitic junctures; without a morpheme boundary or another relevant asymmetry \citep{lamont2015}, \textsc{Ident(Place)\textsubscript{onset}} guarantees that \isi{regressive assimilation} is the default repair. In \ili{Masa}, the enclitic consonant in onset position is targeted for assimilation, so \textsc{Ident(Place)\textsubscript{root}} dominates \textsc{Ident(Place)\textsubscript{onset}}. This is shown in Tableau~9 with /\textipa{vok-na}/ $>$ [\textipa{vok.ŋa}] `front-\textsc{masc}' (\ref{masa}g). If the relative ranking of the \isi{positional faithfulness} constraints were switched, regressive place assimilation would be preferred, and (9b) would be the optimal candidate.
+The conflict between the two \isi{positional faithfulness} constraints is seen at root-enclitic junctures; without a morpheme boundary or another relevant asymmetry \citep{lamont2015}, \textsc{Ident(Place)\textsubscript{onset}} guarantees that \isi{regressive assimilation} is the default repair. In \ili{Masa}, the enclitic consonant in onset position is targeted for assimilation, so \textsc{Ident(Place)\textsubscript{root}} dominates \textsc{Ident(Place)\textsubscript{onset}}. This is shown in \tabref{tableau9} with /{vok-na}/ $>$ [{vok.ŋa}] `front-\textsc{masc}' (\tabref{masa}g). If the relative ranking of the \isi{positional faithfulness} constraints were switched, regressive place assimilation would be preferred, and \candref{9}{b} would be the optimal candidate.
 
 \begin{table}
 	\tabhead{Progressive place assimilation as one step}
     		{masa:onestep}
     \begin{tabular}{|rl||c|c:c|c|} \hline
-    \inpno{/\textipa{vok-na}/} &
+    \inpno{/{vok-na}/} &
     	\textsc{Agree(Pl)} &
         \textsc{Ident(Pl)} &
         \textsc{Ident(Pl)\textsubscript{root}} &
         \textsc{Ident(Pl)\textsubscript{onset}}\\
     \hline \hline
-	      & a. \textipa{vok.na}        & W & L &   & L \\ \hline
-          & b. \textipa{vot.na}        &   & 1 & W & L \\ \hline
-    $\to$ & c. \textipa{vok.ŋa}        &   & 1 &   & 1 \\ \hline
+	      & a. {vok.na}        & W & L &   & L \\ \hline
+          & b. {vot.na}        &   & 1 & W & L \\ \hline
+    $\to$ & c. {vok.ŋa}        &   & 1 &   & 1 \\ \hline
     \end{tabular}
 \end{table}
 
-Because \textsc{Agree(Place)} is only violated by consonant clusters, it does not motivate any operations in intervocalic contexts. Assuming underlying \isi{coronal place}, the derivation of /\textipa{tuu-na}/ $>$ [\textipa{tuu.na}] `body-\textsc{masc}' (\ref{masa}a) converges in one step because there is no reason to change the enclitic nasal. Under the one-step derivation, underlying place features surface in intervocalic contexts. If the enclitic nasal is underlyingly underspecified for place, it will pass through a derivational step in which \isi{default place} is inserted just as in the two-step process.
+Because \textsc{Agree(Place)} is only violated by consonant clusters, it does not motivate any operations in intervocalic contexts. Assuming underlying \isi{coronal place}, the derivation of /{tuu-na}/ $>$ [{tuu.na}] `body-\textsc{masc}' (\tabref{masa}a) converges in one step because there is no reason to change the enclitic nasal. Under the one-step derivation, underlying place features surface in intervocalic contexts. If the enclitic nasal is underlyingly underspecified for place, it will pass through a derivational step in which \isi{default place} is inserted just as in the two-step process.
 
 The intervocalic context is where the two analyses make different predictions. Under the two-step process, affix consonants debuccalize and then surface with \isi{default place} features. Under the one-step process, affix consonants surface faithfully. The following section presents a modest survey of \isi{progressive place assimilation} and argues that predictions of the one-step process are borne out.
 
 \section{Progressive place assimilation cross-linguistically}\label{sec:lamont:3}
 
-Progressive place assimilation often only targets a single suffix in a language, motivating an analysis that relies on morpheme-specific constraints \citep{pater2009}. When that suffix surfaces with \isi{default place} features, it is consistent with an underspecification account and therefore consistent with a two- or one-step derivation. For example, the progressive suffix in \ili{Noni} (Niger-Congo) is analyzed underlyingly as /\textipa{-te}/ \citep{hyman1981noni}. Attached to roots with final vowels, it surfaces with a lateral. Roots with final labial nasals take [\textipa{-te}], roots with final coronal nasals take [\textipa{-e}], and roots with final dorsal nasals take [\textipa{-ke}]. Examples are shown in \tabref{noni}. Like the \isi{gender} enclitics in \ili{Masa}, the \ili{Noni} progressive is amenable to having an initial stop underspecified for place: /-He/.
+Progressive place assimilation often only targets a single suffix in a language, motivating an analysis that relies on morpheme-specific constraints \citep{pater2009}. When that suffix surfaces with \isi{default place} features, it is consistent with an underspecification account and therefore consistent with a two- or one-step derivation. For example, the progressive suffix in \ili{Noni} (Niger-Congo) is analyzed underlyingly as /{-te}/ \citep{hyman1981noni}. Attached to roots with final vowels, it surfaces with a lateral. Roots with final labial nasals take [{-te}], roots with final coronal nasals take [{-e}], and roots with final dorsal nasals take [{-ke}]. Examples are shown in \tabref{noni}. Like the \isi{gender} enclitics in \ili{Masa}, the \ili{Noni} progressive is amenable to having an initial stop underspecified for place: /-He/.
 
 \begin{table}
 \caption{Progressive place assimilation in Noni}
@@ -317,7 +319,7 @@ Progressive place assimilation often only targets a single suffix in a language,
  \end{tabular}
 \end{table}
 
-Languages where the targeted suffix surfaces with marked place features cannot be analyzed this way. For example, the qualitative suffix in Kuk\'u (\ili{Nilotic}) assimilates to root-final nasals and obstruents and surfaces as a palatal stop intervocalically \citep{cohen2000}. Examples are given in \tabref{kukuassim}. Similar allomorphy is found in the related languages \ili{Bari} \citep{yokwe1987} and \ili{Mundari} \citep{stirtz2014}. In Kuk\'u, palatal place features are neutralized in coda position: compare [\textipa{gɪɲa}] `be snapped' and [\textipa{gɪn}] `snap'. This indicates that palatals are more marked than plain coronals. From the perspective of \isi{default place} insertion, the word [\textipa{ɟu.ɟɪ}] `sharpen-\textsc{qual}' (\ref{kukuassim}a) is surprising; an unmarked stop is expected, e.g. *\textit{\textipa{ɟu.dɪ}}.
+Languages where the targeted suffix surfaces with marked place features cannot be analyzed this way. For example, the qualitative suffix in Kuk\'u (\ili{Nilotic}) assimilates to root-final nasals and obstruents and surfaces as a palatal stop intervocalically \citep{cohen2000}. Examples are given in \tabref{kukuassim}. Similar allomorphy is found in the related languages \ili{Bari} \citep{yokwe1987} and \ili{Mundari} \citep{stirtz2014}. In Kuk\'u, palatal place features are neutralized in coda position: compare [{gɪɲa}] `be snapped' and [{gɪn}] `snap'. This indicates that palatals are more marked than plain coronals. From the perspective of \isi{default place} insertion, the word [{ɟu.ɟɪ}] `sharpen-\textsc{qual}' (\tabref{kukuassim}a) is surprising; an unmarked stop is expected, e.g. *\textit{{ɟu.dɪ}}.
 
 \begin{table}
 \caption{Progressive place assimilation in Kuk\'u}
@@ -337,7 +339,7 @@ Languages where the targeted suffix surfaces with marked place features cannot b
  \end{tabular}
 \end{table}
 
-Another suffix incompatible with underspecification is the \ili{Afrikaans} (\ili{Germanic}) diminutive /-ʲki/ \citep[and references therein]{lamont2017}. Examples are given in \tabref{afrikaans}. The diminutive surfaces with \isi{dorsal place} intervocalically (\ref{afrikaans}a), which is unattested as a default \citep{delacy2006}. Furthermore, the diminutive triggers bidirectional place assimilation: it surfaces with labial place after labial-final roots, e.g. /\textipa{rɑːm-ʲki}/ $>$ [\textipa{rɑːm.pi}] `frame-\textsc{dim}' (\ref{afrikaans}b), but triggers root-final coronals to undergo \isi{regressive assimilation}, e.g. /\textipa{mɑːn-ʲki}/ $>$ [\textipa{mɑːjŋ.ki}] `moon-\textsc{dim}' (\ref{afrikaans}c). Without positing underlying \isi{dorsal place} features, the \isi{regressive assimilation} seen with coronal-final stems is inexplicable.\footnote{An anonymous reviewer points out that an interesting comparison can be made between HS and Stratal OT \citep{kiparsky2000}. The work of root-faithfulness in HS parallels spelling out root features before affixation or cliticization. The analysis of \ili{Afrikaans} in \citet{lamont2017} requires violable root-faithfulness, which seems difficult to reconcile with cyclic spell out.}
+Another suffix incompatible with underspecification is the \ili{Afrikaans} (\ili{Germanic}) diminutive /-ʲki/ \citep{lamont2017}. Examples are given in \tabref{afrikaans}. The diminutive surfaces with \isi{dorsal place} intervocalically (\tabref{afrikaans}a), which is unattested as a default \citep{delacy2006}. Furthermore, the diminutive triggers bidirectional place assimilation: it surfaces with labial place after labial-final roots, e.g. /{rɑːm-ʲki}/ $>$ [{rɑːm.pi}] `frame-\textsc{dim}' (\tabref{afrikaans}b), but triggers root-final coronals to undergo \isi{regressive assimilation}, e.g. /{mɑːn-ʲki}/ $>$ [{mɑːjŋ.ki}] `moon-\textsc{dim}' (\tabref{afrikaans}c). Without positing underlying \isi{dorsal place} features, the \isi{regressive assimilation} seen with coronal-final stems is inexplicable.\footnote{An anonymous reviewer points out that an interesting comparison can be made between HS and Stratal OT \citep{kiparsky2000}. The work of root-faithfulness in HS parallels spelling out root features before affixation or cliticization. The analysis of \ili{Afrikaans} in \citet{lamont2017} requires violable root-faithfulness, which seems difficult to reconcile with cyclic spell out.}
 
 \begin{table}
 \caption{Bidirectional place assimilation in Afrikaans}
@@ -354,9 +356,9 @@ Another suffix incompatible with underspecification is the \ili{Afrikaans} (\ili
  \end{tabular}
 \end{table}
 
-Not all languages target a single affix for \isi{progressive place assimilation}. Some, such as \ili{Masa}, have multiple affixes that undergo \isi{progressive place assimilation}. A richer inventory of targeted affixes can be found in the closely related language \ili{Musey} (Chadic) \citep{shryock1996}. \ili{Musey} has cognates of the \ili{Masa} \isi{gender} enclitics /-na/ and /-da/ as well as a host of other enclitics that undergo \isi{progressive place assimilation}. \tabref{musey} gives examples with the negative enclitic /\textipa{-ɗi}/ and the intensifier enclitic /\textipa{-kɪjo}/. \citet{dassidi2015} also reports similar allomorphy with the infinitive marker /\textipa{-da}/ and the causative marker /\textipa{-gi}/.
+Not all languages target a single affix for \isi{progressive place assimilation}. Some, such as \ili{Masa}, have multiple affixes that undergo \isi{progressive place assimilation}. A richer inventory of targeted affixes can be found in the closely related language \ili{Musey} (Chadic) \citep{shryock1996}. \ili{Musey} has cognates of the \ili{Masa} \isi{gender} enclitics /-na/ and /-da/ as well as a host of other enclitics that undergo \isi{progressive place assimilation}. \tabref{musey} gives examples with the negative enclitic /{-ɗi}/ and the intensifier enclitic /{-kɪjo}/. \citet{dassidi2015} also reports similar allomorphy with the infinitive marker /{-da}/ and the causative marker /{-gi}/.
 
-As in Kuk\'u and \ili{Afrikaans}, the dorsal-initial morphemes /\textipa{-kɪjo}/ and /\textipa{-gi}/ make an underspecification analysis implausible, as \isi{dorsal place} would have to be inserted as a default. Furthermore, because \ili{Musey} also has coronal-initial morphemes that undergo \isi{progressive place assimilation}, \isi{default place} insertion would have to be lexically-specified so that some morphemes receive \isi{coronal place} by default and others \isi{dorsal place} by default.
+As in Kuk\'u and \ili{Afrikaans}, the dorsal-initial morphemes /{-kɪjo}/ and /{-gi}/ make an underspecification analysis implausible, as \isi{dorsal place} would have to be inserted as a default. Furthermore, because \ili{Musey} also has coronal-initial morphemes that undergo \isi{progressive place assimilation}, \isi{default place} insertion would have to be lexically-specified so that some morphemes receive \isi{coronal place} by default and others \isi{dorsal place} by default.
 
 \begin{table}
 \caption{Progressive place assimilation in Musey}
@@ -378,21 +380,21 @@ As in Kuk\'u and \ili{Afrikaans}, the dorsal-initial morphemes /\textipa{-kɪjo}
  \end{tabularx}
 \end{table}
 
-Under the one-step process, these data are not problematic. Each affix/enclitic enters the derivation with underlying place features that surface faithfully unless an obstruent- or nasal-final root triggers assimilation; \citet{jun1995} gives an analysis in Parallel OT along these lines. Tableaux 10 and 11 give the derivations for /\textipa{ka-ɗi}/ $>$ [\textipa{ka.ɗi}] `exist-\textsc{neg}' (\ref{musey}a) and /\textipa{kulum-ɗi}/ $>$ [\textipa{ku.lum.bi}] `horse-\textsc{neg}' (\ref{musey}b) as one-step derivations. As Tableau~10 shows, with vowel-final roots, the enclitic surfaces faithfully and the derivation converges. As Tableau~11 shows, with obstruent- and nasal-final roots, the enclitic surfaces homorganic to the root-final consonant. The optimal candidate of Tableau~11 will be the input to a second step, where the derivation converges (not shown here).
+Under the one-step process, these data are not problematic. Each affix/enclitic enters the derivation with underlying place features that surface faithfully unless an obstruent- or nasal-final root triggers assimilation; \citet{jun1995} gives an analysis in Parallel OT along these lines. Tables \tabref{tableau10} and \ref{tableau11} give the derivations for /{ka-ɗi}/ $>$ [{ka.ɗi}] `exist-\textsc{neg}' (\tabref{musey}a) and /{kulum-ɗi}/ $>$ [{ku.lum.bi}] `horse-\textsc{neg}' (\tabref{musey}b) as one-step derivations. As \tabref{tableau10} shows, with vowel-final roots, the enclitic surfaces faithfully and the derivation converges. As \tabref{tableau11} shows, with obstruent- and nasal-final roots, the enclitic surfaces homorganic to the root-final consonant. The optimal candidate of \tabref{tableau11} will be the input to a second step, where the derivation converges (not shown here).
 
 \begin{table}
 	\tabhead{Faithful realization intervocalically}
     		{musey:onestep2}
   \fittable{
     \begin{tabular}{|rl||c|c:c|c|} \hline
-    \inpno{/\textipa{ka-ɗi}/} &
+    \inpno{/{ka-ɗi}/} &
     	\textsc{Agree(Pl)} &
         \textsc{Ident(Pl)} &
         \textsc{Ident(Pl)\textsubscript{root}} &
         \textsc{Ident(Pl)\textsubscript{onset}}\\
     \hline \hline
-	$\to$ & a. \textipa{ka.ɗi}        &  &   &  &   \\ \hline
-          & b. \textipa{ka.bi}          &  & W &  & W \\ \hline
+	$\to$ & a. {ka.ɗi}        &  &   &  &   \\ \hline
+          & b. {ka.bi}          &  & W &  & W \\ \hline
     \end{tabular}
     }
 \end{table}
@@ -402,31 +404,31 @@ Under the one-step process, these data are not problematic. Each affix/enclitic 
     		{musey:onestep}
   \fittable{	    
     \begin{tabular}{|rl||c|c:c|c|} \hline
-    \inpno{/\textipa{kulum-ɗi}/} &
+    \inpno{/{kulum-ɗi}/} &
     	\textsc{Agree(Pl)} &
         \textsc{Ident(Pl)} &
         \textsc{Ident(Pl)\textsubscript{root}} &
         \textsc{Ident(Pl)\textsubscript{onset}}\\
     \hline \hline
-	  & a. \textipa{ku.lum.ɗi}        & W & L &   & L \\ \hline
-          & b. \textipa{ku.lun.ɗi}        &   & 1 & W & L \\ \hline
-    $\to$ & c. \textipa{ku.lum.bi}          &   & 1 &   & 1 \\ \hline
+	  & a. {ku.lum.ɗi}        & W & L &   & L \\ \hline
+          & b. {ku.lun.ɗi}        &   & 1 & W & L \\ \hline
+    $\to$ & c. {ku.lum.bi}          &   & 1 &   & 1 \\ \hline
     \end{tabular}
     }
 \end{table}
 
-The intervocalic context poses a challenge to the two-step process. Following the derivation given for \ili{Masa} above, we expect the intensifier enclitic in \ili{Musey} to surface with \isi{default place} when the context for spreading is unavailable. This is shown in Tableaux 12 and 13 with /\textipa{too-kɪjo}/ $>$ [\textipa{too.gɪ.jo}] `sweep-\textsc{intense}' (\ref{musey}e). Even if \isi{dorsal place} were somehow the default in \ili{Musey}, it would not explain why other enclitics surface with \isi{coronal place} after this step.
+The intervocalic context poses a challenge to the two-step process. Following the derivation given for \ili{Masa} above, we expect the intensifier enclitic in \ili{Musey} to surface with \isi{default place} when the context for spreading is unavailable. This is shown in Tables \ref{tableau12} and \ref{tableau13} with /{too-kɪjo}/ $>$ [{too.gɪ.jo}] `sweep-\textsc{intense}' (\tabref{musey}e). Even if \isi{dorsal place} were somehow the default in \ili{Musey}, it would not explain why other enclitics surface with \isi{coronal place} after this step.
 
 \begin{table}
 	\tabhead{Problematic {default place} epenthesis: Step 1}
     		{mus:oneb}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{/\textipa{too-kɪjo}/} &
+    \inpno{/{too-kɪjo}/} &
     	\textsc{*Place\textsubscript{affix}} &
         \textsc{Max(Pl)} \\
     \hline \hline
-	      & a. \textipa{too.kɪ.jo}        & W & L  \\ \hline
-    $\to$ & b. \textipa{too.}H\textipa{ɪ.jo}   &   & 1  \\ \hline
+	      & a. {too.kɪ.jo}        & W & L  \\ \hline
+    $\to$ & b. {too.}H{ɪ.jo}   &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
@@ -434,18 +436,18 @@ The intervocalic context poses a challenge to the two-step process. Following th
 	\tabhead{Problematic {default place} epenthesis: Step 2}
     		{mus:twob}
     \begin{tabular}{|rl||c|c|} \hline
-    \inpno{\textipa{too.}H\textipa{ɪ.jo}} &
+    \inpno{{too.}H{ɪ.jo}} &
     	\textsc{HavePlace} &
         \textsc{Dep(Pl)} \\
     \hline \hline
-	      & a. \textipa{too.}H\textipa{ɪ.jo}  & W & L  \\ \hline
-    $\to$ & b. \textipa{too.tɪ.jo}         &   & 1  \\ \hline
+	      & a. {too.}H{ɪ.jo}  & W & L  \\ \hline
+    $\to$ & b. {too.tɪ.jo}         &   & 1  \\ \hline
     \end{tabular}
 \end{table}
 
-\citet[298]{mccarthy2008} suggests that the general phonotactics of the language can account for this. \ili{Musey} only allows the placeless consonants [\textipa{h}] and [\textipa{ɦ}] word-initially \citep{shryock1996}. This suggests a \isi{markedness constraint} against word-internal placeless consonants, such as \textsc{Align-L(}h, \textsc{Word)}.\footnote{A lowercase \textit{h} is used to represent placeless consonants instead of an uppercase \textit{H} to avoid confusion with the high \isi{tone} \isi{alignment constraint} used in \S1.} This constraint is violated when the segments [\textipa{h}] and [\textipa{ɦ}] do not occur word-initially. It is also violated by debuccalized segments, because, by definition, these are placeless.
+\citet[298]{mccarthy2008} suggests that the general phonotactics of the language can account for this. \ili{Musey} only allows the placeless consonants [{h}] and [{ɦ}] word-initially \citep{shryock1996}. This suggests a \isi{markedness constraint} against word-internal placeless consonants, such as \textsc{Align-L(}h, \textsc{Word)}.\footnote{A lowercase \textit{h} is used to represent placeless consonants instead of an uppercase \textit{H} to avoid confusion with the high \isi{tone} \isi{alignment constraint} used in \S1.} This constraint is violated when the segments [{h}] and [{ɦ}] do not occur word-initially. It is also violated by debuccalized segments, because, by definition, these are placeless.
 
-Introducing this constraint into the two-step analysis results in a ranking paradox. This is shown in Tableau~14 with the first steps of /\textipa{too-kɪjo}/ $>$ [\textipa{too.gɪ.jo}] `sweep-\textsc{intense}' (\ref{musey}e) and /\textipa{hum-kɪjo}/ $>$ [\textipa{hum.bɪ.jo}] `hear-\textsc{intense}' (\ref{musey}f). The left hand column gives the desired winner and a competing candidate in the first step separated by a tilde. In the intervocalic context (14a), debuccalization should not occur. In the consonant cluster context (14b), debuccalization should occur to feed place spreading. The markedness constraints \textsc{*Place\textsubscript{affix}} and \textsc{Align-L(}h, \textsc{Word)} are given with their evaluations of the winner $\sim$ loser pairs.
+Introducing this constraint into the two-step analysis results in a ranking paradox. This is shown in \tabref{tableau14} with the first steps of /{too-kɪjo}/ $>$ [{too.gɪ.jo}] `sweep-\textsc{intense}' (\tabref{musey}e) and /{hum-kɪjo}/ $>$ [{hum.bɪ.jo}] `hear-\textsc{intense}' (\tabref{musey}f). The left hand column gives the desired winner and a competing candidate in the first step separated by a tilde. In the intervocalic context \candref{14}{a}, debuccalization should not occur. In the consonant cluster context \candref{14}{b}, debuccalization should occur to feed place spreading. The markedness constraints \textsc{*Place\textsubscript{affix}} and \textsc{Align-L(}h, \textsc{Word)} are given with their evaluations of the winner $\sim$ loser pairs.
 
 \begin{table}
 	\tabhead{Ranking paradox in Musey}
@@ -455,18 +457,19 @@ Introducing this constraint into the two-step analysis results in a ranking para
     	\textsc{*Place\textsubscript{affix}} &
         \textsc{Align-L(}h, \textsc{Word)} \\
     \hline \hline
-	a. \textipa{too.kɪ.jo} $\sim$ \textipa{too.}H\textipa{ɪ.jo}   & L & W \\ \hline
-    b. \textipa{hum.}H\textipa{ɪ.jo} $\sim$ \textipa{hum.kɪ.jo}   & W & L \\ \hline
+	a. {too.kɪ.jo} $\sim$ {too.}H{ɪ.jo}   & L & W \\ \hline
+    b. {hum.}H{ɪ.jo} $\sim$ {hum.kɪ.jo}   & W & L \\ \hline
     \end{tabular}
 \end{table}
 
-There is a stark ranking paradox in Tableau~14. Including \textsc{Align-L(}h, \textsc{Word)} in the constraint set does not have the desired effect of blocking debuccalization only in intervocalic contexts. If it is ranked above \textsc{*Place\textsubscript{affix}}, it blocks debuccalization in all contexts, preventing any place assimilation from occurring. Whereas the one-step process adequately models the \ili{Musey} allomorphy, the two-step process cannot. This result holds for Kuk\'u, \ili{Afrikaans}, and any language that targets a consonant with marked place features for \isi{progressive place assimilation}.
+\largerpage 
+There is a stark ranking paradox in \tabref{	u14}. Including \textsc{Align-L(}h, \textsc{Word)} in the constraint set does not have the desired effect of blocking debuccalization only in intervocalic contexts. If it is ranked above \textsc{*Place\textsubscript{affix}}, it blocks debuccalization in all contexts, preventing any place assimilation from occurring. Whereas the one-step process adequately models the \ili{Musey} allomorphy, the two-step process cannot. This result holds for Kuk\'u, \ili{Afrikaans}, and any language that targets a consonant with marked place features for \isi{progressive place assimilation}.
 
 \section{Conclusion}\label{sec:lamont:4}
 
 Research in Harmonic Serialism (HS) is concerned not just with the content of \textsc{Con}, but also with what operations are available to \textsc{Gen}. This paper examined the predictions made by removing place assimilation as a basic operation in HS and replacing its functionality with a delinking and then spreading derivation, as proposed by \citet{mccarthy2007,mccarthy2008}. This restricted \textsc{Gen} was argued not to be able to model attested \isi{progressive place assimilation} systems found in Kuk\'u, \ili{Afrikaans}, and \ili{Musey}. It was shown that allowing \textsc{Gen} a basic place assimilation operation results in a better fit of the attested data.
 
-As noted earlier, place assimilation is overwhelmingly regressive. Up until very recently, all cases of \isi{progressive place assimilation} known in the theoretical literature targeted consonants with unmarked place features except for the \ili{Musey} intensifier enclitic /\textipa{-kɪjo}/. \citet{mccarthy2007} even calls \ili{Musey} a `unique challenge' to the two-step derivation, emphasizing that no other affix was known that shared these properties.
+As noted earlier, place assimilation is overwhelmingly regressive. Up until very recently, all cases of \isi{progressive place assimilation} known in the theoretical literature targeted consonants with unmarked place features except for the \ili{Musey} intensifier enclitic /{-kɪjo}/. \citet{mccarthy2007} even calls \ili{Musey} a ``unique challenge'' to the two-step derivation, emphasizing that no other affix was known that shared these properties.
 
 Relying on the Coda Condition to motivate place assimilation predicts \isi{progressive place assimilation} like that in \ili{Musey} is phonologically impossible, fulfilling the typological observation. In light of a survey of \ili{Musey}-like languages \citep{lamont2015}, this strong typological prediction has to be weakened. There are more languages like \ili{Musey} cross-linguistically that are well-behaved phonologically, which any phonological theory needs to be able to account for.
 
