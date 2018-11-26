@@ -1,14 +1,4 @@
-%\title{[Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored][Warning: Draw object ignored]Metrically conditioned vowel length in Dagaare}
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook} 
 
 \author{Arto Anttila\affiliation{Stanford University} \lastand Adams Bodomo\affiliation{University of Vienna}}
 
@@ -16,6 +6,13 @@
 vowel length in Dagaare}
 
 \abstract{There is little evidence for stress in Dagaare, but vowel length alternations in nominal and verbal morphology reveal the presence of a word-initial metrical foot. New evidence for the foot hypothesis comes from action nominals formed with the suffix /-UU/: if the root is CV, the root lengthens and the suffix shortens; if the root is CVV the suffix shortens; if the root ends in C nothing happens.  Similar length alternations appear more idiosyncratically with number and aspect suffixes. A metrical analysis provides a simple account of these vowel length alternations.}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[2]
+}{}
+
 
 \begin{document}
 \maketitle
@@ -79,6 +76,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 & /pì-/ & pìì-rí & ‘rock-\textsc{sg’} & pì -fáá & ‘bad rock’\\
 & /kù-/ & kùù-rí & ‘hoe-\textsc{sg}’ & kù-fáá & ‘bad hoe’\\
 & /gʊ́-/ & gʊ́ʊ́-rɪ̀ & ‘thorn-\textsc{pl’} & gʊ́-\textsuperscript{!}fáá & ‘bad thorn’\\
+\tablevspace
 (b) & /pò-/ & pùò-rí & ‘back-\textsc{sg}’ & pò-fáá & ‘bad back’\\
 & /nɔ́-/ & nʊ́ɔ́-rɪ̀ & ‘mouth-\textsc{sg}’ & nɔ́-\textsuperscript{!}fáá & ‘bad mouth’\\
 & /dò-/ & dò-rí & ‘pig-\textsc{pl}’ & dò-fáá & ‘bad pig’\\
@@ -96,7 +94,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 {\tabref{tab:anttila:3} shows that the number suffix /-rÍ/ triggers vowel}{ lengthening} {i}{n high vowel stems}{, but not in mid-vowel stems where the result is either a diphthong or the vowel simply fails to lengthen, depending on the lexical item. The noun-adjective compound is given as a diagnostic for the underlying form of the noun: the nouns in \tabref{tab:anttila:3} all have a short stem vowel. In contrast, the} {long mid vowel} {in} {\textit{dɔ́ɔ́}}{ ‘man.}{\textsc{sg}}{’ given in \tabref{tab:anttila:2} is underlying:} {\textit{dɔ̀ɔ̀-}}{\textit{fáá}}{ ‘bad man’.} {Lengthening is lexically conditioned even in high vowel stems: there are words like} {\textit{bí-rì}}{ ‘seed-}{\textsc{sg’}}{ and} {\textit{yí-rì}}{ ‘house-}{\textsc{sg}}{’ where lengthening does not happen. Finally,} {the data illustrate a characteristic}{ \isi{aspect} of \ili{Dagaare} number morphology: /-r}{Í}{/ may mean either singular or plural depending on the stem, an instance of “polarity morphology” that has attracted the attention of semanticists \citep{Grimm2012}.} 
 
 
-
+\newpage 
 {Vowel lengthening also occurs in singular forms with no overt suffix. \citet{Anttila&Bodomo2009} propose that in such cases the root vowel lengthens in order to satisfy a bimoraic foot template.}
 
 \begin{table}
@@ -106,6 +104,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 \midrule
 (a) & /bi-/ & bíé & ‘child.\textsc{sg}’ & bì-fáá & ‘bad child’\\
 & /gʊ́-/ & gʊ́ɔ̀ & ‘thorn.\textsc{sg}’ & gʊ́-\textsuperscript{!}fáá & ‘bad thorn’\\
+\tablevspace
 (b) & /dè-/ & dìé & ‘room.\textsc{sg}’ & dè-fáá & ‘bad room’\\
 & /dò-/ & dùó & ‘pig.\textsc{sg}’ & dò-fáá & ‘bad pig’\\
 \lspbottomrule
@@ -138,6 +137,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 \midrule
 (a) & /ba-/ & bà & bàà-rá & báá-ʊ́ & ‘stick into the ground’\\
 & /baa-/ & bàà & bàà-rá & báá-ʊ́ & ‘grow (of child)’\\
+\tablevspace
 (b) & /bar-/ & bàrɪ̀ & bà-rá & bár-ʊ́ʊ́ & ‘leave’\\
 & /bá\`{r}r-/ & bárrɪ̀ & bár-\textsuperscript{!}rá & bár\textsuperscript{!}r-ʊ́ʊ́ & ‘bargain’\\
 & /báàr-/ & báárɪ̀ & báá-\textsuperscript{!}rá & báá\textsuperscript{!}r-ʊ́ʊ́ & ‘finish’\\
@@ -166,6 +166,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 & /bú-/ & bú & búú-rò	&	búú-ù	 & ‘measure, calculate’\\
 & /nyṵ́-/ & nyṵ́ & nyṵ́ṵ́rò̰ &	nyṵ́ṵ́-ṵ̀ & \bfseries {‘drink’}\footnote{We mark contrastive nasalization with a subscript tilde to avoid clutter. The interpretation of nasalized vowels is controversial. \citet[12]{Kennedy1966} derives them via absolute neutralization from vowel-/m/ sequences, e.g., /fààm/ $\rightarrow$\textit{fà̰à}̰ ‘fail’: “There is a clear hole in the final nasal pattern. Though n and ŋ occur word final, m does not. Therefore nasalized vowels which are not contiguous to nasals are interpreted as vowel-m sequences.\textit{”} \citet[9]{Bodomo1997} assumes that nasalization is phonemic and notes that it is mostly found in long vowels.}\\
 & /zú{} -/ & z\'u{}  & zúú-rò &	zúú-ù & ‘steal’\\
+\tablevspace
 (b) & /tá-/ & tá & tá-rà &	táá-ʊ̀ & ‘reach’\\
 & /ɪ-/ & ɪ̀ & ɪ̀-rɛ́ &	ɪ́ɪ́-ʊ́ & ‘do’\\
 & /dɪ̂-/ & dɪ̂ & dɪ́-\textsuperscript{!}rɛ́ & dɪ́ɪ́-\textsuperscript{!}ʊ́  & ‘take’\\
@@ -191,6 +192,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 	&/bɔ́-/	&bɔ́	&bʊ́ɔ́-rɔ̀	&bʊ́ɔ́-ʊ̀	&‘want, look for’\\
 	&/kɔ́-/	&kɔ́	&kʊ́ɔ́-rɔ̀	&kʊ́ɔ́-ʊ̀	&‘farm’\\
 	&/yɔ́-/	&yɔ́	&yʊ́ɔ́-rɔ̀ &	yʊ́ɔ́-ʊ̀	&‘roam’\\
+\tablevspace
 (b)	&/ko-/	&kò	&kò-ró	&kúó-ú	&‘dry’\\
 	&/kó-/	&kó	&kó-rò	&kúó-ù	&‘get ready for rain’\\
 	&/tɛ́-/	&tɛ́	&tɛ́-rɛ̀	&tɪ́ɛ́-ʊ̀	&‘display’\\
@@ -207,6 +209,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
      The imperfective paradigm is more complicated. The suffix /-r\'{V}/ copies the root vowel except that a high vowel becomes mid, reflecting the constraint\linebreak against word-final derived high vowels, e.g., /di/, \textit{dì-ré} ‘eat-\textsc{impf}’. The verbs are further divided into two sets (a) and (b) based on whether the root vowel undergoes lengthening and/or diphthongization. The choice is phonologically unpredictable: we have vowel lengthening in /ba/ \textit{bàà-rá} ‘stick into the ground-\textsc{impf}’, but not in /tá/ \textit{tá-rà} ‘reach-\textsc{impf}’ (\tabref{tab:anttila:6});  we have diphthongization in /gyɛ́-/  \textit{gyɪ́ɛ́-rɛ̀ } ‘refuse to take’, but not in /nyɛ́-/ \textit{nyɛ́-rɛ̀}  ‘see, understand’ (\tabref{tab:anttila:7}). This makes the \isi{imperfective suffix} /-r{V́}/ look rather similar to the number suffix /-rÍ/ which also exhibits lexically conditioned vowel lengthening.
 
 \begin{table}
+\todo[inline]{check empty and double table cells}
 \begin{tabularx}{\textwidth}{lllllX}
 \lsptoprule
 & {Root} & {Cit. form} & {Imperf.} & {Nominal} & \\
@@ -218,6 +221,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 	&/fɪ̰ɛ̰-/&	fɪ̰̀ɛ̰̀	& fɪ̰̀ɛ̰̀-rɛ̰́	&fɪ̰́ɛ̰́-ʊ̰́	& ‘whip’\\
 	&/dɪ̰ɛ̰-/&	dɪ̰̀ɛ̰̀	& dɪ̰̀ɛ̰̀-nɛ̰́	&dɪ̰́ɛ̰́-ʊ̰́	& ‘play’\\
 	&/yuo-/	&yùò	& yùò-ró	&yúó-ú	& ‘open’\\
+\tablevspace
 (b)	&&tàá	& tá-\textsuperscript{!}rá	& táá-ʊ́ & ‘have, own’\\
 	&/gaa-/	&gàà	& gɛ̀-rɛ́	&gáá-ʊ́	& ‘go’\\
 \lspbottomrule
@@ -232,7 +236,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 
 
 \begin{table}
-\begin{tabularx}{\textwidth}{llXXXX} 
+\begin{tabularx}{\textwidth}{l lXlX X} 
 \lsptoprule
 & {Root} & {Cit. form} & {Imperf.} & {Nominal} & \\
 \midrule
@@ -245,6 +249,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 &	/sag-/&	sàgɪ̀	&sàg-rá&	ság-ʊ́ʊ́	&‘answer’\\
 &	/sɛ́g-/&	sɛ́gɪ́	&sɛ́g-rɛ̀&	sɛ́g-ʊ̀ʊ̀&	‘write’\\
 &	/sʊŋ-/&	sʊ̀ŋɪ̀	&sʊ̀ŋ-nɔ́	&sʊ́ŋ-ʊ́ʊ́	&‘help’\\
+\tablevspace
 (b)	&/bar-/&	bàrɪ̀	&bà-rá	&bár-ʊ́ʊ́	&‘leave’\\
 &	/bur-/&	bùrì	&bù-ró	& búr-úú		&‘soak’\\
 &	/ɛ̂r-/	&ɛ́rɪ̀	&ɛ́-\textsuperscript{!}rɛ́	&ɛ́\textsuperscript{!}r-ʊ́ʊ́	&‘grind’\\
@@ -254,6 +259,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 &	/woŋ-/&	wòŋì	&wò-nó	&wóŋ-úú&	‘understand’\\
 &	/yel-/&	yèlì	&yè-lé	&yél-úú&	‘speak’\\
 &	/zɪŋ-/	&zɪ̀ŋɪ̀	&zɪ̀-nɛ́	&zɪ́ŋ-ʊ́ʊ́	&‘sit’\\
+\tablevspace
 (c)	&/bal-/&	bàlɪ̀	&bàl-lá{\textasciitilde}bàl-á	&bál-ʊ́ʊ́		&‘be tired’\\
 \lspbottomrule
 \end{tabularx}
@@ -261,6 +267,7 @@ The problem is that long mid vowels do exist on the surface. There are even near
 \label{tab:anttila:9}
 \end{table}
 
+\newpage 
 We now turn to consonant-final roots. \tabref{tab:anttila:9} illustrates the same paradigms in CVC roots. Here the action nominal suffix vowel is always long. The imperfective paradigm shows mixed behavior of the familiar kind: the initial syllable may be heavy (CVC.CV) as in (a) or light (CV.CV) as in (b), depending on the verb. One and the same verb may even allow both forms as in (c): /bal-r\'{V}/ ‘be.tired-\textsc{impf’} may come out either as \textit{bàl-lá} or \textit{bàl-á}. Minimal pairs like /bɔŋ{}-r\'{V}/, \textit{bɔ̀n-nɔ́} ‘know-\textsc{impf}’ with a heavy initial syllable and /wòŋ{}-r\'{V}/ \textit{wò-nó} ‘hear-\textsc{impf}’ with a light initial syllable suggest that the choice between the two is lexical. Note that the suffixal /r/ assimilates in place and/or manner to the root-final consonant; the details will be set aside here.\footnote{The CVC verb /gb\^{i}r-/ ‘sleep’ has the exceptional paradigm \textit{gbi }\textit{rì}, \textit{gbí}\textit{\textsuperscript{!}}\textit{ré{} }, \textit{gʊ́ɔ́}\textit{\textsuperscript{!}}\textit{ʊ́}. The action nominal is exceptional in having a short suffix vowel, but since it differs segmentally from the root in several ways, including its [\textsc{atr}] value, we suspect it is probably based on a different lexeme.}
      
      The same paradigms for CVCC verbs are shown in \tabref{tab:anttila:10}. Again, the vowel in the action nominal suffix is always long.  This time even the imperfective paradigm is uniform: the initial syllable is always heavy (CVC.CV), with no free or lexical variation.
@@ -290,7 +297,7 @@ We now turn to consonant-final roots. \tabref{tab:anttila:9} illustrates the sam
      Finally, \tabref{tab:anttila:11} illustrates CVVC verbs. The action nominal suffix vowel is again always long and the imperfective paradigm is uniformly CVV.CV, with no variation.
 
 \begin{table}
-\begin{tabularx}{\textwidth}{llXXXX}
+\begin{tabularx}{\textwidth}{llXXl}
 \lsptoprule
  {Root} & {Cit. form} & {Imperf.} & {Nominal} & \\
 \midrule
@@ -346,6 +353,8 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 
 % Edwin: Changed \citet[4]{Kennedy1996} to \citet[4]{Kennedy1966} based on other similar citations in this paper
 
+\newpage 
+
 \ea\label{ex:anttila:1} A phonological word with a secondary syllable: (\textit{báá})\textit{ʊ́}
 %\label{bkm:Ref482774629}
 %      $\omega $      word
@@ -359,10 +368,11 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 %         b      a    ʊ       melody
 %
 %        [b     a :   ʊ]     phonetics
-\vspace{-1cm}        
+     
 \begin{multicols}{4}      
 \begin{tikzpicture}[sibling distance=.025cm]
 \Tree 
+[.\node[fill=white] (pseudoroot) {};
   [.\node (rootfill) {};
   	\edge[draw=none];	
 	[.\node (omega) {$\omega$};
@@ -402,15 +412,6 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
       ]
     ]
   ]
-\draw (mu2.south) -- (a.north);  
-\draw (sigma.south) -- (b.north); 
-\end{tikzpicture}
- 
-\columnbreak
-
-\begin{tikzpicture}[sibling distance=.025cm]
-
-\Tree
     [.\node (blank1) {};
       \edge[draw=none];
       [.\node (word) {word}; 
@@ -425,6 +426,9 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
       	]
       ]
    	]      	
+   	]
+\draw (mu2.south) -- (a.north);  
+\draw (sigma.south) -- (b.north); 
 \end{tikzpicture}
 \end{multicols}
 
@@ -462,7 +466,7 @@ V shortening & -- & -- & -- & No unstressed VV\\
 %        [b    a     r    ʊ   : ]   phonetics
 %        
         
-\vspace{-1cm}        
+     
 \begin{multicols}{4}      
 \begin{tikzpicture}[sibling distance=.025cm]
 \Tree 
@@ -655,9 +659,7 @@ We conclude by showing the tableaux for CVVC and CVCC roots. They behave analogo
 \z
 
 \ea\label{ex:anttila:7} Vowel length with CVVC roots
-\hline\hline
 \begin{tabularx}{.9\textwidth}{lllXXXX}
-% \lsptoprule
 \hline\hline
 \multicolumn{3}{l}{/baar-ʊʊ/} & WSP & \textsc{Align} & \textsc{Dep(V)} & \textsc{Max(V)}\\
 (a)& \ding{43} &(baa.rʊ)ʊ &  & 1 &  & \\
@@ -679,8 +681,10 @@ Our metrical analysis of \ili{Dagaare} action nominals is relatively straightfor
 \midrule
 (a) & /da-r\'{V}/ & dàà-rá & lengthening & ‘buy’\\
 & /tá{}-r\'{V}/ & tá-rà & -- & ‘reach’\\
+\tablevspace
 (b) & /fáà-r\'{V}/ & fáá-\textsuperscript{!}rá & -- & ‘seize’\\
 & /gaa{}-r\'{V}/ & gɛ̀-rɛ́ & shortening & ‘go’\\
+\tablevspace
 (c) & /bɔŋ-r\'{V}/ & bɔ̀n-nɔ́ -- & ‘know’\\
 & /woŋ-r\'{V}/ & wò-nó & C-deletion & ‘understand’\\
 & /bal-r\'{V}/ & bàl-lá {\textasciitilde} bàl-á & variation & ‘be tired’\\
