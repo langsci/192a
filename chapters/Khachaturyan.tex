@@ -1,19 +1,24 @@
-\documentclass[output=paper]{LSP/langsci} 
-\usepackage{pifont.sty}
-\author{Maria Khachaturyan\affiliation{UC Berkeley} }
-\title{The aorist and the perfect in Mano} 
+\documentclass[output=paper]{langsci/langscibook}  
+\author{Maria Khachaturyan\affiliation{University of Helsinki}}
+\title{The Aorist and the Perfect in Mano} 
 \abstract{The foci of this paper are the semantic differences between two perfective constructions in the Mano language, the Aorist and the Perfect. The paper is based on Östen Dahl's classic questionnaire, as well as various sources of natural speech data, including narratives, routine conversations, and ritual speech, Christian and traditional. The core semantic property of the Mano Perfect is event relevance, which is confirmed by the annulled result test. The core function of the Aorist is being the narrative tense. The paper also includes discussion of two secondary functions of the Perfect and the Aorist, namely, anticipation of future events and transposition to the past. The secondary functions confirm the basic distinction between the Aorist and the Perfect, the latter maintaining a closer connection with the reference point.}
-\maketitle
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[13]
+}{}
+
 
 \begin{document}
-\newcommand{\emphkh}[1]{\textit{#1}} %originally \textbf, banned by the guidelines
+\maketitle
 
 \section{Introduction} %no long sections withouth title allowed
 The purpose of this paper is to investigate the functions fulfilled by the Aorist and the Perfect\footnote{Following \citet{khachhasp}, grammatical labels with an initial capital refer to language-specific categories (the \ili{Mano} Aorist and Perfect), while lower-case spelling is used for comparative concepts of \isi{aorist} and \isi{perfect}.} constructions in \ili{Mano} (< \ili{Mande}). \ili{Mano} is a \ili{Mande} language spoken in Guinea and Liberia by approximately 400,000 speakers. The data for this paper comes from Östen Dahl’s questionnaire on \isi{perfect} \citep{khachdahl2000}, as well as from spontaneous texts of various genres: routine exchanges; narratives; oral Bible translations; traditional ritual speech. The examples are marked according to the speech genre: \textit{el.} for elicitation, \textit{conv.} for routine exchanges, \textit{narr.} for narratives and \textit{rit.} for ritual speech. The excerpts from the oral Bible translations\footnote{Bible verses in \ili{English} are taken from the \citealt{khachNIV} with few exceptions.} and the excerpts from the Dahl's questionnaire are made recognizable by an explicit reference to the source. All elicitation and speech data were collected during fieldwork among the \ili{Mano} in 2009--2016.
 
-A note on terminology will be helpful at the outset. I divide TAMP constructions in \ili{Mano} into perfective, imperfective and aspectually unspecified. The term "perfective" is thus used here not to label a specific construction, but as a general classificatory term bringing together several aspectual constructions, including the Aorist and the Perfect, which are the \isi{focus} of the present paper. Although descriptive and typological works often classify \isi{perfect} as a category apart, it is useful to consider the \ili{Mano} Perfect a type of perfective construction in contrast with the Aorist. The two constructions clearly belong to the same family of constructions: as we will see in \sectref{khachsecneg}, negative Perfect is formed on the basis of the negative Aorist construction with addition of specific adverbs. Similarly, the term ``Aorist'' is rare in the literature and was clearly dispreferred by \citet{khachcomrie1976} (in contrast with the European tradition represented by \citet{khachplung2016} or \citet{khachmaisak2016}). However, it seemed useful to use the term ``Aorist'' as a label of a specific construction characterized by the perfective \isi{aspect}, to avoid confusion with perfective as a generic term. 
+A note on terminology will be helpful at the outset. I divide TAMP constructions in \ili{Mano} into perfective, imperfective and aspectually unspecified. The term ``perfective" is thus used here not to label a specific construction, but as a general classificatory term bringing together several aspectual constructions, including the Aorist and the Perfect, which are the \isi{focus} of the present paper. Although descriptive and typological works often classify \isi{perfect} as a category apart, it is useful to consider the \ili{Mano} Perfect a type of perfective construction in contrast with the Aorist. The two constructions clearly belong to the same family of constructions: as we will see in \sectref{khachsecneg}, negative Perfect is formed on the basis of the negative Aorist construction with addition of specific adverbs. Similarly, the term ``Aorist'' is rare in the literature and was clearly dispreferred by \citet{khachcomrie1976} (in contrast with the European tradition represented by \citet{khachplung2016} or \citet{khachmaisak2016}). However, it seemed useful to use the term ``Aorist'' as a label of a specific construction characterized by the perfective \isi{aspect}, to avoid confusion with perfective as a generic term. 
 
-This paper is organized as follows. I begin by presenting a summary of \ili{Mano} tense, \isi{aspect}, modality and polarity system in \sectref{khachsect1} giving special attention to the constructions with perfective meaning. \sectref{khachsaorist} is dedicated to the \isi{aorist} construction. \sectref{khachsprf} focuses on the functions of the \isi{perfect} construction. \sectref{khachs4} and \sectref{khachs5} explore two secondary functions of the Perfect and the Aorist, namely, anticipation and transposition. Finally, \sectref{khachs6} is a discussion of the Aorist -- Perfect opposition in a typological perspective. 
+This paper is organized as follows. I begin by presenting a summary of \ili{Mano} tense, \isi{aspect}, modality and polarity system in \sectref{khachsect1} giving special attention to the constructions with perfective meaning. \sectref{khachsaorist} is dedicated to the \isi{aorist} construction. \sectref{khachsprf} focuses on the functions of the \isi{perfect} construction. \sectref{khachs4} and \sectref{khachs5} explore two secondary functions of the Perfect and the Aorist, namely, anticipation and transposition. Finally, \sectref{khachs6} is a discussion of the Aorist--Perfect opposition in a typological perspective. 
 
 \section{Perfective constructions in Mano}
 \label{khachsect1}
@@ -79,9 +84,9 @@ The verb can bear segmental and/or tonal morphemes. Note the example below with 
 \subsection{Affirmative perfective constructions}
 \label{khachsecaffp}
 
-The \isi{aorist} construction is formed with the \isi{auxiliary} of the past series (\textsc{pst}) and a verb in its lexical form, see ex. \ref{khachexpst}\footnote{The past \isi{auxiliary} series is aspectually neutral, because the series is used not only in the \isi{aorist} construction, but also in the past imperfective construction which is not formed parallel to the imperfective construction, but rather parallel to the durative construction, see \citet[195-196]{khachgramm}.}
+The \isi{aorist} construction is formed with the \isi{auxiliary} of the past series (\textsc{pst}) and a verb in its lexical form, see \REF{khachexpst}\footnote{The past \isi{auxiliary} series is aspectually neutral, because the series is used not only in the \isi{aorist} construction, but also in the past imperfective construction which is not formed parallel to the imperfective construction, but rather parallel to the durative construction, see \citet[195-196]{khachgramm}.}
 
-The \isi{perfect} construction is formed with the \isi{auxiliary} of the \isi{perfect} series (\textsc{prf}) and a verb in its lexical form, see ex. \ref{khachexprf}.
+The \isi{perfect} construction is formed with the \isi{auxiliary} of the \isi{perfect} series (\textsc{prf}) and a verb in its lexical form, see \REF{khachexprf}.
 
 
 The experiential value is expressed by the \isi{perfect} construction with the adverb \textit{dō} ‘(at least) once; never’:
@@ -149,7 +154,7 @@ The Aorist is the default tense in the narrative. The \isi{consecutive} construc
 \subsection{Temporal adverbs}
 \label{khachsectempadv}
 
-The Aorist, as opposed to the Perfect, freely combines with temporal adverbs (see also ex. \ref{khachexdeeka}).
+The Aorist, as opposed to the Perfect, freely combines with temporal adverbs (see also \REF{khachexdeeka}).
 
 \begin{exe} \ex
 \gll	\textbf{ī}	yī	zɛ̄	pɛ̰́	sɛ̀?	 \\	
@@ -187,7 +192,7 @@ Note the \isi{aorist} construction followed by the \isi{perfect} construction, t
 \label{khachsprf}
 \subsection{Recent past}
 
-The \isi{perfect} construction is extremely frequent in the everyday \textbf{routine exchanges}:
+The \isi{perfect} construction is extremely frequent in the everyday \textsc{routine exchanges}:
 
 \begin{exe} \ex
 \gll	\textbf{ɓāà}	ɓū	ɓèlè?					\\
@@ -234,7 +239,7 @@ A piece of evidence supporting this explanation is that the Perfect is frequent 
 \begin{exe}\ex
 \gll kō ŋwūmɛ́ɓōmì \textbf{āà} ī yókò kɛ̄ áà lò gbèkènī ī ká.\\
 \textsc{2sg} savior \textbf{\textsc{3sg.prf}} \textsc{2sg} enemy do \textsc{3sg.jnt} go:\textsc{jnt} far \textsc{2sg} with\\
-\glt `Our savior made your enemies go far from you.' (he has turned back your enemy, NIV, Ze 3:15)
+\glt `Our savior has made your enemies go far from you.' (he has turned back your enemy, NIV, Ze 3:15)
 \end{exe}
 
 
@@ -291,9 +296,9 @@ The prophecies, especially those of the Old Testament, are often translated with
 The Perfect often marks the concluding sentence in a narrative or other type of text describing a sequence of events. Thus, the \emphkh{descriptions of procedures} are often concluded by the \isi{perfect} construction, as in the following description of how to make an aluminum kettle:
 
 \begin{exe}\ex
-\gll ...wā	ɲɛ̀ɛ̄sɛ́lɛ́	bɛ̰̀ɛ̰̄	ɓō	yī,	kɛ̄	\textbf{wāà}	gbɔ̄ɔ̄	bɛ̀ī.\\
+\gll {\ldots}wā	ɲɛ̀ɛ̄sɛ́lɛ́	bɛ̰̀ɛ̰̄	ɓō	yī,	kɛ̄	\textbf{wāà}	gbɔ̄ɔ̄	bɛ̀ī.\\
 3\textsc{pl}.\textsc{pst}>3\textsc{sg}	sand	too	take.off	there at.that.moment	\textbf{3\textsc{pl}.\textsc{prf}} kettle	make\\
-\glt ‘...you also took away the sand, so you’ve made a kettle.’ (narr.)
+\glt ‘{\ldots}you also took away the sand, so you’ve made a kettle.’ (narr.)
 \end{exe}
 
 In narratives proper, the \isi{perfect} construction often marks \emphkh{concluding events}, as in the following three propositions closing a fairy tale:
@@ -360,7 +365,7 @@ Secondly, it is used in ritual formulas of benediction (\ref{khachexaorant2}). I
 
 \section{Transposition}
 \label{khachs5}
-By \textit{transposition} (\citealt{khachbu1990}; \citealt[217-223]{khachhanks1990}) I understand the function in which the reference point does not coincide with the moment of enunciation, but is transposed on the time scale: in the case of \ili{Mano}, the reference point is usually transposed to the past. A term most often used for the forms fulfilling this function is "anterior" \citep{khachbybee1994} or "pluperfect" \citep{khachsich2013}. This function is typically associated with \isi{perfect} forms \citep{khachklein1992, khachklein1994} to the point that perfects themselves are sometimes called "anteriors". However, as I will make clear below, in \ili{Mano} both the Aorist and the Perfect can function as "anteriors".
+By \textit{transposition} (\citealt[217-223]{khachhanks1990}) I understand the function in which the reference point does not coincide with the moment of enunciation, but is transposed on the time scale: in the case of \ili{Mano}, the reference point is usually transposed to the past. A term most often used for the forms fulfilling this function is ``anterior" \citep{khachbybee1994} or ``pluperfect" \citep{khachsich2013}. This function is typically associated with \isi{perfect} forms \citep{khachklein1992, khachklein1994} to the point that perfects themselves are sometimes called ``anteriors". However, as I will make clear below, in \ili{Mano} both the Aorist and the Perfect can function as ``anteriors".
 
 The following two examples are taken from narratives; the events of the main narrative line are expressed by the \isi{aorist} construction. The background events which occurred immediately prior to the events of the main story line are expressed by the \isi{perfect} construction:
 
@@ -399,13 +404,13 @@ As suggested in the foundational works by \citet{khachcomrie1976}, \citet{khachm
 
 The resultative meaning is often considered the core meaning of \isi{perfect} for semantic reasons (because the result is viewed as the clearest manifestation of the relevance of the situation), but also for diachronic reasons (as \isi{perfect} is often a grammaticalized resultative construction, \citealt{khachplung2016}). In contrast, the \ili{Mano} Perfect, formed with an \isi{auxiliary} and a verbal root, is no more analytical than any other TAMP construction in \ili{Mano} and it is unlikely that it grammaticalized from a resultative construction. 
 
-Östen Dahl's cross-linguistic study of parallel corpora (Bible translations into several European languages, \citealt{khachdahl2014}) confirms that the prototypical contexts for the \isi{perfect} involve event relevance (cf.: ""Take heart, daughter," he said, "your faith has healed you."", NIV, Ma 9:22). In these contexts, the target Bible verse was systematically translated with the use of a \isi{perfect} construction. Note, however, that a different parallel corpus study focusing on a smaller corpus, consisting of translations of "Alice in the Wonderland" and "Winnie the Pooh", but on a larger linguistic sample, including the languages of the Balkans (\ili{Greek}, Bulgarian, Macedonian), came to a different conclusion: that the semantic core of the European \isi{perfect} is not current relevance, but experiential meaning \citep{khachsich2016}. \footnote{Note also that Dahl's study which included several translations into the same language identified significant intralinguistic variation: the variation between translations into one language is often comparable in extent to that between languages.}
+Östen Dahl's cross-linguistic study of parallel corpora (Bible translations into several European languages, \citealt{khachdahl2014}) confirms that the prototypical contexts for the \isi{perfect} involve event relevance (cf.: `{}``Take heart, daughter,'' he said, ``your faith has healed you.''{}', NIV, Ma 9:22). In these contexts, the target Bible verse was systematically translated with the use of a \isi{perfect} construction. Note, however, that a different parallel corpus study focusing on a smaller corpus, consisting of translations of \textit{Alice in Wonderland} and \textit{Winnie the Pooh}, but on a larger linguistic sample, including the languages of the Balkans (Greek, Bulgarian, Macedonian), came to a different conclusion: that the semantic core of the European \isi{perfect} is not current relevance, but experiential meaning \citep{khachsich2016}.\footnote{Note also that Dahl's study which included several translations into the same language identified significant intralinguistic variation: the variation between translations into one language is often comparable in extent to that between languages.}
 
 Whether or not current relevance is at the core of the semantics of the European \isi{perfect}, it seems to be the main parameter defining the Perfect and distinguishing it from the Aorist in \ili{Mano}. The context of annulled result (\sectref{khachsectanres}) is a good test for this parameter as it yields strict complementarity: if the result of some action was overruled by some consequent action, the \isi{perfect} construction cannot be used.\footnote{This test, however, is not universally applicable across languages. Events that have been overruled by some other event can still be relevant, as in the ex. 37 of Dahl's questionnaire \citep[803]{khachdahl2000}: "[It is cold in the room. The window is closed.] Question: You OPEN the window (and closed it again)?". Thus, while \ili{Mano} prohibits the usage of the Perfect in this context, in the \ili{Nij} dialect of \ili{Udi} the Perfect is grammatical \citep{khachmaisak2016}.} On the contrary, when a certain past event is explicitly presented as a justification of a current or a future situation, as in example \REF{khachexmoto}, the \isi{perfect} construction is clearly preferred to the Aorist.
 
 A relevant event expressed by the Perfect in \ili{Mano} does not have to be recent. In routine conversation many relevant events are recent: moreover, when a pair of examples with the Aorist and the Perfect are evaluated by native speakers, they tend to analyze the latter as being more recent. Cross-linguistically, however, recency seems to be more of an implicature rather than part of the semantics. Non-recent perfects are very common: experiential \isi{perfect} is typically not recent. In general, Dahl and Hedin \citep{khachdahlhedin2000} analyze the "hot news" value as a late semantic development of perfects.
 
-Perfects cross-linguistically often show important restrictions in combinations with temporal adverbs, as temporal specification "somehow detracts from the focusing on the  result. . . perhaps by transferring the attention to the time of the past event" \citep[395]{khachdahlhedin2000}. This is also the case for \ili{Mano} (see \sectref{khachsectempadv}). Compatibility with temporal adverbs, however, is also very idiosyncratic: some perfects combine freely with temporal adverbs of any kind \citep{khachmaisak2016}. 
+Perfects cross-linguistically often show important restrictions in combinations with temporal adverbs, as temporal specification "somehow detracts from the focusing on the  result {\ldots} perhaps by transferring the attention to the time of the past event" \citep[395]{khachdahlhedin2000}. This is also the case for \ili{Mano} (see \sectref{khachsectempadv}). Compatibility with temporal adverbs, however, is also very idiosyncratic: some perfects combine freely with temporal adverbs of any kind \citep{khachmaisak2016}. 
 
 Another function of the Perfect in \ili{Mano} is marking the coda of a narrative (\sectref{khachcodanarr}). For William \citet[65]{khachlabov2001}, the function of the coda is indicating the “termination of the narrative by returning the time frame to the present”. The narrative can be put back into relationship with the present by dissociating the narrative time and the present time. This is the strategy used in \ili{Totela}, a \ili{Bantu} language \citep{khachcrane2015}, where the narrative coda is marked by a prehodiernal affix which signals that the situation is excluded from (and is prior to) the temporal domain of "now". The \ili{Mano} strategy is different: it uses the \isi{perfect} construction which shifts the coda sentence from the domain of narrative past and associates it with the present. This is also the strategy used in the \ili{Nij} dialect of \ili{Udi} (Nakh-Dagestanian, \citealt{khachmaisak2016}).%\footnote{Note that this distinction also applies to the opening of the narrative: while \ili{Totela} also uses prehodiernal form, \ili{Nij} dialect of \ili{Udi} uses \isi{perfect} form.}
 
@@ -422,7 +427,7 @@ This paper investigates the semantic differences between two perfective construc
 
 I am grateful to the speakers of the \ili{Mano} language and inhabitants of the city of Nzérékoré, as well as the villages of Godi, Yei and Bheleton, Guinea. I am especially indebted to Pé Mamy, Cé Simmy, Émile Loua, Aimé Simmy, \textsuperscript{†}Alfred Sandy and \textsuperscript{†}Éli Sandy, for teaching me the language and for being always available and always welcoming. I am grateful to William F. Hanks and to Valentin Vydrin for the comments on various aspects of this paper. I am thankful to the anonymous reviewer for helpful revisions and suggestions. The research, including the fieldwork, was supported by the Fyssen Foundation and by the LLACAN, CNRS, France.
 
-\section*{\biberror{Abbreviations}}
+\section*{Abbreviations}
 
 
 \begin{tabularx}{.45\textwidth}{>{\scshape}lQ}

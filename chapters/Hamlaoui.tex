@@ -9,6 +9,7 @@
 \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
   \input{../localpackages}
   \input{../localcommands} 
+  \input{../localhyphenation} 
   \togglepaper[9]
 }{}
 
@@ -40,7 +41,7 @@ The paper is structured as follows. \sectref{sec:HamlaouiMakasso:2} introduces B
 
 \section{Basic patterns of tone in Bàsà{á}}\label{sec:HamlaouiMakasso:2} 
 \subsection{Downdrift}
-Bàsà{á} is a tonal language with a three-way underlying opposition between H(igh), L(ow) and toneless ($\emptyset$) tone-bearing units (TBUs) (\citealt{Dimmendaal88,Hyman03,Makasso08a} and in particular \citealt{Kody93,HamlaouiEtAl14,MakassoEtAl17} on toneless TBUs). As a result of a number of tonal processes, Bàsà{á}'s surface realizations contrast H, L, LH (rising), HL (falling) and {\textdownstep}H (`downstepped' H) tones. \tabref{tab:HamlaouiMakasso:1} provides an illustration of Bàsà{á}'s minimal tonal contrasts.\footnote{The system of transcription used in this work is the IPA. For the readers familiar with previous literature on Bàsà{á}, we have the following correspondences: /p/ or /b/ $\to$ \textbf{/β/}; /t/ or /d/ $\to$ \textbf{/r/}; /k/ or /g/ $\to$ \textbf{/γ/}; /y/ $\to$ \textbf{/j/}; /ny/ $\to$ \textbf{/ɲ/}; /j/ $\to$ \textbf{/ʤ/}; /c/ $\to$ \textbf{/ʧ/}.} 
+Bàsà{á} is a tonal language with a three-way underlying opposition between H(igh), L(ow) and toneless ($\emptyset$) tone-bearing units (TBUs) (\citealt{Dimmendaal88,Hyman03,Makasso08a} and in particular \citealt{Kody93,HamlaouiEtAl14,MakassoEtAl17} on toneless TBUs). As a result of a number of tonal processes, Bàsà{á}'s surface realizations contrast H, L, LH (rising), HL (falling) and {\textdownstep}H (`downstepped' H) tones. \tabref{tab:HamlaouiMakasso:1} provides an illustration of Bàsà{á}'s minimal tonal contrasts.\footnote{The system of transcription used in this work is the IPA. For the readers familiar with previous literature on Bàsà{á}, we have the following correspondences: /p/ or /b/ $\to$ {/β/}; /t/ or /d/ $\to$ {/r/}; /k/ or /g/ $\to$ {/γ/}; /y/ $\to$ {/j/}; /ny/ $\to$ {/ɲ/}; /j/ $\to$ {/ʤ/}; /c/ $\to$ {/ʧ/}.} 
 
 
 %\begin{figure}
@@ -80,8 +81,7 @@ As in many other African \isi{tone} languages, in utterances presenting mixed se
 \gll í\`~-ɓ-ɔɔŋg\'ɛ ɓ{á}n{á} ɓ{á}-m-ɓ{á}r{á} m-{á}ŋgòlò m{á} ɓ-às{á}ŋ\\
 \textsc{aug}-2-children 2.\textsc{dem} 2.\textsc{agr}-\textsc{pst1}-take 6-mangoes 6.\textsc{conn} 2-fathers\\
 \glt `These children picked up the mangoes of the fathers.' \label{ex:HamlaouiMakasso:1} \\ \citep{MakassoEtAl17}
-\z
-\todo{<b> has to be implosive in graphics}
+\z 
 
 \begin{figure} 
 \includegraphics[width=10cm]{figures/Downdrift}
@@ -186,6 +186,14 @@ I \textsc{pst1}-give 5-friend 5.\textsc{conn} 1.grandfather 9.house\\
 \glt `I gave the friend of the grandfather the house.'\label{ex:HamlaouiMakasso:8} 
 \z
 
+
+\begin{figure}[h]
+\caption{Downstep between two complements in sentence \REF{ex:HamlaouiMakasso:8} \label{fig:HamlaouiMakasso:5}}
+\includegraphics[width=10cm]{figures/ComplexO1Sept16B}
+\end{figure}
+
+
+
 \ea \gll m\`ɛ ǹ-tí í-{\textdownstep}sóγól núnú {\textdownstep}nd{á}p j\^ɔŋ.\\
 I \textsc{pst1}-give \textsc{aug}-1.grandfather  1.\textsc{dem} 9.house 9.your\\
 \glt `I gave this grandfather your house.'\label{ex:HamlaouiMakasso:9}
@@ -200,13 +208,6 @@ I \textsc{pst1}-give which 1.child which 1.woman\\
 I \textsc{pst1}-give 1.teacher 1.big 9.house 9.big\\
 \glt `I gave the big teacher the big house.'\label{ex:HamlaouiMakasso:11}
 \z
-
-\begin{figure}
-
-\caption{Downstep between two complements in sentence \REF{ex:HamlaouiMakasso:8} \label{fig:HamlaouiMakasso:5}}
-\includegraphics[width=10cm]{figures/ComplexO1Sept16B}
-
-\end{figure}
 
 
 \noindent Example \REF{ex:HamlaouiMakasso:12} is crucial in connection to Hyman and Hyman \& Lionnet's hypothesis, as demonstratives are not, to the best of our knowledge, among the words that they would posit have a floating L \isi{tone} but still display a downstep when they are the second complement of a verb.
@@ -249,7 +250,7 @@ Whenever the verb is followed by a complement and a locative adjunct though, as 
 \z
 
 
-\begin{figure}
+\begin{figure}[t]
 
 \caption{Absence of downstep between a complement and a locative phrase \REF{ex:HamlaouiMakasso:15} \label{fig:HamlaouiMakasso:6}}
 \includegraphics[width=10cm]{figures/LocSept16B}
@@ -300,8 +301,9 @@ Second, we have proposed that Falling Tone Simplification (FTS), in its turn, pr
 \ea (XP V XP XP)$_{\iota}$.\label{ex:HamlaouiMakasso:22}
 \z
 
-We have seen that the configurations in which we observed a downstep could not be traced to the presence of a lexical floating L \isi{tone}. What then determines the presence of these downsteps? We propose that the contexts in which downstep occurs in Bàsà{á} correspond to the maximal \isi{phonological phrase} of the prosodic hierarchy, where $\phi$ and other prosodic categories are recursive \citep[a.o.][]{ItoMester12}. More specifically, we propose that Bàsà{á} inserts a downstep between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. The distinction of adjacent H tones in absence of a lexical floating L is thus indicative of recursive phonological phrasing.
+We have seen that the configurations in which we observed a downstep could not be traced to the presence of a lexical floating L \isi{tone}. What then determines the presence of these downsteps? We propose that the contexts in which downstep occurs in Bàsà{á} correspond to the maximal \isi{phonological phrase} of the pro\-sod\-ic hierarchy, where $\phi$ and other prosodic categories are recursive \citep[a.o.][]{ItoMester12}. More specifically, we propose that Bàsà{á} inserts a downstep between the phonological phrases that are the immediate daughters of a maximal \isi{phonological phrase}. The distinction of adjacent H tones in absence of a lexical floating L is thus indicative of recursive phonological phrasing.
 
+\largerpage
 Let us spell out our reasoning. We \isi{focus} on the sentence level, as this is where our hypotheses concerning the syntactic structure are the most restricted. First, we know from the data we have examined that downstep does not occur between two phrases that do not belong to a larger lexical XP, that is, between \isi{subject} and verb, for instance, or a complement and (what can safely be assumed) a clause-level adjunct. These phrases form a plateau (a point we will come back to subsequently). Second, we know that downstep does not occur either between a verb and its complement, which do belong to a simple lexical XP (VP). Third, we know that downstep occurs between two complements of a verb, or a complement and a verb modifier. It thus seems that downstep occurs when more syntactic structure is involved within a lexical phrase (here VP), and thus intuitively indicates an `intermediate' degree of cohesion between two phrases. In a canonical sentence with a verb with more than one complement, it is usually assumed that all the arguments of the verb are contained within a complex V(erb)P(hrase), which can be represented (among other ways) as shown in \figref{fig:HamlaouiMakasso:7} \citep{Larson88}.
 
 
@@ -351,7 +353,7 @@ Downstep however only targets the juncture between the two complements, which su
 
 What seems crucial here is that not all phonological phrases are distinguished. In \REF{ex:HamlaouiMakasso:26}, if noun and adjective are indeed contained within a single \isi{phonological phrase}, how come they do not show downstep just like the two complements of a verb? After all, they seem to be in a  comparable syntactic configuration (i.e. two lexical phrases contained in a larger lexical phrase).
 
-We propose that this is because downstep only targets the phonological phrases that are immediately dominated by a \emph{maximal} \isi{phonological phrase}. This is in line with \citeauthor{ItoMester12}'s \citeyearpar{ItoMester12, ItoMester13} Prosodic Projection Theory, in which domain-sensitive processes can target different projection levels (i.e. (non-)maximal, (non)-minimal projections). Downstep would here constitute e\-vi\-dence for a certain type of nesting of phonological phrases.
+We propose that this is due to the fact that downstep only targets the phonological phrases that are immediately dominated by a \emph{maximal} \isi{phonological phrase}. This is in line with \citeauthor{ItoMester12}'s \citeyearpar{ItoMester12, ItoMester13} Prosodic Projection Theory, in which domain-sensitive processes can target different projection levels (i.e. (non-)maximal, (non)-minimal projections). Downstep would here constitute e\-vi\-dence for a certain type of nesting of phonological phrases.
 %\newpage
 Let us examine the \isi{prosodic structure} that obtains in some of the sentences in which downstep is found, and contrast them with some in which it isn't.  
 
