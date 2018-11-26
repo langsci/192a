@@ -355,7 +355,8 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 
 \newpage 
 
-\ea\label{ex:anttila:1} A phonological word with a secondary syllable: (\textit{báá})\textit{ʊ́}
+\ea\label{ex:anttila:1} A phonological word with a secondary syllable: (\textit{báá})\textit{ʊ́}\\
+\vspace*{-1.5cm}       
 %\label{bkm:Ref482774629}
 %      $\omega $      word
 %
@@ -368,11 +369,10 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 %         b      a    ʊ       melody
 %
 %        [b     a :   ʊ]     phonetics
-     
-\begin{multicols}{4}      
-\begin{tikzpicture}[sibling distance=.025cm]
+\begin{tikzpicture}[sibling distance=2mm]
 \Tree 
-[.\node[fill=white] (pseudoroot) {};
+[.\node[fill=white] (pseudoroot) {}; %add a "super node" to make the tree tiers align vertically
+  \edge[draw=none];
   [.\node (rootfill) {};
   	\edge[draw=none];	
 	[.\node (omega) {$\omega$};
@@ -390,7 +390,7 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
           		\edge[draw=none]; {}
           		[.\node (a) {a}; 
           			\edge[draw=none];
-          			[.{a:} ]
+          			[.{aː} ]
           		]
           	]
           	[.\node (mu2) {$\mu$}; ]
@@ -411,7 +411,8 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
       	]
       ]
     ]
-  ]
+  ] 
+  \edge[draw=none];
     [.\node (blank1) {};
       \edge[draw=none];
       [.\node (word) {word}; 
@@ -429,8 +430,7 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
    	]
 \draw (mu2.south) -- (a.north);  
 \draw (sigma.south) -- (b.north); 
-\end{tikzpicture}
-\end{multicols}
+\end{tikzpicture} 
 
 \z
 
@@ -450,8 +450,10 @@ V shortening & -- & -- & -- & No unstressed VV\\
 \caption{The derivation of vowel length in C-final roots}
 \label{tab:anttila:13}
 \end{table}
-        
-\ea\label{ex:anttila:2} A phonological word with a secondary syllable: (\textit{bárʊ́})\textit{ʊ́}
+
+\newpage 
+\ea\label{ex:anttila:2} A phonological word with a secondary syllable: (\textit{bárʊ́})\textit{ʊ́}\\
+\vspace*{-1.5cm}       
 %\label{bkm:Ref482782387}
 %            $\omega $    word
 %
@@ -466,10 +468,11 @@ V shortening & -- & -- & -- & No unstressed VV\\
 %        [b    a     r    ʊ   : ]   phonetics
 %        
         
-     
-\begin{multicols}{4}      
-\begin{tikzpicture}[sibling distance=.025cm]
+      
+\begin{tikzpicture}[sibling distance=2mm]
 \Tree 
+[.\node[fill=white] (pseudoroot) {}; %add a "super node" to make the tree tiers align vertically
+    \edge[draw=none];
   [.\node (rootfill) {};
   	\edge[draw=none];	
 	[.\node (omega) {$\omega$};
@@ -517,22 +520,14 @@ V shortening & -- & -- & -- & No unstressed VV\\
       		[.\node (mu3) {$\mu$};
       			[.\node (oops1) {ʊ};
       			    \edge[draw=none];
-      				[.\node (oops2) {\hspace{10pt}:{\big]}}; ]
+      				[.\node (oops2) {\hspace{10pt}ː{\big]}}; ]
       			]
       		]
       	]
       ]
     ]
   ]
-\draw (sigma1.south) -- (b.north); 
-\draw (sigma2.south) -- (roops.north); 
-\end{tikzpicture}
- 
-\columnbreak
-
-\begin{tikzpicture}[sibling distance=.025cm]
-
-\Tree
+\edge[draw=none];  
     [.\node (blank1) {};
       \edge[draw=none];
       [.\node (word) {word}; 
@@ -548,8 +543,10 @@ V shortening & -- & -- & -- & No unstressed VV\\
       	]
       ]
    	]      	
-\end{tikzpicture}
-\end{multicols}
+]
+\draw (sigma1.south) -- (b.north); 
+\draw (sigma2.south) -- (roops.north); 
+\end{tikzpicture} 
 
 \z
 
