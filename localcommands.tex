@@ -44,8 +44,8 @@
 %commands for Lamont paper below
 \newcommand{\row}[4]{
 	#1. & 
-    /\textipa{#2}/ & 
-    [\textipa{#3}] & 
+    /{#2}/ & 
+    [{#3}] & 
     `#4' \\ 
 }
 %\newcounter{tableauxcounter}
@@ -58,8 +58,8 @@
 	\caption{#1}
 	\label{#2}
 }
-\newcommand{\candref}[2]{(\ref{#1}#2)}
-\newcommand{\tableauref}[1]{Tableau~\ref{#1}}
+\newcommand{\candref}[2]{{\color{blue!80}(\ref{#1}#2)}}
+\newcommand{\tableauref}[1]{{\color{blue!80}Tableau~\ref{#1}}}
 % tableaux
 \newcommand{\inp}[1]{\multicolumn{2}{|l||}{{#1}}}
 \newcommand{\inpno}[1]{\multicolumn{2}{|l||}{#1}}
