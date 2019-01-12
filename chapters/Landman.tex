@@ -20,7 +20,7 @@ In this paper, I examine the syntax and semantics of nominal \isi{quantification
 
 \ea \label{ex:landman:1}
 	\gll ru-e lagok tugul\\
-       	 sleep-\textsc{prs} child[\textsc{pl}] all\\
+       	 sleep-\textsc{prs} child.\textsc{pl} all\\
   \glt ‘All the children are sleeping.’
 \z
 
@@ -29,11 +29,11 @@ In this paper, I examine the syntax and semantics of nominal \isi{quantification
 \ea
   \ea \label{ex:landman:2a}
     \gll ru-e lakwet *(age) tugul\\
-       sleep-\textsc{prs} child[\textsc{sg}] *(some[\textsc{sg}]) all\\
+       sleep-\textsc{prs} child.\textsc{sg} *(some.\textsc{sg}) all\\
     \glt ‘Every child is sleeping.’
   \ex \label{ex:landman:2b}
     \gll ru-e lakwet age\\
-       	 sleep-\textsc{prs} child[\textsc{sg}] some[\textsc{sg}]\\
+       	 sleep-\textsc{prs} child.\textsc{sg} some.\textsc{sg}\\
     \glt ‘Some/another child is sleeping.’
   \z
 \z
@@ -47,7 +47,7 @@ I will motivate an account of this pattern according to which the quantifier \te
 [QP[DP\textsubscript{e}] [Q[tugul]]]\end{forest}
 \z
 
-\noindent Further, \textit{age} is an indefinite determiner that denotes a variable over Skolemized choice functions (as in \citealt{Kratzer:1998}; see also \citealt{Reinhart:1997}; \citealt{Winter:1997}, and \citealt{Matthewson:1999,Matthewson:2001}, among many others); \textit{age} thus attaches to an NP of type <e, t> and yields a DP of type \textit{e}, in effect creating a suitable argument for \textit{tugul} and restricting its domain (as in \posscitet{Matthewson:2001} analysis of \ili{Salish}):\footnote{I thank the anonymous reviewers for suggesting an analysis of \textit{age} along these lines.}
+\noindent Further, \textit{age} is an indefinite determiner that denotes a variable over Skolemized choice functions (as in \citealt{Kratzer:1998}; see also \citealt{Reinhart:1997}; \citealt{Winter:1997}; \citealt{Matthewson:1999,Matthewson:2001}; among many others); \textit{age} thus attaches to an NP of type <e, t> and yields a DP of type \textit{e}, in effect creating a suitable argument for \textit{tugul} and restricting its domain (as in \posscitet{Matthewson:2001} analysis of \ili{Salish}):\footnote{I thank the anonymous reviewers for suggesting an analysis of \textit{age} along these lines.}
 
 \ea \label{ex:landman:4}
 \begin{forest}
@@ -65,6 +65,7 @@ The remainder of this paper is organized as follows. In \sectref{sec:landman:bac
 The basic word order of \ili{Kipsigis} is verb initial, with both VSO and VOS occurring as possible variants:\footnote{\ili{Kipsigis} nominals are case-marked by \isi{tone}, where subjects bear a lower \isi{tone} than their nonsubject counterparts (\citealt{Jake:1979}; see also \citealt{Creider:1989,Creider:2003} for the closely related dialect \ili{Nandi}). I leave out \isi{tone} in my transcriptions here.}\textsuperscript{,}\footnote{See \citealt{Diercks:2016b} for a description and analysis of \ili{Kipsigis} word order.} 
 
 \ea
+  \settowidth\jamwidth{(VSO)}  
   \ea \gll	ko-e Kiprono peek\\
 			\textsc{pst}-drink Kiprono water\\ \jambox{(VSO)}
       \glt ‘Kiprono drank water.’\label{ex:landman:VSO}
@@ -80,11 +81,11 @@ Within nominals, the head noun appears first. Nouns are inflected for number, an
   \settowidth\jamwidth{(demonstrative)}  
   \ea \label{ex:landman:6a}
     \gll ko-ibut lakwa-ni \\
-      \textsc{pst}-fall child[\textsc{sg}]-this\\                 \jambox{(demonstrative)}
+      \textsc{pst}-fall child.\textsc{sg}-this\\                 \jambox{(demonstrative)}
       \glt ‘This child fell.’
   \ex\label{ex:landman:6b}
     \gll ko-ibut lakwe-nyin \\
-      \textsc{pst}-fall child[\textsc{sg}]-her\\                   \jambox{(possessive)}
+      \textsc{pst}-fall child.\textsc{sg}-her\\                   \jambox{(possessive)}
       \glt ‘Her child fell.’
   \z
 \z 
@@ -94,11 +95,11 @@ Within nominals, the head noun appears first. Nouns are inflected for number, an
 %\ea
 \ea \label{ex:landman:7a}
   \gll ru-e lagok somog-u ap Kiprono tugul ne-mingen\\
-       sleep-\textsc{prs} child[\textsc{pl}] three-[\textsc{nom}] of Kiprono all \textsc{rel}-small\\
+       sleep-\textsc{prs} child.\textsc{pl} three-\textsc{nom} of Kiprono all \textsc{rel}-small\\
   \glt ‘All three of Kiprono's children that are small are sleeping.’
 %\ex[*]{\label{ex:landman:7b}
 %  \gll ru-e somog-u ap Kiprono tugul ne-mingen lagok\\
-%       sleep-\textsc{prs}  three-[\textsc{nom}] of Kiprono all %\textsc{rel}-small child[\textsc{pl}]\\}
+%       sleep-\textsc{prs}  three-\textsc{nom} of Kiprono all %\textsc{rel}-small child.\textsc{pl}\\}
 \z
 %\z
 
@@ -107,13 +108,13 @@ Within nominals, the head noun appears first. Nouns are inflected for number, an
 \section{Bare nouns} 
 \label{sec:landman:barenouns}
 
-This section discusses the syntax and semantics of bare nouns in \ili{Kipsigis}; this is a necessary step in understanding the composition of quantificational nominals, because bare nouns serve as building blocks for quantificational nominals. I look at the various interpretations of bare nouns in \sectref{sec:landman:barenounsinterpretations} and discuss the semantic contribution of number in \sectref{sec:landman:number}. 
+This section discusses the syntax and semantics of bare nouns in \ili{Kipsigis}; this is a necessary step in understanding the composition of quantificational nominals, because bare nouns serve as building blocks for them. I look at the various interpretations of bare nouns in \sectref{sec:landman:barenounsinterpretations} and discuss the semantic contribution of number in \sectref{sec:landman:number}. 
 
 \subsection{Indefinite, definite, and generic interpretations}
 \label{sec:landman:barenounsinterpretations}
 Bare nouns (both singular and plural) appear in argument positions, where they permit indefinite, definite, and generic interpretations.
 
-There is a long-standing debate regarding how to semantically characterize definiteness (see, among many others, \citealt{Frege:1892}, \citealt{Russell:1905}, \citealt{Heim:1982}, and \citealt{schwarz:2009}). I will assume here that definites have two characteristics properties: (a) they are felicitious only in contexts in which their referents are both familiar and unique, and (b) they are scopeless with respect to quantifiers (such as \isi{negation}). Indefinites, in contrast, are felicitous in novel, nonunique contexts and can interact scopally with other quantifiers.
+There is a long-standing debate regarding how to semantically characterize \isi{definiteness} (see, among many others, \citealt{Frege:1892}, \citealt{Russell:1905}, \citealt{Heim:1982}, and \citealt{schwarz:2009}). I will assume here that definites have two characteristic properties: (a) they are felicitious only in contexts in which their referents are both familiar and unique, and (b) they are scopeless with respect to quantifiers (such as \isi{negation}). \isi{Indefinites}, in contrast, are felicitous in novel, nonunique contexts, and can interact scopally with other \isi{quantifiers}.
 
 With respect to these properties, bare nouns in \ili{Kipsigis} allow both definite and indefinite interpretations.\footnote{For reasons of space, I omit examples with bare plurals in \REF{ex:landman:novelunique} though \REF{ex:landman:scopesg}; however, the patterns observed for bare singulars in these examples also hold for bare plurals.} Bare nouns are felicitous in both novel and familiar contexts:\footnote{The examples in \REF{ex:landman:novelunique} and \REF{ex:landman:uniqueness} are modeled after the tests for bare nouns in \citet{Gillon:2015}.}
 
@@ -121,11 +122,11 @@ With respect to these properties, bare nouns in \ili{Kipsigis} allow both defini
   \settowidth \jamwidth{(nonunique)}  
   \ea \label{ex:landman:novel}
      \gll enkeny-ko ki-mi kirowgindet\\
-          long-ago there-was chief[\textsc{sg}]\\ \jambox{(novel)}
+          long-ago there-was chief.\textsc{sg}\\ \jambox{(novel)}
      \glt ‘Long ago there was a chief.’
   \ex \label{ex:landman:familiar}
      \gll ki-chamat kirwogindet piik\\
-          \pass-like chief[\textsc{sg}] person[\textsc{pl}]\\ \jambox{(familiar)}
+          \pass-like chief.\textsc{sg} person.\textsc{pl}\\ \jambox{(familiar)}
      \glt ‘The chief was liked by the people.’
   \z
 \z 
@@ -136,12 +137,12 @@ With respect to these properties, bare nouns in \ili{Kipsigis} allow both defini
 \settowidth\jamwidth{(non-unique)}  
   \ea \label{ex:landman:nonunique} [Context: There are two identical cups in the cupboard.]\\
     \gll konon kikombet \\
-         give[\imp] cup[\textsc{sg}] \\ \jambox{(nonunique)}
+         give.\imp cup.\textsc{sg} \\ \jambox{(nonunique)}
     \glt ‘Give me a cup!’
     \ex \label{ex:landman:unique} [Context: There is just one cat and one dog, and they are fighting.]\\ 
     \gll 
       ko-suger ngokta ak paget agoi ko-labat paget\\
-      \pst-fight dog[\textsc{sg}] and cat[\textsc{sg}] until \pst-run.away cat[\textsc{sg}]\\ \jambox{(unique)}
+      \pst-fight dog.\textsc{sg} and cat.\textsc{sg} until \pst-run.away cat.\textsc{sg}\\ \jambox{(unique)}
     \glt ‘The dog and the cat fought until the cat ran away.’
   \z
 \z 
@@ -150,33 +151,33 @@ Bare nouns also appear in sluicing constructions, again indicating that they per
 
 \ea \label{ex:landman:sluicing}
   \gll ko-ger lakwet, kobaten mongen ale ainon\\	
-	   \pst-see child[\textsc{sg}] but \textsc{neg}-know[1.sg] \textsc{comp} which\\
+	   \pst-see child.\textsc{sg} but \textsc{neg}-know.1\textsc{sg} \textsc{comp} which\\
   \glt ‘She saw a child, but I don't know which.’
 \z 
 
-Bare nouns also permit both narrow-\isi{scope} and scopeless interpretations with respect to \isi{negation}. For example, given the context set by \REF{ex:landman:context}, the continuation in \REF{ex:landman:barenounambig} is ambiguous (examples modeled after \citealt{Matthewson:2001}). On one reading, \REF{ex:landman:scopeless}, \textit{kitabut} ‘book[\textsc{sg}]’ is scopeless; in this case, \textit{kitabut} corefers with the previously mentioned book (i.e., it is interpreted as a definite). On a second reading, \REF{ex:landman:negexis}, \textit{kitabut} scopes below \isi{negation} (i.e., it is interpreted as a narrow-\isi{scope} existential indefinite). 
+Bare nouns also permit both narrow-\isi{scope} and scopeless interpretations with respect to \isi{negation}. For example, given the context set by \REF{ex:landman:context}, the continuation in \REF{ex:landman:barenounambig} is ambiguous (examples modeled after \citealt{Matthewson:2001}). On one reading, \REF{ex:landman:scopeless}, \textit{kitabut} ‘book.\textsc{sg}’ is scopeless; in this case, \textit{kitabut} corefers with the previously mentioned book (i.e., it is interpreted as a definite). On a second reading, \REF{ex:landman:negexis}, \textit{kitabut} scopes below \isi{negation} (i.e., it is interpreted as a narrow-\isi{scope} existential indefinite). 
 
 \ea \label{ex:landman:context}
   \gll ko-tach Kipto kitabut ak chaik\\	
-	   \pst-receive Kipto book[\textsc{sg}] and tea\\
+	   \pst-receive Kipto book.\textsc{sg} and tea\\
 \glt ‘Kipto received a book and tea.’
 \z 
    
 \begin{exe}
 \ex \label{ex:landman:barenounambig}
   \gll mo-cham kitabut\\	
-       \textsc{neg}-like book[\textsc{sg}]\\
+       \textsc{neg}-like book.\textsc{sg}\\
   \begin{xlist}
   \ex \label{ex:landman:scopeless} ‘She doesn't like the book.’  (scopeless)
   \ex \label{ex:landman:negexis} ‘She doesn't like books.’ (Neg > $\exists$)
   \end{xlist}   
 \end{exe}
 
-\noindent In fact, \ili{Kipsigis}, like many other languages, has no nominal expression corresponding to the \ili{English} determiner \textit{no}; instead, nominal \isi{negation} can be expressed using a bare noun in combination with verbal \isi{negation}, further illustrating that bare nouns permit narrow-\isi{scope} existential interpretations:
+ In fact, \ili{Kipsigis}, like many other languages, has no nominal expression corresponding to the \ili{English} determiner \textit{no}; instead, nominal \isi{negation} can be expressed using a bare noun in combination with verbal \isi{negation}, further illustrating that bare nouns permit narrow-\isi{scope} existential interpretations:
 
 \ea \label{ex:landman:negbarenoun}
   \gll ma-ibut chita\\	
-	   \textsc{neg}-fall person[\textsc{sg}]\\
+	   \textsc{neg}-fall person.\textsc{sg}\\
 \glt ‘No one fell.’
 \z 
 
@@ -185,7 +186,7 @@ Bare nouns also permit both narrow-\isi{scope} and scopeless interpretations wit
 \begin{exe}
 \ex \label{ex:landman:scopesg}
   \gll ko-ibut chita ako ma-ibut chita\\	
-	   \textsc{pst}-fall person[\textsc{sg}] and \textsc{pst}-fall person[\textsc{sg}]\\
+	   \textsc{pst}-fall person.\textsc{sg} and \textsc{pst}-fall person.\textsc{sg}\\
   \begin{xlist}
   \ex \label{ex:landman:narrow}‘Someone fell and no one fell.’ (Neg > $\exists$)
   \ex \label{ex:landman:wide} *‘Someone fell and someone (else) did not fall.’ (*$\exists$ > Neg)
@@ -197,11 +198,11 @@ Finally, in addition to definite and nonspecific indefinite interpretations, sin
 \ea   
   \ea \label{ex:landman:gensg}
      \gll tinye paget saroriet\\
-          have cat[\textsc{sg}] tail[\textsc{sg}]\\ 
+          have cat.\textsc{sg} tail.\textsc{sg}\\ 
      \glt ‘A cat has a tail.’
   \ex \label{ex:landman:genpl}
      \gll tinye pagok sarurek\\
-          have cat[\textsc{pl}] tail[\textsc{pl}]\\ 
+          have cat.\textsc{pl} tail.\textsc{pl}\\ 
      \glt ‘Cats have tails.’
   \z
 \z 
@@ -215,11 +216,11 @@ This section provides background on the number interpretation of bare nouns. Plu
  \ea \label{ex:landman:15}
   \ea\label{ex:landman:barepluralquestion}
      \gll ko-ger tuga i\\
-          \textsc{pst}-see cow[\textsc{pl}] \textsc{q}\\ 
+          \textsc{pst}-see cow.\textsc{pl} \textsc{q}\\ 
      \glt Q: ‘Did he see cows?’
 \ex\label{ex:landman:answers}
      \gll ee, ko-ger \{teta agenge / tuga somog\}\\
-             yes, \textsc{pst}-see \{cow[\textsc{sg}] one / cow[\textsc{pl}] three\}\\
+             yes, \textsc{pst}-see \{cow.\textsc{sg} one / cow.\textsc{pl} three\}\\
       \glt A: ‘Yes, he saw \{one cow/three cows\}.’
 \z 
 \z
@@ -228,10 +229,10 @@ In contrast, singular nouns are not number-neutral, but rather necessarily seman
 
 \ea[*]{\label{ex:landman:singulars}
      \gll rue lakwet somog-u\\
-            sleep child[\textsc{sg}] three-\textsc{nom}\\}
+            sleep child.\textsc{sg} three-\textsc{nom}\\}
 \z
 
-Given these observations, I will adopt a semantic analysis of number in \ili{Kipsigis} as in \citep{Link:1983}, whereby a singular noun denotes a set of atomic individuals (atoms), and a plural noun denotes a set of both atomic and plural individuals.
+Given these observations, I will adopt a semantic analysis of number in \ili{Kipsigis} as in \citealt{Link:1983}, whereby a singular noun denotes a set of atomic individuals (atoms), and a plural noun denotes a set of both atomic and plural individuals.
 
 \section{Quantificational nominals}
 \label{sec:landman:qnominals}
@@ -242,11 +243,11 @@ Returning now to the patterns observed for universally quantified nominals obser
 \begin{exe}
   \exr{ex:landman:1}
      \gll ru-e lagok tugul \\
-          sleep-\textsc{prs} child[\textsc{pl}] all\\ 
+          sleep-\textsc{prs} child.\textsc{pl} all\\ 
      \glt ‘All the children are sleeping.’
 \end{exe}
 
-\noindent In the following two subsections, I present a syntax (\sectref{sec:landman:tugulsyn}) and semantics (\sectref{sec:landman:tugulsem}) for \textit{tugul}.
+ In the following two subsections, I present a syntax (\sectref{sec:landman:tugulsyn}) and semantics (\sectref{sec:landman:tugulsem}) for \textit{tugul}.
 
 \subsubsection{The syntax of \textit{tugul}}
 \label{sec:landman:tugulsyn}
@@ -257,7 +258,7 @@ Returning now to the patterns observed for universally quantified nominals obser
 [\textsubscript{QP} DP [\textsubscript{Q} tugul]]  %\end{forest}
 \z
 
-\noindent Evidence that \textit{tugul} is sister to DP comes from \REF{ex:landman:tugulpronoun}, which shows that \textit{tugul} may combine directly with a \isi{pronoun}; pronouns are standardly taken to be DPs, as they appear on their own in argument positions.
+ Evidence that \textit{tugul} is sister to DP comes from \REF{ex:landman:tugulpronoun}, which shows that \textit{tugul} may combine directly with a \isi{pronoun}; pronouns are standardly taken to be DPs, as they appear on their own in argument positions.
 
 \ea \label{ex:landman:tugulpronoun}
     \gll ko-gitiense echek tugul\\ 
@@ -265,7 +266,7 @@ Returning now to the patterns observed for universally quantified nominals obser
     \glt ‘All of us sang.’
 \z
 
-\noindent In addition, \textit{tugul} may appear on its own, as long as the reference of the head noun is clear from the context:
+ In addition, \textit{tugul} may appear on its own, as long as the reference of the head noun is clear from the context:
 
 \ea \label{ex:landman:tugulonown}
     \gll ko-ger tugul\\ 
@@ -273,14 +274,14 @@ Returning now to the patterns observed for universally quantified nominals obser
     \glt ‘He saw all.’
 \z 
 
-\noindent This suggests that \textit{tugul} licenses DP ellipsis (in contrast, NP ellipsis appears to be ungrammatical in \ili{Kipsigis}, as I show in \sectref{sec:landman:agesyn}).
+These facts suggests that \textit{tugul} licenses DP ellipsis (in contrast, NP ellipsis appears to be ungrammatical in \ili{Kipsigis}, as I show in \sectref{sec:landman:agesyn}).
 
 \subsubsection{The semantics of \textit{tugul}}\label{sec:landman:tugulsem}
 Descriptively, \textit{tugul} is a nondistributive \isi{universal quantifier} (i.e., it permits both distributive and collective interpretations). Consider \REF{ex:landman:distcoll}, for example, which is ambiguous between a distributive and collective reading:
  
 \ea \label{ex:landman:distcoll}
     \gll ko-yot bokisinik somok lagok tugul\\
-         \textsc{pst}-lift box[\textsc{pl}] three child[\textsc{pl}] all\\ 
+         \textsc{pst}-lift box.\textsc{pl} three child.\textsc{pl} all\\ 
     \glt 
       \begin{xlist}
       \ex \label{ex:landman:dist} ‘The children each lifted three boxes.’ (\textit{distributive})
@@ -300,7 +301,7 @@ The proposed syntax and semantics for \textit{tugul} explains why \textit{tugul}
 
 \ea[*]{
 \gll ru-e lakwet tugul\\
-       sleep-\textsc{prs} child[\textsc{sg}] all\\
+       sleep-\textsc{prs} child.\textsc{sg} all\\
   \glt ‘Every child is sleeping.’}
 \z
 
@@ -311,7 +312,7 @@ As also observed in \sectref{sec:landman:introduction}, \textit{tugul} can combi
 
 \ea \label{ex:landman:agetugul}
 \gll ru-e lakwet *(age) tugul\\
-       sleep-\textsc{prs} child[\textsc{sg}] *(some[\textsc{sg}]) all\\
+       sleep-\textsc{prs} child.\textsc{sg} *(some.\textsc{sg}) all\\
   \glt ‘Every child is sleeping.’
 \z
 
@@ -319,7 +320,7 @@ As also observed in \sectref{sec:landman:introduction}, \textit{tugul} can combi
 
 \ea \label{ex:landman:alaktugul}
 \gll ru-e lagok alak tugul\\
-       sleep-\textsc{prs} child[\textsc{pl}] some[\textsc{pl}] all\\
+       sleep-\textsc{prs} child.\textsc{pl} some.\textsc{pl} all\\
   \glt ‘All (or any groups of) children are sleeping.’
 \z
  
@@ -328,11 +329,11 @@ As also observed in \sectref{sec:landman:introduction}, \textit{tugul} can combi
 \ea \label{ex:agealak}  
 \ea
 \gll ko-bua lakwet age\\
-	   \textsc{pst}-come.by child[\textsc{sg}] some[\textsc{sg}]\\
+	   \textsc{pst}-come.by child.\textsc{sg} some.\textsc{sg}\\
   \glt ‘Some/another child came by.’
 \ex 
 \gll ko-bua lagok alak\\
-	   \textsc{pst}-come.by child[\textsc{pl}] some[\textsc{pl}]\\
+	   \textsc{pst}-come.by child.\textsc{pl} some.\textsc{pl}\\
   \glt ‘Some/other children came by.’
   \z
 \z
@@ -345,36 +346,36 @@ There are several ways in which \textit{age} behaves semantically like an indefi
 
 \ea \label{ex:landman:sluicingage}
     \gll ko-ger lakwet age, kobaten mo-ngen ale ainon\\
-         \textsc{pst}-see child[\textsc{sg}] some[\textsc{sg}], but \textsc{neg}-know[1.\textsc{sg}] \textsc{comp} which\\
+         \textsc{pst}-see child.\textsc{sg} some.\textsc{sg}, but \textsc{neg}-know[1.\textsc{sg}] \textsc{comp} which\\
     \glt ‘She saw another child, but I do not know which.’
 \z
 
-\noindent Second, \textit{age} may introduce new discourse referents:
+ Second, \textit{age} may introduce new discourse referents:
 
 \ea
   \gll ko-bua chita age\\
-       \textsc{pst}-come.by person[\textsc{sg}] some[\textsc{sg}]\\
+       \textsc{pst}-come.by person.\textsc{sg} some.\textsc{sg}\\
   \glt{‘{Some/another} person came by.’}     
 \z
 
-\noindent Third, \textit{age} interacts scopally with other quantifiers, such as \isi{negation} and modals. Unlike bare nouns, \textit{age} permits both narrow- and wide-\isi{scope} existential interpretations with respect to \isi{negation}:\footnote{It is possible that the wide-\isi{scope} interpretation here is actually a definite interpretation; see the discussion of definite interpretations for \textit{age} below.}
+ Third, \textit{age} interacts scopally with other quantifiers, such as \isi{negation} and modals. Unlike bare nouns, \textit{age} permits both narrow- and wide-\isi{scope} existential interpretations with respect to \isi{negation}:\footnote{It is possible that the wide-\isi{scope} interpretation here is actually a definite interpretation; see the discussion of definite interpretations for \textit{age} below.}
 
 \begin{exe}
 \ex \label{ex:landman:scopepl}
   \gll ko-bua piik alak ako ma-bua piik alak\\	
-	   \textsc{pst}-come.by person[\textsc{pl}] some[\textsc{pl}] and \textsc{neg}-come.by person[\textsc{pl}] some[\textsc{pl}]\\
+	   \textsc{pst}-come.by person.\textsc{pl} some.\textsc{pl} and \textsc{neg}-come.by person.\textsc{pl} some.\textsc{pl}\\
   \begin{xlist}
   \ex \label{ex:landman:narrowpl}‘Some people came by and no other people came by.’ (Neg > $\exists$)
   \ex \label{ex:landman:widepl} ‘Some people came by and other people did not come by.’  ($\exists$  > Neg)  
   \end{xlist}   
 \end{exe}
 
-\noindent Interestingly, \textit{age} only permits narrow-\isi{scope} interpretations with respect to modals; for example, \REF{ex:landman:29} only permits the narrow-\isi{scope} interpretation in \REF{ex:landman:30} (cf. the wide-\isi{scope} interpretation in \REF{ex:landman:31}).
+ Interestingly, \textit{age} only permits narrow-\isi{scope} interpretations with respect to modals; for example, \REF{ex:landman:29} only permits the narrow-\isi{scope} interpretation in \REF{ex:landman:30} (cf. the wide-\isi{scope} interpretation in \REF{ex:landman:31}).
 
 \begin{exe}
 \ex \label{ex:landman:29} [Context: Kipto wants to marry Kiprono.]\\
  \gll moch-e	ko-tun	chepkeleliot age\\	
-want-\textsc{prs} \textsc{inf}-marry girl[\textsc{sg}] some[\textsc{sg}]\\
+want-\textsc{prs} \textsc{inf}-marry girl.\textsc{sg} some.\textsc{sg}\\
 \begin{xlist}
   \ex \label{ex:landman:30}‘He wants to marry another girl (it doesn't matter who).’
   \ex \label{ex:landman:31} *‘He wants to marry another girl in particular (say Chepto).’ 
@@ -385,7 +386,7 @@ Summarizing, these examples suggest that \textit{age} is an indefinite that perm
 
 \ea \label{ex:landman:modalage} [Context: Two children came by.]\\
 \gll angen lakwet agenge, ako m-angen lakwet age\\
-     know[\textsc{1.sg}] child[\textsc{sg}] one, and \textsc{neg}-know[\textsc{1.sg}] child[\textsc{sg}] some[\textsc{sg}]\\
+     know[\textsc{1.sg}] child.\textsc{sg} one, and \textsc{neg}-know[\textsc{1.sg}] child.\textsc{sg} some.\textsc{sg}\\
 \glt ‘I knew one child but I did not know the other child.’ 
 \z
 
@@ -393,12 +394,12 @@ Summarizing, these examples suggest that \textit{age} is an indefinite that perm
 
 \ea \label{ex:landman:freechoice}  
 \gll ko-tien lakwet  age tugul i?\\
-	   \textsc{pst}-sing child[\textsc{sg}] some[\textsc{sg}] all \textsc{q}\\
+	   \textsc{pst}-sing child.\textsc{sg} some.\textsc{sg} all \textsc{q}\\
   \glt ‘Did \{every/any\} child sing?’
 \z
 \ea \label{ex:landman:tugulquestion}
 \gll ko-tien lagok tugul i?\\
-	   \textsc{pst}-sing child[\textsc{pl}] all \textsc{q}\\
+	   \textsc{pst}-sing child.\textsc{pl} all \textsc{q}\\
   \glt ‘Did all the children sing?’
 \z
 } If free-choice interpretations are derived via domain widening (as in \citealt{Kadmon:1993} and \citealt{Kratzer:2002}, among others), then \textit{age} may be widening the domain of the NP it modifies; \textit{tugul} then quantifies over the widened domain. However, an analysis that treats \textit{age} as a modifier within a bare plural would fail to account for the apparent wide-\isi{scope} existential interpretations available to \textit{age}, as in \REF{ex:landman:widepl}, which bare plurals do not permit.\footnote{In addition, an anonymous reviewer points out that the ‘other’ interpretation is a pervasive feature of indefinites across West Chadic (see \citealt{Zimmermann:2008} for \ili{Hausa}, and \citealt{Grubic:2015} for \ili{Ngamo}).} I conclude that \textit{age} encodes indefiniteness (and allows wide-\isi{scope} existential interpretations) and set aside its definite and free-choice interpretations as issues for future research.
@@ -414,16 +415,16 @@ I adopt the syntax in \REF{ex:landman:agetugultree} for \textit{age}, in which i
 [QP[DP [NP] [D [age\textsubscript{\textit{i}}]]][Q[tugul]]]\end{forest}
 \z
 
-Evidence that \textit{age} forms a subconstituent with NP within QP (to the exclusion of \textit{tugul}) comes from \REF{ex:landman:agetugulorder}, which shows that \textit{age} must precede \textit{tugul}; other modifiers, such as numerals, may precede or follow \textit{tugul}, \REF{ex:landman:modtugul}.\footnote{Note also that no modifiers may intervene between \textit{age} and \textit{tugul} (e.g., *\textit{lagok alak somogu tugul} lit. ‘child[\textsc{pl}] some[\textsc{pl}] three all’).
+Evidence that \textit{age} forms a subconstituent with NP within QP (to the exclusion of \textit{tugul}) comes from \REF{ex:landman:agetugulorder}, which shows that \textit{age} must precede \textit{tugul}; other modifiers, such as numerals, may precede or follow \textit{tugul}, \REF{ex:landman:modtugul}.\footnote{Note also that no modifiers may intervene between \textit{age} and \textit{tugul} (e.g., *\textit{lagok alak somogu tugul} lit. ‘child.\textsc{pl} some.\textsc{pl} three all’).
 }
 
 \ea \label{ex:landman:agetugulorderwhole} 
 \ea[*]{\label{ex:landman:agetugulorder}  
 \gll ru-e lakwet tugul age\\
-	   \textsc{pst}-come.by child[\textsc{sg}] all some[\textsc{sg}]\\}
+	   \textsc{pst}-come.by child.\textsc{sg} all some.\textsc{sg}\\}
 \ex \label{ex:landman:modtugul}
 \gll ko-bua lagok \{somog-u  tugul / tugul somog-u\}\\
-	   \textsc{pst}-come.by child[\textsc{pl}] \{three-\textsc{nom}  all / all three-\textsc{nom}\}\\
+	   \textsc{pst}-come.by child.\textsc{pl} \{three-\textsc{nom}  all / all three-\textsc{nom}\}\\
   \glt ‘All three children came by.’
   \z
 \z
@@ -432,7 +433,7 @@ There is also some evidence that \textit{age}, at least when combined with \text
 
 \ea{\label{ex:landman:alakpronoun}
     \gll ko-gitiense echek alak \\ 
-	     \pst-sing[1\pl] we some[\textsc{pl}]\\
+	     \pst-sing[1\pl] we some.\textsc{pl}\\
     \glt ‘Some of us sang.’}    
 \z 
 
@@ -440,20 +441,20 @@ There is also some evidence that \textit{age}, at least when combined with \text
 
 \ea[*]{\label{ex:agetugulpronoun}
     \gll ko-gitiense echek \{age/alak\} tugul\\ 
-	     \pst-sing[1\pl] we \{some[\textsc{sg}]/some[\textsc{pl}]\} all\\}
+	     \pst-sing[1\pl] we \{some.\textsc{sg}/some.\textsc{pl}\} all\\}
 \z
 
-\noindent Further, in combination with \textit{tugul}, \textit{age} may not appear on its own, without the head noun:\footnote{However, here too, in the absence of \textit{tugul}, \textit{age} may occur on its own (as long as the reference of the head noun is clear from the context):
+ Furthermore, in combination with \textit{tugul}, \textit{age} may not appear on its own, without the head noun:\footnote{However, here too, in the absence of \textit{tugul}, \textit{age} may occur on its own (as long as the reference of the head noun is clear from the context):
 
 \ea\label{ex:agetugulonown}
     \gll ko-ger \{age/alak\}\\ 
-	     \pst-see \{some[\textsc{sg}]/some[\textsc{pl}]\} \\
+	     \pst-see \{some.\textsc{sg}/some.\textsc{pl}\} \\
      \glt ‘He saw \{another/others\}.’   
      \z }
 
 \ea[*]{\label{ex:landman:agetugulonown}
     \gll ko-ger \{age/alak\} tugul\\ 
-	     \pst-see \{some[\textsc{sg}]/some[\textsc{pl}]\} all\\ } 
+	     \pst-see \{some.\textsc{sg}/some.\textsc{pl}\} all\\ } 
 \z 
 
 These facts (i.e., that \textit{age} must precede \textit{tugul} and cannot combine with a \isi{pronoun} or occur on its own when combined with \textit{tugul}) are explained if \textit{age} is (a) in a lower position syntactically than \textit{tugul} and (b) a determiner, on the grounds that like the \ili{English} determiners \textit{a} and \textit{the}, \textit{age} cannot license NP ellipsis.
@@ -464,7 +465,7 @@ Having established a syntax and semantics for both \textit{age} and \textit{tugu
 \ea
   \ea
     \gll lakwet age\textsubscript{\textit{i}} tugul\\
-         child[\textsc{sg}] some[\textsc{sg}] all\\
+         child.\textsc{sg} some.\textsc{sg} all\\
     \glt ‘every child’
    \ex \label{ex:landman:agetugultree}
      \begin{forest}
@@ -472,22 +473,24 @@ Having established a syntax and semantics for both \textit{age} and \textit{tugu
   \z
 \z
 
-\noindent The \isi{semantic composition} of such nominals would be computed as follows: The quantifier \textit{tugul} binds the \isi{implicit argument} of the \isi{choice function} denoted by \textit{age}. In effect, for any value for the \isi{implicit argument}, the \isi{choice function} output for that argument satisfies the NP predicate. This derives universal \isi{quantification} over atoms in the case that \textit{tugul} attaches to a (singular) \textit{age}-DP, and \isi{quantification} over atomic or plural individuals (i.e., groups) in the case that \textit{tugul} attaches to a (plural) \textit{alak}-DP.  This semantics thus predicts that when \textit{tugul} combines with an \textit{age}-DP, only a distributive interpretation is possible (because \isi{quantification} occurs over atoms), and, indeed, only distributive interpretations are possible in this case: 
+\noindent The \isi{semantic composition} of such nominals would be computed as follows: The quantifier \textit{tugul} binds the \isi{implicit argument} of the \isi{choice function} denoted by \textit{age}. In effect, for any value for the \isi{implicit argument}, the \isi{choice function} output for that argument satisfies the NP predicate. This derives universal \isi{quantification} over atoms in the case that \textit{tugul} attaches to a (singular) \textit{age}-DP, and \isi{quantification} over atomic or plural individuals (i.e., groups) in the case that \textit{tugul} attaches to a (plural) \textit{alak}-DP. 
+
+This semantics thus predicts that when \textit{tugul} combines with an \textit{age}-DP, only a distributive interpretation is possible (because \isi{quantification} occurs over atoms), and, indeed, only distributive interpretations are possible in this case: 
 
 \ea \label{ex:landman:agedist}
   \gll ko-yot bokisinik somok lakwet age tugul\\	 
-     \textsc{pst}-lift box[\textsc{pl}] three child[\textsc{sg}] some[\textsc{sg}] all\\
+     \textsc{pst}-lift box.\textsc{pl} three child.\textsc{sg} some.\textsc{sg} all\\
   \glt
       \begin{xlist}
       \ex \label{ex:landman:distage} ‘Each child lifted three boxes.’ (\textit{distributive})
       \ex \label{ex:landman:collage} *‘All the children collectively lifted three boxes.’ (\textit{collective})
       \end{xlist}
 \z
-\noindent In contrast, when \textit{tugul} combines with an \textit{alak}-DP, \isi{quantification} may occur over atomic or plural individuals, producing distributive or collective interpretations: 
+ In contrast, when \textit{tugul} combines with an \textit{alak}-DP, \isi{quantification} may occur over atomic or plural individuals, producing distributive or collective interpretations: 
 
 \ea
   \gll ko-yot bokisinik somok lagok alak tugul\\	
-       \textsc{pst}-lift box[\textsc{pl}] three child[\textsc{pl}] some[\textsc{pl}] all\\ 
+       \textsc{pst}-lift box.\textsc{pl} three child.\textsc{pl} some.\textsc{pl} all\\ 
    \glt 
       \begin{xlist}
       \ex \label{ex:landman:distalak} ‘Each child lifted three boxes.’ (\textit{distributive})
@@ -504,7 +507,7 @@ This paper has presented a compositional analysis of quantificational nominals i
 \section*{Abbreviations}
 \begin{tabularx}{.45\textwidth}{lQ}
 \textsc{pst} & past \\
-\textsc{pst} &present \\
+\textsc{prs} &present \\
 \textsc{neg} &\isi{negation}\\
 \textsc{nom} &\isi{nominative}\\
 \end{tabularx}
