@@ -1,18 +1,22 @@
-\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 \author{Meredith Landman \affiliation{Pomona College}}
 \title{Nominal quantification in Kipsigis} 
 
-\usepackage{jambox}
-\usepackage{stmaryrd}
-\usepackage{amsmath}
-\usepackage{ragged2e} 
-\usepackage{varwidth}
+
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[25]
+}{}
+ 
 
 \abstract{
 In this paper, I examine the syntax and semantics of nominal quantification in Kipsigis, a Nilotic language spoken in western Kenya. I present a compositional analysis of quantificational nominals and discuss how the Kipsigis patterns relate to previous crosslinguistic work on quantification.}
 
-\maketitle
 \begin{document}
+\maketitle
 
 \section{Introduction}\label{sec:landman:introduction}
 
@@ -42,18 +46,19 @@ In this paper, I examine the syntax and semantics of nominal \isi{quantification
 
 I will motivate an account of this pattern according to which the quantifier \textit{tugul} heads a QP and is sister to an individual-denoting DP, i.e., a DP of type \textit{e} (as \citealt{Matthewson:2001} argues for quantificational nominals in \ili{Lillooet Salish}):
 
-\ea \label{ex:landman:4}
+\ea \label{ex:landman:4first}
 \begin{forest}
 [QP[DP\textsubscript{e}] [Q[tugul]]]\end{forest}
 \z
 
 \noindent Further, \textit{age} is an indefinite determiner that denotes a variable over Skolemized choice functions (as in \citealt{Kratzer:1998}; see also \citealt{Reinhart:1997}; \citealt{Winter:1997}; \citealt{Matthewson:1999,Matthewson:2001}; among many others); \textit{age} thus attaches to an NP of type <e, t> and yields a DP of type \textit{e}, in effect creating a suitable argument for \textit{tugul} and restricting its domain (as in \posscitet{Matthewson:2001} analysis of \ili{Salish}):\footnote{I thank the anonymous reviewers for suggesting an analysis of \textit{age} along these lines.}
 
-\ea \label{ex:landman:4}
+\ea \label{ex:landman:4second}
 \begin{forest}
 [QP[DP\textsubscript{e} [NP\textsubscript{<e, t>}] [D [age]]][Q[tugul]]]\end{forest}
 \z
 
+\newpage 
 \noindent Singular nouns on their own are of the basic predicative type <e, t> and so cannot serve as arguments to \textit{tugul}.\footnote{As I will show in \sectref{sec:landman:barenouns}, bare singular nouns appear in argument positions, where they permit definite interpretations; because definite singulars are standardly taken to denote individuals, they may incorrectly be expected to occur with \textit{tugul}. I address this point in \sectref{sec:landman:qnominals}.} 
 
 This paper thus contributes to the growing body of work on \isi{quantification} in African languages, as well as across languages more generally, by (a) providing a description of the structure and interpretation of nominal \isi{quantification} in \ili{Kipsigis}, which to my knowledge has not previously been published; (b) presenting a compositional analysis of those structures; and (c) discussing how the \ili{Kipsigis} patterns relate to previous crosslinguistic work on \isi{quantification}. 
@@ -126,7 +131,7 @@ With respect to these properties, bare nouns in \ili{Kipsigis} allow both defini
      \glt ‘Long ago there was a chief.’
   \ex \label{ex:landman:familiar}
      \gll ki-chamat kirwogindet piik\\
-          \pass-like chief.\textsc{sg} person.\textsc{pl}\\ \jambox{(familiar)}
+          \PASS-like chief.\textsc{sg} person.\textsc{pl}\\ \jambox{(familiar)}
      \glt ‘The chief was liked by the people.’
   \z
 \z 
@@ -137,12 +142,12 @@ With respect to these properties, bare nouns in \ili{Kipsigis} allow both defini
 \settowidth\jamwidth{(non-unique)}  
   \ea \label{ex:landman:nonunique} [Context: There are two identical cups in the cupboard.]\\
     \gll konon kikombet \\
-         give.\imp cup.\textsc{sg} \\ \jambox{(nonunique)}
+         give.{\IMP} cup.\textsc{sg} \\ \jambox{(nonunique)}
     \glt ‘Give me a cup!’
     \ex \label{ex:landman:unique} [Context: There is just one cat and one dog, and they are fighting.]\\ 
     \gll 
       ko-suger ngokta ak paget agoi ko-labat paget\\
-      \pst-fight dog.\textsc{sg} and cat.\textsc{sg} until \pst-run.away cat.\textsc{sg}\\ \jambox{(unique)}
+      {\PST}-fight dog.\textsc{sg} and cat.\textsc{sg} until {\PST}-run.away cat.\textsc{sg}\\ \jambox{(unique)}
     \glt ‘The dog and the cat fought until the cat ran away.’
   \z
 \z 
@@ -151,7 +156,7 @@ Bare nouns also appear in sluicing constructions, again indicating that they per
 
 \ea \label{ex:landman:sluicing}
   \gll ko-ger lakwet, kobaten mongen ale ainon\\	
-	   \pst-see child.\textsc{sg} but \textsc{neg}-know.1\textsc{sg} \textsc{comp} which\\
+	   {\PST}-see child.\textsc{sg} but \textsc{neg}-know.1\textsc{sg} \textsc{comp} which\\
   \glt ‘She saw a child, but I don't know which.’
 \z 
 
@@ -159,7 +164,7 @@ Bare nouns also permit both narrow-\isi{scope} and scopeless interpretations wit
 
 \ea \label{ex:landman:context}
   \gll ko-tach Kipto kitabut ak chaik\\	
-	   \pst-receive Kipto book.\textsc{sg} and tea\\
+	   {\PST}-receive Kipto book.\textsc{sg} and tea\\
 \glt ‘Kipto received a book and tea.’
 \z 
    
@@ -262,7 +267,7 @@ Returning now to the patterns observed for universally quantified nominals obser
 
 \ea \label{ex:landman:tugulpronoun}
     \gll ko-gitiense echek tugul\\ 
-	     \pst-sing[1\pl] we all\\ 
+	     {\PST}-sing[1\PL] we all\\ 
     \glt ‘All of us sang.’
 \z
 
@@ -270,7 +275,7 @@ Returning now to the patterns observed for universally quantified nominals obser
 
 \ea \label{ex:landman:tugulonown}
     \gll ko-ger tugul\\ 
-	     \pst-see all\\
+	     {\PST}-see all\\
     \glt ‘He saw all.’
 \z 
 
@@ -358,7 +363,7 @@ There are several ways in which \textit{age} behaves semantically like an indefi
   \glt{‘{Some/another} person came by.’}     
 \z
 
- Third, \textit{age} interacts scopally with other quantifiers, such as \isi{negation} and modals. Unlike bare nouns, \textit{age} permits both narrow- and wide-\isi{scope} existential interpretations with respect to \isi{negation}:\footnote{It is possible that the wide-\isi{scope} interpretation here is actually a definite interpretation; see the discussion of definite interpretations for \textit{age} below.}
+ Third, \textit{age} interacts scopally with other quantifiers, such as modals and \isi{negation}. Unlike bare nouns, \textit{age} permits both narrow- and wide-\isi{scope} existential interpretations with respect to \isi{negation}:\footnote{It is possible that the wide-\isi{scope} interpretation here is actually a definite interpretation; see the discussion of definite interpretations for \textit{age} below.}
 
 \begin{exe}
 \ex \label{ex:landman:scopepl}
@@ -390,6 +395,7 @@ Summarizing, these examples suggest that \textit{age} is an indefinite that perm
 \glt ‘I knew one child but I did not know the other child.’ 
 \z
 
+
 \noindent Such examples may indicate that \textit{age} is not an indefinite determiner, but rather an adnominal modifier positioned within a bare plural that, like other bare plurals, permits indefinite or definite interpretations. What, then, would be the semantic contribution of \textit{age}? As already noted, \textit{age} is associated with free-choice interpretations, as my consultant often offered ‘any’ as a translation for \textit{age} in combination with \textit{tugul}.\footnote{The free-choice interpretation of \textit{age} in combination with \textit{tugul} is made clear in \textit{yes-no} questions. Consider, e.g., \REF{ex:landman:freechoice}, which is ambiguous: This question can ask whether all of the children sang (a universal interpretation) or whether any of the children sang (a free-choice interpretation). In contrast, \textit{tugul} on its own can only be interpreted as a non-free-choice universal, as in \REF{ex:landman:tugulquestion}.
 
 \ea \label{ex:landman:freechoice}  
@@ -408,13 +414,14 @@ As an indefinite, \textit{age} can be analyzed semantically as introducing a var
 
 \subsubsection{The syntax of \textit{age}}
 \label{sec:landman:agesyn}
-I adopt the syntax in \REF{ex:landman:agetugultree} for \textit{age}, in which it heads a DP and is sister to NP:
+I adopt the syntax in \REF{ex:landman:agetugultreefirst} for \textit{age}, in which it heads a DP and is sister to NP:
 
-\ea \label{ex:landman:agetugultree}
+\ea \label{ex:landman:agetugultreefirst}
 \begin{forest}
 [QP[DP [NP] [D [age\textsubscript{\textit{i}}]]][Q[tugul]]]\end{forest}
 \z
 
+\newpage 
 Evidence that \textit{age} forms a subconstituent with NP within QP (to the exclusion of \textit{tugul}) comes from \REF{ex:landman:agetugulorder}, which shows that \textit{age} must precede \textit{tugul}; other modifiers, such as numerals, may precede or follow \textit{tugul}, \REF{ex:landman:modtugul}.\footnote{Note also that no modifiers may intervene between \textit{age} and \textit{tugul} (e.g., *\textit{lagok alak somogu tugul} lit. ‘child.\textsc{pl} some.\textsc{pl} three all’).
 }
 
@@ -433,7 +440,7 @@ There is also some evidence that \textit{age}, at least when combined with \text
 
 \ea{\label{ex:landman:alakpronoun}
     \gll ko-gitiense echek alak \\ 
-	     \pst-sing[1\pl] we some.\textsc{pl}\\
+	     {\PST}-sing[1\PL] we some.\textsc{pl}\\
     \glt ‘Some of us sang.’}    
 \z 
 
@@ -441,20 +448,20 @@ There is also some evidence that \textit{age}, at least when combined with \text
 
 \ea[*]{\label{ex:agetugulpronoun}
     \gll ko-gitiense echek \{age/alak\} tugul\\ 
-	     \pst-sing[1\pl] we \{some.\textsc{sg}/some.\textsc{pl}\} all\\}
+	     {\PST}-sing[1\PL] we \{some.\textsc{sg}/some.\textsc{pl}\} all\\}
 \z
 
  Furthermore, in combination with \textit{tugul}, \textit{age} may not appear on its own, without the head noun:\footnote{However, here too, in the absence of \textit{tugul}, \textit{age} may occur on its own (as long as the reference of the head noun is clear from the context):
 
 \ea\label{ex:agetugulonown}
     \gll ko-ger \{age/alak\}\\ 
-	     \pst-see \{some.\textsc{sg}/some.\textsc{pl}\} \\
+	     {\PST}-see \{some.\textsc{sg}/some.\textsc{pl}\} \\
      \glt ‘He saw \{another/others\}.’   
      \z }
 
 \ea[*]{\label{ex:landman:agetugulonown}
     \gll ko-ger \{age/alak\} tugul\\ 
-	     \pst-see \{some.\textsc{sg}/some.\textsc{pl}\} all\\ } 
+	     {\PST}-see \{some.\textsc{sg}/some.\textsc{pl}\} all\\ } 
 \z 
 
 These facts (i.e., that \textit{age} must precede \textit{tugul} and cannot combine with a \isi{pronoun} or occur on its own when combined with \textit{tugul}) are explained if \textit{age} is (a) in a lower position syntactically than \textit{tugul} and (b) a determiner, on the grounds that like the \ili{English} determiners \textit{a} and \textit{the}, \textit{age} cannot license NP ellipsis.
@@ -467,7 +474,7 @@ Having established a syntax and semantics for both \textit{age} and \textit{tugu
     \gll lakwet age\textsubscript{\textit{i}} tugul\\
          child.\textsc{sg} some.\textsc{sg} all\\
     \glt ‘every child’
-   \ex \label{ex:landman:agetugultree}
+   \ex \label{ex:landman:agetugultreesecond}
      \begin{forest}
 [QP[DP [NP [lakwet] ] [D [age\textsubscript{\textit{i}}]]][Q[tugul]]]\end{forest}
   \z
@@ -508,8 +515,8 @@ This paper has presented a compositional analysis of quantificational nominals i
 \begin{tabularx}{.45\textwidth}{lQ}
 \textsc{pst} & past \\
 \textsc{prs} &present \\
-\textsc{neg} &\isi{negation}\\
-\textsc{nom} &\isi{nominative}\\
+\textsc{neg} &{negation}\\
+\textsc{nom} &{nominative}\\
 \end{tabularx}
 \begin{tabularx}{.45\textwidth}{lQ}
 \textsc{sg}  &singular\\
