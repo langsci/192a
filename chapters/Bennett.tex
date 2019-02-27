@@ -1,12 +1,20 @@
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook}
 %TODO Remind Peter that ɔ has a problem of typesetting, I don't see it.
-
-\documentclass[output=paper,newtxmath,modfonts,nonflat]{langsci/langscibook}
 
 \usepackage{pifont}
 
 \author{Wm. G. Bennett\affiliation{University of Calgary and Rhodes University}}
 \title{``Backwards" sibilant palatalization in a variety of Setswana}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[3]
+}{}
+
+
 \abstract{Palatalization of coronals and stridents is well-known and widespread, and is most commonly associated with front vowels or glides as triggers. In some dialect(s) of Setswana, a much different type of palatalization occurs: alveolar stridents /s ts tsʰ/ become pre-palatal [ʃ tʃ tʃʰ] before back vowels and the glide [w]. Clear empirical support for this pattern comes from productive alternations induced by the nominalizing suffix /-ɔ/, as well as alternations with an assortment of less productive morphemes, and lexical evidence. If palatalization before front vocoids is phonetically natural, then palatalization before back vocoids seems like it must be phonetically unnatural. However, this paper suggests that it is not the case: palatalization before back vowels actually makes phonetic sense, as a consequence of using lip rounding as a phonetic enhancement of the S$\sim$Š distinction.}
+
 \begin{document}
 \maketitle
 \section{Introduction}\label{sec:bennett:1}
@@ -43,11 +51,11 @@ s → ʃ / {\longrule} ɔ (!)
 
 If the s→ʃ/ {\longrule} i pattern makes sense, then these examples seem downright weird. Here, we observe the same s→ʃ alternation induced by a vowel that is low and back, not high and front. This pattern is not merely s→ʃ, but rather \textit{S}→\textit{Š}: it holds for all the strident affricates and fricatives alike (as \sectref{sec:bennett:2} will demonstrate).
 
-The weirdness of this data makes it interesting. A large body of current work appeals to phonetic naturalness as a guiding factor in phonological systems, in various forms. For instance, \citet{Hayes1999} argues that phonological constraints are functionally motivated, and must be phonetically sensible. \posscitet{Steriade2008} P-map proposal, similarly, posits that input-output changes are moderated by perceptual distance, such that phonetically sensible changes are preferred. And the entire body of literature under the banner of ``evolutionary phonology"
+The weirdness of this data makes it interesting. A large body of current work appeals to phonetic naturalness as a guiding factor in phonological systems, in various forms. For instance, \citet{Hayes1999} argues that phonological constraints are functionally motivated, and must be phonetically sensible. \posscitet{Steriade2008} P-map proposal, similarly, posits that input-output changes are moderated by perceptual distance, such that phonetically sensible changes are preferred. And the entire body of literature under the banner of ``evolutionary phonology''%
 %\textstyleFootnoteSymbol{}
 \footnote{(\citealt{Ohala1981,Ohala1990,Ohala:2004aa}, etc.; rehashed and renamed by \citealt{Blevins2004})} takes phonological patterns to be the direct result of phonetically-driven changes, coupled with morpho-phonological analogy. The pattern we observe in \REF{ex:bennett:2} seems phonetically as \textit{un-natural} as can be, in that it is virtually the opposite of a pattern that is phonetically well-motivated. Instead of a high front vowel [i], we observe a relatively low back vowel [ɔ] causing palatalization.\footnote{A more direct opposite of [i] would be the vowel [ɑ], but this does not exist in \ili{Setswana}.} As \sectref{sec:bennett:2} will show, this is not a behaviour unique to [ɔ]; other back vowels also induce the same S→Š/ {\longrule} U alternations.
 
-Palatalization before back vocoids is not unprecedented. For instance, \citet[68]{Bateman:2007aa} notes palatalization before [u] in Tohono O’Odham. But, cross-linguistic surveys of palatalization (\citealt{Bateman:2007aa,Kochetov2011}) consistently find that high front vocoids are the ``best" triggers for palatalization. If palatalization is triggered by a back vocoid like [u], then front vocoids also trigger palatalization. Indeed, the generalization that Bateman reports for Tohono O’Odham is that palatalization is triggered not only by [u], but also by [i] and [e]. This dovetails with an observation (made by Bateman and Kochetov alike) that higher vocoids are better palatalization triggers. In other words, cases like Tohono O’Odham show palatalization only before \textit{high} back vocoids (which [ɔ] definitively isn’t), and high front vocoids also trigger the same palatalization.
+Palatalization before back vocoids is not unprecedented. For instance, \citet[68]{Bateman:2007aa} notes palatalization before [u] in Tohono O’Odham. But, cross-linguistic surveys of palatalization (\citealt{Bateman:2007aa,Kochetov2011}) consistently find that high front vocoids are the ``best'' triggers for palatalization. If palatalization is triggered by a back vocoid like [u], then front vocoids also trigger palatalization. Indeed, the generalization that Bateman reports for Tohono O’Odham is that palatalization is triggered not only by [u], but also by [i] and [e]. This dovetails with an observation (made by Bateman and Kochetov alike) that higher vocoids are better palatalization triggers. In other words, cases such as  Tohono O’Odham show palatalization only before \textit{high} back vocoids (which [ɔ] definitively isn’t), and high front vocoids also trigger the same palatalization.
 % Edwin: Missing reference for Bennett & Braver 2015 and Kotzé & Zerbian 2007
 A further pertinent fact is that many Southern \ili{Bantu} languages have palatalization triggered by [w] (\citealt{Louw1975,Ohala1978,Herbert1990,Bennett2015,Bennett&Braver2016}, etc.).  However, this phenomenon preferentially targets bilabials for palatalization, and only marginally applies to non-labials; it therefore seems dissimilatory in nature. Some previous analyses argue that it isn’t dissimilation (e.g. \citealt{Kotze&Zerbian2008}), by instead positing that the palatalization is really triggered by an /i/ or /j/ (which is typically covert). Neither of these lines of reasoning lead to a plausible analysis of the \ili{Setswana} examples in \REF{ex:bennett:2}. The /sɔ/→[ʃɔ] alternation is not obviously dissimilatory. There is also no evidence for a covert front vocoid in these examples, and indeed front vocoids in \ili{Setswana} do not otherwise cause palatalization of /s/ (cf. (\ref{ex:bennett:2}a): sɪ-hiʃɔ, *ʃɪ-hiʃɔ).
 
@@ -65,13 +73,13 @@ The paper is structured as follows. \sectref{sec:bennett:2} presents the \ili{Se
 
 \subsection{Background about the data}\label{sec:bennett:2.1}
 
-\ili{Setswana} (a.k.a. \ili{Tswana}) is a southern \ili{Bantu} language (Guthrie S.50) spoken mainly in northern South Africa and Botswana. Examples marked as ``own data" were collected by the author, with the help of a native-speaker consultant from Taung, North-West Province, South Africa. This speaker did not report a specific name for his idiolect, but did report being clearly aware that his accent is typical of that area, and is non-standard.\footnote{I thank Thabo Ditsele, Andy Chebanne, and an anonymous reviewer for confirming that \ili{Setswana} dialects from further east (Gauteng) and north (Botswana) do not exhibit this S→Š pattern.} Additional data comes from other sources on \ili{Setswana}, chiefly \posscitet{Cole1955} grammar (no specific dialect information is at hand for most of Cole’s data). For lack of a better name, I will refer to the dialect(s) represented in these sources of data simply as ``\ili{Setswana}"; but it should be noted that standard, prescriptive, \ili{Setswana} does not exhibit the patterns described here.\footnote{For instance, \posscitet{University-of-Botswana:2001aa} \textit{Sound System of Setswana} does not mention the S→Š alternation as part of the phonology.} On the basis of a dialect comparison by \citet{Malepe1966}, it seems that this is a characteristic found only in southern dialects, including those that Malepe calls \ili{Rolong}, \ili{Tlhaping}, and \ili{Tlharo}, though further research is needed to verify how geographically widespread the phenomenon is.
+\ili{Setswana} (a.k.a. \ili{Tswana}) is a southern \ili{Bantu} language (Guthrie S.50) spoken mainly in northern South Africa and Botswana. Examples marked as ``own data'' were collected by the author, with the help of a native-speaker consultant from Taung, North-West Province, South Africa. This speaker did not report a specific name for his idiolect, but did report being clearly aware that his accent is typical of that area, and is non-standard.\footnote{I thank Thabo Ditsele, Andy Chebanne, and an anonymous reviewer for confirming that \ili{Setswana} dialects from further east (Gauteng) and north (Botswana) do not exhibit this S→Š pattern.} Additional data comes from other sources on \ili{Setswana}, chiefly \posscitet{Cole1955} grammar (no specific dialect information is at hand for most of Cole’s data). For lack of a better name, I will refer to the dialect(s) represented in these sources of data simply as ``\ili{Setswana}''; but it should be noted that standard, prescriptive, \ili{Setswana} does not exhibit the patterns described here.\footnote{For instance, \posscitet{University-of-Botswana:2001aa} \textit{Sound System of Setswana} does not mention the S→Š alternation as part of the phonology.} On the basis of a dialect comparison by \citet{Malepe1966}, it seems that this is a characteristic found only in southern dialects, including those that Malepe calls \ili{Rolong}, \ili{Tlhaping}, and \ili{Tlharo}, though further research is needed to verify how geographically widespread the phenomenon is.
 
 The consonant inventory of \ili{Setswana} is given in \tabref{tab:bennett:1} %
 %The style guide says no vertical lines, but I think for a consonant inventory it makes more sense to keep them.
  (\citealt{Bennett2016}; see also \citealt{Cole1955}; \citealt{chebanneetal1997}, U. \citealt{University-of-Botswana:2001aa}). Consonants in parentheses are marginal. Unaspirated stops and affricates may be realized as ejectives (apparently in \isi{free variation}). The affricate [qχ] is often analyzed as /qʰ/ or /kxʰ/, and [χ] is often characterized as /x/ (\citealt{Cole1955}, etc.; see \citealt{Bennett2016} for further discussion and data).
  
-\vspace{.05in}
+
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXXcXXXX}
 \lsptoprule
@@ -92,7 +100,7 @@ The \isi{vowel inventory} is given in \figref{fig:bennett:1} \citep{Bennett2016}
 
    
 \begin{figure}
-\includegraphics[width=1\linewidth]{figures/bennet_vowels.pdf}
+\includegraphics[width=.5\linewidth]{figures/bennet_vowels.pdf}
 % \begin{vowel}
 %  \putcvowel{i}{1}
 %  \putcvowel{e̝}{2}
@@ -109,13 +117,13 @@ The \isi{vowel inventory} is given in \figref{fig:bennett:1} \citep{Bennett2016}
 
 \subsection{On S and Š}\label{sec:bennett:2.2}
 
-The \isi{focus} of interest for this paper is palatalization of stridents before back vocoids, characterized in shorthand as S→Š/ {\longrule} U. The ``S" denotes all anterior stridents, whether they appear alone or in NC sequences: \{s ts tsʰ ns nts ntsʰ\}. The ``Š" likewise denotes posterior stridents: \{ʃ tʃ tʃʰ nʃ ntʃ ntʃʰ\}. The ``U" denotes back vowels and glides: \{ɔ ʊ u w\}. There is no evidence that the voiced posterior affricate [dʒ] participates in the pattern; this is consistent with the absence of [z ʒ] from the native consonant inventory.
+The \isi{focus} of interest for this paper is palatalization of stridents before back vocoids, characterized in shorthand as S→Š/ {\longrule} U. The ``S'' denotes all anterior stridents, whether they appear alone or in NC sequences: \{s ts tsʰ ns nts ntsʰ\}. The ``Š'' likewise denotes posterior stridents: \{ʃ tʃ tʃʰ nʃ ntʃ ntʃʰ\}. The ``U'' denotes back vowels and glides: \{ɔ ʊ u w\}. There is no evidence that the voiced posterior affricate [dʒ] participates in the pattern; this is consistent with the absence of [z ʒ] from the native consonant inventory.
 
 \subsection{Productive, synchronic S{\textasciitilde}Š alternations}\label{sec:bennett:2.3}
-
+\largerpage
 The examples from \sectref{sec:bennett:1} point to a neutralizing pattern. That is, S and Š are normally contrastive, and we find S→Š, but not the reverse Š→S. The most robust and productive source of synchronic S{\textasciitilde}Š alternations comes from nominalizations formed with the suffix /-ɔ/. Some examples are given below in \tabref{tab:bennett:2}. For /tsʰ/→[tʃʰ], it’s difficult to find examples showing this alternation because /tsʰ/ is relatively uncommon in stem-final position. But, it can be derived in irregular causatives; these forms do show S→Š/ {\longrule} U in the expected fashion.
 
-\vspace{.05in}
+
 \begin{table}
 \small
 \begin{tabularx}{\textwidth}{l@{~}l@{~}Q@{}l@{~}Q}
@@ -151,10 +159,10 @@ The examples from \sectref{sec:bennett:1} point to a neutralizing pattern. That 
 The S{\textasciitilde}Š alternations we see here are not characteristic of nominalizations in general. Agentive nominalizations are formed with a suffix /-i/, and these don’t exhibit the same alternation (cf. -tʰusa ‘help’ > mʊ-tʰusi ‘assistant, helper’; *mʊ-tʰuʃi). As such, the S{\textasciitilde}Š alternation evident in these forms must be due to the presence of the vowel [ɔ]. This is corroborated by other morphemes that also show the same related S{\textasciitilde}Š pattern.
 
 \subsection{S→Š in other morphological contexts}\label{sec:bennett:2.4}
-
+\largerpage
 The S{\textasciitilde}Š alternation can also be observed in certain pronominal concords; examples are given in \tabref{tab:bennett:3} below (from \citealt{Cole1955}). The first set of forms are pronouns, demonstratives, and quantifiers with class 8/10\footnote{Classes 8 and 10 are homophonous, so I will not distinguish them here.} concord. In pronominal stems that have front vocoids like [ɛ], class 8/10 forms always have [ts]. However, class 8/10 forms have [tʃ] when the following vowel is [ɔ], manifesting the S→Š/ {\longrule} U pattern. The second set of forms show class 7 behaving the same \break  way: we find [s] in class 7 forms generally, but [ʃ] before [ɔ]. (These pronominal stems are few in number, and phonotactically non-diverse; in reading \posscitet{Cole1955} grammar, I was unable to find any that have other vocoids.
 
-\vspace{.05in}
+
 \begin{table}
 \begin{tabularx}{\textwidth}{llQll}
 \lsptoprule
@@ -177,6 +185,7 @@ Class 7: & s before ɛ &  & ʃ before ɔ & \\
 \end{tabularx}
 \caption{S{\textasciitilde}Š alternations in pronominal stems\label{tab:bennett:3}}
 \end{table}
+
 
 We can also observe S→Š/ {\longrule} U in certain verbal suffixes. One is the reversive verb extension, variously /-ʊl-/ or /-ʊlʊl-/ \REF{ex:bennett:3} (\citealt{Cole1955}:212ff). The form in (\ref{ex:bennett:3a}) looks on the surface like an applicative structure /-tsʰ-ɛl-a/, based on a root /-tsʰ-/ (which is not attested by itself). Related stems that have the reversive extension instead of the applicative one have [tʃʰ] instead of [tsʰ] (\ref{ex:bennett:3b},\ref{ex:bennett:3c}).
 
@@ -254,7 +263,7 @@ lɪ-χɔdu  → lɪχɔtʃw-ana
 
 We can also observe the S→Š/ {\longrule} U pattern in the lexicon. One source of evidence is from lexical doublets. These substantiate the same observation made about the diminutives above: when something changes a consonant into S, it also changes into Š before U. \citet[83ff]{Cole1955} notes that certain nouns of class 5/6 have doublets, one with [ts] or [s], the other with \{b l d r h χ\}. \tabref{tab:bennett:4} gives some examples of this variant S (mainly drawn from \citealt{Cole1955}:83ff); for example, the first one [lɪ-tsatsi] ‘sun, day’ has [ts], while the usual \isi{plural form} Cole reports is [ma-latsi], with [l] instead.
 %
-\begin{table}
+\begin{table}[t]
 \begin{tabularx}{\textwidth}{llXX}
 \lsptoprule
 
@@ -269,9 +278,11 @@ We can also observe the S→Š/ {\longrule} U pattern in the lexicon. One source
 \label{tab:bennett:4}
 \end{table}
 
+\newpage 
 When a back vowel follows the initial consonant of the root, we do not find doublets with S; instead, they have Š. This is illustrated in \tabref{tab:bennett:5} (examples again from \citealt{Cole1955}).\footnote{\citet[83]{Cole1955} notes some exceptional forms that deviate from this generalization in minor ways. For example, [lɪ-saχɔ] ‘buttock’ is listed with variant forms [lɪ-tsʰaχɔ {\textasciitilde} lɪ-ʃaχɔ]. No [ʃ] is expected here, since the following vowel is [a]. But, interestingly, the plural is only given with [s], as [ma-saχɔ].}
+
 %TODO Remind Peter that ɔ has a problem of typesetting, I don't see it.
-\begin{table}
+\begin{table}[t]
 \begin{tabularx}{\textwidth}{lllX}
 \lsptoprule
 
@@ -315,6 +326,7 @@ sɪ-tulɔ & ‘stool’ & normally s→s\\
 \label{tab:bennett:6}
 \end{table}
 
+\newpage 
 In the native lexicon, Š may occur before any of the vowels: \{ʃ tʃ tʃʰ\} are not as restricted as \{s ts tsʰ\}. Some examples of Š before non-back vowels are given in \tabref{tab:bennett:7} below (from \citealt{Cole1955}). 
 
 % TODO Ask how to fix ugliness of tabularx?!?!?!?!?
@@ -375,9 +387,9 @@ The point: circumstantial evidence confirms that the S{\textasciitilde}Š altern
 
 \section{Parallels elsewhere?}\label{sec:bennett:3}
 
-\ili{Setswana} is not alone in having a ``backwards" distribution of Š and S before vowels. A similar pattern is reported much further north, for \ili{Haya} and \ili{Nkore-Kiga}, \ili{Bantu} languages spoken in Tanzania and Uganda. In both cases, the reported pattern is that [s z] occur before /i/, while [ʃ ʒ] occur before /e a o u/ \linebreak (\citealt{Byarushengo1975,Hyman2003b}; see also \citealt{Hansson2001,Hansson2010}). This is more narrowly the opposite of patterns like the \ili{Japanese} one, with a split between the high front vowel [i] versus all the other vowels.
+\ili{Setswana} is not alone in having a ``backwards'' distribution of Š and S before vowels. A similar pattern is reported much further north, for \ili{Haya} and \ili{Nkore-Kiga}, \ili{Bantu} languages spoken in Tanzania and Uganda. In both cases, the reported pattern is that [s z] occur before /i/, while [ʃ ʒ] occur before /e a o u/ \linebreak (\citealt{Byarushengo1975,Hyman2003b}; see also \citealt{Hansson2001,Hansson2010}). This is more narrowly the opposite of patterns like the \ili{Japanese} one, with a split between the high front vowel [i] versus all the other vowels.
 
-In the \ili{Haya} and \ili{Nkore-Kiga} cases the origin of the ``backwards" pattern seems to be morphological. \posscitet{Hyman2003b} analysis of the S{\textasciitilde}Š alternations in \ili{Haya} is that Proto-\ili{Bantu} *c spirantized to [s] before the short causative *-i̝-, and the causative *-i̝- was absorbed in the process, yielding a string of changes *c-i̝- > sj > [s].\footnote{See also \citet{Bennett&Pulleyblank:2014} for an argument that morphology is a major factor in the synchronic distribution of [s] and [ʃ] in \ili{Nkore-Kiga}.} This resulted in synchronic s{\textasciitilde}ʃ alternations between related verb stems, e.g. [-ʃáaʃ-a] ‘hurt (intransitive)’ vs. [-ʃáas-a] ‘hurt (transitive)’ \citep[85]{Hyman2003b}. The stem-final [s] in the latter form is due to the historical presence of *-i̝-, while the unaffixed form retains [ʃ]. Such alternations were then generalized by analogy, in effect treating all s-final stems as ``pseudo-causatives".
+In the \ili{Haya} and \ili{Nkore-Kiga} cases the origin of the ``backwards'' pattern seems to be morphological. \posscitet{Hyman2003b} analysis of the S{\textasciitilde}Š alternations in \ili{Haya} is that Proto-\ili{Bantu} *c spirantized to [s] before the short causative *-i̝-, and the causative *-i̝- was absorbed in the process, yielding a string of changes *c-i̝- > sj > [s].\footnote{See also \citet{Bennett&Pulleyblank:2014} for an argument that morphology is a major factor in the synchronic distribution of [s] and [ʃ] in \ili{Nkore-Kiga}.} This resulted in synchronic s{\textasciitilde}ʃ alternations between related verb stems, e.g. [-ʃáaʃ-a] ‘hurt (intransitive)’ vs. [-ʃáas-a] ‘hurt (transitive)’ \citep[85]{Hyman2003b}. The stem-final [s] in the latter form is due to the historical presence of *-i̝-, while the unaffixed form retains [ʃ]. Such alternations were then generalized by analogy, in effect treating all s-final stems as ``pseudo-causatives''.
 
 The \ili{Setswana} pattern is clearly not morphological in this way, however: it seems entirely phonotactic in nature. The S{\textasciitilde}Š alternation can be seen in a wide range of morphemes, and even root-internally. This includes many situations where any kind of spirantizing influence of a historical superhigh vowel is implausible, e.g. in demonstratives, possessives, and /-ɔ/ nominalizations. In short, the \ili{Setswana} pattern is clearly not due to front vocoids; not historically, and not synchronically.
 
@@ -398,7 +410,7 @@ If posterior sibilants have an affinity for rounding, then perhaps the situation
 \begin{enumerate}
 \item 
 %\begin{stylelsEnumerated}
-Proto-\ili{Bantu} did not have a S${\neq}$Š contrast (\citealt{Meinhof1932,Hyman:2003a}, etc.), but \ili{Setswana} currently does. At some point, that contrast must have arisen in some intermediate ancestor of present-day \ili{Setswana}; call it ``Pre-\ili{Tswana}".\footnote{Based on \posscitet{Malepe1966} list of historical changes, it seems that [s] comes primarily from Proto-\ili{Bantu} velars (particularly *k), while [ʃ] is more often from historical *t and *p (especially *pw). This may be the reason why [ʃ] is more common with back vowels than front vowels.}
+Proto-\ili{Bantu} did not have a S${\neq}$Š contrast (\citealt{Meinhof1932,Hyman:2003a}, etc.), but \ili{Setswana} currently does. At some point, that contrast must have arisen in some intermediate ancestor of present-day \ili{Setswana}; call it ``Pre-\ili{Tswana}''.\footnote{Based on \posscitet{Malepe1966} list of historical changes, it seems that [s] comes primarily from Proto-\ili{Bantu} velars (particularly *k), while [ʃ] is more often from historical *t and *p (especially *pw). This may be the reason why [ʃ] is more common with back vowels than front vowels.}
 %\end{stylelsEnumerated}
 
 %\begin{stylelsEnumerated}
@@ -452,7 +464,7 @@ In the synchronic phonology, it seems like the S→Š pattern is a qualitative a
 
 \subsection{Summary}\label{sec:bennett:5.1}
 
-The primary aim of this paper has been to demonstrate the existence of a ``backwards" pattern of sibilant palatalization in some variety of \ili{Setswana}. As we have seen, there are speakers who robustly produce S→Š alternations conditioned by a following back, round, vocoid. These alternations apply systematically to the class of anterior stridents [s ts tsʰ], and yield their posterior counterparts\linebreak\ [ʃ tʃ tʃʰ]. They occur productively across various different categories of morphemes, including verbs, nouns, quantifiers, and demonstratives; the pattern also appears to hold over the lexicon in a near-complete way (with the exception of some recent loanwords). Though the pattern is not part of standard \ili{Setswana}, evidence that it is real and robust comes not only from speakers I consulted, but also from the consultants who provided the data for \posscitet{Cole1955} grammar, and from Sol Plaatje’s own intuitions (\citealt{Jones&Plaatje1916}).
+The primary aim of this paper has been to demonstrate the existence of a ``backwards'' pattern of sibilant palatalization in some variety of \ili{Setswana}. As we have seen, there are speakers who robustly produce S→Š alternations conditioned by a following back, round, vocoid. These alternations apply systematically to the class of anterior stridents [s ts tsʰ], and yield their posterior counterparts\linebreak\ [ʃ tʃ tʃʰ]. They occur productively across various different categories of morphemes, including verbs, nouns, quantifiers, and demonstratives; the pattern also appears to hold over the lexicon in a near-complete way (with the exception of some recent loanwords). Though the pattern is not part of standard \ili{Setswana}, evidence that it is real and robust comes not only from speakers I consulted, but also from the consultants who provided the data for \posscitet{Cole1955} grammar, and from Sol Plaatje’s own intuitions (\citealt{Jones&Plaatje1916}).
 
 The secondary aim of the paper has been to argue that the S→Š/ {\longrule} U pattern is not as phonetically unnatural as it might at first seem. The use of rounding as an enhancement of the S${\neq}$Š contrast offers a very reasonable mechanism for stridents to shift away from S, and to Š, in the context of a back, round, vocoid. The synchronic S→Š/ {\longrule} U alternations can be regarded as a sort of phonologization of co-articulatory rounding of stridents before back vowels. Though not immediately intuitive, the pattern is not wholly unnatural.
 
@@ -462,11 +474,11 @@ The existence of S→Š/ {\longrule} U in \ili{Setswana} has broader ramificatio
 
 If the claim that S→Š/ {\longrule} U is a natural development as suggested in \sectref{sec:bennett:4}, then we must conclude that two very different kinds of S→Š alternations are \textit{both} natural: S→Š/ {\longrule} I, and S→Š/ {\longrule} U. The naturalness of these patterns comes from different sources: one is an interaction based on the tongue blade, the other based on the effects of lip position. But both are phonetically natural – despite seeming like near opposites. 
 
-The naturalness of S→Š/ {\longrule} U leads to a much broader conclusion: to the extent that phonetics guides phonology, it does so non-deterministically. The idea that phonological systems and mechanisms are somehow derived from phonetics is very much in vogue in some recent work (\citealt{Ohala1981,Ohala1990,Ohala:2004aa,Hayes1999,Steriade2008,Kawahara2008}, to name just a few). But in this case, ``Does it make phonetic sense?" is not the right question to ask. S→Š/ {\longrule} I and S→Š/{\longrule}U are \textit{both} phonetically natural, albeit in different ways.
+The naturalness of S→Š/ {\longrule} U leads to a much broader conclusion: to the extent that phonetics guides phonology, it does so non-deterministically. The idea that phonological systems and mechanisms are somehow derived from phonetics is very much in vogue in some recent work (\citealt{Ohala1981,Ohala1990,Ohala:2004aa,Hayes1999,Steriade2008,Kawahara2008}, to name just a few). But in this case, ``Does it make phonetic sense?'' is not the right question to ask. S→Š/ {\longrule} I and S→Š/{\longrule}U are \textit{both} phonetically natural, albeit in different ways.
 
 Though S→Š/ {\longrule} I and S→Š/ {\longrule} U are both phonetically natural, they seem intuitively incompatible with one another, in that the occurrence of the one deprives us of most of the data that makes the other apparent. The S→Š/ {\longrule} U pattern in \ili{Setswana} is evident largely \textit{because} \{s ts tsʰ\} do occur before front vowels, without palatalizing; without this data, the S→Š/ {\longrule} U palatalization would not be apparent as such.\footnote{If \ili{Setswana} also had S→Š/ {\longrule} I, then the surface generalization would be S→Š/ {\longrule} \{i ɪ ɛ ɔ ʊ u\}, i.e. before all vowels except [a]. With so many fewer opportunities to observe non-palatalized sibilants, and with palatalization happening everywhere else, it would be easy for learners to re-analyze the pattern as one of de-palatalization: Š→S/ {\longrule} a.} It therefore seems unlikely that a stable phonological system could have both S→Š/ {\longrule} I and S→Š/ {\longrule} U simultaneously. If two mutually-incompatible phonological patterns can both be phonetically natural, then phonetic naturalness is in principle not enough to give us a complete understanding of sound patterns – the choice between these two kinds of palatalization cannot be made on the basis of naturalness.
 
-Explaining this issue away as something that doesn’t bear on the phonetics-phonology relationship seems very unsatisfying. The \ili{Setswana} pattern seems entirely phonotactic in character. It is \textit{not} linked to any particular morpheme(s), nor to one lexical stratum, etc. Despite seeming phonetically odd, it clearly does not have the hallmarks of a ``crazy rule"ft; instead, it has the hallmarks of being part of normal phonology. 
+Explaining this issue away as something that doesn’t bear on the phonetics-phonology relationship seems very unsatisfying. The \ili{Setswana} pattern seems entirely phonotactic in character. It is \textit{not} linked to any particular morpheme(s), nor to one lexical stratum, etc. Despite seeming phonetically odd, it clearly does not have the hallmarks of a ``crazy rule''; instead, it has the hallmarks of being part of normal phonology. 
 
 Interestingly, \citet{Malepe1966} also reports that the \ili{Kgatla} dialect of \ili{Setswana} has S→Š/ {\longrule} i, the much more familiar sort of pattern found in \ili{Japanese} and many other languages. This implies that both S→Š/ {\longrule} I and S→Š/ {\longrule} U can both arise from the same phonetic and phonological substrate. 
 
