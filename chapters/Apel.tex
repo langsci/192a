@@ -1,16 +1,15 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
+
 \title{Non-canonical switch-reference in Serer}
 
 \author{Viktoria Apel\affiliation{Humboldt-Universität zu Berlin}}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[19]
+}{}
+
 
 \abstract{This paper takes a closer look at third-person pronouns in the Atlantic language Serer. In canonical affirmative clauses, the language disposes of two sets of non-locative subject pronouns. Previous descriptions of the language relate their distribution to conjugation paradigms on the one hand and/or to construction types on the other. However, an analysis of corpus data clearly contradicts these claims. The data rather provide evidence for a functional account of these pronouns relating their distribution to non-canonical switch-reference -- in the sense that it deviates from the definition of prototypical instances of the latter. This finding contributes to the description of variations of switch-reference systems in general as well as to a more accurate typological profile of Serer.}
 
@@ -461,6 +460,7 @@ Another domain which would benefit from deeper analysis is \isi{impersonal} cons
 
 Last but not least, more investigation is needed on clausal co- and \isi{subordination}. This applies to complement and adverbial clauses in particular as the present corpus was insufficient to draw meaningful conclusions on \isi{switch-reference} in such contexts. Relative clauses are an exception because they show a clear restriction. Here, only the “different \isi{subject}” pronouns \textit{ta/te} and \textit{da/de} are grammatical, as illustrated in \REF{ex:apel:24} below for the singular in combination with the perfective relative \textit{-na}. The referential status of the \isi{subject pronoun} is disregarded.
 
+\newpage 
 \ea\label{ex:apel:24}
 {\ili{Serer} \ili{Nyomiñka} \citep[350]{Renaudier2012}}\\
 {\-\hspace{0cm}\{The same antelope\textsubscript{i} fell into the ocean. She\textsubscript{i} landed here.\}} \\
@@ -485,42 +485,35 @@ Prior to ACAL 47, parts of this paper were presented at the African Linguistics 
 comp & complementiser\\
  def & definite article\\
  dir & directional\\
- ds & different \isi{subject}\\
- emph & emphatic \isi{pronoun}\\
- foc & \isi{focus}\\
+ ds & different {subject}\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{>{\scshape}lQ}
+ emph & emphatic {pronoun}\\
+ foc & {focus}\\
  hyp & hypothetical\\
- imp & imperative\\
+ imp & imperative\\ 
+\end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{>{\scshape}lQ}
  ipfv & imperfective\\ 
  loc & locative\\
  midd & middle voice\\
  neg & negative\\
-\end{tabularx}
-\begin{tabularx}{.45\textwidth}{>{\scshape}lQ}
  non & non\\
  pl & plural\\
  pfv & perfective\\
- poss & possessive \isi{pronoun}\\
- prep & preposition\\
+ poss & possessive {pronoun}\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{>{\scshape}lQ} prep & preposition\\
  pret & preterite\\
- pro & \isi{pronoun}\\
+ pro & {pronoun}\\
  rel & relative\\
  sg & singular\\
- ss & same \isi{subject}\\
+ ss & same {subject}\\
  t & term\\
  tns & tense
 \end{tabularx}
 
-
-% \begin{verbatim}%%move bib entries to  localbibliography.bib
-
-
-% Güldemann, Tom. in prep. Dissecting predicates for \isi{focus}: Towards a typology of predicate clefting, verb doubling, and co.
-
-
-
-
-% Wiesemann, Ursula. 1982. Switch reference in \ili{Bantu} languages. Journal of West African Languages XII\REF{ex:apel:2}. 42-57.
-% \end{verbatim}
 
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]

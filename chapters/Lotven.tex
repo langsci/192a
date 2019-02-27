@@ -1,15 +1,15 @@
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-% \usepackage{pifont.sty}
+\documentclass[output=paper,newtxmath,modfonts,nonflat]{langsci/langscibook} 
 
 \author{Samson Lotven\affiliation{Indiana University Bloomington} \lastand Kelly Berkson\affiliation{Indiana University Bloomington} }
 
 \title{The phonetics and phonology of depressor consonants in Gengbe}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[14]
+}{}
+
 
 \abstract{The interaction between initial voiced obstruents and lower f0 has been noted for a variety of languages (\citealt{Chistovich1969,Stevens1973,Bradshaw1999,Tang2008}, to name a few). In some languages, phonetic consonant-f0 interactions that alter f0 register and/or contour can be phonologized as consonant-tone interactions \citep{Maran1973,Matisoff1973}. In Gengbe, a Gbe language spoken in Southern Togo and Benin, obstruent voicing displays several interactions with f0 register and contour. The goal of this study is to present the synchronic system of Gengbe consonant-f0 interactions with an eye toward the larger question of phonologization. This paper presents both phonetic and phonological data for discussion. Preliminary acoustic data suggest initial voiced obstruents lower the register f0 of following Low and High tone vowels. Phonological data suggest that tonal contour effects, which change underlying High tone to Rising tone in some environments, vary based on syntactic category – voiced obstruents trigger Rising tone in nouns, while voiced obstruents and sonorants trigger Rising tone in verbs. This paper offers a snapshot of a system where at least some consonant-f0 interactions have been phonologized, adding to the broader understanding of tonogenetic processes.}
 

@@ -1,16 +1,20 @@
-%https://tex.stackexchange.com/questions/236983/defining-different-scripts-with-fontspec/237005
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography}  
-\author{Emily Moeng\affiliation{University of North Carolina, Chapel Hill} \lastand William Carter\affiliation{University of North Carolina, Chapel Hill}}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,final]{langsci/langscibook} 
+\author{Emily Moeng\affiliation{University of North Carolina, Chapel Hill}\lastand William Carter\affiliation{University of North Carolina, Chapel Hill}}
 \title{Factors in the affrication of the ejective alveolar fricative in Tigrinya}
 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[15]
+}{}
+
+
  
-\abstract{Ejective fricatives are typologically rare sounds, attributable to the fact that they present an articulatory dilemma with contrasting demands for their fricative and ejective components. Several articulatory coping mechanisms have been observed across languages \citep{maddieson1997,maddieson1998make}. In the case of Tigrinya, \citet{shosted2011affricating} find that the ejective alveolar fricative, /s’/, is affricated more often than not (/s’/ produced as [ts’]), proposing affrication to be another possible coping mechanism. This study assesses two possible factors affecting the rate or degree of affrication in Tigrinya: 1) the vowel environment surrounding /s’/ and 2) the lexical frequency of words containing /s’/. While we find no effect of lexical frequency, we find a significant effect of vowel context, with the lowest rate of affrication occurring following [i] and preceding [u]. We propose that this finding suggests that this environment, [i\textunderscore u], naturally aids the production of ejective fricatives due to vowel coarticulation, as the decreasing supralaryngeal volume over the duration of the fricative counteracts the loss of air due to frication.}
+\abstract{Ejective fricatives are typologically rare sounds, attributable to the fact that they present an articulatory dilemma with contrasting demands for their fricative and ejective components. Several articulatory coping mechanisms have been observed across languages \citep{maddieson1997,maddieson1998make}. In the case of Tigrinya, \citet{shosted2011affricating} find that the ejective alveolar fricative, /s’/, is affricated more often than not (/s’/ produced as [ts’]), proposing affrication to be another possible coping mechanism. This study assesses two possible factors affecting the rate or degree of affrication in Tigrinya: 
+1) the vowel environment surrounding /s’/ and 
+2) the lexical frequency of words containing /s’/. While we find no effect of lexical frequency, we find a significant effect of vowel context, with the lowest rate of affrication occurring following [i] and preceding [u]. We propose that this finding suggests that this environment, 
+% [i{\longrule}u],
+naturally aids the production of ejective fricatives due to vowel coarticulation, as the decreasing supralaryngeal volume over the duration of the fricative counteracts the loss of air due to frication.}
 
 
 \begin{document}
@@ -92,7 +96,7 @@ Stimuli consisted of 3-character, 3-syllable nonce words of the form C1-V1-C2-V2
 
 Stimuli were embedded in the frame shown in \ref{ex:moeng:1}. Due to the use of nonce words, all frames contained two repetitions of the test item \textit{WORD}, so that participants were less likely to pause before the unfamiliar word. Only the test item embedded within the sentence (bolded in \ref{ex:moeng:1}) was included in the analysis. Stimuli were randomized for each participant, and each participant was given a printed copy of the list of sentences from which to read. Participants were told they could take as much time as needed, and could repeat the sentence if they felt they had misspoken. If this happened, only the last repetition was included in the analysis.
 
-\ea
+\ea\label{ex:moeng:1}
 \glll (\textit{WORD})\amh{።}   \amh{እቲ}   \amh{ወዲ}     \textbf{(\textit{WORD}})   \amh{በለ።}\\
 XXX    ʔɨti  wedi    \textbf{XXX}    bele\\
 WORD  the  boy    \textbf{WORD}  say\\
@@ -116,9 +120,14 @@ All measurements were made by hand in Praat. \figref{fig:moeng:2} (left) shows a
  
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/fig-moeng-1a}
-\includegraphics[width=0.3\textwidth]{figures/fig-moeng-1b}
-\caption{(Left) Spectrogram of /s’/ produced as an affricate [ts’]. Note the period of closure (marked as “C”) between the preceding vowel (“V1”) and the fricative (“s”). (Right) Spectrogram of /s’/ produced as an unaffricated [s’] with no closure preceding frication. Note the lack of closure between “V1” and “s”.}
+\subfigure[Spectrogram of /s’/ produced as an affricate {[ts’]}. Note the period of closure (marked as “C”) between the preceding vowel (“V1”) and the fricative (“s”).]{
+\includegraphics[height=0.15\textheight]{figures/fig-moeng-1a}
+}
+\quad
+\subfigure[Spectrogram of /s’/ produced as an unaffricated {[s’]} with no closure preceding frication. Note the lack of closure between “V1” and “s”.]{
+\includegraphics[height=0.15\textheight]{figures/fig-moeng-1b}
+}
+\caption{Spectrograms of /s’/}
 \label{fig:moeng:2}
 \end{figure}
 
@@ -133,13 +142,12 @@ In a post-hoc analysis, we also measured the \isi{closure duration} of those tok
 \begin{table}
 \begin{tabular}{ccccccccccc}
 \lsptoprule
-&  & \multicolumn{3}{c}{ \bfseries V2} &  &  &  & & \multicolumn{2}{c}{ \bfseries V2}\\
+&  & & { \bfseries V2} & &  &  &  & & { \bfseries V2} &\\
  &  & \bfseries i & \bfseries a & \bfseries u &  &  &  & \bfseries i & \bfseries a & \bfseries u\\
 \midrule
 \bfseries V1 & \bfseries i & 12.5\% & 15.4\% & 36.4\%** &  & \bfseries V1 & \bfseries i & 50.3 & 47.0 & \\
 & \bfseries a & 5.9\% & 11.8\% & 0\% &  &  & \bfseries a & 41.3 & 42.4 & \\
 & \bfseries u & 0\% & 10.0\% & 0\% &  &  & \bfseries u & 54.1 & 50.1 & \\
-\\
 \lspbottomrule
 \end{tabular}
 \caption{(Left) Proportion of non-affricated ejective fricatives by environment. (Right) Average closure duration (in milliseconds) when /s’/ was affricated (/s’/ produced as [ts’]), also by environment.\\
@@ -156,11 +164,12 @@ For each of the 9 environments, we compared the percent of /s’/ produced with 
 
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{figures/fig-moeng-2.svg}
+\includegraphics[height=0.3\textheight]{figures/fig-moeng-2.png}
 \caption{Average closure duration of those ejectives which have been affricated ([ts’]) decreases as the percent of ejective fricatives with no closure ([s’]) increases (r = -0.54, p = 0.13).}
 \label{fig:moeng:3}
 \end{figure}
 
+\newpage 
 A Pearson Correlation Coefficient of \textit{r} = −0.54 was calculated for the set of points. However, this correlation cannot be said to be significant with a nondirectional \textit{p}{}-value of 0.13. This is due to the maximum sample size of N = 9 that can be derived from a 3x3 environment matrix, not necessarily the robustness of the trend. Performing this same analysis with a larger environment matrix would be the next step in testing the significance of the trend suggested here.
 
 \subsection{Discussion}\label{sec:moeng:5.4}
@@ -178,7 +187,7 @@ Articulation data with high time resolution in a wider variety of vowel contexts
    
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{figures/fig-moeng-3}
+\includegraphics[height=0.25\textheight]{figures/fig-moeng-3}
 \caption{Tongue traces for three alveolar fricatives. Note that the ejective /s’/ (green dashed line) is produced further back than /s/ (red triangles) and /z/ (blue solid).}
 \label{fig:moeng:4}
 \end{figure}
@@ -201,7 +210,7 @@ Before detailing the methodology of Experiment 2, the authors would like to note
 
 Experiment 2 consisted of 2 parts. Part 1 was a Go/No-go word recognition task to determine \isi{lexical frequency} indirectly through reaction times. Part 2 followed Part 1 and consisted of a reading task identical in procedure to that used in Experiment 1.
 
-\pagebreak
+
 
 \subsubsection{Stimuli}\label{sec:moeng:6.1.1}
 
@@ -243,7 +252,7 @@ The analysis for Experiment 2 used the same criteria for marking the five landma
 To determine whether any relationship exists between \isi{lexical frequency} and affrication, lexical recognition time and \isi{closure duration} were plotted (\figref{fig:moeng:6}). No correlation was found between reaction time and \isi{closure duration} (\textit{r} = 0.06). This suggests that no relationship exists between affrication and \isi{lexical frequency} as predicted by reaction time.
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{figures/fig-moeng-5}
+\includegraphics[width=0.8\textwidth]{figures/fig-moeng-5}
 \caption{No or very slight negative correlation was found between closure duration and reaction time (r = −0.061).}
 \label{fig:moeng:6}
 \end{figure}
@@ -253,7 +262,7 @@ One goal of this study was also to determine whether lexical recognition time co
    
 
 \begin{figure}
-\includegraphics[width=0.9\textwidth]{figures/fig-moeng-6.svg}
+\includegraphics[width=0.8\textwidth]{figures/fig-moeng-6.png}
 \caption{Results of the Frequency Check words. Reaction time and lexical frequency are weakly negatively correlated with one another.}
 \label{fig:moeng:7}
 \end{figure}
@@ -268,6 +277,7 @@ Frequency Check words had been included to determine whether we were indeed indi
 
 It is also possible that this study did not accurately capture reaction times, either due to flaws in methodology, or due to the small number of participants. For example, the average reaction time among our participants was 1380 ms in contrast to average reaction times between 618–985 ms in other reaction time studies \citep{brysbaert2011word}. It is possible that a difference in the average age of participants played a role here. Whereas past studies with results averaging between 618–985 ms were performed with undergraduate participants presumably between the ages of 18–22, our participants ranged from 20-60 years in age with an average age of 42. Human reaction times have been shown to steadily decrease beginning at the age of 20 \citep{pierson1958movement}, possibly accounting for the difference in reaction time compared with previous studies.
 
+\largerpage
 Then again, as noted earlier, An Crúbadán is a small corpus and is only based on words written online. Therefore, An Crúbadán may not even accurately reflect true lexical frequencies in speech, which may be the reason for the low \textit{r} value.
 
 \section{Conclusion}\label{sec:moeng:7}
@@ -280,7 +290,7 @@ It was hoped for Experiment 2 that indirectly measuring \isi{lexical frequency} 
 
 We would like to thank the native speaker consultants for participating in our study and the Eritrean Community Association in Raleigh, NC, as well as David Mora-Marin, Elliott Moreton, Jennifer Smith, and two anonymous reviewers for their helpful comments and suggestions. All errors are of course our own. We would also like to thank Jeff Mielke and the North Carolina State University Phonology Lab for helping us use and allowing us to borrow their ultrasound machine. Special thanks to Ruth Tesfalidet and Tsegga Medhin for helping us choose and create stimuli, and for helping us recruit participants.
  
-
+\largerpage
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
 
