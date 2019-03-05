@@ -1,19 +1,9 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
-
+\documentclass[output=paper,newtxmath,modfonts,nonflat]{langsci/langscibook} 
 \title{Stem modification in Nuer}
-\author{Irina Monich\affiliation{University of Surrey} \lastand  Matthew Baerman\affiliation{University of Surrey}}
+\author{Irina Monich\affiliation{University of Surrey} \lastand Matthew Baerman\affiliation{University of Surrey}}
 
 
-\abstract{Nuer is a Western Nilotic language remarkably rich in non-concatenative morphology.  This article provides a comprehensive description of those morphological processes in Nuer that are responsible for variations in the form of the stem.  Our data shows that all stem-modifying operations have one of the following four targets in the stem: stem vowel quality and quantity, tonal melody, and properties of the stem-final consonant.  The vowel quality modification is comprised of two separate processes where either lowering and removal of breathiness is applied or raising and addition of breathiness. Thus vowel quality modification yields two separate series of mutated vowels.  We provide arguments for treating some vowels as basic, while others as derived.  We also identify tonal patterns found in verbal morphology, and three types of morphologically triggered consonantal lenition.  According to our findings, exactly the same processes apply in both the nominal and the verbal system.}
+\abstract{Nuer is a Western Nilotic language remarkably rich in non-concatenative morphology. This article provides a comprehensive description of those morphological processes in Nuer that are responsible for variations in the form of the stem. Our data shows that all stem-modifying operations have one of the following four targets in the stem: stem vowel quality and quantity, tonal melody, and properties of the stem-final consonant. The vowel quality modification is comprised of two separate processes where either lowering and removal of breathiness is applied or raising and addition of breathiness. Thus, vowel quality modification yields two separate series of mutated vowels. We provide arguments for treating some vowels as basic, while others as derived. We also identify tonal patterns found in verbal morphology, and three types of morphologically triggered consonantal lenition. According to our findings, exactly the same processes apply in both the nominal and the verbal system.}
 
 \begin{document}
 
@@ -21,9 +11,10 @@
 
 \section{Introduction} %1. /
 
-\ili{Nuer} is a Western \ili{Nilotic} language of the \ili{Nilo-Saharan} language family with almost 900,000 speakers worldwide.  It is part of \ili{Dinka}-\ili{Nuer} language cluster which also includes \ili{Thok Reel}. 
+\ili{Nuer} is a Western \ili{Nilotic} language of the \ili{Nilo-Saharan} language family with almost 900,000 speakers worldwide. It is part of \ili{Dinka}-\ili{Nuer} language cluster which also includes \ili{Thok Reel}. 
 
 \ili{Nuer} has attracted attention for the complexity of its nominal inflection, which employs a baffling variety of forms in a seemingly chaotic lexical and paradigmatic distribution \citep{Frank1999, Baerman2012}. \tabref{tab:monich:1} offers a taste of this, showing a small sample of the various schemes of affixation and \isi{stem modification} displayed by different nouns. (All examples in this paper come from our own fieldwork.)
+
 
 
 \begin{table}
@@ -31,9 +22,9 @@
 \lsptoprule
 \bfseries\scshape nom sg & \bfseries\scshape gen sg & \bfseries\scshape loc sg & \bfseries\scshape nom pl & \bfseries\scshape gen/loc pl & \bfseries Gloss\\
 \midrule
-kɛɛɛt & \multicolumn{2}{c}{kɛɛɛt-ʌ̤} & \multicolumn{2}{c}{kɛɛɛt-ní} & ‘stick’\\
-têr̥ & \multicolumn{2}{c}{té̤r̥-ʌ̤} & té̤r̥ & têeet & ‘hand’\\
-kɔ̤aaaɣ & kɔ̤ah & kɔ̤h & kɔ̤aɣ & kɔ̤aaɣ-nì & ‘hole’\\
+kɛ̀ɛɛt & \multicolumn{2}{c}{kɛ̀ɛɛd-ʌ̤́} & \multicolumn{2}{c}{kɛ̀ɛɛd-ní} & ‘stick’\\
+têr̥ & \multicolumn{2}{c}{té̤r̥-ʌ̤} & té̤t & té̤eet & ‘hand’\\
+kɔ̤́aaaɣ & kɔ̤́ah & kɔ̤́h & kɔ̤́ah & kɔ̤́aɣ-nì & ‘hole’\\
 kíir & kîɛɛɛr & kîiir & kîɛr & kîɛr-ì & ‘big river’\\
 \lspbottomrule
 \end{tabularx}
@@ -43,16 +34,16 @@ kíir & kîɛɛɛr & kîiir & kîɛr & kîɛr-ì & ‘big river’\\
 
 An obvious requirement for understanding this system is to isolate the morphological devices involved, no mean feat given its high degree of lexical idiosyncrasy. In this paper we set out to do this, focusing on the system (or systems) of \isi{stem modification}. The key to this lies in \isi{verbal morphology}, which employs the same devices found in nominal inflection – manipulation of quality, quantity and \isi{tone} of the stem vowel and manner of articulation of the stem-final consonant – but with a high degree of regularity and predictability. Further, by doing this we can show that there are two distinct kinds of \isi{vowel quality} modifying processes. One is primarily a lowering process, and is associated with case-number inflection in nouns and person-number inflection in verbs. The other involves vowel raising, and is associated with number inflection in nouns and derivation in verbs.
 
-Language consultants used for this study are all native speakers of \ili{Nuer}.  Of the ten consultants four are representative of the Western variety of \ili{Nuer} (Bentiu), and the other six are speakers of the Eastern dialect of \ili{Nuer} (\ili{Jikany}\footnote{One of our \ili{Jikany} \ili{Nuer} consultants spent his formative years in Akobo area of South Sudan; the other five  originate from Nasir.  The variety of \ili{Nuer} spoken by the Akobo native does not appear to be different from that spoken by other \ili{Jikany} \ili{Nuer} consultants.  By contrast, differences between the Eastern (\ili{Jikany}) and Western (Bentiu) dialects are clearly defined in several areas of grammar.  Therefore, we indicate throughout this article whether data comes from Eastern or Western variety of \ili{Nuer}, without drawing further dialectal distinctions.}).  All currently reside outside of South Sudan (UK and USA) but use \ili{Nuer} on a daily basis within their communities.  
+Language consultants used for this study are all native speakers of \ili{Nuer}. Of the ten consultants, four are representative of the Western variety of \ili{Nuer} (Bentiu), and the other six are speakers of the Eastern dialect of \ili{Nuer} (\ili{Jikany}\footnote{One of our \ili{Jikany} \ili{Nuer} consultants spent his formative years in Akobo area of South Sudan; the other five originate from Nasir. The variety of \ili{Nuer} spoken by the Akobo native does not appear to be different from that spoken by other \ili{Jikany} \ili{Nuer} consultants. By contrast, differences between the Eastern (\ili{Jikany}) and Western (Bentiu) dialects are clearly defined in several areas of grammar. Therefore, we indicate throughout this article whether data comes from Eastern or Western variety of \ili{Nuer}, without drawing further dialectal distinctions.}). All currently reside outside of South Sudan (UK and USA) but use \ili{Nuer} on a daily basis within their communities. 
 
-The major prior source on \ili{Nuer} is \citet{Crazzolara1933}. Other notable previous works include \citet{Vandevortnd}'s draft pedagogical grammar, and \citet{Frank1999} and \citet{Storch2005} on noun morphology.  The transcription of data in these sources is often inconsistent, especially in regards to the subtle contrasts of \isi{vowel quality} and \isi{tone}.  Since much of morphological contrasts in \ili{Nuer} are signaled by manipulation of precisely these properties, errors in data transcription make it difficult to arrive at phonological operations that are at the heart of \ili{Nuer} morphology.  Before we can truly evaluate the complexity of \ili{Nuer} verbal and nominal systems, it is essential to establish the basic phonological alternations that play such an important role in \ili{Nuer} grammar.
+The major prior source on \ili{Nuer} is \citet{Crazzolara1933}. Other notable previous works include \citet{Vandevortnd}'s draft pedagogical grammar, and \citet{Frank1999} and \citet{Storch2005} on noun morphology. The transcription of data in these sources is often inconsistent, especially in regards to the subtle contrasts of \isi{vowel quality} and \isi{tone}. Since much of morphological contrasts in \ili{Nuer} are signaled by manipulation of precisely these properties, errors in data transcription make it difficult to arrive at phonological operations that are at the heart of \ili{Nuer} morphology. Before we can truly evaluate the complexity of \ili{Nuer} verbal and nominal systems, it is essential to establish the basic phonological alternations that play such an important role in \ili{Nuer} grammar.
 
 More recent work on \ili{Nuer} includes
-\citeauthor{gjersøe2016} (\citeyear{gjersøe2016}; \citeyear{gjersøe2017}) on \isi{tone}, Reid (forthcoming) on \isi{verbal morphology}, \citet{Faust2017} on vowel alternations in adjectival reduplication, and \citet{faust2015} which provides general overview of the grammar of a \ili{Jikany} variety from Nasir. Some of the findings reported here contradict or overlap with the findings in these works.  The vowel correspondences are generally aligned with the ones identified by \citet{Faust2017} and \citet{faust2015} but with some important differences mainly involving documentation of breathiness and diphthongization.  The tonal inventory that we identify here is richer than the one proposed in \citeauthor{gjersøe2016} (\citeyear{gjersøe2016}; \citeyear{gjersøe2017}), and it allows for more precise classification of tonal patterns.  Where applicable, important differences between these works and ours will be pointed out throughout this article.
+\citeauthor{gjersøe2016} (\citeyear{gjersøe2016}; \citeyear{gjersøe2017}) on \isi{tone}, Reid (forthcoming) on \isi{verbal morphology}, \citet{Faust2017} on vowel alternations in adjectival reduplication, and \citet{faust2015} which provides general overview of the grammar of a \ili{Jikany} variety from Nasir. Some of the findings reported here contradict or overlap with the findings in these works. The vowel correspondences are generally aligned with the ones identified by \citet{Faust2017} and \citet{faust2015} but with some important differences mainly involving documentation of breathiness and diphthongization. The tonal inventory that we identify here is richer than the one proposed in \citeauthor{gjersøe2016} (\citeyear{gjersøe2016}; \citeyear{gjersøe2017}), and it allows for more precise classification of tonal patterns. Where applicable, significant divergences between these works and ours will be pointed out throughout this article.
 
 \section{Basics of Nuer phonology} %2. /
 
-Both varieties of \ili{Nuer} discussed here distinguish (at least) fifteen vowel phonemes, shown in \figref{fig:monich:1}a.  Most of these constitute part of a modal/breathy pair (breathiness is indicated by two dots underneath the first grapheme of a vowel).  Except for the high mid range, the breathy counterpart is typically somewhat higher in the vowel space. There are also four pairs of modal/breathy diphthongs (\figref{fig:monich:1}b). 
+Both varieties of \ili{Nuer} discussed here distinguish (at least) fifteen vowel phonemes, shown in \figref{fig:monich:1}a. Most of these constitute part of a modal/breathy pair (breathiness is indicated by two dots underneath the first grapheme of a vowel). Except for the high mid range, the breathy counterpart is typically somewhat higher in the vowel space. There are also four pairs of modal/breathy diphthongs (\figref{fig:monich:1}b). 
 
 
 %\begin{figure}
@@ -80,13 +71,13 @@ Both varieties of \ili{Nuer} discussed here distinguish (at least) fifteen vowel
 	\label{fig:monich:1}
 \end{figure}
 
+\pagebreak
 
-Even though the vowels listed in Fig 1 are all contrastive in \ili{Nuer}, we argue here that they do not all have equal status in \ili{Nuer} grammar.  Only vowels /a, ɔ, ɔ̤, ɛ ɛ̤, i and u/ are found in the morphologically “basic” form of the root.  All diphthongs, as well as monophthongs /a̤, ʌ̤, e, e̤, o, o̤, i̤ and ṳ/, emerge as a result of morphological modification of the stem.  These vowels are produced when affixes consisting of floating features superimpose on the vowel of the stem, modifying its properties.  Consequently, they signal morphological rather than lexical contrasts.
+Even though the vowels listed in Fig 1 are all contrastive in \ili{Nuer}, we argue here that they do not all have equal status in \ili{Nuer} grammar. Only vowels /a, ɔ, ɔ̤, ɛ ɛ̤, i and u/ are found in the morphologically “basic” form of the root. All diphthongs, as well as monophthongs /a̤, e, o/, emerge as a result of morphological modification of the stem. These vowels are produced when affixes consisting of floating features superimpose on the vowel of the stem, modifying its properties. Consequently, they signal morphological rather than lexical contrasts.
 
-Both diphthongs and monophthongs occur in three degrees of length: short, long and overlong, represented here by three vowel graphemes, plus onglide in the case of diphthongs. Breathiness is indicated on the first grapheme alone. There are two lexically specified tones:  H and L.  Rising and falling tones also occur but their appearance is either phonologically conditioned or results from combination of H and L tones.  Falling and high tones are neutralized depending on the phonation of the vowel: if the vowel is breathy, the falling and high tones are both realized as high, while over modal vowels the two tones are both realized as falling.  Rising tones emerge as a result of fissure of spread H-tones into L and H (also applies to adjacent H-tones in the same word).  In other words, there is a rule HH $\rightarrow$ LH that takes place word-internally\footnote{Full justification for positing this rule cannot be offered here due to space limitations.  One supporting piece of evidence is that before high-toned suffixes, the \isi{tone} over a short intransitive stem can only be L or LH. At the same time, before low-toned suffixes, the \isi{tone} of the stem may be either high or low.  This state of affairs can be accounted for assuming that short roots are lexically specified as L or H, and that this lexical tones appear as such before low-toned suffixes.  However, before H-toned suffixes the H of the stem breaks into L and H.  Such analysis also allows for a better understanding of derivation of tonal melodies in transitive stems in \sectref{sec:monich:3.3}}. As with breathiness, \isi{tone} is indicated on the first grapheme of a multi-graphemic vowel representation.
+Both diphthongs and monophthongs occur in three degrees of length: short, long, and overlong, represented here by three vowel graphemes, plus onglide in the case of diphthongs. Breathiness is indicated on the first grapheme alone. There are two lexically specified tones: H and L. Rising and falling tones also occur but their appearance is either phonologically conditioned or results from combination of H and L tones. Falling and high tones are neutralized depending on the phonation of the vowel: if the vowel is breathy, the falling and high tones are both realized as high, while over modal vowels the two tones are both realized as falling. Rising tones emerge as a result of fissure of spread H-tones into L and H (also applies to adjacent H-tones in the same word). In other words, there is a rule HH $\rightarrow$ LH that takes place word-internally.\footnote{Full justification for positing this rule cannot be offered here due to space limitations. One supporting piece of evidence is that before high-toned suffixes, the \isi{tone} over a short intransitive stem can only be low or rising. At the same time, before low-toned suffixes, the \isi{tone} of the intransitive stem may be either high or low. This state of affairs can be accounted for assuming that short roots are lexically specified as L or H, and that these lexical tones appear as such before low-toned suffixes. However, before H-toned suffixes the H of the stem breaks into yielding a rising tone. Such analysis also allows for a better understanding of derivation of tonal melodies in transitive stems in \sectref{sec:monich:3.3}.} As with breathiness, \isi{tone} is indicated on the first grapheme of a multi-graphemic vowel representation.
 
-The consonantal inventory of \ili{Nuer} is shown in \tabref{tab:monich:2}.  In intervocalic position the stem-final consonants tend to become voiced.  The phonemes in parenthesis are only contrastive in stem-final position in some varieties of Western \ili{Nuer}.
-
+The consonantal inventory of \ili{Nuer} is shown in \tabref{tab:monich:2}. In intervocalic position the stem-final consonants tend to become voiced. The phonemes in parenthesis are only contrastive in stem-final position in some varieties of Western \ili{Nuer}.
 
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXXXX}
@@ -106,60 +97,63 @@ Glides & w &  &  & j & ɣ\\
 \label{tab:monich:2}
 \end{table}
 
+\pagebreak
+
+NF1 = non-finite form used with \isi{perfect} auxiliaries
+
+NF2 = non-finite form used with non-\isi{perfect} auxiliaries
+
+NSF = non-suffixed form used with a post-verbal suffix
+
 \section{Verbal inflection}
 \subsection{Overview} %3.1 /
 
-We \isi{focus} here on inflection for \isi{subject} person-number, which occurs in the Present Imperfect Positive Tense when used with a preverbal \isi{subject}.  A sample paradigm is provided in \tabref{tab:monich:3}, including other forms which we will discuss below only in passing.
+We \isi{focus} here on inflection for \isi{subject} person-number, which occurs in the Present Imperfect Positive Tense when used with a preverbal \isi{subject}. A sample paradigm is provided in \tabref{tab:monich:3}, including other forms which we will discuss below only in passing.
 
 \begin{table}
 \begin{tabularx}{\textwidth}{llrll}
 \lsptoprule
  & \bfseries Singular & \multicolumn{2}{c}{\bfseries Plural} & \bfseries Other forms\\
 \midrule
-1  & pɔ̤́aaad-ʌ̤̀ & \multicolumn{1}{r}{pɔ̤̌ar̥-kɔ̤̌ (\textsc{excl})} & \multicolumn{1}{l}{pɔ̤̌ar̥-nɛ (\textsc{incl})} & NF1 pɔ̤r̥\\
-2 & pɔ̤́ɔɔd-ì̤ & \multicolumn{2}{c}{pɔ̤̌ar̥-ɛ} & NF2 pɔ̤t\\
-3 & pɔ̤́ɔɔd-ɛ̀ & \multicolumn{2}{c}{pɔ̤̌ar̥-kɛ} & NSF pɔ̤t\\
+1  & pɔ̤́aaad-ʌ̤̀ & \multicolumn{1}{r}{pɔ̤̌ar̥-kɔ̤̌ (\textsc{excl})} & \multicolumn{1}{l}{pɔ̤̌ar̥-nɛ̂ (\textsc{incl})} & NF1 pɔ̤̀r̥\\
+2 & pɔ̤́ɔɔd-ì̤ & \multicolumn{2}{c}{pɔ̤̌ar̥-ɛ̂} & NF2 pɔ̤́t\\
+3 & pɔ̤́ɔɔd-ɛ̀ & \multicolumn{2}{c}{pɔ̤̌ar̥-kɛ̂} & NSF pɔ̤́t\\
 \lspbottomrule
 \end{tabularx}
 \caption{‘beat (the drum)\textsc{.tr}’ (Western Nuer)}
 \label{tab:monich:3}
 \end{table}
 
-NF1 = non-finite form used with \isi{perfect} auxiliaries
 
-NF2 = non-finite form used with non-\isi{perfect} auxiliaries
-
-NSF = non-suffixed form used with a post-verbal suffix\\ 
-
-Besides bearing different inflectional suffixes, the individual forms are distinguished by various stem alternations,\footnote{The term “stem” is used here to label the portion of the word with the exclusion of inflectional suffixes.  Since there are no segmental derivational suffixes, the stem incorporates all derivational morphology.} involving length, \isi{vowel quality}, \isi{tone} and the stem-final consonant.  In the next several sections we review these processes in turn. 
+Besides bearing different inflectional suffixes, the individual forms are distinguished by various stem alternations\footnote{The term “stem” is used here to label the portion of the word with the exclusion of inflectional suffixes. Since there are no segmental derivational suffixes, the stem incorporates all derivational morphology.}, involving length, \isi{vowel quality}, \isi{tone}, and the stem-final consonant. In the next several sections we review these processes in turn. 
 
 \subsection{Vowel quality modification} %3.2 /
 
-The system of \isi{vowel quality} modification involves a two-way contrast which we designate here as grade 1 vs. 2 and grade A vs. B (\tabref{tab:monich:4}). The system of vowel grades adopted here is almost identical to the one presented by \citet{reid2016} with an important distinction that it is entirely based on the pattern of morphological distribution of the grades, rather than their phonological properties.
+The system of \isi{vowel quality} modification involves a two-way contrast which we designate here as Grade 1 vs. 2/A vs. B (\tabref{tab:monich:4}). The system of vowel grades adopted here is almost identical to the one presented by \citet{reid2016}.
 
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXX}
 \lsptoprule
 
-\multicolumn{2}{c}{  Grade 1} & \multicolumn{2}{c}{  Grade 2}\\
+\multicolumn{2}{c}{Grade 1} & \multicolumn{2}{c}{Grade 2}\\
 \midrule
   Grade A &  Grade B &  Grade A &  Grade B\\
  i & iɛ & i̤ & i̤e\\
  ɛ & ɛa & e̤ & e\\
- ɛ̤ & ɛ̤a & ɛ̤ & ɛ̤a\\
+ -- & -- & ɛ̤ & ɛ̤a\\
  a & a & ʌ̤ & a̤\\
  ɔ & ɔa & o̤ & o\\
- ɔ̤ & ɔ̤a & ɔ̤ & ɔ̤a\\
- u & uɔ & ṳ & ṳo\\
+ -- & -- & ɔ̤ & ɔ̤a\\
+ u & uɔ & ṳ & ṳɔ\\
 \lspbottomrule
 \end{tabularx}
 \caption{Morphological stem vowel grades in Nuer}
 \label{tab:monich:4}
 \end{table}
 
-The grades \textit{roughly} correspond to phonological contrasts.  Thus most Grade 1 vowels are modal, while most Grade 2 vowels are breathy, and raised with respect to their Grade 1 counterparts.  The Grade A{\textasciitilde}B alternation for most vowels involves lowering which, wherever possible, yields an opening diphthong; however, in case of the Grade A vowels /e̤/ and /o̤/ we see instead the removal of breathiness to yield Grade B. \footnote{\citet{Faust2017} offers a similar model of inflectional vowel mutation (i.e. derivation of set B from set A in our terms) based on the pattern observed in adjectives, but with two important differences.  First, he does not transcribe the diphthong /ɛa/ (which may be valid for his consultant’s dialect), positing that the modified counterpart of /ɛ/ is /a/.  Most importantly, Faust’s does not distinguish various phonation properties in his transcription.  As a result, in his model, close mid vowels /e/ and /o/ have no modified counterparts.}  
+The grades correspond to phonological contrasts. Thus most Grade 1 vowels are modal, while Grade 2 vowels are breathy, and raised with respect to their Grade 1 counterparts. The Grade A{\textasciitilde}B alternation for most vowels involves lowering which, wherever possible, yields an opening diphthong; however, in case of the Grade A vowels /e̤/ and /o̤/ we see instead the removal of breathiness to yield Grade B.\footnote{\citet{Faust2017} offers a similar model of inflectional vowel mutation (i.e. derivation of set B from set A in our terms) based on the pattern observed in adjectives, but with two important differences. First, he does not transcribe the diphthong /ɛa/ (which may be valid for his consultant’s dialect), positing that the modified counterpart of /ɛ/ is /a/. Most importantly, Faust’s does not distinguish various phonation properties in his transcription. As a result, in his model, close mid vowels /e/ and /o/ have no modified counterparts.}  
 
-The two sets of alternations have a clear division of labor in the verbal system. Grade 1 vowels are found in underived transitive verbs, while Grade 2 vowels are found with all verbs derived from them. The Grade A {\textasciitilde} B alternation takes place \textit{within} the paradigms of individual verbal lexemes, e.g. between different \isi{subject} person-number values. The distribution of grade A and B differs depending on whether the verb is transitive or intransitive: grade A is used in 2/3\textsc{sg} of all verbs, and additionally in 3\textsc{pl} of intransitive verbs, while grade B is used elsewhere.\footnote{This excludes a relatively small class of intransitive verbs which denote involuntary and reflexive actions and states, such as “get tired”, “cough”, “boil”, “float”, “be alive”, “wash oneself”, etc. These verbs have vowels of grade 2 in all forms, including the non-suffixed forms. \label{fn:monich:5} }  The basic template of the two \isi{vowel quality} modification types is illustrated in \tabref{tab:monich:5} and exemplified in \tabref{tab:monich:6}. 
+The two sets of alternations have a clear division of labor in the verbal system. Grade 1 vowels are found in underived verbs, while Grade 2 vowels are found with many derived verbal categories. The Grade A{\textasciitilde}B alternation takes place \textit{within} the paradigms of individual verbal lexemes, e.g. between different \isi{subject} person-number values. The distribution of Grade A and B differs depending on whether the verb is transitive or intransitive: Grade A is used in 2/3\textsc{sg} of all verbs, and additionally in 3\textsc{pl} of intransitive verbs, while Grade B is used elsewhere.\footnote{This excludes a relatively small class of intransitive verbs which denote involuntary and reflexive actions and states, such as “get tired”, “cough”, “boil”, “float”, “be alive”, “wash oneself”, etc. These verbs have vowels of Grade B in all forms, including the non-suffixed forms. \label{fn:monich:5} }  The basic template of the two \isi{vowel quality} modification types is illustrated in \tabref{tab:monich:5} and exemplified in \tabref{tab:monich:6}. 
 
 %\begin{table}
 %a. Underived transitive verb b. Derived intransitive (antipassive) verb 
@@ -180,8 +174,7 @@ The two sets of alternations have a clear division of labor in the verbal system
 
 %TODO Ask if this is the right caption for table 5??
 \begin{table}[!htb]
-	\begin{subtable}{0.4\linewidth}
-	\caption{Transitive verb}
+	\subtable[Transitive verb]{
 	\begin{tabular}{|ccc|}
 		\hline
 		& singular & plural\\
@@ -190,9 +183,8 @@ The two sets of alternations have a clear division of labor in the verbal system
 		3 & &\multicolumn{1}{|c|}{}\\
 		\hline
 	\end{tabular}
-	\end{subtable}
-	\begin{subtable}{0.4\linewidth}
-	\caption{Intransitive verb}
+	}
+	\subtable[Intransitive verb]{
 	\begin{tabular}{|ccc|}
 		\hline
 		& singular & plural\\
@@ -201,20 +193,22 @@ The two sets of alternations have a clear division of labor in the verbal system
 		3 & &\multicolumn{1}{c|}{}\\
 		\hline
 	\end{tabular}
-	\end{subtable}
-\caption{a. Underived transitive verb ‘see’ b. Derived intransitive (antipassive) verb ‘see’}
+	}
+\caption{Distribution of Grades A{\textasciitilde}B in inflected verbal forms}
 \label{tab:monich:5}
 \end{table}
 
+
  
 \begin{table}
-\begin{tabularx}{\textwidth}{lXXXlXX}
+\begin{tabularx}{\textwidth}{lXlXlXl}
 \lsptoprule
  & singular & plural &  &  & singular & plural\\
 \midrule
- 1 & nɛaaanʌ̤ & nɛankɔ &  & 1 & něnʌ̤ & něnkɔ\\
- 2 & nɛɛɛnì̤ & nɛanɛ &  & 2 & ne̤ní̤ & něnɛ\\
- 3 & nɛɛɛnɛ & nɛankɛ &  & 3 & ne̤nɛ & ně̤nkɛ\\
+ 1 & nɛ̂aaanʌ̤̀ & nɛ̌ankɔ̂ (\textsc{excl}) &  & 1 & něnʌ̤́ & něnkɔ (\textsc{excl})\\
+ 1+2  &        & nɛ̌anɛ̂ (\textsc{incl}) & & & 1+2 & něnɛ̂ (\textsc{incl})\\
+ 2 & nɛ̂ɛɛnì̤ & nɛ̌anɛ &  & 2 & ně̤ní̤ & něnɛ̂\\
+ 3 & nɛ̂ɛɛnɛ̀ & nɛ̌ankɛ̂ &  & 3 & ně̤nɛ̂ & ně̤nkɛ̂\\
 \lspbottomrule
 \end{tabularx}
 \caption{Exemplification of the patterns in \tabref{tab:monich:5}}
@@ -226,9 +220,11 @@ The motivation for treating the Grade 1A as the “basic” grade from which all
 \subsection{Other types of stem modification} %3.3 /
 \label{sec:monich:3.3}
 
-Variations in vowel quantity, \isi{tone} and properties of the stem-final consonant are also involved in inflectional morphology.  Within the finite paradigm they oppose singular and plural forms, and thus cross-cut the \isi{vowel quality} alternations described above.  Typically only underived transitive verbs are affected.  We divide these into two classes, relevant both for \isi{tone} and vowel quantity alternations. 
+Variations in vowel quantity, \isi{tone} and properties of the stem-final consonant are also involved in inflectional morphology. Within the finite paradigm they oppose singular and plural forms, and thus cross-cut the \isi{vowel quality} alternations described above. Typically only underived transitive verbs are affected. We divide these into two classes, relevant both for \isi{tone} and vowel quantity alternations. 
 
-Let us first look at \isi{tone}.\footnote{The treatment of \isi{tone} in the verbal system presented in Sections 3 and 4 differs significantly from \citet{gjersøe2017} who reports only two tonal contours in verbs, and does not distinguish contrast between low and rising tones.} Class I verbs have a rising contour in the singular, followed by a high \isi{tone} of the suffix (falling if the vowel of the suffix is modal), and low stem with a low suffix in the plural.\footnote{The \isi{tone} of the 1P\textsc{l} Inclusive form will be ignored throughout the discussion, since it has the same tonal contour for all verbs H-H (realized as LH-HL).} Class II verbs have a falling \isi{tone} (if the stem vowel is modal) or high (if the stem vowel is breathy) \isi{tone} on the stem followed by the low \isi{tone} on the suffix in singular forms, and a rise on the stem followed by the fall on the suffix in plural forms. These patterns are summarized in \tabref{tab:monich:7}, abstracting away from the differences in realization of high and falling tones due to the vowel phonation properties.  The longer singular stem is represented as having two tonal elements (a spread H-\isi{tone} in case of Class I, shown as HH, and an HL in case of Class II), while the short plural stem has a single tonal element.  The \isi{tone} of the inflectional suffix is always the same as the last tonal element of the stem and is therefore presumed to be a result of tonal spreading from the stem. All spread H-tones split into L and H resulting in rising tones (see fn. 2).  
+Let us first look at \isi{tone}.\footnote{The treatment of \isi{tone} in the verbal system presented in Sections 3 and 4 differs significantly from \citet{gjersøe2017} who reports only two tonal contours in verbs, and does not distinguish contrast between low and rising tones.} Class I verbs have a rising contour in the singular, followed by a high \isi{tone} of the suffix (falling if the vowel of the suffix is modal), and low stem with a low suffix in the plural.\footnote{The \isi{tone} of the 1pl inclusive form will be ignored throughout the discussion, since it has the same tonal contour for all verbs H-H (realized as LH-HL).} Class II verbs have a falling \isi{tone} (if the stem vowel is modal) or high (if the stem vowel is breathy) \isi{tone} on the stem followed by the low \isi{tone} on the suffix in singular forms, and a rise on the stem followed by the fall on the suffix in plural forms. These patterns are summarized in \tabref{tab:monich:7}, abstracting away from the differences in realization of high and falling tones due to the vowel phonation properties. The longer singular stem is represented as having two tonal elements (a spread H-\isi{tone} in case of Class I, shown as HH, and an HL in case of Class II), while the short plural stem has a single tonal element. The \isi{tone} of the inflectional suffix is always the same as the last tonal element of the stem and is therefore presumed to be a result of tonal spreading from the stem. All spread H-tones split into L and H resulting in rising tones (see footnote 2). 
+
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{lllXXX}
@@ -236,8 +232,8 @@ Let us first look at \isi{tone}.\footnote{The treatment of \isi{tone} in the ver
  & Singular & Plural & \multicolumn{2}{c}{Example} & Gloss\\
 \midrule
 &  &  & \scshape 2sg & \multicolumn{1}{c}{\scshape 2pl} & \\
-Class I & HH-H $\rightarrow$ LH-H & L-L & bṳ̌uulí̤ & bɔ̤lɛ & ‘roast’\\
-Class II & HL-L & H-H $\rightarrow$ LH-H & nɛɛɛnì̤ & nɛanɛ & ‘see’\\
+Class I & HH-H $\rightarrow$ LH-H & L-L & bṳ̌uulí̤ & bɔ̤̀lɛ̀ & ‘roast’\\
+Class II & HL-L & H-H $\rightarrow$ LH-H & nɛ̂ɛɛnì̤ & nɛ̌anɛ̂ & ‘see’\\
 \lspbottomrule
 \end{tabularx}
 \caption{Tonal patterns in underived transitive verbs}
@@ -246,7 +242,8 @@ Class II & HL-L & H-H $\rightarrow$ LH-H & nɛɛɛnì̤ & nɛanɛ & ‘see’\\
 
 Without going into the details of tonal derivation, it deserves mentioning that the tonal values of the plural stem (L for Class I and H for Class II) are the same as the first tonal element of the singular stem. We can propose, therefore, that derivation of the plural stem from the singular stem is accompanied by deletion of the second tonal element in addition to shortening.
 
-With stem length, Class I verbs show some variation across dialects.  In Eastern varieties, they have a short vowel throughout the paradigm.  In Western dialects, stems that end in a sonorant have an overlong vowel in the singular.  Class II verbs (\tabref{tab:monich:9}) are always overlong with singular persons and short with plural persons, in both Eastern and Western dialects. 
+With stem length, Class I verbs show some variation across dialects (see Table 8). In Eastern varieties, they have a short vowel throughout the paradigm. In Western dialects, stems that end in non-sonorants have a short vowel, but stems that end in a sonorant have an overlong vowel in the singular. Class II verbs (\tabref{tab:monich:9}) are always overlong with singular persons and short with plural persons, in both Eastern and Western dialects. 
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{lXXXX} 
@@ -254,12 +251,13 @@ With stem length, Class I verbs show some variation across dialects.  In Eastern
 & \multicolumn{2}{c}{Singular} & \multicolumn{2}{c}{Plural}\\
 \midrule
 & Western \ili{Nuer} & \multicolumn{1}{c}{Eastern Nuer} &  & \\
-1 & bɔ̤ɔɔlʌ̤ & bɔ̤lʌ̤ & \multicolumn{1}{c}{bɔ̤lkɔ (\textsc{Excl})} & bɔ̤lnɛ (\textsc{Incl})\\
-2 & bṳ̌uulí̤ & bṳ̌lí̤ & \multicolumn{2}{c}{bɔ̤lɛ}\\
-3 & bṳ̌uulɛ & bṳ̌lɛ & \multicolumn{2}{c}{bɔ̤lkɛ}\\
+1 & bɔ̤ɔɔlʌ̤ & bɔ̤lʌ̤ & \multicolumn{1}{c}{bɔ̤lkɔ (\textsc{Excl})} & bɔ̤̀lɛ̀ (\textsc{incl dual})\\
+  &        &      & bɔ̤̌lnɛ̂ (\textsc{incl pl})\\
+2 & bṳ̌uulí̤ & bṳ̌lí̤ & \multicolumn{2}{c}{bɔ̤̀lɛ̀}\\
+3 & bɔ̤̌ɔɔlʌ̤́ & bɔ̤̌lʌ̤́ & \multicolumn{2}{c}{bɔ̤̀lkɔ̀}\\
 \lspbottomrule
 \end{tabularx}
-\caption{Inflected paradigm of bṳl ‘roast.\textsc{tr}’ (Class I)}
+\caption{Inflected paradigm of bṳ́l ‘roast.\textsc{tr}’ (Class I)}
 \label{tab:monich:8}
 \end{table}
 
@@ -269,32 +267,35 @@ With stem length, Class I verbs show some variation across dialects.  In Eastern
 \lsptoprule
 & Singular & \multicolumn{2}{c}{Plural}\\
 \midrule
-1 & nɛ̂aaanʌ̤̀ & \multicolumn{1}{c}{nɛankɔ (\textsc{Excl})} & nɛanɛ (\textsc{Incl})\\
-2 & nɛ̂ɛɛnì̤ & \multicolumn{2}{c}{nɛanɛ}\\
-3 & nɛ̂ɛɛnɛ̀ & \multicolumn{2}{c}{nɛankɛ}\\
+1 & nɛ̂aaanʌ̤̀ & \multicolumn{1}{c}{nɛ̌ankɔ̂ (\textsc{Excl})} & nɛ̌anɛ̂ (\textsc{incl})\\
+2 & nɛ̂ɛɛnì̤ & \multicolumn{2}{c}{nɛ̌anɛ̂}\\
+3 & nɛ̂ɛɛnɛ̀ & \multicolumn{2}{c}{nɛ̌ankɛ̂}\\
 \lspbottomrule
 \end{tabularx}
 \caption{Inflected paradigm of nɛɛɛn ‘see.\textsc{tr}’ (Class II)}
 \label{tab:monich:9}
 \end{table}
 
-One possible interpretation of the East{\textasciitilde}West contrast in Class I is that singular stems in \textit{both} tonal classes have overlong vowels, but that stems that carry rising \isi{tone} (i.e. Class I) undergo shortening.  This can be considered a purely phonological process that applies uniformly in Eastern varieties, but fails to apply in sonorant-final stems in Western varieties.  For the sake of comparison, \tabref{tab:monich:10} shows a Western \ili{Nuer} paradigm of a Class I transitive verb which ends in a non-sonorant.  In contrast to sonorant-final verbs, the stem in \tabref{tab:monich:10} is short in singular forms.  The corresponding Eastern \ili{Nuer} paradigm of this verb is exactly the same, except for the lack of consonantal mutation in the plural.
+For the sake of comparison, \tabref{tab:monich:10} shows a Western \ili{Nuer} paradigm of a Class I transitive verb which ends in a non-sonorant. In contrast to sonorant-final verbs, the stem in \tabref{tab:monich:10} is short in singular forms. The corresponding Eastern \ili{Nuer} paradigm of this verb is exactly the same, except for the lack of consonantal mutation in the plural.
+
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXX} 
 \lsptoprule
 & Singular & \multicolumn{2}{c}{Plural}\\
 \midrule
-1 & kɔaɣʌ̤ & \multicolumn{1}{c}{kɔàkɔ (\textsc{Excl})} & kɔahnɛ (\textsc{Incl})\\
-2 & kɔɣí̤ & \multicolumn{2}{c}{kɔàhɛ}\\
-3 & kɔɣɛ & \multicolumn{2}{c}{kɔàkɛ}\\
+1 & kɔ̌aɣʌ̤́ & \multicolumn{1}{c}{kɔ̀akɔ̀ (\textsc{Excl})} & kɔ̀ahɛ̀ (\textsc{incl dual})\\
+  &      &  kɔ̌aɣnɛ̂ (\textsc{inc pl})\\
+2 & kɔ̌ɣí̤ & \multicolumn{2}{c}{kɔ̀ahɛ̀}\\
+3 & kɔ̌ɣɛ̂ & \multicolumn{2}{c}{kɔ̀akɛ̀}\\
 \lspbottomrule
 \end{tabularx}
-\caption{Inflected paradigm of  kɔk ‘buy.\textsc{tr}’ (Class I) (Western Nuer)}
+\caption{Inflected paradigm of kɔ̌k ‘buy.\textsc{tr}’ (Class I) (Western Nuer)}
 \label{tab:monich:10}
 \end{table}
 
-Finally, in Western dialects of \ili{Nuer}, stem-final stops are lenited in the plural (\tabref{tab:monich:11}).  The labial stop /b/ is mutated into /f/,  the interdental stop /t̪/ is mutated into /θ/, and the alveolar stop /d/ becomes a continuant /r̥/. Velar and palatal stops are a special case. The modified variants of /k, g/ and /c, ɟ/ are /h/ and /ҫ/, respectively. However, these stem-final stops themselves undergo a separate process of \isi{lenition} when they are intervocalic: /k, g/ $\rightarrow$ /ɣ/ and /c, ɟ/ $\rightarrow$ /j/.\footnote{Note that this must be understood as a morphophonological process targeting stem consonants, because unlenited intervocalic velars occur in other contexts, e.g. in suffix-initial position. Moreover, the variants [ɣ] and [j] also occur word-finally in nominal forms which contain a lengthened vowel, further supporting the notion that we are dealing with two separate morphophonological \isi{lenition} processes: one that mutates all stops into voiceless continuants, and another that mutates the palatal and velar stops only, yielding voiced continuants.} The result is an alternation between two different continuants. (The underlying stop may be found in other parts of the paradigm; e.g. the NSF of ‘buy\textsc{.tr}’ (the form used with an immediately post-verbal \isi{subject}) is \textit{kɔk}, and the NSF of ‘cane\textsc{.tr}’ is \textit{dwác.})  
+Finally, in Western dialects of \ili{Nuer}, stem-final stops are mutated in the plural (\tabref{tab:monich:11}). The underlying stops /p, t, c, k/ are realized as voiceless continuants /f, r̥, ҫ, h/. Moreover, the alveolar and velar stops undergo a separate process of lenition when they are intervocalic: /k/ --> /ɣ/ and /c/ --> /j/.\footnote{Note that this must be understood as a morphophonological process targeting stem consonants, because unlenited intervocalic velars occur in other contexts, e.g. in suffix-initial position. Moreover, the variants [ɣ] and [j] also occur word-finally in nominal forms which contain a lengthened vowel, further supporting the notion that we are dealing with two separate morphophonological \isi{lenition} processes: one that mutates all stops into voiceless continuants, and another that mutates the palatal and velar stops only, yielding voiced continuants.} The result is an alternation between a stop and continuant or between two different continuants (The underlying stop may be found in other parts of the paradigm; e.g. the NSF of ‘buy.\textsc{tr}’ (the form used with an immediately post-verbal \isi{subject}) is \textit{kɔ̂k}, and the NSF of ‘cane.\textsc{tr}’ is \textit{dwʌ̤́c}.) It is perhaps possible to link the morphologically conditioned consonantal mutation to changes in stem \isi{vowel length}, as was suggested above in regards to tonal alternations.
 
  %%please move \begin{table} just above \begin{tabular
 \begin{table}
@@ -302,42 +303,42 @@ Finally, in Western dialects of \ili{Nuer}, stem-final stops are lenited in the 
 \lsptoprule
 & ‘wait.\textsc{tr}’ & ‘sing.\textsc{tr}’ & ‘buy.\textsc{tr}’ & ‘cane.\textsc{tr}’\\
 \midrule
-3sg & lîiib-ɛ̀ & kîiid-ɛ̀ & kɔɣ-ɛ & dwʌ̤j-ɛ\\
-2pl & lǐɛf-ɛ & kǐɛr̥-ɛ & kɔàh-ɛ & dwǎ̤ç-ɛ\\
+3\textsc{sg} & lîiib-ɛ̀ & kîiid-ɛ̀ & kɔ̌ɣ-ɛ̂ & dwʌ̤́j-ɛ̀\\
+2\textsc{pl} & lǐɛf-ɛ̂ & kǐɛr̥-ɛ̂ & kɔàh-ɛ̀ & dwǎ̤ç-ɛ̂\\
 \lspbottomrule
 \end{tabularx}
 \caption{Stem-final consonant lenition (Western Nuer varieties only)}
 \label{tab:monich:11}
 \end{table}
 
-It is tempting to link the morphologically conditioned consonantal mutation to changes in stem \isi{vowel length}, as was suggested above in regards to tonal alternations. However, consonantal \isi{lenition} also takes place in NF1 forms of all underived transitive verbs but not in NF2 or NSF forms; compare the three forms of ‘wait’: NF1 \textit{lîf}, NF2 \textit{lîb}, NSF \textit{líb}.  Since all three forms are short and have unmodified vowel (in underived transitive verbs), \isi{lenition} of the stem-final consonant so far seems to apply independently from other stem modifying processes.
-
 \section{Verbal derivation} %4. /
 
-Verbal derivation involves \isi{stem modification} alone; there are no derivational affixes. The system is oriented around transitive verbs: as far as we know, all transitive verbs can form a derived intransitive (the antipassive), while all intransitives have the morphological characteristics of derived verbs, whether or not there is a corresponding  underived transitive.  In addition, we have identified derived ditransitive, centripetal and multiplicative paradigms.
+Verbal derivation involves \isi{stem modification} alone; there are no segmental derivational affixes. In addition to the antipassive (derived intransitive), we have identified derived ditransitive, centripetal and multiplicative paradigms.
 
-All derived verbs have grade 2 stem vowels.\footnote{With the exception of the class of intransitives mentioned in fn. \ref{fn:monich:5}.}  \tabref{tab:monich:12} illustrates the correspondence between basic transitive verbs with grade A stem vowels and derived verbs with grade 2 vowels; note that intransitive ‘fight’ has a grade 2 vowel, even though there is no transitive counterpart.
+All derived verbs have Grade 2 stem vowels.\footnote{With the exception of the class of intransitives mentioned in fn. \ref{fn:monich:5}.} \tabref{tab:monich:12} illustrates the correspondence between basic transitive verbs with Grade A stem vowels and derived verbs with Grade 2 vowels.
+
 
 \begin{table}
-\begin{tabularx}{\textwidth}{lXlX}
+\begin{tabularx}{\textwidth}{llllX}
 \lsptoprule
-\multicolumn{2}{c}{\bfseries Basic, 2\textsc{sg} (Grade 1)} & \multicolumn{2}{c}{\bfseries Derived, 2\textsc{sg} (Grade 2)}\\
+\multicolumn{2}{c}{\bfseries Basic, 2\textsc{sg} (Grade 1)} & & \multicolumn{2}{c}{\bfseries Derived, 2\textsc{sg} (Grade 2)}\\
 \midrule
-t̪âaaɣ{}-ì̤ & ‘hold’ & t̪ʌ̤h-ì̤ & ‘hold for (ditransitive)’\\
-ríŋ-ì̤ & ‘run’ & rí̤ŋ-ì̤ & ‘run (centripetal)’\\
-cɔɔɔl-ì̤ & ‘call’ & có̤l-i̤ & ‘call for (benefactive)’\\
-pṳdi̤ & ‘break’ (once) & pṳr̥-í & ‘break (multiplicative)’\\
-nɛɛɛn-ì̤ & ‘see’ (transitive) & ne̤n-í̤ & ‘see (antipassive)’\\
-\multicolumn{2}{c}{n/a} & ɲe̤ɲ-ì̤ & ‘fight’ (intransitive)\\
+t̪âaaɣ-ì̤ & ‘hold’& & t̪ʌ̤́h-ì̤ & ‘hold for’ (ditransitive)\\
+rîŋ-ì̤ & ‘run’ && rí̤ŋ-ì̤ & ‘run towards me’ (centripetal)\\
+cɔ̂ɔɔl-ì̤ & ‘call’ && có̤l-ì̤ & ‘call for’ (ditransitive)\\
+pṳ̌d-í̤ & ‘break’& & pṳ̀r̥-í & ‘break many times’ (multiplicative)\\
+nɛ̂ɛɛn-ì̤ & ‘see’ (transitive) && ně̤n-í̤ & ‘see’ (antipassive)\\
 \lspbottomrule
 \end{tabularx}
 \caption{Vowel quality modification in derived forms (Western Nuer)}
 \label{tab:monich:12}
 \end{table}
 
-What distinguishes the different types of derived verbs, is their length and tonal properties. We will \isi{focus} here on the antipassives, as these are the most productive and hence best represented in our data.  We distinguish types of antipassives.  Antipassive I involves complete deletion of the \isi{direct object}, while Antipassive II allows the inclusion of a demoted \isi{direct object} with the preposition \textit{kɛ;} compare \textit{mâad̪ì̤} \textit{pi̤u} ‘you are drinking water’ with Antipassive II \textit{mʌ̤d̪ì̤} \textit{kɛ pi̤u} (same translation). 
+What distinguishes the different types of derived verbs, is their length and tonal properties. We will \isi{focus} here on the antipassives, as these are the most productive and hence best represented in our data. We distinguish two types of antipassives. Antipassive I involves complete deletion of the \isi{direct object}, while Antipassive II allows the inclusion of a demoted \isi{direct object} with the preposition \textit{kɛ}. Compare, for example, the transitive construction mâaad̪ì̤ pí̤u ‘you are drinking water’ with Antipassive II construction mʌ̤́d̪ì̤ kɛ pí̤u (same translation).
 
-The two types of antipassives share some morphological properties and differ in others.  Both of them lack the alternations of \isi{tone} and stem length characteristic of transitive verbs. Stem length is always short, while \isi{tone} is based on that of the corresponding transitive verb. If derived from a Class I transitive verb, both have a low \isi{tone} stem and a high \isi{tone} (or falling, if the vowel is modal) suffix. However, the two types of antipassives differ when derived from verbs of Class II: Antipassive I has a rising \isi{tone} followed by a high (or falling, if the vowel is modal) suffix, while Antipassive II has a high (or falling over a modal vowel) stem and a low suffix. Abstracting away from tonal differences that are due to the phonation of vowels, we have the following tonal patterns for the two Antipassives as shown in \tabref{tab:monich:13}. 
+The two types of antipassives share some morphological properties and differ in others. Both of them lack the alternations of \isi{tone} and stem length characteristic of transitive verbs. Stem length is always short, while \isi{tone} is based on that of the corresponding transitive verb. If derived from a Class I transitive verb, both have a low \isi{toned} stem and a high \isi{toned} (or falling, if the vowel is modal) suffix. However, the two types of antipassives differ when derived from verbs of Class II: Antipassive I has a rising \isi{tone} followed by a high (or falling, if the vowel is modal) suffix, while Antipassive II has a high (or falling over a modal vowel) stem and a low suffix. Abstracting away from tonal differences that are due to the phonation of vowels, we have the tonal patterns for the two Antipassives as shown in \tabref{tab:monich:13}.
+
+\newpage
 
 \begin{table}
 \begin{tabularx}{\textwidth}{llXXX} 
@@ -353,11 +354,12 @@ Class II & HL-L & H-H $\rightarrow$ LH-H & H-H $\rightarrow$ LH-H & H-L\\
 \label{tab:monich:13}
 \end{table}
 
-In all the cases shown in \tabref{tab:monich:13}, the \isi{tone} on the stem of the antipassive is the same as that of the plural of the corresponding  transitive.  Since both transitive plural and antipassive formation involves shortening, it is tempting to suggest – as we did for the transitive plural – that this is the cause of the tonal contour of the antipassive, i.e. the second tonal element in the singular transitive stem is deleted, leaving behind L for Class I verbs and H for Class II verbs. 
+In all the cases shown in \tabref{tab:monich:13}, the \isi{tone} on the stem of the antipassive is the same as that of the plural of the corresponding  transitive. Since both transitive plural and antipassive formation involves shortening, it is tempting to suggest – as we did for the transitive plural – that this is the cause of the tonal contour of the antipassive, i.e. the second tonal element in the singular transitive stem is deleted, leaving behind L for Class I verbs and H for Class II verbs. 
 
-However, this does not explain the difference in the \isi{tone} of the suffix: in Antipassive I it is always high, while in Antipassive II it is polar to the \isi{tone} of the stem.  We propose that this is due to a floating \isi{tone} that is part of the derivational morphology that produces antipassives: H in Antipassive I, but P(olar) in Antipassive II.\footnote{The two antipassives also differ in their NF1 forms. The NF1 form of Antipassive I is a grade 2 vowel, as expected for a derived verb, while for Antipassive II it is grade 1, i.e. the grade found in the underived transitive: compare transitive \textit{nɛɛɛn}{}- ‘see’, with its Antipassive I NF1 form \textit{nèn} (grade 2), and \textit{maaad̪} ‘drink’, with its Antipassive II NF1 form \textit{maaad̪} (grade 1).}  
+However, this does not explain the difference in the \isi{tone} of the suffix: in Antipassive I it is always high, while in Antipassive II it is polar to the \isi{tone} of the stem. We propose that this is due to a floating \isi{tone} that is part of the derivational morphology that produces antipassives: H in Antipassive I, but P(olar) in Antipassive II.\footnote{The two antipassives also differ in their NF1 forms. The NF1 form of Antipassive I is a Grade 2 vowel, as expected for a derived verb, while for Antipassive II it is Grade 1, i.e. the grade found in the underived transitive: compare transitive \textit{nɛɛɛn} ‘see’, with its Antipassive I NF1 form \textit{nèn} (Grade 2), and transitive verb \textit{maaad̪} ‘drink’, with its Antipassive II NF1 form \textit{maaad̪} (Grade 1).}  
 
-Verbs which may be considered “basic” intransitives (i.e. they do not have a corresponding transitive) share some aspects of Antipassive II morphology.  They have a short vowel of Grade 2 in all inflected forms, and follow one of two tonal patterns that exist for Antipassives II.  \tabref{tab:monich:14} provides examples for the two tonal classes for each antipassive and for the underived intransitive verbs:
+Verbs which may be considered “basic” intransitives (i.e. they do not have a corresponding transitive) share some aspects of Antipassive II morphology. They have a short vowel in all inflected forms, and follow one of two tonal patterns that exist for Antipassives II. \tabref{tab:monich:14} provides examples for the two tonal classes for each antipassive and for the underived intransitive verbs:
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXXXXX} 
@@ -365,15 +367,16 @@ Verbs which may be considered “basic” intransitives (i.e. they do not have a
 & \multicolumn{2}{l}{\bfseries Antipassive I} & \multicolumn{2}{l}{\bfseries Antipassive II} & \multicolumn{2}{c}{\bfseries Intransitive}\\
 & 3\textsc{sg} & 2\textsc{pl} & 3\textsc{sg} & 2\textsc{pl} & 3\textsc{sg} & 2\textsc{pl}\\
 \midrule
-Class I & bṳ̀lɛ & bɔ̤lɛ & tè̤dɛ & tèdɛ & cje̤ŋɛ & cjèŋɛ\\
-Class II & ne̤nɛ & něnɛ & mʌ̤d̪ɛ & ma̤d̪ɛ & wṳ́rɛ & wɔ̤rɛ\\
+Class I & bṳ̀lɛ̂ & bɔ̤̀lɛ̂ & tè̤dɛ̂ & tèdɛ̂ & cjè̤ŋɛ̂ & cjèŋɛ̂\\
+Class II & ně̤nɛ̂ & něnɛ̂ & mʌ̤́d̪ɛ̀ & má̤d̪ɛ̀ & wṳ́rɛ̀ & wɔ̤́rɛ̀\\
 \lspbottomrule
 \end{tabularx}
 \caption{Examples of tonal classes of Antipassives and Intransitives (Eastern Nuer)}
 \label{tab:monich:14}
 \end{table}
 
-All other derivational classes of verbs have tonal contours that are not based on tonal characteristics of the lexical stem, but rather are predetermined by its derivational class.  \tabref{tab:monich:15} provides a summary and examples.
+All other derivational classes of verbs have tonal contours that are not based on tonal characteristics of the lexical stem, but rather are predetermined by its derivational class. \tabref{tab:monich:15} provides a summary and examples.
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{Xllll}
@@ -384,7 +387,7 @@ All other derivational classes of verbs have tonal contours that are not based o
 \midrule
 Ditransitive & 2 & H-L & H-L & V\\
 Centripetal & 2 & L-H & H-L & V/VVV\\
-Multiplicative & 2 & L-H & H-L & V/VVV\\
+Multiplicative & 1 or 2 & L-H & H-L & V/VVV\\
 Stative & 1 or 2 & H-H & H-H & V\\
 Middle & 1 or 2 & H-H & H-H & V/VVV\\
 \lspbottomrule
@@ -393,60 +396,60 @@ Middle & 1 or 2 & H-H & H-H & V/VVV\\
 \bfseries Derivational class & \multicolumn{2}{c}{\bfseries Example} & \bfseries Gloss & {\bfseries Basic  verb 3\textsc{sg}} \\
 & \bfseries\scshape 3sg & \multicolumn{1}{c}{\bfseries\scshape 2pl} &  & \\
 \midrule
-Ditransitive & co̤lɛ & côlɛ & ‘call’ & cɔɔɔl-ɛ\\
-Centripetal & rì̤ŋ-ɛ & rí̤eŋ-ɛ & ‘run’ & rîŋ-ɛ\\
-Multiplicative & pṳd-ɛ & pɔ̤d-ɛ & ‘break’ & pṳd-ɛ\\
-Stative & di̤d-ɛ & di̤et-ɛ & ‘be big’ & n/a\\
-Middle & ŋɔ̤aaanɛ & ŋɔ̤aaanɛ & ‘tire’ & ŋɔ̤ɔɔnɛ\\
+Ditransitive & có̤l-ɛ̀ & côl-ɛ̀ & ‘call’ & cɔ̂ɔɔl-ɛ̀\\
+Centripetal & rì̤ŋ-ɛ́ & rí̤eŋ-ɛ̀& ‘run’ & rîŋ-ɛ̀\\
+Multiplicative & pṳ̀d-ɛ̂ & pɔ̤́d-ɛ̀ & ‘break’ & pṳ̌d-ɛ̂\\
+Stative & dǐ̤d-ɛ̂ & dǐ̤et-ɛ̂ & ‘be big’ & n/a\\
+Middle & ŋɔ̤̌aaan-ɛ̂ & ŋɔ̤̌aaan-ɛ̂ & ‘tire’ & ŋɔ̤̂ɔɔn-ɛ̀\\
 \lspbottomrule
 \end{tabularx}
 \caption{The summary of derivational classes with grammatical tone (Eastern Nuer)}
 \label{tab:monich:15}
 \end{table}
 
-As shown in \tabref{tab:monich:15}, centripetal and multiplicative verbs share derivational morphology.  The common factor between the these two derivational classes is that they add a spatio-temporal argument to the semantic structure of the verb.  
-
-Stative and middle verbs also have a similar morphology in some respects.  However, while stative verbs follow the alternation between Grade A and Grade B that was established for other intransitive verbs (see \tabref{tab:monich:5}), middle verbs (involuntary and reflexive actions, see fn 5) have Grade B in all forms.
+Stative and middle verbs also have a similar morphology in some respects. However, while stative verbs follow the alternation between Grade A and Grade B that was established for other intransitive verbs (see \tabref{tab:monich:5}), middle verbs (involuntary and reflexive actions, see footnote 5) have Grade B in all forms.
 %TODO what's fn 5 ???
 
-Whether consonantal \isi{lenition} is present in all derivational classes has not yet been fully determined, since our data from Western \ili{Nuer} dialects is limited in this regard.  However, so far it appears that stem-final consonantal \isi{lenition} applies in all forms of derived verbs. \tabref{tab:monich:16} provides necessary examples in support of this assertion. 
+Whether consonantal \isi{lenition} is present in all derivational classes has not yet been fully determined, since our data from Western \ili{Nuer} dialects is limited in this regard. However, so far it appears that stem-final consonantal \isi{lenition} applies in all forms of derived verbs. \tabref{tab:monich:16} provides necessary examples in support of this assertion. 
+
+
 
 \begin{table}
-\begin{tabularx}{\textwidth}{llllll}
+\begin{tabularx}{\textwidth}{lllllX}
 \lsptoprule
 
 \multicolumn{3}{c}{\bfseries Transitive} & \multicolumn{2}{c}{\bfseries Derived} & \bfseries Derivational Class\\
 \bfseries\scshape 3sg & \bfseries\scshape 2pl & \bfseries Gloss & \bfseries\scshape 3sg & \multicolumn{1}{l}{\bfseries\scshape 2pl} & \\
 \midrule
-kɔɣɛ & kɔàhɛ & ‘buy’ & kó̤h-ɛ & kôh-ɛ & Benefactive (ditransitive)\\
-&  &  & kɔh-ɛ & kɔah-ɛ & Unknown (meaning “sell”)\\
+kɔ̌ɣ-ɛ̂ & kɔ̀ah-ɛ̀ & ‘buy’ & kó̤h-ɛ̀ & kôh-ɛ̀ & Benefactive (ditransitive)\\
+&  &  & kɔ̂h-ɛ̀ & kɔ̂ah-ɛ̀ & Unknown (meaning ‘sell’)\\
 
 \tablevspace
-kîiid-ɛ & kǐɛr̥-ɛ & ‘sing’ & kí̤r̥-ɛ & kí̤ɛr̥-ɛ & Benefactive\\
-&  &  & kǐ̤r̥-ɛ & ki̤ɛr̥-ɛ & Antipassive\\
+kîiid-ɛ̀ & kǐɛr̥-ɛ̂ & ‘sing’ & kí̤r̥-ɛ̀ & kí̤er̥-ɛ̀ & Benefactive\\
+&  &  & kǐ̤r̥-ɛ̂ & kǐ̤er̥-ɛ̂ & Antipassive\\
 
 \tablevspace
-pṳd-ɛ & pɔ̤r̥-ɛ & ‘break’ & pṳr̥ɛ & pɔ̤r̥-ɛ & Multiplicative\\
+pṳ̌d-ɛ̂ & pɔ̤̀r̥-ɛ̀ & ‘break’ & pṳ̀r̥ɛ̂ & pɔ̤́r̥-ɛ̀ & Multiplicative\\
 \lspbottomrule
 \end{tabularx}
 \caption{Stem-final consonant lenition (Western Nuer)}
 \label{tab:monich:16}
 \end{table}
 
-Additionally, in all \ili{Nuer} dialects, both Western and Eastern, there is a consonantal alteration \textit{t{\textasciitilde}l} which participates in verbal derivation, but not in \isi{verbal inflection}.  For example, the 3\textsc{sg} form of the transitive verb “pound (dura)” is \textit{ɣɔ̤aal-ɛ} but the 3\textsc{sg} of the intransitive verb derived from the same root (i.e. the antipassive) is \textit{ɣɔ̤ɔt-ɛ}.  Interestingly, the NF1 form in the Antipassive II paradigm, which has a stem vowel of grade 1 (see fn. 10), also has /l/ in stem-final position, not /t/.  Therefore, NF1 of Antipassive II patterns with the transitive verb from which it is derived not only in the quality of its vowel but in the quality of its consonant as well.
+Additionally, in all \ili{Nuer} dialects, both Western and Eastern, there is a consonantal alteration \textit{/t/{\textasciitilde}/l/} which participates in verbal derivation, but not in \isi{verbal inflection}. For example, the 3\textsc{sg} form of the transitive verb “pound (dura)” is \textit{ɣɔ̤́ɔɔl-ɛ̀} but the 3\textsc{sg} of the intransitive verb derived from the same root (i.e. the antipassive) is \textit{ɣɔ̤́t-ɛ̀}. Interestingly, the NF1 form in the Antipassive II paradigm, which has a stem vowel of Grade 1 (see footnote 10), also has /l/ in stem-final position, not /t/. Therefore, NF1 of Antipassive II patterns with the transitive verb from which it is derived not only in the quality of its vowel but in the quality of its consonant as well.
 
 \section{Nominal system}
 \subsection{Overview}
 
-Noun inflection employs the same morphological devices surveyed above for \isi{verbal morphology}. But in contrast to the verbal system with its fixed paradigmatic templates, noun inflection involves a great number of different patterns that divide the lexicon into an as yet undetermined number of inflection classes. Given both the large number of distinct types, we cannot do justice to the topic here, and limit ourselves to a general overview.
+Noun inflection employs the same morphological devices surveyed above for \isi{verbal morphology}. But in contrast to the verbal system with its fixed paradigmatic templates, noun inflection involves a great number of different patterns that divide the lexicon into an as of yet undetermined number of inflection classes. Given both the large number of distinct types, we cannot do justice to the topic here, and limit ourselves to a general overview.
 
 The noun paradigm is made up of five cells: two numbers and three cases (\isi{nominative}, genitive and locative) with the genitive and locative always syncretic in the plural. Alongside \isi{stem modification}, nominal inflection may involve suffixation, which is also \isi{subject} to lexical specification (in contrast, again, to the verbal system). 
 
 \subsection{Vowel quality modification} 
 
-The Nominative Singular form may have the vowel of any grade (1A, 1B, 2A, 2B).  However, whether this form has a vowel of Grade A or B has repercussions for the rest of the paradigm.  
+The nominative singular form (\textsc{Nom Sg}) may have the vowel of any grade (1A, 1B, 2A, 2B). However, whether this form has a vowel of Grade A or B has repercussions for the rest of the paradigm. 
 
-Because suffixation potentially has an effect on stem vowel behavior, we first describe the patterns as found with unsuffixed nouns. For all such nouns, the genitive singular form has the vowel of Grade B.  In that minority of paradigms where a distinct locative singular form is found, it has the vowel of Grade A.  The plural either has the vowel of grade B or a vowel that is raised to grade 2.\footnote{Where the singular is itself of grade 2, this raising is vacuous, eg. \textsc{Nom Sg} \textit{t̪}\textit{ʌ̤ʌk} {\textasciitilde} \textsc{Nom Pl} \textit{t̪}\textit{ʌ̤ʌʌk} ‘ox’.}  A distinct minor pattern is represented by so-called “basic plurals”\footnote{These are typically nouns which will at least once have had a collective sense, and can thus be interpreted as having descended from ‘basic plurals’ that were suffixed in the singular only (\citealt{Storch2005}; \citealt{Dimmendaal2000}).}, like \textit{ɟûɔɔɔl} ‘hip joint’ and \textit{ce̤t̪} ‘excrement’, whose vowel alternation between \isi{nominative} singular and plural is the mirror-image of what we find elsewhere. In this case, the singular oblique forms share properties with both the \isi{nominative} plural and the \isi{nominative} singular, i.e. the vowel in Gen Sg \textit{cɛ̤at̪} is the lowered counterpart of the vowel in Nom Pl \textit{cɛt̪} but breathy, like Nom Sg \textit{ce̤t̪}. \tabref{tab:monich:17} provide a summary of attested \isi{vowel quality} alternations.  Every pattern illustrated in the table also has a variant where there is no distinct locative singular form (i.e. the form labeled \textit{genitive} here serves for both).
+Because suffixation potentially has an effect on stem vowel behavior, we first describe the patterns as found with unsuffixed nouns. For all such nouns, the genitive singular form has the vowel of Grade B. In that minority of paradigms where a distinct locative singular form is found, it has the vowel of Grade A. The plural either has the vowel of Grade B or a vowel that is raised to Grade 2.\footnote{Where the singular is itself of Grade 2, this raising is vacuous, eg. \textsc{Nom Sg} \textit{t̪ʌ̤́ʌk} {\textasciitilde} \textsc{Nom Pl} \textit{t̪ʌ̤̌ʌʌk} ‘ox’.}  A distinct minor pattern is represented by so-called “basic plurals”\footnote{These are typically nouns which will at least once have had a collective sense, and can thus be interpreted as having descended from ‘basic plurals’ that were suffixed in the singular only (\citealt{Storch2005}; \citealt{Dimmendaal2000}).}, like \textit{ɟûɔɔɔl} ‘hip joint’ and \textit{cé̤t̪} ‘excrement’, whose vowel alternation between \isi{nominative} singular and plural is the mirror-image of what we find elsewhere. In this case, the singular oblique forms share properties with both the \isi{nominative} plural and the \isi{nominative} singular, i.e. the vowel in \textsc{Gen Sg} \textit{cɛ̤̀at̪} is the lowered counterpart of the vowel in Nom Pl \textit{cɛ̌t̪} but breathy, like \textsc{Nom Sg} \textit{cé̤t̪}. \tabref{tab:monich:17} provides a summary of attested \isi{vowel quality} alternations. Every pattern illustrated in the table also has a variant where there is no distinct locative singular form (i.e. the form labeled \textit{genitive} here serves for both).
 
 \begin{table}
 \fittable{
@@ -457,15 +460,15 @@ Because suffixation potentially has an effect on stem vowel behavior, we first d
 \cmidrule{5-9}
 &  &  &  & \bfseries Gloss & \bfseries\scshape Nom Sg & \bfseries\scshape Gen Sg & {\bfseries\scshape Loc Sg} & \bfseries\scshape Nom Pl\\
 \midrule
-A & B & A & B & ‘big river’ & kír & kîɛɛɛr & {kîiir} & kîɛr\\
-A & B & A & raised (2A) & ‘back’ & ɟɔk & ɟɔak & {ɟɔk} & ɟo̤ok\\
-B & B & A & B & ‘home’ & cjêŋ & cjêŋ & {cje̤ŋ}  & cjêeeŋ\\
-B & B  & (A) & raised (2A) & ‘pitcher’ & lîɛɛɛr & \multicolumn{2}{c}{lîɛr} & lé̤eer-ì\\
+A & B & A & B & ‘big river’ & kîir & kîɛɛɛr & {kîiir} & kîɛr\\
+A & B & A & raised (2A) & ‘back’ & ɟɔ̀k & ɟɔ̂ak & {ɟɔ̂k} & ɟó̤ok\\
+B & B & A & B & ‘home’ & cjêeŋ & cjêŋ & {cjé̤ŋ}  & cjêeeŋ\\
+B & B  & (A) & raised (2A) & ‘pitcher’ & lîɛɛɛr & \multicolumn{2}{c}{lîɛr} & lí̤eeer-ì\\
 \midrule
 \multicolumn{9}{l}{Basic plurals}\\
 \midrule
-B & B & A & A & ‘hip joint’* & ɟûɔɔɔl & ɟûɔl & {ɟûl} & {ɟúl}\\
-raised (2A) & B1 & A1 & A1 & ‘excrement’ & ce̤t̪ & \multicolumn{2}{c}{cɛ̤at̪} & {cɛt̪}\\
+B & B & A & A & ‘hip joint’ & ɟûɔɔɔl & ɟûɔl & {ɟûl} & {ɟûl}\\
+raised (2A) & B & (A) & A & ‘excrement’ & cé̤t̪ & \multicolumn{2}{c}{cɛ̤̀at̪} & {cɛ̌t̪}\\
 \lspbottomrule
 \end{tabular}
 }
@@ -473,7 +476,7 @@ raised (2A) & B1 & A1 & A1 & ‘excrement’ & ce̤t̪ & \multicolumn{2}{c}{cɛ�
 \label{tab:monich:17}
 \end{table}
 
-The system of suffixation can then be described on the basis of this underlying pattern of vowel alternations. The oblique singular suffix is \textit{{}-(k)}\textit{ʌ̤} \footnote{The initial [k] of the singular suffix appears only following a vowel, which in our noun data only occurs through the regular deletion of stem-final [h] before [k], thus ‘monkey’: W. \ili{Nuer} \textit{gɔɔh} \textsc{nom.sg}, \textit{gɔɔ-kʌ̤} \textsc{gen/loc.sg} (vowel-final stems do occur in pronouns, e.g. \textit{ŋu-kʌ̤} ‘what? \textsc{gen/loc.sg’}). The initial [n] of the plural suffix is often assimilated to a preceding \isi{liquid} consonant. The \isi{tone} of both suffixes is predictable based on the stem: H if the stem has L \isi{tone}, and L if the stem carries an H or HL.}.  The conditions under which the suffix is used are complex, and vary across dialects\footnote{It appears that singular oblique forms that are not lengthened in respect to the nominal singular in Western \ili{Nuer} are being replaced by suffixed forms in Eastern \ili{Nuer}, sometimes with both alternatives co-existing. Acceptability of such suffixed forms varies greatly by speaker and by lexical item.  For example, W. \ili{Nuer}  \textit{tuɔɔɔŋ}  “egg” has a \textsc{Gen Sg} \textit{tuɔŋ} which is rejected by some speakers of E. \ili{Nuer} in favor of \textit{tʊʊʊŋ-ʌ̤.}}, so we note here just some basic principles.  First and foremost, the suffix is used in the majority of cases where the Nom Sg has a vowel of grade B, and only rarely where it is of grade A, so its use is roughly correlated with the stem vowel. The suffix always takes grade A vowel in the stem, and length and \isi{tone} of the stem are always the same as in the \isi{nominative} singular form.  The \isi{tone} of the suffix is polar to the \isi{tone} of the stem.
+The system of suffixation can then be described on the basis of this underlying pattern of vowel alternations. The oblique singular suffix is \textit{{}-(k)}\textit{ʌ̤}.\footnote{The initial [k] of the singular suffix appears only following a vowel, which in our noun data only occurs through the regular deletion of stem-final [h] before [k], thus ‘monkey’: Western \ili{Nuer} \textit{gɔ̂ɔh} \textsc{Nom Sg}, \textit{gɔ̂ɔ-kʌ̤̀} \textsc{Gen/Loc Sg} (vowel-final stems do occur in pronouns, e.g. \textit{ŋu-kʌ̤} ‘what? \textsc{gen/loc sg}’). The initial [n] of the plural suffix is often assimilated to a preceding \isi{liquid} consonant. The \isi{tone} of both suffixes is predictable based on the stem: H if the stem has L or LH \isi{tone}, and L if the stem carries an H or HL.} The conditions under which the suffix is used are complex, and vary across dialects\footnote{It appears that singular oblique forms that are not lengthened in respect to the nominal singular in Western \ili{Nuer} are being replaced by suffixed forms in Eastern \ili{Nuer}, sometimes with both alternatives co-existing. Acceptability of such suffixed forms varies greatly by speaker and by lexical item. For example, W. \ili{Nuer}  \textit{tùɔɔɔŋ}  “egg” has a \textsc{Gen Sg} \textit{tûɔŋ} which is rejected by some speakers of E. \ili{Nuer} in favor of \textit{tʊʊʊŋ-ʌ̤.}}, so we note here just some basic principles. First and foremost, the suffix is used in the majority of cases where the \textsc{Nom Sg} has a vowel of Grade B, and only rarely where it is of Grade A, so its use is roughly correlated with the stem vowel. The suffix always takes a Grade A vowel in the stem, and length and \isi{tone} of the stem are always the same as in the \isi{nominative} singular form. The \isi{tone} of the suffix is polar to the \isi{tone} of the stem.
 
 \begin{table}
 \begin{tabularx}{\textwidth}{XXXXXXX}
@@ -483,15 +486,16 @@ The system of suffixation can then be described on the basis of this underlying 
 \cmidrule{4-7}
 &  &  & \bfseries Gloss & \bfseries\scshape Nom Sg & \bfseries\scshape Gen Sg & \bfseries\scshape Nom Pl\\
 \midrule
-A & S & A & ‘stick’ & kɛɛɛt & kɛɛɛtʌ̤ & kɛɛɛtní\\
-B & S & A & ‘sheep’ & rɔaaam & rɔɔɔmʌ̤ & rɔɔɔm\\
+A & S & A & ‘stick’ & kɛ̀ɛɛt & kɛ̀ɛɛd-ʌ̤́ & kɛ̀ɛɛd-ní\\
+B & S & A & ‘sheep’ & rɔ̀aaam & rɔ̀ɔɔm-ʌ̤́ & rɔ̂ɔɔm\\
 \lspbottomrule
 \end{tabularx}
 \caption{Nominal paradigms with suffixed obliques  (S = suffixed singular oblique form)}
 \label{tab:monich:18}
 \end{table}
 
-The behavior of stem vowels with suffixes in the \isi{nominative} plural (see \tabref{tab:monich:19}) is rather more complex. In brief, there are two patterns: (i) the suffix is appended to a plural stem following any of the patterns outlined in \tabref{tab:monich:17} or (ii) the suffixed form retains the vowel found in the Nom Sg, as in \textit{kɛɛɛd-ní} ‘stick’.
+The behavior of stem vowels with suffixes in the \isi{nominative} plural (see \tabref{tab:monich:19}) is rather more complex. In brief, there are two patterns: (i) the suffix is appended to a plural stem following any of the patterns outlined in \tabref{tab:monich:17}, or (ii) the suffixed form retains the vowel found in the Nom Sg, as in \textit{kɛ̀ɛɛd-ní} ‘stick’.
+
 
 \begin{table}
 \begin{tabularx}{\textwidth}{ll XXXX}
@@ -501,10 +505,10 @@ The behavior of stem vowels with suffixes in the \isi{nominative} plural (see \t
 \cmidrule{3-6}
 &  & \bfseries Gloss & \bfseries\scshape Nom Sg & \bfseries\scshape Gen Sg & \bfseries\scshape Nom Pl\\
 \midrule
-A1 & B1 & ‘pitcher’ & lîɛɛɛr & lîɛr & le̤eer-í\\
-B1 & B1 & ‘spear’ & mṳ́t & mṳ́ɔt & mṳt-ní\\
-A1 & A2 & ‘chair’ & kɔɔm & kɔaaam & kɔam-ní\\
-A1 & A1 & ‘stick’ & kɛɛɛt & kɛɛɛd-ʌ̤ & kɛɛɛd-ní\\
+1B & 2A & ‘pitcher’ & lîɛɛɛr & lîɛr & lí̤eeer-ì\\
+2A & 2A & ‘spear’ & mṳ́t & mṳ́ɔt & mṳ̌d-ní\\
+1A & 1B & ‘chair’ & kɔ̂ɔm & kɔ̀aaam & kɔ̀am-ní\\
+1A & 1A & ‘stick’ & kɛ̀ɛɛt & kɛ̀ɛɛd-ʌ̤́ & kɛ̀ɛɛd-ní\\
 \lspbottomrule
 \end{tabularx}
 \caption{Suffixed nominative plural forms (Eastern Nuer)}
@@ -513,7 +517,7 @@ A1 & A1 & ‘stick’ & kɛɛɛt & kɛɛɛd-ʌ̤ & kɛɛɛd-ní\\
 
 \subsection{Vowel quantity modification} %5.3 /
 
-The most common pattern in our data is, taking the \isi{nominative} singular as reference point, to have lengthening in the singular oblique cases and/or in the plural, so there is a rough correlation between \isi{vowel quality} and quantity modification: the alternation from Grade A to B typically involves lengthening.  But in principle any combination of the two may occur, as illustrated in \tabref{tab:monich:20}. The only cell in the paradigm that shows a three-way length contrast is the nominal singular; stem vowels in the genitive singular and the \isi{nominative} plural forms are always either short or overlong.  The only paradigms where all three vowel lengths are found, are those of nouns that belong to the “basic plural” class (see Fn. 9) where the \isi{nominative} singular form has a long vowel.  The genitive singular in these paradigms is lengthened and their \isi{nominative} plural is shortened (see ‘bead’ in \tabref{tab:monich:20}).  One pattern (‘fisherman’ in \tabref{tab:monich:20}) is bound with a particular suffixation pattern:  if both \isi{nominative} singular and plural have overlong vowels, the genitive (and locative) singular is suffixed.  
+The most common pattern in our data is, taking the \isi{nominative} singular as a reference point, to have lengthening in the singular oblique cases and/or in the plural, so there is a rough correlation between \isi{vowel quality} and quantity modification: the alternation from Grade A to B typically involves lengthening. But in principle any combination of the two may occur, as illustrated in \tabref{tab:monich:20}. The only cell in the paradigm that shows a three-way length contrast is the nominative singular; stem vowels in the genitive singular and the \isi{nominative} plural forms are always either short or overlong. The only paradigms where all three vowel lengths are found, are those of nouns that belong to the “basic plural” class (see footnote 9) where the \isi{nominative} singular form has a long vowel. The genitive singular in these paradigms is lengthened and their \isi{nominative} plural is shortened (see ‘bead’ in \tabref{tab:monich:20}). One pattern (‘fisherman’ in \tabref{tab:monich:20}) is bound with a particular suffixation pattern:  if both \isi{nominative} singular and plural have overlong vowels, the genitive (and locative) singular is suffixed. 
 
 \begin{table}
 V=short stem vowel, VV = long stem vowel, VVV = overlong stem vowel, S = suffixed singular oblique form
@@ -524,16 +528,16 @@ V=short stem vowel, VV = long stem vowel, VVV = overlong stem vowel, S = suffixe
 \cmidrule{4-7}
 &  &  & \bfseries Gloss & \bfseries\scshape Nom Sg & \bfseries\scshape Gen Sg & \bfseries\scshape Nom Pl\\
 \midrule
-V & V & V & ‘buffalo’ & mo̤k & mòk & môk\\
-V & VVV & VVV & ‘Nile perch’ & cʌ̤l & ca̤aal & cʌ̤ʌʌl\\
+V & V & V & ‘buffalo’ & mó̤k & mòk & môk\\
+V & VVV & VVV & ‘Nile perch’ & cʌ̤́l  & cá̤aal & cʌ̤́ʌʌl\\
 VV & VVV & VVV & ‘bird’ & dîit & dìɛɛɛt & dîiit\\
-V & VVV & V & ‘forest’ & rṳp & rṳɔɔɔp & rṳɔp\\
-V & V & VVV & ‘rat’ & kṳ̀n & kṳɔn & kṳɔɔɔn\\
-VVV & S & VVV & ‘fisherman’ & dé̤eep & dé̤eep-ʌ̤ & dêeep\\
+V & VVV & V & ‘forest’ & rṳ̌p & rṳ́ɔɔɔp & rṳ́ɔp\\
+V & V & VVV & ‘rat’ & kṳ̀n & kṳ́ɔn & kṳ́ɔɔɔn\\
+VVV & S & VVV & ‘fisherman’ & dé̤eep & dé̤eep-ʌ̤̤̀ & dêeep\\
 \midrule
 \multicolumn{7}{l}{Basic plurals}\\
 \midrule
-VVV & V & V & ‘elephant’ & gwɔ̤::r & gwɔ̤ar & gwɔ̤r\\
+VVV & V & V & ‘elephant’ & gwɔ̤́ɔɔr & gwɔ̤́ar & gwɔ̤́r\\
 VV & VVV & V & ‘bead’ & tîik & tîɛɛɛk & tîɛk\\
 \lspbottomrule
 \end{tabularx}
@@ -544,13 +548,13 @@ Where the locative singular form is distinct from the genitive singular form, it
 
 \subsection{Tonal alternations}
 
-Tonal alternations between the various singular nominal forms have not been sufficiently understood yet.  It appears that every possible tonal pattern is attested.\footnote{For Eastern \ili{Jikany}, \citet{gjersøe2017} reports L \isi{tone} as an exponent of oblique singular cases and H \isi{tone} as an exponent of \isi{nominative} plural.  Our observations contradict her claims on several points.  We find that oblique singular and \isi{nominative} plural forms show the same range of tonal contrasts that is found in the \isi{nominative} singular forms.}  In (unsuffixed) plural forms, on the other hand, the \isi{tone} is more predictable.  The vast majority of plural forms have either high (H) or falling (HL) \isi{tone} based on the phonation of the vowel:  \textit{dîiit} ‘birds’, \textit{rɔɔɔm} ‘sheep’, \textit{t̪}\textit{ɔ̤ɔɔl} ‘snakes’, \textit{pɔ̤aaar} ‘clouds’.  This generalization is in line with claim made in \citet{gjersøe2017} that plurals are always high-toned.  However, it is important to note that there are two nominal classes that do not follow this rule.  In plurals containing a vowel that is raised (sometimes vacuously) in respect to the singular (i.e. Grade 2), the \isi{tone} of the plural may be H or it may be LH: \textit{ɟjo̤ook} ‘dogs’, \textit{t̪}\textit{ʌ̤ʌʌk} ‘oxen’, \textit{le̤eek} ‘k.o. fish (plural)’.  Additionally, as with other morpho-phonological properties, “basic plurals” show a reversal of the expected pattern: the \isi{plural form} may carry any of the tonal contours found in regular singulars, while the singular form either has a high or falling \isi{tone} based on the phonation of the vowel or, if the vowel is of Grade 2, a rising \isi{tone}.  For example, the plural of the “basic plural” noun ‘fish’ is \textit{rɛc}, while the singular form is \textit{re̤c}\footnote{The forms shown are in the Eastern dialect of \ili{Nuer}.  The vowel carrying a rising \isi{tone} is shortened before a stop, as per suggestion in \sectref{sec:monich:3.3}} . 
+Tonal alternations between the various singular nominal forms have not been sufficiently understood yet. It appears that every possible tonal pattern is attested.\footnote{For Eastern \ili{Jikany}, \citet{gjersøe2017} reports L \isi{tone} as an exponent of oblique singular cases and H \isi{tone} as an exponent of \isi{nominative} plural. Our observations contradict her claims on several points. We find that oblique singular and \isi{nominative} plural forms show the same range of tonal contrasts that is found in the \isi{nominative} singular forms.}  In (unsuffixed) plural forms, on the other hand, the \isi{tone} is more predictable. The vast majority of plural forms have either high (H) or falling (HL) \isi{tone} based on the phonation of the vowel: \textit{dîiit} ‘birds’, \textit{rɔ̂ɔɔm} ‘sheep’, \textit{t̪ɔ̤́ɔɔl} ‘snakes’, \textit{pɔ̤́aaar} ‘clouds’. This generalization is in line with claim made in \citet{gjersøe2017} that plurals are always high-toned. However, it is important to note that there are two nominal classes that do not follow this rule. In plurals containing a vowel that is raised (sometimes vacuously) in respect to the singular (i.e. Grade 2), the \isi{tone} of the plural may be H or it may be LH: \textit{ɟjǒ̤ook} ‘dogs’, \textit{t̪ʌ̤̌ʌʌk} ‘oxen’, \textit{lě̤eek} ‘k.o. fish (plural)’. Additionally, as with other morpho-phonological properties, “basic plurals” show a reversal of the expected pattern: the \isi{plural form} may carry any of the tonal contours found in regular singulars, while the singular form either has a high or falling \isi{tone} based on the phonation of the vowel. For example, the plural of the “basic plural” noun ‘fish’ is \textit{rɛ̌c}, while the singular form is \textit{ré̤c}.\footnote{The forms shown are in the Eastern dialect of \ili{Nuer}.}
 
-Moreover, suffixed plural forms seem to follow a predictable tonal pattern.  First of all, in this regard it is important to make a distinction between two varieties of the plural suffix –\textit{ni}, as the effects of the plural suffix depend on its paradigmatic distribution. One variety of -\textit{ni} is used just as an oblique marker (genitive and locative): it is simply added to the \isi{nominative} \isi{plural form} and has no further effect on the stem. The other variety is used as a general plural marker, i.e. for all cases in the plural. The stem vowel used with this suffix may be changed in relation to the \isi{nominative} singular, or it may remain the same.  The \isi{tone} of such plurals is H-H (realized as LH-H), e.g. \textit{mṳt-ní} ‘spears’ and \textit{wa̤aar-í} ‘shoes’, or L-H, e.g. \textit{thàaak-ní} ‘clocks’ and \textit{kɔam-ní} ‘chairs’.
+Moreover, suffixed plural forms seem to follow a predictable tonal pattern. First of all, in this regard it is important to make a distinction between two varieties of the plural suffix -\textit{ni}, as the effects of the plural suffix depend on its paradigmatic distribution. One variety of -\textit{ni} is used just as an oblique marker (genitive and locative): it is simply added to the \isi{nominative} \isi{plural form} and has no further effect on the stem. The other variety is used as a general plural marker, i.e. for all cases in the plural. The stem vowel used with this suffix may be changed in relation to the \isi{nominative} singular, or it may remain the same. The \isi{tone} of such plurals is H-H (realized as LH-H), e.g. \textit{mṳ̌t-ní} ‘spears’ and \textit{wǎ̤aar-í} ‘shoes’, or L-H, e.g. \textit{t̪àaak-ní} ‘clocks’ and \textit{kɔ̀am-ní} ‘chairs’.
 
 \subsection{Stem-final consonant lenition}
 
-Consonantal \isi{lenition} in the nominal paradigms of Western \ili{Nuer} varieties seems vaguely to follow the pattern of \isi{vowel quality} modification, where the stop corresponds to grade A and a mutated consonant (i.e. a continuant) corresponds to grade B in vowels.  The correspondence is all the more striking that even though lenited consonants do not normally appear in nominal singular forms, wherever they do, a suffixed oblique singular form is used.  This is an intriguing parallel to the use of suffixed singular oblique forms in paradigms where the \isi{nominative} singular form has a grade B vowel.  The parallel is not \isi{perfect}, however: as evident from \tabref{tab:monich:21}, vowel grade B does not actually necessarily co-occur with consonantal \isi{lenition} – it only tends to favor the same patterns of distribution\footnote{In this regard it may be interesting to note that within the verbal paradigm, consonantal mutation occurs in NF1 forms of underived verbs but not in NSF or NF2 forms.  Vowel grade B likewise never appears in NSF and NF2 (with the exception of “middle” verbs – see fn. 5), but does occur in NF1 forms of some verbs.} .  
+Consonantal \isi{lenition} in the nominal paradigms of Western \ili{Nuer} varieties seems vaguely to follow the pattern of \isi{vowel quality} modification, where the stop corresponds to Grade A and a mutated consonant (i.e. a continuant) corresponds to Grade B in vowels. The correspondence is all the more striking that even though lenited consonants do not normally appear in nominal singular forms, whenever they do, a suffixed oblique singular form is used. This is an intriguing parallel to the use of suffixed singular oblique forms in paradigms where the \isi{nominative} singular form has a Grade B vowel. The parallel is not \isi{perfect}, however: as evident from \tabref{tab:monich:21}, vowel Grade B does not actually necessarily co-occur with consonantal \isi{lenition} – it only tends to favor the same patterns of distribution.\footnote{In this regard it may be interesting to note that within the verbal paradigm, consonantal mutation occurs in NF1 forms of underived verbs but not in NSF or NF2 forms. Vowel Grade B likewise never appears in NSF and NF2 (with the exception of “middle” verbs – see footnote 5), but does occur in NF1 forms of some verbs.}
 
 \begin{table}
 P= plosive; F = continuant; S = suffixed form
@@ -562,8 +566,8 @@ P= plosive; F = continuant; S = suffixed form
 \bfseries\scshape Nom Sg & \bfseries\scshape Obl Sg & \bfseries\scshape Nom Pl &  \bfseries Gloss & \bfseries\scshape Nom Sg & \bfseries\scshape Obl Sg & \bfseries\scshape Nom Pl\\
 \midrule
 P & F & F & ‘gift’ & mṳ́c & mṳ́ɔç & mṳ́ç\\
-P & P & F & ‘tongue’ & lɛp & lɛap & lé̤eef\\
-F & S & P & ‘wound’ & jâh & jâkʌ̤ & ja̤aah\\
+P & P & F & ‘tongue’ & lɛ̂p & lɛ̀ap & lé̤eef\\
+F & S & P & ‘hyena’ & jâh & jâkʌ̤ & já̤aah\\
 P & F & P & ‘fingernail’ & rjò̤p & rjôf & rjóp\\
 \lspbottomrule
 \end{tabularx}
@@ -571,144 +575,122 @@ P & F & P & ‘fingernail’ & rjò̤p & rjôf & rjóp\\
 \label{tab:monich:21}
 \end{table}
 
-As with verbs, this type of consonantal \isi{lenition} combines with another process of \isi{lenition} associated with dorsal consonants, which in this case occurs whenever the stem vowel has been lengthened;\footnote{Though lengthened with respect to what is itself a tricky question; in purely descriptive terms, we would expect to find a shorter stem \textsc{somewhere} else in the paradigm of such a noun.} thus ‘neck’: \textit{ŋwʌ̤}\textit{k} \textsc{nom.sg} {\textasciitilde} \textit{ŋwʌ̤}\textit{h} \textsc{nom.pl} (with consonant \isi{lenition}) {\textasciitilde} \textit{ŋwá̤aaɣ} \textsc{gen.sg} (with lengthening-induced \isi{lenition}).
+As with verbs, this type of consonantal \isi{lenition} combines with another process of \isi{lenition} associated with dorsal consonants, which in this case occurs whenever the stem vowel has been lengthened;\footnote{Though lengthened with respect to what is itself a tricky question; in purely descriptive terms, we would expect to find a shorter stem somewhere else in the paradigm of such a noun.} thus ‘neck’: \textit{ŋwʌ̤́k} \textsc{nom sg} {\textasciitilde} \textit{ŋwʌ̤́h} \textsc{nom pl} (with consonant \isi{lenition}) {\textasciitilde} \textit{ŋwá̤aaɣ} \textsc{gen sg} (with lengthening-induced \isi{lenition}).
 
-The stem-final alternation \textit{l{\textasciitilde}t} also shows up in the nominal paradigm in both Eastern and Western varieties of \ili{Nuer}.  The alternation is confined to those plurals which involve shift from the vowel of grade A to grade B in the plural:  compare \textit{dɛɛl} ‘goat/sheep.\textsc{nom.sg}’ (\textit{dɛaaal} \textsc{obl.sg}) and its Nom Pl \textit{de̤t.} 
+The stem-final alternation \textit{l{\textasciitilde}t} also shows up in the nominal paradigm in both Eastern and Western varieties of \ili{Nuer}. The alternation is confined to those plurals which involve shift from the vowel of Grade A to Grade B in the plural:  compare \textit{dɛ̂ɛl} ‘goat/sheep.\textsc{nom sg}’ (\textit{dɛ̂aaal} \textsc{obl sg}) and its \textsc{nom pl} \textit{dě̤t}.
 
 \section{Conclusions} %6. /
 \label{sec:monich:6}
 
 Stem modification in \ili{Nuer} is noteworthy both for what it does and does not share across the two major word classes of verbs and nouns. The actual morpho-phonological operations are the same, perhaps most strikingly in the presence of two phonologically and functionally distinct series of \isi{vowel quality} alternations. But the way that \isi{stem modification} behaves could not be more different between the two word classes. Verb inflection follows a strict paradigmatic template, so that given e.g. the 3\textsc{sg} form, the rest of the paradigm is predictable. Nothing of the sort in noun inflection. Of course, all is not chaos – as we have shown, each \isi{stem modification} process is constrained both in terms of the alternants, and in terms of its paradigmatic distribution. But the fact that (i) whether or not a \isi{stem modification} process occurs is usually lexically specified, and (ii) the different \isi{stem modification} processes are largely independent of one another, means that the degree of unpredictability in the paradigm is high.
 
-Having laid out all the facts in regards to \isi{vowel quality} alternation, we can now address basis for the assumption that grade B is derived from grade A, and grade 2 is derived from grade 1, and not vice versa.  Our primary motivation is that the relationship between the two main grades (1 and 2) and their subgrades (A and B) is easier to capture formally assuming that Grade 1A is the starting point for the derivation of other grades.  Adopting the view that Grade 1A is “basic”, both grade 1B and grade 2A are just one phonological operation away: diphthongization/lowering to derive the vowel of grade 1B and raising/addition of breathiness to derive the vowel of grade 2A.  Grade 2B is then derived from grade 1B by applying removal of breathiness and diphthongization/lowering in a way that parallels derivation of Grade 1B from Grade 1A.  If we were to assume grade 1B as basic, the derivation of grade 2 would involve two steps: monophthongization and then further raising/addition of breathiness.  
+Having laid out all the facts in regards to \isi{vowel quality} alternation, we can now address basis for the assumption that Grade B is derived from Grade A, and Grade 2 is derived from Grade 1, and not vice versa. Our primary motivation is that the relationship between the two main grades (1 and 2) and their subgrades (A and B) is easier to capture formally assuming that Grade 1A is the starting point for the derivation of other grades. Adopting the view that Grade 1A is “basic”, both Grade 1B and Grade 2A are just one phonological operation away: diphthongization/lowering to derive the vowel of Grade 1B and raising/addition of breathiness to derive the vowel of Grade 2A. Grade 2B is then derived from Grade 2A by applying removal of breathiness and diphthongization/lowering in a way that parallels derivation of Grade 1B from Grade 1A. If we were to assume Grade 1B as basic, the derivation of Grade 2A would involve two steps: monophthongization and then further raising/addition of breathiness. 
 
-Another consideration in regards to treating the Grade A1 as “basic” has to do with markedness, both phonological and morphological.  Grade A1 is mostly comprised of [-ATR] monophthongs, most of which are not breathy.  They are also found in “simpler” morphological environments.  Vowels of grade 1 are used in underived transitive verbs, while vowel of grade A are found in unsuffixed forms that are used with inflected auxiliaries or with a postverbal \isi{subject} (NF1, NF2, NSF).  Within the nominal system, vowels of grade 1A are found in the \isi{nominative}, never in the genitive (unless suffixed, in which case one could say the job of case marking has been entirely ceded to the suffix).  In contrast, vowels of other grades, can be argued to be more complex phonologically, either by being diphthongs, or by involving features such as [+SG] (i.e. +Spread Glottis, i.e. breathiness) and [+ATR].  These grades are found in forms which are presumed to be also more complex morphologically: derived verbs and oblique case-forms.  It is logical to propose that the complication to the phonological make-up of vowel grades other than Grade 1A is due to presence of derivational and inflectional morphemes that have featural rather than segmental exponents.    
+Another consideration in regards to treating the Grade 1A as “basic” has to do with markedness, both phonological and morphological. Grade 1A is comprised of [-ATR] monophthongs, most of which are not breathy. They are also found in “simpler” morphological environments. Vowels of Grade 1 are used in underived transitive verbs, while vowel of Grade A are found in unsuffixed forms that are used with inflected auxiliaries or with a postverbal \isi{subject} (NF1, NF2, NSF). Within the nominal system, vowels of Grade 1A are found in the \isi{nominative}, never in the genitive (unless segmentally suffixed, in which case one could say the job of case marking has been entirely ceded to the suffix). In contrast, vowels of other grades, can be argued to be more complex phonologically, either by being diphthongs, or by involving features such as [+SG] (i.e. +Spread Glottis, i.e. breathiness) and [+ATR]. These grades are found in forms which are presumed to be also more complex morphologically: derived verbs and oblique case-forms. It is logical to propose that the complication to the phonological make-up of vowel grades other than Grade 1A is due to presence of derivational and inflectional morphemes that have featural rather than segmental exponents.   
 
-The \isi{vowel quality} modification provides an intriguing point of comparison in relation to \ili{Dinka}, a close relative of \ili{Nuer}. \citet{Andersen1993} shows that in \ili{Dinka} \isi{vowel quality} in the inflected paradigm is modified in a way similar to \ili{Nuer}, by means of inserting a lower vocalic element after the basic vowel.  However, fewer diphthongs are attested in \ili{Dinka} than in \ili{Nuer}.  Specifically, stems containing non-high vowels /ɔ/ and /ɛ/ as basic vowels have monophthong /a/ in forms with modified \isi{vowel quality}. As Andersen theorizes, diphthongs /ɔa/ and /ɛa/ are part of the intermediate representation at some point in derivation of these forms, but the first element in these diphthongs is deleted in \ili{Dinka}.  This parallel between \ili{Nuer} and \ili{Dinka} also provides motivation for treating grade B as derived from grade A.  It is clear that such is the direction of derivation for the equivalent grades in \ili{Dinka}, since, should the derivation of vowel grades proceed in the other direction, the outcome of grade A could not be predicted based on the quality of the vowel in grade B in \ili{Dinka} due to the fact that several values of grade A correspond to a single value of grade B.  
+The \isi{vowel quality} modification provides an intriguing point of comparison in relation to \ili{Dinka}, a close relative of \ili{Nuer}. \citet{Andersen1993} shows that in \ili{Dinka} \isi{vowel quality} in the inflected paradigm is modified in a way similar to \ili{Nuer}, by means of inserting a lower vocalic element after the basic vowel. However, fewer diphthongs are attested in \ili{Dinka} than in \ili{Nuer}. Specifically, stems containing non-high vowels /ɔ/ and /ɛ/ as basic vowels have monophthong /a/ in forms with modified \isi{vowel quality}. As Andersen theorizes, diphthongs /ɔa/ and /ɛa/ are part of the intermediate representation at some point in derivation of these forms, but the first element in these diphthongs is deleted in \ili{Dinka}. This parallel between \ili{Nuer} and \ili{Dinka} provides another motivation for treating Grade B as derived from Grade A. It is clear that such is the direction of derivation for the equivalent grades in \ili{Dinka}, since, if the derivation of vowel grades proceeded in the other direction, the outcome of Grade A could not be predicted based on the quality of the vowel in Grade B in \ili{Dinka} due to the fact that several values of Grade A correspond to a single value of Grade B. 
 
-Nevertheless, having justified the notion of grade 1A as “basic”, it is important to keep in mind that for any specific target that is \isi{subject} to modification, the “basic” variant may not necessarily be found anywhere in the paradigm.  Western \ili{Nuer} paradigm of the noun \textit{lîɛɛɛr} “water jug/pitcher” can attest to that: the vowel /i/ of grade 1A does not show up in any of its forms, i.e. \textsc{Nom Sg} \textit{lîɛɛɛr}, \textsc{Gen Sg} \textit{lîɛr,} \textsc{Nom Pl} \textit{li̤eeer-í.} Still, the “basic” vowel is recoverable due to one-to-one correspondences between vowels of different grades, and does indeed show up in the suffixed oblique singular form used in Eastern \ili{Nuer} varieties (see fn. 14), i.e. \textsc{Obl Sg} \textit{lîiir-ʌ̤.}  
+Nevertheless, having justified the notion of Grade 1A as “basic”, it is important to keep in mind that for any specific target that is \isi{subject} to modification, the “basic” variant may not necessarily be found anywhere in the paradigm. The Western \ili{Nuer} paradigm of the noun \textit{lîɛɛɛr} “water jug/pitcher” can attest to that: the vowel /i/ of Grade 1A does not show up in any of its forms, i.e. \textsc{Nom Sg} \textit{lîɛɛɛr}, \textsc{Gen Sg} \textit{lîɛr,} \textsc{Nom Pl} \textit{li̤eeer-í.} Still, the “basic” vowel is recoverable due to one-to-one correspondences between vowels of different grades, and does indeed show up in the suffixed oblique singular form used in Eastern \ili{Nuer} varieties (see footnote 14), i.e. \textsc{Obl Sg} \textit{lîiir-ʌ̤̀}.
 
 \section*{Acknowledgements}
 
-The research presented here is funded by the Arts \& Humanities Research Council (UK) under grant AH/L011824/1 (‘Morphological Complexity in \ili{Nuer}’).  We thank our \ili{Nuer} consultants John Nguany Gai Yok, Andrew Kuong, Yak Wichok, Chuol Tut, Mathew Juany Riek, John Chuol Kuek, Lam Muang, Phillip Muk, Jacob Gatkuoth, John Makuac for sharing their knowledge with us, and also Noam Faust, Sharon Rose and the Department of Linguistics at University of California \ili{San} Diego for their input and assistance with data collection.
+The research presented here is funded by the Arts \& Humanities Research Council (UK) under grant AH/L011824/1 (\textit{Morphological Complexity in \ili{Nuer}}). We thank our \ili{Nuer} consultants John Nguany Gai Yok, Andrew Kuong, Yak Wichok, Chuol Tut, Mathew Juany Riek, John Chuol Kuek, Lam Muang, Phillip Muk, Jacob Gatkuoth, John Makuac for sharing their knowledge with us, and also Noam Faust, Sharon Rose and the Department of Linguistics at University of California \ili{San} Diego for their input and assistance with data collection.
 
 \section*{Abbreviations}
-\begin{multicols}{2}
-
-\textsc{ap} = antipassive
-
-\textsc{cp} = centripetal 
-
-\textsc{excl} = exclusive
-
-\textsc{gen} = genitive
-
-\textsc{in} = intransitive
-
-\textsc{incl}= inclusive
-
-\textsc{loc} = locative
-
-NF1 = non-finite form 1
-
-NF2 = non-finite form 2
-
-NSF = non-suffixed form
-
-\textsc{nom} = \isi{nominative}
-
-\textsc{obl} = oblique
-
-\textsc{pl} = plural
-
-\textsc{sg} = singular
-
-\textsc{tr} = transitive
-\end{multicols}
+\begin{tabularx}{.55\textwidth}{llll}
+	\textsc{ap} & antipassive & NF2 & non-finite form 2\\
+	\textsc{cp} & centripetal & NSF & non-suffixed form\\
+	\textsc{excl} & exclusive & \textsc{nom} & \isi{nominative}\\
+	\textsc{gen} & genitive & \textsc{obl} & oblique\\
+	\textsc{in} & intransitive & \textsc{pl} & plural\\
+	\textsc{incl} & inclusive & \textsc{sg} & singular\\
+	\textsc{loc} & locative & \textsc{tr} & transitive\\
+	\textsc{NF1} & non-finite form 1 & & \\
+	\\
+\end{tabularx}
 
 % Edwin: biblio entries added
-\begin{comment}
-\begin{verbatim}
 
-%%move bib entries to  localbibliography.bib
-@article{Andersen1993,
-	author = {Andersen, Torben},
-	pages = {1-42},
-	title = {Vowel quality alternation in \ili{Dinka} verb inflection. \textit{Phonology}, Vol},
-	volume = {10},
-	year = {1993}
-}
+% \begin{verbatim}
 
-@article{Andersen1995,
-	author = {Andersen, Torben},
-	journal = {\textit{Studies in African Linguistics}},
-	pages = {1-63},
-	title = {Morphological Stratification in \ili{Dinka}: On the Alternations of Voice Quality, Vowel Length and Tone in the Morphology of Transitive Verbal Roots in a Monosyllabic Language},
-	volume = {23},
-	year = {1995}
-}
+% %%move bib entries to  localbibliography.bib
+% @article{Andersen1993,
+% 	author = {Andersen, Torben},
+% 	pages = {1-42},
+% 	title = {Vowel quality alternation in \ili{Dinka} verb inflection. \textit{Phonology}, Vol},
+% 	volume = {10},
+% 	year = {1993}
+% }
 
-@article{Baerman2012,
-	author = {Baerman, Matthew},
-	journal = {\textit{Language}},
-	number = {3},
-	pages = {467–494},
-	title = {Paradigmatic chaos in Nuer},
-	volume = {88},
-	year = {2012}
-}
+% @article{Andersen1995,
+% 	author = {Andersen, Torben},
+% 	journal = {\textit{Studies in African Linguistics}},
+% 	pages = {1-63},
+% 	title = {Morphological Stratification in \ili{Dinka}: On the Alternations of Voice Quality, Vowel Length and Tone in the Morphology of Transitive Verbal Roots in a Monosyllabic Language},
+% 	volume = {23},
+% 	year = {1995}
+% }
 
-@book{Crazzolara1933,
-	address = {Wien},
-	author = {Crazzolara, Joseph Pasquale.},
-	publisher = {Verlag der Internationalen Zeitschrift “Anthropos”},
-	title = {Outlines of a \ili{Nuer} Grammar},
-	year = {1933}
-}
+% @article{Baerman2012,
+% 	author = {Baerman, Matthew},
+% 	journal = {\textit{Language}},
+% 	number = {3},
+% 	pages = {467–494},
+% 	title = {Paradigmatic chaos in Nuer},
+% 	volume = {88},
+% 	year = {2012}
+% }
 
-@article{Dimmendaal2000,
-	author = {Dimmendaal, Gerrit},
-	journal = {\textit{Anthropological Linguistics}},
-	pages = {214-261},
-	title = {Number marking and noun categorization in \ili{Nilo-Saharan} languages},
-	volume = {42},
-	year = {2000}
-}
+% @book{Crazzolara1933,
+% 	address = {Wien},
+% 	author = {Crazzolara, Joseph Pasquale.},
+% 	publisher = {Verlag der Internationalen Zeitschrift “Anthropos”},
+% 	title = {Outlines of a \ili{Nuer} Grammar},
+% 	year = {1933}
+% }
 
-Faust, Noam. and E. \citealt{Grossman2015}. \ili{Nuer} (western nilotic): A preliminary survey.
+% @article{Dimmendaal2000,
+% 	author = {Dimmendaal, Gerrit},
+% 	journal = {\textit{Anthropological Linguistics}},
+% 	pages = {214-261},
+% 	title = {Number marking and noun categorization in \ili{Nilo-Saharan} languages},
+% 	volume = {42},
+% 	year = {2000}
+% }
 
-@article{Faust2017,
-	author = {Faust, \citet{Noam},
-	journal = {\textit{Journal of African Languages and Linguistics,}},
-	number = {1},
-	pages = {51-64},
-	title = {}. How low can you go? A note on vowel mutation in Nuer},
-	volume = {38},
-	year = {2017}
-}
+% Faust, Noam. and E. \citealt{Grossman2015}. \ili{Nuer} (western nilotic): A preliminary survey.
 
-@misc{Frank1999,
-	author = {Frank, Wright Jay},
-	title = {\textit{\ili{Nuer} noun morphology}. Master’s thesis, University of New York at Buffalo.},
-	year = {1999}
-}
+% @article{Faust2017,
+% 	author = {Faust, \citet{Noam},
+% 	journal = {\textit{Journal of African Languages and Linguistics,}},
+% 	number = {1},
+% 	pages = {51-64},
+% 	title = {}. How low can you go? A note on vowel mutation in Nuer},
+% 	volume = {38},
+% 	year = {2017}
+% }
 
-Gjersøe, Siri. 2016. Tone in \ili{Nuer} nouns: Oblique Case and the Construct Form. Colloquium on African Languages and Linguistics, Leiden University, August 29-31.
+% @misc{Frank1999,
+% 	author = {Frank, Wright Jay},
+% 	title = {\textit{\ili{Nuer} noun morphology}. Master’s thesis, University of New York at Buffalo.},
+% 	year = {1999}
+% }
 
-Gjersøe, Siri. 2017. Tonal Polarity Patterns in Eastern \ili{Jikany} \ili{Nuer}. The 13th \ili{Nilo-Saharan} Linguistics Colloquium May 04-06 2017, Addis Abeba, Ethiopia.
+% Gjersøe, Siri. 2016. Tone in \ili{Nuer} nouns: Oblique Case and the Construct Form. Colloquium on African Languages and Linguistics, Leiden University, August 29-31.
 
-Reid, Tatiana, and Matthew Baerman. 2016. \ili{Nuer} morphophonology: vowel alternations in verbs. Colloquium on African Languages and Linguistics, Leiden University, August 29-31.
+% Gjersøe, Siri. 2017. Tonal Polarity Patterns in Eastern \ili{Jikany} \ili{Nuer}. The 13th \ili{Nilo-Saharan} Linguistics Colloquium May 04-06 2017, Addis Abeba, Ethiopia.
 
-@book{Storch2005,
-	address = {Cologne},
-	author = {Storch, Anne.},
-	publisher = {Köppe},
-	title = {\textit{The Noun Morphology of Western Nilotic}},
-	year = {2005}
-}
+% Reid, Tatiana, and Matthew Baerman. 2016. \ili{Nuer} morphophonology: vowel alternations in verbs. Colloquium on African Languages and Linguistics, Leiden University, August 29-31.
 
-\end{verbatim}
-\end{comment}
+% @book{Storch2005,
+% 	address = {Cologne},
+% 	author = {Storch, Anne.},
+% 	publisher = {Köppe},
+% 	title = {\textit{The Noun Morphology of Western Nilotic}},
+% 	year = {2005}
+% }
+
+% \end{verbatim}
 
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
