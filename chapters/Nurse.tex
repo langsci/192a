@@ -1,24 +1,15 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-\usepackage{pifont.sty}
-
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 \title{When Northern Swahili met southern Somali} 
-\author{%
- Derek Nurse \affiliation{\ }
-}
-% \chapterDOI{} %will be filled in at production
-
-% \epigram{}
+\author{Derek Nurse}
 
 \abstract{ Some twelve hundred years an incipient Northern Swahili community had moved up the Kenya coast as far as the Lamu Archipelago, where it came in contact with one or more Somali communities and the isolate Dahalo community. This paper initially uses phonological innovations in the early Swahili dialect to establish the general fact of contact, and then attempts to use sets of loanwords to identify the Somali source. Due to inadequate sources, it has proved difficult to identify the source(s) with certainty but initial contact with Tunni over some centuries, followed by later contact with Garre, is the most plausible explanation. The Tunni and Garre later exited, the latter leaving strong traces behind in Boni. }
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[33]
+}{}
+
 
 \begin{document}
 
@@ -99,18 +90,16 @@ The purpose of this paper is twofold, to: see if this archaeology-based scenario
 Northern \ili{Swahili} refers to the communities speaking \ili{Swahili} dialects from Brava down to the \ili{Mombasa} area and just south. The archaeological sites in the whole area, assumed to be \ili{Swahili}, were located in the Lamu Archipelago and{\slash}or adjacent mainland, slightly before 800 AD. I assume these to be those of the Proto-ND community. The northern communities at \ili{Mombasa} and maybe \ili{Malindi} and Mambrui must have been the first to move out of the area, as \ili{Mombasa} shows signs of \ili{Swahili} settlement already by the late 11\textsuperscript{th} century. They were followed closely by the ancestors of the \ili{Bravanese}, and maybe of people formerly beyond Brava at Munghia, Merka, Gezira, and Mkudisho\footnote{The name Shaangani, a Mkudisho quarter, and some pottery sherds there, suggest \ili{Swahili} connections.}, who had all moved north by ca 1100 AD. Archaeological sites in the traditional area occupied by \ili{Bajuni} are later, starting in the 14\textsuperscript{th} or 15\textsuperscript{th} century \citep[91]{Wilson1992}, along the 250km line from Dondo and adjacent settlements on the Kenya coast, north as far as Kismayu, That these dates are later maybe because archaeological data is incomplete or because the ancestors of the Bajunis spread along the coast later than the other communities. So far, this chronology is based largely on archaeology. The area in which the proto-ND communities lived was shared with one (or more?) southern \ili{Somali}-speaking communities. Other than the tiny and low-status \ili{Boni} community, no southern \ili{Somali} communities live in that area today. 
 
 \section{Phonological innovations: ND dialects including Malindi and Mombasa}\label{sec:nurse:4} Southern Swahili dialects, from the Kenya/Tanzania border south, are conservative phonologically -- that is, they are close to their Sabaki and North East Coast Bantu forebears -- while all the northern dialects have innovated, so it is easier to arrange the latter stratigraphically as branches on a genealogical tree. Several dozen innovations\footnote{For instance, over 30 phonological features distinguish Bajuni from Standard Swahili (see \citealt{Nurse2013}/2011, click on \textit{Bajuni Database}, and go to the list at the end of \textit{Wordlist)}.}  are scattered across the ND spectrum, but most are local and recent, and/or cannot be clearly linked to Somali influence. Those in \tabref{tab:nurse:1} are significant because they occur in all ND and have diagnostic value because they do suggest a Somali source.
-
-%%please move \begin{table} just above \begin{tabular
-\begin{table}
-\caption{Dentalization in Northern Swahili\footnote{Comments on the table. Underlining = dental, ny = palatal, c, j = alveopalatal. For \#6 I heard only [s] in Kenyan Bajuni in the 1970s, but have since heard [θ] from some Somali Bajunis. For \#7, Mwiini behaves inconsistently, some words having the dental, others the palatal, no obvious conditioning factors. My guess is that the dentals, or the process itself is a loan from Bajuni where dental nasals are the regular outcome and Bajuni was the nearest community to the south. What happens in \#8 might be a systemic compensation for \#1, which led to all ND having (inherited) /t/ and (innovated) /ṯ/ for a while – the subsequent affrication made the two less similar. Siu and Pate generally behave like Amu but here as Bajuni. I would guess that the change of [t] to [c] occurred under Bajuni influence. Portuguese records indicate that Bajuni influence and numbers were much greater in the past than today.}}
+ 
+\begin{table}[b]
+\caption[Dentalization in Northern Swahili]{Dentalization in Northern Swahili\footnote{Comments on the table. Underlining = dental, ny = palatal, c, j = alveopalatal. For \#6 I heard only [s] in Kenyan Bajuni in the 1970s, but have since heard [θ] from some Somali Bajunis. For \#7, Mwiini behaves inconsistently, some words having the dental, others the palatal, no obvious conditioning factors. My guess is that the dentals, or the process itself is a loan from Bajuni where dental nasals are the regular outcome and Bajuni was the nearest community to the south. What happens in \#8 might be a systemic compensation for \#1, which led to all ND having (inherited) /t/ and (innovated) /ṯ/ for a while – the subsequent affrication made the two less similar. Siu and Pate generally behave like Amu but here as Bajuni. I would guess that the change of [t] to [c] occurred under Bajuni influence. Portuguese records indicate that Bajuni influence and numbers were much greater in the past than today.}}
 \label{tab:nurse:1}
 \begin{tabularx}{\textwidth}{lCCCCCC}
 \lsptoprule
  & \multicolumn{4}{c}{North ND} &  \multicolumn{2}{c}{South ND} \\
 \midrule 
-& \ili{Mwiini} & \ili{Bajuni} & \ili{Siu}/\ili{Pate} & \ili{Amu} & \ili{Malindi}, \ili{Mombasa} & Base form/SD\\
-\midrule
-&  &  &  &  &  & \\
+& \ilit{Mwiini} & \ilit{Bajuni} & \ilit{Siu}/\ilit{Pate} & \ilit{Amu} & \ilit{Malindi}, \ilit{Mombasa} & Base form/SD\\
+\midrule 
 1 & ṯ & ṯ & ṯ & ṯ & ṯ & [c]\\
 2 & \uline{nd} & \uline{nd} & \uline{nd} & \uline{nd} & \uline{nd} & [nj]\\
 3 & nd\textsuperscript{r} & nd\textsuperscript{r} & nd\textsuperscript{r} & nd\textsuperscript{r} & nd\textsuperscript{r} & [nd]\\
@@ -158,15 +147,14 @@ This is discussed in more detail in \citealt{Nurse1985}, the results are exempli
   The second factor is economic. As early \ili{Sabaki} groups – early ND, \ili{Elwana}, \ili{Pokomo}, \ili{Mijikenda} -- moved up the coast, they almost certainly combined subsistence farming with hunting. At some point early \ili{Swahili} communities made the move to maritime activities (fishing, and trading across the Indian Ocean). \citet{Wilson2016} summarizes what was found by the archaeologists \linebreak(Chittick, Horton) who excavated the three earliest large sites on the island, \ili{Pate}, Shanga, Manda. At \ili{Pate}, fish, turtle, chickens, cattle, camels, wild ungulates were present in the deepest levels, 750--850 AD, and sheep/goats by 850--1000 AD. At Shanga, fish were early but only in quantity after 1000, and chickens also appear early. Sheep/goats and cattle are in the record by 840, but in quantity only after about 980. Local hunting groups, such as \ili{Dahalo}, on the adjacent mainland relied on hunting and fishing. \citet[132]{Wilson2016} cites Horton’s suggestion that “Shanga might have been a multicultural society from its foundation, including (non-\ili{Bantu}?) pastoralist elements”. Camel bones at Shanga are dated at 1075 AD, and camels certainly came south with Somalis, possibly along with cattle. \citet[72]{Nurse1985} cite a tradition among the \ili{Pate} people that “the origin of \ili{Pate} was a person from the mainland who was of the Sanye\footnote{Name for any local hunting group.} tribe”. Clearly the non-linguistic evidence suggests the early presence of \ili{Somali} and other groups.
 
 \subsection{Somali loanwords in various ND groupings}\label{sec:nurse:5.4} The total number of clear loanwords in the ND is much larger than what appears in this section. In \tabref{tab:nurse:2} are included only the words which are loans in the ND and have a likely origin in some Somali dialect (or Dahalo, or maybe Orma).
-
-%%TODO Idk how to make this fit. Two tables?
+ 
 \begin{table}
 \footnotesize
 \caption{Somali loanwords shared by all ND = early ND}
 \label{tab:nurse:2}
 \begin{tabularx}{\textwidth}{>{\raggedright}p{2.75cm}>{\raggedright}p{1.5cm}p{1.2cm}Q}
 \lsptoprule
-\ili{Mwiini} & \ili{Bajuni} & \ili{Amu} etc & \ili{Cushitic}\footnotemark{}\\
+\ilit{Mwiini} & \ilit{Bajuni} & \ilit{Amu} etc & \ilit{Cushitic}\footnotemark{}\\
 \midrule
 \textit{aabo} ‘a male name’ & \textit{abawa} ‘older brother’ & abawa & T \textit{abow/aboo}, B \textit{ab’ue’}, general S \textit{abboow(e)}, M \textit{aawow} ‘dad’. Is the Mw item from the same source as the others?\\
 \textit{baaya}
@@ -237,50 +225,6 @@ The point of disagreement concerns when the \ili{Garre} arrived. Some scholars h
 \section{Conclusion}\label{sec:nurse:7}  In the twelve centuries since this narrative began, huge changes have occurred in and around the target area. In 700 AD, only one southern Somali community, possibly Tunni, and the Dahalo lived there. Around 800 AD an early ND community arrived, along other Sabaki communities. The interaction between early ND and the Somali community changed early ND speech. Eventually that early Somali community withdrew – when? – and the Garre entered the scene. They interacted with Dahalo, resulting in the Boni dialect. Dahalo has declined slowly and inexorably over the whole period. First the Orma, then northern Somali moved steadily south into the area. The ND communities, who once lived on the islands and farmed extensively on the adjacent mainland, increasingly withdrew to the islands. This pressure from the north intensified, squeezing Orma into Kenya, followed by northern Somalis themselves, and pushing southern Somali communities south and east. For the ND, the final act came after 1991, when central government collapsed in Somalia, and the two remaining Bantu communities in Somalia, Bravanese and Bajuni, were reduced to almost zero as northern Somalis spread east and south. Since 1991, civil war has changed the linguistic picture to an as yet undetermined extent. 
 
 \section{Acknowledgements} My thanks are due to Alessandra Vianello, Bonny Sands, Mauro Tosco, Tom Spear, Chris Ehret, Sarah Tishkoff, and Kirk Miller, for help with data, ideas, and corrections, and also to the two reviewers.
-
-%Edwin: biblio entries added except Roma
-\begin{comment}
-\begin{verbatim}
-
-Comfort, J. and  M, Paster. 2009. Notes on Lower Jubba \ili{Maay}. In Selected Proceedings of ACAL 38: Linguistic theory and African language documentation. ed. M. Matondo, F. McLaughlin, E.  Potsdam. Somerville, MA: Cascadilla Proceedings Project. 204-216. http://www.lingref.com/cpp/acal/38/index.html
-
-Ehret, C. 1995. The Eastern Horn of Africa, 1000 BC to 1400 AD:~ The historical roots. In  A.J. Ahmed (ed.), The invention of Somalia. Lawrenceville, NJ:~ The Red Sea Press, 233-262.
-
-Ehret, C. 2013. The extinct \ili{Khoesan} languages of Eastern Africa. In R. Vossen (ed). The \ili{Khoesan} languages. Abingdon: Routledge. 465-479.
-
-Ehret, C., and  Ali, M.N. 1984. Soomaali classification. In Labahn, T. (ed.). Proceedings of the second Intl. conference of \ili{Somali} studies (Hamburg, August 1-6, 1983). Vol. 1: Linguistics and literature. Hamburg. Helmut Buske. 201-269.
-
-Ehret, C. 1978. The SAM languages: A history of Rendille, \ili{Boni}, and \ili{Somali}. Afroasiatic Linguistics:   1-93.
-
-Maddieson, Ian. Ladefoged. P, Sands, B. 1999. Clicks in East African languages. African Mosaic: Festschrift for J.A. Louw. ed. Rosalie Finlayson. Pretoria: University of South Africa, UNISA Press. 59-91.
-
-Mumin, Meikal and  G.J. Dimmendaal. Forthcoming. Chimini. In Bostoen, K, D. Nurse, G. Philippson, Van der Velde (eds.), The \ili{Bantu} languages. 2\textsuperscriptnd edition. London: Routledge.
-
-Nurse, D. 1982. The \ili{Swahili} dialects of Somalia and the Northern Kenya Coast, in M-F. Rombi (ed). Etudes sur le \ili{Bantu} Oriental. Paris: LACITO/CNRS. 73-146.
-
-Nurse, D. 1991. Language contact, creolization, and genetic linguistics: The case of \ili{Mwiini}. In Proceedings of the Berkeley Linguistic Society 17, Special Session on African Language Structures. UC Berkeley. 177-187.
-
-Nurse, D. 1992 Shungwaya and the \ili{Bantu} of Somalia: Some linguistic evidence. In H. M. Adams and  C.L. Geshekter (eds.). Proceedings of the First International Congress of \ili{Somali} Studies (1980). Chico CA. Scholars Press. 54-61.
-
-Nurse, D. 1994 South meets North: Ilwana = \ili{Bantu} + \ili{Cushitic} on Kenya's Tana River. In P. Bakker and  M. Mous (eds.), Mixed languages. 15 Case Studies. Amsterdam. Instituut voor Functioneel Onderzoel van Taal en Taalgebruik. 215-224.
-
-Nurse, D. 2010 The decline of \ili{Bantu} in Somalia. In F. Floricic (ed.), Essais de typologie et de linguistique générale, Mélanges offerts à Denis Creissels. Lyon : ENS Editions, 187-200.
-
-Nurse, D. and  T. Spear. 1985. The \ili{Swahili}: reconstructing the history and language of an African society, 800-1500. Philadelphia: University of Pennsylvania Press.
-
-Sasse, H-J. 1979. Entlehnung morphophonemischer Regeln im \ili{Boni}. Sprache und Geschichte in Afrika:   93-108.
-
-Tonelli, L. 1999. The \ili{Karre} of Somalia: A sketch of its linguistic features. Afroasiatica  Tergestina: Papers from the 9th \ili{Italian} Meeting of \ili{Afro-Asiatic} (Hamito-Semitic) Linguistics, Trieste, April 23-24, 1998/Contributi presentati al 9º Incontro di Linguistica Afroasiatica (Camito-Semitica), Trieste, 23-24 \citealtApril1998. eds. Lamberti, M. and  L. Tonelli. Padova: Unipress. 373-379.
-
-Roma: Ministero degli Affari Esteri, Direzione Generale per la Cooperazione allo Sviluppo, Comitato Tecnico Linguistico per l'Università Nazionale Somala.   (\urlhttp://host.uniroma3.it/centri/CentroStudi\ili{Somali}/ie_ar_testi.php)
-
-Tosco, M. 2005. \ili{Karre}. Encyclopedia Aethiopica. Vol. 2. Wiesbaden: Harrassowitz. 709-710.
-
-Iribemwangi, P (eds.), The Harmonization and Standardization of Kenya Languages,     Capetown: Centre for Advanced Studies of African Society. 263-280.
-
-
-\end{verbatim}
-\end{comment}
 
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
