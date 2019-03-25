@@ -1,17 +1,18 @@
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook}
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook}
+ 
 \author{Yvonne Akwele Amankwaa Ollennu\affiliation{University of Education Winneba}}
 \title{Negation coding in Ga}
 
 \abstract{
 The paper investigates negation coding in Ga, a Kwa language. Data analyzed in the paper was gathered from Ga students at the University of Education, Winneba, in addition to the researcher’s native intuition. According to \citet{Miestamo2007} negation could be classified under two categories, standard and non-standard negation. It is noted that whichever type of negation is employed in a language, it will be done either morphologically or syntactically. The paper shows that both morphological and syntactic strategies are used for negation coding in Ga. The NP NP and copula types of sentences in Ga employ a syntactic strategy to code negation. On the other hand, SVO sentences are negated morphologically. The SVO type of sentences is negated morphologically via the tense or aspect of the verb type in Ga. The affixes used to negate the SVO sentences also depend on the type of verb used in the sentence.\footnote{This paper was presented at the 44th Annual Conference of African Linguistics at Georgetown University. It was mistakenly excluded from those proceedings, so we are including it here as a courtesy to the editors of that volume and to the author.}
 }
+
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[27]
+}{}
 
 \begin{document}
 
@@ -29,9 +30,13 @@ The paper is divided into three sections. The first section gives a short typolo
 
 \ili{Ga} is a two-level \isi{tone} language from the \ili{Kwa} branch of the Niger-Congo family. It is spoken in Ghana, along the coastal areas in the Greater Accra region like \ili{Ga} Mashie, Osu, La, Teshie Nungua, Tema, Kpone among others. Ga has no dialects, but vocabulary differences exist which correlate with differing geographical locations. \ili{Ga} has cases of downstepping and nasality spreading in certain instances \citet{Dakubu2000}. In terms of its vocalic entry, it has five nasal vowels /ã, ĩ, ɔ̃̃, ũ, ɛ̃/ and seven oral vowels /i, o, ɛ, ɔ, u, e, a/ . All the vowels contrast as they bring about meaning change as shown in (\ref{ex:ollennu:1}).
 
-\ea \label{ex:ollennu:1} a. \textit{fa} \enspace `to borrow'  \enspace b. \textit{fã}\enspace `half' \enspace c. \textit{tɔ} \enspace `bottle' \enspace d. \textit{tɔ̃} \enspace `to be wrong'
+\ea \label{ex:ollennu:1} 
+\ea fa  `to borrow'  
+ \ex {fã} `half' 
+ \ex {tɔ}  `bottle' 
+ \ex {tɔ̃}  `to be wrong'
 \z
-
+\z
 
 The language is similar to \ili{Akan} in many ways especially in terms of the sentence structure. The two-level tones, that is Low (L) and High (H) in \ili{Ga} have grammatical and lexical functions. The language has several affixes made up of derivational and inflectional ones. All the major word classes can be found in the language. Some of these word classes have both derived and non-derived members.
 
@@ -39,105 +44,111 @@ The language is similar to \ili{Akan} in many ways especially in terms of the se
 
 \citeauthor{Dakubu1970}  (\citeyear{Dakubu1970}; \citeyear{Dakubu2003}) recognizes two types of verb in \ili{Ga}. The simple verbal classes consist of verbal stems and can be attached with eleven different affixes which may indicate one of the following: polarity, \isi{aspect}, tense and class of the verb stem. Group 1 or class 1 verbs consist of monosyllabic verbs with initial high \isi{tone}, polysyllabic stems with low \isi{tone} throughout and a set of twelve monosyllabic low \isi{tone} stems. The verbs found in class 2 are stems which are monosyllabic with low tones and all polysyllabic stems with initial low \isi{tone} followed by high. Below, we see examples of each of the two types of verb stems found in \ili{Ga}.
 
-\medskip
-Verb type 1
-\medskip
 
-\begin{minipage}{.5\textwidth}
+Verb type 1
+
+
+
 \ea \label{ex:ollennu:2} Perfect:\\
-\gll Aku \'e-$^{!}$b\'i. \\
+\ea
+\gll Aku é-$^{!}$bí. \\
 	Aku \textsc{perf}-ask \\
 \glt `Aku has asked.'
 
 \ex Progressive:\\
-\gll Aku m\`i\`i-b\'i\\
+\gll Aku mìì-bí\\
 Aku \textsc{prog}-ask\\
 \glt `Aku is asking.'
 
 \ex Subjunctive:\\
-\gll Aku \'a-b\'i.\\
+\gll Aku á-bí.\\
 Aku \textsc{sbjv}-ask\\
 \glt `Aku should ask.'
+\z 
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
 \ea Aorist:\\
-\gll Aku $^{!}$b\'i.\\
+\ea
+\gll Aku $^{!}$bí.\\
 Aku ask.\textsc{aor}\\
 \glt `Aku asked.'
 
 \ex Habitual:\\
-\gll Aku b\'i-ɔ.\\
+\gll Aku bí-ɔ.\\
 Aku ask-\textsc{hab}\\
 \glt `Aku asks.'
 
 \ex Future:\\
-\gll Aku \`a\'a-b\'i.\\
+\gll Aku àá-bí.\\
 Aku \textsc{fut}-ask\\
 \glt `Aku will ask.'
 \z
-\end{minipage}\newline
+\z
+ 
 
-\medskip
+\newpage 
 Verb type 2
-\medskip
 
-\begin{minipage}{.5\textwidth}
+
+
 \ea \label{ex:ollennu:46} 
+\ea
 Perfect:\\
-\gll Aku \'e-k\`e m\`i w\`ol\`o.\\
+\gll Aku é-kè mì wòlò.\\
 Aku \textsc{perf}-present 1\textsc{sg} book\\
 \glt 	`Aku has presented a book to me.'
 
 \ex Progressive:\\
-\gll Aku m\`i\`i-k\`e m\`i w\`ol\`o.\\
+\gll Aku mìì-kè mì wòlò.\\
 Aku \textsc{prog}-present 1\textsc{sg} book\\
 \glt `Aku is presenting a book to me.'
 
 \ex Subjunctive:\\
-\gll Aku \`a-k\`e m\'i w\`ol\`o.\\
+\gll Aku à-kè mí wòlò.\\
 Aku \textsc{sbjv}-present 1\textsc{sg} book\\
 \glt `Aku ought to present a book to me.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\z
+
+
 \ea Aorist:\\
-\gll Aku k\`e m\`i w\`ol\`o.\\
+\ea
+\gll Aku kè mì wòlò.\\
 Aku present.\textsc{aor} 1\textsc{sg} book\\
 \glt `Aku presented a book to me.'
 
 \ex Habitual:\\
-\gll Aku k\`e-ɔ m\`i w\`ol\`o.\\
+\gll Aku kè-ɔ mì wòlò.\\
 Aku present-\textsc{hab} 1\textsc{sg} book\\
 \glt `Aku presents a book to me.'
 
 \ex Future:\\
-\gll Aku \`a\'a-k\`e m\`i w\`ol\`o.\\
+\gll Aku àá-kè mì wòlò.\\
 Aku \textsc{fut}-present 1\textsc{sg} book\\
 \glt `Aku will present a book to me.'
 \z
-\end{minipage}\\\\
+\z 
 
-In the above, the verbs  \textit{b\'i} `ask' and \textit{k\`e} `present' represent the two types of verbs. It will be noticed that prefixes are attached to the verbs in obtaining the \isi{perfect}, progressive, subjunctive and future. For habitual, a suffix /-ɔ/ which has the allomorph /-a/, is attached to the verbs depending on the vowel in the root of the verb under consideration. The allomorph /-a/ occurs only with verbs that have the vowel /a/ in the final syllable of the root. However it must be noted that there are other affixes -- auxiliaries -- which are attached to verbs in \ili{Ga}, but these will not be discussed in this paper.
+In the above, the verbs  \textit{bí} `ask' and \textit{kè} `present' represent the two types of verbs. It will be noticed that prefixes are attached to the verbs in obtaining the \isi{perfect}, progressive, subjunctive and future. For habitual, a suffix /-ɔ/ which has the allomorph /-a/, is attached to the verbs depending on the vowel in the root of the verb under consideration. The allomorph /-a/ occurs only with verbs that have the vowel /a/ in the final syllable of the root. However it must be noted that there are other affixes -- auxiliaries -- which are attached to verbs in \ili{Ga}, but these will not be discussed in this paper.
 
 \subsection{\label{sec:ollennu:1.3} Clause types}
 
 \citet{Dakubu2003} noted that \ili{Ga} has NP NP, Copula and SVO clause types. It must be noted that there are sub-groups of the NP NP clause-type. The examples in (\ref{ex:ollennu:4}) and (\ref{ex:ollennu:5}) are NP plus particles. The particles precede or occur after the NP in the clause.
 
 \ea \label{ex:ollennu:3}
-\gll N\'a\`a y\`o\'o $^{!}$l\'ɛ \\
+\gll Náà yòó $^{!}$l\'ɛ \\
 \textsc{prt} woman \textsc{def}\\
 \glt `Here is the woman.'
 \z
 
 \ea \label{ex:ollennu:4}
-	\gll N\`u\'u $^{!}$l\'ɛ n\'ɛ\\
+	\gll Nù\'u $^{!}$l\'ɛ n\'ɛ\\
 	Man \textsc{def} \textsc{prt}\\
 \glt `This is the man/that is the man.'
 \z
 
 \ea \label{ex:ollennu:5}
-\gll Y\`o\'o $^{!}$l\'ɛ n\`i.\\
+\gll Yòó $^{!}$l\'ɛ nì.\\
 Woman \textsc{def} \textsc{prt}\\
 \glt 'It is the woman.'
 \z
@@ -145,20 +156,20 @@ Woman \textsc{def} \textsc{prt}\\
 
 In examples  (\ref{ex:ollennu:4}-\ref{ex:ollennu:5}) above we observe that the particles \textit{ni} and \textit{nɛ} occur after the noun in the sentences and the particle \textit{naa} occurs at the initial position in (\ref{ex:ollennu:3}). These sentences (\ref{ex:ollennu:3}-\ref{ex:ollennu:5}) do not contain main verbs. It will be completely unacceptable to put a verb in such sentences, as in (\ref{ex:ollennu:6}).
 
-\ea \label{ex:ollennu:6}\gll {*}N\`u\'u lɛ ba nɛ.\\
+\ea \label{ex:ollennu:6}\gll {*}Nù\'u lɛ ba nɛ.\\
 Man \textsc{def} come \textsc{prt}\\
 \z
 
 The second sub-group comprises those that contain only two NPs and nothing else. There is no occurrence of particles and these are grammatical in the language. Examples (\ref{ex:ollennu:7})-(\ref{ex:ollennu:50}) illustrate this type.
 
 \ea \label{ex:ollennu:7}
-\gll Nm\'ɛ$^{!}$n\'ɛ S\`o\`o.\\
+\gll Nm\'ɛ$^{!}$n\'ɛ Sòò.\\
 today Thursday\\
 \glt `Today is Thursday.'
 \z
 
 \ea \label{ex:ollennu:50}
-\gll \'E-m\`us\`u g\`og\'a.\\
+\gll É-mùsù gògá.\\
 3\textsc{sg}-stomach bucket\\
 \glt `His stomach is a bucket. (His stomach is big)'
 \z
@@ -167,40 +178,40 @@ However it should be noted that word order is fixed in (\ref{ex:ollennu:7}) and 
 shows a relationship of the NP in first position belonging to the class in the second NP, but in (\ref{ex:ollennu:50}) the second NP describes the first entity. The \isi{copula clause} type consists of a defective verb and can be swapped around. The \isi{copula clause} is made up of NP and VP where the VP contains a \isi{copula} verb and an NP. The \isi{copula} verb \textit{ji} is used below to illustrate in (\ref{ex:ollennu:8}-\ref{ex:ollennu:11}).
 
 \ea \label{ex:ollennu:8}
-\gll N\`u\`u j\'i $^{!}$l\'ɛ.\\
+\gll Nùù jí $^{!}$l\'ɛ.\\
 Man \textsc{cop} 3\textsc{sg}\\
 \glt 'He is a man.'
 \z
 
 \ea \label{ex:ollennu:9}
-\gll Ts\`ɔ\'ɔɔ̀l\`ɔɔ̀ j\'i Adote.\\
+\gll Ts\`ɔ\'ɔɔ̀l\`ɔɔ̀ jí Adote.\\
 Teacher \textsc{cop} Adote\\
 \glt 	`The teacher is Adote'
 \z
 
 \ea \label{ex:ollennu:10}
-\gll M\'i-f\'ɔ-m\`ɔ gb\`i j\'i w\'ɔ.\\
+\gll Mí-f\'ɔ-m\`ɔ gbì jí w\'ɔ.\\
 1\textsc{sg}-give.birth-\textsc{nom} day \textsc{cop} tomorrow\\
 \glt `My birthday is tomorrow.'
 \z
 
 \ea \label{ex:ollennu:11}
-\gll M\'i-m\`am\'i j\'i p\`ol\'is\`if\'ony\`o.\\
+\gll Mí-màmí jí pòlísìfónyò.\\
 1\textsc{sg}-mother \textsc{cop} police\\
 \glt `My mother is a police woman.'
 \z
 
-In the above examples in (\ref{ex:ollennu:8}) the two NPs are \textit{n\`u\`u} `man' and \textit{lɛ} `him' and in (\ref{ex:ollennu:9}) the two NPs are \textit{ts\`ɔ\'ɔl\`ɔ} `teacher' and \textit{Adote} `name of a person'. The \isi{copula} verb \textit{j\'i} has been placed in between the two NPs to form the sentences. It must be noted that without the \isi{copula} placed in between the two NPs, they will be
+In the above examples in (\ref{ex:ollennu:8}) the two NPs are \textit{nùù} `man' and \textit{lɛ} `him' and in (\ref{ex:ollennu:9}) the two NPs are \textit{ts\`ɔ\'ɔl\`ɔ} `teacher' and \textit{Adote} `name of a person'. The \isi{copula} verb \textit{jí} has been placed in between the two NPs to form the sentences. It must be noted that without the \isi{copula} placed in between the two NPs, they will be
 NPs and not meaningful sentences. One major feature of the \ili{Ga} \isi{copula clause} is that the NPs in the clause can be interchanged and the meaning of the sentence remains the same. That is to say, in its structure, there are two NPs and the \isi{copula} is placed between the two NPs. Changing the positions of the NPs does not alter the meaning of the sentences. There may be a pragmatic change in meaning but the paper will not delve into that. For instance example (\ref{ex:ollennu:9}) and (\ref{ex:ollennu:10}) above can be rendered as (\ref{ex:ollennu:12}) and (\ref{ex:ollennu:13}) where the positions of the NPs are changed.
 
 \ea \label{ex:ollennu:12}
-\gll Adote j\'i ts\`ɔ\'ɔl\`ɔ.\\
+\gll Adote jí ts\`ɔ\'ɔl\`ɔ.\\
 Adote \textsc{cop} teacher\\
 \glt`Adote is a teacher.'
 \z
 
 \ea \label{ex:ollennu:13}
-\gll W\'ɔ $^{!}$j\'i m\`i-f\'ɔ-m\`ɔ gb\`i.\\
+\gll W\'ɔ $^{!}$jí mì-f\'ɔ-m\`ɔ gbì.\\
 Tomorrow \textsc{cop} 1\textsc{sg}-give.birth-\textsc{nom} day.\\
 \glt `Tomorrow is my birthday.'
 \z
@@ -232,36 +243,36 @@ Negation of non-verbal clauses in \ili{Ga} involves the introduction of a \isi{n
 
 \subsection{\label{sec:ollennu:2.1} Non-verbal clauses}
 
-At this point, the paper examines the strategies for the \isi{negation} of non-verbal clauses, which falls in the category of \isi{non-standard negation}. In \isi{negation} of both ‘NP NP’ types of clauses, there is the introduction of a \isi{negative particle} \textit{j\'e\'e\'e}. The source of this particle may be traced to the \isi{copula} verb \textit{ji}, which when negated becomes \textit{j\'e\'e\'e}. It must be noted that it is normally referred to as the \isi{negative particle}, and that will be maintained in this paper. Clauses in (\ref{ex:ollennu:16}-\ref{ex:ollennu:18}) below are from the subgroup of the NP type which consists of particles.
+At this point, the paper examines the strategies for the \isi{negation} of non-verbal clauses, which falls in the category of \isi{non-standard negation}. In \isi{negation} of both ‘NP NP’ types of clauses, there is the introduction of a \isi{negative particle} \textit{jééé}. The source of this particle may be traced to the \isi{copula} verb \textit{ji}, which when negated becomes \textit{jééé}. It must be noted that it is normally referred to as the \isi{negative particle}, and that will be maintained in this paper. Clauses in (\ref{ex:ollennu:16}-\ref{ex:ollennu:18}) below are from the subgroup of the NP type which consists of particles.
 
 \ea \label{ex:ollennu:16}
-\gll J\'e\'e\'e Aku n\`i.\\
+\gll Jééé Aku nì.\\
 \textsc{neg}.\textsc{prt} Aku\\
 \glt `This is not Aku.'
 \z
 
 \ea \label{ex:ollennu:17}
-\gll J\'e\'e\'e y\`o\'o l\`ɛ n\'ɛ.\\
+\gll Jééé yòó l\`ɛ n\'ɛ.\\
 \textsc{neg}.\textsc{prt} woman \textsc{def} \textsc{prt}\\
 \glt `That is not a woman.'
 \z
 
 \ea \label{ex:ollennu:18}
-\gll J\'e\'e\'e n\`u\'u l\`ɛ n\`i.\\
+\gll Jééé nù\'u l\`ɛ nì.\\
 \textsc{neg}.\textsc{prt} man \textsc{def} \textsc{prt}\\
 \glt ‘That is not the man.’
 \z
 
-It can be seen from the above examples (\ref{ex:ollennu:16}-\ref{ex:ollennu:18}) that \textit{j\'e\'e\'e} occurs in initial position. The free negative morpheme precedes the first NP in the clause to be negated. With this type of clause, it will be unacceptable in the \ili{Ga} language to place the morpheme \textit{j\'e\'e\'e} after the noun or at clause final. The morpheme inherently is negative and occurs only at initial position to negate the sentences. The examples in (\ref{ex:ollennu:7}-\ref{ex:ollennu:7}b) are negated; the particle \textit{j\'e\'e\'e} is placed in between the two NPs as shown in (\ref{ex:ollennu:19}) and (\ref{ex:ollennu:51}).
+It can be seen from the above examples (\ref{ex:ollennu:16}-\ref{ex:ollennu:18}) that \textit{jééé} occurs in initial position. The free negative morpheme precedes the first NP in the clause to be negated. With this type of clause, it will be unacceptable in the \ili{Ga} language to place the morpheme \textit{jééé} after the noun or at clause final. The morpheme inherently is negative and occurs only at initial position to negate the sentences. The examples in (\ref{ex:ollennu:7}-\ref{ex:ollennu:7}b)\todo{check ref} are negated; the particle \textit{jééé} is placed in between the two NPs as shown in (\ref{ex:ollennu:19}) and (\ref{ex:ollennu:51}).
 
 \ea \label{ex:ollennu:19}
-\gll Nmɛnɛ j\'e\'e\'e S\`o\`o.\\
+\gll Nmɛnɛ jééé Sòò.\\
 Today \textsc{neg}.\textsc{prt} Thursday\\
 \glt `Today is not Thursday.'
 \z
 
 \ea \label{ex:ollennu:51}
-\gll \'E-musu j\'e\'e\'e g\`og\'a.\\
+\gll É-musu jééé gògá.\\
 3\textsc{sg}-stomach \textsc{neg}.\textsc{prt} bucket\\
 \glt 	`His stomach is not a bucket. (His stomach is not big)'
 \z
@@ -270,12 +281,12 @@ Today \textsc{neg}.\textsc{prt} Thursday\\
 In the second sub-group of two-NP clauses in (\ref{ex:ollennu:19}a) and (\ref{ex:ollennu:19}b), the \isi{negative particle} occurs in between the NPs and not at the initial position in the clauses. When the \isi{negative particle} is placed at the initial positions of the clauses, the meaning derived is to correct the value or otherwise of a statement made and not negate them for the above in (\ref{ex:ollennu:19}a) and (\ref{ex:ollennu:19}b). This may not be so in all instances as seen in (\ref{ex:ollennu:20}) and (\ref{ex:ollennu:21}).
 
 \ea \label{ex:ollennu:20}
-\gll * Aku j\'e\'e\'e n\`i. \\
+\gll * Aku jééé nì. \\
 {} \textsc{neg} \textsc{prt} Aku \textsc{prt}\\
 \z
 
 \ea \label{ex:ollennu:21}
-\gll * Y\`o\'o l\'ɛ j\'e\'e\'e n\'ɛ.\\
+\gll * Yòó l\'ɛ jééé n\'ɛ.\\
 {} \textsc{neg}.\textsc{prt} woman \textsc{def} \textsc{prt}\\
 \z
 
@@ -284,42 +295,42 @@ In (\ref{ex:ollennu:20}) and (\ref{ex:ollennu:21}) above, the \isi{negative part
 
 \subsection{\label{sec:ollennu:2.2} Copula clause}
 
-In negating the \isi{copula} sentence the negative form of the \isi{copula} verb \textit{ji} which is \textit{j\'e\'e\'e} is introduced into the sentence. For instance, after negating the above \isi{copula} sentences in (\ref{ex:ollennu:9}-\ref{ex:ollennu:11}), the outcome will be (\ref{ex:ollennu:22}-\ref{ex:ollennu:24}).
+In negating the \isi{copula} sentence the negative form of the \isi{copula} verb \textit{ji} which is \textit{jééé} is introduced into the sentence. For instance, after negating the above \isi{copula} sentences in (\ref{ex:ollennu:9}-\ref{ex:ollennu:11}), the outcome will be (\ref{ex:ollennu:22}-\ref{ex:ollennu:24}).
 
 \ea \label{ex:ollennu:22}
-\gll J\'e\'e\'e n\`u\`u j\'i l\`ɛ.\\
+\gll Jééé nùù jí l\`ɛ.\\
 \textsc{neg}.\textsc{prt} man \textsc{cop} 3\textsc{sg}\\
 \glt `He is not a man.'
 \z
 
 \ea \label{ex:ollennu:23}
-\gll J\'e\'e\'e ts\`ɔ\'ɔl\`ɔ j\'i Adote.\\
+\gll Jééé ts\`ɔ\'ɔl\`ɔ jí Adote.\\
 \textsc{neg}.\textsc{prt} teacher \textsc{cop} Adote\\
 \glt `The teacher is not Adote.'
 \z
 
 \ea \label{ex:ollennu:24}
-\gll J\'e\'e\'e mi-fɔ-mɔ gbi j\'i wɔ.\\
+\gll Jééé mi-fɔ-mɔ gbi jí wɔ.\\
 \textsc{neg}.\textsc{prt} 1\textsc{sg}-give.birth-\textsc{nom} day \textsc{cop} tomorrow\\
 \glt 	`My birthday is not tomorrow.'/ `Tomorrow is not my birthday.'
 \z
 
-It must be noted that with the possibility of the NPs being interchangeable, such sentences still have the \isi{negative particle} \textit{j\'e\'e\'e} introduced at the initial position of the sentence. For instance (\ref{ex:ollennu:12}) and (\ref{ex:ollennu:13}) above can be negated and the outcome will be (\ref{ex:ollennu:25}) and (\ref{ex:ollennu:26}) below.
+It must be noted that with the possibility of the NPs being interchangeable, such sentences still have the \isi{negative particle} \textit{jééé} introduced at the initial position of the sentence. For instance (\ref{ex:ollennu:12}) and (\ref{ex:ollennu:13}) above can be negated and the outcome will be (\ref{ex:ollennu:25}) and (\ref{ex:ollennu:26}) below.
 
 \ea \label{ex:ollennu:25}
- \gll J\'e\'e\'e Adote j\'i ts\`ɔ\'ɔl\`ɔ. \\
+ \gll Jééé Adote jí ts\`ɔ\'ɔl\`ɔ. \\
 \textsc{neg}.\textsc{prt} Adote \textsc{cop} teacher\\
 \glt `Adote is not a teacher.'
 \z
 
 \ea \label{ex:ollennu:26}
-\gll J\'e\'e\'e wɔ j\'i mi-fɔ-mɔ gb\`i.\\
+\gll Jééé wɔ jí mi-fɔ-mɔ gbì.\\
 \textsc{neg}.\textsc{prt} tomorrow \textsc{cop} 1\textsc{sg}-give.birth-\textsc{nom} day\\
 \glt `Tomorrow is not my birthday.'
 \z
 
 
-The strategy employed in the examples that introduce the negative morpheme \textit{j\'e\'e\'e} is the syntactic strategy. A morpheme is being introduced into the clause to form the negative construction. It could be said that the negative form of \isi{copula} verb \textit{j\'e\'e\'e} plus the \isi{copula} verb \textit{ji} is found in the construction. This is the reason why it has been referred to as a \isi{negative particle} in \ili{Ga} literature. \ili{Dangme}, a very closely related language, has allomorphs of the negative morpheme as noted by \citet{caesar2012} but there are no allomorphs of the \textit{j\'e\'e\'e} \isi{negative particle} in \ili{Ga}.
+The strategy employed in the examples that introduce the negative morpheme \textit{jééé} is the syntactic strategy. A morpheme is being introduced into the clause to form the negative construction. It could be said that the negative form of \isi{copula} verb \textit{jééé} plus the \isi{copula} verb \textit{ji} is found in the construction. This is the reason why it has been referred to as a \isi{negative particle} in \ili{Ga} literature. \ili{Dangme}, a very closely related language, has allomorphs of the negative morpheme as noted by \citet{caesar2012} but there are no allomorphs of the \textit{jééé} \isi{negative particle} in \ili{Ga}.
 
 \subsection{\label{sec:ollennu:2.3} SVO clauses}
 
@@ -329,21 +340,21 @@ When the sentence is declarative and in the following tense/\isi{aspect}: presen
 
 \ea \label{ex:ollennu:28} 
 Aorist:\\
-\gll Tete b\'i Aku s\`an\`e.\\
+\gll Tete bí Aku sànè.\\
 Tete ask.\textsc{aor} Aku matter\\
 \glt `Tete asked Aku about the issue.'
 \z
 
 \ea \label{ex:ollennu:29}
 Progressive: \\
-\gll Tete m\`i\`i-b\'i Aku s\`an\`e.\\
+\gll Tete mìì-bí Aku sànè.\\
 Tete \textsc{prog}-ask Aku matter\\
 \glt `Tete is asking Aku about the matter/issue'
 \z
 
 \ea \label{ex:ollennu:30}
 Habitual: \\
-\gll Tete b\'i-ɔ Aku s\`an\`e.\\
+\gll Tete bí-ɔ Aku sànè.\\
 Tete ask-\textsc{hab} Aku matter\\
 \glt`Tete asks Aku about the matter/issue.'
 \z
@@ -351,121 +362,122 @@ Tete ask-\textsc{hab} Aku matter\\
 The negative form will be:
 
 \ea \label{ex:ollennu:31}
-Tete b\'i-\'i\'i Aku s\`an\`e.\\
+Tete bí-íí Aku sànè.\\
 Tete ask-\textsc{neg} Aku matter
 \glt `Tete did not ask Aku about the matter.'
 \z
 
 It can be concluded that in terms of \isi{negation}, there is no distinction between progressive, habitual, and aorist in \ili{Ga}. The distinctions get lost as the \isi{negation} marking on the verb is the same for time sequences.
 
-A sentence in the future is as follows:\\\\
-\begin{minipage}{.5\textwidth}
+A sentence in the future is as follows:\\
+
 
 \ea Affirmative verb type 1 \label{ex:ollennu:32}\\
-\gll Tete \`a\'a-b\'i l\'ɛ.\\
+\gll Tete àá-bí l\'ɛ.\\
 Tete \textsc{fut}-ask 3\textsc{sg} \\
 \glt `Tete will ask him/her.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 
 \ea Affirmative verb type 2
 \label{ex:ollennu:33}\\
-\gll Tete b\`a\'a-k\`e nii.\\
+\gll Tete bàá-kè nii.\\
 Tete \textsc{fut}-give thing\\
 \glt `Tete will give (a gift).'\\
 \z
-\end{minipage}
-\-\vspace{1em}\-
-\begin{minipage}{.5\textwidth}
+
+
+
 \ea Negative verb type 1 \\ \label{ex:ollennu:34}
-\gll Tete b\'i-ŋŋ l\'ɛ.\\
+\gll Tete bí-ŋŋ l\'ɛ.\\
 Tete ask-\textsc{neg} 3\textsc{sg}\\
 \glt `Tete will not ask him.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 \ea Negative verb type 1 \\ \label{ex:ollennu:35}
-\gll Tete \'e-$^{!}$k\'e-ŋ n\'i\'i.\\
+\gll Tete é-$^{!}$ké-ŋ níí.\\
 Tete \textsc{neg}-give-\textsc{neg} thing\\
 \glt `Tete will not give (a gift).'\\
 \z
-\end{minipage}
+
 From the above example (\ref{ex:ollennu:34}), it can be observed that the suffix \textit{-ŋ} is used to negate the verb with a high \isi{tone} and a discontinuous morpheme \textit{e-ŋ} is used for the low \isi{tone} verb in (\ref{ex:ollennu:35}).
 
 \isi{Negation} of the \isi{perfect} proceeds as follows in (\ref{ex:ollennu:36}-\ref{ex:ollennu:37}):\\
-\begin{minipage}{.5\textwidth}
+
 \ea Affirmative verb type 1 \\\label{ex:ollennu:36}
-\gll Tete \'e-$^{!}$b\'i $^{!}$m\'i.\\
+\gll Tete é-$^{!}$bí $^{!}$mí.\\
 Tete \textsc{perf}-ask 1\textsc{sg}\\
 \glt `Tete did not ask me.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 \ea Affirmative verb type 2 \\ \label{ex:ollennu:37}
-\gll Tete \'e-k\`e m\`i w\`ol\`o.\\
+\gll Tete é-kè mì wòlò.\\
 Tete \textsc{perf}-give 1\textsc{sg} book\\
 \glt `Tete has gifted me a book.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 \ea Negative verb type 1 \\ \label{ex:ollennu:38}
-\gll Tete b\'i-k\`o m\`i.\\
+\gll Tete bí-kò mì.\\
 Tete ask-\textsc{neg} 1\textsc{sg}\\
 \glt `Tete has asked me.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 \ea Negative verb type 2 \\  \label{ex:ollennu:39}
- \gll Tete \'e-$^{!}$k\'e-k\`o m\`i.\\
+ \gll Tete é-$^{!}$ké-kò mì.\\
 Tete \textsc{neg}-give-\textsc{neg} 1\textsc{sg}\\
 \glt `Tete did not present to me...'
 \z
-\end{minipage}\\
+ 
 The analysis shows that the \isi{perfect} takes a suffix \textit{-ko} which attaches to the verb for verb type 1 in (\ref{ex:ollennu:38}) and a circumfix \textit{e-ko} for verb type 2 in (\ref{ex:ollennu:39}).
 
 In negating the subjunctive the negative prefix \textit{-ka} is attached to the verb types. It should be noted that the subjunctive already has a prefix \textit{a-} to indicate that mood.
 
 Let’s consider the subjunctive. The sentence will be negated as follows:\\
-\begin{minipage}{.5\textwidth}
+
 
 
 \ea  Verb type 1 \\\label{ex:ollennu:40}
-\gll Tete \'a-k\'a-b\'i.\\
+\gll Tete á-ká-bí.\\
 Tete \textsc{sbjv}-\textsc{neg}-ask\\
 \glt `Tete should not ask.'
 \z
-\end{minipage}
 
-\begin{minipage}{.5\textwidth}
+
+
 
 
 
 \ea  Verb type 2 \\\label{ex:ollennu:41}
-\gll Tete \'a-k\'a-k\`e…...\\
+\gll Tete á-ká-kè…...\\
 Tete \textsc{sbjv}-\textsc{neg}-present\\
 \glt `Tete should not present.....'
 \z
-\end{minipage}
 
-The imperative can also be negated by attaching the prefix \textit{-k\'a\'a} to the verb in the singular and the prefix \textit{–k\'a} for the plural imperative. It must be noted that the singular imperative is a high floating \isi{tone}. Below are examples in (\ref{ex:ollennu:42}a-d) and (\ref{ex:ollennu:43}) to illustrate this fact.
+
+The imperative can also be negated by attaching the prefix \textit{-káá} to the verb in the singular and the prefix \textit{–ká} for the plural imperative. It must be noted that the singular imperative is a high floating \isi{tone}. Below are examples in (\ref{ex:ollennu:42}a--d and (\ref{ex:ollennu:43}) to illustrate this fact.
 
 \ea \label{ex:ollennu:42}
-
 Singular imperative affirmative:\\
-a) \textit{W\'ɔ} \enspace  `You(\textsc{sg}) sleep.' \\
-b) \textit{Y\'e} \enspace `You (\textsc{sg}) eat.'\\\\
+\ea \textit{W\'ɔ}   `You(\textsc{sg}) sleep.' \\
+\ex \textit{Yé}  `You (\textsc{sg}) eat.'\\
 Singular imperative negative:\\
-c) \textit{K\`a\'aw\'ɔ}. \enspace `Do not sleep.' \\
-d) \textit{K\`a\'ay\'e.} \enspace `Do not eat.'
+\ex \textit{Kàáw\'ɔ}.  `Do not sleep.' \\
+\ex \textit{Kàáyé.}  `Do not eat.'
+\z
 \z
 
 \ea \label{ex:ollennu:43} Plural imperative affirmative:\\
-a) \textit{Ny\'ɛ-wɔ-a.} \enspace `You(\textsc{pl}) sleep.'\\
-b)  \textit{Ny\'ɛ-y\`e-a.} \enspace `You(\textsc{pl}) eat.'\\\\
+\ea \textit{Ny\'ɛ-wɔ-a.}  `You(\textsc{pl}) sleep.'\\
+\ex  \textit{Ny\'ɛ-yè-a.}  `You(\textsc{pl}) eat.'\\
 Plural imperative negative:\\
-c) \textit{Ny\'ɛ-k\'a-wɔ-a.} \enspace `You(\textsc{pl}) do not sleep.' \\
-d) \textit{Ny\'ɛ-k\'a-y\`e-a.} \enspace `You(\textsc{pl}) do not eat.'
+\ex \textit{Ny\'ɛ-ká-wɔ-a.}  `You(\textsc{pl}) do not sleep.' \\
+\ex \textit{Ny\'ɛ-ká-yè-a.}  `You(\textsc{pl}) do not eat.'
+\z
 \z
 
 From the above discussion, the SVO clause is negated in accordance with the verb type and tense of that verb. In \ili{Ga}, \isi{negation} employs prefixes and circumfixes. The verb type 1 employs prefixes while verb type 2 negates with circumfixes, with the exception of the subjunctive and imperative.
@@ -474,42 +486,45 @@ From the above discussion, the SVO clause is negated in accordance with the verb
 
 Sometimes sentences are negated by the use of replacive negative words. This was discussed by \citet[23]{caesar2012} for \ili{Dangme} (lexical \isi{negation}). This normally happens in \ili{Ga} when the verb \textit{yɛ} `to have' is used. Here, the verb is totally replaced with a \isi{negative verb} \textit{bɛ} `not'. This is exemplified in (\ref{ex:ollennu:44}) and (\ref{ex:ollennu:45}).
 
-\begin{minipage}{.5\textwidth}
+
 \ea \label{ex:ollennu:44}
-\gll Ajele yɛ sh\`ik\'a.\\
+\gll Ajele yɛ shìká.\\
 Ajele has money\\
 \glt `Ajele has money.'
 \z
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+
+
 \ea \label{ex:ollennu:45}
-\gll Ajele bɛ sh\'ik\'a.\\
+\gll Ajele bɛ shíká.\\
 Ajele not money\\
 \glt`Ajele has no money.'
 \z
-\end{minipage}
+
 
 In (\ref{ex:ollennu:45}) the \isi{negative verb} \textit{bɛ} is used for \isi{negation} and the verb \textit{yɛ} does not occur in the negative construction.
 
 \section{\label{sec:ollennu:3} Summary and conclusion}
 
-In summary, \ili{Ga} clauses were examined and classified into three namely the NP NP \isi{clause type}, the \isi{copula clause} type and the SVO clauses. \isi{Negation} of the NP NP and Copula clauses is done using the syntactic strategy which involves the introduction of the \isi{negative particle} \textit{j\'e\'e\'e} at initial or middle position in the clauses. The following were noted for the SVO clause:
+In summary, \ili{Ga} clauses were examined and classified into three namely the NP NP \isi{clause type}, the \isi{copula clause} type and the SVO clauses. \isi{Negation} of the NP NP and Copula clauses is done using the syntactic strategy which involves the introduction of the \isi{negative particle} \textit{jééé} at initial or middle position in the clauses. The following were noted for the SVO clause:
 \begin{itemize}
 \item \ili{Ga} SVO clauses can be negated morphologically. The \isi{negation} depends on the verb type in the sentence vis-a-vis the tense of the verb. The habitual, progressive as well as the past and present tenses were negated with the suffix -VV for verb type 1 and \textit{e}-VV for verb type 2.
 
-\item The \isi{perfect} \isi{negation} for verb type 1 is a suffix \textit{-k\`o}. A circumfix \textit{e-k\`o} is used for verb type 2.
+\item The \isi{perfect} \isi{negation} for verb type 1 is a suffix \textit{-kò}. A circumfix \textit{e-kò} is used for verb type 2.
 
 \item Future \isi{negation} is achieved for verb type 1 with a suffix \textit{-ŋ}. For verb type 2, the circumfix \textit{e-ŋ} is used.
 
-\item In the imperative, verb type 1 and 2 both use the prefix \textit{k\`a\'a-} and \textit{k\'a-} for singular and plural imperatives respectively.
+\item In the imperative, verb type 1 and 2 both use the prefix \textit{kàá-} and \textit{ká-} for singular and plural imperatives respectively.
 
-\item The subjunctive \isi{negation} uses the \textit{k\'a-} prefix for both verb types.
+\item The subjunctive \isi{negation} uses the \textit{ká-} prefix for both verb types.
 \end{itemize}
 
 \subsection{\label{sec:ollennu:3.1} Conclusion}
 
-In conclusion, the paper examined the ways of forming \isi{negation} in \ili{Ga}. The clause types were discussed and each type was examined to find how they can be negated. From the study it came to light that non-verbal sentences (NP and Copula types) are negated syntactically by introducing \textit{j\'e\'e\'e}, a \isi{negative particle}. SVO type of sentences is negated morphologically. The \isi{negation} is marked overtly on the verb in the sentences using affixes. Verb type 1 uses prefixes generally for \isi{negation} and verb type 2 attaches circumfixes. However it was noted that there are instances where the verb form changed totally when negated. Finally, \ili{Ga} uses both syntactic and morphological strategies to form \isi{negation}. This is among the strategies proposed by \citet{dahl1979typology} which serves as a stepping stone to examining \isi{negation} further in \ili{Kwa} languages as there may be an overlap. The discussion of the \isi{negation} coding in \ili{Ga} using Dahl’s typology is an attempt to examine the strategies that are used to code \isi{negation}. The researcher believes that it can also be placed into \citet{Miestamo2007} categorization of \isi{negation} into standard and \isi{non-standard negation}. This will be left for future research as Dahl‘s typology may not cater for all the issues.
+In conclusion, the paper examined the ways of forming \isi{negation} in \ili{Ga}. The clause types were discussed and each type was examined to find how they can be negated. From the study it came to light that non-verbal sentences (NP and Copula types) are negated syntactically by introducing \textit{jééé}, a \isi{negative particle}. SVO type of sentences is negated morphologically. The \isi{negation} is marked overtly on the verb in the sentences using affixes. Verb type 1 uses prefixes generally for \isi{negation} and verb type 2 attaches circumfixes. However it was noted that there are instances where the verb form changed totally when negated. Finally, \ili{Ga} uses both syntactic and morphological strategies to form \isi{negation}. This is among the strategies proposed by \citet{dahl1979typology} which serves as a stepping stone to examining \isi{negation} further in \ili{Kwa} languages as there may be an overlap. The discussion of the \isi{negation} coding in \ili{Ga} using Dahl’s typology is an attempt to examine the strategies that are used to code \isi{negation}. The researcher believes that it can also be placed into \citet{Miestamo2007} categorization of \isi{negation} into standard and \isi{non-standard negation}. This will be left for future research as Dahl‘s typology may not cater for all the issues.
 
+\section*{Acknowledgments}
+I wish to express my heartfelt thanks to the Vice-Chancellor of the University of Education, Winneba for making it possible for me to access sponsorship and also granting me permission to attend the ACAL 44 conference in Washington DC. And to Prof. Essilfie and my colleagues: Dr Samuel Atintono, Dr Clement Appah, Mrs Franscica Adjei, and Mr Emmanuel Adjei for your valuable contributions helped me to improve this paper.
+ 
 \section*{Abbreviations}
 
 \begin{tabularx}{.45\textwidth}{lQ}
@@ -539,9 +554,6 @@ In conclusion, the paper examined the ways of forming \isi{negation} in \ili{Ga}
 \end{tabularx}
 
 
-\section*{Acknowledgments}
-I wish to express my heartfelt thanks to the Vice-Chancellor of the University of Education, Winneba for making it possible for me to access sponsorship and also granting me permission to attend the ACAL 44 conference in Washington DC. And to Prof. Essilfie and my colleagues: Dr Samuel Atintono, Dr Clement Appah, Mrs Franscica Adjei, and Mr Emmanuel Adjei for your valuable contributions helped me to improve this paper.
- 
 
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
