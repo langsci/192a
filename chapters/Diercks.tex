@@ -1,28 +1,24 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 
 \title{Upward-oriented complementizer agreement with subjects and objects in Kipsigis} 
-\shorttitlerunninghead{Upward-oriented complementizer agreement in Kipsigis}
 \author{Michael Diercks\affiliation{Pomona College}\lastand 
  Meghana Rao\affiliation{Pomona College}
 }
-
-% \chapterDOI{} %will be filled in at production
-% \epigram{}
 
 \abstract{
 In Kipsigis (Nilotic, Kenya), declarative-embedding complementizers can agree with both main-clause subjects (Subj-CA) and main-clause objects (Obj-CA). Subj-CA agrees with the closest super-ordinate subject (even in the context of intervening objects), cannot agree with non-subjects or embedded subjects, and yields an interpretation where the embedded clause is the main point of the utterance. Obj-CA can only target main-clause objects and can only occur on a complementizer already bearing Subj-CA; Obj-CA contributes a verum focus reading to the clause. The paper briefly considers the analytical implications of these patterns.
 }
 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[20]
+}{}
+
+
 \begin{document} 
+\shorttitlerunninghead{Upward-oriented complementizer agreement in Kipsigis}
 
 \maketitle
 
@@ -425,6 +421,7 @@ We posit that the most appropriate description of the interpretive effect of \il
 The agreeing complementizer is possible when the embedded CP is the main point of the utterance (MPU).
 \z
 
+\largerpage[-2]
 A diagnostic for MPU is offered by \citep[1036]{Simons:2007}, in which a yes/no question is answered by   information that is presented in an \isi{embedded clause}, thus ensuring that the content of the \isi{embedded clause} is the MPU. The hypothesis in (\ref{MPU Hypothesis}) makes clear predictions in relation to this diagnostic: the agreeing  complementizer should be felicitous \textendash and \textit{kɔlɛ} infelicitous \textendash in those cases where the \isi{embedded clause} contains the MPU; this is confirmed in (\ref{MPU Examples}):\footnote{In each of these cases consultants could find contexts in which the non-agreeing complementizer was allowed, usually requiring that the information in the \isi{embedded clause} was being recalled from an earlier interaction. These, of course, are the exceptions that prove the rule.}  
 
 \ea \label{MPU Examples} 
@@ -459,7 +456,7 @@ A diagnostic for MPU is offered by \citep[1036]{Simons:2007}, in which a yes/no 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Object Oriented CA
-\section{Suffixed Complementizer Agreement (Obj-CA)} \label{ObjCASect}
+\section{Suffixed complementizer agreement (Obj-CA)} \label{ObjCASect}
 
 %\subsection{Suffixed Complementizer Agreement Forms (Obj-CA)} 
 
@@ -474,9 +471,9 @@ In addition to the prefixed Subj-CA pattern discussed above, \ili{Kipsigis} decl
   \lsptoprule
    {} & \textsc{\textsc{sg}} & \textsc{pl} \\ 
   \midrule
-   \textbf{1st} & -lɛ-ndʒ-\textbf{ɑn} & -lɛ-ndʒ-\textbf{ɛtʃ} \\
-   \textbf{2nd} & -lɛ-ndʒ-\textbf{in} & -lɛ-ndʒ-\textbf{ɔɔɣ} \\
-   \textbf{3rd} & -lɛ-ndʒ-\textbf{i} & -lɛ-ndʒ-\textbf{i} \\
+    {1st} & -lɛ-ndʒ-\textbf{ɑn} & -lɛ-ndʒ-\textbf{ɛtʃ} \\
+    {2nd} & -lɛ-ndʒ-\textbf{in} & -lɛ-ndʒ-\textbf{ɔɔɣ} \\
+    {3rd} & -lɛ-ndʒ-\textbf{i} & -lɛ-ndʒ-\textbf{i} \\
   \lspbottomrule
  \end{tabular}
 \end{table}
@@ -640,14 +637,14 @@ Now consider the following sentences in \ili{Kipsigis}, differing only in the pr
 \ex \label{Obj-CA 1}
 \gll ko-ɑ-mwaa-un \circled{ɑ-lɛ} ko-\O-ɾuuja tuɣa \\
 \textsc{pst}-1\textsc{sg}-tell-2\textsc{sg}.\textsc{obj} 1\textsc{sg-c} \textsc{pst}-3-sleep cows \\
-\hfill \textbf{No Obj-CA}
+\hfill  {No Obj-CA}
 %\jambox{ \textbf{No Obj-CA} }
 \glt `I told you that the cows slept.'
 	
 \ex \label{Obj-CA 2}
 \gll ko-ɑ-mwaa-un \circled{ɑ-lɛ-ndʒin} ko-\O-ɾuuja tuɣa \\
 \textsc{pst}-1\textsc{sg}-tell-2\textsc{sg}.\textsc{obj} 1\textsc{sg-c-}2\textsc{sg}.\textsc{obj} \textsc{pst}-3-sleep cows \\
-\hfill \textbf{Obj-CA}
+\hfill  {Obj-CA}
 %\jambox{ \textbf{Obj-CA} }
 \glt `I told you that the cows slept.'
 
@@ -744,7 +741,7 @@ This paper describes an upward-oriented \isi{complementizer agreement} relation 
 \section*{Acknowledgements}
 First and foremost we would like to thank Robert Langat and Sammy Kiprono Bor for their hard work on this project, and for sharing their language with us. We hope we have done it justice. The authors would like to thank Masha Polinsky, Jessica Coon, and especially Lauren Eby Clemens for their guidance in learning about V1 languages over the years. Rodrigo Ranero and Claire Halpert were very helpful sounding boards at various points, and the audience at the ACAL poster session was exceedingly generous in offering their questions and critiques, which resulted in a much more thorough description of the constructions we have examined here. All remaining errors are our own. Both authors collected data for the project and worked on the empirical and theoretical questions together. The first complete written version of this work was the second author's undergraduate thesis at Pomona College, which was revised for publication by the first author. 
 
-\newpage
+ 
 
 \section*{Abbreviations}
  
@@ -766,7 +763,7 @@ First and foremost we would like to thank Robert Langat and Sammy Kiprono Bor fo
    \textsc{obj} & Object \\
    Obj-CA & Object-Oriented (Suffixed) Complementizer Agreement \\
    \textsc{pl} & plural \\
-   \textsc{pst} & \isi{past tense} \\
+   \textsc{pst} &  {past tense} \\
    \textsc{sg} & singular \\
    \textsc{subj} & Subject \\
    Subj-CA & Subject-Oriented (Prefixed) Complementizer Agreement \\

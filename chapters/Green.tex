@@ -1,25 +1,4 @@
-\documentclass[output=paper,modfonts,nonflat,
-% colorlinks, citecolor=brown,
-% draftmode,
-hidelinks
-]{langsci/langscibook} 
-
-\IfFileExists{../localpackages.tex}{%
-  \setcounter{chapter}{22}
-  \input{../localpackages}
-  \input{../localcommands}
-  \bibliography{../localbibliography} 
-  \papernote{\scriptsize\normalfont
-  Christopher R. Green \&  Evan Jones.
-  Notes on the morphology of Marka (Af-Ashraaf). 
-  To appear in: 
-  Emily Clem,   Peter Jenks \& Hannah Sande.
-  Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
-  Berlin: Language Science Press. [preliminary page numbering]
-  }
-  \pagenumbering{roman}
-}{}
-
+\documentclass[output=paper,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 
 \author{Christopher R. Green\affiliation{Syracuse University} 
 \lastand Evan Jones\affiliation{University of Maryland}  
@@ -27,6 +6,13 @@ hidelinks
 \title{Notes on the morphology of Marka (Af-Ashraaf)}  
 \abstract{This paper provides an overview of selected aspects of the nominal, pronominal, and verbal morphology of the Marka (Merca) dialect of Af-Ashraaf, a Cushitic language variety spoken primarily in the city of Merca in southern Somalia, as well as by several diaspora communities around the world, and in particular, in the United States. Marka is interesting to us for a variety of reasons, not the least of which is the general dearth of descriptive work on the language in comparison to two of its closest relatives, Somali and Maay. While many details of the structure of Somali are fairly well established (e.g., \citealt{Bell1953,Saeed1999}), and those of Maay are the subject of several recent works (e.g., \citealt{Paster2010,PasterMaayGender}), the various ways in which Marka relates to and/or differs from these languages, are yet poorly understood. Our goal in this paper is to begin to remedy this situation, beginning with a comparison of selected morphological characteristics across the three languages.}
 
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[7]
+}{}
 
 \begin{document}
 \maketitle
