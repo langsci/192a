@@ -1,4 +1,4 @@
-\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 
 \author{Samson Lotven\affiliation{Indiana University Bloomington}\lastand Kelly Berkson\affiliation{Indiana University Bloomington} }
 
@@ -57,11 +57,14 @@ The remainder of the paper reads as follows. \sectref{sec:lotven:2} provides rel
 Previous research indicates that voiced obstruents—and sonorants, albeit less commonly—can act as depressor consonants (\citealt{Ohala1973}; \citealt{Bradshaw1999}; \citealt{Tang2008}), meaning that they can trigger lowering (or depression) of \isi{f0} in adjacent vowels. Relevant for this discussion is the vowel immediately following a \isi{depressor consonant} onset. Depressor effects fall into two broad categories. F0 \isi{register} effects—schematized below in \figref{sec:lotven:1}a—are those that perseverate across the entire vowel, as in \ili{Japanese} \citep{Oglesbee2008}. F0 contour effects, schematized in \figref{sec:lotven:1}b, are localized to the left edge of the vowel, following the consonant constriction release. This results in a rising \isi{pitch pattern}, as in \ili{English} (\citealt{Lea1973}; \citealt{Oglesbee2008}). 
 
 
-\begin{figure} 
-\todo[inline]{Crop file and use subfigure}
-
-\includegraphics[width=\textwidth]{figures/fig-lotven-1.png}  
-\caption{\label{fig:lotven:samson:1} Schematized representation of f0 register depressor effect (1a, in the left panel) and f0 contour depressor effect (1b, in the right panel). T represents a voiceless obstruent and D represents a voiced obstruent}
+\begin{figure}  
+\subfigure[Register depressor effect]{
+\includegraphics[width=.45\textwidth]{figures/fig-lotven-1a.png}  
+}
+\subfigure[Contour depressor effect]{
+\includegraphics[width=.45\textwidth]{figures/fig-lotven-1b.png}  
+}
+\caption{\label{fig:lotven:samson:1} Schematized representations of f0   depressor effects. T represents a voiceless obstruent and D represents a voiced obstruent}
 \end{figure}
 
 
@@ -89,6 +92,7 @@ These distributional restrictions hold true synchronically, but it is also worth
 
 \ili{Ewe} is known for its typologically irregular treatment of sonorants as depressor consonants in some phonological and morphophonological contexts, earning it a slot in \posscitet{Bradshaw1999} study of depressor effects under the section detailing “problem cases”. Bradshaw analyzes the depressor effect as an interaction between L \isi{tone} and the privative feature [L/voice]. For Bradshaw, this feature is generally a property of voiced obstruents and is underspecified for sonorants, but she suggests that languages like Ewe reveal the [L/voice] feature specification in sonorants may vary from language to language \citep[169-170]{Bradshaw1999}. As discussed in \sectref{sec:lotven:4}, \ili{Gengbe} does exhibit interactions between sonorants and a rising \isi{pitch pattern}, like \ili{Ewe}. Although the details of the pattern differ from \ili{Ewe}, under Bradshaw's analysis this would suggest that sonorants in \ili{Gengbe}, as in \ili{Ewe}, are specified for [L/voice]. Note that another element of Bradshaw’s analysis is that the feature [L/voice] can render an onset transparent to L \isi{tone} spreading and may also serve as the source for the L \isi{tone} that spreads onto neighboring vowels. This is not investigated here but, given the other similarities between \ili{Ewe} and \ili{Gengbe}, it should prove valuable to investigate in the future.
 
+\largerpage
 In this paper we use the term “\isi{depressor consonant}” as a cover term for the onsets that participate in the various pitch-lowering processes found in \ili{Gengbe}—that is, for both voiced obstruents and for sonorants, in instances where they cause either \isi{register} or contour effects. Some of the effects outlined may be indicative of a phonologization process—in particular, those contexts where an underlying /H/ \isi{tone} mandatorily surfaces as [LH]. These should prove valuable in future discussion of how phonetic effects may become phonologized, but the goal here is to present a clear overview of the depressor effects found in nominal and verbal domains. We turn now to a review of methods and aims.
 
 \section{Methods and aims}\label{sec:lotven:3}
@@ -134,9 +138,31 @@ There are several things to note about the phonetic realization of H and LH as i
 
 
 \begin{figure} 
-\todo[inline]{use pgf barplot}
-\includegraphics[width=\textwidth]{figures/Lotven-img3.png}
-\caption{\label{fig:lotven:3} Average duration of vowels after voiced (black) and voiceless (gray) obstruents in nouns. Underlying H is longer after voiced than after voiceless obstruents. “T” represents a voiceless obstruent and “D” represents a voiced obstruent.}
+% \todo[inline]{use pgf barplot}
+% \includegraphics[width=\textwidth]{figures/Lotven-img3.png}
+    \begin{tikzpicture}
+        \begin{axis}[  
+            ylabel={},
+            xlabel={Vowel duration (in ms)}, 
+            symbolic y coords={/H/,/L/},
+            ytick=data,
+            axis lines*=left,  
+            xmin=0,
+            xbar, 
+            nodes near coords,
+            nodes near coords align={horizontal},
+            axis on top,    
+            reverse legend,            
+            enlarge y limits  = .4, 
+            height=.3\textwidth,
+            width = \textwidth
+        ]    
+        \addplot+[lsDarkBlue!80!black,fill=lsDarkBlue] coordinates {(232,/H/) (158,/L/)};
+        \addplot+[lsMidBlue!80!black,fill=lsMidBlue] coordinates {(168,/H/) (152,/L/)};
+        \legend{after D, after T}
+        \end{axis}
+    \end{tikzpicture}
+\caption{\label{fig:lotven:3} Average duration of vowels after voiced (dark) and voiceless (light) obstruents in nouns. Underlying H is longer after voiced than after voiceless obstruents. “T” represents a voiceless obstruent and “D” represents a voiced obstruent.}
 \end{figure}
 
 
@@ -145,16 +171,37 @@ We can also look at the time-normalized \isi{f0} tracks of these vowels, shown i
 Means and standard deviations are included in \tabref{tab:lotven:2}; commentary follows. The L \isi{tone} difference illustrated in \figref{sec:lotven:4} conforms to \posscitet{Ansre1961} analysis of \ili{Ewe}, which claims that there are two realizations of the Non-High toneme: Low after a \isi{voiced obstruent} and Mid after a voiceless obstruent. But is this a phonetic effect as discussed above for \ili{Japanese} \citep{Oglesbee2008} or is this a phonological effect as Ansre proposes for \ili{Ewe}? Unlike \ili{Ewe}, neither previous \ili{Gengbe} literature nor our elicitation has provided evidence for Mid tones that are not phonologically conditioned, nor have we discovered lexical Mid tones or floating morphological Mid tones in \ili{Gengbe}. The appearance of the phonetically lower Low after a \isi{voiced obstruent}, in other words, is regular and predictable in \ili{Gengbe}, whereas that is not always the case in \ili{Ewe}. For the time being, then, we analyze this \isi{register} lowering as a purely phonetic effect.
 
 
-\begin{figure}
-\todo[inline]{crop files to remove redundant information}
+\begin{figure} 
 	\includegraphics[width=\textwidth]{figures/fig-lotven-4.png}
 	\caption{\label{fig:lotven:4} Time-normalized f0 tracks of High (dotted lines) and Low (solid lines) tones after voiced (black lines) and voiceless (gray lines) obstruents in nouns. H follows voiceless obstruents and LH follows voiced obstruents.}
 \end{figure}
 
 
-\begin{table} 
-\todo[inline]{redo as table}
-	\includegraphics[width=\textwidth]{figures/tab-lotven-2.png}
+\begin{table}  
+\fittable{
+\begin{tabular}{l l rrrrrrrrrr}
+\lsptoprule
+          & & 10\%& 20\%& 30\%& 40\%& 50\%& 60\%& 70\%& 80\%& 90\%& 100\%\\
+\midrule           
+H after T & M  & 170 & 167 & 167 & 167 & 166 & 163 & 161 & 160 & 160 & 160 \\
+          & SD & 10 & 11 & 14 & 18 & 19 & 18 & 17 & 17 & 17 & 17 \\
+          
+\tablevspace
+H after D & M  & 118 & 121 & 128 & 137 & 145 & 151 & 153 & 154 & 154 & 154 \\
+          & SD &  20 & 19 & 19 & 19 & 18 & 16 & 16 & 17 & 18 & 18 \\
+
+\tablevspace
+L after T & M  & 131 & 127 & 125 & 123 & 121 & 119 & 115& 114 & 114 & 114 \\
+          & SD & 27 & 32 & 37 & 41 & 44 & 42 & 34 & 33 & 33 & 33 \\
+
+\tablevspace
+L after D & M  & 108 & 108 & 106 & 104 & 102 & 100 & 99 & 98 & 97 & 97 \\
+          & SD & 6 & 7 &  8 & 8 & 8 & 8 & 9 & 10 & 11 & 11\\
+\lspbottomrule
+\end{tabular}
+}
+
+% 	\includegraphics[width=\textwidth]{figures/tab-lotven-2.png}
 	\caption{Means and standard deviations (in Hz) for the ten timepoints included in time-normalized f0 tracks shown in \figref{fig:lotven:4}.}
 	\label{tab:lotven:2}
 \end{table}
@@ -163,9 +210,8 @@ Means and standard deviations are included in \tabref{tab:lotven:2}; commentary 
 As a side note, \isi{f0} \isi{register} lowering is not limited to L \isi{tone} contexts. As discussed more thoroughly in \figref{sec:lotven:4.2}, there are contexts in \ili{Gengbe} where High \isi{tone} is realized as H rather than as LH after voiced obstruents. In these instances, shown in \figref{sec:lotven:5}, we again see what looks like \isi{register} lowering of \isi{f0}. High \isi{tone} is realized with higher \isi{f0} after voiceless obstruents than after voiced obstruents. Note here that the pitch range for H \isi{tone} in \figref{sec:lotven:5} is comparable to the pitch range for L \isi{tone} in \figref{sec:lotven:4} above, but this is most likely a result of final lowering—a topic to be investigated in future work. 
 
   
-\begin{figure}
-\todo[inline]{crop files to remove redundant information}
-\includegraphics[width=\textwidth]{figures/Lotven-img6.png}
+\begin{figure} 
+\includegraphics[height=.4\textheight]{figures/Lotven-img6.png}
 \caption{\label{fig:lotven:5} Time-normalized f0 tracks of level High tones after voiced (black) and voiceless (gray) obstruents in verbs. H is lower following voiced obstruents.}
 \end{figure}
 
@@ -310,7 +356,7 @@ The same observations made in (\ref{ex:lotven:3}–\ref{ex:lotven:4}) hold for o
 
 \citet{Bradshaw1999} analyzes the singular imperative in \ili{Ewe} as formed by a prefixed L \isi{tone} morpheme that docks with the vowel only when the onset is voiced. Since our data suggests the trigger of LH is present in citation form as well as the singular imperative, we describe the phenomenon in terms of an initial syntactic boundary (possibly an initial L boundary \isi{tone}) rather than a morphological affix. It is possible still that the L \isi{tone} is a morphological affix, although with the two situations described (as well as reduplication data below), we posit a single positional explanation rather than three independent L \isi{tone} morphemes. 
 
-When a verb is reduplicated, the logical object, normally following the bare verb, is moved to precede the reduplicated verb. Where there is such pre-verbal information, there is no depressor effect, as in \REF{ex:lotven:7}, and where there is no preverbal material, we again see the depressor effect, as in \REF{ex:lotven:8}. Note that sonorants are still considered depressors here despite the fact that in (\ref{ex:lotven:7}-\ref{ex:lotven:8}) we are deriving nouns from verbal roots. If we are to assume that category-changing derivation processes are done in the lexicon, this introduces an as-yet unsolved mystery as to the nature of the relevant property that determines which set of onsets counts as depressors. For now we can tentatively define the distinction as derivation from underlying nominal or verbal roots. 
+When a verb is reduplicated, the logical object, normally following the bare verb, is moved to precede the reduplicated verb. Where there is such pre-verbal information, there is no depressor effect, as in \REF{ex:lotven:7}, and where there is no preverbal material, we again see the depressor effect, as in \REF{ex:lotven:8}. Note that sonorants are still considered depressors here despite the fact that in (\ref{ex:lotven:7}--\ref{ex:lotven:8}) we are deriving nouns from verbal roots. If we are to assume that category-changing derivation processes are done in the lexicon, this introduces an as-yet unsolved mystery as to the nature of the relevant property that determines which set of onsets counts as depressors. For now we can tentatively define the distinction as derivation from underlying nominal or verbal roots. 
 \\
 \ea\label{ex:lotven:7}Reduplication (pre-posed object)
 \ea\label{ex:lotven:7a}
@@ -347,7 +393,7 @@ When a verb is reduplicated, the logical object, normally following the bare ver
 
 We analyze this process in terms of syntax rather than morphology or phonology for the following reasons. As noted before, we do not posit tonal morphology that affects these three processes independently, although we leave open the possibility. We also do not see a clear path to a phonological explanation in terms of (prosodic) word-initial position. If we were to explore this possibility, we would need to describe the verbs in \REF{ex:lotven:3}, \REF{ex:lotven:5}, and \REF{ex:lotven:7} as non-initial. Pronouns in \REF{ex:lotven:3} and \REF{ex:lotven:5} can — and have in the case of \ili{Ewe} \citep{Duthie1996} — been analyzed as clitics, however, full NP subjects also fail to trigger LH \isi{tone} in following predicates, for example \textit{ènɔ\`{} ã\`{}  bé} ‘mother said,’ suggesting that the right environment for LH \isi{tone} in verbs has to do with phrase position (possibly utterance-initial position) rather than word position. As of yet, we leave the term ‘phrase-initial position’ purposefully vague. The importance of syntactic position in \isi{tone} rules is well established \citep{Snider2014}, but we leave the definition of such positioning to future syntactic work.
 
-The data in (\ref{ex:lotven:3}–\ref{ex:lotven:8}) indicate that depressor consonants in the verbal domain include voiced obstruents and sonorants and that the phrase-initial position, rather than a preceding L \isi{tone} vowel, is the trigger for LH \isi{tone}. The data in (\ref{ex:lotven:9}-\ref{ex:lotven:10}) present verbs with initial consonant clusters, using the citation form as illustration, though reduplication and imperative data were also investigated. \REF{ex:lotven:9} reveals that consonant-\isi{liquid} clusters act as depressors, regardless of the identity of C\textsubscript{1}; \REF{ex:lotven:10} reveals that consonant-glide clusters do not. It is again valuable to note that liquids and glides are the only consonants that can serve as C\textsubscript{2} in a consonant cluster in \ili{Gengbe}. The crucial data points here are (\ref{ex:lotven:9}a) where a voiceless onset-\isi{liquid} cluster shows a depressor effect and (\ref{ex:lotven:10}a) where a voiceless onset-glide cluster does not. We resist the urge here to speculate about \isi{syllable structure} based on these verbal data since the difference between C\textsubscript{2} liquids and glides in the verbal domain does not hold in the nominal domain, as illustrated previously in \tabref{tab:lotven:4} (m–n).
+The data in (\ref{ex:lotven:3}–\ref{ex:lotven:8}) indicate that depressor consonants in the verbal domain include voiced obstruents and sonorants and that the phrase-initial position, rather than a preceding L \isi{tone} vowel, is the trigger for LH \isi{tone}. The data in (\ref{ex:lotven:9}--\ref{ex:lotven:10}) present verbs with initial consonant clusters, using the citation form as illustration, though reduplication and imperative data were also investigated. \REF{ex:lotven:9} reveals that consonant-\isi{liquid} clusters act as depressors, regardless of the identity of C\textsubscript{1}; \REF{ex:lotven:10} reveals that consonant-glide clusters do not. It is again valuable to note that liquids and glides are the only consonants that can serve as C\textsubscript{2} in a consonant cluster in \ili{Gengbe}. The crucial data points here are (\ref{ex:lotven:9}a) where a voiceless onset-\isi{liquid} cluster shows a depressor effect and (\ref{ex:lotven:10}a) where a voiceless onset-glide cluster does not. We resist the urge here to speculate about \isi{syllable structure} based on these verbal data since the difference between C\textsubscript{2} liquids and glides in the verbal domain does not hold in the nominal domain, as illustrated previously in \tabref{tab:lotven:4} (m–n).
 
 \ea\label{ex:lotven:9}Consonant-\isi{liquid} clusters in \ili{Gengbe} Verbs
 \ea\label{ex:lotven:9a}
@@ -415,9 +461,11 @@ Although this study is preliminary and there is much work to be done on \ili{Gen
 %Xu, Yi. 2013. ProsodyPro — A Tool for Large-scale Systematic Prosody Analysis. In Proceedings of Tools and Resources for the Analysis of Speech Prosody (TRASP 2013). Aix-en-Provence, France. 7-10.
 
 \section*{Abbreviations}
-\begin{tabularx}{.55\textwidth}{ll}
+\begin{tabularx}{.45\textwidth}{ll}
 1\textsc{sg} & 1st Person Singular Subject \\
 2\textsc{pl} & 2nd Person Plural Subject\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{ll}
 \textsc{def} & Definite Determiner\\
 \textsc{nom} & Nominalizer \\
 \end{tabularx}
