@@ -9,7 +9,7 @@
 \author{Jonathan Pesetsky \affiliation{ILLC, University of Amsterdam} }
 \title{Animacy is a presupposition in Swahili} 
 %\epigram{ }
-\abstract{In this paper, I argue that the phenomenon of Animacy Override in Swahili arises from the interaction between a syntactic structure with multiple nominal heads and general principles of Distributed Morphology.  This syntactic analysis narrows the possibilities for a semantic analysis of animacy, strongly suggesting an approach previously proposed for gender in Romance languages. Specifically, I argue that Swahili has an interpretable +\textsc{Animate} feature which denotes a partial function which is defined only on animate predicates of type $et$ and which denotes the identity function where it is defined.}
+\abstract{In this paper, I argue that the phenomenon of animacy override in Swahili arises from the interaction between a syntactic structure with multiple nominal heads and general principles of distributed morphology.  This syntactic analysis narrows the possibilities for a semantic analysis of animacy, strongly suggesting an approach previously proposed for gender in Romance languages. Specifically, I argue that Swahili has an interpretable +\textsc{animate} feature which denotes a partial function which is defined only on animate predicates of type $et$ and which denotes the identity function where it is defined.}
 \maketitle
 
 \begin{document}
@@ -31,17 +31,17 @@ In this paper, I argue that a puzzle in the distribution of animate morphology i
 }
 \z \z
  
-I call this phenomenon \textit{Animacy Override}, adopting a term from \citet{carstens91} (who used it to refer to a particular explanation for the phenomenon).  Animacy Override occurs obligatorily with all nouns whose referents are prototypically animate.  My analysis of Animacy Override is summarized in \REF{ex:pesetsky:theproposal}.
+I call this phenomenon \textit{animacy override}, adopting a term from \citet{carstens91} (who used it to refer to a particular explanation for the phenomenon).  Animacy override occurs obligatorily with all nouns whose referents are prototypically animate.  My analysis of animacy override is summarized in \REF{ex:pesetsky:theproposal}.
 
  \ea\label{ex:pesetsky:theproposal}
- \ea{Animate morphology is a realization of an interpretable +\textsc{Animate} feature \label{ex:pesetsky:theproposala}}
-\ex{ Other forms of noun morphology are realizations of an uninterpretable \textsc{Gender} feature \label{ex:pesetsky:theproposalb}}
-\ex{ The head hosting +\textsc{Animate} is higher than that hosting \textsc{Gender} \label{ex:pesetsky:theproposalc}}
-\ex{ $+$\textsc{Animate} is interpreted as a presupposition \label{ex:pesetsky:theproposald}} \z \z
+ \ea{Animate morphology is a realization of an interpretable +\textsc{animate} feature \label{ex:pesetsky:theproposala}}
+\ex{ Other forms of noun morphology are realizations of an uninterpretable \textsc{gender} feature \label{ex:pesetsky:theproposalb}}
+\ex{ The head hosting +\textsc{animate} is higher than that hosting \textsc{gender} \label{ex:pesetsky:theproposalc}}
+\ex{ $+$\textsc{animate} is interpreted as a presupposition \label{ex:pesetsky:theproposald}} \z \z
 
-The paper is organized as follows.  In \sectref{snc:pesetsky:snc}, I introduce \ili{Swahili}'s non-animate noun classes and propose an analysis.  This analysis will serve as the basis for the rest of my discussion.  In \sectref{sec:pesetsky:animacyinswahili}, I introduce the animate \isi{noun class} and Animacy Override and propose an analysis.  In \sectref{sec:pesetsky:exceptiontoAO}, I show that my analysis can be extended to explain the fact that possessors of kinship terms are immune to Animacy Override.  In \sectref{sec:pesetsky:threeideas}, I raise the puzzle of how the syntax ``knows'' that a root denotes something animate and show that three potential solutions do not suffice.  In \sectref{sec:pesetsky:satisfyapresupposition}, I advance my solution to this puzzle, namely that \isi{animacy} triggers a presupposition.
+The paper is organized as follows.  In \sectref{snc:pesetsky:snc}, I introduce \ili{Swahili}'s non-animate noun classes and propose an analysis.  This analysis will serve as the basis for the rest of my discussion.  In \sectref{sec:pesetsky:animacyinswahili}, I introduce the animate \isi{noun class} and animacy override and propose an analysis.  In \sectref{sec:pesetsky:exceptiontoAO}, I show that my analysis can be extended to explain the fact that possessors of kinship terms are immune to animacy override.  In \sectref{sec:pesetsky:threeideas}, I raise the puzzle of how the syntax ``knows'' that a root denotes something animate and show that three potential solutions do not suffice.  In \sectref{sec:pesetsky:satisfyapresupposition}, I advance my solution to this puzzle, namely that \isi{animacy} triggers a presupposition.
 
-\section{Swahili noun classes: basic facts and a basic analysis}\label{snc:pesetsky:snc}
+\section{Swahili noun classes: Basic facts and a basic analysis}\label{snc:pesetsky:snc}
 
 Like other \ili{Bantu} languages, \ili{Swahili} divides its nouns into several noun classes whose members share a common prefix and trigger common agreement patterns on all of their dependents.  \ili{Bantu} noun classes are sometimes discussed as if they picked out semantically coherent groups of objects, but this is not true of \ili{Swahili} noun classes (with the exception of the animate class, which I introduce in \sectref{sec:pesetsky:animatesubsection}).  The nouns in \REF{ex:pesetsky:deadstuff}, for instance, all belong to class 9/10, but have nothing in common otherwise, since they include kinship terms, animal terms, plant terms, artifact terms, and abstract nouns.\footnote{For simplicity, I refer to pairings of singular and plural forms as a single class.}
 
@@ -51,42 +51,42 @@ Moreover, we can find groups of near-synonyms spread throughout the entire \ili{
 
 \ea\label{ex:pesetsky:boats} \textit{m-tumbwi} (class 3/4) `canoe' , \textit{$\emptyset$-jahazi} (class 5/6) `big sailboat', \textit{ch-ombo} (class 7/8) `boat', \textit{n-gawala} (class 9/10) `outrigger'  \z 
 
-Because non-animate class prefixes in \ili{Swahili} are not strictly determined by the semantics of the nouns they appear on, I adopt the proposal from \citet{carstens91, carstens08} that they are realizations of an uninterpretable \textsc{Gender} feature, though I depart from Carstens's analysis in ways which will be discussed in later sections. Values of this uninterpretable feature are then realized by rules of the general form shown in \REF{ex:pesetsky:moogender}, which may be less specified in cases of syncretism. 
+Because non-animate class prefixes in \ili{Swahili} are not strictly determined by the semantics of the nouns they appear on, I adopt the proposal from \citet{carstens91, carstens08} that they are realizations of an uninterpretable \textsc{gender} feature, though I depart from Carstens's analysis in ways which will be discussed in later sections. Values of this uninterpretable feature are then realized by rules of the general form shown in \REF{ex:pesetsky:moogender}, which may be less specified in cases of syncretism. 
 
-\ea\label{ex:pesetsky:moogender} \ea\label{ex:pesetsky:mooa}{ n, $u$[\textsc{Gender:3}], $i$[\textsc{+sg}] $\longleftrightarrow$ mu-}
-\ex{n, $u$[\textsc{Gender:3}] $\longleftrightarrow$ mi-} \label{ex:pesetsky:oceanij}
-\ex{ $u$[\textsc{Gender:3}], $i$[\textsc{+sg}] $\longleftrightarrow$ u- \label{ex:pesetsky:riverij}}
-\ex{$u$[\textsc{Gender:3}] $\longleftrightarrow$ i- \label{ex:pesetsky:lakeij}} \z \z
+\ea\label{ex:pesetsky:moogender} \ea\label{ex:pesetsky:mooa}{ n, $u$[\textsc{gender:3}], $i$[\textsc{+sg}] $\longleftrightarrow$ mu-}
+\ex{n, $u$[\textsc{gender:3}] $\longleftrightarrow$ mi-} \label{ex:pesetsky:oceanij}
+\ex{ $u$[\textsc{gender:3}], $i$[\textsc{+sg}] $\longleftrightarrow$ u- \label{ex:pesetsky:riverij}}
+\ex{$u$[\textsc{gender:3}] $\longleftrightarrow$ i- \label{ex:pesetsky:lakeij}} \z \z
 
-Following \citet{kramer15}, I assume that \textsc{Gender} is introduced on an n-head which is sister to the root. As exemplified by the lexical entry in \REF{ex:pesetsky:rootsorting}, roots are sorted into classes as a consequence of syntactic \isi{selection} by categorizing heads marked for \textsc{Gender}. Each of these heads selects for a disjunctive list of roots.
+Following \citet{kramer15}, I assume that \textsc{gender} is introduced on an n-head which is sister to the root. As exemplified by the lexical entry in \REF{ex:pesetsky:rootsorting}, roots are sorted into classes as a consequence of syntactic \isi{selection} by categorizing heads marked for \textsc{gender}. Each of these heads selects for a disjunctive list of roots.
 
-\ea\label{ex:pesetsky:rootsorting}{n$[u\textsc{Gender:3}],\,[\textsc{sel}:\sqrt{tree}, \sqrt{river}, \, ...]$}   \z 
+\ea\label{ex:pesetsky:rootsorting}{n$[u\textsc{gender:3}],\,[\textsc{sel}:\sqrt{tree}, \sqrt{river}, \, ...]$}   \z 
 
 
  \section{Animacy in Swahili} \label{sec:pesetsky:animacyinswahili}
 
 \subsection{The animate noun class} \label{sec:pesetsky:animatesubsection}
 
-In contrast to the noun classes discussed in the previous section, class 1/2 picks out a semantically coherent group of nouns, specifically, animate-denoting nouns. Examples are shown in \REF{ex:pesetsky:livingstuff}.
+In contrast to the noun classes discussed in the previous section, class 1/2 picks out a semantically coherent group of nouns, namely a subset of those with animate denotations. Examples are shown in \REF{ex:pesetsky:livingstuff}.
 
 \ea\label{ex:pesetsky:livingstuff}{ \textit{m-toto} `child', \textit{m-walimu} `teacher', \textit{m-tekanyara} `hijacker', \textit{m-dudu} `insect', \textit{m-nyama} `animal', \textit{m-duma} `boogeyman', \textit{mw-anaisimu} `linguist'} \z
 
 To explain this generalization, I posit an interpretable binary \isi{animacy} feature spelled out as in \REF{ex:pesetsky:howtobeanimate}. Note that there is only a single realization rule for the plural since all modifiers take the class prefix $wa-$ regardless of syntactic category.
 
-\ea\label{ex:pesetsky:howtobeanimate} \ea\label{ex:pesetsky:howtobeanimatea}{ n, $i$[+\textsc{Animate}], [\textsc{+sg}] $\longleftrightarrow$ mu-}
-\ex{ $i$[+\textsc{Animate}], [\textsc{+sg}] $\longleftrightarrow$ yu-} \label{ex:pesetsky:howtobeanimateb}
-\ex{$i$[+\textsc{Animate}] $\longleftrightarrow$ wa-   \label{ex:pesetsky:howtobeanimatec} }  \z \z
+\ea\label{ex:pesetsky:howtobeanimate} \ea\label{ex:pesetsky:howtobeanimatea}{ n, $i$[+\textsc{animate}], [\textsc{+sg}] $\longleftrightarrow$ mu-}
+\ex{ $i$[+\textsc{animate}], [\textsc{+sg}] $\longleftrightarrow$ yu-} \label{ex:pesetsky:howtobeanimateb}
+\ex{$i$[+\textsc{animate}] $\longleftrightarrow$ wa-   \label{ex:pesetsky:howtobeanimatec} }  \z \z
 
-As with the other noun classes, the mechanism that assigns class 1/2 to roots is \isi{selection}.  If a root is selected for by an n-head bearing the feature value +\textsc{Animate}, then it is in class 1/2.  The only difference between the behavior of \textsc{Gender} and \textsc{Animate} so far is that the former is uninterpretable while the latter is interpretable. I will address the question of how \textsc{Animate} is interpreted in \sectref{sec:pesetsky:threeideas}, where I argue that +\textsc{Animate} is interpreted as a presupposition of animateness.
+As with the other noun classes, the mechanism that assigns class 1/2 to roots is \isi{selection}.  If a root is selected for by an n-head bearing the feature value +\textsc{animate}, then it is in class 1/2.  The only difference between the behavior of \textsc{gender} and \textsc{animate} so far is that the former is uninterpretable while the latter is interpretable. I will address the question of how \textsc{animate} is interpreted in \sectref{sec:pesetsky:threeideas}, where I argue that +\textsc{animate} is interpreted as a presupposition of animateness.
 
 
-\subsection{Animacy Override} \label{sec:pesetsky:animateoverridesubsection}
+\subsection{Animacy override} \label{sec:pesetsky:animateoverridesubsection}
 
 Although all class 1/2 nouns are animate-denoting, not all animate-denoting nouns belong to class 1/2.  Some examples of animate-denoting nouns belonging to classes other than 1/2 are shown in \REF{ex:pesetsky:cryptoanimates}.
 
 \ea\label{ex:pesetsky:cryptoanimates}{\textit{m-tume} `messenger', \textit{jirani} `neighbor', \textit{ki-ongozi} `leader', \textit{n-yani} `monkey'} \z
 
-Strikingly, even though these nouns do not belong to class 1/2, they still trigger class 1/2 agreement. I call this phenomenon \textit{Animacy Override}. Animacy Override is obligatory on all modifiers of all animate-denoting nouns, with one exception which I will discuss in \sectref{sec:pesetsky:exceptiontoAO}.
+Strikingly, even though these nouns do not belong to class 1/2, they still trigger class 1/2 agreement. I call this phenomenon \textit{animacy override}. Animacy override is obligatory on all modifiers of all animate-denoting nouns, with one exception which I will discuss in \sectref{sec:pesetsky:exceptiontoAO}.
 
  \ea\label{ex:pesetsky:kiongozeh} 
  \ea\label{ex:pesetsky:kiongozia}{
@@ -106,47 +106,47 @@ Strikingly, even though these nouns do not belong to class 1/2, they still trigg
  
 This phenomenon poses a puzzle. Why are these nouns able to bear prefixes from one class but trigger agreement in another class?  My analysis consists of the three claims in \REF{ex:pesetsky:threeclaims}.
 
-\ea\label{ex:pesetsky:threeclaims} \ea\label{ex:pesetsky:claimone} The n-head bearing +\textsc{Animate} selects for the category feature n as well as for some roots. 
-\ex\label{ex:pesetsky:claimtwo} The n-heads bearing \textsc{Gender} do not select for n, only for roots. 
-\ex\label{ex:pesetsky:claimthree} n, [+\textsc{Animate}] $\longleftrightarrow$ $\emptyset$ /$\underline{ \, \, \; \, }$ n \z \z 
+\ea\label{ex:pesetsky:threeclaims} \ea\label{ex:pesetsky:claimone} The n-head bearing +\textsc{animate} selects for the category feature n as well as for some roots. 
+\ex\label{ex:pesetsky:claimtwo} The n-heads bearing \textsc{gender} do not select for n, only for roots. 
+\ex\label{ex:pesetsky:claimthree} n, [+\textsc{animate}] $\longleftrightarrow$ $\emptyset$ /$\underline{ \, \, \; \, }$ n \z \z 
 
-Claims \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo} together entail that when \textsc{Animate} and \textsc{Gender} coexist in an nP, \textsc{Animate} will always be syntactically higher. This result is useful for explaining Animacy Override because, as argued in \citet{kramer15}, only the highest n in a stack of nP's can be agreed with. This is because n is a phase boundary and the Phase Impenetrability Condition entails that agreement cannot take place across a phase boundary. Consequently, when \textsc{Gender} and \textsc{Animacy} coexist in an nP, any modifiers of that nP will agree for \textsc{Animacy} and not for \textsc{Gender}.  
+Claims \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo} together entail that when \textsc{animate} and \textsc{gender} coexist in an nP, \textsc{animate} will always be syntactically higher. This result is useful for explaining Animacy Override because, as argued in \citet{kramer15}, only the highest n in a stack of nP's can be agreed with. This is because n is a phase boundary and the Phase Impenetrability Condition entails that agreement cannot take place across a phase boundary. Consequently, when \textsc{gender} and \textsc{animacy} coexist in an nP, any modifiers of that nP will agree for \textsc{animacy} and not for \textsc{gender}.  
 
-The tree in \figref{ex:pesetsky:towerofanimacy} shows the structure for the \isi{noun phrase} \textit{ki-ongozi m-refu} `tall leader'. In this tree, the adjective phrase looks downwards to find values for its \isi{noun class} features.  It receives a value for \textsc{Animate} from the higher n-head but cannot receive a value for \textsc{Gender} from the lower n head since doing so would require agreement across a phase boundary. The a-head is spelled out as \textit{m-} using \REF{ex:pesetsky:mooa}, while the lower of the two n-heads is spelled out as \textit{ki-} using the analogous rule for class 7/8.
+The tree in \figref{ex:pesetsky:towerofanimacy} shows the structure for the \isi{noun phrase} \textit{ki-ongozi m-refu} `tall leader'. In this tree, the adjective phrase looks downwards to find values for its \isi{noun class} features.  It receives a value for \textsc{animate} from the higher n-head but cannot receive a value for \textsc{gender} from the lower n head since doing so would require agreement across a phase boundary. The a-head is spelled out as \textit{m-} using \REF{ex:pesetsky:mooa}, while the lower of the two n-heads is spelled out as \textit{ki-} using the analogous rule for class 7/8.
 
 \begin{figure}[htbp]
 \begin{center}
 \begin{tikzpicture}[scale=.99] \tikzset{every tree node/.style={align=center,anchor=center}} 
-\Tree[.nP [.\node(aP){aP\\$\big[\textsc{Animate}:\underline{~~~}\textsc{Gender}:\underline{~~~}\big]$}; [.\node(Adj){a}; ] [.\node(tall){$\sqrt{tall}$}; ] ] [.nP [.\node(Animate){n\\$\big[$+\textsc{Animate}$\big]$}; ] [.nP [.\node(N){n\\$\big[\textsc{Gender}:7\big]$}; ] [.$\sqrt{leader}$ ] ] ] ]
+\Tree[.nP [.\node(aP){aP\\$\big[\textsc{animate}:\underline{~~~}\textsc{gender}:\underline{~~~}\big]$}; [.\node(Adj){a}; ] [.\node(tall){$\sqrt{tall}$}; ] ] [.nP [.\node(Animate){n\\$\big[$+\textsc{animate}$\big]$}; ] [.nP [.\node(N){n\\$\big[\textsc{gender}:7\big]$}; ] [.$\sqrt{leader}$ ] ] ] ]
 \draw[>-, dashed, semithick,<- ] (Animate)..controls +(north west:1) and +(east:3) .. (aP); 
 \draw[black] (4.8,-0.1) arc (120:160:6);
 \end{tikzpicture} 
 
-\caption{Structure of \textit{ki-ongozi m-refu}}
+\caption{Structure of \textit{ki-ongozi m-refu} \\ The dotted arrow represents agreement. The lower solid arc shows a phase boundary.}
 \label{ex:pesetsky:towerofanimacy}
 
 \end{center}
 \end{figure}
 
 
-So far I have explained why in these situations, agreement is for \textsc{Animate} rather than \textsc{Gender}.  However, claims \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo} alone would wrongly predict the possibility of \isi{noun class} stacking, for instance in realizing the nominal structure in \figref{ex:pesetsky:towerofanimacy}  as  *\textit{m-ki-ongozi}.  Claim \REF{ex:pesetsky:claimthree} prevents this wrong prediction by providing a null realization for +\textsc{Animate} in the presence of a \textsc{Gender} feature. Thus, these three claims add up to an analysis of Animacy Override. 
+So far I have explained why in these situations, agreement is for \textsc{animate} rather than \textsc{gender}.  However, claims \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo} alone would wrongly predict the possibility of \isi{noun class} stacking, for instance in realizing the nominal structure in \figref{ex:pesetsky:towerofanimacy}  as  *\textit{m-ki-ongozi}.  Claim \REF{ex:pesetsky:claimthree} prevents this wrong prediction by providing a null realization for +\textsc{animate} in the presence of a \textsc{gender} feature. Thus, these three claims add up to an analysis of Animacy Override. 
  
- It is interesting to compare this account offered above with the proposal of \citet{carstens91}, who argued that when a non-animate prefix appears on an animate-denoting stem, it is because the stem's lexical entry is marked with an \textit{exception feature}.  The exception feature instructs the grammar to treat the root as if it were in a different \isi{noun class} for the purpose of realizing its \isi{noun class} prefix. Thus, in her analysis, the lexicon contains a list like \REF{ex:pesetsky:carstinianlist}.
+It is interesting to compare this account offered above with the proposal of \citet{carstens91}, who argued that when a non-animate prefix appears on an animate-denoting stem, it is because the stem's lexical entry is marked with an \textit{exception feature}.  The exception feature instructs the grammar to treat the root as if it were in a different \isi{noun class} for the purpose of realizing its \isi{noun class} prefix. Thus, in her analysis, the lexicon contains a list like \REF{ex:pesetsky:carstinianlist}.
  
- \ea\label{ex:pesetsky:carstinianlist} ANIMATE NOUNS: \hfill (adapted from (10) in \citet{carstens91}) \\ \textit{-tu} `person', \textit{-ngu}  `god'*,   \textit{-rani}   `neighbor'** \\ *apply formation rules for Gender 3, **apply formation rules for Gender 5 \\  \z 
+\ea\label{ex:pesetsky:carstinianlist} Animate nouns: \hfill adapted from (10) in \citet{carstens91} \\ \textit{-tu} `person', \textit{-ngu}  `god'*,   \textit{-rani}   `neighbor'** \\ *apply formation rules for Gender 3, **apply formation rules for Gender 5 \\  \z 
 
-This analysis allows for a simpler syntax than that proposed in \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo}.  While my structure contains two nPs bearing different \isi{noun class} features Carstens's analysis allows for a single nP which hosts a single \isi{noun class} feature.  This simpler syntax also allows her to avoid introducing a rule like \REF{ex:pesetsky:claimthree}.  
+This analysis allows for a simpler syntax than that proposed in \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo}.  While my structure contains two nPs bearing different \isi{noun class} features \linebreak Carstens's analysis allows for a single nP which hosts a single \isi{noun class} feature.  This simpler syntax also allows her to avoid introducing a rule like \REF{ex:pesetsky:claimthree}.  
 
 Thus, her analysis works well for the facts presented so far. In the next section I present evidence which favors an analysis that places this phenomenon in the syntax rather than in the lexicon.
 
-\section{An exception to Animacy Override} \label{sec:pesetsky:exceptiontoAO}
+\section{An exception to animacy override} \label{sec:pesetsky:exceptiontoAO}
 
  
-In the previous section, I briefly mentioned that Animacy Override has one exception.  In this section, I present this exception and show that my analysis can easily account for it given an independently motivated claim about the syntax of \ili{Swahili} relational nouns. This is in contrast to allomorphy-based analyses of Animacy Override, which require further stipulations to do so.
+In the previous section, I briefly mentioned that animacy override has one exception.  In this section, I present this exception and show that my analysis can easily account for it given an independently motivated claim about the syntax of \ili{Swahili} relational nouns. This is in contrast to allomorphy-based analyses of animacy override, which require further stipulations to do so.
  
- \subsection{The puzzle} \label{sec:pesetsky:puzzlesection}
+\subsection{The puzzle} \label{sec:pesetsky:puzzlesection}
  
-Alone among modifiers, pronominal possessors of some kinship terms in class 9/10 do not show Animacy Override. Not all kinship terms work this way, but those that do, do so obligatorily.  This pattern is demonstrated in \REF{ex:pesetsky:contrast} with the kinship term \textit{n-dugu}, meaning `cousin' or `sibling'.
+Alone among modifiers, pronominal possessors of some kinship terms in class 9/10 do not show animacy override. Not all kinship terms work this way, but those that do, do so obligatorily.  This pattern is demonstrated in \REF{ex:pesetsky:contrast} with the kinship term \textit{n-dugu}, meaning `cousin' or `sibling'.
    
 \ea\label{ex:pesetsky:contrast} 
 \ea{
@@ -159,7 +159,7 @@ Alone among modifiers, pronominal possessors of some kinship terms in class 9/10
  \gll N-dugu \textbf{w}-angu m-refu a-li-anguka. \\
        \textsc{9}-sibling \textsc{1}-my \textsc{1}-tall \textsc{1}-\textsc{pst}-fall \\ }  \z \z 
 
-For a noun to behave this way, it is not sufficient for it to be in class 9/10, as shown by \REF{ex:pesetsky:trastcon}, where we see that the class 9/10 animal term \textit{nyani} (``monkey'') still shows Animacy Override on its possessor.
+For a noun to behave this way, it is not sufficient for it to be in class 9/10, as shown by \REF{ex:pesetsky:trastcon}, where we see that the class 9/10 animal term \textit{nyani} (‘monkey’) still shows animacy override on its possessor.
 
 \ea\label{ex:pesetsky:trastcon} 
 \ea\label{ex:pesetsky:nyania}{ 
@@ -171,7 +171,7 @@ For a noun to behave this way, it is not sufficient for it to be in class 9/10, 
 \textsc{9}-monkey \textsc{1}-my \textsc{1}-tall \textsc{1}-\textsc{pst}-fall  \\ } \z \z
 
 
-However, merely being a kinship term is not sufficient either, as shown in \REF{ex:pesetsky:crastton}, where we see that the class 1/2 kinship term \textit{m-ke} (``wife'') requires its possessives to be in class 1/2.\footnote{An audience member at ACAL 47 pointed out to me that some class 1/2 kinship terms take class 9/10 possessives in the plural.  I suspect that in these cases, some syntactic peculiarity of plural-marking may block animate agreement, causing class 9/10 morphology to be inserted as \isi{default agreement}.  I do not, however, have a definitive analysis at present.}
+However, merely being a kinship term is not sufficient either, as shown in \REF{ex:pesetsky:crastton}, where we see that the class 1/2 kinship term \textit{m-ke} (‘wife’) requires its possessives to be in class 1/2.\footnote{An audience member at ACAL 47 pointed out to me that some class 1/2 kinship terms take class 9/10 possessives in the plural.  I suspect that in these cases, some syntactic peculiarity of plural-marking may block animate agreement, causing class 9/10 morphology to be inserted as \isi{default agreement}.  I do not, however, have a definitive analysis at present.}
 
 \ea\label{ex:pesetsky:crastton} 
 \ea[*] { \gll M-ke \textbf{y}-angu m-refu a-li-anguka. \\
@@ -185,7 +185,7 @@ However, merely being a kinship term is not sufficient either, as shown in \REF{
 
 \subsection{Evidence for a difference in syntactic height}\label{sec:pesetsky:syntacticheight}
 
-It is not surprising that possessive constructions with kinship terms differ syntactically from those with other nouns, since they also differ semantically.  As has been recognized since \citet{partee8397}, kinship terms are a subclass of \textit{relational nouns}, denoting two-place functions rather than one-place ones. This distinction is formalized in \REF{ex:pesetsky:lfkwakweli} following \citet{barker95}.
+It is not surprising that possessive constructions with kinship terms differ syntactically from those with other nouns, since they also differ semantically.  As has been recognized since \citet{partee8397}, kinship terms are a subclass of relational nouns, denoting two-place functions rather than one-place ones. This distinction is formalized in \REF{ex:pesetsky:lfkwakweli} following \citet{barker95}.
 
 \ea\label{ex:pesetsky:lfkwakweli} \ea\label{ex:pesetsky:lfkwakwelia} { \sem{ndugu} = $\lambda x \lambda y$. \textbf{sibling}($x,y$) }
 \ex\label{ex:pesetsky:lfkwakwelib} { \sem{nyani} = $\lambda x.$ \textbf{monkey}($x$) \\ } \z \z
@@ -210,18 +210,18 @@ In the previous subsection, I showed evidence that pronominal possessors have di
 \begin{figure}[htbp]
 \begin{center}
 
-\begin{tikzpicture}[scale=.99] \tikzset{every tree node/.style={align=center,anchor=north}} \Tree[.PossessorP [.sortal$\,$possessor ] [.nP [.n\\$+$\textsc{Animate} ] [.nP [.relational$\,$possessor ] [.n$^\prime$ [.n\\\big[\textsc{Gender}:\,x\big] ] [.$\sqrt{root}$ ] ] ] ] ] \end{tikzpicture} 
+\begin{tikzpicture}[scale=.99] \tikzset{every tree node/.style={align=center,anchor=north}} \Tree[.PossessorP [.sortal$\,$possessor ] [.nP [.n\\$+$\textsc{animate} ] [.nP [.relational$\,$possessor ] [.n$^\prime$ [.n\\\big[\textsc{gender}:\,x\big] ] [.$\sqrt{root}$ ] ] ] ] ] \end{tikzpicture} 
 
 \caption{Structure of possessors in Swahili}
 \label{ex:pesetsky:syntacticconfig}
 \end{center}
 \end{figure}
 
-This structure allows us to solve the puzzle posed in \sectref{sec:pesetsky:puzzlesection} by appealing to the positions of the two types of pronominal possessors relative to the two features \textsc{Gender} and \textsc{Animate}. Pronominal possessors of relational nouns merge between the low n-head which hosts \textsc{Gender} and the higher n-head which hosts \textsc{Animate}, while pronominal possessors of sortal nouns merge above the locus of both features. 
+This structure allows us to solve the puzzle posed in \sectref{sec:pesetsky:puzzlesection} by appealing to the positions of the two types of pronominal possessors relative to the two features \textsc{gender} and \textsc{animate}. Pronominal possessors of relational nouns merge between the low n-head which hosts \textsc{gender} and the higher n-head which hosts \textsc{animate}, while pronominal possessors of sortal nouns merge above the locus of both features. 
 
-This means that while sortal possessors can agree for \isi{animacy} by agreeing downward, relational possessors would have to agree upwards in order to do so.  Therefore, if \ili{Swahili} has only downward agreement, the structure in \REF{ex:pesetsky:syntacticconfig} solves the puzzle of the contrast between \REF{ex:pesetsky:contrast} and \REF{ex:pesetsky:trastcon}. When the possessor in \REF{ex:pesetsky:contrast} looks downward for a \isi{noun class} feature, the first thing it sees is \textsc{Gender}.  When the possessor in \REF{ex:pesetsky:trastcon} looks downwards, the first thing it sees is \textsc{Animate}.  Likewise, the possessor in \ref{ex:pesetsky:crastton} sees \textsc{Animate}, since \textit{m-ke} is intrinsically in class 1/2 and therefore has \textsc{Animate} marked on the categorizing head next to the root instead of higher up in the structure. 
+This means that while sortal possessors can agree for \isi{animacy} by agreeing downward, relational possessors would have to agree upwards in order to do so.  Therefore, if \ili{Swahili} has only downward agreement, the structure in \REF{ex:pesetsky:syntacticconfig} solves the puzzle of the contrast between \REF{ex:pesetsky:contrast} and \REF{ex:pesetsky:trastcon}. When the possessor in \REF{ex:pesetsky:contrast} looks downward for a \isi{noun class} feature, the first thing it sees is \textsc{gender}.  When the possessor in \REF{ex:pesetsky:trastcon} looks downwards, the first thing it sees is \textsc{animate}.  Likewise, the possessor in \REF{ex:pesetsky:crastton} sees \textsc{animate}, since \textit{m-ke} is intrinsically in class 1/2 and therefore has \textsc{animate} marked on the categorizing head next to the root instead of higher up in the structure. 
 
-One might reasonably be skeptical of my claim that \ili{Swahili} has only downward agreement.  Other \ili{Bantu} languages have been argued to have only upward agreement, since postverbal subjects require \isi{default agreement}. As shown in \ref{ex:pesetsky:realagreement}, from \citet{taniguchi13}, this is not the case in \ili{Swahili}.
+One might reasonably be skeptical of my claim that \ili{Swahili} has only downward agreement.  Other \ili{Bantu} languages have been argued to have only upward agreement, since postverbal subjects require \isi{default agreement}. As shown in \REF{ex:pesetsky:realagreement}, from \citet{taniguchi13}, this is not the case in \ili{Swahili}.
 
 \ea\label{ex:pesetsky:realagreement}
 { \gll A-li-ki-vunja ki-ti Yohana \\
@@ -231,17 +231,17 @@ One might reasonably be skeptical of my claim that \ili{Swahili} has only downwa
 
 In this section, I have shown that the analysis of Animacy Override which I advanced in the previous section, when combined with an independently motivated structure for relational possessors, accounts straightforwardly for one major exception.  
 
-This is in contrast to the aforementioned analysis advanced by \citet{carstens91}, in which animate-denoting nouns are all in class 1/2, but can receive prefixes from another class if their lexical entries contain \textit{exception features} (see \REF{ex:pesetsky:carstinianlist}).  Because exception rules only affect the realization of prefixes on the lexical items whose lexical entries they inhabit, they cannot serve as the basis for a satisfactory analysis of the facts in \REF{ex:pesetsky:contrast}-\REF{ex:pesetsky:crastton}.  To account for this data, a proponent of Carstens' analysis would need to posit that each regular pronominal possessive in \ili{Swahili} has a homophonous and synonymous twin which is selected for only by kinship terms and which bears an exception feature in its lexical entry.  Such a coincidence would be unlikely. 
+This is in contrast to the aforementioned analysis advanced by \citet{carstens91}, in which animate-denoting nouns are all in class 1/2, but can receive prefixes from another class if their lexical entries contain exception features \REF{ex:pesetsky:carstinianlist}.  Because exception rules only affect the realization of prefixes on the lexical items whose lexical entries they inhabit, they cannot serve as the basis for a satisfactory analysis of the facts in (\ref{ex:pesetsky:contrast}–\ref{ex:pesetsky:crastton}).  To account for this data, a proponent of Carstens' analysis would need to posit that each regular pronominal possessive in \ili{Swahili} has a homophonous and synonymous twin which is selected for only by kinship terms and which bears an exception feature in its lexical entry.  Such a coincidence would be unlikely. 
 
-On the other hand, Carstens's analysis could be adapted so as to capture this data by translating it into the framework of Distributed Morphology.  In this framework, exception features would be replaced with Impoverishment rules of the sort shown in \REF{ex:pesetsky:impoverishment}.\footnote{Replacing them with context sensitive realization rules would lose the generalization that animates with non-animate prefixes don't change classes when they pluralize. }
+On the other hand, Carstens's analysis could be adapted so as to capture this data by translating it into the framework of distributed morphology.  In this framework, exception features would be replaced with impoverishment rules of the sort shown in \REF{ex:pesetsky:impoverishment}.\footnote{Replacing them with context sensitive realization rules would lose the generalization that animates with non-animate prefixes don't change classes when they pluralize. }
 
 \ea\label{ex:pesetsky:impoverishment}{ 
-*[\textsc{Gender}:1] / 
+*[\textsc{gender}:1] / 
 \ul{~~~~} 
 \{$\sqrt{\text{god}}$, $\sqrt{\text{messenger\vphantom{d}}}$, etc.\}, 
-repair by changing [\textsc{Gender}:1] to [\textsc{Gender}:3]} \z
+repair by changing [\textsc{gender}:1] to [\textsc{gender}:3]} \z
 
-The key difference between exception features and impoverishment rules is that while the former affect only how \isi{noun class} prefixes are realized \textit{on} the noun root, the latter affect how they are spelled out \textit{anywhere in the context of the root}. If we suppose that for the sake of these rules, ``in the context of X'' means ``in a position m-commanded by X'' rather than ``in a position sister to X'', then these rules predict \REF{ex:pesetsky:contrast} and \REF{ex:pesetsky:trastcon}.  This is because kinship possessors are m-commanded by noun roots, while sortal possessors are not. 
+The key difference between exception features and impoverishment rules is that while the former affect only how \isi{noun class} prefixes are realized on the noun root, the latter affect how they are spelled out \textit{anywhere in the context of the root}. If we suppose that for the sake of these rules, ``in the context of X'' means ``in a position m-commanded by X'' rather than ``in a position sister to X'', then these rules predict \REF{ex:pesetsky:contrast} and \REF{ex:pesetsky:trastcon}.  This is because kinship possessors are m-commanded by noun roots, while sortal possessors are not. 
 
 Thus, we can come up with an alternative analysis if we make the assumptions shown in \REF{ex:pesetsky:deconstrainingassumptions}.
 
@@ -249,94 +249,94 @@ Thus, we can come up with an alternative analysis if we make the assumptions sho
 \ea Impoverishment can change feature values to less marked values (rather than deleting them)
 \ex X is in the syntactic context of Y iff Y m-commands X (rather than iff X and Y are sisters) \\ \z \z
 
-These assumptions are not innocent, since they make our general theory of morphosyntax less constrained.  Therefore, since my original analysis achieved the same empirical coverage but was able to do so within the traditional strictures of Distributed Morphology, I tentatively conclude that it is the stronger of the two.  This conclusion should be revised if future work turned up strong evidence supporting the claims in \REF{ex:pesetsky:deconstrainingassumptions}.
+These assumptions are not innocent, since they make our general theory of morphosyntax less constrained.  Therefore, since my original analysis achieved the same empirical coverage but was able to do so within the traditional strictures of distributed morphology, I tentatively conclude that it is the stronger of the two.  This conclusion should be revised if future work turns up strong evidence supporting the claims in \REF{ex:pesetsky:deconstrainingassumptions}.
 
 
 
 
  \section{Three ideas that don't explain how nouns get animate} \label{sec:pesetsky:threeideas}
 
-In the previous sections, I argued that +\textsc{Animate} occupies a higher position than \textsc{Gender} when both coexist in a syntactic structure.  This claim explains some otherwise puzzling patterns in the marking (or lack thereof) of \isi{animacy}, but it raises some problems of its own.  The value of the \textsc{Animate} feature is determined entirely by the choice of noun root, but I have argued that the \textsc{Animate} feature is in its own nP, where it cannot see which root is being used.  This raises the question: how does the root determine the value of \textsc{Animate}?
+In the previous sections, I argued that +\textsc{animate} occupies a higher position than \textsc{gender} when both coexist in a syntactic structure.  This claim explains some otherwise puzzling patterns in the marking (or lack thereof) of \isi{animacy}, but it raises some problems of its own.  The value of the \textsc{animate} feature is determined entirely by the choice of noun root, but I have argued that the \textsc{animate} feature is in its own nP, where it cannot see which root is being used.  This raises the question: how does the root determine the value of \textsc{animate}?
 
 In this section, I go over three classes of possible explanations, arguing that none of them will suffice.  This process of elimination serves as supporting evidence for my actual proposal, explained and otherwise defended in \sectref{sec:pesetsky:satisfyapresupposition}.
 
 \subsection{Idea \#1: Syntactic selection} \label{sec:pesetsky:syntacticselectionidea}
 
-One possible way that roots could get paired with values of \textsc{Animate} is by syntactic \isi{selection}.  This is how I said that roots get paired with values of \textsc{Gender}.  On this account, \ili{Swahili}'s animate categorizing head appears as follows.
+One possible way that roots could get paired with values of \textsc{animate} is by syntactic \isi{selection}.  This is how I said that roots get paired with values of \textsc{gender}.  On this account, \ili{Swahili}'s animate categorizing head appears as follows.
 
-\ea\label{ex:pesetsky:optiona}  n$_{[+\textsc{Animate}][\textsc{Sel}: \sqrt{child}, \sqrt{teacher}, \sqrt{boogeyman}, ...]}$  \z
+\ea\label{ex:pesetsky:optiona}  n$_{[+\textsc{animate}][\textsc{Sel}: \sqrt{child}, \sqrt{teacher}, \sqrt{boogeyman}, ...]}$  \z
 
-However, there are two differences between \textsc{Animate} and \textsc{Gender} which cause problems for this approach.  First, while the head that hosts \textsc{Gender} is sister to the root and therefore can select straightforwardly, my analysis of \isi{animacy} crucially depends on \textsc{Animate} not being sister to the root.  Moreover, \textsc{Animate} cannot move to be sister to the root.  Even if we could come up with an analysis involving lowering across two phase boundaries, we would have to explain why the \textsc{Animate} feature is not pronounced at the landing site.
+However, there are two differences between \textsc{animate} and \textsc{gender} which cause problems for this approach.  First, while the head that hosts \textsc{gender} is sister to the root and therefore can select straightforwardly, my analysis of \isi{animacy} crucially depends on \textsc{animate} not being sister to the root.  Moreover, \textsc{animate} cannot move to be sister to the root.  Even if we could come up with an analysis involving lowering across two phase boundaries, we would have to explain why the \textsc{animate} feature is not pronounced at the landing site.
 
 One can get around the problem of nonlocal \isi{selection} by positing that \ili{Swahili} has lexical entries along the lines of \REF{ex:pesetsky:optionb}.
 
-\ea\label{ex:pesetsky:optionb} \ea n$_{[+\textsc{Animate}][\textsc{Sel}:+F]}$ (for some feature F) 
-\ex  n$_{[\textsc{Gender}:x][+F][\textsc{Sel}: \sqrt{root1}, \sqrt{root2}, \sqrt{root3}, ...]}$ (for each \textsc{gender} value $x$) 
-\ex n$_{[\textsc{Gender}:x][-F][\textsc{Sel}: \sqrt{root1}, \sqrt{root2}, \sqrt{root3}, ...]}$ \\ \z \z
+\ea\label{ex:pesetsky:optionb} \ea n$_{[+\textsc{animate}][\textsc{Sel}:+F]}$ (for some feature F) 
+\ex  n$_{[\textsc{gender}:x][+F][\textsc{Sel}: \sqrt{root1}, \sqrt{root2}, \sqrt{root3}, ...]}$ (for each \textsc{gender} value $x$) 
+\ex n$_{[\textsc{gender}:x][-F][\textsc{Sel}: \sqrt{root1}, \sqrt{root2}, \sqrt{root3}, ...]}$ \\ \z \z
 
-On this view, the +\textsc{Animate} categorizer does not select for animate-denoting roots.  Instead, it selects for some intermediate feature +F which is introduced on a set of \textsc{Gender}-marked categorizers that select for animate-denoting roots.  
+On this view, the +\textsc{animate} categorizer does not select for animate-denoting roots.  Instead, it selects for some intermediate feature +F which is introduced on a set of \textsc{gender}-marked categorizers that select for animate-denoting roots.  
 
-This approach solves the problem of nonlocality in \isi{selection}, but it is still not an adequate solution to the problem at hand.  First, it is an inelegant solution, introducing an extra feature F.  More importantly, however, it doesn't provide a link between morphological \isi{animacy} and semantic \isi{animacy}. According to this explanation, it is an accident that semantically animate nouns are always morphosyntactically marked as +F (and therefore as \textsc{Animate}).  This is the fundamental problem with using syntactic \isi{selection} to capture the generalization that +\textsc{Animate} goes with semantically animate nouns.  
+This approach solves the problem of nonlocality in \isi{selection}, but it is still not an adequate solution to the problem at hand.  First, it is an inelegant solution, introducing an extra feature F.  More importantly, however, it doesn't provide a link between morphological \isi{animacy} and semantic \isi{animacy}. According to this explanation, it is an accident that semantically animate nouns are always morphosyntactically marked as +F (and therefore as \textsc{animate}).  This is the fundamental problem with using syntactic \isi{selection} to capture the generalization that +\textsc{animate} goes with semantically animate nouns.  
 
 \subsection{Idea \#2: Conditions on interpretation} \label{sec:pesetsky:conditiononinterp}
 
-A second approach would be to say that the +\textsc{Animate} feature is necessary to assign an animate denotation to an nP.  \citet{kramer15} proposes this kind of idea and cashes it out with encyclopedia access rules like the one in \REF{ex:pesetsky:twiga}.
+A second approach would be to say that the +\textsc{animate} feature is necessary to assign an animate denotation to an nP.  \citet{kramer15} proposes this kind of idea and cashes it out with encyclopedia access rules like the one in \REF{ex:pesetsky:twiga}.
 
-\ea\label{ex:pesetsky:twiga} [n$_{[\textsc{Gender}:9]}$ $\sqrt{twiga}$ ] $\rightarrow$ \textit{giraffe} / +\textsc{Animate} \z
+\ea\label{ex:pesetsky:twiga} [n$_{[\textsc{gender}:9]}$ $\sqrt{twiga}$ ] $\rightarrow$ \textit{giraffe} / +\textsc{animate} \z
 
-On this account, an nP consisting of an n-head marked for \textsc{Gender}:9 and the abstract root $\sqrt{twiga}$ is mapped to the concept of a giraffe, but only when it is sister to a node bearing the feature value +\textsc{Animate}.  This approach allows us to skirt the \isi{locality} problems encountered with syntactic \isi{selection}, since rules like \REF{ex:pesetsky:twiga} require that +\textsc{Animate} be sister to a constituent containing the root rather than to the root itself.
+On this account, an nP consisting of an n-head marked for \textsc{gender}:9 and the abstract root $\sqrt{twiga}$ is mapped to the concept of a giraffe, but only when it is sister to a node bearing the feature value +\textsc{animate}.  This approach allows us to skirt the \isi{locality} problems encountered with syntactic \isi{selection}, since rules like \REF{ex:pesetsky:twiga} require that +\textsc{animate} be sister to a constituent containing the root rather than to the root itself.
 
-However, this approach has its own \isi{locality} problems.  Notice that a rule of the form shown in \REF{ex:pesetsky:twiga} could never apply to kinship terms, since as I argued in section \REF{sec:pesetsky:exceptiontoAO}, possessors of kinship terms intervene between +\textsc{Animate} and the nP. We could solve this \isi{locality} problem by saying that the encyclopedia access rules do contain the possessor.  However, that would require \ili{Swahili} speakers to have separate encyclopedia access rules for every possible combination of kinship possessive and pronominal possessor.  This seems inefficient at best.
+However, this approach has its own \isi{locality} problems.  Notice that a rule of the form shown in \REF{ex:pesetsky:twiga} could never apply to kinship terms, since as I argued in section \sectref{sec:pesetsky:exceptiontoAO}, possessors of kinship terms intervene between +\textsc{animate} and the nP. We could solve this \isi{locality} problem by saying that the encyclopedia access rules do contain the possessor.  However, that would require \ili{Swahili} speakers to have separate encyclopedia access rules for every possible combination of kinship possessive and pronominal possessor.  This seems inefficient at best.
 
-Moreover, even though this explanation links the syntactic component to the semantic component, it does not link syntactic \isi{animacy} to semantic \isi{animacy}.  Since encyclopedia access rules store idiosyncratic information, the fact that the +\textsc{Animate} feature occurs with all and only animate-denoting nominals is treated as an accident. Nothing in the grammar prevents the existence of an encyclopedia access rule which requires +\textsc{Animate} for the meaning ``screwdriver'' to be assigned.   Thus, the fundamental problem we saw with selection-based approaches is still at play with encyclopedia access rules. 
+Moreover, even though this explanation links the syntactic component to the semantic component, it does not link syntactic \isi{animacy} to semantic \isi{animacy}.  Since encyclopedia access rules store idiosyncratic information, the fact that the +\textsc{animate} feature occurs with all and only animate-denoting nominals is treated as an accident. Nothing in the grammar prevents the existence of an encyclopedia access rule which requires +\textsc{animate} for the meaning ``screwdriver'' to be assigned.   Thus, the fundamental problem we saw with selection-based approaches is still at play with encyclopedia access rules. 
 
-\subsection{Idea \#3: +\textsc{Animate} asserts animacy} \label{sec:pesetsky:assertanimacy}
+\subsection{Idea \#3: +\textsc{animate} asserts animacy} \label{sec:pesetsky:assertanimacy}
 
-A third idea would be to have the +\textsc{Animate} denote a predicate synonymous with the word ``animate''.  A way of cashing this idea out is shown in \REF{ex:pesetsky:lambdabdas}.
+A third idea would be to have the +\textsc{animate} denote a predicate synonymous with the word ``animate''.  A way of cashing this idea out is shown in \REF{ex:pesetsky:lambdabdas}.
 
-\ea\label{ex:pesetsky:lambdabdas} \sem{+\textsc{Animate}} = $\lambda x . \,$\textbf{animate}$(x)$ \z
+\ea\label{ex:pesetsky:lambdabdas} \sem{+\textsc{animate}} = $\lambda x . \,$\textbf{animate}$(x)$ \z
 
-In a structure where +\textsc{Animate} is sister to an nP (as in \figref{ex:pesetsky:towerofanimacy}), this denotation will compose with the denotation of the nP via Predicate Modification.  As a result, the structure as a whole will denote a function which returns ``true'' when its argument is an individual which is animate and which satisfies the semantic content of the nP. 
+In a structure where +\textsc{animate} is sister to an nP (as in \figref{ex:pesetsky:towerofanimacy}), this denotation will compose with the denotation of the nP via Predicate Modification.  As a result, the structure as a whole will denote a function which returns ``true'' when its argument is an individual which is animate and which satisfies the semantic content of the nP. 
 
-This explanation successfully links the morphosyntactic \isi{animacy} feature to the semantic concept of \isi{animacy}.  The feature \textsc{Animate} takes a positive value in animate-denoting nominals because taking a negative value would make the sentence self-contradictory and therefore semantically anomalous.  However, this explanation makes some false predictions.
+This explanation successfully links the morphosyntactic \isi{animacy} feature to the semantic concept of \isi{animacy}.  The feature \textsc{animate} takes a positive value in animate-denoting nominals because taking a negative value would make the sentence self-contradictory and therefore semantically anomalous.  However, this explanation makes some false predictions.
 
-First, because this explanation has +\textsc{Animate} make an assertion about an individual, it makes the acceptability of its use dependent on contingent facts about that individual.  This is not how \ili{Swahili} works.  Rather, the grammatical necessity of animate marking depends only on the choice of predicate. For example, \REF{ex:pesetsky:dancingkisu} shows that a knife is incompatible with +\textsc{Animate} feature even when it is behaving in typically animate ways.  The converse is shown in \REF{ex:pesetsky:pikwapigga}, where we see that even a pig who is really most sincerely dead receives animate morphology.
+First, because this explanation has +\textsc{animate} make an assertion about an individual, it makes the acceptability of its use dependent on contingent facts about that individual.  This is not how \ili{Swahili} works.  Rather, the grammatical necessity of animate marking depends only on the choice of predicate. For example, \REF{ex:pesetsky:dancingkisu} shows that a knife is incompatible with +\textsc{animate} feature even when it is behaving in typically animate ways.  The converse is shown in \REF{ex:pesetsky:pikwapigga}, where we see that even a pig who is really most sincerely dead receives animate morphology.
 
 \ea\label{ex:pesetsky:dancingkisu} \gll Ki-su amba-cho/*ye ki-/*a-na-ishi, ki-/*a-na roho, na ki-/*a-na-cheza ngoma ki-/*a-na-penda Salima. \\    \textsc{7}-knife \textsc{rel}-\textsc{7}/*\textsc{1} \textsc{7}/*\textsc{1}-\textsc{pres}-live, \textsc{7}/*\textsc{1}-have soul, and \textsc{7}/*\textsc{1}-\textsc{pres}-play drum \textsc{7}/*\textsc{1}-\textsc{pres}-love Salima. \\  \glt `The knife which is alive, has a soul, and dances loves Salima.' \\ \z
    
 \ea\label{ex:pesetsky:pikwapigga} \gll N-guruwe a-/*i-li-pik-wa baada ya ku-fa. \\   \textsc{9}-pig \textsc{1}/*\textsc{9}-\textsc{past}-cook-\textsc{passive} after \textsc{9}.of \textsc{inf}-die \\ \glt `The pig was cooked after it died.'  \\ \z 
 
-These facts can be captured by having +\textsc{Animate} assert that the predicate is animate rather than that the individual is.  This idea is shown in \REF{ex:pesetsky:assertanimatepredicates}.  Thus, this particular problem is surmountable, though I show a more elegant way of capturing this same idea in \sectref{sec:pesetsky:satisfyapresupposition}. 
+These facts can be captured by having +\textsc{animate} assert that the predicate is animate rather than that the individual is.  This idea is shown in \REF{ex:pesetsky:assertanimatepredicates}.  Thus, this particular problem is surmountable, though I show a more elegant way of capturing this same idea in \sectref{sec:pesetsky:satisfyapresupposition}. 
 
-\ea\label{ex:pesetsky:assertanimatepredicates} \sem{+\textsc{Animate}} = $\lambda P \lambda x . P(x) \, \& \, \textbf{animate}(P) $ \\ \z
+\ea\label{ex:pesetsky:assertanimatepredicates} \sem{+\textsc{animate}} = $\lambda P \lambda x . P(x) \, \& \, \textbf{animate}(P) $ \\ \z
 
-A second and less easily fixable problem with an assertion-based analysis is that it does not give us a story for why animate marking is necessary where it is allowed.  We cannot appeal to Gricean principles such as the Maxim of Quantity, since the +\textsc{Animate} feature adds no additional information where it is licit.  (The set of animate giraffes is no different from the set of all giraffes and any speaker who knows what a giraffe is will know that the \textbf{giraffe} predicate is animate.)  In fact, for this very reason, the Maxim of Manner would predict that \isi{animacy} marking is forbidden wherever it is possible!
+A second and less easily fixable problem with an assertion-based analysis is that it does not give us a story for why animate marking is necessary where it is allowed.  We cannot appeal to Gricean principles such as the maxim of quantity, since the +\textsc{animate} feature adds no additional information where it is licit.  (The set of animate giraffes is no different from the set of all giraffes and any speaker who knows what a giraffe is will know that the ‘giraffe’ predicate is animate.)  In fact, for this very reason, the maxim of manner would predict that \isi{animacy} marking is forbidden wherever it is possible!
 
 The primary reason why this explanation cannot work is that it wrongly predicts that proper \isi{animacy} marking is necessary for truth, rather than for wellformedness. Thus, a semantic analysis of \isi{animacy} is going to need to cause a crash of some sort rather than a successful computation of the output ``false''.
 
-In this section, I have demonstrated the inadequacy of three potential mechanisms we could use to explain how the choice of root conditions the value of the \textsc{Animacy} feature.  This line of inquiry gives us a checklist of what a theory is going to need to contain.  
+In this section, I have demonstrated the inadequacy of three potential mechanisms we could use to explain how the choice of root conditions the value of the \textsc{animacy} feature.  This line of inquiry gives us a checklist of what a theory is going to need to contain.  
 
 This checklist is shown in \REF{ex:pesetsky:checklist}.
 
 \ea\label{ex:pesetsky:checklist} \ea No violations of \isi{locality} \label{ex:pesetsky:checklista}
-\ex\label{ex:pesetsky:checklistb}  Connects morphosyntactic \isi{animacy} to semantic \isi{animacy} 
-\ex\label{ex:pesetsky:checklistc}  Predicts that \isi{animacy} marking is necessary where it is possible 
-\ex\label{ex:pesetsky:checklistd} Predict strong unacceptability of improper \isi{animacy} marking 
+\ex\label{ex:pesetsky:checklistb} Connects morphosyntactic \isi{animacy} to semantic \isi{animacy} 
+\ex\label{ex:pesetsky:checklistc} Predicts that \isi{animacy} marking is necessary where it is possible 
+\ex\label{ex:pesetsky:checklistd} Predicts strong unacceptability of improper \isi{animacy} marking 
 \ex\label{ex:pesetsky:checkliste} Predicts that animate marking cares about predicates, not individuals \\ \z \z
 
-\section{How to be animate: satisfy an animacy presupposition} \label{sec:pesetsky:satisfyapresupposition}
+\section{How to be animate: Satisfy an animacy presupposition} \label{sec:pesetsky:satisfyapresupposition}
 
-In the previous section, I addressed the question of how the +\textsc{Animate} feature value comes to be paired with all and only animate-denoting nominals.  I showed that three potential solutions do not suffice, since they all fail to meet one or more of the criteria for adequacy listed in \REF{ex:pesetsky:checklist}.
+In the previous section, I addressed the question of how the +\textsc{animate} feature value comes to be paired with all and only animate-denoting nominals.  I showed that three potential solutions do not suffice, since they all fail to meet one or more of the criteria for adequacy listed in \REF{ex:pesetsky:checklist}.
 
-In this section, I argue that the correct solution to this puzzle is to say that +\textsc{Animate} triggers a presupposition of animateness.  Specifically, +\textsc{Animate} denotes a partial function which is defined only on animate predicates of type $et$ and which denotes the identity function where it is defined.  This idea is shown formally in \REF{ex:pesetsky:lambdas}.
+In this section, I argue that the correct solution to this puzzle is to say that +\textsc{animate} triggers a presupposition of animateness.  Specifically, +\textsc{animate} denotes a partial function which is defined only on animate predicates of type $et$ and which denotes the identity function where it is defined.  This idea is shown formally in \REF{ex:pesetsky:lambdas}.
  
-\ea\label{ex:pesetsky:lambdas} \sem{+\textsc{Animate}} = $\lambda P_{et}: \,$\textbf{animate}$(P).\,P$ \z
+\ea\label{ex:pesetsky:lambdas} \sem{+\textsc{animate}} = $\lambda P_{et}: \,$\textbf{animate}$(P).\,P$ \z
 
-This denotation causes the +\textsc{Animate} feature value to serve as a semantic filter.  When +\textsc{Animate} is sister to an animate-denoting nP, it has no semantic effect.  When it is sister to an inanimate-denoting nP, it crashes the process of \isi{semantic composition}. Therefore, this denotation alone gives us the correct prediction that animate marking should only be available with animate-denoting predicates.
+This denotation causes the +\textsc{animate} feature value to serve as a semantic filter.  When +\textsc{animate} is sister to an animate-denoting nP, it has no semantic effect.  When it is sister to an inanimate-denoting nP, it crashes the process of \isi{semantic composition}. Therefore, this denotation alone gives us the correct prediction that animate marking should only be available with animate-denoting predicates.
 
-This explanation satisfies \REF{ex:pesetsky:checklista} and \REF{ex:pesetsky:checklistb}, since the mechanism it uses is \isi{semantic composition} between sister nodes.  It also gives us \REF{ex:pesetsky:checklistc} because of the principle of Maximize Presupposition \citep{heim91}, shown in \REF{ex:pesetsky:maximize}.
+This explanation satisfies \REF{ex:pesetsky:checklista} and \REF{ex:pesetsky:checklistb}, since the mechanism it uses is \isi{semantic composition} between sister nodes.  It also gives us \REF{ex:pesetsky:checklistc} because of the principle of \textsc{maximize presupposition} \citep{heim91}, shown in \REF{ex:pesetsky:maximize}.
 
-\ea\label{ex:pesetsky:maximize} \textit{Maximize Presupposition:} Do not use a sentence if there is an alternative with stronger presuppositions. \z
+\ea\label{ex:pesetsky:maximize} \textit{\textsc{maximize presupposition}:} Do not use a sentence if there is an alternative with stronger presuppositions. \z
 
 This explanation also gives us \REF{ex:pesetsky:checklistd}, since it predicts that \isi{semantic composition} will crash if a non-animate predicate is given animate marking.  Lastly, because it uses a metalanguage predicate on predicates of type $et$ rather than on individuals, it satisfies \REF{ex:pesetsky:checkliste}.
 
@@ -344,7 +344,7 @@ This analysis may look surprising since \isi{animacy} doesn't look much like cla
 
 \ea\label{ex:pesetsky:cooper} \sem{masculine} = $\lambda x_e : \textbf{male}(x). \, x$ \z
 
-Cooper's idea has been adopted for $\phi$-features in general in recent literature \citep{hnk91, sauerland08, heim08} and extended to predicates of type $et$ by \citet{merchant14}. Thus, insofar as \isi{animacy} is akin to the phi features, this analysis demonstrates a deep commonality between \ili{Romance} languages and at least one \ili{Bantu} language.
+Cooper's idea has been adopted for $\phi$-features in general in recent literature \citep{hnk91, sauerland08, heim08} and extended to predicates of type $et$ by \citet{merchant14}. Thus, insofar as \isi{animacy} is akin to the $\phi$-features, this analysis demonstrates a deep commonality between \ili{Romance} languages and at least one \ili{Bantu} language.
 
  \section{Conclusion} \label{sec:pesetsky:concludesection}
 
@@ -361,19 +361,7 @@ This paper would not have been possible if not for extensive discussions with Ka
 \section*{Abbreviations} \label{sec:pesetsky:abbreviations}
 
 
-
 \noindent Numbers signify noun classes \\ \noindent \textsc{pst} \hspace{3ex} \isi{past tense} \\ \noindent \textsc{sg} \hspace{4ex} singular \\ \noindent  \textsc{sel} \hspace{3ex} selectional feature \\ \noindent \printbibliography[heading=subbibliography,notkeyword=this]
 
-
-
-
-
-            
-
-
-
-            
-
-  
- \end{document}
+\end{document}
               
