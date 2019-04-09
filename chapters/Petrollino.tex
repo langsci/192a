@@ -1,4 +1,5 @@
-\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper,modfonts,nonflat,hidelinks]{langsci/langscibook} 
+
 \author{Sara Petrollino
 \affiliation{Laboratoire Dynamique Du Langage, Lyon and Leiden University}
 }
@@ -6,9 +7,16 @@
 \title{Between tone and stress in Hamar}
 
 \abstract{This paper provides a preliminary description of the word-prosodic system of \linebreak Hamar, a South Omotic language spoken in South West Ethiopia. The prosodic system of Hamar shows properties of both stress accent and tone: accent is lexically contrastive in nouns, but not in verbs, where it has a grammatical function. Post-lexical tonal oppositions arise when lexical accent and grammatical accent interact in both nouns and verbs. The prosodic behaviour of Hamar nouns and verbs is in line with the pattern proposed by \cite{Smith2011}, whereby nouns are higher than verbs in a hierarchy of phonological privilege.} 
-\maketitle 
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[17]
+}{}
+
 
 \begin{document}
+\maketitle 
 
 \section{Introduction} \label{sec:Petrollino:1}
 
@@ -141,6 +149,7 @@ A few words (less then ten items) have an idiosyncratic pronunciation and allow 
     \ex \textit{ɛdá}\hspace{17mm} ʻluckʼ\hspace{18mm} [ʔɛdá] \label{ex:Petrollino:ɛda}
 \end{exe}
 
+\largerpage
 Mid-low vowels have a high \isi{functional load} since they arise grammatically. The realization of \isi{masculine} \isi{gender}, for instance, can be signalled by the presence of mid-low vowels:
 
  \begin{exe}
@@ -261,6 +270,7 @@ Accent in nouns is thus unpredictable and lexically distinctive:
 \end{xlist} \label{ex:Petrollino:minimalpairs2}
 \end{exe}
 
+\largerpage
 Suffixation of nominal markers, such as the plural marker \textit{-na} or the \isi{feminine} \isi{gender} marker \textit{-no}, does not affect accent placement even when suffixation results in longer words:
 
 \begin{exe} 
@@ -358,6 +368,7 @@ The negative suffix \textit{-ê} is found also in the negative \isi{copula} whi
 \end{xlist}
 \end{exe}
 
+\largerpage
 There are a few verb-noun pairs which can be distinguished only prosodically. This contrast is illustrated in \REF{ex:Petrollino:qanábulá} and \REF{ex:Petrollino:qánabúla}: the citation form of the verb has always final accent, whereas in the segmentally identical noun accent falls on the first syllable. These examples are important to understand the interaction between grammatical and lexical accent in \ili{Hamar}, and will be re-proposed later on in \sectref{sec:Petrollino:interaction}:
 
 \begin{exe}
@@ -464,11 +475,11 @@ This preliminary analysis shows also the category-specific phonological effects 
 
 \section*{Abbreviations}
 \begin{tabularx}{.45\textwidth}{>{\scshape}lQ}
-1 & \isi{first person}\\
- 2 & \isi{second person}\\
- 3 & \isi{third person}\\
- m & \isi{masculine}\\
- f & \isi{feminine}\\
+1 & {first person}\\
+ 2 & {second person}\\
+ 3 & {third person}\\
+ m & {masculine}\\
+ f & {feminine}\\
  pl & plural\\
  sg & singular\\ 
 \end{tabularx}
@@ -479,7 +490,7 @@ This preliminary analysis shows also the category-specific phonological effects 
  cnv & converb\\
  pf & perfective\\
  juss & jussive\\
- past & \isi{past tense}\\
+ past & {past tense}\\
  pres & present tense\\ 
 \end{tabularx}
 
