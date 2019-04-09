@@ -1,18 +1,19 @@
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook}
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook}
 
 \author{Jonathan Pesetsky \affiliation{ILLC, University of Amsterdam} }
 \title{Animacy is a presupposition in Swahili} 
 %\epigram{ }
 \abstract{In this paper, I argue that the phenomenon of animacy override in Swahili arises from the interaction between a syntactic structure with multiple nominal heads and general principles of distributed morphology.  This syntactic analysis narrows the possibilities for a semantic analysis of animacy, strongly suggesting an approach previously proposed for gender in Romance languages. Specifically, I argue that Swahili has an interpretable +\textsc{animate} feature which denotes a partial function which is defined only on animate predicates of type $et$ and which denotes the identity function where it is defined.}
-\maketitle
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[29]
+}{}
+
 
 \begin{document}
+\maketitle
 
 \section{Introduction} \label{sec:pesetsky:introduction}
  
@@ -51,7 +52,7 @@ Moreover, we can find groups of near-synonyms spread throughout the entire \ili{
 
 \ea\label{ex:pesetsky:boats} \textit{m-tumbwi} (class 3/4) `canoe' , \textit{$\emptyset$-jahazi} (class 5/6) `big sailboat', \textit{ch-ombo} (class 7/8) `boat', \textit{n-gawala} (class 9/10) `outrigger'  \z 
 
-Because non-animate class prefixes in \ili{Swahili} are not strictly determined by the semantics of the nouns they appear on, I adopt the proposal from \citet{carstens91, carstens08} that they are realizations of an uninterpretable \textsc{gender} feature, though I depart from Carstens's analysis in ways which will be discussed in later sections. Values of this uninterpretable feature are then realized by rules of the general form shown in \REF{ex:pesetsky:moogender}, which may be less specified in cases of syncretism. 
+Because non-animate class prefixes in \ili{Swahili} are not strictly determined by the semantics of the nouns they appear on, I adopt the proposal from \citet{carstens91, carstens08} that they are realizations of an uninterpretable \textsc{gender} feature, although I depart from Carstens's analysis in ways which will be discussed in later sections. Values of this uninterpretable feature are then realized by rules of the general form shown in \REF{ex:pesetsky:moogender}, which may be less specified in cases of syncretism. 
 
 \ea\label{ex:pesetsky:moogender} \ea\label{ex:pesetsky:mooa}{ n, $u$[\textsc{gender:3}], $i$[\textsc{+sg}] $\longleftrightarrow$ mu-}
 \ex{n, $u$[\textsc{gender:3}] $\longleftrightarrow$ mi-} \label{ex:pesetsky:oceanij}
@@ -82,7 +83,7 @@ As with the other noun classes, the mechanism that assigns class 1/2 to roots is
 
 \subsection{Animacy override} \label{sec:pesetsky:animateoverridesubsection}
 
-Although all class 1/2 nouns are animate-denoting, not all animate-denoting nouns belong to class 1/2.  Some examples of animate-denoting nouns belonging to classes other than 1/2 are shown in \REF{ex:pesetsky:cryptoanimates}.
+All class 1/2 nouns are animate-denoting, but not all animate-denoting nouns belong to class 1/2.  Some examples of animate-denoting nouns belonging to classes other than 1/2 are shown in \REF{ex:pesetsky:cryptoanimates}.
 
 \ea\label{ex:pesetsky:cryptoanimates}{\textit{m-tume} `messenger', \textit{jirani} `neighbor', \textit{ki-ongozi} `leader', \textit{n-yani} `monkey'} \z
 
@@ -300,6 +301,7 @@ In a structure where +\textsc{animate} is sister to an nP (as in \figref{ex:pese
 
 This explanation successfully links the morphosyntactic \isi{animacy} feature to the semantic concept of \isi{animacy}.  The feature \textsc{animate} takes a positive value in animate-denoting nominals because taking a negative value would make the sentence self-contradictory and therefore semantically anomalous.  However, this explanation makes some false predictions.
 
+\largerpage
 First, because this explanation has +\textsc{animate} make an assertion about an individual, it makes the acceptability of its use dependent on contingent facts about that individual.  This is not how \ili{Swahili} works.  Rather, the grammatical necessity of animate marking depends only on the choice of predicate. For example, \REF{ex:pesetsky:dancingkisu} shows that a knife is incompatible with +\textsc{animate} feature even when it is behaving in typically animate ways.  The converse is shown in \REF{ex:pesetsky:pikwapigga}, where we see that even a pig who is really most sincerely dead receives animate morphology.
 
 \ea\label{ex:pesetsky:dancingkisu} \gll Ki-su amba-cho/*ye ki-/*a-na-ishi, ki-/*a-na roho, na ki-/*a-na-cheza ngoma ki-/*a-na-penda Salima. \\    \textsc{7}-knife \textsc{rel}-\textsc{7}/*\textsc{1} \textsc{7}/*\textsc{1}-\textsc{pres}-live, \textsc{7}/*\textsc{1}-have soul, and \textsc{7}/*\textsc{1}-\textsc{pres}-play drum \textsc{7}/*\textsc{1}-\textsc{pres}-love Salima. \\  \glt `The knife which is alive, has a soul, and dances loves Salima.' \\ \z
@@ -361,7 +363,10 @@ This paper would not have been possible if not for extensive discussions with Ka
 \section*{Abbreviations} \label{sec:pesetsky:abbreviations}
 
 
-\noindent Numbers signify noun classes \\ \noindent \textsc{pst} \hspace{3ex} \isi{past tense} \\ \noindent \textsc{sg} \hspace{4ex} singular \\ \noindent  \textsc{sel} \hspace{3ex} selectional feature \\ \noindent \printbibliography[heading=subbibliography,notkeyword=this]
+\noindent Numbers signify noun classes \\ \noindent \textsc{pst}~~\isi{past tense} \hfill \textsc{sg}~~singular \hfill \textsc{sel}~~selectional feature   
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
 
 \end{document}
               
