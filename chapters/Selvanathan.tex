@@ -29,36 +29,39 @@ analysis of Linkers, I propose that movement to a low FP for focus interpretatio
 \ili{Bantu} Immediately-After-Verb (IAV) \isi{focus} refers to the phenomenon in several \ili{Bantu} languages in which a focused phrase has to be immediately post-verbal \citep{hyman1979nounstructure,watters1979}. As the name suggests, the standard view on this positional requirement is that it is a focus-driven phenomenon. 
 
 \begin{figure}
-\centering
+\subfigure[Movement of focused XP\label{fig:Selva:1a}]{%
 % 	\includegraphics[width=\textwidth]{figures/sel1.png}
-\begin{forest}
+\begin{minipage}[t]{.5\linewidth}%
+\centering\begin{forest}
  [\ldots
  [v] [ZP
   [XP,name=xp] [Z'
     [Z] [YP
       [WP] [Y'
-	[Y] [{<}XP{>},name=xp2]
+	[Y] [{<}XP{>},name=xp2]% A phantom nodes to manipulate the bounding box
       ]
     ]
   ]
  ]
  ]
-\draw[-{Triangle[]}] (xp2.south) to [bend left, out=90] (xp.south);
-\end{forest}
-\begin{forest}
+\draw[overlay,-{Triangle[]}] (xp2.south) to [bend left, out=90] (xp.south);
+\end{forest}\vspace*{\baselineskip}\end{minipage}}%
+\subfigure[Dislocation of non-focused WP\label{fig:Selva:1b}]{%
+\begin{minipage}[t]{.5\linewidth}%
+\centering\begin{forest}
 [vP
   [vP
     [v] [YP
       [{<}WP{>},name=wp2] [Y'
-	[Y] [XP,name=XPplus]
+	[Y] [XP,name=XPplus[~,no edge]]% A phantom nodes to manipulate the bounding box
       ]
     ]
   ] [WP,name=wp]
 ]
 \coordinate [below right=1cm of XPplus] (XPPlus);
-\draw[-{Triangle[]}] (wp2.south) to [bend left, out=180 ,in=270, looseness=5] (wp.south);
-\end{forest}
-\caption{\\(a) Movement of focused XP  \hspace{1cm}                (b) Dislocation of non-focused WP}
+\draw[overlay,-{Triangle[]}] (wp2.south) to [bend left, out=180 ,in=270, looseness=5] (wp.south);
+\end{forest}\vspace*{\baselineskip}\end{minipage}}%
+\caption{\color{red}Missing caption}
 \label{fig:selvanathan:1}
 \end{figure}
 % \todo{Will be optimised}
@@ -66,12 +69,7 @@ analysis of Linkers, I propose that movement to a low FP for focus interpretatio
 
  In this paper, I have two objectives. The first is to show that \ili{Lubukusu} IAV-\isi{focus} does not require dislocation of the non-focused phrases in the VP. This is pertinent because \citet{chengdowning2012} argue that IAV-\isi{focus} in \ili{Zulu} involves dislocation of non-focused phrases and not \isi{movement} of a focused element to a low FocP position, contra \citet{vanderwal2006} for \ili{Makhuwa}. These approaches are illustrated below.
 
-
-
-
-
-
-In the non-dislocation strategy (eg. \citealt{vanderwal2006}) in Figure (1a), a focused XP itself moves to a position that is the closest phrasal position c-commanded by v. Figure (1b) shows the dislocation strategy \citep{ChengDowning2009}, wherein an intervening non-focused WP is moved out of the VP such that the focused XP becomes the closest phrase c-commanded by v. I assume V to v \isi{movement} in all of these cases. I argue that \ili{Lubukusu} provides strong evidence that it utilizes a version of the strategy in Figure (1a) and not Figure (1b). In so far as \ili{Zulu} does employ the dislocation strategy shown in Figure (1b), this means that \ili{Bantu}-IAV \isi{focus} can be realized differently. 
+In the non-dislocation strategy (eg. \citealt{vanderwal2006}) in \figref{fig:Selva:1a}, a focused XP itself moves to a position that is the closest phrasal position c-commanded by v. \figref{fig:Selva:1b} shows the dislocation strategy \citep{ChengDowning2009}, wherein an intervening non-focused WP is moved out of the VP such that the focused XP becomes the closest phrase c-commanded by v. I assume V to v \isi{movement} in all of these cases. I argue that \ili{Lubukusu} provides strong evidence that it utilizes a version of the strategy in \figref{fig:Selva:1a} and not \figref{fig:Selva:1b}. In so far as \ili{Zulu} does employ the dislocation strategy shown in \figref{fig:Selva:1b}, this means that \ili{Bantu}-IAV \isi{focus} can be realized differently. 
 
 My second objective is to argue that IAV-\isi{focus} in \ili{Lubukusu} is not a purely \isi{focus} related phenomenon but something that is partly motivated by case. I propose that \ili{Lubukusu} has an F head (similar to a Foc head) which is not just sensitive to \isi{focus} features but also to the case features of the phrase in its specifier. I argue that this F head is a \isi{focus} sensitive version of the Linker head \citep{Baker2006}. The main evidence for this claim comes from focused adjuncts in \ili{Lubukusu}. I then review some evidence that indicates that focused nominals in \ili{Zulu} also move to this Spec, FP. I then argue that the difference between \ili{Zulu} and \ili{Lubukusu} can be boiled down to whether dislocation of non-focused elements in the VP is optional or obligatory.
 
@@ -107,7 +105,7 @@ In the dislocation strategy, the IAV-focused element is argued to remain in situ
 
 (1a) shows the canonical IO-DO order in neutral contexts in \ili{Zulu}. (1b) is a question-answer pair in \ili{Zulu} where the DO is questioned and A1 and A2 show the two potential answers. Of these, only A1 with DO-IO order is judged fully acceptable. A2 with IO-DO order is judged infelicitous. This shows that \ili{Zulu} does have what looks like IAV-\isi{focus}. 
 
-The strongest evidence that \citet{chengdowning2012} provide for their claim that \ili{Zulu} IAV \isi{focus} follows the dislocation strategy in Figure (1b) is the fact \ili{Zulu} IAV requires an obligatory \isi{object marker} (OM) on the verb corresponding to the non-focused arguments. This OM is commonly analyzed as a dislocation marker as \citet{vanderSpuy1993}, \citet{Buell2005,Buell2006}, \citet{Halpert2012} show that in \ili{Zulu}, a left-dislocated phrase is obligatorily accompanied by an OM.
+The strongest evidence that \citet{chengdowning2012} provide for their claim that \ili{Zulu} IAV \isi{focus} follows the dislocation strategy in \figref{fig:Selva:1b} is the fact \ili{Zulu} IAV requires an obligatory \isi{object marker} (OM) on the verb corresponding to the non-focused arguments. This OM is commonly analyzed as a dislocation marker as \citet{vanderSpuy1993}, \citet{Buell2005,Buell2006}, \citet{Halpert2012} show that in \ili{Zulu}, a left-dislocated phrase is obligatorily accompanied by an OM.
 
 \ea\label{ex:selvanathan:2}
 \ili{Zulu}\\
@@ -148,7 +146,7 @@ A: \gll  Ú-síph’   ú-yí-phékél’              ízí-vakâ:sh’    ín-
 \glt \-\hspace{0.5cm}`Sipho is cooking the chicken for the visitors.’
 \z
 
-(4) shows a question that places \isi{focus} on the IO. The corresponding answer to this question will thus have an IO-DO order as seen in the answer. Additionally, the verb must have an OM that corresponds to the non-focused DO. In summary, \ili{Zulu} appears to have an OM that indicates dislocation of a post-verbal argument. In addition, such an OM appears in IAV-\isi{focus} contexts, but one that matches the non-focused post-verbal argument. These facts are taken by \citet{chengdowning2012} to be an indicator that \ili{Zulu} IAV-\isi{focus} is realized by the strategy in Figure (1b). Namely, the non-focused argument is dislocated out of the VP such that the focused argument appears to be in an IAV configuration.\footnote{However, note that even if dislocation of non-focused elements is obligatory as Cheng \& Downing note, it is still compatible with the view that the focused phrase still moves to a low Spec, FocP as a reviewer notes.} 
+(4) shows a question that places \isi{focus} on the IO. The corresponding answer to this question will thus have an IO-DO order as seen in the answer. Additionally, the verb must have an OM that corresponds to the non-focused DO. In summary, \ili{Zulu} appears to have an OM that indicates dislocation of a post-verbal argument. In addition, such an OM appears in IAV-\isi{focus} contexts, but one that matches the non-focused post-verbal argument. These facts are taken by \citet{chengdowning2012} to be an indicator that \ili{Zulu} IAV-\isi{focus} is realized by the strategy in \figref{fig:Selva:1b}. Namely, the non-focused argument is dislocated out of the VP such that the focused argument appears to be in an IAV configuration.\footnote{However, note that even if dislocation of non-focused elements is obligatory as Cheng \& Downing note, it is still compatible with the view that the focused phrase still moves to a low Spec, FocP as a reviewer notes.} 
 
 \begin{figure}
 % 	\includegraphics[width=0.6\textwidth]{figures/sel2.png}	
@@ -197,7 +195,7 @@ In this section, I describe how the IAV-\isi{focus} configuration is achieved in
 \z
 \z
 %TODO Ask about what to do about weird glosses
-(5) shows a ditransitive clause and my informant notes that either order between the \isi{direct object} and \isi{indirect object} is possible in neutral contexts.\footnote{As mentioned above, I assume that such contexts are not associated with any topic/ \isi{focus} information. Below, I discuss briefly the afterthought reading that dislocated elements in \ili{Lubukusu} have \citep{Diercks2013}.}  In such contexts, the sentence is a simple declarative statement with neither the \isi{direct object} nor the \isi{indirect object} being focused. Thus (5a) and (5b) are both possible. In \isi{focus} contexts, however, this is not the case.
+(5) shows a ditransitive clause and my informant notes that either order between the \isi{direct object} and \isi{indirect object} is possible in neutral contexts.\footnote{As mentioned above, I assume that such contexts are not associated with any topic\slash \isi{focus} information. Below, I discuss briefly the afterthought reading that dislocated elements in \ili{Lubukusu} have \citep{Diercks2013}.}  In such contexts, the sentence is a simple declarative statement with neither the \isi{direct object} nor the \isi{indirect object} being focused. Thus (5a) and (5b) are both possible. In \isi{focus} contexts, however, this is not the case.
 
 \ea\label{ex:selvanathan:6}
 \ili{Lubukusu} \\
@@ -302,7 +300,7 @@ What these facts show is that dislocation (as evidenced by an OM on the verb) is
 
 Now that we have seen that the IAV-\isi{focus} configuration is realized through \isi{movement} of a focused phrase in \ili{Lubukusu}, I will now argue that \ili{Lubukusu} IAV-\isi{focus} is partly motivated by case-considerations. First, I describe briefly how the two strategies to realizing the IAV-\isi{focus} configuration have been hypothesized to feed \isi{focus} interpretation in the literature.
 
-In the non-dislocation strategy where the focused element moves to a focused projection (as in Figure (1a)), this is quite obvious. Following in the footsteps of the cartographic approaches to clause peripheries \citep{rizzi1997}, interpretation of the moved element as \isi{focus} is a direct result of it being in a position reserved for such an interpretation. On the other hand, in the dislocation strategy advanced by \citet{chengdowning2012} (as in Figure (1b)), dislocation of the non-focused elements out of the VP is driven by prosodic requirements. In \posscitet{chengdowning2012} Optimality Theoretic (OT, \citealt{Prince1993}) analysis, a focused element occurs in an IAV position because of the twin requirements of prosodic prominence and structural prominence. In short, non-focused post-verbal elements are dislocated out of the VP because of the requirement to ensure that the prosodically prominent focused phrase is also structurally prominent, i.e. the highest element within the vP. 
+In the non-dislocation strategy where the focused element moves to a focused projection (as in \figref{fig:Selva:1a}), this is quite obvious. Following in the footsteps of the cartographic approaches to clause peripheries \citep{rizzi1997}, interpretation of the moved element as \isi{focus} is a direct result of it being in a position reserved for such an interpretation. On the other hand, in the dislocation strategy advanced by \citet{chengdowning2012} (as in \figref{fig:Selva:1b}), dislocation of the non-focused elements out of the VP is driven by prosodic requirements. In \posscitet{chengdowning2012} Optimality Theoretic (OT, \citealt{Prince1993}) analysis, a focused element occurs in an IAV position because of the twin requirements of prosodic prominence and structural prominence. In short, non-focused post-verbal elements are dislocated out of the VP because of the requirement to ensure that the prosodically prominent focused phrase is also structurally prominent, i.e. the highest element within the vP. 
 
 However, we have already seen some \ili{Lubukusu} facts that suggest that IAV-\isi{focus} cannot be purely a \isi{focus} phenomenon. For one, if this was the case, then the fact seen in (10) where focused adjuncts in \ili{Lubukusu} need not be in an IAV-position is surprising for both approaches. In the non-dislocation approach, if a focused phrase has to move to Spec, FocP, then why doesn't a focused adjunct need to? Such data is problematic for Cheng \& Downing's account of the dislocation approach as well. If a focused element has to be structurally prominent, then why doesn’t a focused adjunct have to be structurally prominent as well? One cannot put these aside by claiming that adjuncts are in general exempt from IAV-\isi{focus}. For one, \ili{Zulu} focused adjuncts are required to occur in the IAV position as seen below.
 
@@ -418,7 +416,10 @@ Wekesa   \textsc{sm}{}-kill   {the rat}    slowly \\
   
 \begin{figure}
 % 	\includegraphics[width=\textwidth]{figures/sel5.png}
-\begin{forest}
+\subfigure[ADJ-OBJ order\label{fig:Selva:5a}]{%
+% 	\includegraphics[width=\textwidth]{figures/sel1.png}
+\begin{minipage}[t]{.5\linewidth}%
+\centering\begin{forest}
  [vP
  [SUBJ] [v'
   [v + V\textsubscript{i}] [VP
@@ -430,9 +431,11 @@ Wekesa   \textsc{sm}{}-kill   {the rat}    slowly \\
  ]
  \coordinate[below=.5\baselineskip of obj2] (bofobj2);
  \draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
-\end{forest}
-\hspace{4em}
-\begin{forest}
+\end{forest}\vspace*{.5\baselineskip}\end{minipage}}%
+\subfigure[OBJ-ADJ order\label{fig:Selva:5b}]{%
+% 	\includegraphics[width=\textwidth]{figures/sel1.png}
+\begin{minipage}[t]{.5\linewidth}%
+\centering\begin{forest}
  [vP
   [SUBJ] [v'
     [v + V\textsubscript{i},name=vvi] [VP
@@ -444,11 +447,8 @@ Wekesa   \textsc{sm}{}-kill   {the rat}    slowly \\
  ]
  \coordinate[below=.5\baselineskip of obj2] (bofobj2);
  \draw[-{Triangle[]}] (vvi.west) -| ++(-\baselineskip,-\baselineskip) |- (bofobj2) -- (obj2);
-\end{forest}
-
-
-	\caption{(a) ADJ-OBJ order    \hspace{2cm}      (b) OBJ-ADJ order}
-	\label{fig:selvanathan:5}	
+\end{forest}\vspace*{.5\baselineskip}\end{minipage}}
+	\caption{\label{fig:selvanathan:5}\color{red}Missing caption}
 \end{figure}
 
    
@@ -480,12 +480,15 @@ In \figref{fig:selvanathan:5} the \isi{case feature} of the objects is deleted b
 \end{figure}
 
 
-Figure (6) shows a structure in which the \isi{direct object} is focused. Since there is a focused phrase, FP is projected and the uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused \isi{direct object}. Since the object is in an \textsc{agree} relation with F and it needs case, it moves to Spec, FP to check the EPP feature of the F head. This allows v to be in the right configuration to delete the uninterpretable case features of the raised focused object. This also gives the right order for a focused object and an adjunct.\footnote{F has interpretable case features too but it does not have any DP to check. This does not matter because I assume that interpretable case features that do not take part in a checking relation do not induce a crash at LF, unlike uninterpretable features.}  Now let's move on to see what happens when it is the adjunct in a transitive that is focused.\\
+\figref{fig:selvanathan:6} shows a structure in which the \isi{direct object} is focused. Since there is a focused phrase, FP is projected and the uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused \isi{direct object}. Since the object is in an \textsc{agree} relation with F and it needs case, it moves to Spec, FP to check the EPP feature of the F head. This allows v to be in the right configuration to delete the uninterpretable case features of the raised focused object. This also gives the right order for a focused object and an adjunct.\footnote{F has interpretable case features too but it does not have any DP to check. This does not matter because I assume that interpretable case features that do not take part in a checking relation do not induce a crash at LF, unlike uninterpretable features.}  Now let's move on to see what happens when it is the adjunct in a transitive that is focused.\\
 
   
 \begin{figure}
 % % 	\includegraphics[width=\textwidth]{figures/sel7.png}
-\begin{forest}
+\subfigure[Focused ADJ-OBJ\label{fig:Selva:7a}]{%
+% 	\includegraphics[width=\textwidth]{figures/sel1.png}
+\begin{minipage}[b]{.5\linewidth}%
+\centering\begin{forest}
  [vP
   [SUBJ] [v'
     [v + V\textsubscript{i}] [FP
@@ -499,8 +502,11 @@ Figure (6) shows a structure in which the \isi{direct object} is focused. Since 
  ]
  \draw[-{Triangle[]}] (ufocus.165) -| ++(-\baselineskip,-\baselineskip) |- (ucase.195);
  \draw[-{Triangle[]}] (adj.south) |- ++(-\baselineskip,-.5\baselineskip) -| (ufocus.south);
-\end{forest}
-\begin{forest}
+\end{forest}\vspace*{\baselineskip}\end{minipage}}%
+\subfigure[OBJ- Focused ADJ\label{fig:Selva:7b}]{%
+% 	\includegraphics[width=\textwidth]{figures/sel1.png}
+\begin{minipage}[b]{.5\linewidth}%
+\centering\begin{forest}
  [vP
   [SUBJ] [v'
     [v + V\textsubscript{i}] [FP
@@ -514,15 +520,14 @@ Figure (6) shows a structure in which the \isi{direct object} is focused. Since 
  ]
  \draw[-{Triangle[]}] (ufocus.165) -| ++(-\baselineskip,-\baselineskip) |- (ucase.195);
  \draw[-{Triangle[]}] (adj.south) |- ++(-\baselineskip,-4\baselineskip) -| (ufocus.south);
-\end{forest}
-	\caption{(a) Focused ADJ-OBJ     \hspace{1cm}     (b) OBJ- Focused ADJ}
-	\label{fig:selvanathan:7}
+\end{forest}\vspace*{\baselineskip}\end{minipage}}
+\caption{\label{fig:selvanathan:7}\color{red}Missing caption}
 \end{figure}
 
 
-Figure (7) shows the two different orders that are possible when the adjunct is focused. Since there is a focused phrase in these constructions, there is an FP. The uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused adjunct. The case features of the object are deleted by the F head since it is the closest head to the \isi{direct object} that can do so. Crucially, there is no \isi{movement} of the adjunct to Spec, FP because the adjunct does not require case and as such need not be in a configuration in which v can assign case to it. 
+\figref{fig:selvanathan:7} shows the two different orders that are possible when the adjunct is focused. Since there is a focused phrase in these constructions, there is an FP. The uninterpretable \isi{focus} features on F are deleted through \textsc{Agree} with the focused adjunct. The case features of the object are deleted by the F head since it is the closest head to the \isi{direct object} that can do so. Crucially, there is no \isi{movement} of the adjunct to Spec, FP because the adjunct does not require case and as such need not be in a configuration in which v can assign case to it. 
 
-Figure (7) reveals two peculiarities of what I have proposed to be an EPP feature of the F head. The first is that the phrase that checks the EPP feature must be focused. In my analysis, this translates to a previously established \textsc{Agree} relationship between the F head and the focused phrase. The second is that the phrase must be an element that requires case. These two properties mean that only focused DPs move to Spec, FP. Focused adjuncts do not. The implication of this is that the EPP feature of F cannot be formalized as an uninterpretable feature. If this were the case, then derivations like Figure (7) where the focused adjunct does not move to Spec, FP should lead to a crash. Instead, I recharacterize the EPP feature as the following. 
+\figref{fig:selvanathan:7} reveals two peculiarities of what I have proposed to be an EPP feature of the F head. The first is that the phrase that checks the EPP feature must be focused. In my analysis, this translates to a previously established \textsc{Agree} relationship between the F head and the focused phrase. The second is that the phrase must be an element that requires case. These two properties mean that only focused DPs move to Spec, FP. Focused adjuncts do not. The implication of this is that the EPP feature of F cannot be formalized as an uninterpretable feature. If this were the case, then derivations like \figref{fig:selvanathan:7} where the focused adjunct does not move to Spec, FP should lead to a crash. Instead, I recharacterize the EPP feature as the following. 
 
 \ea\label{ex:selvanathan:14}
 Recharacterizing the EPP feature of F\footnote{My thanks to an anonymous reviewer who suggested an alternative analysis along these general lines.} \\
@@ -623,24 +628,22 @@ Non-focused elements & Optionally move out of VP & Must move out of VP\\
 
 \tabref{tab:1} shows that in both \ili{Lubukusu} and \ili{Zulu}, only focused phrases that require case (i.e. nominal) move to Spec, FP. The difference between the two pertains to how they treat non-focused elements within the VP. While \ili{Lubukusu} tolerates such elements within the VP, \ili{Zulu} does not. 
 
-\section{ Conclusion}
-
+\section{Conclusion}
 In this paper, I have argued that \ili{Lubukusu} provides good evidence that IAV \isi{focus} does not require dislocation in order to be realized. Based on the fact that \ili{Lubukusu} focused adjuncts do not require to be in an IAV-position, I argued that IAV-\isi{focus} is not purely a \isi{focus} phenomenon. Instead I claim that the case features of the focused phrase also determine whether the IAV-position is required. Finally, I argued that the same analysis can be extended to \ili{Zulu} IAV-\isi{focus}.
 
-\section*{Abbreviations}
-
-I would like to thank Ken Safir, Mark Baker, Paul Roger Bassong, two anonymous reviewers and the audience at ACAL 46 for discussion and comments at earlier stages of this work. I would like to especially thank Justine \ili{Sikuku} for all of the \ili{Lubukusu} data here. Much of the initial groundwork for this paper was carried out during the time I was a research assistant for the Afranaph Project (http://www.africananaphora.rutgers.edu) which was/ is supported by NSF BCS 0303447, NSF BCS 0523102, NSF BCS 0919086 and NSF BCS 1324404. All errors are solely mine.
-
 \section*{Acknowledgements}
-\begin{tabularx}{.45\textwidth}{lQ}
+I would like to thank Ken Safir, Mark Baker, Paul Roger Bassong, two anonymous reviewers and the audience at ACAL 46 for discussion and comments at earlier stages of this work. I would like to especially thank Justine \ili{Sikuku} for all of the \ili{Lubukusu} data here. Much of the initial groundwork for this paper was carried out during the time I was a research assistant for the Afranaph Project (\url{http://www.africananaphora.rutgers.edu}) which was\slash is supported by NSF BCS 0303447, NSF BCS 0523102, NSF BCS 0919086 and NSF BCS 1324404. All errors are solely mine.
+
+\section*{Abbreviations}
+\begin{tabularx}{.5\textwidth}{@{}lQ}
 \textsc{agr} & Agreement\\
 \textsc{appl} & Applicative marker\\
 \textsc{aug} & Augment\\
 \textsc{c1, c2} etc & Class marker\\
 \textsc{fv} & Final vowel\\
 \textsc{obj} & Object marker\\
-\end{tabularx}
-\begin{tabularx}{.45\textwidth}{lQ}
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
 \textsc{om} & Object marker\\
 \textsc{perf} & Perfective\\
 \textsc{sm} & Subject marker\\
@@ -650,34 +653,31 @@ I would like to thank Ken Safir, Mark Baker, Paul Roger Bassong, two anonymous r
 \end{tabularx}
 
 % Edwin: biblio entries added
-\begin{comment}
-\begin{verbatim}%%move bib entries to  localbibliography.bib
-\textbf{References}
-
-Belletti, Andrea. 2001. Agreement Projections. In Baltin, Michael and Chris Collins eds, The Handbook of Contemporary Syntactic theory. 489-510.
-
-Belletti, Andrea. 2004. Aspect of the low IP area. in The structure of CP and IP. The Cartography of   syntactic structures, Rizzi, Luigi (ed.), 16-51. Oxford: Oxford University Press.
-
-Cheng, Lisa and Laura Downing. 2012. Against FocusP: arguments from \ili{Zulu}. In Kucerova, Ivona and Ad Neeleman (eds.) Information Structure. Contrasts and Positions. Cambridge: Cambridge University Press, 247-266.
-
-Cheng, Lisa and Laura Downing. 2014. The Problem of Adverbs. In Caspers, Johanneke, Yiya   Chen, Willemijn Heeren, Jos Pacilly, Niels O. Schiller and Ellen van Zanten (eds.) Above and Beyond the Segments. Experimental linguistics and phonetics.~Amsterdam, John Benjamins
-
-Chomsky, Noam. 2001. Derivation by Phase. in Kenstowicz, Michael (ed.) Ken Hale: A Life in Language. 1-52. Cambridge, Mass.: MIT Press.
-
-Hyman, Larry M. 1979. Phonology and noun structure. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 1-72.
-
-Jayaseelan, Karattuparambil A. 1999. A Focus Phrase above vP. Proceedings of the 2nd Asian GLOW   Colloquium, 195-212. Nanzan University.
-
-Rizzi, Luigi. 1997. The Fine Structure of the Left Periphery. In L. Haegeman (ed.), Elements of Grammar. Dordrecht: Kluwer, 281–337.
-
-Safir, Ken and Naga Selvanathan. forthcoming. Niger-Congo transitive reciprocal constructions and polysmeny with reflexives. in Payne, Doris L., Sara Pachiarotti and Mokaya Bosire (eds.) Diversity in African Languages: Selected Papers from the 46th Annual Conference on African Linguistics. (Contemporary African Linguistics 2.) Berlin: Language Science Press.
-
-
-Watters, John. 1979. Focus in \ili{Aghem}: a study of its formal correlates and typology. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 137-197.
-
-\end{verbatim} 
-\end{comment}
-\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
-
+% % % \begin{verbatim}%%move bib entries to  localbibliography.bib
+% % % \textbf{References}
+% % % 
+% % % Belletti, Andrea. 2001. Agreement Projections. In Baltin, Michael and Chris Collins eds, The Handbook of Contemporary Syntactic theory. 489-510.
+% % % 
+% % % Belletti, Andrea. 2004. Aspect of the low IP area. in The structure of CP and IP. The Cartography of   syntactic structures, Rizzi, Luigi (ed.), 16-51. Oxford: Oxford University Press.
+% % % 
+% % % Cheng, Lisa and Laura Downing. 2012. Against FocusP: arguments from \ili{Zulu}. In Kucerova, Ivona and Ad Neeleman (eds.) Information Structure. Contrasts and Positions. Cambridge: Cambridge University Press, 247-266.
+% % % 
+% % % Cheng, Lisa and Laura Downing. 2014. The Problem of Adverbs. In Caspers, Johanneke, Yiya   Chen, Willemijn Heeren, Jos Pacilly, Niels O. Schiller and Ellen van Zanten (eds.) Above and Beyond the Segments. Experimental linguistics and phonetics.~Amsterdam, John Benjamins
+% % % 
+% % % Chomsky, Noam. 2001. Derivation by Phase. in Kenstowicz, Michael (ed.) Ken Hale: A Life in Language. 1-52. Cambridge, Mass.: MIT Press.
+% % % 
+% % % Hyman, Larry M. 1979. Phonology and noun structure. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 1-72.
+% % % 
+% % % Jayaseelan, Karattuparambil A. 1999. A Focus Phrase above vP. Proceedings of the 2nd Asian GLOW   Colloquium, 195-212. Nanzan University.
+% % % 
+% % % Rizzi, Luigi. 1997. The Fine Structure of the Left Periphery. In L. Haegeman (ed.), Elements of Grammar. Dordrecht: Kluwer, 281–337.
+% % % 
+% % % Safir, Ken and Naga Selvanathan. forthcoming. Niger-Congo transitive reciprocal constructions and polysmeny with reflexives. in Payne, Doris L., Sara Pachiarotti and Mokaya Bosire (eds.) Diversity in African Languages: Selected Papers from the 46th Annual Conference on African Linguistics. (Contemporary African Linguistics 2.) Berlin: Language Science Press.
+% % % 
+% % % 
+% % % Watters, John. 1979. Focus in \ili{Aghem}: a study of its formal correlates and typology. In Larry Hyman (ed.), \ili{Aghem} Grammatical structure. SCOPIL 7, 137-197.
+% % % 
+% % % \end{verbatim} 
+{\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]}
 \end{document}
