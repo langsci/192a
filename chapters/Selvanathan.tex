@@ -1,25 +1,16 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-\usepackage{pifont.sty}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draft]{langsci/langscibook}  
 
 \title{A case based account of Bantu IAV-focus}
-\author{
-Naga Selvanathan\affiliation{Rutgers University}
-}
-% \chapterDOI{} %will be filled in at production
-
-% \epigram{}
+\author{Naga Selvanathan\affiliation{Rutgers University}}
 
 \abstract{Right dislocation \citep{chengdowning2012} and movement to a low FocP \citep{vanderwal2006} are competing analyses of Immediately-After-Verb (IAV) focus. In this paper, I discuss novel Lubukusu IAV focus data which shows that 1) IAV focus requires movement to a low FP and that 2) IAV focus is not a purely focus related phenomenon. Adopting \citet{Baker2006}
 analysis of Linkers, I propose that movement to a low FP for focus interpretation is a strategy of case assignment to DPs within the VP. This analysis is shown to be superior to a purely right dislocation analysis as it can also better account for IAV focus asymmetries between Zulu and Lubukusu.}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[32]
+}{}
 
 \begin{document}
 
