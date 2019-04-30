@@ -1,21 +1,28 @@
-\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
 \author{{Siri Gjers\o e}\affiliation{Leipzig University}\and Jude Nformi\affiliation{Leipzig University}\lastand Ludger Paschen\affiliation{Leipzig University}} 
 \title{Hybrid falling tones in Limbum}
 
 \abstract{This paper examines the interaction between lexical tone and phrase-level intonation in Limbum. On the basis of an acoustic study of novel data, we claim that Limbum has a phrase-final low boundary tone (L\%) that interacts with lexical tones to give rise to \textit{hybrid} falling tones: tones whose specifications are partially lexical and partially phrasal. We argue that hybrid tones and other tonal processes in Limbum are readily captured in an analysis that assumes tonal geometry and empty nodes. We propose to represent L\% as a floating low register feature (l) that links to lexical tonal root nodes, giving rise to various surface patterns depending on the tonal specifications of the root nodes. Our account supersedes previous analyses in terms of tone sandhi rules.}
 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[6]
+}{}
+
+
+\begin{document}
 \maketitle
 
-%\begin{document}
 
-\nonstopmode
+ 
 
 % --------------------------------- %
 \section{Introduction}
 
 \ili{Limbum} is a \ili{Grassfields} \ili{Bantu} language spoken by about 1,340,000 speakers in the Donga Mantung division of the North West region of Cameroon.
 \ili{Limbum} is an understudied language, especially with regards to its suprasegmental phonetics and phonology.
-In previous work \citep{Fiore.1987,Fransen.1995}, \ili{Limbum} has been described as a \isi{tone} language with three level tones (H, L, M) and four contour tones (HL, LM, ML, LL).\footnote{The sources mentioned also discuss a somewhat dubious fifth contour \isi{tone}, HM. \citet{Fiore.1987} argues that HM is an allotone of HL and proposes segmental length as a factor conditioning allotony, a view that is shared in \citet{Fransen.1995}. However, \citet{Fiore.1987} presents only two examples of HM-toned words, and our informants accept this \isi{tone} on only a single lexical item, \textit{b\'a\=a} `two'. On the basis of its highly limited distribution, we decided not to include HM in our study.\label{footnote:gjersoe:testsentences}}
+In previous work \citep{Fiore.1987,Fransen.1995}, \ili{Limbum} has been described as a \isi{tone} language with three level tones (H, L, M) and four contour tones (HL, LM, ML, LL).\footnote{The sources mentioned also discuss a somewhat dubious fifth contour \isi{tone}, HM. \citet{Fiore.1987} argues that HM is an allotone of HL and proposes segmental length as a factor conditioning allotony, a view that is shared in \citet{Fransen.1995}. However, \citet{Fiore.1987} presents only two examples of HM-toned words, and our informants accept this \isi{tone} on only a single lexical item, \textit{bá\=a} `two'. On the basis of its highly limited distribution, we decided not to include HM in our study.\label{footnote:gjersoe:testsentences}}
 It has also been observed that low-falling tones appear as level tones when they occur in a non-sentence-final position, a process which \citet{Fransen.1995} argues is the result of a sandhi simplification rule.
 
 In this paper, we present an acoustic analysis of novel data from recordings of three native speakers of \ili{Limbum}.
@@ -43,7 +50,7 @@ The recordings of the two other speakers were conducted in Buea, Cameroon using 
 %At the time of recording, the female speaker had been living in Douala for 2 years.
 
 The speakers were given a reading task with a set of constructed test sentences.
-In the examples in \REF{ex:gjersoe:testsentences}, \textit{l\'e} (in boldface) is the target word.
+In the examples in \REF{ex:gjersoe:testsentences}, \textit{lé} (in boldface) is the target word.
 We tested five sentence types:
 Declarative sentences in which the target word appears in a sentence-final position (\textit{Decl.Fin}), declaratives in which the target word appears in a non-sentence-final position (\textit{Decl.Med}), simple wh-questions with the target word as the last item (\textit{Wh.Fin}), wh-questions with the final question particle \textit{a} (\textit{Wh.Prt}), and polar questions which always end in the particle \textit{a} (\textit{Pol}).
 The semantic difference between \textit{Wh.Fin} and \textit{Wh.Prt} is that the latter signals that the wh-element is a known referent.\footnote{See \citeauthor{Driemeletal2017} (forthc.) for further discussion of the  functional domains of particles in \ili{Limbum}.}
@@ -51,47 +58,47 @@ A complete list of target words (two words per \isi{tone})\footnote{We found two
 % We picked one set of test items with the low vowel /a/ as nucleus (items which merge with the particle \textit{a}) and one set with a high or mid vowel nucleus (items which do not merge with the particle \textit{a})} in order to control for effects of microprosody.
 In total, our study comprises 7 tones x 2 words x 5 sentence types x 3 speakers.  %Correction from 6-7 because LM is included
 Each sentence was pronounced 1--2 times by each speaker.
-Values for sentences with more than one repetition were aggregated in R studio (v. 3.2.2).\footnote{It was only possible to record \emph{t\=a\`a} `father' and \emph{s\`o\=o} `basket' for one speaker. We used two repetitions per item from that speaker, aggregated in R.} %Should we have some kind of explanation for why?
+Values for sentences with more than one repetition were aggregated in R studio (v. 3.2.2).\footnote{It was only possible to record \emph{t\=aà} `father' and \emph{s\`o\=o} `basket' for one speaker. We used two repetitions per item from that speaker, aggregated in R.} %Should we have some kind of explanation for why?
 % dismiss the fact that MD misses one LM word
 
 % Siri: I have now revised the graphs without 'bird' so only two HL items as in the list. I also added one more repetitions each of father and basket from Jude to compensate for the lack recordings from the two speakers of this item. \red{why 3 words for HL? let's decide on one word with /a/ (bird OR cutlass), otherwise this looks really fishy and people will wonder why we used three words for HL but only 2 words for all other tones}
 
 \ea\label{ex:gjersoe:testsentences}
-\gll T\'ank\'o \`am y{\=ɛ} \textbf{l\'e}\\ 
+\gll Tánkó àm y{\=ɛ} \textbf{lé}\\ 
 T. \textsc{pst} see bat\\
 \glt `Tanko saw a bat.' \hfill \textit{(Decl.Fin)}
 \z
 
 
 \ea
-\gll T\'{a}nk\'{o} \`am y{\=ɛ} \textbf{l\'e} f\={\i}\\
+\gll Tánkó àm y{\=ɛ} \textbf{lé} f\={\i}\\
 T. \textsc{pst} see bat new\\
 \glt `Tanko saw a new bat.' \hfill \textit{(Decl.Med)}
 \z
 
 
 \ea
-\gll \'a nd\={a} \`am y{\=ɛ} \textbf{l\'e}\\
+\gll á nd\={a} àm y{\=ɛ} \textbf{lé}\\
 \textsc{foc} who \textsc{pst} see bat\\
 \glt `Who saw a bat?' \hfill \textit{(Wh.Fin)}
 \z
 
 
 \ea
-\gll \'a nd\={a} \`am y{\=ɛ} \textbf{l\'e} a\\
+\gll á nd\={a} àm y{\=ɛ} \textbf{lé} a\\
 \textsc{foc} who \textsc{pst} see  bat \textsc{prt}\\
 \glt `Who saw a bat?' \hfill \textit{(Wh.Prt)}
 \z
 
 
 \ea\label{ex:gjersoe:testsentencesII}
-\gll  T\'{a}nk\'{o} \`am y{\=ɛ} \textbf{l\'e} a\\
+\gll  Tánkó àm y{\=ɛ} \textbf{lé} a\\
 T. \textsc{pst} see bat \textsc{prt}\\
 \glt `Did Tanko se a bat?' \hfill \textit{(Pol)}
 \z
 
 
-\vs \noindent The aim of our acoustic study was to test prior observations that contour tones alternate with level tones phrase-medially \citep{Fransen.1995}, and also to examine whether lexical tones interact with boundary tones.
+\noindent The aim of our acoustic study was to test prior observations that contour tones alternate with level tones phrase-medially \citep{Fransen.1995}, and also to examine whether lexical tones interact with boundary tones.
 In the following, we abbreviate alternating low-falling\slash level tones as \textit{L(L)}, \textit{M(L)}, and \textit{H(L)}, and we use \textit{T(L)} to refer to the whole group of alternating tones. Level tones are abbreviated  as \textit{L}, \textit{M}, \textit{H}, and \textit{T}, respectively.
 Annotations were done in Praat \citep{Praat2016} and automatically extracted from TextGrid and PitchTier files.
 Starting from the M-toned verb \textit{y{\=ɛ}} `see' (see \REF{ex:gjersoe:testsentences}), the onset (O) and nucleus (N) of the target words and any syllables following them (\textit{f\={\i}} in \textit{Decl.Med} and the particle \textit{a} in \textit{Pol} and \textit{Wh.Prt}) were annotated.
@@ -101,7 +108,7 @@ Interpolation for words with voiceless consonantal onsets (for two out of our 14
 F0 values at equidistant time points within intervals were then extracted using the Praat script by  \citet{RemijsenScriptF0Norm}.
 The F0 values were converted into semitones (st) in R, with the midpoint value of \textit{y{\=ɛ}} `see' serving as base line for the semitone scale for each individual item.
 
-\begin{table}[h]
+\begin{table}
 \caption{List of target words and attested tone types in Limbum}
 \label{tab:gjersoe:targetwords}
 \centering
@@ -109,18 +116,18 @@ The F0 values were converted into semitones (st) in R, with the midpoint value o
 \lsptoprule
 \textbf{Tone} & \textbf{Word 1} & \textbf{Gloss 1} & \textbf{Word 2} & \textbf{Gloss 2} \\\midrule
 \multicolumn{5}{c}{\textsc{Level tones}} \\\hline
-L &  \emph{b\`a} & `bag' & \emph{b\`i} & `people' \\
+L &  \emph{bà} & `bag' & \emph{b\`i} & `people' \\
 M & \emph{b\=a} & `fufu' & \emph{b\=o} & `children'\\
 %M & \emph{nt\=a} & market & \emph{\textipa{N}g\=u} & wood\\
-H & \emph{b\'a} & `hill' & \emph{l\'e} & `bat' \\
+H & \emph{bá} & `hill' & \emph{lé} & `bat' \\
 \midrule\multicolumn{5}{c}{\textsc{Low-falling contour tones}} \\\midrule
-L(L) & \emph{r\`a\`a} & `bridge' & \emph{rd\`o\`o} & `going'\\
-M(L) & \emph{t\=a\`a} & `father' & \emph{b\={\i}\`i} & `co-wife' \\
-H(L) & \emph{d\'a\`a} & `cutlass' & \emph{k\'u\`u} & `funnel'\\
-% \emph{cw\'a\`a} & `yellow bird'
+L(L) & \emph{ràà} & `bridge' & \emph{rd\`o\`o} & `going'\\
+M(L) & \emph{t\=aà} & `father' & \emph{b\={\i}\`i} & `co-wife' \\
+H(L) & \emph{dáà} & `cutlass' & \emph{k\'u\`u} & `funnel'\\
+% \emph{cwáà} & `yellow bird'
 \midrule\multicolumn{5}{c}{\textsc{Rising contour tones}} \\\midrule
-LM & \emph{y\`a\=a} & `princess' & \emph{s\`o\=o} & `basket'\\ % speaker MD: "soo" missing
-%M  & \emph{b\'a\=a} & `two' &  -- & -- \\
+LM & \emph{yà\=a} & `princess' & \emph{s\`o\=o} & `basket'\\ % speaker MD: "soo" missing
+%M  & \emph{bá\=a} & `two' &  -- & -- \\
 \lspbottomrule
 \end{tabular}
 \end{table}
@@ -205,7 +212,7 @@ However, this convergence only seems to occur on low-vowel items (see footnote \
 \end{center}
 \end{figure}
 
-\clearpage
+
 
 
 % ----- %
@@ -213,7 +220,7 @@ However, this convergence only seems to occur on low-vowel items (see footnote \
 
 Vowels on our target words are generally longer sentence-finally (\textit{Decl.Fin} and \textit{Wh.Fin}) than in other contexts.
 Duration differences are most prominent for alternating falling/non-falling tones, which are realized as TL sentence-finally and as T sentence-medially.
-For instance, in `bridge', `father' and `cutlass', vowels are long sentence-finally (\textit{r\`a\`a}, \textit{t\=a\`a}, and \textit{d\'a\`a}) but short sentence-medially (\textit{r\`a}, \textit{t\=a}, and \textit{d\'a}). Level tones, in particular H, may also occasionally be longer sentence-finally. Thus, `hill' and `bat' are sometimes pronounced as long \textit{b\'a\'a} and \textit{l\'e\'e} in \textit{Decl.Fin} and \textit{Wh.Fin} but as short \textit{b\'a} and \textit{l\'e} in \textit{Decl.Med} and \textit{Wh.Prt}. 
+For instance, in `bridge', `father' and `cutlass', vowels are long sentence-finally (\textit{ràà}, \textit{t\=aà}, and \textit{dáà}) but short sentence-medially (\textit{rà}, \textit{t\=a}, and \textit{dá}). Level tones, in particular H, may also occasionally be longer sentence-finally. Thus, `hill' and `bat' are sometimes pronounced as long \textit{báá} and \textit{léé} in \textit{Decl.Fin} and \textit{Wh.Fin} but as short \textit{bá} and \textit{lé} in \textit{Decl.Med} and \textit{Wh.Prt}. 
 The rising contour \isi{tone} LM shows no durational differences across the different sentence types.
 % This exceptional behavior is clearly attributable to the fact that the LM rising \isi{tone} pattern surfaces as LM in both medial and final positions of all tested sentence types, unlike the falling contour forms which have a TL-T alternation medially and finally.
 Even though differences in vowel duration are attested in the recordings of all of our three speakers, there is a great deal of inter- and intra-speaker variation as to how big these length differences are, and failure to lengthen a \isi{final vowel} in \textit{Decl.Fin} and \textit{Wh.Fin} is not considered ungrammatical.
@@ -230,14 +237,7 @@ The question particle \textit{a} receives a L \isi{tone} in \textit{Wh.Prt}, whi
 L can thus be distinguished from L(L) only in \textit{Pol}.
 LM is always realized as LM in all tested environments.
 
-Our data also reveal a small number of minor phonetic effects.
-First, the mid target in the sequence LM.L is not reached in \textit{Wh.Prt}.
-We assume that this is a coarticulatory effect conditioned by the two L targets, one from the lexical \isi{tone} and other from the particle.
-As mentioned earlier, this effect is stronger for the high-vowel item than the low-vowel item.
-We do not have a straightforward explanation for the small rise on the particle in \textit{Pol} following L and LM.
-For now, we do not consider this a relevant phonological process because the extra rise on L does not reach a M target and the extra rise on LM does not reach a H target. %One plausible hypothesis for this rise is be that the speakers implementing the M \isi{tone} of the particle with the M \isi{tone} of the LM target. This M merged with M could result in a phonetic F0 rise.
-
-\begin{table}[h]
+\begin{table}[b]
 \centering
 \caption{Surface tones across all tested sentence types}
 \label{tab:gjersoe:summarytonalchanges}
@@ -250,6 +250,15 @@ For now, we do not consider this a relevant phonological process because the ext
 \textit{Pol}     &L.L&M.M&H.H&L.M &M.M&H.M&LM&\\
 \lspbottomrule\end{tabular}
 \end{table}
+
+\clearpage
+Our data also reveal a small number of minor phonetic effects.
+First, the mid target in the sequence LM.L is not reached in \textit{Wh.Prt}.
+We assume that this is a coarticulatory effect conditioned by the two L targets, one from the lexical \isi{tone} and other from the particle.
+As mentioned earlier, this effect is stronger for the high-vowel item than the low-vowel item.
+We do not have a straightforward explanation for the small rise on the particle in \textit{Pol} following L and LM.
+For now, we do not consider this a relevant phonological process because the extra rise on L does not reach a M target and the extra rise on LM does not reach a H target. %One plausible hypothesis for this rise is be that the speakers implementing the M \isi{tone} of the particle with the M \isi{tone} of the LM target. This M merged with M could result in a phonetic F0 rise.
+
 
 % --------------------------------- %
 \section{A formal account of tone-intonation interaction}\label{sec:gjersoe:ouranalysis}
@@ -301,7 +310,7 @@ This floating feature interacts with lexically underspecified (and in some cases
 \end{tabular}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}
 \caption{Underlying tone inventory}
 \label{tab:gjersoe:InventoryReps}
 \centering
@@ -312,6 +321,7 @@ This floating feature interacts with lexically underspecified (and in some cases
 \lspbottomrule\end{tabular}
 \end{table}
 
+\largerpage[1.5]
 \noindent While equating phrasal tones with \isi{register} features might seem ad-hoc and unwarranted at first sight, there is a crucial parallel between the two: both can be understood as abstract phonetic targets relative to a previous target.
 Boundary tones following a pitch accent of the same type have the effect of intensifying an already initiated downward or upward \isi{movement} \citep{Pierrehumbert.1980}, while a sequence of two low \isi{register} features is phonetically realized as further lowering in RTT.
 Lexical \isi{tone} features show a strikingly different behavior from both \isi{register} features and boundary tones in this respect, as a sequence of three H-toned TBU's is not expected to show a rising contour under standard assumptions.
@@ -339,8 +349,8 @@ The constraint \textrho$\to$o, for instance, should be read as ``Count one viola
 \ea \begin{tabular}{rl}\IllustrationUp&Count one {\viol} for each {\textbeta} not associated to a \textalpha.\\\end{tabular} \label{ex:gjersoe:containmentarrowsII}
 \z
 
-
-\vs \noindent Two constraints corresponding to classical OT faithfulness constraints \textsc{Max} and \textsc{Dep} are given in \REF{ex:gjersoe:containmentarrowsIII} and \REF{ex:gjersoe:containmentarrowsIV}, respectively.
+\largerpage
+\noindent Two constraints corresponding to classical OT faithfulness constraints \textsc{Max} and \textsc{Dep} are given in \REF{ex:gjersoe:containmentarrowsIII} and \REF{ex:gjersoe:containmentarrowsIV}, respectively.
 Note that \textsc{Ident} does not apply in Containment because nodes present in the input cannot be altered in any way.
 
 \ea \begin{tabular}{rl}\multirow{2}{*}{\MaxAB}&Count one {\viol} for each deleted association line\\&between a node {\textalpha} and a node \textbeta.\\\end{tabular} \label{ex:gjersoe:containmentarrowsIII}
@@ -351,7 +361,7 @@ Note that \textsc{Ident} does not apply in Containment because nodes present in 
 \z
 
 
-\vs \noindent Another crucial set of constraints is given in \REF{ex:gjersoe:fullspec} and \REF{ex:gjersoe:fullspecsyl}.
+\noindent Another crucial set of constraints is given in \REF{ex:gjersoe:fullspec} and \REF{ex:gjersoe:fullspecsyl}.
 The first constraint militates against not fully specified tonal root nodes while the second constraint demands a TBU (the syllable) to be minimally specified for a \isi{tone} and a \isi{register feature}.
 Note that these constraints are different from a conjunction of \textrho$\leftarrow$o and \texttau$\leftarrow$o: while such a local constraint conjunction would penalize only those root nodes (syllables) that are linked to exactly zero tonal and zero \isi{register} features, the constraints here demand full specification.
 The last constraint that needs to be introduced here is *loh \REF{ex:gjersoe:loh}, which penalizes tonal root nodes associated to two non-identical \isi{register} features.
@@ -368,7 +378,7 @@ The last constraint that needs to be introduced here is *loh \REF{ex:gjersoe:loh
 \z
 
 
-\vs \noindent 
+\noindent 
 We adopt the theory of morphological colors \citep{Oostendorp.2006} to restrain access to morphological information by the phonological component.
 The theory of morphological colors forbids morphological look-up but enables the phonology to distinguish between elements of different morphological provenience.
 This will become relevant in the analysis of particle tones below.
@@ -394,12 +404,12 @@ The faithful candidate in a. (which is also the input) violates \textrho$\to$o a
 Candidate b. incurs violations of \textsc{Dep}(L) and \textsc{Dep}(Line) but is optimal compared to candidates c. (violation of \textsc{Dep}(H)) and d. (violation of \textsc{Alt}).
 The winning candidate b. is a tonal hybrid: it combines lexical tonal features on its first o and both phrasal and epenthetic tonal features on its second o.
 Note that in the case of LL, the optimal candidate has two identical tonal root nodes associated to the same TBU.
-The fact that LL is realized as falling follows directly from RTT: the second l must be realized low relative to the first l.
+The fact that LL is realized as falling follows directly from RTT: the second l must be realized low relative to the first~l.
 % not considering Dep(tonalRt) here
 
 \setlength{\tabcolsep}{5pt} % for all tableaux in this section
 
-\begin{table}[h]
+\begin{table}[p]
 \caption{Combining L\% and underspecified tonal root nodes creates hybrid tones}
 \label{tab:gjersoe:otfalling}
 {\fns
@@ -420,7 +430,8 @@ The tableau in \tabref{tab:gjersoe:contourmedial} shows how \textsc{Alt} and \te
 For the same reason, low-falling do not occur in polar questions \textit{Pol} and wh-questions with the particle \textit{a} \textit{Wh.Prt}:
 in \textit{Pol}, no L\% is present, and in \textit{Wh.Prt}, the low \isi{register feature} associates to the particle and is not available to fill the empty root node of the lexical word (see below).\footnote{It was mentioned in footnote \ref{footnote:gjersoe:testsentences} that there is (at least) one lexical item with a HM \isi{tone} in \ili{Limbum}. Our informants confirm that for this word, HM patterns like H(L) in that it alternates with a level H \isi{tone} when not adjacent to L\%. While this does not seem to a be productive alternation, it is compatible with our account if we choose to represent the second o of HM as being specified for a H \isi{tone} and underspecified for a \isi{register feature}.} % (H/h--H)
 
-\begin{table}[h]
+\clearpage
+\begin{table}[p]
 \caption{No falling contour tones in the absence of L\%}
 \label{tab:gjersoe:contourmedial}
 {\fns
@@ -432,6 +443,7 @@ in \textit{Pol}, no L\% is present, and in \textit{Wh.Prt}, the low \isi{registe
 \end{tabular}}
 \end{table}
 
+ \clearpage
 \noindent
 The only rising contour \isi{tone} in \ili{Limbum}, LM, is unaffected by boundary tones.\footnote{See \sectref{sec:Gjersoe:InterimSum} for a discussion of incomplete plateauing of LM before L\% in \textit{Wh.Prt}.}
 %  where LM is followed by a particle that acquires a low \isi{tone} from L\%: LML $\to$ LLL
@@ -461,7 +473,7 @@ M and H level tones, however, have a h \isi{register feature} that blocks associ
 The immunity of M and H thus follows from the same set of constraints as the immunity of LM discussed above.
 % strong argument for our approach !
 
-\begin{table}[h]
+\begin{table}[t]
 \caption{L\% affects L but not M}
 \label{tab:gjersoe:lowgetslower}
 {\fns
@@ -474,6 +486,7 @@ The immunity of M and H thus follows from the same set of constraints as the imm
 \end{tabular}}
 \end{table}
 
+\largerpage 
 We now turn to polar and wh-questions with the final particle \textit{a}.
 Polar questions are marked with a toneless particle \textit{a} but lack the L\% boundary \isi{tone}.
 Recall from \sectref{sec:gjersoe:resultsparticle} that the flat contour of level tones extends to the particle \textit{a} while the particle receives a M \isi{tone} following T(L) toned words.
@@ -484,7 +497,7 @@ Empty o's remain empty in T(L) tones in \textit{Decl.Med} because the \textsc{De
 Leaving the particle o empty, however, would fatally violate higher-ranked \texttau$\leftarrow$\textsigma$\to$\textrho.
 
 
-\begin{table}[h]
+\begin{table}
 \setlength{\tabcolsep}{5pt} 
 \caption{Spreading of a level tone in the absence of L\%}
 
@@ -498,7 +511,7 @@ Leaving the particle o empty, however, would fatally violate higher-ranked \text
 \end{tabular}}}
 \end{table}
 
-\begin{table}[h]
+\begin{table}
 \setlength{\tabcolsep}{5pt} 
 \caption{Default M insertion in the absence of L\%}
 \label{tab:gjersoe:particledefault} 
@@ -511,7 +524,7 @@ Leaving the particle o empty, however, would fatally violate higher-ranked \text
 \end{tabular}}}
 \end{table}
 
-
+\clearpage
 
 \setlength{\tabcolsep}{6pt} % back to normal
 
@@ -521,7 +534,7 @@ The floating l links to the particle o (because of \textsigma$\to$\textrho) but 
 In other words, it is better to use the floating l to fill one unspecified syllable but leave a o on a specified syllable empty than to violate *\textrho\textsuperscript{2o} and fill every o.
 Spreading of level tones to the particle in polar questions (tableau in \tabref{tab:gjersoe:particlespreading}) is not affected by *\textrho\textsuperscript{2o} because it is ranked below \textsc{Dep}(h), leaving the potential repair of \texttau$\leftarrow$\textsigma$\to$\textrho{} by epenthesis suboptimal.
 
-\clearpage
+
 
 % --------------------------------- %
 \section{Discussion}\label{sec:gjersoe:4}
@@ -609,7 +622,7 @@ This research was funded by the DFG-funded research training group \textit{Inter
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
 
-%\end{document}
+\end{document}
 
 
 % coalescence %
