@@ -1,13 +1,4 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draft]{langsci/langscibook}  
 
 \title{Central vowels in the Kru language family: Innovation and areal spreading}
 
@@ -25,9 +16,14 @@
 of central vowels, an apparent case of areal spreading. \citeauthor{Vydrine2009}'s (\citeyear{Vydrine2009}) hypothesis of a wider cross-family spread of central vowels into southern Mande is also discussed. While this article only scratches the surface of this complicated puzzle, evidence points to intricate interaction
 between phonological change and areal spreading.}
 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[36]
+}{}
+
 \begin{document}
-\maketitle
-\providecommand{\nocaption}[1]{{\color{red} Please provide a caption}}
+\maketitle 
 \section{Introduction}\label{sec:zogbo:1} 
 
 A quick inventory of vowel systems in the \ili{Kru} language family\footnote{The status of the \ili{Kru} language family within Niger-Congo is still \isi{subject} to debate, having been proposed as independent (Westermann), a branch of \ili{Kwa} (Greenberg), closely connected to \ili{Gur} (Bennett and Sterk), and of late \citep[18]{Williamson2000} an offshoot of Proto West Volta Congo.} reveals a striking diversity.  While in Western \ili{Kru}, with the exception of /a/, no phonemic central vowels are attested, in Eastern \ili{Kru}, some languages have a full set, with 5 out of 13 vowels being central (or back unrounded). Citing numerous shared features in South \ili{Mande} and \ili{Kru}, \citet{Vydrine2009} proposes that central vowels may be one of several areal features of the Ivorian forest region, cutting across genetic boundaries.  Thus in this paper, we attempt to:
