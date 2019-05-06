@@ -474,7 +474,6 @@
 \ifx\lsOutput\lsOutputPaper       % only if output=paper
   \usepackage{chngcntr}
   \counterwithout{figure}{chapter}
-  \counterwithout{subfigure}{chapter}
   \counterwithout{table}{chapter}
   \lsPaper
 \else                 % only if output!=paper
