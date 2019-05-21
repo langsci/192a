@@ -1,23 +1,15 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook}  
 
 \title{Hausa chat jargon: Semantic extension versus borrowing}
 \author{Tristan Purvis\affiliation{American University of Nigeria}}
 
-%%please move the includegraphics inside the {figure} environment
-%%\includegraphics[width=\textwidth]{PurvisACAL47HausaChatarticleadjustedfinal-img1.png}
 
- 
-%%please move the includegraphics inside the {figure} environment
-%%\includegraphics[width=\textwidth]{PurvisACAL47HausaChatarticleadjustedfinal-img2.png}
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[30]
+}{}
+
 
 
 \abstract{A corpus of WhatsApp chats reveals how Hausa-speaking youth have adopted and spread homegrown Hausa terms, via semantic extension, for the actions (e.g. chatting, forwarding), objects (e.g. image) and space (e.g. group, online/offline) associated with computer-mediated communication rather than strictly borrowing from English chat jargon.  Along with other contextual factors, this study reviews the linguistic forms (including source language), range of terminology, and frequency of occurrence of specialized chat terminology found in this corpus, representing 56 different interlocutors in 40 different dyads of chat excerpts.}
@@ -42,6 +34,7 @@ First of all, of course, users must be literate and share some basic standards o
 
 Furthermore, languages using non-\ili{Latin} scripts face challenges. Although Internet and cell-phone technology has accommodated different language scripts, we still find users adapting their native language to \ili{Latin} scripts. For example, “Greeklish” is a \ili{Latin} script-based rendering of \ili{Greek} that was developed as soon as Internet came to \ili{Greek} society \citep{androutsopoulos2012}. Similarly, \citet{palfreyman2007} have studied the use of a so-called “ASCII-ized \ili{Arabic}” — where \ili{Latin} characters along with numerals and other symbols represent different \ili{Arabic} letters — among college students in UAE. So, even though the language of communication may not be \ili{English}, the implicit hegemony of \ili{English} as the language of the Internet is still reflected in the choice of script. 
 
+\largerpage 
 Third, in the online chat environment at least, it is desirable to express oneself as rapidly as possible. This is largely facilitated by the development of abbreviated forms such as the iconic trends seen in the \ili{English}-speaking world of CMC with phrases like \textit{y r u so l8} (in place of the 15-character phrase \textit{Why are you so late?}). While any given language can be used for online chatting without such abbreviations, certain bilingual speakers again might opt for \ili{English} as the language that gives them a ready-made, established medium for rapid, not to mention playful, communication. 
 
 \subsection{Chat jargon (terminology)}
@@ -84,19 +77,28 @@ University students and some other community members shared excerpts of chats fo
 
 A short survey of sociolinguistic\slash contextual information was collected for\linebreak each participant, the details of which are summarized in \tabref{tab:purvis:1}. As can be seen from these demographics, the majority of participants are university students (85.7\%) in their early 20s. Although some claim a language other than \ili{Hausa} as their mother tongue, a majority (48.2\%) consider \ili{Hausa} as their mother tongue, and all are fluent in \ili{Hausa}. In addition to the details shown in \tabref{tab:purvis:1}, all participants claim to speak \ili{English}, with a handful of them claiming fluency in other languages as well. As noted earlier, the participants are all bilingual, essentially fluent speakers of both \ili{Hausa} and \ili{English} (Nigerian standard, which is largely based on British standard).
 
-\begin{table}
+\begin{table}[p]
+\footnotesize
 \begin{tabularx}{\textwidth}{lQ}
 \lsptoprule
  Factor &  Details\\
 \midrule
 Gender: & 24 Females, 32 Males\\
+\tablevspace
 Age: & Average=22; Mode=20; Range of 14-35\\
+\tablevspace
 Education: & Mostly undergraduate; but range from H.S. to Masters\\
+\tablevspace
 Occupation: & Student (48); Teacher/Lecturer (2); Nurse (1); Entrepreneur (1); Music producer/singer (1); Film maker (1); Music artist (1); Unemployed (2)\\
+\tablevspace
 Origin(/birthplace): & Adamawa 10; Borno 1 (5); Gombe 2 (1); Jigawa 2(1); Kaduna 4 (5); Kano 20 (19); Katsina 7; Kogi 0 (1); Niger (1); Sokoto 1 (0); Taraba 2(1); Yobe 6 (5)\\
+\tablevspace
 Residence: & Adamawa 22; Borno 2; Gombe 1; Jigawa 2; Kaduna 6; Kano 10; Katsina 4; Yobe 4; Sudan 2\\
-Mother tongue: & \ili{Hausa} (27), Fulfulde (16), \ili{Kanuri} (6), \ili{Yoruba} (1), Margi (1) , \ili{Nupe} (1), Other: 5\\
-Language spoken at home: & \ili{Hausa} (45), Fulfulde (9), \ili{English} (1), \ili{Yoruba} (1), \ili{Kanuri} (2)\\
+\tablevspace
+Mother tongue: & \ilit{Hausa} (27), Fulfulde (16), \ilit{Kanuri} (6), \ilit{Yoruba} (1), Margi (1) , \ilit{Nupe} (1), Other: 5\\
+\tablevspace
+Language spoken at home: & \ilit{Hausa} (45), Fulfulde (9), \ilit{English} (1), \ilit{Yoruba} (1), \ilit{Kanuri} (2)\\
+\tablevspace
 Relationship to interlocutor: & (Close/Best/Family) Friend 29, Brother 3, Sister 3, Cousin 3, Uncle 1, Colleague 3\\
 \lspbottomrule
 \end{tabularx}  
@@ -104,16 +106,19 @@ Relationship to interlocutor: & (Close/Best/Family) Friend 29, Brother 3, Sister
 \label{tab:purvis:1}
 \end{table} 
 
+\begin{figure}[p]
+\includegraphics[width=.8\textwidth]{figures/purvis-fig1.png}
+\caption{Data annotation example}
+\label{fig:purvis:1}
+\end{figure}
+
+  
 \subsubsection{Data processing}
 
 Each line of chat was annotated for standardized spelling, word translation, parts-of-speech, language (in case of code-switching) and a free translation of entire comment. This was facilitated through the use of the Linguist’s Toolbox (SIL), as illustrated in \figref{fig:purvis:1}.
 
  
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/purvis-fig1.png}
-\caption{Data annotation example}
-\label{fig:purvis:1}
-\end{figure}
+
  
 
 \subsection{Data preparation}
@@ -126,14 +131,22 @@ To analyze the use of chat jargon, Search \& Replace software (Funduc, Inc.) usi
 { Theme group} &  Jargon terms\\
 \midrule
 Group A (‘talk’): & {\textit{chat(ting)}, \textit{gist} (Nigerian \ili{English} term for casual/playful chat), \textit{talk(ing)}, \textit{hira}, \textit{magana}, \textit{surutu}, \textit{taɗi}, \textit{[kuke] whatsapp)}}\\
+\tablevspace
 Group B (‘message’): & {\textit{answer}, \textit{comment}, \textit{link}, \textit{mail}, \textit{message}, \textit{reply(ing)}, \textit{respond(ing)/response}, \textit{text}, \textit{ping}, \textit{amsa(wa)}, \textit{saƙo}, \textit{taɓa(wa)}}\\
 Group C (‘send’): & {\textit{email}, \textit{forward(ing)}, \textit{send(ing)}, \textit{transfer(ing)}, \textit{tura(wa)}, \textit{turo(wa)}}\\
+\tablevspace
 Group D (‘file operations’): & {\textit{attach(ing/ment)}, \textit{copy(ing), download(ing), screenshot}, \textit{snapping}, \textit{delete}, \textit{saving}, \textit{goge(wa)}}\\
+\tablevspace
 Group E (‘image’): & {\textit{image}, \textit{(display/profile) picture} (\textit{dp}/\textit{pp, pic/pix}), \textit{photo}, \textit{hoto}}\\
+\tablevspace
 Group F (‘post’): & {\textit{post(ing)}, \textit{upload(ing)}, \textit{sa/saka(wa)}}\\
+\tablevspace
 Group G (‘enter’): & {\textit{enter}, \textit{launch}, \textit{buɗe(wa)}, \textit{shiga}}\\
+\tablevspace
 Group H (‘online/offline’): & {\textit{offline}, \textit{online}, \textit{[tana] on}, \textit{fita}, \textit{hau/hawa}, \textit{sauka}}\\
+\tablevspace
 Group I (‘group’): & {\textit{account}, \textit{group}, \textit{shafuffukan yaɗa zumunta}, \textit{azure}}\\
+\tablevspace
 Group J (‘Internet’) & {\textit{Internet}, \textit{network}, \textit{website}, \textit{yanar gizo-gizo}}\\
 \lspbottomrule
 \end{tabularx} 
@@ -447,7 +460,7 @@ pers./asp.& person/\isi{aspect} complex (i.e. \isi{pronoun} + tense/\isi{aspect}
 
 \section*{Appendix A – Glossary of \ili{Hausa} Terms}
 \noindent
-\begin{tabularx}{\textwidth}{p{3cm}Q}
+\begin{tabularx}{\textwidth}{lQ}
 \textit{amsa (amsawa)} & \textit{v.} answer, reply \\
 \textit{buɗe (buɗewa)} & \textit{v.} open \\
 \textit{fita} & \textit{v.} go out\\
@@ -461,6 +474,10 @@ pers./asp.& person/\isi{aspect} complex (i.e. \isi{pronoun} + tense/\isi{aspect}
 \textit{saka (sakawa)} & \textit{v.} put, place, arrange (often used in the texts in this corpus in reference to posting)\\
 \textit{saƙo} & \textit{n.} message\\
 \textit{sauka} & \textit{v.} descend, come down (figuratively used in the texts in this corpus in reference to going offline)\\
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\textwidth}{lQ}
 \textit{shafuffukan yaɗa zumunta} & \textit{n.} social media (relatively new coinage, literally meaning pages spreading close relations)\\
 \textit{shiga} & \textit{v.} enter, go in (sometimes used in the texts in this corpus in reference to clicking/selecting)\\
 \textit{surutu} & \textit{n.} talkativeness, chattering\\
