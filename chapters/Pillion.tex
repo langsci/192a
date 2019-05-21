@@ -1,18 +1,13 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-
-%\renewcommand{\thefootnote}{\arabic{footnote}} %numbers footnotes %
-
+\documentclass[output=paper,newtxmath,modfonts,nonflat,hidelinks]{langsci/langscibook} 
+ 
 \author{Betsy Pillion\affiliation{University of Chicago}\and Lenore A. Grenoble\affiliation{University of Chicago}\and Emmanuel Ngu{\'e} Um\affiliation{University of Yaound{\'e}}\lastand Sarah Kopper\affiliation{Michigan State University}}
 \title{Verbal gestures in Cameroon} 
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[17]
+}{}
 
 \abstract{This paper details the nature of a set of extra-grammatical units that we call \textit{verbal gestures}, found in several communities in the Central, Littoral, and Southern regions of Cameroon. We lay out the verbal gestures found in these communities, explain their usage and distribution within the context of the community and the language of the user, and situate the system of verbal gestures found in Cameroon in the larger linguistic context of Cameroonian multilingualism.  Furthermore, we make preliminary proposals for a system of sounds that exists outside of that of the primary phonemic system, which interacts with the system of verbal gestures. }
 
@@ -117,7 +112,10 @@ With respect to verbal gestures, it is important to note that these languages ma
 
 \section{Verbal gestures in Cameroon}\label{sec:pillion:vg}
 %CHANGED
-The verbal gestures analyzed are conventionalized, as determined by their widespread and regular (predictable) usage. They were mentioned by speakers of these languages in elicitation sessions, and were also observed in marketplace interactions on the street. 
+
+\sloppy
+The verbal gestures analyzed are conventionalized, as determined by their wide\-spread and regular (predictable) usage. They were mentioned by speakers of these languages in elicitation sessions, and were also observed in marketplace interactions on the street. 
+\fussy 
 
 \noindent
 
@@ -125,7 +123,7 @@ The verbal gestures analyzed are conventionalized, as determined by their widesp
 %\ex{Verbal Gestures in Cameroon}
 \begin{table}
 \caption{Verbal gestures in Cameroon}
-\begin{tabular}{lllll}
+\begin{tabularx}{\textwidth}{Xllll}
  \lsptoprule
 Function & Form & Manner & Used by speakers of\\ \midrule
 Attention get & (stop-)sibilant & elongated & \textsc{bkh, bas, bum, nsh}\\ 
@@ -136,14 +134,15 @@ Cat-calling & bilabial \isi{click} & repeated & \textsc{ bkh, bas, bum, nsh} \\ 
 Yes & mm & LH melody &  \textsc{ bkh, bas, bum}\\ 
 No & m\textipa{P}m\textipa{P} & HL melody & \textsc{ bkh, bas, bum }\\ 
 \lspbottomrule
-\end{tabular}\\
-
-Language names given in \textsc{iso} 639-3 codes: \ili{Bakoko} = \textsc{ bkh}; Basa\'{a} = \textsc{bas}; \ili{Bulu} = \textsc{ bum}; and \ili{Ngoshie} = \textsc{ nsh}\\
+\end{tabularx}\\
+\parbox{\textwidth}{\small 
+Language names given in \textsc{iso} 639-3 codes: \ili{Bakoko} = \textsc{ bkh}; Basa\'{a} = \textsc{bas}; \ili{Bulu} = \textsc{ bum}; and \ili{Ngoshie} = \textsc{ nsh}
+}
 \end{table}
 %\end{exe}
 
 
-In the next sections we discuss the acoustic and articulatory parameters of these gestures, follow with examples of their usage, and give details of their pragmatic usages and cultural connotations. Several of these gestures vary slightly among different users; each example is thus attributed to a specific speaker and should be associated with that speaker's linguistic community. Note that although we identify the mother tongue, or first language, of the speakers, all people interviewed are multilingual and live in highly multilingual communities, where different languages are heard on the street on a daily basis. Thus it is impossible to identify a single linguistic source for any particular gesture. Rather, it may be more accurate to posit regional (and possibly language-independent) variation than variation from language to language. This question requires further research but suggests that there may be a category of speech elements used cross-linguistically, in a multilingual community, without being tied to a specific language.
+In the next sections we discuss the acoustic and articulatory parameters of these gestures, follow with examples of their usage, and give details of their pragmatic usages and cultural connotations. Several of these gestures vary slightly among different users; each example is thus attributed to a specific speaker and should be associated with that speaker's particular linguistic community. Note that although we identify the mother tongue, or first language, of the speakers, all people interviewed are multilingual and live in highly multilingual communities, where different languages are heard on the street on a daily basis. Thus it is impossible to identify a single linguistic source for any particular gesture. Rather, it may be more accurate to posit regional (and possibly language-independent) variation than variation from language to language. This question requires further research but suggests that there may be a category of speech elements used cross-linguistically, in a multilingual community, without being tied to a specific language.
 
 \subsection{Attention-getting}\label{subsec:pillion:AttentionGetting}
 %CHANGED
@@ -180,13 +179,13 @@ This whistling gesture is used to call to a listener at a significant distance. 
 
 \begin{table}
 \caption{Whistle gesture variants}
-\begin{tabular}{ll} 
+\begin{tabularx}{\textwidth}{Xl} 
 \lsptoprule
 Variant & Function \\ \midrule
 LHLH Contour Whistle & Calling distant speaker \\ 
 LHLH Elongated \textit{u} Vowel & Calling distant speaker \\ 
 LH Contour Whistle & Responding to distant speaker \\ \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 During an interview, the head of the village of Apouh A Ngok noted that in order to call to someone who is a kilometer away, you can whistle to call them, and thus avoid calling them by their name. This is a simple form of whistle speech, with a two-part pair of call and response. The whistle carries over a greater distance than speech might. The whistle gesture is highly salient and audible. 
@@ -236,7 +235,7 @@ While there are many consistently used verbal gestures found throughout these di
 \begin{table} 
 \caption{Less widespread verbal gestures}  
 \label{tab:pillion:less}
-\begin{tabular}{llll} 
+\begin{tabularx}{\textwidth}{lXXl} 
 \lsptoprule
 Function(s) & Form & Manner & Language \\ \midrule
 Positive affect & alveolar \isi{click} & repeated & \ili{Ngoshie} \\ 
@@ -245,7 +244,7 @@ Summoning, amusement & palatal \isi{click} & repeated & \ili{Ngoshie} \\
 Shooing animal & \textipa{S:} & elongated & \ili{Ngoshie} \\ 
 Reprimand & \textipa{\`ah\'a\=a\'a} & elongated & \ili{Bakoko} \\ 
 \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 This is just a small sample of the examples volunteered during elicitation sessions, and are each attested by only one speaker.  Nonetheless, they were readily volunteered and we consider it likely that more verbal gestures exist in other languages of Cameroon, and that the inventory for each of the languages discussed here could be increased.  DM (\ili{Ngoshie}) offered the positive affect \isi{click} as a means of indicating pleasure or surprise at a passing man who is very attractive; the palatal \isi{click} to call to her child, and when paired with pointing at the face and smiling, is used to encourage the child to smile. The reprimand volunteered by the head of the village of Apouh A Ngok (\ili{Bakoko}) is used to reprimand a child, and is similar to a \isi{verbal gesture} given by our \ili{Bulu} consultant PM of \textit{ha:} for `no' and may have a similar origin. 
