@@ -1,7 +1,15 @@
-\documentclass[output=paper]{LSP/langsci} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook}
 
 \author{Hannah Sande\affiliation{Georgetown University}\and Nico Baier\affiliation{McGill University}\lastand Peter Jenks\affiliation{UC Berkeley}}
 \title{The syntactic diversity of SAuxOV in West Africa}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[34]
+}{}
+
+
 \abstract{Surface SAuxOV orders abound in West Africa. We demonstrate that apparent examples of this word order have important structural differences across languages. We show that SAuxOV orders in some languages are due to mixed clausal headedness, consisting of a head initial TP and head-final VP, though this order can be concealed by verb movement. Other languages are more consistently head-initial, and what appear to be SAuxOV orders arise in limited syntactic contexts due to specific syntactic constructions such as object shift or nominalized complements. Finally, we show that languages which have genuine SAuxOV, corresponding to a head-final VP, tend to exhibit head-final properties more generally. This observation supports the idea that syntactic typology is most productively framed in terms of structural analyses of languages rather than the existence of surface word orders.}
 
 \begin{document}
@@ -32,15 +40,15 @@
 
 The order subject-auxiliary-object-verb (SAuxOV) is quite common across West Africa. At the same time, it is well-known that syntactic differences exist among the languages with this surface order \citep{Creissels2005typology}. Our goal in this paper is to identify structural differences across languages for which SAuxOV order occurs, and to show that these structural differences correlate with other word order properties of the language.
 
-Our central observation is that there is a single \isi{clause structure} which results in SAuxOV word order as a language-wide property. The relevant structure is \textSc{mixed clausal headedness}; here, the property of having a head-initial TP and a head-final VP, resulting in SAuxOV word order whenever an overt \isi{auxiliary} is present. Such a structure is typical of the \ili{Kru} and \ili{Mande} language families. One example each from Gu\'ebie (\ili{Kru}) and \ili{Dafing} (\ili{Mande}) is provided below.
+Our central observation is that there is a single \isi{clause structure} which results in SAuxOV word order as a language-wide property. The relevant structure is \textsc{mixed clausal headedness}; here, the property of having a head-initial TP and a head-final VP, resulting in SAuxOV word order whenever an overt \isi{auxiliary} is present. Such a structure is typical of the \ili{Kru} and \ili{Mande} language families. One example each from Guébie (\ili{Kru}) and \ili{Dafing} (\ili{Mande}) is provided below.
 \ea 
 \label{ex:1:sauxov}
 \ea \langinfo{Marka Dafing}{\ili{Mande}: Burkina Faso}{Notes} \\ 
-\gll w\'ur\'u-$^!$\'u {$^!$\textipa{n\'\i}} \textipa{Sw\'o-$^!$\'o} {\textipa{\textltailn \`\i m\`\i}}  \\
+\gll wúrú-ꜝú {ꜝ{ní}} {ʃwó-ꜝó} {{ɲì mì}}  \\
 {dog}-\textsc{def} \textsc{pst} meat-\textsc{def} eat\\
 \glt `The dog ate the meat.'  \label{ex:1b:sauxov}
-\ex \langinfo{Gu\'ebie}{\ili{Kru}: C\^ote d'Ivoire}{Notes} \\ 
-\gll \textipa{e}$^{4}$ \textipa{ji}$^{3}$ \textipa{\textbardotlessj a}$^{31}$ \textipa{li}$^{3}$\\
+\ex \langinfo{Guébie}{\ili{Kru}: Côte d'Ivoire}{Notes} \\ 
+\gll {e}$^{4}$ {ji}$^{3}$ {Ɉa}$^{31}$ {li}$^{3}$\\
 \textsc{1sg}.\textsc{nom} \textsc{fut} coconuts eat \\
 \glt `I will eat coconuts.'  \label{ex:1a:sauxov}
 \z
@@ -52,24 +60,24 @@ There is one major difference in the clausal syntax of \ili{Kru} and \ili{Mande}
 Outside of the Mandesphere, languages are generally head-initial \citep{heine76}. Where apparent SAuxOV orders occur, we demonstrate that these do not involve mixed clausal \isi{headedness} \citep{manfredi97,kandy03, aboh09}. We examine two such cases. First, we present a novel analysis of \ili{Gwari} (Nupoid), in which we demonstrate that some auxiliaries such as the completive trigger \isi{movement} of the object across the verb, while most others do not \REF{ex:2a:gwari}.\footnote{See \citet{kandy03} for a similar analysis of closely-related \ili{Nupe}.} The second case of apparent SAuxOV we examine involve nominalized complements, as in the \ili{Fongbe} (\ili{Kwa}) example in \REF{ex:2b:gwari}:
 \ea \label{ex:2:fakesauxov}
 \ea \langinfo{Gwari}{\ili{Benue-Congo}: Nigeria}{\citealt[51]{hyman1970}} \label{ex:2a:gwari}\\
-\gll w\'o l\'a shnam\'a si \\
+\gll wó lá shnamá si \\
 3\textsc{sg} \textsc{compl:sg} yam buy \\
 \glt `S/he has bought a yam.'
 \ex \langinfo{Fongbe}{\ili{Kwa}: Benin}{Lefebvre \& Brousseau 2002:215} \label{ex:2b:gwari} \\	
-\gll \`Un \textipa{j\`E} \textipa{n\'u} \textipa{\:d\`u} j\'i  \\
+\gll Ùn {\`ɛ} {nú} {ɖù} jí  \\
 1\textsc{sg} fall thing eat.\textsc{nom} on  \\
 \glt `I began to eat.'
 \z
 \z
-The structures beneath these word orders are quite different from those we saw for Gu\'ebie and \ili{Dafing} in \REF{ex:1:sauxov}. Tellingly, we show that languages with more restricted instances of OV order in \REF{ex:2:fakesauxov} are systematically head-initial at the clause level. 
+The structures beneath these word orders are quite different from those we saw for Guébie and \ili{Dafing} in \REF{ex:1:sauxov}. Tellingly, we show that languages with more restricted instances of OV order in \REF{ex:2:fakesauxov} are systematically head-initial at the clause level. 
 
 Summing up, we will show that a head-final VP, which is a definitional property of SAuxOV languages, is a good predictor of head finality in West Africa. On the other hand the construction-specific presence of SAuxOV orders is not. The larger conclusion we draw from this observation is that typological correlations about \isi{headedness} should be based on abstract structural analyses of languages, after factoring out independent syntactic operations such as \isi{verb movement}, rather than on the presence or absence of surface orders in a given language. Moreover, it is the basic analytic toolkit supplied by generative syntax that allows such abstract generalizations to be stated.
  
- The outline of this paper is as follows: \sectref{sec:strictSAuxOV} lays out the structural characteristics of SAuxOV arising from mixed clausal \isi{headedness} in \ili{Dafing} (\ili{Mande}) and Gu\'ebie (\ili{Kru}). \sectref{sec:fake} demonstrates that \ili{Gwari} and \ili{Fongbe} are head-initial in their clauses, including within the VP; OV orders are shown to occur as an artifact of particular syntactic constructions and contexts. \sectref{sec:distribution} reports the results of a small typological survey showing that languages with mixed clausal \isi{headedness} are concentrated in the Mandesphere, and compares our structural typology to those relying on surface order, such as the word order properties listed in WALS. \sectref{sec:conclusion} concludes. 
+ The outline of this paper is as follows: \sectref{sec:strictSAuxOV} lays out the structural characteristics of SAuxOV arising from mixed clausal \isi{headedness} in \ili{Dafing} (\ili{Mande}) and Guébie (\ili{Kru}). \sectref{sec:fake} demonstrates that \ili{Gwari} and \ili{Fongbe} are head-initial in their clauses, including within the VP; OV orders are shown to occur as an artifact of particular syntactic constructions and contexts. \sectref{sec:distribution} reports the results of a small typological survey showing that languages with mixed clausal \isi{headedness} are concentrated in the Mandesphere, and compares our structural typology to those relying on surface order, such as the word order properties listed in WALS. \sectref{sec:conclusion} concludes. 
 
 \section{Mixed clausal headedness}\label{sec:strictSAuxOV}
 
-In this section we present evidence for analyzing some instances of SAuxOV word order as a result of clausal mixed \isi{headedness}, where T, the position of inflection, is head-initial, but the verb phrase, VP, is head final. We show how these two structural properties are diagnosed in two languages, Gu\'ebie  (\ili{Kru}) and \ili{Dafing} (\ili{Mande}).
+In this section we present evidence for analyzing some instances of SAuxOV word order as a result of clausal mixed \isi{headedness}, where T, the position of inflection, is head-initial, but the verb phrase, VP, is head final. We show how these two structural properties are diagnosed in two languages, Guébie  (\ili{Kru}) and \ili{Dafing} (\ili{Mande}).
 
 While there are many grammatical morphemes which can be called auxiliaries, we will use the term `\isi{auxiliary}' to refer to the element that surfaces in a position where TAM marking obligatorily occurs in declarative clauses, a position distinct from the position of the lexical verb. We analyze this position as T (for Tense) regardless of the semantic distinctions it encodes.\footnote{This position is equivalent to Infl or I$^0$ in the GB framework.} Many West African languages have such a position. To qualify as showing SAuxOV due to mixed \isi{headedness}, the T position must be adjacent to the \isi{subject}, and, in languages which index subjects, the T position must be the locus of \isi{subject agreement}. If a language allows multiple auxiliaries to occur, the T position will be the position of the highest (usually leftmost) \isi{auxiliary}.
 
@@ -77,69 +85,69 @@ Once the T position is identified in a language, the crucial test for whether it
 
 \subsection{SAuxOV in Kru}
 
-In this section we show that Gu\'ebie, a \ili{Kru} language spoken in southwest C\^ote d'Ivoire, has mixed clausal \isi{headedness}. Word order properties in Gu\'ebie are similar to word order across Eastern \ili{Kru} languages \citep[cf.][]{Marchese1979}, so we are using Gu\'ebie data here to diagnose SAuxOV across Eastern \ili{Kru} more generally. It should be noted that in certain Western \ili{Kru} languages like \ili{Grebo} \citep{Innes:1966} some of the tense/\isi{aspect} marking is done through verbal suffixes, rather than auxiliaries. However, across the family, whenever an \isi{auxiliary} is present, the verb surfaces after a \isi{direct object}: SAuxOV \citep{Marchese1979}.
+In this section we show that Guébie, a \ili{Kru} language spoken in southwest Côte d'Ivoire, has mixed clausal \isi{headedness}. Word order properties in Guébie are similar to word order across Eastern \ili{Kru} languages \citep[cf.][]{Marchese1979}, so we are using Guébie data here to diagnose SAuxOV across Eastern \ili{Kru} more generally. It should be noted that in certain Western \ili{Kru} languages like \ili{Grebo} \citep{Innes:1966} some of the tense/\isi{aspect} marking is done through verbal suffixes, rather than auxiliaries. However, across the family, whenever an \isi{auxiliary} is present, the verb surfaces after a \isi{direct object}: SAuxOV \citep{Marchese1979}.
 
-Most clauses in Gu\'ebie show SAuxOV order, where nothing can intervene between \isi{subject} and \isi{auxiliary}, and the verb is clause final. This is true of both main clauses, \REF{ex:sande:3a}, and embedded clauses, \REF{ex:sande:3b}.\footnote{The Gu\'ebie data presented here come from original work on the language. The data were collected between 2013 and 2017, in Berkeley, California and Gnagbodougnoa, C\^ote d'Ivoire, with six primary consultants \citep[cf.][]{Sande:2017}. Gu\'ebie is a tonal language with four distinct \isi{tone} heights. Tone is marked here with numbers 1--4, where 4 is high.}
+Most clauses in Guébie show SAuxOV order, where nothing can intervene between \isi{subject} and \isi{auxiliary}, and the verb is clause final. This is true of both main clauses, \REF{ex:sande:3a}, and embedded clauses, \REF{ex:sande:3b}.\footnote{The Guébie data presented here come from original work on the language. The data were collected between 2013 and 2017, in Berkeley, California and Gnagbodougnoa, Côte d'Ivoire, with six primary consultants \citep[cf.][]{Sande:2017}. Guébie is a tonal language with four distinct \isi{tone} heights. Tone is marked here with numbers 1--4, where 4 is high.}
 
 \ea 
-\ea SAuxOV word order in \langinfo{Gu\'ebie}{\ili{Kru}: C\^ote d'Ivoire}{Notes}\\ 
-\gll \textipa{e}$^{4}$ \textipa{ji}$^{3}$ \textipa{\textbardotlessj a}$^{31}$ \textipa{li}$^{3}$  \\
+\ea SAuxOV word order in \langinfo{Guébie}{\ili{Kru}: Côte d'Ivoire}{Notes}\\ 
+\gll {e}$^{4}$ {ji}$^{3}$ {Ɉa}$^{31}$ {li}$^{3}$  \\
 \textsc{1sg}.\textsc{nom} \textsc{fut} coconuts eat \\
 \glt `I will eat coconuts.'  \label{ex:sande:3a}
-\ex \gll \textipa{e}$^{4}$ \textipa{wa}$^{2}$ \textipa{gba}$^{1}$ \textipa{e}$^{4}$ \textbf{\textipa{ka}$^{3}$} \textipa{tElE}$^{3.3}$ \textbf{\textipa{kOklalE}$^{3.2.2}$} \\
+\ex \gll {e}$^{4}$ {wa}$^{2}$ {gba}$^{1}$ {e}$^{4}$ \textbf{{ka}$^{3}$} {tɛlɛ}$^{3.3}$ \textbf{{kɔklalɛ}$^{3.2.2}$} \\
 \textsc{1sg}.\textsc{nom} want.\textsc{ipfv} that \textsc{1sg}.\textsc{nom} \textsc{irr} snake touch \\
 \glt `I want to touch the snake ' \label{ex:sande:3b}
 \z
 \z
 
 
-As is well known, a number of other word order properties correlate with OV across languages \citep{Greenberg:1963, dryer07}. These include postpositions, genitive-noun order, and manner adverbs before main verbs.\footnote{We do not consider properties such as noun-adjective, which Dryer does not find to correlate with OV versus VO order across languages.} Gu\'ebie displays all of these typological characteristics, as shown in \REF{ex:4:Guebie}.
+As is well known, a number of other word order properties correlate with OV across languages \citep{Greenberg:1963, dryer07}. These include postpositions, genitive-noun order, and manner adverbs before main verbs.\footnote{We do not consider properties such as noun-adjective, which Dryer does not find to correlate with OV versus VO order across languages.} Guébie displays all of these typological characteristics, as shown in \REF{ex:4:Guebie}.
 
-\ea \langinfo{Gu\'ebie}{\ili{Kru}: C\^ote d'Ivoire}{Notes} \label{ex:4:Guebie} 
+\ea \langinfo{Guébie}{\ili{Kru}: Côte d'Ivoire}{Notes} \label{ex:4:Guebie} 
 \ea Postpositions\\
-\gll \textipa{O}$^{3}$ \textipa{ji}$^{3}$ \textbf{\textipa{su}$^{3}$} \textbf{\textipa{mE}$^{3}$} \textipa{gara}$^{1.1}$ \\
+\gll {ɔ}$^{3}$ {ji}$^{3}$ \textbf{{su}$^{3}$} \textbf{{mɛ}$^{3}$} {gara}$^{1.1}$ \\
 \textsc{3sg}.\textsc{nom} \textsc{fut} tree in perch\\
 \glt  `He will perch in a tree.' 
 
 \ex {Gen-N}\\
-\gll \textbf{\textipa{touri}$^{1.1.3}$} \textipa{la}$^{2}$ \textbf{\textipa{d@re}$^{3.3}$}\\
+\gll \textbf{{touri}$^{1.1.3}$} {la}$^{2}$ \textbf{{dəre}$^{3.3}$}\\
 Touri \textsc{gen} money\\
 \glt `Touri's money'
 
 \ex {AdvV}\\
-\gll \textipa{e}$^{4}$ \textipa{ji}$^{3}$ \textbf{\textipa{fafa}$^{4.4}$} \textipa{\textbardotlessj a}$^{31}$ \textbf{\textipa{li}$^{3}$} \\
+\gll {e}$^{4}$ {ji}$^{3}$ \textbf{{fafa}$^{4.4}$} {Ɉa}$^{31}$ \textbf{{li}$^{3}$} \\
 \textsc{1sg}.\textsc{nom} \textsc{fut} quickly  coconuts eat \\
 \glt `I will eat coconuts quickly' \label{advv}
 \z
 \z
 
-With regards to \REF{advv}, some Western \ili{Kru} languages like \ili{Krahn} and Wob\'e place manner adverbs after verbs within the VP \citep[80-81]{Marchese1979}, much like the \ili{Mande} word order discussed in \sectref{sec:Mande}. It is possible that this variation is due to contact of some Western \ili{Kru} languages with \ili{Mande}. However, because most Eastern and some Western \ili{Kru} languages show the same word order as Gu\'ebie with respect to \REF{ex:4:Guebie}, it would seem that Adv-V order was present in Proto-\ili{Kru} (Lynell Zogbo, p.c.).
+With regards to \REF{advv}, some Western \ili{Kru} languages like \ili{Krahn} and Wobé place manner adverbs after verbs within the VP \citep[80-81]{Marchese1979}, much like the \ili{Mande} word order discussed in \sectref{sec:Mande}. It is possible that this variation is due to contact of some Western \ili{Kru} languages with \ili{Mande}. However, because most Eastern and some Western \ili{Kru} languages show the same word order as Guébie with respect to \REF{ex:4:Guebie}, it would seem that Adv-V order was present in Proto-\ili{Kru} (Lynell Zogbo, p.c.).
 
-In addition to word order properties that correlate with OV order across languages, we see other head-final properties in Gu\'ebie, such as nominalized verbal objects, which surface before the main verb, \REF{ex:5:Guebie}.
+In addition to word order properties that correlate with OV order across languages, we see other head-final properties in Guébie, such as nominalized verbal objects, which surface before the main verb, \REF{ex:5:Guebie}.
 
-\ea {SAux[OV]$_{\textsc{nom}}$V} in \langinfo{Gu\'ebie}{\ili{Kru}: C\^ote d'Ivoire}{Notes}\\ \label{ex:5:Guebie}
-\gll \textipa{e}$^{4}$ \textipa{ji}$^{3}$ [ \textipa{\textbardotlessj a}$^{31}$ \textipa{la}$^{2}$ \textipa{li-li-je}$^{3.2.2}$ ] \textipa{koci}$^{23.1}$ \\
+\ea {SAux[OV]$_{\textsc{nom}}$V} in \langinfo{Guébie}{\ili{Kru}: Côte d'Ivoire}{Notes}\\ \label{ex:5:Guebie}
+\gll {e}$^{4}$ {ji}$^{3}$ [ {Ɉa}$^{31}$ {la}$^{2}$ {li-li-je}$^{3.2.2}$ ] {koci}$^{23.1}$ \\
 \textsc{1sg}.\textsc{nom} \textsc{fut} {} coconuts of eat-\textsc{red}-\textsc{nmlz} {} start \\
 \glt `I will start eating coconuts.'
 \z
 
-We see that word order in Gu\'ebie is overwhelmingly head final. However, when there is no \isi{auxiliary} present, the verb fails to surface clause-finally, and instead appears immediately after the \isi{subject}, resulting in SVO order, \REF{ex:6:Guebie}. SVO order only appears in two clause types: simple perfective, \REF{ex:6a:Guebie},  and simple imperfective, \REF{ex:6b:Guebie}.
+We see that word order in Guébie is overwhelmingly head final. However, when there is no \isi{auxiliary} present, the verb fails to surface clause-finally, and instead appears immediately after the \isi{subject}, resulting in SVO order, \REF{ex:6:Guebie}. SVO order only appears in two clause types: simple perfective, \REF{ex:6a:Guebie},  and simple imperfective, \REF{ex:6b:Guebie}.
 
-\ea {Verb \isi{movement}: S-V$_i$-O-$t_i$} in \langinfo{Gu\'ebie}{\ili{Kru}: C\^ote d'Ivoire}{Notes}\\ \label{ex:6:Guebie}
+\ea {Verb \isi{movement}: S-V$_i$-O-$t_i$} in \langinfo{Guébie}{\ili{Kru}: Côte d'Ivoire}{Notes}\\ \label{ex:6:Guebie}
 \ea 
-\gll \textipa{e}$^{4}$ \textbf{\textipa{li}$^{3}$}  \textipa{\textbardotlessj a}$^{31}$ \\
+\gll {e}$^{4}$ \textbf{{li}$^{3}$}  {Ɉa}$^{31}$ \\
 \textsc{1sg}.\textsc{nom} eat.\textsc{pfv} coconuts \\
 \glt `I ate coconuts.' \label{ex:6a:Guebie}
 \ex 
-\gll \textipa{e}$^{4}$ \textbf{\textipa{li}$^{2}$}  \textipa{\textbardotlessj a}$^{31}$ \\
+\gll {e}$^{4}$ \textbf{{li}$^{2}$}  {Ɉa}$^{31}$ \\
 \textsc{1sg}.\textsc{nom} eat.\textsc{ipfv} coconuts \\
 \glt `I eat coconuts.' \label{ex:6b:Guebie}
 \z
 \z
 
-The difference between perfective and imperfective verbs in Gu\'ebie is tonal. Verbs are only differentiated for \isi{aspect} when they surface in the immediately-post-\isi{subject} position. That is, verbs only show inflection when there is no \isi{auxiliary}. This is a point of variation in \ili{Kru} languages, where some languages show inflection on verbs even when they are not in the inflectional position \citep{Marchese1979,Koopman:1984}.
+The difference between perfective and imperfective verbs in Guébie is tonal. Verbs are only differentiated for \isi{aspect} when they surface in the immediately-post-\isi{subject} position. That is, verbs only show inflection when there is no \isi{auxiliary}. This is a point of variation in \ili{Kru} languages, where some languages show inflection on verbs even when they are not in the inflectional position \citep{Marchese1979,Koopman:1984}.
 
-Reviewing the word-order properties of Gu\'ebie, we see that it follows the proposed diagnostics for a mixed-headed SAuxOV structure. First, it has a syntactic \isi{auxiliary} position immediately following the \isi{subject}, where TAM is marked. Usually TAM is marked by auxiliaries, but when verbs surface in this position (see below), they are marked with inflection. Gu\'ebie also shows obligatory OV word order within the verb phrase. The following diagram shows our proposed structure for Gu\'ebie SAuxOV clauses.
+Reviewing the word-order properties of Guébie, we see that it follows the proposed diagnostics for a mixed-headed SAuxOV structure. First, it has a syntactic \isi{auxiliary} position immediately following the \isi{subject}, where TAM is marked. Usually TAM is marked by auxiliaries, but when verbs surface in this position (see below), they are marked with inflection. Guébie also shows obligatory OV word order within the verb phrase. The following diagram shows our proposed structure for Guébie SAuxOV clauses.
 
 \begin{figure}
 \jtree[xunit=2.5em,yunit=1.25em]
@@ -149,11 +157,11 @@ Reviewing the word-order properties of Gu\'ebie, we see that it follows the prop
 : ({T}!b ) [scaleby=1.25 1] {VP}
 : ({DP}!c ) ({V}!d ) .
 \!a = ({e$^{4}$}{I}).
-\!b = ({ji$^{3}$}{will}).
-\!c = <vartri>{\textipa{\textbardotlessj{}a}$^{31}$}{coconuts}.
+ɓ = ({ji$^{3}$}{will}).
+\!c = <vartri>{{Ɉ{}a}$^{31}$}{coconuts}.
 \!d = {li$^{3}$}{eat}.
 \endjtree
-\caption{Gu\'ebie clause structure \citep[cf.][]{Sande:2017}} \label{fig:sande:Guebie}
+\caption{Guébie clause structure \citep[cf.][]{Sande:2017}} \label{fig:sande:Guebie}
 \end{figure}
 
 We see in \figref{fig:sande:Guebie} that the \isi{auxiliary} is in T, the inflectional position. We also see that objects precede verbs within the verb phrase. %\footnote{We acknowledge that in syntactic theories which assume \citet{kayne94}'s Linear Correspondence Axiom even SAuxOV structures languages would involve object \isi{movement}, although it would be obligatory. We set this issue aside for now, as it does not affect our main point. This question is particularly interesting for \ili{Mande} languages, which we discuss in the next subsection, as non-nominal objects follow the verb. This is surprising as \citet{dryer07} observes that OV languages typically have V-Adv and V-PP orders.} 
@@ -169,34 +177,34 @@ When there is no \isi{auxiliary} present, we propose that the clause-final verb 
 : ({V+T}!b ) [scaleby=1.25 1] {VP}
 : ({DP}!c ) ({\rnode{1}{V}}) .
 \!a = ({e$^{4}$}{I}).
-\!b = ({li$^{3}$}{eat\rnode{2}{.}\textsc{pfv}}).
-\!c = <vartri>{\textipa{\textbardotlessj{}a}$^{31}$}{coconuts}.
+ɓ = ({li$^{3}$}{eat\rnode{2}{.}\textsc{pfv}}).
+\!c = <vartri>{{Ɉ{}a}$^{31}$}{coconuts}.
 \ncbar[angle=-90,nodesep=5pt,arm=4em,arrowscale=1]{->}{1}{2} \hspace{12pt}
 \endjtree
 \vspace{6pt}
-\caption{Verb movement in Gu\'ebie \citep[cf.][]{Koopman:1984, Sande:2014}} \label{fig:sande:Guebieverbmove}
+\caption{Verb movement in Guébie \citep[cf.][]{Koopman:1984, Sande:2014}} \label{fig:sande:Guebieverbmove}
 \end{figure}
 
 We will see that it is not only \ili{Kru} languages which show mixed-headed SAuxOV structure, but other languages in West Africa as well.
 
 \subsection{SAuxOV in Mande}\label{sec:Mande}
 
-Our second example with mixed clausal \isi{headedness} is \ili{Dafing}, also known as \ili{Marka}, a Western \ili{Mande} language spoken by 180,000 people in Burkina Faso \citep{prost77,diallo88}.\footnote{The \ili{Dafing} data in this paper was collected via elicitation in Berkeley, CA with a single consultant who is also a native speaker of \ili{Jula} (\ili{Mande}), and a fluent speaker of Moor\'e (\ili{Gur}).} \ili{Dafing} is closely related to \ili{Bambara} and \ili{Jula} (Dioula), which are both major \ili{Mande} languages in the area with millions of speakers. Word order in \ili{Dafing} is representative of \ili{Mande} languages more generally \citep[e.g.][]{Creissels2005typology, nikitina11}, and we take it as a representative language. The genetic affiliation of \ili{Mande} is uncertain; it has been claimed to be of Niger-Congo stock \citep{Greenberg:1966}, although this classification is not well established \citep{Dimmendaal:2008}.
+Our second example with mixed clausal \isi{headedness} is \ili{Dafing}, also known as \ili{Marka}, a Western \ili{Mande} language spoken by 180,000 people in Burkina Faso \citep{prost77,diallo88}.\footnote{The \ili{Dafing} data in this paper was collected via elicitation in Berkeley, CA with a single consultant who is also a native speaker of \ili{Jula} (\ili{Mande}), and a fluent speaker of Mooré (\ili{Gur}).} \ili{Dafing} is closely related to \ili{Bambara} and \ili{Jula} (Dioula), which are both major \ili{Mande} languages in the area with millions of speakers. Word order in \ili{Dafing} is representative of \ili{Mande} languages more generally \citep[e.g.][]{Creissels2005typology, nikitina11}, and we take it as a representative language. The genetic affiliation of \ili{Mande} is uncertain; it has been claimed to be of Niger-Congo stock \citep{Greenberg:1966}, although this classification is not well established \citep{Dimmendaal:2008}.
 
-As in Gu\'ebie, \ili{Dafing} shows SAuxOV word order. There is an \isi{auxiliary} position which must occur immediately after the \isi{subject}, and the verb surfaces after the object when auxiliaries are present. This is true for both main and embedded clauses.
+As in Guébie, \ili{Dafing} shows SAuxOV word order. There is an \isi{auxiliary} position which must occur immediately after the \isi{subject}, and the verb surfaces after the object when auxiliaries are present. This is true for both main and embedded clauses.
 
 \ea SAuxOV word order in \langinfo{Dafing}{\ili{Mande}:Burkina Faso}{Notes} \label{ex:7:dafing}
-\ea \gll w\'ur\'u-$^!$\'u \textbf{$^!$\textipa{n\'a}} \textipa{Sw\'o-$^!$\'o} \textbf{\textipa{\textltailn \`\i m\`\i}}  \\
+\ea \gll wúrú-ꜝú \textbf{ꜝ{ná}} {ʃwó-ꜝó} \textbf{{ɲì mì}}  \\
 {dog}-\textsc{def} \textsc{fut} meat-\textsc{def} eat\\
 \glt `The dog will eat the meat.' \label{ex:7a:dafing}
-\ex \gll \textipa{\^E:} n\'a \textipa{f\`O} k\'a w\'ur\'u-$^!$\'u \textbf{$^!$\textipa{n\'a}} \textipa{Sw\'o-$^!$\'o} \textbf{\textipa{\textltailn \`\i m\`\i}}  \\
+\ex \gll {\^ɛː} ná {f{\`ɔ}} ká wúrú-ꜝú \textbf{ꜝ{ná}} {ʃwó-ꜝó} \textbf{{ɲì mì}}  \\
 \textsc{3sg} \textsc{pfv} say \textsc{comp} {dog}-\textsc{def} \textsc{fut} meat-\textsc{def} eat\\
 \glt `She said that the dog will eat the meat.' \label{ex:7b:dafing}
 \z
 \z
 This \isi{auxiliary} position is typically called the ``predicative marker'' in the Mandeist literature \citep[e.g.][]{idiatov2000,creissels2019}; the number and types of distinction that are marked in this position are large, as it is a composite marker of {tense}, {aspect}, modality, negation, as well as transitivity, for example, in Soninke \cite[][]{creissels2017}. 
 
-Like in Gu\'ebie, \ili{Dafing} has obligatory OV order in the verb phrase. Thus, we take \ili{Dafing} to be a language with mixed clausal \isi{headedness}, a head initial TP and a head final VP.
+Like in Guébie, \ili{Dafing} has obligatory OV order in the verb phrase. Thus, we take \ili{Dafing} to be a language with mixed clausal \isi{headedness}, a head initial TP and a head final VP.
 
 \begin{figure}
 \jtree[xunit=2.5em,yunit=1.25em]
@@ -205,21 +213,21 @@ Like in Gu\'ebie, \ili{Dafing} has obligatory OV order in the verb phrase. Thus,
 : ({DP}!a ) [scaleby=1.5 1] {T'}
 : ({T}!b ) [scaleby=1.5 1] {VP}
 : ({DP}!c ) ( {V}!d ).
-\!a = <vartri>{\textipa{w\'ur\'u-$^!$\'u}}{the dog}.
-\!b = ({{n\'a}}{\textsc{fut}}).
-\!c = <vartri>{\textipa{Sw\'o-$^!$\'o}}{the meat}.
-\!d = {\textipa{\textltailn \`\i m\`\i}}{eat}.
+\!a = <vartri>{{wúrú-ꜝú}}{the dog}.
+ɓ = ({{ná}}{\textsc{fut}}).
+\!c = <vartri>{{ʃwó-ꜝó}}{the meat}.
+\!d = {{ɲì mì}}{eat}.
 \endjtree	
 \caption{SAuxOV in Dafing}\label{fig:sande:dafingtree}
 \end{figure}
-A similar structure is proposed by \citet{nikitina09}.\footnote{\label{koopfn}A different analysis is suggested by \citet{Koopman:1984,koopman92}, who maintains that objects move from a postverbal position to a preverbal one in \ili{Mande}. If this analysis is adopted, as it must be if one assumes that syntactic structures across languages are uniformly right-branching \citep{kayne94}, then the criterion of mixed clausal \isi{headedness} we refer to throughout would be reanalyzed as obligatory \isi{movement} of the object to a position before the verb. In general, then, the main takeaway here and below would be the systematic difference between languages where objects obligatorily move to a position before verbs (Gu\'ebie and \ili{Dafing}), resulting in general surface OV, and languages where objects only move to a position before verbs in specific syntactic contexts.}
+A similar structure is proposed by \citet{nikitina09}.\footnote{\label{koopfn}A different analysis is suggested by \citet{Koopman:1984,koopman92}, who maintains that objects move from a postverbal position to a preverbal one in \ili{Mande}. If this analysis is adopted, as it must be if one assumes that syntactic structures across languages are uniformly right-branching \citep{kayne94}, then the criterion of mixed clausal \isi{headedness} we refer to throughout would be reanalyzed as obligatory \isi{movement} of the object to a position before the verb. In general, then, the main takeaway here and below would be the systematic difference between languages where objects obligatorily move to a position before verbs (Guébie and \ili{Dafing}), resulting in general surface OV, and languages where objects only move to a position before verbs in specific syntactic contexts.}
 
-Outside of the mixed-\isi{headedness} in the clause, \ili{Mande} languages like \ili{Dafing} have many of the head-final properties that were also found in \ili{Kru} languages like Gu\'ebie. For example, \ili{Dafing} has postpositions \REF{ex:8a:dafing} and genitive-noun word order in the \isi{noun phrase} \REF{ex:8b:dafing}. 
+Outside of the mixed-\isi{headedness} in the clause, \ili{Mande} languages like \ili{Dafing} have many of the head-final properties that were also found in \ili{Kru} languages like Guébie. For example, \ili{Dafing} has postpositions \REF{ex:8a:dafing} and genitive-noun word order in the \isi{noun phrase} \REF{ex:8b:dafing}. 
 
-Another head final property that \ili{Dafing} shares with \ili{Kru} languages like Gu\'ebie \REF{ex:5:Guebie} is that nominalized complement clauses precede embedding verbs.
+Another head final property that \ili{Dafing} shares with \ili{Kru} languages like Guébie \REF{ex:5:Guebie} is that nominalized complement clauses precede embedding verbs.
 
 \ea \langinfo{SAux[OV]$_{\textsc{nom}}V$}{}{Notes}\\
-\gll w\'ur\'u-$^!$\'u {$^!$\textipa{n\'\i}} [ \textipa{Sw\'o-$^!$\'o} \textbf{\textipa{\textltailn \`\i m\'\i-\'\i}} ] \textbf{\textipa{d\`amn\`a}} \\
+\gll wúrú-ꜝú {ꜝ{ní}} [ {ʃwó-ꜝó} \textbf{{ɲì mí-í}} ] \textbf{{dàmnà}} \\
 {dog}-\textsc{def} \textsc{pfv} {} meat-\textsc{def} eat-\textsc{def} {} begin\\
 \glt `The dog began eating the meat.'
 \z 
@@ -230,15 +238,15 @@ There are two significant differences which distinguish \ili{Mande} and \ili{Kru
 
 \ea Head finality in \langinfo{Dafing}{}{Notes} \label{ex:8:dafing}
 \ea {Postpositions} \\
-\gll \textipa{w\'ur\'u-$^!$\'u} \textbf{\textipa{t\'ab\`ar\'\i-$^!$\'\i}} \textbf{\textipa{z\'uk\`O}} \\
+\gll {wúrú-ꜝú} \textbf{{tábàrí-ꜝí}} \textbf{{zúk{\`ɔ}}} \\
 dog-\textsc{def} table-\textsc{def} under \\
 \glt  `The dog is under the table.'  \label{ex:8a:dafing}
 \ex {Gen-N}\\
-\gll \textbf{\textipa{S\'i\`\i}} k\'a$^!$\'a \textbf{\textipa{w\'ur\'u-$^!$\'u}} \\
+\gll \textbf{{ʃíì}} káꜝá \textbf{{wúrú-ꜝú}} \\
 Sidiki \textsc{gen} dog-\textsc{def} \\
 \glt `Sidiki's dog' \label{ex:8b:dafing}
 \ex {VAdv (*VAdv)}\\
-\gll w\'ur\'u-$^!$\'u {$^!$\textipa{n\'\i}} \textipa{Sw\'o-$^!$\'o} \textbf{\textipa{\textltailn \`\i m\`\i}} \textbf{\textipa{z\`on\`a-z\`on\`a}} \\
+\gll wúrú-ꜝú {ꜝ{ní}} {ʃwó-ꜝó} \textbf{{ɲì mì}} \textbf{{zònà-zònà}} \\
 {dog}-\textsc{def} \textsc{pst} meat-\textsc{def} eat quickly\\
 \glt `The dog ate the meat quickly.' \label{ex:8c:dafing}
 \z
@@ -247,7 +255,7 @@ As verb-manner adverb order is generally a property of VO languages \citep{dryer
 
 The second difference between \ili{Kru} and \ili{Mande} is that \ili{Mande} languages like \ili{Dafing} never allow \isi{verb movement} in transitive clauses, even in the absence of an overt \isi{auxiliary}. %\footnote{\citet{koopman92} proposes \isi{verb movement} only in the intransitive to account for the presence of a tense suffix found only in intransitive clauses. Yet it is hard to find evidence for intransitive \isi{verb movement} for the obvious reason that the object, the only element which could be used to identify the position of the verb in either T or V, is absent.} 
 \ea No \isi{verb movement} in \langinfo{Dafing}{}{Notes}\\
-\gll w\'ur\'u-$^!$\'u {} \textipa{Sw\'o-$^!$\'o} \textbf{\textipa{\textltailn \`\i m\`\i}} \\
+\gll wúrú-ꜝú {} {ʃwó-ꜝó} \textbf{{ɲì mì}} \\
 {dog}-\textsc{def} {} meat-\textsc{def} eat\\
 \glt `The dog eats the meat.'
 \z
@@ -255,7 +263,7 @@ In the preceding sentence, which is interpreted habitually, no overt \isi{auxili
 
 \subsection{Summary}
 
-We have seen that Gu\'ebie (\ili{Kru}) and \ili{Dafing} (\ili{Mande}) both have a mixed clausal headedness, a head initial TP and a head final VP. Independent differences conceal their structural similarity, such as differences in \isi{verb movement} and adverb position. We also saw that \ili{Dafing} and Gu\'ebie have head final structures elsewhere: both have Gen-N word order and postpositions. We revisit this connection in \sectref{sec:distribution}, where we will see that when we look at a broader sample of languages in West Africa, mixed clausal \isi{headedness} is indeed a good predictor of head-finality below the clause level. Verb \isi{movement}, on the other hand, has no clear correlations with head finality or SAuxOV, as would be expected if it is an independent syntactic operation.
+We have seen that Guébie (\ili{Kru}) and \ili{Dafing} (\ili{Mande}) both have a mixed clausal headedness, a head initial TP and a head final VP. Independent differences conceal their structural similarity, such as differences in \isi{verb movement} and adverb position. We also saw that \ili{Dafing} and Guébie have head final structures elsewhere: both have Gen-N word order and postpositions. We revisit this connection in \sectref{sec:distribution}, where we will see that when we look at a broader sample of languages in West Africa, mixed clausal \isi{headedness} is indeed a good predictor of head-finality below the clause level. Verb \isi{movement}, on the other hand, has no clear correlations with head finality or SAuxOV, as would be expected if it is an independent syntactic operation.
 
 \section{Apparent mixed clausal headedness} 
 \label{sec:fake}
@@ -266,19 +274,19 @@ In this section we present data from two languages, \ili{Gwari} (Nupoid) and \il
 
 \ea  {Apparent cases of SAuxOV in \ili{Gwari} and Fongbe}
 \ea  \label{ex:9a:gwari} \ili{Gwari} (\ili{Benue-Congo}: Nigeria)	\\
-\gll w\'o k\'u \`{a}shnam\'a si \\
+\gll wó kú \`{a}shnamá si \\
 3\textsc{sg} \textsc{compl:pl} yams buy \\
 \glt `S/he has bought yams.' \hfill \citep[][56]{hyman1970}
 \ex \label{ex:9b:fongbe}
 \ili{Fongbe} (\ili{Kwa}: Benin)	\\
-\gll \`Un \textipa{j\`E} \textipa{n\'u} \textipa{\:d\`u} j\'i  \\
+\gll Ùn {\`ɛ} {nú} {ɖù} jí  \\
 1\textsc{sg} fall thing eat.\textsc{nom} on  \\
 \glt `I began to eat.' \hfill \citep[][215]{lefebvre2002}
 \z
 \z 
 Our proposals about \ili{Gwari} and \ili{Fongbe} resemble existing syntactic analyses of closely related languages. Putative OV order in \ili{Gwari} is derived by \isi{object shift} across the aspectual particle followed by further \isi{movement} of this particle above the shifted object \citep{manfredi97,kandy03,aboh09}. In contrast, the putative OV order in \ili{Fongbe} nominalized complements are due to the fact that genitives precede nouns in \ili{Gbe} languages \citep{aboh05}.
 
-%We will see that languages with a more restricted distribution of OV order display fewer head final properties than the languages like Gu\'ebie and \ili{Dafing}. This reinforces the point that more restricted OV orders 
+%We will see that languages with a more restricted distribution of OV order display fewer head final properties than the languages like Guébie and \ili{Dafing}. This reinforces the point that more restricted OV orders 
 %
 %
 % with a more restricted distribution of OV order display fewer head final properties than Strict SAuxOV languages. This reinforces the conclusion that Fake SAuxOV languages are not characterized by OV within the VP, unlike Strict SAuxOV languages. 
@@ -294,7 +302,7 @@ SVO word order in \ili{Gwari}	\\
 3\textsc{sg} buy groundnut \\
 \glt `S/he buys groundnuts.' \hfill \citep[][51]{hyman1970}	
 
-\ex \gll wo l\'a shnam\'a \\
+\ex \gll wo lá shnamá \\
 3\textsc{sg} take:\textsc{sg} yam \\
 \glt `S/he takes a yam.' \hfill \citep[][51]{hyman1970}	
 \z
@@ -303,36 +311,36 @@ Past tense is marked with an overt \isi{auxiliary} that appears after the \isi{s
 
 \ea \label{ex:11:gwari}
 \ea  Today past continuous	\\
-\gll wo \textipa{\!b\'e\=\i} si shnam\'a\\
+\gll wo {ɓé\=\i} si shnamá\\
 3\textsc{sg} \textsc{t.pst} buy yam \\
 \glt `S/he was buying yams.' \hfill \citep[][54]{hyman1970}
 \ex Yesterday past continuous	\\
-\gll w\`o \textipa{\!bei} sii {\=obw\=\i }\\
+\gll wò {ɓei} sii {\=obw\=\i }\\
 3\textsc{sg} \textsc{y.pst} buy groundnut\\
 \glt `S/he was buying groundnuts.' \hfill \citep[][54]{hyman1970}
 \ex Beyond \isi{yesterday past} continuous	\\
-\gll w\`o \textipa{\!bei} si {\=obw\=\i } \\
+\gll wò {ɓei} si {\=obw\=\i } \\
 3\textsc{sg} \textsc{by.pst} buy groundnut \\
 \glt `S/he was buying groundnuts.' \hfill \citep[][54]{hyman1970}
 \z
 \z
-While \ili{Gwari} is like Gu\'ebie in having optional auxiliaries, the data in \REF{ex:11:gwari} distinguish the two types of languages. In Gu\'ebie, as we saw above, the presence of any overt \isi{auxiliary} forces a change from VO to OV order. In \ili{Gwari}, the presence versus absence of the past \isi{tense marker} does not result in such an alternation. Because the presence of an overt \isi{auxiliary} must block the \isi{movement} of verbs to T, the persistence of VO word order in the presence of an \isi{auxiliary} suggests that the \ili{Gwari} has a head-initial (VO) VP, unlike Gu\'ebie.
+While \ili{Gwari} is like Guébie in having optional auxiliaries, the data in \REF{ex:11:gwari} distinguish the two types of languages. In Guébie, as we saw above, the presence of any overt \isi{auxiliary} forces a change from VO to OV order. In \ili{Gwari}, the presence versus absence of the past \isi{tense marker} does not result in such an alternation. Because the presence of an overt \isi{auxiliary} must block the \isi{movement} of verbs to T, the persistence of VO word order in the presence of an \isi{auxiliary} suggests that the \ili{Gwari} has a head-initial (VO) VP, unlike Guébie.
 
 The fact that \ili{Gwari} has a head-initial VP correlates with other head-initial properties of \ili{Gwari}, including prepositions \REF{ex:12a:gwari} and verb-adverb order \REF{ex:12c:gwari}, although the presence of genitive-noun order is a head-final property \REF{ex:12b:gwari}. 
 
 \ea
 \ea  \label{ex:12a:gwari} {Prepositions/Postpositions}\\
-\gll wo t\'u shnam\'a l\=o \'o t\=eb\`ul-\`{} \\
+\gll wo tú shnamá l\=o ó t\=ebùl-\`{} \\
 3\textsc{sg} put yam \textsc{stat} \textsc{loc} table-\textsc{loc} \\
 \glt `S/he is putting the yam on the table.'
 
 \ex \label{ex:12b:gwari} {Genitive-Noun}\\
-\gll \textipa{\=e\!b\'i} \textipa{y\`a\!b\`a}\\
+\gll {\=eɓí} {yàɓà}\\
 child banana \\
 \glt `the child's banana' \hfill \citep[][25]{hyman1970}
 
 \ex \label{ex:12c:gwari} {V-Adverb}\\
-\gll yi g\^o \`aky\`auta {c\=\i c\=\i} \\
+\gll yi gô àkyàuta {c\=\i c\=\i} \\
 1\textsc{pl} buy gifts always \\
 \glt `We always buy gifts.' \hfill \citep[][51]{hyman1970}
 \z
@@ -342,13 +350,13 @@ In fact, genitive-noun word order is the most common exception to head-initialit
 While it is generally head-initial, some auxiliaries in \ili{Gwari} trigger OV order, most notably the \isi{completive aspect} marker.\footnote{This pattern is also found in closely related \ili{Nupe} in the completive, analyzed in \citet{kandy03}, whose analysis shares several elements with ours, as discussed further below.} Completive \isi{aspect} is marked with an \isi{auxiliary} that occurs between the \isi{subject} and VP. Unlike the \isi{past tense} however, where we see the surface order SAuxVO, completive-marked sentences have the surface order SAuxOV:
 
 \ea \label{ex:13:gwari}
-\ea  {\textit{l\'a}: singular objects}	\\
-\gll w\'o l\'a shnam\'a si \\
+\ea  {\textit{lá}: singular objects}	\\
+\gll wó lá shnamá si \\
 3\textsc{sg} \textsc{compl:sg} yam buy \\
 \glt `S/he has bought a yam.' \hfill \citep[][64]{hyman1970}
 
-\ex {\textit{k\'u}: plural objects}	\\
-\gll w\'o  k\'u \`ashnam\'a si \\
+\ex {\textit{kú}: plural objects}	\\
+\gll wó  kú àshnamá si \\
 3\textsc{sg} \textsc{compl:pl} yams buy \\
 \glt `S/he has bought yams.' \hfill \citep[][56]{hyman1970}
 \z
@@ -359,20 +367,20 @@ Now the \isi{past tense} \isi{auxiliary} and completive \isi{auxiliary} may be c
 
 \ea \label{ex:14:gwari}
 \ea \label{ex:14a:gwari} {Today past completive}	\\
-\gll w-a k\'u \`ashnam\'a si  \\
+\gll w-a kú àshnamá si  \\
 3\textsc{sg}-\textsc{t.pst} \textsc{compl:pl} yams buy \\
 \glt `S/he bought yams.' [today] \hfill \citep[][57]{hyman1970}
 \ex \label{ex:14b:gwari} {Yesterday past completive}	\\
-\gll w\`o  k\=u\`i \`ashnam\'a si  \\
+\gll wò  k\=uì àshnamá si  \\
 3\textsc{sg} \textsc{y.pst}.\textsc{compl:pl} yams buy \\
 \glt `S/he has bought yams.' [yesterday] \hfill \citep[][57]{hyman1970}
 \ex \label{ex:14c:gwari}{Beyond \isi{yesterday past} completive}	\\
-\gll w\`o \textipa{\!bei} k\'u \`ashnam\'a si  \\
+\gll wò {ɓei} kú àshnamá si  \\
 3\textsc{sg} \textsc{by.pst} \textsc{compl:pl} yams buy \\
 \glt `S/he has bought yams.' [before yesterday] \hfill \citep[][57]{hyman1970}
 \z
 \z
-The fact that the \isi{past tense} and \isi{completive aspect} can be combined in this way demonstrates that they are not competing for the same structural position. While the high tense \isi{auxiliary} is like its \isi{auxiliary} counterparts in Gu\'ebie and \ili{Dafing}, for example in hosting the \isi{subject} in its specifier position, the lower completive \isi{auxiliary} has no clear counterpart in those languages. Furthermore, it is the presence of the completive which is responsible for OV order. We now demonstrate how the completive can have this effect syntactically.
+The fact that the \isi{past tense} and \isi{completive aspect} can be combined in this way demonstrates that they are not competing for the same structural position. While the high tense \isi{auxiliary} is like its \isi{auxiliary} counterparts in Guébie and \ili{Dafing}, for example in hosting the \isi{subject} in its specifier position, the lower completive \isi{auxiliary} has no clear counterpart in those languages. Furthermore, it is the presence of the completive which is responsible for OV order. We now demonstrate how the completive can have this effect syntactically.
 
 The tree in \figref{fig:sande:GwariVO} illustrates an analysis of a \ili{Gwari} sentence with a \isi{past tense} \isi{auxiliary} in T. The verb originates in a VP projection where the object is base-generated and receives its theta role. The verb obligatorily moves to a distinct $v$ head which introduces the external argument (not shown), resulting in SVO order.
 
@@ -385,8 +393,8 @@ The tree in \figref{fig:sande:GwariVO} illustrates an analysis of a \ili{Gwari} 
 : ({\rnode{2}{V+$v$}}!c ) {VP}
 : ({\rnode{1}{\sout{V}}}!e ) ({DP$_{obj}$}!d ) .
 \!a = {wo}{\textsc{3sg}}.
-\!b = {\textipa{\texthtb{}\'e\=\i}}{\textsc{t.pst}}.
-\!d = <vartri>{\`ashnam\'a}{\rnode{4}{yams}}.
+ɓ = {{\texthtb{}é\=\i}}{\textsc{t.pst}}.
+\!d = <vartri>{àshnamá}{\rnode{4}{yams}}.
 \!c = {si}{b\rnode{2}{u}y}.
 \ncbar[angle=-90,nodesep=3pt,arm=2.5em,arrowscale=1]{->}{1}{2}
 %\ncbar[angle=-90,nodesep=2.5pt,arm=2.25em,arrowscale=1]{->}{6}{4}
@@ -409,8 +417,8 @@ The tree in \figref{fig:sande:GwariVO} illustrates an analysis of a \ili{Gwari} 
 %"{\psset{scaleby=.75}} : {\sout{\rnode{1}{$v$}}} {VP}
 %: ({\sout{V}}) {\sout{\rnode{6}{DP$_{obj}$}}}.
 %\!a = {wo}{\textsc{3sg}}.
-%\!b = {\textipa{\texthtb{}\'e\=\i}}{\textsc{t.pst}}.
-%\!d = <vartri>{\`ashnam\'a}{\rnode{4}{yams}}.
+%ɓ = {{\texthtb{}é\=\i}}{\textsc{t.pst}}.
+%\!d = <vartri>{àshnamá}{\rnode{4}{yams}}.
 %\!e = {si}{b\rnode{2}{u}y}.
 %\ncbar[angle=-90,nodesep=3pt,arm=3.5em,arrowscale=1]{->}{1}{2}
 %\ncbar[angle=-90,nodesep=2.5pt,arm=2.25em,arrowscale=1]{->}{6}{4}
@@ -433,9 +441,9 @@ Following \citet{kandy03}, we assume that completive auxiliaries originate in a 
 "{\psset{scaleby=.75}} : {\rnode{1}{\sout{V$_\textsc{compl}$}}} {VP}
 : ({V}!f ) {\sout{\rnode{6}{DP$_{obj}$}}}.
 \!a = {w(o)}{\textsc{3sg}}.
-\!b = {-\'{a}}{\textsc{t.pst}}.
-\!c = {k\'u}{\rnode{2}{\textsc{compl:pl}}}.
-\!d = <vartri>{\`ashnam\'a}{\rnode{4}{yams}}.
+ɓ = {-á}{\textsc{t.pst}}.
+\!c = {kú}{\rnode{2}{\textsc{compl:pl}}}.
+\!d = <vartri>{àshnamá}{\rnode{4}{yams}}.
 \!f = {si}{buy}.
 \ncbar[angle=-90,nodesep=3pt,arm=3em,arrowscale=1]{->}{1}{2}
 \ncbar[angle=-90,nodesep=2.5pt,arm=2.25em,arrowscale=1]{->}{6}{4}
@@ -445,17 +453,17 @@ Following \citet{kandy03}, we assume that completive auxiliaries originate in a 
 \label{fig:sande:Gwari-OV}
 \end{figure}
 
-Support for the idea that the completive is still a kind of lexical verb, rather than an \isi{auxiliary}, comes from its transparent identity to the lexical verbs \textit{l\'a} `take', and \textit{k\'u} `collect,' which occur with singular versus plural objects, respectively \citep[63]{hyman1970}:
+Support for the idea that the completive is still a kind of lexical verb, rather than an \isi{auxiliary}, comes from its transparent identity to the lexical verbs \textit{lá} `take', and \textit{kú} `collect,' which occur with singular versus plural objects, respectively \citep[63]{hyman1970}:
 
 \ea \label{ex:Gwari-takecollect}
 
 \ea \label{ex:Gwari-take} {\ili{Gwari} `take' as a main verb}	\\
-\gll wo l\'a shnam\'a l\=o \\
+\gll wo lá shnamá l\=o \\
 3\textsc{sg} take yam \textsc{stat} \\
 \glt `S/he is taking a yam' \hfill \citep[][92]{hyman1970}
 
 \ex \label{ex:Gwari-gather} {\ili{Gwari} `gather' as a main verb}	\\
-\gll wo k\'u \`ashnam\'a l\=o \\
+\gll wo kú àshnamá l\=o \\
 3\textsc{sg} take yam \textsc{stat}\glt `S/he is taking some yams' \hfill \citep[][93]{hyman1970}
 
 \z
@@ -467,17 +475,17 @@ Evidence for the idea that object \isi{movement} is responsible for OV orders in
 \ea \label{ex:Gwari-DOC}
 
 \ea \label{ex:Gwari-DOC-VOO} {SVO$_1$O$_2$}	\\
-\gll wo bma mi b\={u}s\`{i} ya lo \\
+\gll wo bma mi b\={u}sì ya lo \\
 3\textsc{sg} break 1\textsc{sg} stick \textsc{part} \textsc{stat} \\
 \glt `S/he is breaking my stick' \hfill \citep[][92]{hyman1970}
 
 \ex \label{ex:Gwari-DOC-O1VO2} {SAuxO$_1$VO$_2$}	\\
-\gll w\'o l\'a  b\={u}s\`{i} bm\`a mi ya \\
+\gll wó lá  b\={u}sì bmà mi ya \\
 3\textsc{sg} \textsc{compl:sg} stick break 1\textsc{sg} \textsc{part}  \\
 \glt `S/he has broken my stick' \hfill \citep[][93]{hyman1970}
 
 \ex \label{ex:Gwari-DOC-O2VO1}{SAuxO$_2$VO$_1$}	\\
-\gll w\'o l\'a m\'i bm\`a b\={u}s\`{i} ya \\
+\gll wó lá mí bmà b\={u}sì ya \\
 3\textsc{sg} \textsc{compl:sg} 1\textsc{sg} break stick \textsc{part} \\
 \glt `S/he has broken my stick'	\hfill \citep[][93]{hyman1970}
 \z
@@ -485,7 +493,7 @@ Evidence for the idea that object \isi{movement} is responsible for OV orders in
 \z
 Double object constructions provide evidence against a head-final VP analysis. If the \ili{Gwari} VP were head-final, then we would expect both objects to precede the verb when it does not move to Asp. The current analysis, on the other hand, accounts for this in a simple way: either object in a \isi{double object} construction is able to move to the specifier of V$_\textsc{compl}$P.
 
-What we have seen is that \ili{Gwari} is uniformly head-initial in its clausal spine. When apparent SAuxOV word order still emerges, it is not due to mixed clausal \isi{headedness}, but instead due to a combination of \isi{verb movement} of a low \isi{aspect} head combined with object shift --- a simple schematic representation of the structure is SAuxV$_1$OV$_2$. Like Gu\'ebie, \isi{verb movement} plays a crucial role in the alternation between VO and OV orders. In \ili{Gwari}, SAuxOV order only emerges when \isi{verb movement} to Asp is blocked. However, in \ili{Gwari}, unlike in Gu\'ebie, \isi{object shift} plays a crucial role. Namely, SAuxOV order only occurs because \isi{object shift} is independent from \isi{verb movement} to Asp. This is markedly different from Gu\'ebie and \ili{Dafing}, where VP is always head final while TP is head initial.
+What we have seen is that \ili{Gwari} is uniformly head-initial in its clausal spine. When apparent SAuxOV word order still emerges, it is not due to mixed clausal \isi{headedness}, but instead due to a combination of \isi{verb movement} of a low \isi{aspect} head combined with object shift --- a simple schematic representation of the structure is SAuxV$_1$OV$_2$. Like Guébie, \isi{verb movement} plays a crucial role in the alternation between VO and OV orders. In \ili{Gwari}, SAuxOV order only emerges when \isi{verb movement} to Asp is blocked. However, in \ili{Gwari}, unlike in Guébie, \isi{object shift} plays a crucial role. Namely, SAuxOV order only occurs because \isi{object shift} is independent from \isi{verb movement} to Asp. This is markedly different from Guébie and \ili{Dafing}, where VP is always head final while TP is head initial.
 
 \subsection{Fongbe}
 
@@ -494,12 +502,12 @@ What we have seen is that \ili{Gwari} is uniformly head-initial in its clausal s
 \ea \label{ex:Fongbe-SVO}  
 {SVO}\\
 \ea 
-\gll K\textipa{\`Ok\'u} x\`o \`As\'ib\'a \\
+\gll K{{\`ɔ}kú} xò Àsíbá \\
 Koku hit Asiba \\
 \glt `Koku hit Asiba.' \hfill \citep[][247]{lefebvre2002}
 \ex \label{ex:Fongbe-SAuxVO}
  {SAuxVO}\\
-\gll Lili \textipa{n\`O} \textipa{\:d\`u} \textipa{gb\`a\:d\'e}  \\
+\gll Lili {n{\`ɔ}} {ɖù} {gbàɖé}  \\
 Lili \textsc{hab} eat corn \\
 \glt `Lili (habitually) eats corn.' \hfill \citep[][94]{lefebvre2002}
 \z
@@ -510,11 +518,11 @@ Like \ili{Gwari}, \ili{Fongbe} displays mixed \isi{headedness} properties, an is
 
 \ea
 \ea  \label{ex:Fongbe-CompN} {Comp-N}\\
-\gll c\`akp\'al\`o s\'in g\`o \textipa{\'O} \\
+\gll càkpálò sín gò {\'ɔ} \\
 beer \textsc{obj} bottle \textsc{def} \\
 \glt `the bottle of beer' \hfill \citep[][45]{lefebvre2002}
 \ex \label{ex:Fongbe-NGen} {N-Gen}\\
-\gll \`aw\`a v\'i \textipa{\'O} \textipa{t\`On} \\
+\gll àwà ví {\'ɔ} {t{\`ɔ}n} \\
 arm child \textsc{def} \textit{gen} \\
 \glt `the child's arm' \hfill \citep[][45]{lefebvre2002}
 \z
@@ -524,10 +532,10 @@ Other word order properties also give similar mixed results. \ili{Fongbe} has bo
 
 \ea
 \ea \label{ex:Fongbe-PP} {Pre- and postpositions}\\
- \gll K\textipa{\`Ok\'u} x\`o \`as\textipa{\'O}n n\'u  \`As\'ib\'a \\
+ \gll K{{\`ɔ}kú} xò às{\'ɔ}n nú  Àsíbá \\
 Koku buy crab for Asiba \\
 \glt `Koku bought crab for Asiba' \hfill \citep[][302]{lefebvre2002}
-\ex \gll K\textipa{\`Ok\'u} \textipa{\:d\`o} \`ax\`i \textipa{m\`E} \\
+\ex \gll K{{\`ɔ}kú} {ɖò} àxì \{m{\`ɛ}} \\
 Koku be.at market in \\
 \glt `Koku is in the market' \hfill \citep[][325]{lefebvre2002}
 \z
@@ -535,7 +543,7 @@ Koku be.at market in \\
 
 \ea \label{ex:Fongbe-Adv}
 {V-Adv}\\
-\gll K\textipa{\`Ok\'u} w\`a \textipa{\`az\'O} g\`anj\'i \\
+\gll K{{\`ɔ}kú} wà {àz{\'ɔ}} gànjí \\
 Koku do work well \\
 \glt `Koku worked well' \hfill \citep[][381]{lefebvre2002}
 \z
@@ -545,19 +553,19 @@ While it has some head-final properties, \ili{Fongbe} is largely head-initial at
 Our main interest here is what \citet{lefebvre2002} call an ``aspectual verb construction''. Superficially, this construction has SAuxOV word order, in that the lexical verb in the clause is preceded by its object, as shown in \REF{ex:Fongbe-SVOV}. 
 
 \ea \label{ex:Fongbe-SVOV} {SV[OV]$_{\textsc{nom}}$}\\
-\ea \gll \`As\'ib\'a \textipa{\:d\`o} [[ v\'i \textipa{\'O} \textipa{kp\'On} ]] \textipa{w\`E} ]  \\
+\ea \gll Àsíbá  {ɖò} [[ ví {\'ɔ}  {kp{\'ɔ}n} ]] {w{\`ɛ}} ]  \\
 Asiba be.at {} child \textsc{def} look.at.\textsc{nom} {} \textsc{post}  \\
 \glt `Asiba is looking at the child' \hfill \citep[][215]{lefebvre2002}
 
-\ex \label{ex:Fongbe-SVOVa} \gll \`Un \textipa{j\`E} [[ \textipa{n\'u} \textipa{\:d\`u}  ] j\'i ]  \\
+\ex \label{ex:Fongbe-SVOVa} \gll Ùn {\`ɛ} [[  {nú}  {ɖù}  ] jí ]  \\
 1\textsc{sg} fall {} thing eat.\textsc{nom} {} on  \\
 \glt `I began to eat.' \hfill \citep[][215]{lefebvre2002}
 \z
 \z
 
-However, as can clearly be seen from the data in \REF{ex:Fongbe-SVOV}, the aspectual verbs \textit{\textipa{\:d\`o}} `be at' and \textit{\textipa{j\`E}} `begin' (lit. `fall') actually take a PP complement, the head of which selects a \isi{nominalized verb} phrase. 
+However, as can clearly be seen from the data in \REF{ex:Fongbe-SVOV}, the aspectual verbs \textit{{ɖò}} `be at' and \textit{{\`ɛ}} `begin' (lit. `fall') actually take a PP complement, the head of which selects a \isi{nominalized verb} phrase. 
 
-This fact makes the \ili{Fongbe} aspectual verb construction quite different from the constructions we have examined so far. In the other languages surveyed, SAuxOV word order involves a single extended projection of a lexical verb, and the placement of that verb in relation to its object changes based on the properties of heads higher in the clausal spine. In \ili{Fongbe}, apparent OV order involves a \isi{nominalized verb}. The inflected verb here is a lexical verb that selects a PP complement; it is not an \isi{auxiliary}. Aspectual verbs in \ili{Fongbe} retain their lexical uses. For example, the verb \textit{\textipa{j\`E}} in \REF{ex:Fongbe-SVOVa} can be used to simply mean `fall'. Thus, these word orders are better labeled SVGenN or SVO than SAuxOV.
+This fact makes the \ili{Fongbe} aspectual verb construction quite different from the constructions we have examined so far. In the other languages surveyed, SAuxOV word order involves a single extended projection of a lexical verb, and the placement of that verb in relation to its object changes based on the properties of heads higher in the clausal spine. In \ili{Fongbe}, apparent OV order involves a \isi{nominalized verb}. The inflected verb here is a lexical verb that selects a PP complement; it is not an \isi{auxiliary}. Aspectual verbs in \ili{Fongbe} retain their lexical uses. For example, the verb \textit{{\`ɛ}} in \REF{ex:Fongbe-SVOVa} can be used to simply mean `fall'. Thus, these word orders are better labeled SVGenN or SVO than SAuxOV.
 
 The data above demonstrate \ili{Fongbe} is head initial for both TP and VP. In SVO clauses, no \isi{movement} is needed to derive the word order, as shown in \figref{fig:sande:Fongbe-SAuxVO}. 
 
@@ -567,10 +575,10 @@ The data above demonstrate \ili{Fongbe} is head initial for both TP and VP. In S
 \! = {TP}
 : ({DP}!a ) [scaleby=1.25]
 : {T}!b {VP}
-: {V}!c {DP}{\`As\'ib\'a}.
-\!a = {K\textipa{\`Ok\'u}}.
-\!b = {\O{}}.
-\!c = {x\'o}.
+: {V}!c {DP}{Àsíbá}.
+\!a = {K{{\`ɔ}kú}}.
+ɓ = {\O{}}.
+\!c = {xó}.
 \endjtree}
 \caption{SVO Structure in Fongbe}
 \label{fig:sande:Fongbe-SAuxVO}
@@ -585,12 +593,12 @@ In contrast apparent SAuxOV order in \ili{Fongbe} occurs when a main verb select
 : ({DP}!a )
 : [scaleby=.9] ({T}) [scaleby=.9] {VP}
 : ({V}!b ) [scaleby=1.5] {PP}
-"{\psset{scaleby=.75}} : ({DP}!c ) ({P}{\textipa{w\`E}}).
-\!a = {\`As\'ib\'a}.
-\!b = {\textipa{\:d\`o}}{be.at}.
+"{\psset{scaleby=.75}} : ({DP}!c ) ({P}{{w{\`ɛ}}}).
+\!a = {Àsíbá}.
+ɓ = {{ɖò}}{be.at}.
 \!c = : ({VP$_{\textsc{nom}}$}!d ) {D}.
-\!d = "{\psset{scaleby=.9 }} : {DP}!e  {V$_{\textsc{nom}}$}{\textipa{kp\'On}}{look.at}.
-\!e = <vartri>{v\'i \textipa{\'O}}{the child}.
+\!d = "{\psset{scaleby=.9 }} : {DP}!e  {V$_{\textsc{nom}}$}{{kp{\'ɔ}n}}{look.at}.
+\!e = <vartri>{ví {\'ɔ}}{the child}.
 \endjtree}
 \caption{SVOV Structure in Fongbe; cf. Aboh 2004, ch. 6}
 \label{fig:sande:Fongbe-SVOV}
@@ -600,11 +608,11 @@ Because nominal complements always precede the noun that selects them in \ili{Fo
 
 \subsection{Summary}
 
-We have seen that neither \ili{Gwari} (Nupoid) nor \ili{Fongbe} (\ili{Kwa}) has a head-final VP, and therefore OV order is not a general organizing characteristic of their clausal architecture. This makes them different from Gu\'ebie and \ili{Dafing} in several ways. First, surface OV order has a restricted distribution in both languages. In \ili{Gwari}, it occurs only when there is a completive verb which triggers \isi{object shift} and blocks \isi{movement} of the lexical verb. In \ili{Fongbe}, OV order only occurs in \isi{nominalized verb} phrases. Second, outside these narrow contexts, auxiliaries occur with VO word order. Under our analysis of \ili{Gwari} and \ili{Fongbe}, this is because these auxiliaries occupy the T$^0$ head of TP, and TP is head-initial.
+We have seen that neither \ili{Gwari} (Nupoid) nor \ili{Fongbe} (\ili{Kwa}) has a head-final VP, and therefore OV order is not a general organizing characteristic of their clausal architecture. This makes them different from Guébie and \ili{Dafing} in several ways. First, surface OV order has a restricted distribution in both languages. In \ili{Gwari}, it occurs only when there is a completive verb which triggers \isi{object shift} and blocks \isi{movement} of the lexical verb. In \ili{Fongbe}, OV order only occurs in \isi{nominalized verb} phrases. Second, outside these narrow contexts, auxiliaries occur with VO word order. Under our analysis of \ili{Gwari} and \ili{Fongbe}, this is because these auxiliaries occupy the T$^0$ head of TP, and TP is head-initial.
 
 The derivation of apparent SAuxOV word order in \ili{Gwari} differs from that in \ili{Fongbe}. In \ili{Gwari}, a combination of \isi{object shift} and lack of verb raising conspires to yield apparent SAuxOV orders, orders that we noted were in fact S(Aux)V$_1$OV$_2$. In \ili{Fongbe}, OV order emerges in nominalized complements to certain aspectual verbs, so the \ili{Fongbe} order is in fact S(Aux)VGenN. One path forward for formal typological research is to identify how much variation there is within languages with apparent SAuxOV structures. It seems certain that both phenomena (\isi{object shift}, nominalized complements) are relatively common in West Africa, the latter in particular given the frequency of GenN word order.
 
-There are additional cases of apparent SAuxOV in West Africa that are conditioned by other factors. For example, \isi{object shift} is obligatory with pronouns in \ili{Ogoni} languages such as \ili{Kana} \citep{ikoro96}, and it is conditioned by \isi{negation} in Leggb\'o \citep{good07}. Yet all of these cases, occurring in languages spoken well to the east of the Mandesphere, should not be conflated with the mixed clausal \isi{headedness} which is at the root of SAuxOV in \ili{Kru} and \ili{Mande} languages.
+There are additional cases of apparent SAuxOV in West Africa that are conditioned by other factors. For example, \isi{object shift} is obligatory with pronouns in \ili{Ogoni} languages such as \ili{Kana} \citep{ikoro96}, and it is conditioned by \isi{negation} in Leggbó \citep{good07}. Yet all of these cases, occurring in languages spoken well to the east of the Mandesphere, should not be conflated with the mixed clausal \isi{headedness} which is at the root of SAuxOV in \ili{Kru} and \ili{Mande} languages.
 
 
 \section{Survey results: Distribution of SAuxOV}\label{sec:distribution}
@@ -636,7 +644,7 @@ Gbaya & 1 & \ili{Ngbaka} & Y\\
 \ili{Gur}/Senufo & 7 & \ili{Dagbani}, Bwamu, Bariba, Koromfe, \ili{Supyire}, \ili{Dagaare}, Lobi & G\\
 Ijoid & 1 & Kalabari & I \\
 Kordofanian & 1 & Otoro & O\\
-\ili{Kru} & 5 & Gu\'ebie, Godi\'e, \ili{Grebo}, \ili{Wobe}, \ili{Krahn} & K\\
+\ili{Kru} & 5 & Guébie, Godié, \ili{Grebo}, \ili{Wobe}, \ili{Krahn} & K\\
 \ili{Kwa} & 2 & Tafi, \ili{Akan} & W \\
 \ili{Mande} & 6 & \ili{Mano}, \ili{Dafing}, Bamana, Boko, Bobo, \ili{Gouro} & M\\
 Mel & 1 & Mani & U\\
@@ -652,7 +660,7 @@ Songhay & 2 & \ili{Koyraboro Senni}, \ili{Tondi Songway} Kiini & H\\
 The map in \figref{fig:sande:sauxov} shows the distribution of languages with mixed-head\-ed\-ness in the clause leading to structural SAuxOV based on our survey. Each language is marked on the map with a colored letter, where the letter represents language family. The letter key is given in \tabref{tab:sande:surveylangs}. Colors represent different word order relationships between auxiliaries, objects, and verbs, where red represents SAuxOV order with mixed-\isi{headedness} in the clause. Language families and latitude and longitude for each language are determined from Glottolog \citep{Glottolog}.
 
 {
-  \begin{figure}[H]
+  \begin{figure}
     \centering
     \includegraphics[width =0.9\textwidth]{figures/SAOV.png}
     \caption{Distribution of SAuxOV (red). The language in black is \ili{Dagbani}, a \ili{Gur} language in which we were not able to identify auxiliaries.} \label{fig:sande:sauxov}
@@ -662,7 +670,7 @@ The map in \figref{fig:sande:sauxov} shows the distribution of languages with mi
 
 We see that there is a strong cluster of SAuxOV with clausal mixed-\isi{headedness} in West Africa. There is a strong centralization of SAuxOV orders in the area around \ili{Mande} and \ili{Kru} languages, which we call the \textit{Mandesphere} given the historical influence of the \ili{Mande}-speaking Mali Empire in this area.
 
-%	\textitem[Gu\'ebie (\ili{Kru}, C\^ote d'Ivoire)] AdvOV, pervasively head final except for TP.
+%	\textitem[Guébie (\ili{Kru}, Côte d'Ivoire)] AdvOV, pervasively head final except for TP.
 %	\textitem[\ili{Dafing} (\ili{Mande}, Burkina Faso)] OVAdv, head final in sub-clausal constituents.
 %	\textitem[\ili{Gwari} (Nupoid, Nigeria)] VOAdv, pervasively head initial with serial verbs.
 %	\textitem[\ili{Akan} (\ili{Kwa}) (??)]
@@ -670,7 +678,7 @@ We see that there is a strong cluster of SAuxOV with clausal mixed-\isi{headedne
 In order to discover whether other head-final properties are distributed in the same way as SAuxOV structures with mixed \isi{headedness}, we look first at the distribution of postpositions, which closely mirror the postposition map of Africa from the World Atlas of Language Structure \citep{wals-85} (\figref{fig:sande:WALS}).
 
 {
-  \begin{figure}[H]
+  \begin{figure}
     \centering
     \includegraphics[width = .7\textwidth]{figures/Post.png}
         \includegraphics[width = .7\textwidth]{figures/WALSPost.png}
@@ -685,7 +693,7 @@ In order to discover whether other head-final properties are distributed in the 
 Like postpositions, Genitive-Noun word order correlates with OV across languages \citep{dryer07}, and it is well known that adposition and genitive order track each other across languages based on their relationship in grammaticalization. The distribution of Genitive-Noun order given our survey is shown in \figref{fig:sande:Gen-Noun}. The WALS map of Genitive-Noun order in Africa shows a very similar distribution.
 
 {
-  \begin{figure}[H]
+  \begin{figure}
     \centering
         \includegraphics[width = .7\textwidth]{figures/GenN.png}
     \includegraphics[width = .7\textwidth]{figures/WALSGenN.png}
@@ -696,7 +704,7 @@ Like postpositions, Genitive-Noun word order correlates with OV across languages
 \cite{dryer07} also observes that OV languages surface with manner adverbs before verbs. However, we found that Manner Adverb-Verb order has a much narrower distribution within West Africa than are other head-final properties like postpositions, Genitive-Noun order, and even mixed-headed SAuxOV.
 
 {
-  \begin{figure}[H]
+  \begin{figure}
     \centering
     \includegraphics[width = .7\textwidth]{figures/VAdv.png}
     \caption{Distribution of Adv-V (red)}
@@ -705,9 +713,9 @@ Like postpositions, Genitive-Noun word order correlates with OV across languages
 
 Unlike the distribution of postpositions and Genitive-Noun order, which resemble the distribution of SAuxOV, the order of manner adverbs and verbs does not seem to correlate with other head-final properties in West Africa. This is likely due to the combination of VAdv and OV word order in \ili{Mande} and some \ili{Kru} languages.
 
-Verb \isi{movement} also shows a different distribution from SAuxOV with mixed \isi{headedness}. We saw in Gu\'ebie, a language that shows clausal mixed \isi{headedness}, that when there is no \isi{auxiliary} present, the verb surfaces immediately after the \isi{subject} in the inflectional position. We analyze this SVO order as \isi{verb movement}. In \figref{fig:sande:vmove}, the combination of two word order properties determines whether \isi{verb movement} is present in a language: 1) word order when an \isi{auxiliary} is present (say, SAuxOV), and 2) word order in clauses without an \isi{auxiliary} (say, SVO). While the Mandesphere is almost entirely characterized by clausal mixed \isi{headedness}, only a subset of these languages shows \isi{verb movement}. Verb \isi{movement} is detectable in a number of head-initial languages, with SAuxVO order, based on the requirement that the verb need not be adjacent to the object, i.e., adverbs can intervene these two elements when an \isi{auxiliary} is absent. We conclude that \isi{verb movement} is independent from \isi{headedness}.
+Verb \isi{movement} also shows a different distribution from SAuxOV with mixed \isi{headedness}. We saw in Guébie, a language that shows clausal mixed \isi{headedness}, that when there is no \isi{auxiliary} present, the verb surfaces immediately after the \isi{subject} in the inflectional position. We analyze this SVO order as \isi{verb movement}. In \figref{fig:sande:vmove}, the combination of two word order properties determines whether \isi{verb movement} is present in a language: 1) word order when an \isi{auxiliary} is present (say, SAuxOV), and 2) word order in clauses without an \isi{auxiliary} (say, SVO). While the Mandesphere is almost entirely characterized by clausal mixed \isi{headedness}, only a subset of these languages shows \isi{verb movement}. Verb \isi{movement} is detectable in a number of head-initial languages, with SAuxVO order, based on the requirement that the verb need not be adjacent to the object, i.e., adverbs can intervene these two elements when an \isi{auxiliary} is absent. We conclude that \isi{verb movement} is independent from \isi{headedness}.
 
-\begin{figure}[H]
+\begin{figure}
    \centering
     \includegraphics[width = .7\textwidth]{figures/VMove}
     \caption{Distribution of verb movement (red)}\label{fig:sande:vmove}
@@ -740,7 +748,7 @@ At the same time, the more fine-grained picture we have sketched clarifies a num
 
 
 \section*{Acknowledgements}
-We would like to thank the group on Areal Linguistic Features in Africa (ALFA) at UC Berkeley for their support and discussion, as well as for providing data on particular languages for our SAuxOV survey. ALFA members (other than the authors) include Larry Hyman, Emily Clem, Matthew Faytak, Jevon Heath, Maria Khachaturyan, Spencer Lamoureux, Florian Lionnet, Jack Merrill, and Nicholas Rolle. Thanks also to our two reviewers for their feedback. Finally, we would like to thank the Gu\'ebie community and Rassidatou Konate, our \ili{Dafing} consultant, for providing data discussed in this paper.
+We would like to thank the group on Areal Linguistic Features in Africa (ALFA) at UC Berkeley for their support and discussion, as well as for providing data on particular languages for our SAuxOV survey. ALFA members (other than the authors) include Larry Hyman, Emily Clem, Matthew Faytak, Jevon Heath, Maria Khachaturyan, Spencer Lamoureux, Florian Lionnet, Jack Merrill, and Nicholas Rolle. Thanks also to our two reviewers for their feedback. Finally, we would like to thank the Guébie community and Rassidatou Konate, our \ili{Dafing} consultant, for providing data discussed in this paper.
 
 \section*{Abbreviations}
 
@@ -829,11 +837,11 @@ The values of the six variables most relevant for the results presented in this 
 \textbf{Language}	& 1	& 2	& 3	& 4	& 5	& 15\\
 \hline
 Otoro	& \textcolor{blue}{VO}	& Pre, Post 	& NG	& SAuxVO	& VAdv	& SVOX \\
-Gu\'ebie	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& AdvV	& SVOX, SVXO\\
+Guébie	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& AdvV	& SVOX, SVXO\\
 \ili{Mano}	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& VAdv	& SOVX\\
 Bamana	& \textcolor{red}{OV}	& Pre, Post 	& GN	& SAuxOV	& AdvV, VAdv	& SOVX\\
 Mani	& \textcolor{red}{OV}	& Pre, Post 	& NG	& SAuxOV	&  VAdv	& SVOX\\
-Godi\'e	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& AdvV	& SVOX, SVXO\\
+Godié	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& AdvV	& SVOX, SVXO\\
 Boko/Busa	&  \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& VAdv	& SOVX\\
 \ili{Grebo}	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& 	& SVOX\\
 \ili{Wobe}	& \textcolor{red}{OV}	& Post 	& GN	& SAuxOV	& VAdv	& SVOX\\
