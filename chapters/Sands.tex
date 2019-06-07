@@ -1,13 +1,4 @@
-% -*- coding: utf-8 -*-
-%\documentclass[output=paper]{LSP/langsci} 
-\documentclass[output=paper
-,newtxmath
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook} 
 
 \title{Clicks on the fringes of the Kalahari Basin Area}
 
@@ -16,7 +7,14 @@
 
 \abstract{How do we define the limits of a linguistic area? Typologically rare features may spill out beyond the bounds of an otherwise well-defined linguistic area. Rather than viewing the “fuzzy” boundary of a linguistic area as a problem, it can instead be seen to be an integral part of the structure of the linguistic area which may include a core, “depleted core”, fringe and even areas beyond the fringe. Clicks are a typical feature of the Kalahari Basin linguistic area, but their patterning on the fringes of this area is not so well-known. Clicks have been borrowed into Bantu languages spoken on the fringes of the area, but their functional load, as measured by the number of click phonemes and frequency of clicks in the lexicon, is lower than in the languages of the core of the area. Clicks have also been borrowed into Bantu languages spoken beyond the fringe of the area, but the functional load of clicks in these ultimate recipients is very low. Processes of click loss, both in Bantu languages and Khoisan languages on the fringe, show the same geographical patterning. The geographical distribution of clicks in southern Africa can be compared to the situation in eastern Africa, where there is evidence for an old linguistic area including Hadza and Sandawe in its core and Dahalo in its fringe. }
 
-% keywords: areal linguistics, borrowing, functional load, phonological change, linguistic divergence
+%\keywords{areal linguistics, borrowing, functional load, phonological change, linguistic divergence}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[35]
+}{}
+
 
 \begin{document}
 \maketitle
@@ -35,41 +33,15 @@ It has long been recognized that clicks in \ili{Bantu} languages are the result 
 
 That the \isi{functional load} of clicks in the \isi{phonemic inventory} and in the lexicon of different \isi{click} languages varies widely across languages has been previously noted \citep{Güldemann2008}. \citet{naumann2015} show that the presence of clicks, and of an inventory of more than three basic \isi{click} types is characteristic of the KBA. We use different metrics to measure \isi{functional load} and how it varies between languages of the core vs. those of the fringe of the Kalahari Basin Area, as described below. 
 
+\largerpage
 Languages of the core of the KBA typically use at least four different \isi{click} types, i.e.\ dental, alveolar, palatal and lateral. Some also use a fifth \isi{click} type, the bilabial. This contrasts sharply with the fringe languages, many of which only use one \isi{click} type, most commonly the dental; other fringe languages use two or three \isi{contrastive click} types. Botswana \ili{Yeyi} is the fringe language that is geographically closest to the core of the KBA and also the only fringe language to use four \isi{contrastive click} types. (See \tabref{tab:sands:1} for an overview.) 
 
 The number of \isi{click} consonants in a language depends on the contrasts made involving \isi{click} types with various \isi{click} accompaniments, i.e.\ particular laryngeal, nasal and dorsal release features). We follow a unitary analysis of clicks whereby, /ǀ, ǀq, ǀqʰ/, for example, are considered to be three distinct consonants, rather than a cluster analysis which would see these as a single \isi{click} (/ǀ/) which may occur in clusters with obstruents /q/ and /qʰ/. See \citet{Bradfield2014} for a discussion of unitary vs. cluster analyses. 
 
-In core languages we see as many as 75–80 \isi{click} phonemes (ǂHoan and !Xoon, respectively). Within the core languages, there are differences in the size of the \isi{click} inventories of different languages: Kua and \ili{Shua}, spoken on the eastern edge of the core area, use between 20 and 30 \isi{click} phonemes, and \ili{Khoekhoe}, spoken on the western edge of the core area, uses only 20 \isi{click} phonemes. Despite these differences within the core area, \isi{click} inventories of fringe languages are significantly smaller. Many fringe languages use fewer than 10 \isi{click} phonemes; between 10 and 20 \isi{click} phonemes are found in \ili{Namibian Yeyi} and the \ili{Nguni} languages. Southern \ili{Sotho} only has three \isi{click} phonemes, which may be related to the hypothesis that Southern \ili{Sotho} did not acquire clicks directly from \ili{Khoisan} languages, but as a result of contact with \ili{Nguni} languages, as many Southern \ili{Sotho} \isi{click} words are shared with \ili{Nguni} (\citealt{bourquin1951}; \citealt[23]{Doke1957}).\footnote{\ili{Sotho}-\ili{Tswana} peoples are believed to have migrated to southern Africa more recently than \ili{Nguni}-speaking populations \citep[31]{Pakendorf2017} and thus would have had a shorter period of contact with speakers of \isi{click} languages, perhaps accounting for the smaller \isi{functional load} of clicks in \ili{Sotho}-\ili{Tswana} languages than \ili{Nguni}, despite their relative proximity to the KBA.} The largest \isi{click} inventory is found in Botswana \ili{Yeyi}, which uses 22 contrastive clicks. It should be noted, however, that Botswana \ili{Yeyi} is a moribund language displaying some phonetic irregularity, and firm evidence for the phonemic status of all 22 clicks cannot be given \citep{Fulop2003}. The differences in the size of the \isi{click} inventory between core and fringe languages listed in \tabref{tab:sands:1} is illustrated in \figref{fig:sands:1}. 
-
-
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig1.png}
-\caption{Map showing the relative sizes of click inventories of languages of the core and fringe of the Kalahari Basin Area (based on data in \tabref{tab:sands:1}). (The sizes of filled circles are proportional to the number of click phonemes in each language. The fringe is enclosed by a dotted line, the core by a thicker dashed line. Bantu languages are shown with striped circles; other languages are shown with solid circles.)} 
-\label{fig:sands:1}
-\end{figure}
-
-Another parameter by which the \isi{functional load} of clicks can be measured, the occurrence in the lexicon, also yields different results for core and fringe languages. In \ili{Bantu} fringe languages, the percentage of the lexicon in which clicks occur ranges from 1 to 17\%. In all the core languages, more than 50\% of the lexicon contains a \isi{click}. This difference is illustrated in \figref{fig:sands:2}. The \isi{functional load} of clicks may also be estimated, as \citet{idiatov2016} do for labial-velar stops. They compare the expected occurrence of each consonant with the actual occurrence, presupposing that each C phoneme occurs with equal frequency. This measure tends to heighten differences between the core and the fringe, e.g. 63\% of Nǀuu consonants are clicks but they occur in 86\% of the lexicon; while 29\% of \ili{Zulu} consonants are clicks, they occur in only 14\% of the lexicon. 
-
-
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig2.png}
-\caption{Map with pie charts showing the functional load of clicks in the lexicon in languages of the core of the KBA and on its fringe. The percentage of clicks is shown by the solid dark color. Circles representing Bantu languages have a stippled pattern.}
-\label{fig:sands:2}
-\end{figure}
-
-The percentage of clicks in the basic lexicon also differs between core and fringe languages, as shown in \figref{fig:sands:3}. Using a version of the Swadesh-100 list of \isi{basic vocabulary} \citep{Holman2008}, we counted a much higher percentage of \isi{click} words in \isi{basic vocabulary} in core languages than in fringe languages. Furthermore, in the core languages, the percentage of clicks in the overall lexicon and the percentage of clicks in \isi{basic vocabulary} does not differ significantly, whereas in some of the fringe languages, i.e.\ \ili{Zulu}, \ili{Xhosa} and Botswana \ili{Yeyi}, the percentage of \isi{click} words in the \isi{basic vocabulary} is significantly lower than in the overall lexicon. This is probably the result of \isi{lexical borrowing}, which is less likely to affect \isi{basic vocabulary}. In the SWB languages, borrowings from \ili{Khoisan} languages are mainly found in restricted, specialized semantic domains related to the natural environment and a foraging lifestyle \citep{Gunnink2015}. 
-
-
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig3.png}
-\caption{Map with pie charts showing the functional load of clicks in the basic vocabulary of languages of the core of the KBA and on its fringe. The percentage of clicks is shown by the solid dark color. Circles representing Bantu languages have a stippled pattern.} 
-\label{fig:sands:3}
-\end{figure}
-
 \begin{table}
 \caption{The functional load of clicks in core and fringe languages. Numbers are rounded to the nearest integer.}
 \label{tab:sands:1}
-\begin{tabularx}{\textwidth}{l>{\raggedleft}p{1.1cm}SS>{\raggedleft}p{2.5cm}@{}p{0mm}}
+\begin{tabularx}{\textwidth}{l>{\raggedleft}p{1.1cm}YY>{\raggedleft}p{2.5cm}@{}p{0mm}}
 \lsptoprule
 Language & \isi{click} types & \isi{click} phonemes & percentage of lexicon & percentage of basic lexicon&\\
 \midrule
@@ -106,14 +78,44 @@ Language & \isi{click} types & \isi{click} phonemes & percentage of lexicon & pe
 {Fwe} & 1 & 4 & <1\% & 1\% &\\
 \lspbottomrule
 \end{tabularx}
+\parbox{\textwidth}{\raggedright\footnotesize
+Sources: SEB and SWB languages: \citet{Pakendorf2017}, and sources cited therein. ǂHoan: \citet{Collins2014}, \citet{Gruber1975}. \ili{Ju}ǀ’hoan: \citet{Dickens1994}, \citet{Miller-Ockhuizen2003}. \ili{Khoekhoe}: \citet[47]{Brugman2009}, \citet{Haacke2002}. \ili{Naro}: \citeauthor{Visser2001} (\citeyear{Visser2001}; \citeyear{Visser2013}). Nǀuu: \citet{Miller2014}, \citet{Miller2009}, \citet{Miller2007}. !Xoon: \citet{Traill1985,Traill1994}. Gǀui: \citeauthor{Nakagawa1996} (\citeyear{Nakagawa1996}; \citeyear{Nakagawa2013}). Kua: \citet{Chebanne2014}. Tsua: \citet{Mathes2016}, \citet{Chebanne2013}. \ili{Shua}: Fehn, personal communication, \citet{Vossen2013}. }
 \end{table}  
 
-Sources: SEB and SWB languages: \citet{Pakendorf2017}, and sources cited therein. ǂHoan: \citet{Collins2014}, \citet{Gruber1975}. \ili{Ju}ǀ’hoan: \citet{Dickens1994}, \citet{Miller-Ockhuizen2003}. \ili{Khoekhoe}: \citet[47]{Brugman2009}, \citet{Haacke2002}. \ili{Naro}: \citeauthor{Visser2001} (\citeyear{Visser2001}; \citeyear{Visser2013}). Nǀuu: \citet{Miller2014}, \citet{Miller2009}, \citet{Miller2007}. !Xoon: \citet{Traill1985,Traill1994}. Gǀui: \citeauthor{Nakagawa1996} (\citeyear{Nakagawa1996}; \citeyear{Nakagawa2013}). Kua: \citet{Chebanne2014}. Tsua: \citet{Mathes2016}, \citet{Chebanne2013}. \ili{Shua}: Fehn, personal communication, \citet{Vossen2013}. 
 
+In core languages we see as many as 75–80 \isi{click} phonemes (ǂHoan and !Xoon, respectively). Within the core languages, there are differences in the size of the \isi{click} inventories of different languages: Kua and \ili{Shua}, spoken on the eastern edge of the core area, use between 20 and 30 \isi{click} phonemes, and \ili{Khoekhoe}, spoken on the western edge of the core area, uses only 20 \isi{click} phonemes. Despite these differences within the core area, \isi{click} inventories of fringe languages are significantly smaller. Many fringe languages use fewer than 10 \isi{click} phonemes; between 10 and 20 \isi{click} phonemes are found in \ili{Namibian Yeyi} and the \ili{Nguni} languages. Southern \ili{Sotho} only has three \isi{click} phonemes, which may be related to the hypothesis that Southern \ili{Sotho} did not acquire clicks directly from \ili{Khoisan} languages, but as a result of contact with \ili{Nguni} languages, as many Southern \ili{Sotho} \isi{click} words are shared with \ili{Nguni} (\citealt{bourquin1951}; \citealt[23]{Doke1957}).\footnote{\ili{Sotho}-\ili{Tswana} peoples are believed to have migrated to southern Africa more recently than \ili{Nguni}-speaking populations \citep[31]{Pakendorf2017} and thus would have had a shorter period of contact with speakers of \isi{click} languages, perhaps accounting for the smaller \isi{functional load} of clicks in \ili{Sotho}-\ili{Tswana} languages than \ili{Nguni}, despite their relative proximity to the KBA.} The largest \isi{click} inventory is found in Botswana \ili{Yeyi}, which uses 22 contrastive clicks. It should be noted, however, that Botswana \ili{Yeyi} is a moribund language displaying some phonetic irregularity, and firm evidence for the phonemic status of all 22 clicks cannot be given \citep{Fulop2003}. The differences in the size of the \isi{click} inventory between core and fringe languages listed in \tabref{tab:sands:1} is illustrated in \figref{fig:sands:1}. 
+
+
+\begin{figure}
+\includegraphics[height=.35\textheight]{figures/sands-fig1.png}
+\caption{Map showing the relative sizes of click inventories of languages of the core and fringe of the Kalahari Basin Area (based on data in \tabref{tab:sands:1}). (The sizes of filled circles are proportional to the number of click phonemes in each language. The fringe is enclosed by a dotted line, the core by a thicker dashed line. Bantu languages are shown with striped circles; other languages are shown with solid circles.)} 
+\label{fig:sands:1}
+\end{figure}
+
+Another parameter by which the \isi{functional load} of clicks can be measured, the occurrence in the lexicon, also yields different results for core and fringe languages. In \ili{Bantu} fringe languages, the percentage of the lexicon in which clicks occur ranges from 1 to 17\%. In all the core languages, more than 50\% of the lexicon contains a \isi{click}. This difference is illustrated in \figref{fig:sands:2}. The \isi{functional load} of clicks may also be estimated, as \citet{idiatov2016} do for labial-velar stops. They compare the expected occurrence of each consonant with the actual occurrence, presupposing that each C phoneme occurs with equal frequency. This measure tends to heighten differences between the core and the fringe, e.g. 63\% of Nǀuu consonants are clicks but they occur in 86\% of the lexicon; while 29\% of \ili{Zulu} consonants are clicks, they occur in only 14\% of the lexicon. 
+
+
+\begin{figure}
+\includegraphics[height=.35\textheight]{figures/sands-fig2.png}
+\caption{Map with pie charts showing the functional load of clicks in the lexicon in languages of the core of the KBA and on its fringe. The percentage of clicks is shown by the solid dark color. Circles representing Bantu languages have a stippled pattern.}
+\label{fig:sands:2}
+\end{figure}
+
+\largerpage
+The percentage of clicks in the basic lexicon also differs between core and fringe languages, as shown in \figref{fig:sands:3}. Using a version of the Swadesh-100 list of \isi{basic vocabulary} \citep{Holman2008}, we counted a much higher percentage of \isi{click} words in \isi{basic vocabulary} in core languages than in fringe languages. Furthermore, in the core languages, the percentage of clicks in the overall lexicon and the percentage of clicks in \isi{basic vocabulary} does not differ significantly, whereas in some of the fringe languages, i.e.\ \ili{Zulu}, \ili{Xhosa} and Botswana \ili{Yeyi}, the percentage of \isi{click} words in the \isi{basic vocabulary} is significantly lower than in the overall lexicon. This is probably the result of \isi{lexical borrowing}, which is less likely to affect \isi{basic vocabulary}. In the SWB languages, borrowings from \ili{Khoisan} languages are mainly found in restricted, specialized semantic domains related to the natural environment and a foraging lifestyle \citep{Gunnink2015}. 
+
+
+\begin{figure}
+\includegraphics[height=.35\textheight]{figures/sands-fig3.png}
+\caption{Map with pie charts showing the functional load of clicks in the basic vocabulary of languages of the core of the KBA and on its fringe. The percentage of clicks is shown by the solid dark color. Circles representing Bantu languages have a stippled pattern.} 
+\label{fig:sands:3}
+\end{figure}
+
+\clearpage
 The relative \isi{functional load} of a feature can be a strong indicator of the source language(s) of the feature. The \isi{functional load} of clicks in \ili{Bantu} languages is much lower than it is in \ili{Khoe}, Kx'a and \ili{Tuu} languages. The average percentage of words with clicks is more than 8 times as high in the lexicons of core KBA languages (68\%) as it is in the languages of the fringe (8\%) listed in \tabref{tab:sands:1}. Differences in percentages of clicks in lexicons of core KBA language families are relatively minimal, i.e. Kx'a (67\%), \ili{Tuu} (80\%) and \ili{Khoe} (64\%). Another example of features borrowed across language families are labial-velar stops, e.g. from \ili{Ubangian} into \ili{Bantu}. These phonemes also have a higher \isi{functional load} in the source languages than in the recipient languages: the percentage of words with labial-velar stops twice as high in the lexicons of \ili{Ubangian} languages \ili{Ngbaka} (18\%) and \ili{Ngbandi} (17\%) as it is in the neighboring \ili{Bantu} language \ili{Lingombe} (9\%) (\citealt{BostoenDonzo2013}). 
 
 \section{Click loss in fringe languages}\label{sec:sands:3}
-
+\largerpage[2]
 The \isi{functional load} of clicks not only differs from one language to the next, but variation can also occur across dialects of a single language. We now discuss a number of cases of \ili{Bantu} languages on the fringe of the KBA where one of their varieties has undergone \isi{click loss}, leading either to the complete loss of the feature of clicks or to a reduction in its \isi{functional load}. 
 
 \ili{Fwe} is one of the SWB \isi{click} languages spoken on the northern fringe of the KBA. Clicks in \ili{Fwe} have a low \isi{functional load}; only four \isi{click} phonemes are distinguished, and clicks have so far been found in about 80 vocabulary items, none of which are \isi{basic vocabulary}. \ili{Fwe} has a northern variety, spoken in the Sinjembela area of Zambia, and a southern variety, spoken in the Zambezi region (formerly known as Caprivi strip) in Namibia. Clicks only occur in the southern variety of \ili{Fwe}. The northern variety does not use clicks, but uses a velar consonant where the southern variety uses a \isi{click}.\footnote{Many \ili{Bantu} languages do not use IPA symbols in their official orthographies, but transcribe clicks with the letters <c>, <q> and <x>. Throughout this paper, we transcribe all clicks using the IPA symbols, even where this deviates from the source or the official orthography of the language.}
@@ -122,8 +124,8 @@ The \isi{functional load} of clicks not only differs from one language to the ne
 \begin{tabular}[t]{ll}
 {kù-\textsuperscript{ŋ}{\textbar}ânk-à} &  Southern \ili{Fwe}\\
 {kù-ŋânk-à} &  Northern \ili{Fwe}\\
-\multicolumn{3}{l}{‘to shell groundnuts’}\\  
-\end{tabular}[t]{lll}
+\multicolumn{2}{l}{‘to shell groundnuts’}\\  
+\end{tabular} 
 
 \ex \label{ex:sands:2}
 \begin{tabular}[t]{lll}
@@ -135,7 +137,7 @@ The \isi{functional load} of clicks not only differs from one language to the ne
 
 The correspondences in (\ref{ex:sands:1}-\ref{ex:sands:2}) could be explained as either \isi{click loss} in the northern variety or as \isi{click} insertion in the southern variety. \citet{gunninktoappear} argues that \isi{click loss} is the more likely explanation, as can be seen from the form of lexemes that use a \isi{click} in Southern \ili{Fwe}, but have a \ili{Bantu} reconstruction without a \isi{click}. The original consonant has been replaced by a \isi{click} at some point in the history of \ili{Fwe}, such as the southern \ili{Fwe} word \textit{- ŋ{\textbar}ùm-ùn-à} ‘to pull out, uproot’. This word is of \ili{Bantu} origin, as attested by the reconstruction \textit{*-túmʊd-} ‘take firewood from fire, tear asunder’ \citep{Bastin2002}, and reflexes in \ili{Bantu} languages related to \ili{Fwe} such as \ili{Tonga} \textit{-fum-un-a} ‘pull out as grass from thatch’ \citep[117]{Torrend1931}. The expected reflex in \ili{Fwe} would be \textit{-sùm-ùn-à}, as Proto-\ili{Bantu} *t followed by a high back vowel regularly changes to /s/ in \ili{Fwe} \citep[118]{Bostoen2009}. In northern \ili{Fwe}, however, this word is realized as \textit{-ŋùm-ùn-à}. The use of /ŋ/ rather than /s/ in the northern \ili{Fwe} form can only be explained as a change from the nasal \isi{click}. This shows that northern \ili{Fwe}, too, must have used clicks in the past, but lost them later, probably as the result of the lack of contact with speakers of other \isi{click} languages. Northern \ili{Fwe} is in extensive contact with \ili{Lozi}, a clickless \ili{Bantu} language, as well as \ili{Kwamashi} and \ili{Shanjo}, also \ili{Bantu} languages that do not use clicks. Southern \ili{Fwe}, however, is in contact with \ili{Yeyi}, a \ili{Bantu} language in which clicks have a higher \isi{functional load} than in \ili{Fwe}, and also with the \ili{Khoe}-\ili{Kwadi} language (Caprivi-)\ili{Khwe}. The continued contact between southern \ili{Fwe} and languages in which clicks have a high \isi{functional load} has helped this variety to maintain its clicks. 
 
-Another example of \isi{click loss} is seen in \ili{Yeyi}, a \ili{Bantu} \isi{click} language spoken on the northern fringe of the KBA. Like \ili{Fwe}, \ili{Yeyi} has two varieties, a Namibian variety spoken in the Zambezi region (former Caprivi strip), and a Botswana variety spoken in Ngamiland. Although both varieties use clicks, the \isi{functional load} of clicks in Botswana \ili{Yeyi} is higher than in \ili{Namibian Yeyi}.
+Another example of \isi{click loss} is seen in \ili{Yeyi}, a \ili{Bantu} \isi{click} language spoken on the northern fringe of the KBA. Like \ili{Fwe}, \ili{Yeyi} has two varieties, a Namibian variety spoken in the Zambezi region (former Caprivi strip), and a Botswana variety spoken in Ngamiland. Although both varieties use clicks, the \isi{functional load} of clicks in Botswana \ili{Yeyi} is higher than in \ili{Namibian Yeyi} (\tabref{tab:sands:2}).
 
 \begin{table}
 \caption{Functional load of clicks in Yeyi}
@@ -150,7 +152,7 @@ Botswana \ili{Yeyi} & 4 & 22 & 15\% & 10.4\%\\
 \end{tabularx}
 \end{table} 
 
-As \ili{Namibian Yeyi} has fewer \isi{click} types than Botswana \ili{Yeyi}, it has merged certain \isi{click} types: examples (\ref{ex:sands:3}-\ref{ex:sands:3} show that both palatal and dental clicks in Botswana \ili{Yeyi} correspond to dental clicks in \ili{Namibian Yeyi}. 
+As \ili{Namibian Yeyi} has fewer \isi{click} types than Botswana \ili{Yeyi}, it has merged certain \isi{click} types: examples (\ref{ex:sands:3}--\ref{ex:sands:4}) show that both palatal and dental clicks in Botswana \ili{Yeyi} correspond to dental clicks in \ili{Namibian Yeyi}. 
 
 \pagebreak
 
@@ -192,11 +194,12 @@ Although \isi{click loss} may occur as the result of regular sound change, as is
 Clicks have not only spread from the core of the KBA to its fringe, but from the fringe to languages yet more geographically removed from the KBA, as shown in \figref{fig:sands:4}. The \isi{functional load} of clicks in \ili{Bantu} languages of eastern Zimbabwe, Mozambique and Malawi is low. They occur mainly in borrowings and ideophones. The \ili{Changana} variety of \ili{Tsonga} has three \isi{click} phonemes and 142 words with clicks \citep{Sitoe1996}. Other lects seem to have fewer \isi{click} words. Certain varieties of \ili{Karanga}, spoken in the Midlands of Zimbabwe, are reported to have a small number \isi{click} words, such as \textit{mùǀìrò} ‘whip’, \textit{-ǀùb̤à} ‘rinse mouth’ and \textit{mà-{\textbar}ìmb̤í} ‘edible caterpillars’ \citep{Pongweni1990}, but the total number of words in the lexicon with clicks is unknown. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig4.png}
+\includegraphics[height=.35\textheight]{figures/sands-fig4.png}
 \caption{Map showing Bantu languages immediately outside of the Kalahari Basin Area fringe in which clicks occur as (marginal) phonemes}
 \label{fig:sands:4}
 \end{figure}
 
+\newpage 
 In the \ili{Mzimba} variety of \ili{Tumbuka}, spoken in Malawi, clicks occur in certain place names. These clicks correspond to alveolar ejectives in the \ili{Nkhamanga} variety of \ili{Tumbuka}, which lacks clicks: the \ili{Mzimba} place name \textit{!aba} is known as \textit{t’afa} in \ili{Nkhamanga}, and the \ili{Mzimba} name \textit{Enguǀwini} as \textit{Ngut’wini} in \ili{Nkhamanga} \citep{Moyo1995}. 
 
 In \ili{Ndau} as described by \citet{Borland1970}, certain words with clicks can be found, most of which are traceable to \ili{Zulu}, such as \textit{ku-ɡǁoka} ‘wear clothes’ \citep[32]{Borland1970}, from \ili{Zulu} \textit{-ɡǁoka} ‘wear, put on’ \citep[85]{Doke1958}. There is some instability in the pronunciation of clicks in \ili{Ndau}: lateral clicks alternate with dental and alveolar clicks, i.e. \textit{chi-ǀembo} {\textasciitilde} \textit{chi-ǁembo} ‘spoon’, or \textit{n!wadi} {\textasciitilde} \textit{nǁwadi} ‘book’. Clicks also alternate with velar non-clicks, i.e. \textit{chi-ɡǁoɡo} {\textasciitilde} \textit{chi-ɡoɡo} ‘hat’ \citep[30]{Borland1970}. Other descriptions of \ili{Ndau}, such as \citet{Doke1931}, do not mention clicks, suggesting either that they are recently acquired or only found in specific dialects. 
@@ -214,7 +217,7 @@ Many \ili{Khoe}-\ili{Kwadi} languages have been affected by \isi{click loss} \ci
 Click loss in the Kx'a languages \ili{Ju}ǀ'hoan and ǂHoan is much less extensive than than seen in Mupa ǃXuun. Proto-Kx'a is reconstructed with a contrastive retroflex \isi{click} *ǃǃ which has been lost in all daughter languages apart from Central \ili{Ju} lects \citep{Heine2010,Sands2010}. In addition to the loss of *ǃǃ, Mupa ǃXuun is in the process of losing most palatal and alveolar clicks (with the exception of those with nasalized, glottalized, delayed aspirated accompaniments which are generally retained) \citep{fehn-toappear-b}. Palatal clicks and alveolar clicks are replaced by alveolar and velar non-clicks, respectively \citep{fehn-toappear-b}. Click loss in the speech of young people speaking varieties of \linebreak ǃXuun in southern Angola appears to go back some generations \citep{Bleek1928,Traill1997}. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig5.png}
+\includegraphics[height=.35\textheight]{figures/sands-fig5.png}
 \caption{Map showing Non-Bantu languages which have lost click contrasts: Kwadi, Sesfontein Damara, Khwe, Shua, Tshwao (Khoe-Kwadi); Mupa !Xuun, Juǀ'hoan, ǂHoan (Kx'a); ǀXam, ǁXegwi (Tuu)} 
 \label{fig:sands:5}
 \end{figure}
@@ -231,7 +234,7 @@ There are three \isi{click} languages in East Africa, as shown in \figref{fig:sa
 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/sands-fig6.png}
+\includegraphics[height=.35\textheight]{figures/sands-fig6.png}
 \caption{Map of East African click languages showing the percentage of clicks in basic vocabulary. The proposed (depleted) core is enclosed by a heavy dashed line, the fringe by a dotted line.}
 \label{fig:sands:6}
 \end{figure}
@@ -240,6 +243,7 @@ With three \isi{contrastive click} types, \ili{Hadza} and \ili{Sandawe} are simi
 
 The frequency of clicks in the lexicon is similar in \ili{Sandawe} (21\%) and \ili{Hadza} (18\%), but much lower in \ili{Dahalo} (3\%) (based on hand counts of words in \citealt{Miller2012}, \citealt{Ten2012}, \citealt{Tosco1991}). These frequencies are similar to frequencies seen in the fringe of the KBA. Rates of clicks in \isi{basic vocabulary} are shown in \figref{fig:sands:6}. The \isi{functional load} of clicks in the \isi{basic vocabulary} of \ili{Sandawe} (37\%) and \ili{Hadza} (16\%) however, is higher than that seen in any \ili{Bantu} language. 
 
+\newpage 
 Unlike most languages of the KBA fringe, populations speaking these languages have been isolated from speakers of other \isi{click} languages for multiple generations, as shown by genetic evidence (cf. \citealt{Schlebush2012}, \citealt{Soi2015}). It seems likely that clicks in all of these languages once had a higher \isi{functional load} than they do at present, and that continued contact with clickless languages has reduced their \isi{functional load}, similar to what is seen in southern Africa. If East African \isi{click} languages once formed a \isi{linguistic area}, the \isi{functional load} of clicks suggests that \ili{Hadza} and \ili{Sandawe} are part of a depleted core and \ili{Dahalo} is part of its fringe. 
 
 \section{Conclusion}\label{sec:sands:7}
@@ -254,6 +258,7 @@ Finally, we have suggested that differences in the \isi{functional load} of a li
 
 We thank Koen Bostoen, Brigitte Pakendorf, Anne-Marie Fehn, Richard Bailey, Kirk Miller, and Will Grundy for their assistance. 
 
+\todo{please address red items in bibliography}
 \sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
 
