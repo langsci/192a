@@ -1,13 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
-%%%     Language Science Press Master File       %%%
-%%%         follow the instructions below        %%%
-%%%                                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-% Everything following a % is ignored 
-% Some lines start with %. Remove the % to include them
-
 \documentclass[output=book
 		,modfonts,nonflat
 	        ,collection
@@ -15,13 +5,9 @@
 	       %,draft
 	       %,draftmode
 		,colorlinks,citecolor=brown 	
-		,showindex
+% 		,showindex
 		  ]{langsci/langscibook}                              
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% put all additional commands you need in the 
-% following files. If you do not know what this might 
-% mean, you can safely ignore this section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \input{localmetadata.tex}
 \input{localpackages.tex}
@@ -40,9 +26,7 @@
 \frontmatter 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 \tableofcontents
-% \include{chapters/preface}
-% \include{chapters/acknowledgments}
-
+\include{chapters/preface} 
 \mainmatter          
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -50,50 +34,50 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\lsChapterFooterSize}{\footnotesize}
 \part{Phonetics and phonology}
-% \includepaper{chapters/Akumbu} %prepublished
-% \includepaper{chapters/Anttila}%prepublished
-% \includepaper{chapters/Bennett} %prepublished
-% \includepaper{chapters/Bickmore}%prepublished
-% \includepaper{chapters/Downing}%prepublished
+\includepaper{chapters/Akumbu} %prepublished
+\includepaper{chapters/Anttila}%prepublished
+\includepaper{chapters/Bennett} %prepublished
+\includepaper{chapters/Bickmore}%prepublished
+\includepaper{chapters/Downing}%prepublished
 
- % \includepaper{chapters/Gjersoe}%prepublished
-% \includepaper{chapters/Green}%prepublished 
-% \includepaper{chapters/Grimm} %prepublished
-% \includepaper{chapters/Hamlaoui} %prepublished
-% \includepaper{chapters/Jones}%prepublished
+ \includepaper{chapters/Gjersoe}%prepublished
+\includepaper{chapters/Green}%prepublished 
+\includepaper{chapters/Grimm} %prepublished
+\includepaper{chapters/Hamlaoui} %prepublished
+\includepaper{chapters/Jones}%prepublished
 
-% \includepaper{chapters/Kimper}%prepublished -
-% \includepaper{chapters/Kusmer}%prepublished
-% \includepaper{chapters/Lamont}%prepublished
-% \includepaper{chapters/Lotven}%prepublished
-% \includepaper{chapters/Moeng}%prepublished
-% \includepaper{chapters/Petrollino}%prepublished
-% \includepaper{chapters/Pillion} %prepublished
+\includepaper{chapters/Kimper}%prepublished -
+\includepaper{chapters/Kusmer}%prepublished
+\includepaper{chapters/Lamont}%prepublished
+\includepaper{chapters/Lotven}%prepublished
+\includepaper{chapters/Moeng}%prepublished
+\includepaper{chapters/Petrollino}%prepublished
+\includepaper{chapters/Pillion} %prepublished
 
 \part{Syntax and semantics}
-% \includepaper{chapters/Abubakari}%prepublished
-% \includepaper{chapters/Apel}%prepublished
-% \includepaper{chapters/Diercks} %20%prepublished
+\includepaper{chapters/Abubakari}%prepublished
+\includepaper{chapters/Apel}%prepublished
+\includepaper{chapters/Diercks} %20%prepublished
 
-% \includepaper{chapters/Duah}%prepublished
-% \includepaper{chapters/Duncan}%prepublished
-% \includepaper{chapters/Gould}%prepublished
-% \includepaper{chapters/Khachaturyan}%prepublished
-% \includepaper{chapters/Landman}%25 prepublished
+\includepaper{chapters/Duah}%prepublished
+\includepaper{chapters/Duncan}%prepublished
+\includepaper{chapters/Gould}%prepublished
+\includepaper{chapters/Khachaturyan}%prepublished
+\includepaper{chapters/Landman}%25 prepublished
 
-% \includepaper{chapters/Monich}%prepublished
-% \includepaper{chapters/Ollennu}%prepublished
+\includepaper{chapters/Monich}%prepublished
+\includepaper{chapters/Ollennu}%prepublished
 % \includepaper{chapters/Parrish}%for typesetting %needs tikz, not qtree
-% \includepaper{chapters/Pesetsky} %prepublished
-% \includepaper{chapters/Purvis} %30prepublished
-% \includepaper{chapters/Ranero} %prepublished
-% \includepaper{chapters/Selvanathan}%prepublished
+\includepaper{chapters/Pesetsky} %prepublished
+\includepaper{chapters/Purvis} %30prepublished
+\includepaper{chapters/Ranero} %prepublished
+\includepaper{chapters/Selvanathan}%prepublished
  
 \part{Areal features and linguistic reconstruction}
-% \includepaper{chapters/Nurse} %prepublished
-% \includepaper{chapters/Sande} %send to editor
- \includepaper{chapters/Sands}%for typesetting 
-% \includepaper{chapters/Zogbo} %needs maps
+\includepaper{chapters/Nurse} %prepublished
+% \includepaper{chapters/Sande} %needs tikz instead of jtree
+ \includepaper{chapters/Sands}%prepublished
+\includepaper{chapters/Zogbo} %needs maps
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Backmatter                       %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
