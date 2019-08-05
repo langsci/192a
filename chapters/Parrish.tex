@@ -157,14 +157,24 @@ Additionally, \textit{gbàgbó} `believe' can be used with animate objects, but 
 More recently, \citet{Bode2007} merged the two halves of a \isi{splitting verb} separately in his analysis, yet emphasized that they are regarded as a single unit semantically. So in his analysis there is only one VP for splitting verbs, but two verbal elements are inserted into it at different locations. His is the most comprehensive work documenting \ili{Yoruba} verb structure, and he is able to capture many generalizations with his approach. He proposes for all verbs in \ili{Yoruba} that they move twice. First from V, they move to Asp to check aspectual requirements, and from there they move to \textit{v}. In turn, the argument moves to Spec Asp. In the case of splitting verbs, however, he places the second verbal element in V, which then moves to Asp as per usual. The first verbal element he merges in \textit{v} directly, thus achieving the SV$_{1}$ OV$_{2}$\ order. This creates a structure as in \figref{fig:parrish:BodeTree}.
 
 \begin{figure}
-	
-	\begin{tikzpicture}[scale=0.8]
-	\Tree
-	[.$v$P [.DP\\Adé ][.$v$' [.$v$\\ba ][.AspP [.DP \edge[roof]; {ilé nàá$_{2}$} ][.Asp' [.Asp\\{jé$_{1}$} ][.VP [.DP\\$t_{2}$ ][.V\\$t_{1}$ ]]]]]]
-	\end{tikzpicture}
-	\caption{Bode's structure for splitting verbs sentences like \REF{ex:parrish:must-embed}}
-	
-	\label{fig:parrish:BodeTree} 
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 	\Tree
+% % % 	[$v$P [DP\\Adé ][$v$' [$v$\\ba ][AspP [DP \edge[roof]; {ilé nàá$_{2}$} ][Asp' [Asp\\{jé$_{1}$} ][VP [DP\\$t_{2}$ ][V\\$t_{1}$ ]]]]]]
+% % % 	\end{tikzpicture}
+\begin{forest}
+[\textit{v}P
+    [DP\\Adé] [\textit{v}'
+        [\textit{v}\\ba] [AspP
+            [DP[ilé nàá\textsubscript{2},roof]] [Asp'
+                [Asp\\jé\textsubscript{1}] [VP
+                    [DP\\\textit{t}\textsubscript{2}] [V\\\textit{t}\textsubscript{1}]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+\caption{Bode's structure for splitting verbs sentences like \REF{ex:parrish:must-embed}\label{fig:parrish:BodeTree} }
 \end{figure}
 
 In cases without a \isi{splitting verb}, the V head in Asp moves to \textit{v}, which yields the correct SVO order. Thus his account for splitting verbs is that merging V$_{1}$\ in \textit{v} has blocked \isi{movement} of Asp to \textit{v}, with the result of the argument being between the two verbal elements, as it still moves to Spec Asp. In the case of intransitives like \REF{ex:parrish:inchoative}, the argument will again move to be pulled up to \isi{subject} position by an EPP feature on T, thus also yielding the correct word orders for the splitting verbs that have a causative/inchoative alternation.
@@ -203,13 +213,18 @@ In both of these approaches, the particle is moved to where it can enter into a 
 \z 
 
 \begin{figure}
-	\begin{tikzpicture}[scale=0.8]
-	\Tree 
-	[.VP [.DP \edge[roof]; die~Tür ] [.V$'$ [.PrtP [.Prt$^{0}$\\ab ]] [.V$^{0}$\\schließt ]]]
-	\end{tikzpicture}
-	\caption{Structure for \REF{ex:parrish:zeller}}
-	
-	\label{fig:parrish:zeller-tree}
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 	\Tree 
+% % % 	[VP [DP \edge[roof]; die~Tür ] [V$'$ [PrtP [Prt$^{0}$\\ab ]] [V$^{0}$\\schließt ]]]
+% % % 	\end{tikzpicture}
+\begin{forest}
+[VP
+    [DP[die Tür,roof]] [V'
+        [PrtP [Prt\textsuperscript{0}\\ab]] [V\textsuperscript{0}\\schließt]
+    ]
+]
+\end{forest}
+	\caption{Structure for \REF{ex:parrish:zeller}\label{fig:parrish:zeller-tree}}
 \end{figure}
 
    
@@ -306,24 +321,27 @@ With \ili{German} particle verbs, there are two possible words orders but a synt
 Given Bode's analysis of \isi{verb movement} as passing through Asp, the ordering of the verb after the object in \REF{ex:parrish:again} indicates that this \isi{movement} is being blocked. Assuming Bode's analysis of \isi{verb movement} to be correct, if \textit{tún} is blocking the verb from moving to \textit{v}, linearly preceding the object in Spec Asp, it must be in either \textit{v} or in Asp when low and interpreted as ‘again’. Given that ‘again’ could be considered to convey an iterative sort of \isi{aspect}, we posit that in these cases, \textit{tún} is functioning as an aspectual marker, as opposed to its use when it means ‘also’. By blocking the \isi{verb movement}, the correct SOV order results. In the ‘also’ reading, \textit{tún} is acting as an adverb, rather than Asp head, and thus is attaching in a higher adverb position and does not affect the word order in the verb phrase. With a higher attachment, the \isi{verb movement} to Asp and then to \textit{v} is not blocked, and thus the correct SVO order is achieved. Using a non-\isi{splitting verb} to illustrate, we posit the structures in \figref{fig:parrish:1} and \figref{fig:parrish:2} to achieve \REF{ex:parrish:also} and \REF{ex:parrish:again}, respectively.
 
 \begin{figure}
-	\begin{tikzpicture}[scale=0.8]
-	\Tree
-	[.\textit{v}P [.AdvP\\{}tún ][.\textit{v}P [.DP\\O ][.\textit{v}' [.\textit{v} [.V\\{se$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {adiye nàá$_{2}$} ][.Asp' [.Asp\\$t_{1}$ ][.VP [.V\\$t_{1}$ ][.DP\\$t_{2}$ ]]]]]]]
-	\end{tikzpicture}
+% % 	\begin{tikzpicture}[scale=0.8]
+% % 	\Tree
+% % 	[\textit{v}P [AdvP\\{}tún ][\textit{v}P [DP\\O ][\textit{v}' [\textit{v} [V\\{se$_{1}$}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP \edge[roof]; {adiye nàá$_{2}$} ][Asp' [Asp\\$t_{1}$ ][VP [V\\$t_{1}$ ][DP\\$t_{2}$ ]]]]]]]
+% % 	\end{tikzpicture}
+\begin{forest}for tree={fit=band}
+    [\textit{v}P [AdvP\\tún][\textit{v}P [DP\\O][\textit{v}' [\textit{v} [V\\{se\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP [adiye nàá\textsubscript{2},roof]][Asp' [Asp\\\textit{t}\textsubscript{1} ][VP [V\\\textit{t}\textsubscript{1} ][DP\\\textit{t}\textsubscript{2} ]]]]]]]
+\end{forest}
 	\caption{Structure meaning ‘also’ \REF{ex:parrish:also}}
-	
 	\label{fig:parrish:1}
 \end{figure}
 
 
 \begin{figure}
-	\begin{tikzpicture}[scale=0.8]
-	\Tree
-	[.\textit{v}P [.DP\\O ][.\textit{v}' [.\textit{v} [.Asp\\{tún$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {adiye nàá$_{2}$} ][.Asp' [.Asp\\$t_{1}$ ][.VP [.V\\se ][.DP\\$t_{2}$ ]]]]]]
-	\end{tikzpicture}
-	\caption{Structure meaning ‘again’ \REF{ex:parrish:again}}
-	
-	\label{fig:parrish:2}
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 	\Tree
+% % % 	[\textit{v}P [DP\\O ][\textit{v}' [\textit{v} [Asp\\{tún$_{1}$}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP \edge[roof]; {adiye nàá$_{2}$} ][Asp' [Asp\\$t_{1}$ ][VP [V\\se ][DP\\$t_{2}$ ]]]]]]
+% % % 	\end{tikzpicture}
+	\caption{Structure meaning ‘again’ \REF{ex:parrish:again}\label{fig:parrish:2}}
+\begin{forest}for tree={fit=band}
+    [\textit{v}P [DP\\O ][\textit{v}' [\textit{v} [Asp\\{tún\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP [adiye nàá\textsubscript{2},roof] ][Asp' [Asp\\\textit{t}\textsubscript{1} ][VP [V\\se ][DP\\\textit{t}\textsubscript{2} ]]]]]]
+\end{forest}
 \end{figure}
 
  
@@ -413,23 +431,25 @@ The simplest way to explain the blocking of \isi{movement}, however, is to assum
 
 
 \begin{figure}
-	\begin{tikzpicture}[scale=0.8]
-	\Tree
-	[.\textit{v}P [.DP\\{Adé} ][.\textit{v}' [.\textit{v} [.V\\{ba$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {ilé nàá$_{2}$} ][.Asp' [.Asp\\{$t_{1}$} ][.VP [.V\\$t_{1}$ ][.VP [.V\\jé ][.DP\\$t_{2}$ ]]]]]]]
-	\end{tikzpicture}
-	\caption{Proposed structure for  \REF{ex:parrish:split}}
-	
-	\label{fig:parrish:split-structure} 
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 	\Tree
+% % % 	[\textit{v}P [DP\\{Adé} ][\textit{v}' [\textit{v} [V\\{ba$_{1}$}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP \edge[roof]; {ilé nàá$_{2}$} ][Asp' [Asp\\{$t_{1}$} ][VP [V\\$t_{1}$ ][VP [V\\jé ][DP\\$t_{2}$ ]]]]]]]
+% % % 	\end{tikzpicture}
+	\caption{Proposed structure for  \REF{ex:parrish:split}\label{fig:parrish:split-structure} }
+	\begin{forest}for tree={fit=band}
+        [\textit{v}P [DP\\{Adé} ][\textit{v}' [\textit{v} [V\\{ba\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP [ilé nàá\textsubscript{2},roof] ][Asp' [Asp\\{\textit{t}\textsubscript{1}} ][VP [V\\\textit{t}\textsubscript{1} ][VP [V\\jé ][DP\\\textit{t}\textsubscript{2} ]]]]]]]
+	\end{forest}
 \end{figure}
 
 \begin{figure}	
-	\begin{tikzpicture}[scale=0.8]
-		\Tree
-		[.\textit{v}P [.DP\\{Adé} ][.\textit{v}' [.\textit{v} [.Asp\\{tún$_{1}$}\\{[+\textsc{asp}]} ] [.\textit{v} ] ][.AspP [.DP \edge[roof]; {ilé nàá$_{2}$} ][.Asp' [.Asp\\{$t_{1}$} ][.VP [.V\\ba ][.VP [.V\\jé ][.DP\\$t_{2}$ ]]]]]]]
-	\end{tikzpicture}
-	\caption{Proposed structure for \REF{ex:parrish:no-split}}
-	
-	\label{fig:parrish:tun-tree-split} 
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 		\Tree
+% % % 		[\textit{v}P [DP\\{Adé} ][\textit{v}' [\textit{v} [Asp\\{tún$_{1}$}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP \edge[roof]; {ilé nàá$_{2}$} ][Asp' [Asp\\{$t_{1}$} ][VP [V\\ba ][VP [V\\jé ][DP\\$t_{2}$ ]]]]]]]
+% % % 	\end{tikzpicture}
+\caption{Proposed structure for \REF{ex:parrish:no-split}\label{fig:parrish:tun-tree-split} }
+\begin{forest}for tree={fit=band}
+[\textit{v}P [DP\\{Adé} ][\textit{v}' [\textit{v} [Asp\\{tún\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ][AspP [DP [ilé nàá\textsubscript{2},roof] ][Asp' [Asp\\{\textit{t}\textsubscript{1}} ][VP [V\\ba ][VP [V\\jé ][DP\\\textit{t}\textsubscript{2} ]]]]]]]
+\end{forest}
 \end{figure}
 
 The derivation expressed in \figref{fig:parrish:split-structure} deviates little from Bode's analysis of regular \isi{verb movement}. The object moves to Spec Asp, and the verb moves through Asp to \textit{v}. The difference is that in this case, the \isi{verb movement} is being undertaken by the first verbal element, which is still the appropriate head of the next phrase down the tree. The second half of the \isi{splitting verb} remains in place, also generated low, and thus the SV$_{1}$ OV$_{2}$\ order results. Importantly, considering the likely development of splitting verbs from \isi{serial verb} constructions, this structure also parallels some proposed structures for \isi{serial verb} constructions in that the first verbal element merges as the head in a head-complement relation with the second verbal element and the argument, similar to a proposal by \citet{Baker2002}. This analysis thus aligns splitting verbs more closely with serial verbs, as has been proposed by \citet{Bamgbose1966}. The resulting structure also parallels analyses of particle verbs in \ili{Germanic} languages, while following Bode's insights on \isi{verb movement} in \ili{Yoruba}. Unlike \ili{English}, we see that there is obligatory \isi{movement} of one part of the \isi{splitting verb}. This is a similar analysis to the one given for \ili{German}, but unlike in \ili{German}, where V moves to C, the word order change in \ili{Yoruba} results from V moving to $v$, as was shown by \citet{Bode2007}. Another difference worth mentioning is that particle verbs are verb + preposition, and splitting verbs are two verbal elements.\footnote{A good test for whether the structure might look like the one \citet{Sande2016} proposed for Guébie, with the two verbal elements forming a constituent, would be to test it with gapping. However, for independent reasons, \ili{Yoruba} does not allow gapping. See \citet{Lawal1985} for discussion of gapping in \ili{Yoruba}.}
@@ -490,10 +510,13 @@ $[_{FP} [_{DP} \text{ alo {nàá} }] [_{F'} \text{ F } [_{CP} \text{ pe Lola ri 
 This structure for NCCs is able to account for what we see with splitting verbs: the DP and CP appear separately, split by the second verbal element. To account for the word order, however, it must be the case that the entire functional phrase is the object of the lower, rather than the higher verbal element.
 
 \begin{figure}
-	\begin{tikzpicture}[scale=0.8]
-		\Tree 
-		[.$v$P [.DP\\Ife ] [.$v'$ [.$v$ [.V\\{gba$_{1}$}\\{[+\textsc{asp}]} ] [.$v$ ] ] [.Asp [.DP$_{i}$ \edge[roof]; {alo {nàá}$_{2}$} ] [.Asp$'$ [.Asp\\$t_{1}$ ] [.VP [.V\\$t_{1}$ ] [.VP [.V\\gbo ] [.FP [.DP$_{i}$\\$t_{2}$ ] [.F$'$ [.F ] [.CP$_{i}$ \edge[roof]; {pe Lola ri eni {nàá}} ] ] ] ] ] ] ] ] ]
-	\end{tikzpicture}
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 		\Tree 
+% % % 		[$v$P [DP\\Ife ] [$v'$ [$v$ [V\\{gba$_{1}$}\\{[+\textsc{asp}]} ] [$v$ ] ] [Asp [DP$_{i}$ \edge[roof]; {alo {nàá}$_{2}$} ] [Asp$'$ [Asp\\$t_{1}$ ] [VP [V\\$t_{1}$ ] [VP [V\\gbo ] [FP [DP$_{i}$\\$t_{2}$ ] [F$'$ [F ] [CP$_{i}$ \edge[roof]; {pe Lola ri eni {nàá}} ] ] ] ] ] ] ] ] ]
+% % % 	\end{tikzpicture}
+    \begin{forest}
+        [\textit{v}P [DP\\Ife ] [\textit{v}' [\textit{v} [V\\{gba\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ] [Asp [DP\textsubscript{i} [alo {nàá}\textsubscript{2},roof] ] [Asp' [Asp\\\textit{t}\textsubscript{1} ] [VP [V\\\textit{t}\textsubscript{1} ] [VP [V\\gbo ] [FP [DP\textsubscript{i}\\\textit{t}\textsubscript{2} ] [F' [F ] [CP\textsubscript{i} [pe Lola ri eni {nàá},roof] ] ] ] ] ] ] ] ] ]
+    \end{forest}
 	\caption{Structure for (\ref{ex:parrish:believe-story}a)}
 \end{figure}
 
