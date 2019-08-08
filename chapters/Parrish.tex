@@ -20,7 +20,7 @@
 
 \begin{document}
 \maketitle
-
+ 
 \section{Introduction}
 \ili{Yoruba} is widely agreed to be an SVO language, as seen in \REF{ex:parrish:SVO}, and reported by many grammars of \ili{Yoruba}, such as \citet{Bamgbose1966}, among others. 
 
@@ -31,6 +31,7 @@
     \label{ex:parrish:SVO}
 \z
 
+\newpage 
 However, a class of verbs exists that does not follow the usual SVO order. Splitting verbs, as shown in \REF{ex:parrish:must-embed} and \REF{ex:parrish:bad-no-embed}, are a class of disyllabic verbs that obligatorily split around the \isi{direct object}.\footnote{Note that it is only around a \isi{direct object}. In cases where there is an \isi{indirect object}, it must appear outside of the split.}
 
 
@@ -389,7 +390,7 @@ One thing that would allow us to confirm our analysis of \textit{tún} as an asp
 
 \section{Analysis of splitting verbs}
 \label{sect:parrish:analysis}
-
+\largerpage
 \subsection{Predictions of the previous analysis}
 
 Returning to the structure that was proposed by \citet{Bode2007} that was shown in \figref{fig:parrish:BodeTree}, we will show in this section that the previous analysis is unable to account for the surface structure of sentences that contain both splitting verbs and \textit{tún} when it is used as an aspectual marker.
@@ -452,6 +453,7 @@ The simplest way to explain the blocking of \isi{movement}, however, is to assum
 \end{forest}
 \end{figure}
 
+
 The derivation expressed in \figref{fig:parrish:split-structure} deviates little from Bode's analysis of regular \isi{verb movement}. The object moves to Spec Asp, and the verb moves through Asp to \textit{v}. The difference is that in this case, the \isi{verb movement} is being undertaken by the first verbal element, which is still the appropriate head of the next phrase down the tree. The second half of the \isi{splitting verb} remains in place, also generated low, and thus the SV$_{1}$ OV$_{2}$\ order results. Importantly, considering the likely development of splitting verbs from \isi{serial verb} constructions, this structure also parallels some proposed structures for \isi{serial verb} constructions in that the first verbal element merges as the head in a head-complement relation with the second verbal element and the argument, similar to a proposal by \citet{Baker2002}. This analysis thus aligns splitting verbs more closely with serial verbs, as has been proposed by \citet{Bamgbose1966}. The resulting structure also parallels analyses of particle verbs in \ili{Germanic} languages, while following Bode's insights on \isi{verb movement} in \ili{Yoruba}. Unlike \ili{English}, we see that there is obligatory \isi{movement} of one part of the \isi{splitting verb}. This is a similar analysis to the one given for \ili{German}, but unlike in \ili{German}, where V moves to C, the word order change in \ili{Yoruba} results from V moving to $v$, as was shown by \citet{Bode2007}. Another difference worth mentioning is that particle verbs are verb + preposition, and splitting verbs are two verbal elements.\footnote{A good test for whether the structure might look like the one \citet{Sande2016} proposed for Guébie, with the two verbal elements forming a constituent, would be to test it with gapping. However, for independent reasons, \ili{Yoruba} does not allow gapping. See \citet{Lawal1985} for discussion of gapping in \ili{Yoruba}.}
 
 In a tree like \figref{fig:parrish:tun-tree-split}, the correct word order is achieved with the addition of \textit{tún} as well. As concluded in the previous section, \textit{tún} is merged in Asp, which blocks the normal \isi{verb movement} to \textit{v} via Asp. Here, when merged in Asp, \textit{tún} blocks the same \isi{movement} for the first verbal element, as that is the head of the main VP. Thus the two verbal elements are realized string adjacent while head \isi{movement} to \textit{v} occurs with \textit{tún} rather than V$_{1}$.
@@ -462,7 +464,7 @@ By positing that V$_{1}$\ and V$_{2}$\ are merged in in a head-complement relati
 \subsection{Complement vs. relative clauses}
 One remaining question this analysis brings up is that if there are two verb heads, which takes the DP object? Noun complement clauses (NCCs) and relative clauses (RCs) are a useful tool to bring to bear on this question. While not the case for all speakers, there are some who make a clear distinction between the way RCs and NCCs pattern when they occur as part of the object of a \isi{splitting verb}, as shown in \REF{ex:parrish:believe-story} and \REF{ex:parrish:believe-tell}:
 
-\pagebreak
+ 
 
 \ea NCC examples
 \ea[]{  
@@ -498,6 +500,17 @@ One remaining question this analysis brings up is that if there are two verb hea
 
 For speakers with this distinction, the NCC in (\ref{ex:parrish:believe-story}a) \textit{must} follow V$_{2}$, though a RC, as in (\ref{ex:parrish:believe-tell}a), is strongly dispreferred in that position.\footnote{When the RC contains a larger, or ``heavier'', constituent, speakers report that the extraposition is more acceptable. However, the distinction between \REF{ex:parrish:believe-story} and \REF{ex:parrish:believe-tell} remains.}
 
+\begin{figure}[b]
+% % % 	\begin{tikzpicture}[scale=0.8]
+% % % 		\Tree 
+% % % 		[$v$P [DP\\Ife ] [$v'$ [$v$ [V\\{gba$_{1}$}\\{[+\textsc{asp}]} ] [$v$ ] ] [Asp [DP$_{i}$ \edge[roof]; {alo {nàá}$_{2}$} ] [Asp$'$ [Asp\\$t_{1}$ ] [VP [V\\$t_{1}$ ] [VP [V\\gbo ] [FP [DP$_{i}$\\$t_{2}$ ] [F$'$ [F ] [CP$_{i}$ \edge[roof]; {pe Lola ri eni {nàá}} ] ] ] ] ] ] ] ] ]
+% % % 	\end{tikzpicture}
+    \begin{forest}
+        [\textit{v}P [DP\\Ife ] [\textit{v}' [\textit{v} [V\\{gba\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ] [Asp [DP\textsubscript{i} [alo {nàá}\textsubscript{2},roof] ] [Asp' [Asp\\\textit{t}\textsubscript{1} ] [VP [V\\\textit{t}\textsubscript{1} ] [VP [V\\gbo ] [FP [DP\textsubscript{i}\\\textit{t}\textsubscript{2} ] [F' [F ] [CP\textsubscript{i} [pe Lola ri eni {nàá},roof] ] ] ] ] ] ] ] ] ]
+    \end{forest}
+	\caption{Structure for (\ref{ex:parrish:believe-story}a)}
+\end{figure}
+
 Analyses of these structures suggest a syntactic difference between NCCs and RCs, such that the NCCs are created through a predicative relationship between the DP and CP, whereas in RCs, the NP raises out of the CP. \citet{DenDikken2004} describes this in \ili{Thai} and \ili{Mandarin}, and \citet{Joshi2016} notes a similar pattern in \ili{Marathi}. The effect is that NCCs have a phrase that is further separated from the noun when compared to RCs. 
 
 \ea NCC structure adapted from \citet{DenDikken2004}
@@ -509,17 +522,6 @@ $[_{FP} [_{DP} \text{ alo {nàá} }] [_{F'} \text{ F } [_{CP} \text{ pe Lola ri 
 
 This structure for NCCs is able to account for what we see with splitting verbs: the DP and CP appear separately, split by the second verbal element. To account for the word order, however, it must be the case that the entire functional phrase is the object of the lower, rather than the higher verbal element.
 
-\begin{figure}
-% % % 	\begin{tikzpicture}[scale=0.8]
-% % % 		\Tree 
-% % % 		[$v$P [DP\\Ife ] [$v'$ [$v$ [V\\{gba$_{1}$}\\{[+\textsc{asp}]} ] [$v$ ] ] [Asp [DP$_{i}$ \edge[roof]; {alo {nàá}$_{2}$} ] [Asp$'$ [Asp\\$t_{1}$ ] [VP [V\\$t_{1}$ ] [VP [V\\gbo ] [FP [DP$_{i}$\\$t_{2}$ ] [F$'$ [F ] [CP$_{i}$ \edge[roof]; {pe Lola ri eni {nàá}} ] ] ] ] ] ] ] ] ]
-% % % 	\end{tikzpicture}
-    \begin{forest}
-        [\textit{v}P [DP\\Ife ] [\textit{v}' [\textit{v} [V\\{gba\textsubscript{1}}\\{[+\textsc{asp}]} ] [\textit{v} ] ] [Asp [DP\textsubscript{i} [alo {nàá}\textsubscript{2},roof] ] [Asp' [Asp\\\textit{t}\textsubscript{1} ] [VP [V\\\textit{t}\textsubscript{1} ] [VP [V\\gbo ] [FP [DP\textsubscript{i}\\\textit{t}\textsubscript{2} ] [F' [F ] [CP\textsubscript{i} [pe Lola ri eni {nàá},roof] ] ] ] ] ] ] ] ] ]
-    \end{forest}
-	\caption{Structure for (\ref{ex:parrish:believe-story}a)}
-\end{figure}
-
 Were it the case that V$_{1}$\ is merged with the argument, then we would expect the entire NCC to occur between V$_{1}$\ and V$_{2}$. 
 Structures with relative clauses do show up between the two verbal elements, as the CP of a \isi{relative clause} is within the DP (we assume a raising analysis of relative clauses), and thus can not move separately.
 
@@ -530,6 +532,9 @@ Here we have attempted to provide an analysis of the structure of splitting verb
 
 Our final analysis is minimally different from the one presented by \citet{Bode2007}, however the changes we made allowed us to account for the additional data presented here using aspectual \textit{tún}. These changes also put the analysis more in line with proposals for \isi{serial verb} constructions, in keeping with their likely evolution from serial verbs.
 
+\section*{Acknowledgements}
+The authors would like to sincerely thank their three consultants: Tolulope Odebunmi, Adebayo Adenle, and Olayemi Awotayo. Without their hours of help and patience, this project would not have been possible. We also thank Alan Munn for his comments and suggestions on earlier drafts, and the anonymous reviewers for many helpful comments.
+
 \section*{Abbreviations} 
 	
 	\begin{tabular}{ll}   
@@ -539,10 +544,6 @@ Our final analysis is minimally different from the one presented by \citet{Bode2
 	\end{tabular}
 	 
 
-\section*{Acknowledgements}
-The authors would like to sincerely thank their three consultants: Tolulope Odebunmi, Adebayo Adenle, and Olayemi Awotayo. Without their hours of help and patience, this project would not have been possible. We also thank Alan Munn for his comments and suggestions on earlier drafts, and the anonymous reviewers for many helpful comments.
-
-
+ 
 \printbibliography[heading=subbibliography,notkeyword=this]
-
 \end{document}
