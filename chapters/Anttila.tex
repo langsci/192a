@@ -352,7 +352,7 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 \newpage 
 
 \ea\label{ex:anttila:1} A phonological word with a secondary syllable: (\textit{báá})\textit{ʊ́}\\
-\vspace*{-1.5cm}       
+% \vspace*{-1.5cm}       
 %\label{bkm:Ref482774629}
 %      $\omega $      word
 %
@@ -365,69 +365,14 @@ V shortening & (báá)ʊ́ & (báá)ʊ́ & No unstressed VV\\
 %         b      a    ʊ       melody
 %
 %        [b     a :   ʊ]     phonetics
-\begin{tikzpicture}[sibling distance=2mm]
-\Tree 
-[.\node[fill=white] (pseudoroot) {}; %add a "super node" to make the tree tiers align vertically
-  \edge[draw=none];
-  [.\node (rootfill) {};
-  	\edge[draw=none];	
-	[.\node (omega) {$\omega$};
-        [.\node (phi) {$\varphi$}; 
-          [.\node (sigma) {$\sigma$};
-          	\edge[draw=none];
-          	[.\node (filler) {}; 
-          		\edge[draw=none];
-          		[.\node (b) {b}; 
-          			\edge[draw=none];
-          			[.{\big[}b ]
-          		]
-          	]
-          	[.\node (mu1) {$\mu$}; 
-          		\edge[draw=none]; {}
-          		[.\node (a) {a}; 
-          			\edge[draw=none];
-          			[.{aː} ]
-          		]
-          	]
-          	[.\node (mu2) {$\mu$}; ]
-          ]
-        ]
-      ]
-    \edge[draw=none];
-    [.\node (blank1) {};
-      \edge[draw=none];
-      [.\node (blank2) {}; 
-      	\edge[draw=none];
-      	[.\node (sigma2) {$\sigma$}; 
-      		[.\node (mu3) {$\mu$};
-      			[.\node (oops1) {ʊ};
-      				[.\node (oops2) {ʊ{\big]}}; ]
-      			]
-      		]
-      	]
-      ]
-    ]
-  ] 
-  \edge[draw=none];
-    [.\node (blank1) {};
-      \edge[draw=none];
-      [.\node (word) {word}; 
-      	[.\node (foot) {foot}; 
-      	  [.\node (syll) {syllable};
-      		[.\node (mora) {mora};
-      		  [.\node (mel) {melody}; 
-      		  	[.\node (phon) {phonetics}; ]
-      		  ]
-      		]
-      	  ]
-      	]
-      ]
-   	]      	
-   	]
-\draw (mu2.south) -- (a.north);  
-\draw (sigma.south) -- (b.north); 
-\end{tikzpicture} 
-
+\begin{forest} for tree={s sep=5mm}
+[,phantom
+    [$\omega$ [$\varphi$ [$\sigma$,calign=child,calign child=2 [b,tier=melody [$\big{[}\text{b}$,no edge]] [$\mu$ [a,xshift=4.5mm,name=a [aː,no edge,xshift=4.5mm]] ] [$\mu$,name=mu2] ] ] ]
+    [$\sigma$,tier=syllable [$\mu$ [ʊ [$\text{ʊ}\big{]}$] ] ] ]
+    [word [foot [syllable,tier=syllable [mora,tier=mora [melody,tier=melody [phonetics,tier=phonetics] ] ] ] ] ]
+]
+\draw (mu2.south) -- (a.north);
+\end{forest}
 \z
 
 Consonant-final roots are different. Consider /bar/ ‘leave’: if suffix alignment were all that counts the input /bar-ʊ́ʊ́/ should be footed *(\textit{bár})\textit{ʊ́ʊ́}, but that is not possible because it implies the syllabification *\textit{bá}\textit{r.ʊ́ʊ́} which is illegal in \ili{Dagaare}. Suffix alignment and word prosody are driven into conflict and word prosody wins: the solution is (\textit{bá.rʊ́})\textit{ʊ́} where the long suffix vowel is split into two light syllables: the first is incorporated into the foot and the second remains extrametrical. This implies the syllabification CV.CV.V which is legal in \ili{Dagaare} \citep[3-4]{Kennedy1966}. \tabref{tab:anttila:13} illustrates this for the consonant-final verbs /bar/ ‘leave’, /bár̀r/ ‘bargain’ and /báàr/ ‘finish’ in terms of informal ordered rules. The \isi{prosodic structure} of \textit{bárʊ́ʊ́} is shown in \REF{ex:anttila:2} below.
@@ -449,7 +394,6 @@ V shortening & -- & -- & -- & No unstressed VV\\
 
 \newpage 
 \ea\label{ex:anttila:2} A phonological word with a secondary syllable: (\textit{bárʊ́})\textit{ʊ́}\\
-\vspace*{-1.5cm}       
 %\label{bkm:Ref482782387}
 %            $\omega $    word
 %
@@ -463,87 +407,13 @@ V shortening & -- & -- & -- & No unstressed VV\\
 %
 %        [b    a     r    ʊ   : ]   phonetics
 %        
-        
-      
-\begin{tikzpicture}[sibling distance=2mm]
-\Tree 
-[.\node[fill=white] (pseudoroot) {}; %add a "super node" to make the tree tiers align vertically
-    \edge[draw=none];
-  [.\node (rootfill) {};
-  	\edge[draw=none];	
-	[.\node (omega) {$\omega$};
-        [.\node (phi) {$\varphi$}; 
-          [.\node (sigma1) {$\sigma$};
-          	\edge[draw=none];
-          	[.\node (filler) {}; 
-          		\edge[draw=none];
-          		[.\node (b) {b}; 
-          			\edge[draw=none];
-          			[.{\big[}b ]
-          		]
-          	]
-          	[.\node (mu1) {$\mu$}; 
-          		[.\node (a) {a}; 
-          			\edge[draw=none];
-          			[.{a} ]
-          		]
-          	]
-          ]
-          [.\node (sigma2) {$\sigma$};
-          	\edge[draw=none];
-          	[.\node (filler) {}; 
-          		\edge[draw=none];
-          		[.\node (roops) {r}; 
-          			\edge[draw=none];
-          			[.r ]
-          		]
-          	]
-          	[.\node (mu2) {$\mu$}; 
-          		[.\node (ʊ) {ʊ}; 
-          			\edge[draw=none];
-          			[.ʊ ]
-          		]
-          	]
-          ]
-        ]
-      ]
-    \edge[draw=none];
-    [.\node (blank1) {};
-      \edge[draw=none];
-      [.\node (blank2) {}; 
-      	\edge[draw=none];
-      	[.\node (sigma3) {$\sigma$}; 
-      		[.\node (mu3) {$\mu$};
-      			[.\node (oops1) {ʊ};
-      			    \edge[draw=none];
-      				[.\node (oops2) {\hspace{10pt}ː{\big]}}; ]
-      			]
-      		]
-      	]
-      ]
-    ]
-  ]
-\edge[draw=none];  
-    [.\node (blank1) {};
-      \edge[draw=none];
-      [.\node (word) {word}; 
-      	[.\node (foot) {foot}; 
-      	  [.\node (syll) {syllable};
-      		[.\node (mora) {mora};
-      		  [.\node (mel) {melody}; 
-      		    \edge[draw=none];
-      		  	[.\node (phon) {phonetics}; ]
-      		  ]
-      		]
-      	  ]
-      	]
-      ]
-   	]      	
+\begin{forest}
+[,phantom
+    [$\omega$ [$\varphi$ [$\sigma$ [b,tier=melody [$\big{[}\text{b}$, no edge]] [$\mu$,tier=mora [a [a, no edge] ] ] ] [$\sigma$ [r,tier=melody [r, no edge]] [$\mu$ [ʊ [ʊ,no edge] ] ] ] ] ]
+    [$\sigma$,tier=syllable [$\mu$ [ʊ [\phantom{ʊ}$\text{ː}\big{]}$, no edge] ] ] ]
+    [word [foot [syllable,tier=syllable [mora [melody,tier=melody [phonetics] ] ] ] ] ]
 ]
-\draw (sigma1.south) -- (b.north); 
-\draw (sigma2.south) -- (roops.north); 
-\end{tikzpicture} 
-
+\end{forest}
 \z
 
 Summarizing, \isi{vowel length} alternations in \ili{Dagaare} action nominals can be understood from a metrical perspective. The three key facts, namely vowel lengthening in CV roots, suffix \isi{vowel shortening} after vowel-final roots and absence of suffix \isi{vowel shortening} after consonant-final roots receive a unified explanation. In the next section we will outline an optimality-theoretic analysis of action nominals. 
