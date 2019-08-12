@@ -115,18 +115,19 @@ Claims \REF{ex:pesetsky:claimone} and \REF{ex:pesetsky:claimtwo} together entail
 
 The tree in \figref{ex:pesetsky:towerofanimacy} shows the structure for the \isi{noun phrase} \textit{ki-ongozi m-refu} `tall leader'. In this tree, the adjective phrase looks downwards to find values for its \isi{noun class} features.  It receives a value for \textsc{animate} from the higher n-head but cannot receive a value for \textsc{gender} from the lower n head since doing so would require agreement across a phase boundary. The a-head is spelled out as \textit{m-} using \REF{ex:pesetsky:mooa}, while the lower of the two n-heads is spelled out as \textit{ki-} using the analogous rule for class 7/8.
 
-\begin{figure}[htbp]
-\begin{center}
-\begin{tikzpicture}[scale=.99] \tikzset{every tree node/.style={align=center,anchor=center}} 
-\Tree[.nP [.\node(aP){aP\\$\big[\textsc{animate}:\underline{~~~}\textsc{gender}:\underline{~~~}\big]$}; [.\node(Adj){a}; ] [.\node(tall){$\sqrt{tall}$}; ] ] [.nP [.\node(Animate){n\\$\big[$+\textsc{animate}$\big]$}; ] [.nP [.\node(N){n\\$\big[\textsc{gender}:7\big]$}; ] [.$\sqrt{leader}$ ] ] ] ]
+\begin{figure}
+\begin{forest}
+[nP [aP\\$\big{[}\textsc{animate}:\underline{~~~}\textsc{gender}:\underline{~~~}\big{]}$,name=aP [
+        a,name=Adj] [$\sqrt{\textit{tall}}$,name=tall] 
+        ] [nP [
+            n\\$\big{[}$+\textsc{animate}$\big{]}$,name=Animate] [nP [
+                        n\\$\big{[}\textsc{gender}:7\big{]}$,name=N] [$\sqrt{\textit{leader}}$ ] ] 
+    ] 
+]
 \draw[>-, dashed, semithick,<- ] (Animate)..controls +(north west:1) and +(east:3) .. (aP); 
 \draw[black] (4.8,-0.1) arc (120:160:6);
-\end{tikzpicture} 
-
-\caption{Structure of \textit{ki-ongozi m-refu} \\ The dotted arrow represents agreement. The lower solid arc shows a phase boundary.}
-\label{ex:pesetsky:towerofanimacy}
-
-\end{center}
+\end{forest} 
+\caption{Structure of \textit{ki-ongozi m-refu}. The dotted arrow represents agreement. The lower solid arc shows a phase boundary.\label{ex:pesetsky:towerofanimacy}}
 \end{figure}
 
 
@@ -208,14 +209,11 @@ This pattern is not possible with non-kinship terms, as shown in \REF{ex:pesetsk
 
 In the previous subsection, I showed evidence that pronominal possessors have different syntactic heights depending on whether their possessees are relational or sortal.  In light of this evidence, I propose the syntactic configuration in \REF{ex:pesetsky:syntacticconfig}.
 
-\begin{figure}[htbp]
-\begin{center}
-
-\begin{tikzpicture}[scale=.99] \tikzset{every tree node/.style={align=center,anchor=north}} \Tree[.PossessorP [.sortal$\,$possessor ] [.nP [.n\\$+$\textsc{animate} ] [.nP [.relational$\,$possessor ] [.n$^\prime$ [.n\\\big[\textsc{gender}:\,x\big] ] [.$\sqrt{root}$ ] ] ] ] ] \end{tikzpicture} 
-
-\caption{Structure of possessors in Swahili}
-\label{ex:pesetsky:syntacticconfig}
-\end{center}
+\begin{figure}
+\begin{forest} for tree={fit=band}
+[PossessorP [sortal possessor] [nP [n\\+\textsc{animate}] [nP [relational possessor] [n$^\prime$ [n\\\big{[}\textsc{gender}: x\big{]}] [$\sqrt{\textit{root}}$ ] ] ] ] ]
+\end{forest} 
+\caption{Structure of possessors in Swahili\label{ex:pesetsky:syntacticconfig}}
 \end{figure}
 
 This structure allows us to solve the puzzle posed in \sectref{sec:pesetsky:puzzlesection} by appealing to the positions of the two types of pronominal possessors relative to the two features \textsc{gender} and \textsc{animate}. Pronominal possessors of relational nouns merge between the low n-head which hosts \textsc{gender} and the higher n-head which hosts \textsc{animate}, while pronominal possessors of sortal nouns merge above the locus of both features. 
