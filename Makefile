@@ -30,6 +30,8 @@ main.snd: main.bbl
 	sed -i s/.*Office.*// main.adx #remove titles which biblatex puts into the name index
 	sed -i s/.*SIL.*// main.adx #remove titles which biblatex puts into the name index
 	sed -i s/.*Team.*// main.adx #remove titles which biblatex puts into the name index
+	sed -i s/.*Department*// main.adx #remove titles which biblatex puts into the name index
+	sed -i s/.*Association*// main.adx #remove titles which biblatex puts into the name index
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.sdx # ordering of references to footnotes
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.adx
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
