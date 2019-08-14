@@ -129,6 +129,14 @@ clean:
 realclean: clean
 	rm -f *.dvi *.ps *.pdf
 
+
+chop: FORCE 
+	egrep -o "\{[0-9]+\}\{chapter\*\.[0-9]+\}" main.toc| egrep -o "[0-9]+\}\{chapter"|egrep -o [0-9]+ > cuts.txt
+	egrep -o "\{chapter\}\{Index\}\{[0-9]+\}\{section\*\.[0-9]+\}" main.toc| grep -o "\..*"|egrep -o [0-9]+ >> cuts.txt
+	bash chopchapters.sh `grep "mainmatter starts" main.log|grep -o "[0-9]*"`
+
+
+	
 chapterlist:
 	grep chapter main.toc|sed "s/.*numberline {[0-9]\+}\(.*\).newline.*/\\1/" 
 
@@ -144,3 +152,4 @@ languagecandidates:
  
 
 FORCE:
+
